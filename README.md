@@ -13,9 +13,7 @@ Dropfleet Commander (2024)
 
 __What's this?__
 
-BSData organisation created this project. It's a GitHub repository of datafiles.
-Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want
-to develop - cool! We need you! Take a look at [our homepage][BSData.net]
+This is a GitHub repository of datafiles that allows users of New Recruit to build fleet lists for [Dropfleet Commander](https://dropfleetcommander.com/). Note that while the datafiles can be loaded into Battlescribe they use new features implemented in New Recruit and thus the ship stats, options, and other list building elements may not function correctly in Battlescribe.
 
 __I found a bug!__ / *I have another request*
 
