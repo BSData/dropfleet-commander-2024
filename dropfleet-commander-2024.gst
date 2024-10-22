@@ -88,10 +88,12 @@
         </modifier>
       </modifiers>
     </categoryEntry>
+    <categoryEntry name="Payload Groups" id="8c2b-ea4d-8bea-c6a2" hidden="false"/>
     <categoryEntry name="Colossal Ship" id="6e44-cb75-e25f-8b24" hidden="false"/>
     <categoryEntry name="Heavy Ship" id="9d6f-26b0-7969-496b" hidden="false"/>
     <categoryEntry name="Medium Ship" id="53c3-afc0-63ef-413a" hidden="false"/>
     <categoryEntry name="Light Ship" id="f942-8f88-d77b-13c1" hidden="false"/>
+    <categoryEntry name="Payload" id="3fa9-60d3-d9be-6611" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Fleet" hidden="false" id="fa3c-5c2f-ae78-ba22">
@@ -116,6 +118,7 @@
         <categoryLink name="Heavy Groups" hidden="false" id="6ae6-148d-4a39-919c" targetId="8d99-053d-ffeb-98c5"/>
         <categoryLink name="Medium Groups" hidden="false" id="62fc-b5b7-b670-4429" targetId="e555-ff57-c478-18cd"/>
         <categoryLink name="Light Groups" hidden="false" id="27be-f8fa-6328-ee30" targetId="f51b-d892-62c0-3f1e"/>
+        <categoryLink name="Payload Groups" hidden="false" id="7362-17e3-5fb1-9a39" targetId="8c2b-ea4d-8bea-c6a2"/>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="501" field="ab32-c9b6-10f3-cbdb" scope="self" shared="true" id="0657-bf3e-e983-c5e7"/>
@@ -254,7 +257,7 @@
         <characteristicType name="Special" id="fdf5-89b6-e62e-570f"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Weapon" id="02b7-2433-f72f-d510" hidden="false" sortIndex="2">
+    <profileType name="Weapon" id="02b7-2433-f72f-d510" hidden="false" sortIndex="3">
       <characteristicTypes>
         <characteristicType name="Arc" id="7fb7-39ec-1352-3b97"/>
         <characteristicType name="Att" id="af4e-6eec-3cb5-5aae"/>
@@ -264,10 +267,17 @@
         <characteristicType name="Special" id="1e8b-4801-6eb9-f278"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Load" id="7ba8-a64f-b5fb-8c3e" hidden="false" sortIndex="3">
+    <profileType name="Load" id="7ba8-a64f-b5fb-8c3e" hidden="false" sortIndex="4">
       <characteristicTypes>
         <characteristicType name="Launch" id="bcc4-f844-acff-aa94"/>
         <characteristicType name="Special" id="d3be-1a27-21ac-fb65"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Feature" id="e69b-d424-94a2-0fe1" hidden="false" sortIndex="2">
+      <characteristicTypes>
+        <characteristicType name="ES" id="b3be-7f64-867b-94f7"/>
+        <characteristicType name="KS" id="4e0b-e781-cee2-504d"/>
+        <characteristicType name="Special" id="0042-a956-225d-9293"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -314,10 +324,13 @@
 During the Porter Ship’s activation, if it is on an Order that allows it to Launch, you may detach one or more of its Payload Ships and place them within 3” of it. In the round they are detached, these Payloads activate together immediately as part of the Porter Ship’s activation after it has completed its Order. In subsequent rounds, all your Payload Ships count as being part of a single Group.
 Payload Ships always follow General Quarters Orders, even if its Porter is on different Orders. Payload Ships ignore Coherency rules (and do not gain Formation Benefits), have no Lead Ship, are targeted by attacks individually, and these attacks can only damage the targeted Payload Ship.
 If a Payload Ship is attached to a Porter Ship when that Ship is destroyed, the Payload Ship is destroyed.</description>
+      <alias>Payload S-1</alias>
     </rule>
     <rule name="Porter S/L-X" id="11cb-e973-8a2c-f0f6" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>This Ship may be assigned up to X Payload Ships with the same letter.
 During a Porter’s activation, it may attach any detached Payload Ships within 3” if it has available capacity. Payload Ships reattached to a Porter Ship are removed from the table to be deployed in a later round.</description>
+      <alias>Porter S-1</alias>
+      <alias>Porter S-2</alias>
     </rule>
     <rule name="Rapid Drop" id="8b74-2f05-9de9-8b32" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>This Ship may launch its Assets at any point during its movement</description>
@@ -354,6 +367,7 @@ All Alt Weapons with the same number count as the same Weapon when determining
     </rule>
     <rule name="Arrest-X" id="7fa4-03e2-d2a7-de9b" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>A Ship damaged by this Weapon reduces its Thrust by X” during its next activation. A Ship can only be affected by this rule once each round.</description>
+      <alias>Arrest-2</alias>
     </rule>
     <rule name="Bloom-X" id="a944-3ee8-9a6c-6440" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <alias>Bloom-1</alias>
@@ -409,6 +423,7 @@ Damage caused by this Weapon is allocated to only the targeted Ship.</descripti
       <alias>Fusillade-1</alias>
       <alias>Fusillade-2</alias>
       <alias>Fusillade-3</alias>
+      <alias>Fusillade-4</alias>
       <description>This Weapon increases its Attack value by X while its Ship is on Weapons Free.</description>
     </rule>
     <rule name="High Power" id="4a8c-aae4-c959-2437" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">

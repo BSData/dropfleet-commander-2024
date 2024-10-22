@@ -1,0 +1,2359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Accumulator" hidden="false" id="ee44-fd8d-2aec-361f" publicationId="c835-461f-ea00-a841" page="1">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="79f7-4244-6fb7-d41a" id="e6d8-f6d0-e635-1c24" primary="false" name="Faction/Famous Admirals"/>
+        <categoryLink targetId="fb8b-57b3-d46c-d679" id="c99e-9644-af19-1ea8" primary="true" name="Admirals"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Ships -----" hidden="true" id="46a1-818d-cfd7-358f"/>
+    <selectionEntry type="model" import="true" name="Stature Battlecruiser" hidden="false" id="af03-2c21-d5ec-31a4" publicationId="c835-461f-ea00-a841" page="41">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="140"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9d6f-26b0-7969-496b" id="7a1c-5423-633c-f1f8" primary="true" name="Heavy Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Stature" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4ebd-2d18-34d5-187d" publicationId="c835-461f-ea00-a841" page="41">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">12</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Decon Annihilator" hidden="false" id="7718-8aaa-f845-6bf8" type="selectionEntry" targetId="a4a4-23e2-4ab4-e239"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2373-3632-2e63-339e" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07e0-f5b8-cb9a-0b9e" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sanctum Battlecruiser" hidden="false" id="35b9-0e68-1ca4-37ed" publicationId="c835-461f-ea00-a841" page="40">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="245"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9d6f-26b0-7969-496b" id="7d97-6d79-e026-4b05" primary="true" name="Heavy Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Sanctum" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="3036-e986-10ae-2f0b" publicationId="c835-461f-ea00-a841" page="40">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">12</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Decon Blast" hidden="false" id="39b0-3a63-60f7-7d57" type="selectionEntry" targetId="ff82-4f61-22da-9d39" sortIndex="1"/>
+        <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="0ea2-c91e-73d0-1142" type="selectionEntry" targetId="00d8-9dd8-8af4-2de3" sortIndex="2"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6dae-22d1-18c2-d998" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5feb-71d7-6e46-4deb" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scion Battlecruiser" hidden="false" id="53e9-85e6-d2d8-74a6" publicationId="c835-461f-ea00-a841" page="39">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="150"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9d6f-26b0-7969-496b" id="4eba-b83c-20dc-c902" primary="true" name="Heavy Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Scion" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c257-3feb-1d18-406e" publicationId="c835-461f-ea00-a841" page="39">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">12</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Hyper Lightvice" hidden="false" id="9317-372f-6ad9-4899" type="selectionEntry" targetId="f7df-7ebb-ffb8-301c"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="789f-7f42-a5e7-bfaf" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78b7-ea14-17dd-ab20" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Carronade Heavy Cruiser" hidden="false" id="cd32-8ac0-3a3f-d465" publicationId="c835-461f-ea00-a841" page="38">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="105"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="30ec-022a-c83e-f41e" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Carronade" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b0ce-f1d9-6fb7-1300" publicationId="c835-461f-ea00-a841" page="38">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">11&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">9</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Barb Launcher" hidden="false" id="c7a2-be82-abd5-7e47" type="selectionEntry" targetId="1005-cf24-dc36-a63d"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a610-9994-b761-96f6-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a610-9994-b761-96f6-max" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="2d5c-9813-ce7c-8a2a" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Catastrophe Heavy Cruiser" hidden="false" id="068e-36ac-efdc-a588" publicationId="c835-461f-ea00-a841" page="37">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="110"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="fb58-75cb-18b3-2654" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Catastrophe" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="37c6-8910-d908-a9cd" publicationId="c835-461f-ea00-a841" page="37">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">9</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Heavy Lightvice" hidden="false" id="6af5-479b-d038-05bd" type="selectionEntry" targetId="d945-02c0-f69a-78e8" sortIndex="1"/>
+        <entryLink import="true" name="Thermator" hidden="false" id="1f3d-e18e-5a42-a9f9" type="selectionEntry" targetId="0c95-f250-f157-3f91" sortIndex="2"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0652-fd76-b8f3-e616" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1463-e630-4cad-eeab" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="2b7b-3335-b180-7512" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cacophony Heavy Cruiser" hidden="false" id="6601-9350-3d0a-6a5a" publicationId="c835-461f-ea00-a841" page="36">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="140"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="248d-61ab-ac0b-60b5" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cacophony" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="2a52-e3ac-8cae-d201" publicationId="c835-461f-ea00-a841" page="36">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">9</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Scythes" hidden="false" id="164d-5db2-3cbd-0a82" type="selectionEntry" targetId="41e6-babb-2487-3b35"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1409-8e3e-bbf5-573a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1859-525b-74f5-5cc1" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="78e4-d4a3-a0d3-41f5" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cataphract Heavy Cruiser" hidden="false" id="dab1-373b-7f18-9204" publicationId="c835-461f-ea00-a841" page="35">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="105"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="9fdf-7232-1655-fc99" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cataphract" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="f244-42c5-d078-76f0" publicationId="c835-461f-ea00-a841" page="35">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">9</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Ghost Orb" hidden="false" id="b04c-9352-654a-ba40" type="selectionEntry" targetId="7b56-3538-f1ca-10fd" sortIndex="1"/>
+        <entryLink import="true" name="Heavy Lightvice" hidden="false" id="a470-9813-2d11-2b9a" type="selectionEntry" targetId="d945-02c0-f69a-78e8" sortIndex="2"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf38-b2a0-b6c7-4db1" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be35-12e4-7c2c-ef5d" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="55f3-b03f-3eaa-6182" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Combine Cruiser" hidden="false" id="380a-eb7f-226b-9348" publicationId="c835-461f-ea00-a841" page="34">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="d25e-1abb-a05c-b1c0" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Combine" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="f514-30a3-09dc-5c13" publicationId="c835-461f-ea00-a841" page="34">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">11&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">7</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Barb Launcher" hidden="false" id="5790-d8fa-fa9f-fc0a" type="selectionEntry" targetId="c5fe-cf87-763d-5a5e"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="541e-068c-1c15-1862" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7147-4a15-6b1d-9981" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="bea6-570a-96bb-12f0" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cavern Fleet Carrier" hidden="false" id="bad1-cefb-c4a1-0cf9" publicationId="c835-461f-ea00-a841" page="33">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="140"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="ce89-dc64-6fef-5180" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cavern" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="815b-81a3-637c-560d" publicationId="c835-461f-ea00-a841" page="33">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">7</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Scythes" hidden="false" id="0ccc-b153-83cd-2258" type="selectionEntry" targetId="b420-9dac-d07e-3511" sortIndex="1"/>
+        <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="e0fd-3e09-69d8-b973" type="selectionEntry" targetId="65bd-53c9-d2c9-643c" sortIndex="2"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b21a-280a-c93e-dc7b" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ae8d-eb47-5101-7ffb" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="c9be-c541-6ebd-73b9" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cosmic Cruiser" hidden="false" id="5e63-f71e-203a-145d" publicationId="c835-461f-ea00-a841" page="32">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="cd58-b672-5ae2-5378" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cosmic" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="36fa-1b18-080d-c35a" publicationId="c835-461f-ea00-a841" page="32">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">11&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">7</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9870-6976-8f2d-ee3e" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="03c8-3a56-d044-e815" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="e043-12bc-9a91-640d" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Barb Launcher" hidden="false" id="b33e-54fd-c4be-fc8d" type="selectionEntry" targetId="c5fe-cf87-763d-5a5e" sortIndex="1"/>
+        <entryLink import="true" name="Barb Stinger" hidden="false" id="e41e-4bf9-05e9-5d0a" type="selectionEntry" targetId="99e5-77e8-4318-da09" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Comet Cruiser" hidden="false" id="da54-2c5a-83c6-7cef" publicationId="c835-461f-ea00-a841" page="31">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="90"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="63af-7658-c44f-e22c" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Comet" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="688d-ba34-53d8-81da" publicationId="c835-461f-ea00-a841" page="31">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">7</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Thermator" hidden="false" id="9b31-f549-88ef-fcad" type="selectionEntry" targetId="0c95-f250-f157-3f91" sortIndex="1"/>
+        <entryLink import="true" name="Decon Blaster" hidden="false" id="9f94-5d6f-6c32-dd19" type="selectionEntry" targetId="de4f-a761-d26e-ca57" sortIndex="2"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2cd2-e851-5cd2-7057" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e0b-7c2c-1d82-f654" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="4c28-54d2-3adb-4962" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Choral Cruiser" hidden="false" id="25ba-51ee-460f-8952" publicationId="c835-461f-ea00-a841" page="30">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="0442-1b43-280f-f618" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Choral" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="79fb-fa1a-ac6c-63df" publicationId="c835-461f-ea00-a841" page="30">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">11&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">7</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Detector, Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b0a-7ba4-1c8d-01a0" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="43f5-9e61-a0b8-3b0f" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Detector" id="05a4-bbe1-1abe-1f81" hidden="false" type="rule" targetId="ff6a-7b9f-fca1-ef36"/>
+        <infoLink name="Porter S/L-X" id="a71a-bc6b-3e8c-0149" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Barb Launcher" hidden="false" id="04c2-b64c-b0b5-0179" type="selectionEntry" targetId="c5fe-cf87-763d-5a5e"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Conqueror Cruiser" hidden="false" id="a8b3-c839-0c17-51e2" publicationId="c835-461f-ea00-a841" page="29">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="0d23-bd08-3160-f7f7" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Conqueror" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="3f65-8e45-47e3-b451" publicationId="c835-461f-ea00-a841" page="29">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">7</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1, Tractor Beamer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Heavy Lightvice" hidden="false" id="0432-956e-4b93-c1f7" type="selectionEntry" targetId="d945-02c0-f69a-78e8"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9117-651d-1605-ac29" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bdcb-4d6d-05fd-e5fd" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="0659-d200-10b4-ac2c" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+        <infoLink name="Tractor Beamer" id="5aec-3173-31b3-333b" hidden="false" type="rule" targetId="c9fa-8382-0412-768a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Construct Cruiser" hidden="false" id="609e-2d80-9e0f-a10a" publicationId="c835-461f-ea00-a841" page="28">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="100"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="2a8e-55ed-12c5-bcef" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Construct" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7fe9-91fd-5902-0037" publicationId="c835-461f-ea00-a841" page="28">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">7</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0088-ef24-e19d-9e31" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a5cc-2c52-7233-c31d" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="b62a-5ad3-8fc0-d769" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Scythes" hidden="false" id="c0a1-fdea-5989-71c2" type="selectionEntry" targetId="b420-9dac-d07e-3511"/>
+        <entryLink import="true" name="Barb Stinger" hidden="false" id="a746-3d09-4bbc-c46e" type="selectionEntry" targetId="491b-4989-9981-2c90"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Callous Cruiser" hidden="false" id="24c7-5ae6-50fb-a29f" publicationId="c835-461f-ea00-a841" page="27">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="7c83-0bbf-d898-ee41" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Callous" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="bb94-a4fd-d241-12e3" publicationId="c835-461f-ea00-a841" page="27">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">7</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Ghost Orb" hidden="false" id="5270-f692-ffb2-0b11" type="selectionEntry" targetId="7b56-3538-f1ca-10fd" sortIndex="1"/>
+        <entryLink import="true" name="Decon Blaster" hidden="false" id="ea9e-eff3-898c-aa79" type="selectionEntry" targetId="de4f-a761-d26e-ca57" sortIndex="2"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92d0-6635-cbf0-1fe1" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="efc1-1206-843e-fc51" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="ad37-9452-58dd-c0d6" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Charger Light Cruiser" hidden="false" id="71b6-9fc2-a031-24e1" publicationId="c835-461f-ea00-a841" page="26">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="04f4-8cda-7e82-cb54" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Charger" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="da98-02e5-fe7f-983d" publicationId="c835-461f-ea00-a841" page="26">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">11&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">2&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">5</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Barb Launcher" hidden="false" id="a42c-4c61-4f7c-434e" type="selectionEntry" targetId="c5fe-cf87-763d-5a5e"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="713f-f1ab-8e0e-5099" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1985-6656-7cbd-2207" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="8fc0-090e-0bc1-9db4" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cipher Light Cruiser" hidden="false" id="e827-9515-6dcb-3616" publicationId="c835-461f-ea00-a841" page="25">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="70"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="b0ec-b230-6e7e-8aa9" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cipher" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="a6f5-5bb8-4193-acb4" publicationId="c835-461f-ea00-a841" page="25">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">2&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">5</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82b2-db42-e2f2-d976" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="618c-3b36-5c62-e5ad" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="04e5-febf-afce-9e02" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Thermator" hidden="false" id="a6e2-c1d8-b9b6-c9ae" type="selectionEntry" targetId="0c95-f250-f157-3f91"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cache Light Cruiser" hidden="false" id="71cf-78c6-f529-68aa" publicationId="c835-461f-ea00-a841" page="24">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="53c3-afc0-63ef-413a" id="09a8-9285-e152-3b6c" primary="true" name="Medium Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cache" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5d84-9bb0-a672-25e0" publicationId="c835-461f-ea00-a841" page="24">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">2&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">5</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="992d-8d08-f75d-7ef7" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3ac1-dd61-9bb3-3b00" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="da90-2844-0059-86af" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Heavy Lightvice" hidden="false" id="3cb9-2ddf-3b6d-c6a0" type="selectionEntry" targetId="d945-02c0-f69a-78e8"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Diode Destroyer" hidden="false" id="d168-8007-3112-6025" publicationId="c835-461f-ea00-a841" page="23">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="8461-493b-2b70-3897" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Diode" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6c35-3e0b-f784-ab2a" publicationId="c835-461f-ea00-a841" page="23">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">2&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">5</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a49-a492-7d53-771c" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c7b5-004c-6746-d918" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Bisector" hidden="false" id="d5df-b035-434d-31cf" type="selectionEntry" targetId="fbb0-03e1-e6ea-0f34"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Domain Destroyer" hidden="false" id="7542-ffd4-60eb-341e" publicationId="c835-461f-ea00-a841" page="22">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="07fb-6c9c-792a-50bc" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Domain" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="2bd1-6469-df2e-04a0" publicationId="c835-461f-ea00-a841" page="22">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">2&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">5</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ef7-7186-1eb8-df16" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="bc9e-868b-aa86-17f6" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Decon Cannon" hidden="false" id="fb0c-b3f9-fbe1-df85" type="selectionEntry" targetId="61be-530f-81e1-90f2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tally Cutter" hidden="false" id="4b85-1009-36c6-a649" publicationId="c835-461f-ea00-a841" page="21">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="51ae-3d2a-6d93-6179" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tally" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="62ef-d1b0-239f-664c" publicationId="c835-461f-ea00-a841" page="21">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">5</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Rare, Gravitational Lensing</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dab5-1d3f-09c8-c0f7" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f923-e878-2069-55dc" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Graviton Lens" hidden="false" id="a0c0-9f6c-dca7-243b" type="selectionEntry" targetId="087e-6d37-cefe-4ce1"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Rare" id="a8ef-1cb7-a911-1e80" hidden="false" type="rule" targetId="f7ad-85f9-39f4-7e10"/>
+        <infoLink name="Gravitational Lensing" id="d60f-cc8b-5d94-25ec" hidden="false" type="rule" targetId="2fcc-32b0-e2ea-3d0d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tine Cutter" hidden="false" id="517e-39fc-729f-9877" publicationId="c835-461f-ea00-a841" page="20">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="55"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="c488-8eed-02de-0645" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tine" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4159-7c91-331a-0f7b" publicationId="c835-461f-ea00-a841" page="20">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">5</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a71f-f567-653c-c04e" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ebdf-b43e-93ef-bc36" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Gravitic Stave" hidden="false" id="4bf4-398f-0792-6f87" type="selectionEntry" targetId="2c47-653f-eb25-5f6a"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Torrent Cutter" hidden="false" id="39e3-bcff-9b22-b1d5" publicationId="c835-461f-ea00-a841" page="19">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="1fac-7bd1-4598-07f8" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Torrent" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="05a6-634b-81ad-4cc8" publicationId="c835-461f-ea00-a841" page="19">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">5</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="041d-b360-afc5-07d5" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7a67-5100-ec29-abb3" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Scythe Cluster" hidden="false" id="8f4f-2c07-5ed5-a032" type="selectionEntry" targetId="14d0-202c-3e93-cfee"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Matrix Monitor" hidden="false" id="205a-106d-4cdc-4257" publicationId="c835-461f-ea00-a841" page="18">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="8e73-6253-1eae-9399" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Matrix" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="f40f-18da-08c9-d9da" publicationId="c835-461f-ea00-a841" page="18">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">4&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Monitor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23d8-0572-b3a4-e36a" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b72a-0547-bae8-e859" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Decon Blast" hidden="false" id="8eb1-237e-9354-c537" type="selectionEntry" targetId="ff82-4f61-22da-9d39" sortIndex="1"/>
+        <entryLink import="true" name="Torpedo" hidden="false" id="1ff7-11a8-c889-3188" type="selectionEntry" targetId="e90b-9b11-28fe-af2e" sortIndex="2"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Monitor" id="c442-0dd3-035f-0f06" hidden="false" type="rule" targetId="cc9f-9be5-cc19-2fc9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Monarch Monitor" hidden="false" id="9438-d4b5-068e-bf7a" publicationId="c835-461f-ea00-a841" page="17">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="105"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="1621-7f30-0feb-fb58" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Monarch" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="ae9e-adfe-db57-3901" publicationId="c835-461f-ea00-a841" page="17">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">4&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Monitor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2398-20a4-ba84-e9e7" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="230e-044f-f9e3-323c" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Decon Blast" hidden="false" id="9552-927b-9d8d-456f" type="selectionEntry" targetId="ff82-4f61-22da-9d39" sortIndex="1"/>
+        <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="89d7-bd93-87b4-98fc" type="selectionEntry" targetId="65bd-53c9-d2c9-643c" sortIndex="2"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Monitor" id="831a-0a99-8443-06b9" hidden="false" type="rule" targetId="cc9f-9be5-cc19-2fc9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mantle Monitor" hidden="false" id="d851-9f16-65ca-f934" publicationId="c835-461f-ea00-a841" page="16">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="db9f-0d7f-4dd3-8c0f" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Mantle" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="736f-a25b-3a23-d460" publicationId="c835-461f-ea00-a841" page="16">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">4&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Monitor, Rare</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82d0-b785-3df8-8d2c" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4d13-fe78-283b-a255" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Gravitic Pulveriser" hidden="false" id="5141-292a-450d-c604" type="selectionEntry" targetId="6504-3bdd-3d6e-4059"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Monitor" id="a523-0659-2b79-e174" hidden="false" type="rule" targetId="cc9f-9be5-cc19-2fc9"/>
+        <infoLink name="Rare" id="2adb-23d2-5620-7b03" hidden="false" type="rule" targetId="f7ad-85f9-39f4-7e10"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fresco Frigate" hidden="false" id="404f-014a-f934-c455" publicationId="c835-461f-ea00-a841" page="15">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="480c-b1a4-c003-4114" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Fresco" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="57c1-1267-6219-8b21" publicationId="c835-461f-ea00-a841" page="15">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">3</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">2-6</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Winnower" hidden="false" id="d934-c810-dbae-9409" type="selectionEntry" targetId="d0e9-7919-19c0-b2c8"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c34e-a11e-1155-7b2c" includeChildSelections="false"/>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="bf59-8923-87c5-cc6d" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fulcrum Frigate" hidden="false" id="2038-d32a-a059-b173" publicationId="c835-461f-ea00-a841" page="14">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="a31d-4d51-5214-761a" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Fulcrum" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="a312-5346-7e52-3348" publicationId="c835-461f-ea00-a841" page="14">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">3</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">2-6</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Barb Spiker" hidden="false" id="a09c-f8cf-a1c8-d692" type="selectionEntry" targetId="a4ee-58c6-f41d-c3e2"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4417-227e-0291-ed87" includeChildSelections="false"/>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="7550-1b97-e3f0-475a" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Foray Frigate" hidden="false" id="fd77-4402-729e-ce31" publicationId="c835-461f-ea00-a841" page="13">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="3a4d-5dff-237c-234d" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Foray" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4bcf-1e9b-747d-5a0c" publicationId="c835-461f-ea00-a841" page="13">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">3</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Porter S/L-X" id="8f2b-1eaa-0bcb-94b5" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cea9-cde2-ffab-eb98" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9f87-113f-ec47-9917" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Decon Burst" hidden="false" id="df6a-f4f0-78a1-454e" type="selectionEntry" targetId="9575-1b53-39f8-46d9"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Forestall Frigate" hidden="false" id="73a0-e3eb-d183-a175" publicationId="c835-461f-ea00-a841" page="12">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="6750-9f25-2506-25bb" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Forestall" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d317-3e18-1bc6-2281" publicationId="c835-461f-ea00-a841" page="12">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">3</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">2-6</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Scythes" hidden="false" id="7e9d-6835-1d3e-cc8c" type="selectionEntry" targetId="27d7-86ff-8ab9-5438"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e0cf-7926-46a4-c6f1" includeChildSelections="false"/>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5682-c0d7-17cc-ac7c" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Fugue Frigate" hidden="false" id="b35e-d8d4-4159-fff6" publicationId="c835-461f-ea00-a841" page="11">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="35"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="f5b0-9409-e3c2-52f3" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Fugue" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4f81-be17-8329-a184" publicationId="c835-461f-ea00-a841" page="11">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">3</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">2-6</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Lightvice" hidden="false" id="ae46-9a59-300e-76bb" type="selectionEntry" targetId="8a12-4124-e587-9095"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="cf74-2563-af4f-842a" includeChildSelections="false"/>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ab3e-6539-7059-13ce" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Logic Lighter" hidden="false" id="2e03-5ea8-6ba5-934d" publicationId="c835-461f-ea00-a841" page="10">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="4b0e-00a4-b9de-f15e" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Logic" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="86f2-6e37-4d6e-379a" publicationId="c835-461f-ea00-a841" page="10">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">16&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">2</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Rare</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Light Bombardment" hidden="false" id="20be-17b9-4391-9f4f" type="selectionEntry" targetId="3ae9-2d33-1432-e2c2" sortIndex="1"/>
+        <entryLink import="true" name="Drop Pods" hidden="false" id="39d3-8a37-06e6-20c8" type="selectionEntry" targetId="fa37-7da4-de81-1856" sortIndex="2"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1d6-dfdc-0aa7-43c0" includeChildSelections="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="bf1d-61cc-c80a-74ab" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Rare" id="dd0d-bbba-e3cb-aa6e" hidden="false" type="rule" targetId="f7ad-85f9-39f4-7e10"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vertex Corvette" hidden="false" id="9de8-4cbb-5205-cad7" publicationId="c835-461f-ea00-a841" page="9">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="f942-8f88-d77b-13c1" id="8ac8-ec75-2a4d-1563" primary="true" name="Light Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Vertex" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0657-3339-d144-0fba" publicationId="c835-461f-ea00-a841" page="9">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">2&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Descent</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Decon Slayer" hidden="false" id="dc93-b339-1c03-0f63" type="selectionEntry" targetId="e47a-d1ac-1256-852f"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="82f8-f280-e9b1-d31f" includeChildSelections="false"/>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8c7f-3013-08e3-4b2c" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Descent" id="f86e-d3d1-a7a2-be89" hidden="false" type="rule" targetId="2ae8-7705-ab9a-03c0"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Prism Cell" hidden="false" id="cc1d-d73f-232c-13a3" publicationId="c835-461f-ea00-a841" page="8">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Prism Cell" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="cb03-c252-9906-d4b6" publicationId="c835-461f-ea00-a841" page="8">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">2&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">2</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">-</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-4, Payload S-1, Vectored</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Aegis-X" id="48ae-0ccf-f95e-871a" hidden="false" type="rule" targetId="9cd1-441e-8ee8-7f13"/>
+        <infoLink name="Payload S/L-X" id="b690-b7cd-a391-700b" hidden="false" type="rule" targetId="7a4f-55fd-3916-978f"/>
+        <infoLink name="Vectored" id="f234-6564-f548-1b4a" hidden="false" type="rule" targetId="7a2f-fbe0-b3cd-98c8"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prism" hidden="false" id="914f-18d9-8aef-04d5" type="selectionEntry" targetId="1dc8-aee7-bcb1-c5b1"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="3fa9-60d3-d9be-6611" id="3fff-e135-a697-7013" primary="true" name="Payload"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74c1-4351-5538-896b" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Torpedo Cell" hidden="false" id="eb27-a8cc-a626-aab0" publicationId="c835-461f-ea00-a841" page="7">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+      </costs>
+      <profiles>
+        <profile name="Torpedo Cell" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="27b6-3a4b-ee66-6791" publicationId="c835-461f-ea00-a841" page="7">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">2&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">1</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">-</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Payload S-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Payload S/L-X" id="42b2-99a9-c482-4437" hidden="false" type="rule" targetId="7a4f-55fd-3916-978f"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Torpedo" hidden="false" id="dd5c-8218-3e0d-f0a1" type="selectionEntry" targetId="e90b-9b11-28fe-af2e"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="3fa9-60d3-d9be-6611" id="595b-98f4-c6f8-7084" primary="true" name="Payload"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22b6-a60a-dda4-4736" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lander Cell" hidden="false" id="fa7d-2348-35ee-aa9e" publicationId="c835-461f-ea00-a841" page="6">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+      </costs>
+      <profiles>
+        <profile name="Lander Cell" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="67bf-9efe-350e-f317" publicationId="c835-461f-ea00-a841" page="6">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">2&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">1</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">-</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Payload S-1, Vectored</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Payload S/L-X" id="0e68-85e4-dc6c-f71a" hidden="false" type="rule" targetId="7a4f-55fd-3916-978f"/>
+        <infoLink name="Vectored" id="8671-3b86-88a2-d32d" hidden="false" type="rule" targetId="7a2f-fbe0-b3cd-98c8"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bulk Landers" hidden="false" id="4bdc-2605-75f4-28a1" type="selectionEntry" targetId="0089-5f09-3647-73df"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="3fa9-60d3-d9be-6611" id="da93-c74a-a3b0-f2e5" primary="true" name="Payload"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73f3-da25-5c9a-58b9" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Invasion Cell" hidden="false" id="455d-c982-f6f3-31f8" publicationId="c835-461f-ea00-a841" page="5">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+      </costs>
+      <profiles>
+        <profile name="Invasion Cell" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="499c-1bf0-39f0-ed6a" publicationId="c835-461f-ea00-a841" page="5">
+          <characteristics>
+            <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">2&quot;</characteristic>
+            <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
+            <characteristic name="Hull" typeId="5253-be1d-917b-17d9">1</characteristic>
+            <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+            <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+            <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+            <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">-</characteristic>
+            <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Payload S-1, Vectored</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Payload S/L-X" id="e304-fe75-0212-7800" hidden="false" type="rule" targetId="7a4f-55fd-3916-978f"/>
+        <infoLink name="Vectored" id="5126-1574-33ec-8b30" hidden="false" type="rule" targetId="7a2f-fbe0-b3cd-98c8"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Bombardment" hidden="false" id="c6b6-57d7-573d-82a4" type="selectionEntry" targetId="e656-5bf9-f4db-a6f3" sortIndex="1"/>
+        <entryLink import="true" name="Drop Pods" hidden="false" id="5bba-60a7-0920-c524" type="selectionEntry" targetId="fa37-7da4-de81-1856" sortIndex="2"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="3fa9-60d3-d9be-6611" id="6699-503e-1807-bff4" primary="true" name="Payload"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="baef-447b-d751-93b3" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Genitor Tower" hidden="false" id="394d-a0b8-bee0-c4a9" publicationId="c835-461f-ea00-a841" page="2">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="3fa9-60d3-d9be-6611" id="b101-522e-5150-3a90" primary="true" name="Payload"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Genitor Tower" typeId="e69b-d424-94a2-0fe1" typeName="Feature" hidden="false" id="b77d-fbc2-dcba-25a1" publicationId="c835-461f-ea00-a841" page="2">
+          <characteristics>
+            <characteristic name="ES" typeId="b3be-7f64-867b-94f7">4+</characteristic>
+            <characteristic name="KS" typeId="4e0b-e781-cee2-504d">4+</characteristic>
+            <characteristic name="Special" typeId="0042-a956-225d-9293">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="33fb-e941-a531-ff01" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Groups -----" hidden="true" id="f85e-349a-b7ce-3de8"/>
+    <selectionEntry type="unit" import="true" name="Stature Battlecruiser" hidden="false" id="cb41-4584-3cda-d11f">
+      <entryLinks>
+        <entryLink import="true" name="Stature Battlecruiser" hidden="false" id="de43-1c27-7cb3-7ec9" type="selectionEntry" targetId="af03-2c21-d5ec-31a4"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="942e-8c61-56fd-df6c" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="c6cf-a78f-b4d9-cdcc" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sanctum Battlecruiser" hidden="false" id="1783-2070-1d67-2713">
+      <entryLinks>
+        <entryLink import="true" name="Sanctum Battlecruiser" hidden="false" id="735c-ea30-15dd-e602" type="selectionEntry" targetId="35b9-0e68-1ca4-37ed"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="770c-f416-4916-0dd1" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="4e42-0ae1-02f9-84e1" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scion Battlecruiser" hidden="false" id="8004-510f-6229-136c">
+      <entryLinks>
+        <entryLink import="true" name="Scion Battlecruiser" hidden="false" id="9334-e184-7480-aee0" type="selectionEntry" targetId="53e9-85e6-d2d8-74a6"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="7211-f58f-86b2-c2ae" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="fcc0-376e-babc-e1b1" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Carronade Heavy Cruiser" hidden="false" id="9234-fc92-0ff8-877a">
+      <entryLinks>
+        <entryLink import="true" name="Carronade Heavy Cruiser" hidden="false" id="e7e2-e59e-4255-0304" type="selectionEntry" targetId="cd32-8ac0-3a3f-d465"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="3d96-6f7e-0c35-2938" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="0c45-b8ec-0213-5507" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Catastrophe Heavy Cruiser" hidden="false" id="2ed0-7eeb-26fd-22a5">
+      <entryLinks>
+        <entryLink import="true" name="Catastrophe Heavy Cruiser" hidden="false" id="af3c-48e2-79c5-77e6" type="selectionEntry" targetId="068e-36ac-efdc-a588"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="7080-c186-2da9-e336" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="fc75-2dd0-4ddd-830e" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cacophony Heavy Cruiser" hidden="false" id="6e1a-2b01-a28b-6f83">
+      <entryLinks>
+        <entryLink import="true" name="Cacophony Heavy Cruiser" hidden="false" id="8ebc-c2bf-911d-2508" type="selectionEntry" targetId="6601-9350-3d0a-6a5a"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="34a0-0017-998e-422f" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="33bb-2245-c549-994e" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cataphract Heavy Cruiser" hidden="false" id="bb4d-6006-20b7-0f72">
+      <entryLinks>
+        <entryLink import="true" name="Cataphract Heavy Cruiser" hidden="false" id="d12d-5110-2db1-dfb2" type="selectionEntry" targetId="dab1-373b-7f18-9204"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="2734-306c-22de-4272" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="984d-7465-bc87-d810" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Combine Cruisers" hidden="false" id="7ddf-8b31-2b15-57b1">
+      <entryLinks>
+        <entryLink import="true" name="Combine Cruiser" hidden="false" id="f762-d72f-bf14-e548" type="selectionEntry" targetId="380a-eb7f-226b-9348"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="24a2-fccc-8ece-3c81" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="a491-69b6-99ae-a76b" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cavern Fleet Carriers" hidden="false" id="1c0e-82b6-ba79-c275">
+      <entryLinks>
+        <entryLink import="true" name="Cavern Fleet Carrier" hidden="false" id="f7f0-db01-6fb5-333c" type="selectionEntry" targetId="bad1-cefb-c4a1-0cf9"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="9dae-8e2c-6329-c45d" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="db6a-dd9b-3d62-eb5c" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cosmic Cruisers" hidden="false" id="1935-0e23-f211-7976">
+      <entryLinks>
+        <entryLink import="true" name="Cosmic Cruiser" hidden="false" id="645d-73ee-cabb-72dd" type="selectionEntry" targetId="5e63-f71e-203a-145d"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="3832-ff6a-6dfc-ae2f" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="ef4d-7eaa-058b-6d4a" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Comet Cruisers" hidden="false" id="41e0-f7d9-603e-d204">
+      <entryLinks>
+        <entryLink import="true" name="Comet Cruiser" hidden="false" id="cec5-905d-8b52-7e5b" type="selectionEntry" targetId="da54-2c5a-83c6-7cef"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="a5e1-c063-fdd6-ea7b" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="5d26-8c0e-4714-a0d7" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Choral Cruisers" hidden="false" id="ee12-6517-b19a-38d0">
+      <entryLinks>
+        <entryLink import="true" name="Choral Cruiser" hidden="false" id="52ad-b603-2e8b-4263" type="selectionEntry" targetId="25ba-51ee-460f-8952"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="8de9-d4f2-cab3-f111" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="2131-1de0-0c55-a1fd" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Conqueror Cruisers" hidden="false" id="4cdf-3b8d-b77f-929c">
+      <entryLinks>
+        <entryLink import="true" name="Conqueror Cruiser" hidden="false" id="81ab-5bbd-0797-88ee" type="selectionEntry" targetId="a8b3-c839-0c17-51e2"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="b802-6b60-3cb7-cd60" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="cb8c-3a1f-3bf1-2048" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Construct Cruisers" hidden="false" id="c007-ee43-9cd6-462a">
+      <entryLinks>
+        <entryLink import="true" name="Construct Cruiser" hidden="false" id="935a-1b09-3eac-b944" type="selectionEntry" targetId="609e-2d80-9e0f-a10a"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="a1f4-f57d-470b-7d87" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="baa3-27d6-f358-5dc7" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Callous Cruisers" hidden="false" id="9c48-fdf9-a570-19c9">
+      <entryLinks>
+        <entryLink import="true" name="Callous Cruiser" hidden="false" id="ef8a-952f-8c36-1214" type="selectionEntry" targetId="24c7-5ae6-50fb-a29f"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="7cfe-d374-2e28-635e" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="581c-7770-7179-8918" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Charger Light Cruisers" hidden="false" id="bfde-c9ca-fb8b-3f09">
+      <entryLinks>
+        <entryLink import="true" name="Charger Light Cruiser" hidden="false" id="c1ce-e00c-89b0-7064" type="selectionEntry" targetId="71b6-9fc2-a031-24e1"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="6d6d-a02d-adad-aa7d" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="c254-f857-6db9-e81f" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cipher Light Cruisers" hidden="false" id="3d89-f034-beb4-fa2a">
+      <entryLinks>
+        <entryLink import="true" name="Cipher Light Cruiser" hidden="false" id="4ef8-78aa-4828-b6e1" type="selectionEntry" targetId="e827-9515-6dcb-3616"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="bf97-4a03-fe9e-ce6a" primary="true" name="Medium Groups"/>
+        <categoryLink targetId="default-category" id="8131-c3c2-da3a-1e04" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cache Light Cruisers" hidden="false" id="0a7d-b34c-ac2c-200e">
+      <entryLinks>
+        <entryLink import="true" name="Cache Light Cruiser" hidden="false" id="897f-ebec-200b-d028" type="selectionEntry" targetId="71cf-78c6-f529-68aa"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="3b61-805c-fe5d-7886" primary="false" name="Group"/>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="d48c-887a-f8ea-3851" primary="true" name="Medium Groups"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Diode Destroyers" hidden="false" id="0e4c-242d-221b-5212">
+      <entryLinks>
+        <entryLink import="true" name="Diode Destroyer" hidden="false" id="e944-d485-7cf1-8d9e" type="selectionEntry" targetId="d168-8007-3112-6025"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="165d-d3e2-3025-cdaf" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="5b71-a58f-e506-2ce5" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Domain Destroyers" hidden="false" id="1b92-53c4-c99d-a3e8">
+      <entryLinks>
+        <entryLink import="true" name="Domain Destroyer" hidden="false" id="0c4e-6754-61e3-dce2" type="selectionEntry" targetId="7542-ffd4-60eb-341e"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="dd97-63c0-5af4-b70b" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="83b2-4fb6-96ab-6467" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tally Cutter" hidden="false" id="61e2-8785-7be5-cd94">
+      <entryLinks>
+        <entryLink import="true" name="Tally Cutter" hidden="false" id="09ae-5bd9-651d-6c40" type="selectionEntry" targetId="4b85-1009-36c6-a649"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="4384-a4ef-a63c-5abe" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="741d-551c-712c-ab95" primary="false" name="Group"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="003a-cd64-8b8c-81d8"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="003a-cd64-8b8c-81d8">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="3" field="003a-cd64-8b8c-81d8">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="4" field="003a-cd64-8b8c-81d8">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tine Cutters" hidden="false" id="33b3-949e-3580-112b">
+      <entryLinks>
+        <entryLink import="true" name="Tine Cutter" hidden="false" id="0175-65ab-a40a-b419" type="selectionEntry" targetId="517e-39fc-729f-9877"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="aa5d-00f2-d933-6f4e" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="54e3-7a00-e3a0-0de1" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Torrent Cutters" hidden="false" id="2516-5b8c-866d-c212">
+      <entryLinks>
+        <entryLink import="true" name="Torrent Cutter" hidden="false" id="577c-61b9-5c6c-24e0" type="selectionEntry" targetId="39e3-bcff-9b22-b1d5"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="bac5-17b3-3477-44b2" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="844e-0e8a-ffbb-e257" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Matrix Monitors" hidden="false" id="0963-c96b-307d-ea3c">
+      <entryLinks>
+        <entryLink import="true" name="Matrix Monitor" hidden="false" id="a136-844f-64be-cecc" type="selectionEntry" targetId="205a-106d-4cdc-4257"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="031c-a26e-f7b4-934e" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="c4f1-c91c-e5c1-cf56" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Monarch Monitors" hidden="false" id="6d1a-16ed-cb53-6825">
+      <entryLinks>
+        <entryLink import="true" name="Monarch Monitor" hidden="false" id="4c1d-84c4-0207-daf2" type="selectionEntry" targetId="9438-d4b5-068e-bf7a"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="161d-b3ff-defa-07a2" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="0550-5346-c0e6-bf25" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mantle Monitors" hidden="false" id="2930-1f2a-0ea6-675e">
+      <entryLinks>
+        <entryLink import="true" name="Mantle Monitor" hidden="false" id="b768-a85e-a620-908a" type="selectionEntry" targetId="d851-9f16-65ca-f934"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="ce22-4a7e-edb7-8303" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="8e80-c180-d665-d440" primary="false" name="Group"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="65b7-ac77-011d-fd7e"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="65b7-ac77-011d-fd7e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="3" field="65b7-ac77-011d-fd7e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="4" field="65b7-ac77-011d-fd7e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fresco Frigates" hidden="false" id="6378-1b82-30f6-9eaa">
+      <entryLinks>
+        <entryLink import="true" name="Fresco Frigate" hidden="false" id="a3f4-76c3-946d-0309" type="selectionEntry" targetId="404f-014a-f934-c455"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="4884-442c-6d6d-1c8b" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="d46e-2b1f-4b4e-2104" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fulcrum Frigates" hidden="false" id="ded5-7fd6-1efa-a3d8">
+      <entryLinks>
+        <entryLink import="true" name="Fulcrum Frigate" hidden="false" id="a24b-93c3-4f05-55f5" type="selectionEntry" targetId="2038-d32a-a059-b173"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="71a6-9442-7a8d-5bcd" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="6ce7-f90e-9796-6c4e" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Foray Frigates" hidden="false" id="ad2f-d6f3-2ca6-ec3f">
+      <entryLinks>
+        <entryLink import="true" name="Foray Frigate" hidden="false" id="237f-1ff6-81ff-dc91" type="selectionEntry" targetId="fd77-4402-729e-ce31"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="a3b9-4297-6981-1edb" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="0064-458e-77b1-f1f2" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Forestall Frigates" hidden="false" id="142a-af49-d7da-d053">
+      <entryLinks>
+        <entryLink import="true" name="Forestall Frigate" hidden="false" id="b2af-c79d-509f-a279" type="selectionEntry" targetId="73a0-e3eb-d183-a175"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="6cd3-4beb-c9bd-e4d0" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="6e07-4f3f-aad6-fe4a" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fugue Frigates" hidden="false" id="6259-8c71-8d27-795e">
+      <entryLinks>
+        <entryLink import="true" name="Fugue Frigate" hidden="false" id="453a-752d-508f-d9ba" type="selectionEntry" targetId="b35e-d8d4-4159-fff6"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="08de-23df-8ed8-e814" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="847c-ff9c-f018-f414" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Logic Lighters" hidden="false" id="6671-3a2e-f0e8-2252">
+      <entryLinks>
+        <entryLink import="true" name="Logic Lighter" hidden="false" id="4c3e-3642-6d52-84aa" type="selectionEntry" targetId="2e03-5ea8-6ba5-934d"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="d94b-3ea8-1833-2c72" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="6c2c-9753-e94b-36be" primary="false" name="Group"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="dbec-8cbd-f652-6e00"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="dbec-8cbd-f652-6e00">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="3" field="dbec-8cbd-f652-6e00">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="4" field="dbec-8cbd-f652-6e00">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vertex Corvettes" hidden="false" id="ee76-490b-5857-b425">
+      <entryLinks>
+        <entryLink import="true" name="Vertex Corvette" hidden="false" id="2200-3d78-871a-f2d3" type="selectionEntry" targetId="9de8-4cbb-5205-cad7"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="73a0-d8c9-d093-7130" primary="true" name="Light Groups"/>
+        <categoryLink targetId="default-category" id="60c7-b900-c26a-4125" primary="false" name="Group"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Prism Cells" hidden="false" id="3d3b-858f-509f-4646">
+      <categoryLinks>
+        <categoryLink targetId="8c2b-ea4d-8bea-c6a2" id="9936-b4df-87ba-c76c" primary="true" name="Payload Groups"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Prism Cell" hidden="false" id="4c42-ad1f-a43d-e530" type="selectionEntry" targetId="cc1d-d73f-232c-13a3"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Torpedo Cells" hidden="false" id="a73b-16d7-dde0-f99c">
+      <categoryLinks>
+        <categoryLink targetId="8c2b-ea4d-8bea-c6a2" id="87f4-38fa-0d87-83e8" primary="true" name="Payload Groups"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Torpedo Cell" hidden="false" id="f3a9-3502-ae5a-8e1f" type="selectionEntry" targetId="eb27-a8cc-a626-aab0"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lander Cells" hidden="false" id="0784-3c85-ebd0-a488">
+      <categoryLinks>
+        <categoryLink targetId="8c2b-ea4d-8bea-c6a2" id="c66a-e9fe-924f-ab99" primary="true" name="Payload Groups"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Lander Cell" hidden="false" id="0db7-d6e1-3710-30e9" type="selectionEntry" targetId="fa7d-2348-35ee-aa9e"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Invasion Cells" hidden="false" id="dd68-15ce-e117-d142">
+      <categoryLinks>
+        <categoryLink targetId="8c2b-ea4d-8bea-c6a2" id="6606-61e7-ffef-d461" primary="true" name="Payload Groups"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Invasion Cell" hidden="false" id="5c1e-92bb-f0df-f373" type="selectionEntry" targetId="455d-c982-f6f3-31f8"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Genitor Towers" hidden="false" id="b598-59fa-cab1-15ee">
+      <entryLinks>
+        <entryLink import="true" name="Genitor Tower" hidden="false" id="193e-a9a5-6f9a-6ade" type="selectionEntry" targetId="394d-a0b8-bee0-c4a9"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="8c2b-ea4d-8bea-c6a2" id="b8c1-d2fd-a3ae-536d" primary="true" name="Payload Groups"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Weapons -----" hidden="true" id="8a08-1923-3d9d-4f19"/>
+    <selectionEntry type="upgrade" import="true" name="Barb Launcher" hidden="false" id="1005-cf24-dc36-a63d">
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1cea-020d-eaf0-2d4f" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1dc3-f573-72c4-66f4" includeChildSelections="false"/>
+      </constraints>
+      <comment>[x2] FN 1/2+/4/K</comment>
+      <infoLinks>
+        <infoLink name="Barb Launcher" id="bacb-b134-0f05-4ba4" hidden="false" type="profile" targetId="76b6-65c7-226b-b98f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Barb Launcher" hidden="false" id="c5fe-cf87-763d-5a5e">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fba-adbb-3769-5c04" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6403-47ce-866d-49ff" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 1/2+/4/K</comment>
+      <infoLinks>
+        <infoLink name="Barb Launcher" id="5a5c-3314-03aa-a808" hidden="false" type="profile" targetId="76b6-65c7-226b-b98f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Barb Spiker" hidden="false" id="a4ee-58c6-f41d-c3e2">
+      <profiles>
+        <profile name="Barb Spiker" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7621-45f9-6e6d-01a8">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">1</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a2b4-0d09-8819-2c90" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1969-7f54-430a-5b3c" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 1/2+/2/K</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Barb Stinger" hidden="false" id="491b-4989-9981-2c90">
+      <profiles>
+        <profile name="Barb Stinger" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="fb5d-124d-dce5-524b">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">1</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fb2-ae2d-c897-a253" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffde-8c6b-f1dd-404d" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 1/2+/2/K</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Barb Stinger" hidden="false" id="99e5-77e8-4318-da09">
+      <profiles>
+        <profile name="Barb Stinger" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="8632-dc00-f5c4-2525">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">1</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd90-631d-2d57-0102" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4eee-b6e3-6b7f-61ff" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 1/2+/1/K</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bisector" hidden="false" id="fbb0-03e1-e6ea-0f34">
+      <profiles>
+        <profile name="Bisector" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cb7b-ccb0-6224-b855">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Calibre-H/C, Penetrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bloom-X" id="8c0d-2abe-70b4-4fc8" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+        <infoLink name="Calibre-X" id="46c7-0dd4-98b1-5c32" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
+        <infoLink name="Penetrator" id="38f2-2431-b691-1730" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd43-fed0-c6fa-5ec5-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd43-fed0-c6fa-5ec5-max" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 2/3+/3/E Bl-1 Cal-H/C Pen</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Decon Annihilator" hidden="false" id="a4a4-23e2-4ab4-e239">
+      <profiles>
+        <profile name="Decon Annihilator" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cdf5-f52d-78b3-23c7">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">12</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2170-23a5-b268-a362" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63cf-1e7a-0ae9-5a2e" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 12/3+/1/E</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Decon Cannon" hidden="false" id="61be-530f-81e1-90f2">
+      <profiles>
+        <profile name="Decon Cannon" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="1716-21d9-bcd4-5bb7">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">7</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c13c-6858-f68c-e860" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d8b-59b7-f14e-9039" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 7/3+/1/E</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Decon Blast" hidden="false" id="ff82-4f61-22da-9d39">
+      <profiles>
+        <profile name="Decon Blast" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cfed-c755-91f9-4100">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e451-ba31-d6b7-583f" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bee4-b8c1-6b49-5dab" includeChildSelections="false"/>
+      </constraints>
+      <comment>F/S/R 4/4+/1/E</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Decon Blaster" hidden="false" id="de4f-a761-d26e-ca57">
+      <profiles>
+        <profile name="Decon Blaster" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="9b98-82f9-949e-abe9">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c171-2892-820e-5485" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="680f-bcee-b1ca-9ae8" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 3/3+/1/E</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Decon Slayer" hidden="false" id="e47a-d1ac-1256-852f">
+      <profiles>
+        <profile name="Decon Slayer" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="4137-5c86-986e-87c5">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Air to Air</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a617-3cf3-45f7-123a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c94b-2095-5d7d-0bd3" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 3/3+/1/E AtA</comment>
+      <infoLinks>
+        <infoLink name="Air to Air" id="47b0-d7d4-f2d9-db26" hidden="false" type="rule" targetId="ceee-e18a-c60c-0ef5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Decon Burst" hidden="false" id="9575-1b53-39f8-46d9">
+      <profiles>
+        <profile name="Decon Burst" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="8e17-1043-8ee0-1aa3">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">1</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a33b-c6d2-4099-9362" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f629-aadc-5ae9-f622" includeChildSelections="false"/>
+      </constraints>
+      <comment>F/S/R 1/4+/1/E</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hyper Lightvice" hidden="false" id="f7df-7ebb-ffb8-301c">
+      <profiles>
+        <profile name="Hyper Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="542b-6a5e-0b2d-bfcc">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">5</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Close Action, Focused</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bloom-X" id="d0c2-117e-41a1-274f" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+        <infoLink name="Close Action" id="4150-422a-6972-8583" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Focused" id="eb96-0d6b-2b8b-d25e" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1ad-7d02-61ae-4966" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e136-8d71-8c9a-62ed" includeChildSelections="false"/>
+      </constraints>
+      <comment>F 2/2+/5/K Bl-1 CA Foc</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Lightvice" hidden="false" id="d945-02c0-f69a-78e8">
+      <profiles>
+        <profile name="Heavy Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="e760-4a60-6d81-246e">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Focused</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Close Action" id="7ba1-2671-2a0b-8aa8" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Focused" id="7fa7-6de1-3e7b-7a8a" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7ed-a145-7d41-0d08-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7ed-a145-7d41-0d08-max" includeChildSelections="false"/>
+      </constraints>
+      <comment>F 2/2+/3/K CA Foc</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lightvice" hidden="false" id="8a12-4124-e587-9095">
+      <profiles>
+        <profile name="Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ee2e-07ab-a4d8-e718">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">1</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Close Action" id="6ab0-e569-3300-c834" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88bc-127d-9871-bed0" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c14-9fed-f7af-ba6e" includeChildSelections="false"/>
+      </constraints>
+      <comment>F/S 1/2+/3/K CA</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="41e6-babb-2487-3b35">
+      <infoLinks>
+        <infoLink name="Burnthrough-X" id="09f7-9f3a-2603-8bce" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+        <infoLink name="Fusillade-X" id="6b20-3379-f26e-2c30" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Scythes" id="7870-c261-b15e-1a60" hidden="false" type="profile" targetId="afaa-6d9f-302b-4524"/>
+        <infoLink name="Scythes" id="2e4e-7d00-9588-9b94" hidden="false" type="rule" targetId="da6d-9de5-99cb-d405"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2dd1-a898-374e-509f-min" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2dd1-a898-374e-509f-max" includeChildSelections="false"/>
+      </constraints>
+      <comment>[x2] FN 8/4+/1/E BT-1 Fus-2</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="b420-9dac-d07e-3511">
+      <infoLinks>
+        <infoLink name="Burnthrough-X" id="86b6-edfd-98a5-daff" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+        <infoLink name="Fusillade-X" id="4b6d-4703-7495-7221" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Scythes" id="2eba-db38-d95b-bbef" hidden="false" type="profile" targetId="afaa-6d9f-302b-4524"/>
+        <infoLink name="Scythes" id="b4cf-58e1-b46e-d237" hidden="false" type="rule" targetId="da6d-9de5-99cb-d405"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d24-d960-d9b6-1986" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98fc-66cb-6cf7-2cdc" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 8/4+/1/E BT-1 Fus-2</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="27d7-86ff-8ab9-5438">
+      <infoLinks>
+        <infoLink name="Burnthrough-X" id="7c7d-22d5-9ebe-c9df" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+        <infoLink name="Scythes" id="1edc-1298-cc93-5216" hidden="false" type="rule" targetId="da6d-9de5-99cb-d405"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bcd-bac3-244f-0f5f" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f389-d71b-ed55-6ccb" includeChildSelections="false"/>
+      </constraints>
+      <comment>F 4/4+/1/E BT-1</comment>
+      <profiles>
+        <profile name="Scythes" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f92c-967f-a6e0-77c5">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scythe Cluster" hidden="false" id="14d0-202c-3e93-cfee">
+      <infoLinks>
+        <infoLink name="Burnthrough-X" id="3429-2491-6f4c-cd01" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+        <infoLink name="Fusillade-X" id="82a0-f084-8d6a-e5df" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Scythes" id="ef32-01d7-d2b4-268b" hidden="false" type="profile" targetId="afaa-6d9f-302b-4524"/>
+        <infoLink name="Scythe Cluster" id="4a42-ae7b-1b04-aac9" hidden="false" type="rule" targetId="b632-52e2-1b0a-c0a3"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e759-0279-53bb-0e3b" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b0f-2da7-ee9a-b1f3" includeChildSelections="false"/>
+      </constraints>
+      <comment>F 6/4+/1/E BT-1 Fus-4</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Winnower" hidden="false" id="d0e9-7919-19c0-b2c8">
+      <profiles>
+        <profile name="Winnower" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ea5e-25e1-5535-efd6">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-L, Close Action</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Calibre-X" id="4ee7-736d-40e5-f04f" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
+        <infoLink name="Close Action" id="0a3a-9b9d-4e30-2de7" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5978-8874-a159-81e8-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5978-8874-a159-81e8-max" includeChildSelections="false"/>
+      </constraints>
+      <comment>F/S 5/4+/1/E Cal-L CA</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Thermator" hidden="false" id="0c95-f250-f157-3f91">
+      <profiles>
+        <profile name="Thermator" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="9dc9-7980-a0af-ea91">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Scald-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Overcharge" id="910f-36fb-5175-37b4" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
+        <infoLink name="Scald-X" id="a070-97c0-88be-f038" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df2a-86d8-07e7-db20-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df2a-86d8-07e7-db20-max" includeChildSelections="false"/>
+      </constraints>
+      <comment>F 3/4+/2/E OC Scald-1</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bombardment" hidden="false" id="e656-5bf9-f4db-a6f3">
+      <profiles>
+        <profile name="Bombardment" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c0be-c565-b33f-0f86">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt Launch, Bombardment</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>F/S/R 3/5+/2/E Alt-L Bmb</comment>
+      <infoLinks>
+        <infoLink name="Alt Launch" id="8732-a271-b70f-db37" hidden="false" type="rule" targetId="b63a-36ea-4020-10c5"/>
+        <infoLink name="Bombardment" id="d46d-5fd0-15af-69fc" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="370c-4524-b93d-f280-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="370c-4524-b93d-f280-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Light Bombardment" hidden="false" id="3ae9-2d33-1432-e2c2">
+      <profiles>
+        <profile name="Light Bombardment" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="89d9-ede0-200c-1b5b">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Alt Launch</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>F/S/R 3/5+/1/E Bmb Alt-L</comment>
+      <infoLinks>
+        <infoLink name="Bombardment" id="e5da-6c2f-5dbb-d27e" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
+        <infoLink name="Alt Launch" id="c377-0fb2-8eb7-9307" hidden="false" type="rule" targetId="b63a-36ea-4020-10c5"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad06-83f2-58b9-bae7-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad06-83f2-58b9-bae7-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ghost Orb" hidden="false" id="7b56-3538-f1ca-10fd">
+      <profiles>
+        <profile name="Ghost Orb" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ded2-907a-d220-c425">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Status</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>F/S 2/4+/2/E CA St</comment>
+      <infoLinks>
+        <infoLink name="Close Action" id="122f-ede5-9a58-2687" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Status" id="fdc3-927f-b47b-6bd8" hidden="false" type="rule" targetId="ea58-a80c-c3de-e165"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce91-7d09-2f48-6d30-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce91-7d09-2f48-6d30-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Graviton Lens" hidden="false" id="087e-6d37-cefe-4ce1">
+      <profiles>
+        <profile name="Graviton Lens" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a1cf-779d-1977-4455">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>F/S 4/3+/1/C CA</comment>
+      <infoLinks>
+        <infoLink name="Close Action" id="dfe6-3efc-3b01-5e21" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6476-d9c2-0cc3-fabe-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6476-d9c2-0cc3-fabe-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gravitic Stave" hidden="false" id="2c47-653f-eb25-5f6a">
+      <profiles>
+        <profile name="Gravitic Stave" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f67f-4df6-9274-a7e4">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Arrest-2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>FN 3/4+/1/C Arr-2</comment>
+      <infoLinks>
+        <infoLink name="Arrest-X" id="0056-a69e-1f77-90f6" hidden="false" type="rule" targetId="7fa4-03e2-d2a7-de9b"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a33e-7b57-e102-3c63-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a33e-7b57-e102-3c63-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gravitic Pulveriser" hidden="false" id="6504-3bdd-3d6e-4059">
+      <profiles>
+        <profile name="Gravitic Pulveriser (Anti-Ship)" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="d11d-8182-50ea-39da">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Arrest-2, Close Action</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gravitic Pulveriser (Bombardment)" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="db1f-5926-42fd-5a7a">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Bombardment</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>F 6/3+/1/C Arr-2 CA || F 6/4+/1/C Bmb</comment>
+      <infoLinks>
+        <infoLink name="Alt-X" id="b99c-ceaf-ff30-0959" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
+        <infoLink name="Arrest-X" id="24ec-125b-c0b8-03f4" hidden="false" type="rule" targetId="7fa4-03e2-d2a7-de9b"/>
+        <infoLink name="Close Action" id="35a9-aee3-ab7f-9094" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Bombardment" id="56f3-8e64-c183-2bf4" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2b1-48cb-e996-ca43-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2b1-48cb-e996-ca43-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Prism" hidden="false" id="1dc8-aee7-bcb1-c5b1">
+      <profiles>
+        <profile name="Prism" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a50f-825c-e0d1-97f1">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>F/S/R 3/3+/1/E</comment>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ed2-4fb2-36df-c218-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ed2-4fb2-36df-c218-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Load -----" hidden="true" id="fa55-3eba-9997-521f"/>
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="00d8-9dd8-8af4-2de3">
+      <profiles>
+        <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="9609-0474-3485-1073">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">5</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a557-d3fd-cba3-a293" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6559-4aa9-c91f-5820" includeChildSelections="false"/>
+      </constraints>
+      <comment>5</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="65bd-53c9-d2c9-643c">
+      <profiles>
+        <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="5ce0-026b-37b8-62fc">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f90-2c5c-4b3f-e1f9" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f2a-c272-f456-62ae" includeChildSelections="false"/>
+      </constraints>
+      <comment>2</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="0089-5f09-3647-73df">
+      <profiles>
+        <profile name="Bulk Landers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="b0e4-1704-bcce-1b4d">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a29f-a402-7b6c-69cb" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68c0-85b6-e5e4-0d78" includeChildSelections="false"/>
+      </constraints>
+      <comment>2</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Drop Pods" hidden="false" id="fa37-7da4-de81-1856">
+      <profiles>
+        <profile name="Drop Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="105f-e689-353c-6520">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">1</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f78f-23a1-f6df-5c03" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f6f-03f3-35e4-d0cf" includeChildSelections="false"/>
+      </constraints>
+      <comment>1</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="e90b-9b11-28fe-af2e">
+      <profiles>
+        <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="944e-deaf-6521-cba0">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">1</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd22-c369-af42-7686" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9bd-2edd-94a3-624f" includeChildSelections="false"/>
+      </constraints>
+      <comment>1</comment>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Bioficer Accumulator" hidden="false" id="f332-a9eb-0f60-764a" targetId="ee44-fd8d-2aec-361f" type="selectionEntry"/>
+    <entryLink import="true" name="Stature Battlecruiser" hidden="false" id="fc31-dc77-0dd6-8806" targetId="cb41-4584-3cda-d11f" type="selectionEntry"/>
+    <entryLink import="true" name="Sanctum Battlecruiser" hidden="false" id="b6d9-ada1-ac12-9790" targetId="1783-2070-1d67-2713" type="selectionEntry"/>
+    <entryLink import="true" name="Scion Battlecruiser" hidden="false" id="cc73-2a60-3a70-7f69" targetId="8004-510f-6229-136c" type="selectionEntry"/>
+    <entryLink import="true" name="Catastrophe Heavy Cruisers" hidden="false" id="127c-e9d8-61da-9b99" targetId="9234-fc92-0ff8-877a" type="selectionEntry"/>
+    <entryLink import="true" name="Catastrophe Heavy Cruiser" hidden="false" id="fef4-4ece-1dcb-d0e5" targetId="2ed0-7eeb-26fd-22a5" type="selectionEntry"/>
+    <entryLink import="true" name="Cacophony Heavy Cruiser" hidden="false" id="6276-db23-db1a-0515" targetId="6e1a-2b01-a28b-6f83" type="selectionEntry"/>
+    <entryLink import="true" name="Cataphract Heavy Cruiser" hidden="false" id="efee-3609-9ec4-664f" targetId="bb4d-6006-20b7-0f72" type="selectionEntry"/>
+    <entryLink import="true" name="Cavern Fleet Carriers" hidden="false" id="e154-5e31-285e-26d7" targetId="7ddf-8b31-2b15-57b1" type="selectionEntry"/>
+    <entryLink import="true" name="Cavern Fleet Carriers" hidden="false" id="12bc-e005-1965-a399" targetId="1c0e-82b6-ba79-c275" type="selectionEntry"/>
+    <entryLink import="true" name="Cosmic Cruisers" hidden="false" id="3ff9-3138-5b4a-0c19" targetId="1935-0e23-f211-7976" type="selectionEntry"/>
+    <entryLink import="true" name="Comet Cruisers" hidden="false" id="2827-ae15-1a4d-c6b0" targetId="41e0-f7d9-603e-d204" type="selectionEntry"/>
+    <entryLink import="true" name="Choral Cruisers" hidden="false" id="fe6a-dac8-869e-75b6" targetId="ee12-6517-b19a-38d0" type="selectionEntry"/>
+    <entryLink import="true" name="Conqueror Cruisers" hidden="false" id="5e4d-1e8c-758d-15ac" targetId="4cdf-3b8d-b77f-929c" type="selectionEntry"/>
+    <entryLink import="true" name="Construct Cruisers" hidden="false" id="43a9-7202-8152-9857" targetId="c007-ee43-9cd6-462a" type="selectionEntry"/>
+    <entryLink import="true" name="Callous Cruisers" hidden="false" id="c4f8-b339-045e-cf99" targetId="9c48-fdf9-a570-19c9" type="selectionEntry"/>
+    <entryLink import="true" name="Charger Light Cruisers" hidden="false" id="3a4e-74eb-b077-1573" targetId="bfde-c9ca-fb8b-3f09" type="selectionEntry"/>
+    <entryLink import="true" name="Cipher Light Cruisers" hidden="false" id="1022-9ba3-d95d-449c" targetId="3d89-f034-beb4-fa2a" type="selectionEntry"/>
+    <entryLink import="true" name="Cache Light Cruisers" hidden="false" id="5d26-7f46-b22a-a461" targetId="0a7d-b34c-ac2c-200e" type="selectionEntry"/>
+    <entryLink import="true" name="Diode Destroyer" hidden="false" id="6cf5-a56b-6bae-b87a" targetId="0e4c-242d-221b-5212" type="selectionEntry"/>
+    <entryLink import="true" name="Domain Destroyer" hidden="false" id="3f40-5512-4fdc-b118" targetId="1b92-53c4-c99d-a3e8" type="selectionEntry"/>
+    <entryLink import="true" name="Tally Cutter" hidden="false" id="20a2-6026-33b3-d5d2" targetId="61e2-8785-7be5-cd94" type="selectionEntry"/>
+    <entryLink import="true" name="Tine Cutter" hidden="false" id="2a57-ec00-09b3-2ee5" targetId="33b3-949e-3580-112b" type="selectionEntry"/>
+    <entryLink import="true" name="Torrent Cutter" hidden="false" id="4b75-ffba-2e7b-90b6" targetId="2516-5b8c-866d-c212" type="selectionEntry"/>
+    <entryLink import="true" name="Matrix Monitor" hidden="false" id="d305-a75c-bcb2-0b05" targetId="0963-c96b-307d-ea3c" type="selectionEntry"/>
+    <entryLink import="true" name="Monarch Monitor" hidden="false" id="3c3c-8ef7-35e0-3a18" targetId="6d1a-16ed-cb53-6825" type="selectionEntry"/>
+    <entryLink import="true" name="Mantle Monitor" hidden="false" id="9d2c-115c-9eb6-466b" targetId="2930-1f2a-0ea6-675e" type="selectionEntry"/>
+    <entryLink import="true" name="Fresco Frigates" hidden="false" id="2605-f3b5-cc22-b502" targetId="6378-1b82-30f6-9eaa" type="selectionEntry"/>
+    <entryLink import="true" name="Fulcrum Frigates" hidden="false" id="7cf0-9705-d184-d698" targetId="ded5-7fd6-1efa-a3d8" type="selectionEntry"/>
+    <entryLink import="true" name="Foray Frigates" hidden="false" id="b88d-f17d-a87f-30b2" targetId="ad2f-d6f3-2ca6-ec3f" type="selectionEntry"/>
+    <entryLink import="true" name="Forestall Frigates" hidden="false" id="47b5-4855-1138-2c69" targetId="142a-af49-d7da-d053" type="selectionEntry"/>
+    <entryLink import="true" name="Fugue Frigates" hidden="false" id="0ef2-a415-647b-432f" targetId="6259-8c71-8d27-795e" type="selectionEntry"/>
+    <entryLink import="true" name="Logic Lighters" hidden="false" id="0a9e-b4bd-c3a3-40c7" targetId="6671-3a2e-f0e8-2252" type="selectionEntry"/>
+    <entryLink import="true" name="Vertex Corvettes" hidden="false" id="9c04-8386-612d-4f2c" targetId="ee76-490b-5857-b425" type="selectionEntry"/>
+    <entryLink import="true" name="Cells" hidden="false" id="b564-7735-e5e5-4f3c" targetId="3d3b-858f-509f-4646" type="selectionEntry"/>
+    <entryLink import="true" name="Torpedo Cells" hidden="false" id="b947-694b-874c-cd35" targetId="a73b-16d7-dde0-f99c" type="selectionEntry"/>
+    <entryLink import="true" name="Lander Cells" hidden="false" id="3b8c-679b-7024-c96c" targetId="0784-3c85-ebd0-a488" type="selectionEntry"/>
+    <entryLink import="true" name="Invasion Cells" hidden="false" id="efe3-417a-eebe-af34" targetId="dd68-15ce-e117-d142" type="selectionEntry"/>
+    <entryLink import="true" name="Deployable Features" hidden="false" id="4914-5bb9-b90c-eb3d" targetId="b598-59fa-cab1-15ee" type="selectionEntry"/>
+  </entryLinks>
+  <publications>
+    <publication name="Bioficer Combined Fleet Stats (241016)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (241016)"/>
+  </publications>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="New Catalogue (link)" id="347a-e74b-6284-bab3" targetId="23ac-37ab-d4cb-5dd5"/>
+  </catalogueLinks>
+  <sharedRules>
+    <rule name="Tractor Beamer" id="c9fa-8382-0412-768a" hidden="false">
+      <description>At the end of this Ship’s activation, you may pick a single friendly Ship with the Payload special rule within 6”. Move that ship up to 4” in any direction.</description>
+    </rule>
+    <rule name="Gravitational Lensing" id="2fcc-32b0-e2ea-3d0d" hidden="false">
+      <description>Once per round, when determining targets for a friendly ship within 8” of this ship, you may treat one of its weapons as having an Arc of F/S instead of its normal Arcs for that attack.</description>
+    </rule>
+    <rule name="Scythes" id="da6d-9de5-99cb-d405" hidden="false">
+      <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
+    </rule>
+    <rule name="Scythe Cluster" id="b632-52e2-1b0a-c0a3" hidden="false">
+      <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile name="Barb Launcher" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="76b6-65c7-226b-b98f">
+      <characteristics>
+        <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">1</characteristic>
+        <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+        <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">4</characteristic>
+        <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scythes" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="afaa-6d9f-302b-4524">
+      <characteristics>
+        <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+        <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+        <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+        <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1, Fusillade-4</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
