@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Rear Admiral" hidden="false" id="a461-4e5d-ff05-31f0" publicationId="9813-8e60-542d-9381" page="1">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="fb8b-57b3-d46c-d679" id="a1cb-367e-591b-d718" primary="true" name="Admirals"/>
+        <categoryLink targetId="79f7-4244-6fb7-d41a" id="f3c2-b057-c337-24aa" primary="false" name="Faction/Famous Admirals"/>
+      </categoryLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Ships -----" hidden="true" id="1719-066b-7330-c833"/>
     <selectionEntry type="model" import="true" name="Washington Supercarrier" hidden="false" id="e965-1de9-4353-d144" publicationId="9813-8e60-542d-9381" page="52">
       <categoryLinks>
@@ -2515,25 +2524,6 @@
         <infoLink name="UF-4200 Mass Driver Turrets" id="77b0-8334-69eb-fb3a" hidden="false" type="profile" targetId="38e5-e410-4c85-d3e4"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turret Triad" hidden="false" id="47c2-b8d3-e18a-c007">
-      <profiles>
-        <profile name="UF-4200 Mass Driver Turret Triad" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5a1e-0643-1c17-d785">
-          <characteristics>
-            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
-            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
-            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f80-71f3-1371-c087" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4067-e19e-aa7a-791f" includeChildSelections="false"/>
-      </constraints>
-      <comment>F/S 4/4+/1/K</comment>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="UF-2200 Mass Driver Turret Triad" hidden="false" id="040f-02a3-91cf-be69">
       <profiles>
         <profile name="UF-2200 Mass Driver Turret Triad" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6d1a-5ba0-8843-a14c">
@@ -2986,6 +2976,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
+    <entryLink import="true" name="Rear Admiral" hidden="false" id="967d-15d6-55c9-501c" targetId="a461-4e5d-ff05-31f0" type="selectionEntry"/>
     <entryLink import="true" name="Washington Supercarrier" hidden="false" id="af2a-fcc8-bf14-7696" targetId="0129-61bd-271f-de28" type="selectionEntry"/>
     <entryLink import="true" name="London Dreadnought" hidden="false" id="4f52-08ec-a7df-fc01" targetId="1340-f453-5d39-67ef" type="selectionEntry"/>
     <entryLink import="true" name="Delhi Battleship" hidden="false" id="916a-e73e-fe3b-1028" targetId="875a-25cf-eef9-98eb" type="selectionEntry"/>
@@ -3005,34 +2996,34 @@
     <entryLink import="true" name="New Mombasa Vanguard Carrier" hidden="false" id="5760-0f82-1df2-b749" targetId="8043-e2bb-43de-5f09" type="selectionEntry"/>
     <entryLink import="true" name="Seattle Fleet Carrier" hidden="false" id="d7cf-5fda-c287-cf84" targetId="abd1-4c24-621f-e34d" type="selectionEntry"/>
     <entryLink import="true" name="Geneva Command Cruiser" hidden="false" id="d264-a753-edbd-b0c2" targetId="6b87-300c-1ce2-fa1b" type="selectionEntry"/>
-    <entryLink import="true" name="Glasgow Cruiser" hidden="false" id="cf7e-539e-ad52-629a" targetId="3b69-2353-1c2b-83ec" type="selectionEntry"/>
-    <entryLink import="true" name="Bucharest Cruiser" hidden="false" id="c7f5-d334-fbcb-bc78" targetId="4ac7-3694-60c3-36ea" type="selectionEntry"/>
-    <entryLink import="true" name="Ulaanbaatar Cruiser" hidden="false" id="a0db-e58e-6b12-a7fe" targetId="9733-e5fe-c48f-50bf" type="selectionEntry"/>
+    <entryLink import="true" name="Glasgow Cruisers" hidden="false" id="cf7e-539e-ad52-629a" targetId="3b69-2353-1c2b-83ec" type="selectionEntry"/>
+    <entryLink import="true" name="Bucharest Cruisers" hidden="false" id="c7f5-d334-fbcb-bc78" targetId="4ac7-3694-60c3-36ea" type="selectionEntry"/>
+    <entryLink import="true" name="Ulaanbaatar Cruisers" hidden="false" id="a0db-e58e-6b12-a7fe" targetId="9733-e5fe-c48f-50bf" type="selectionEntry"/>
     <entryLink import="true" name="Bruges Cruisers" hidden="false" id="1a04-2674-cc1c-444a" targetId="bd44-f0d9-d7ef-a46d" type="selectionEntry"/>
-    <entryLink import="true" name="Madrid Cruiser" hidden="false" id="4858-132c-a69f-6472" targetId="be6b-3ac2-7832-3f81" type="selectionEntry"/>
-    <entryLink import="true" name="Berlin Cruiser" hidden="false" id="5de9-844e-0631-43f4" targetId="9c52-59e9-342a-5df6" type="selectionEntry"/>
-    <entryLink import="true" name="Rio Cruiser" hidden="false" id="ee75-2bf7-96f0-3596" targetId="9f8e-bc52-ee05-ba59" type="selectionEntry"/>
-    <entryLink import="true" name="Boston Light Cruiser" hidden="false" id="aea4-9115-9ab4-7222" targetId="2ce5-1313-ac38-c60a" type="selectionEntry"/>
-    <entryLink import="true" name="New Cairo Light Cruiser" hidden="false" id="01b2-230e-cfd5-7bdf" targetId="6075-65ff-a924-1b30" type="selectionEntry"/>
-    <entryLink import="true" name="Osaka Light Cruiser" hidden="false" id="89e9-2146-bc83-5c8f" targetId="9645-bf40-44ac-2d5e" type="selectionEntry"/>
-    <entryLink import="true" name="Caracas Heavy Destroyer" hidden="false" id="11ea-7958-54ae-9adb" targetId="3a8e-bad0-59e6-fb70" type="selectionEntry"/>
-    <entryLink import="true" name="Kyiv Heavy Destroyer" hidden="false" id="92f1-7464-b6a9-a66d" targetId="9de9-29cb-3fd2-b877" type="selectionEntry"/>
-    <entryLink import="true" name="Vancouver Escort Carrier" hidden="false" id="088b-27b6-fae4-dc17" targetId="e2e9-05ec-94bb-1b8d" type="selectionEntry"/>
-    <entryLink import="true" name="Havana Destroyer" hidden="false" id="e41b-fd49-2997-eb00" targetId="f49b-8ab3-5d09-836f" type="selectionEntry"/>
-    <entryLink import="true" name="Oslo Cutter" hidden="false" id="b713-a051-2bd4-0ca7" targetId="577b-04dd-a617-df88" type="selectionEntry"/>
-    <entryLink import="true" name="Nuuk EM Harasser" hidden="false" id="3022-7367-60e2-d74c" targetId="c1fd-6e05-0ad0-9743" type="selectionEntry"/>
-    <entryLink import="true" name="Reykjavik Cutter" hidden="false" id="9182-4c7c-863f-dde4" targetId="967b-4e38-0b4f-2023" type="selectionEntry"/>
-    <entryLink import="true" name="Vienna Escort Frigate" hidden="false" id="d412-7c6a-1ab4-3b24" targetId="1b04-fa46-f1e0-5768" type="selectionEntry"/>
-    <entryLink import="true" name="Istanbul Monitor" hidden="false" id="2f21-7f8e-aa86-0685" targetId="b28e-b4ce-2cb2-08fa" type="selectionEntry"/>
-    <entryLink import="true" name="Detroit Heavy Frigate" hidden="false" id="31b8-28c9-0792-c54a" targetId="7ddb-8179-acf1-79ce" type="selectionEntry"/>
-    <entryLink import="true" name="Sheffield Heavy Frigate" hidden="false" id="d94d-2630-1608-5e46" targetId="7f7d-2860-25d3-e5dd" type="selectionEntry"/>
-    <entryLink import="true" name="New Orleans Strike Carrier" hidden="false" id="30b7-6ae9-ea64-3955" targetId="f890-ce03-1307-1d24" type="selectionEntry"/>
-    <entryLink import="true" name="Lima Detector Frigate" hidden="false" id="04cd-f990-619a-1d10" targetId="00dc-9216-162c-d555" type="selectionEntry"/>
-    <entryLink import="true" name="Jakarta Aegis Frigate" hidden="false" id="77cd-00b8-8ff1-ec51" targetId="b991-1354-9f4c-86d7" type="selectionEntry"/>
-    <entryLink import="true" name="Taipei Missile Frigate" hidden="false" id="ea40-1fec-02b4-0d40" targetId="eb37-5032-bc28-6fdd" type="selectionEntry"/>
-    <entryLink import="true" name="Toulon Frigate" hidden="false" id="1a9f-1edd-ab9b-4aed" targetId="b5be-2bba-917f-b935" type="selectionEntry"/>
-    <entryLink import="true" name="Lysander Stealth Lighter" hidden="false" id="a3d5-9ce4-f086-fce9" targetId="aeaf-4fdb-0c32-b85f" type="selectionEntry"/>
-    <entryLink import="true" name="Santiago Corvette" hidden="false" id="3aab-479f-514c-d482" targetId="84e6-ca0e-1727-4bfc" type="selectionEntry"/>
+    <entryLink import="true" name="Madrid Cruisers" hidden="false" id="4858-132c-a69f-6472" targetId="be6b-3ac2-7832-3f81" type="selectionEntry"/>
+    <entryLink import="true" name="Berlin Cruisers" hidden="false" id="5de9-844e-0631-43f4" targetId="9c52-59e9-342a-5df6" type="selectionEntry"/>
+    <entryLink import="true" name="Rio Cruisers" hidden="false" id="ee75-2bf7-96f0-3596" targetId="9f8e-bc52-ee05-ba59" type="selectionEntry"/>
+    <entryLink import="true" name="Boston Light Cruisers" hidden="false" id="aea4-9115-9ab4-7222" targetId="2ce5-1313-ac38-c60a" type="selectionEntry"/>
+    <entryLink import="true" name="New Cairo Light Cruisers" hidden="false" id="01b2-230e-cfd5-7bdf" targetId="6075-65ff-a924-1b30" type="selectionEntry"/>
+    <entryLink import="true" name="Osaka Light Cruisers" hidden="false" id="89e9-2146-bc83-5c8f" targetId="9645-bf40-44ac-2d5e" type="selectionEntry"/>
+    <entryLink import="true" name="Caracas Heavy Destroyers" hidden="false" id="11ea-7958-54ae-9adb" targetId="3a8e-bad0-59e6-fb70" type="selectionEntry"/>
+    <entryLink import="true" name="Kyiv Heavy Destroyers" hidden="false" id="92f1-7464-b6a9-a66d" targetId="9de9-29cb-3fd2-b877" type="selectionEntry"/>
+    <entryLink import="true" name="Vancouver Escort Carriers" hidden="false" id="088b-27b6-fae4-dc17" targetId="e2e9-05ec-94bb-1b8d" type="selectionEntry"/>
+    <entryLink import="true" name="Havana Destroyers" hidden="false" id="e41b-fd49-2997-eb00" targetId="f49b-8ab3-5d09-836f" type="selectionEntry"/>
+    <entryLink import="true" name="Oslo Cutters" hidden="false" id="b713-a051-2bd4-0ca7" targetId="577b-04dd-a617-df88" type="selectionEntry"/>
+    <entryLink import="true" name="Nuuk EM Harassers" hidden="false" id="3022-7367-60e2-d74c" targetId="c1fd-6e05-0ad0-9743" type="selectionEntry"/>
+    <entryLink import="true" name="Reykjavik Cutters" hidden="false" id="9182-4c7c-863f-dde4" targetId="967b-4e38-0b4f-2023" type="selectionEntry"/>
+    <entryLink import="true" name="Vienna Escort Frigates" hidden="false" id="d412-7c6a-1ab4-3b24" targetId="1b04-fa46-f1e0-5768" type="selectionEntry"/>
+    <entryLink import="true" name="Istanbul Monitors" hidden="false" id="2f21-7f8e-aa86-0685" targetId="b28e-b4ce-2cb2-08fa" type="selectionEntry"/>
+    <entryLink import="true" name="Detroit Heavy Frigates" hidden="false" id="31b8-28c9-0792-c54a" targetId="7ddb-8179-acf1-79ce" type="selectionEntry"/>
+    <entryLink import="true" name="Sheffield Heavy Frigates" hidden="false" id="d94d-2630-1608-5e46" targetId="7f7d-2860-25d3-e5dd" type="selectionEntry"/>
+    <entryLink import="true" name="New Orleans Strike Carriers" hidden="false" id="30b7-6ae9-ea64-3955" targetId="f890-ce03-1307-1d24" type="selectionEntry"/>
+    <entryLink import="true" name="Lima Detector Frigates" hidden="false" id="04cd-f990-619a-1d10" targetId="00dc-9216-162c-d555" type="selectionEntry"/>
+    <entryLink import="true" name="Jakarta Aegis Frigates" hidden="false" id="77cd-00b8-8ff1-ec51" targetId="b991-1354-9f4c-86d7" type="selectionEntry"/>
+    <entryLink import="true" name="Taipei Missile Frigates" hidden="false" id="ea40-1fec-02b4-0d40" targetId="eb37-5032-bc28-6fdd" type="selectionEntry"/>
+    <entryLink import="true" name="Toulon Frigates" hidden="false" id="1a9f-1edd-ab9b-4aed" targetId="b5be-2bba-917f-b935" type="selectionEntry"/>
+    <entryLink import="true" name="Lysander Stealth Lighters" hidden="false" id="a3d5-9ce4-f086-fce9" targetId="aeaf-4fdb-0c32-b85f" type="selectionEntry"/>
+    <entryLink import="true" name="Santiago Corvettes" hidden="false" id="3aab-479f-514c-d482" targetId="84e6-ca0e-1727-4bfc" type="selectionEntry"/>
   </entryLinks>
   <publications>
     <publication name="UCM Combined Fleet Stats (241016)" id="9813-8e60-542d-9381" hidden="false" shortName="UCM Stats (241016)"/>

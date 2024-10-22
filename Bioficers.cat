@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Accumulator" hidden="false" id="ee44-fd8d-2aec-361f" publicationId="c835-461f-ea00-a841" page="1">
+    <selectionEntry type="unit" import="true" name="Accumulator" hidden="false" id="ee44-fd8d-2aec-361f" publicationId="c835-461f-ea00-a841" page="1">
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
       </costs>
@@ -2274,15 +2274,15 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Bioficer Accumulator" hidden="false" id="f332-a9eb-0f60-764a" targetId="ee44-fd8d-2aec-361f" type="selectionEntry"/>
+    <entryLink import="true" name="Accumulator" hidden="false" id="f332-a9eb-0f60-764a" targetId="ee44-fd8d-2aec-361f" type="selectionEntry"/>
     <entryLink import="true" name="Stature Battlecruiser" hidden="false" id="fc31-dc77-0dd6-8806" targetId="cb41-4584-3cda-d11f" type="selectionEntry"/>
     <entryLink import="true" name="Sanctum Battlecruiser" hidden="false" id="b6d9-ada1-ac12-9790" targetId="1783-2070-1d67-2713" type="selectionEntry"/>
     <entryLink import="true" name="Scion Battlecruiser" hidden="false" id="cc73-2a60-3a70-7f69" targetId="8004-510f-6229-136c" type="selectionEntry"/>
-    <entryLink import="true" name="Catastrophe Heavy Cruisers" hidden="false" id="127c-e9d8-61da-9b99" targetId="9234-fc92-0ff8-877a" type="selectionEntry"/>
+    <entryLink import="true" name="Carronade Heavy Cruiser" hidden="false" id="127c-e9d8-61da-9b99" targetId="9234-fc92-0ff8-877a" type="selectionEntry"/>
     <entryLink import="true" name="Catastrophe Heavy Cruiser" hidden="false" id="fef4-4ece-1dcb-d0e5" targetId="2ed0-7eeb-26fd-22a5" type="selectionEntry"/>
     <entryLink import="true" name="Cacophony Heavy Cruiser" hidden="false" id="6276-db23-db1a-0515" targetId="6e1a-2b01-a28b-6f83" type="selectionEntry"/>
     <entryLink import="true" name="Cataphract Heavy Cruiser" hidden="false" id="efee-3609-9ec4-664f" targetId="bb4d-6006-20b7-0f72" type="selectionEntry"/>
-    <entryLink import="true" name="Cavern Fleet Carriers" hidden="false" id="e154-5e31-285e-26d7" targetId="7ddf-8b31-2b15-57b1" type="selectionEntry"/>
+    <entryLink import="true" name="Combine Cruisers" hidden="false" id="e154-5e31-285e-26d7" targetId="7ddf-8b31-2b15-57b1" type="selectionEntry"/>
     <entryLink import="true" name="Cavern Fleet Carriers" hidden="false" id="12bc-e005-1965-a399" targetId="1c0e-82b6-ba79-c275" type="selectionEntry"/>
     <entryLink import="true" name="Cosmic Cruisers" hidden="false" id="3ff9-3138-5b4a-0c19" targetId="1935-0e23-f211-7976" type="selectionEntry"/>
     <entryLink import="true" name="Comet Cruisers" hidden="false" id="2827-ae15-1a4d-c6b0" targetId="41e0-f7d9-603e-d204" type="selectionEntry"/>
@@ -2293,14 +2293,14 @@
     <entryLink import="true" name="Charger Light Cruisers" hidden="false" id="3a4e-74eb-b077-1573" targetId="bfde-c9ca-fb8b-3f09" type="selectionEntry"/>
     <entryLink import="true" name="Cipher Light Cruisers" hidden="false" id="1022-9ba3-d95d-449c" targetId="3d89-f034-beb4-fa2a" type="selectionEntry"/>
     <entryLink import="true" name="Cache Light Cruisers" hidden="false" id="5d26-7f46-b22a-a461" targetId="0a7d-b34c-ac2c-200e" type="selectionEntry"/>
-    <entryLink import="true" name="Diode Destroyer" hidden="false" id="6cf5-a56b-6bae-b87a" targetId="0e4c-242d-221b-5212" type="selectionEntry"/>
-    <entryLink import="true" name="Domain Destroyer" hidden="false" id="3f40-5512-4fdc-b118" targetId="1b92-53c4-c99d-a3e8" type="selectionEntry"/>
+    <entryLink import="true" name="Diode Destroyers" hidden="false" id="6cf5-a56b-6bae-b87a" targetId="0e4c-242d-221b-5212" type="selectionEntry"/>
+    <entryLink import="true" name="Domain Destroyers" hidden="false" id="3f40-5512-4fdc-b118" targetId="1b92-53c4-c99d-a3e8" type="selectionEntry"/>
     <entryLink import="true" name="Tally Cutter" hidden="false" id="20a2-6026-33b3-d5d2" targetId="61e2-8785-7be5-cd94" type="selectionEntry"/>
-    <entryLink import="true" name="Tine Cutter" hidden="false" id="2a57-ec00-09b3-2ee5" targetId="33b3-949e-3580-112b" type="selectionEntry"/>
-    <entryLink import="true" name="Torrent Cutter" hidden="false" id="4b75-ffba-2e7b-90b6" targetId="2516-5b8c-866d-c212" type="selectionEntry"/>
-    <entryLink import="true" name="Matrix Monitor" hidden="false" id="d305-a75c-bcb2-0b05" targetId="0963-c96b-307d-ea3c" type="selectionEntry"/>
-    <entryLink import="true" name="Monarch Monitor" hidden="false" id="3c3c-8ef7-35e0-3a18" targetId="6d1a-16ed-cb53-6825" type="selectionEntry"/>
-    <entryLink import="true" name="Mantle Monitor" hidden="false" id="9d2c-115c-9eb6-466b" targetId="2930-1f2a-0ea6-675e" type="selectionEntry"/>
+    <entryLink import="true" name="Tine Cutters" hidden="false" id="2a57-ec00-09b3-2ee5" targetId="33b3-949e-3580-112b" type="selectionEntry"/>
+    <entryLink import="true" name="Torrent Cutters" hidden="false" id="4b75-ffba-2e7b-90b6" targetId="2516-5b8c-866d-c212" type="selectionEntry"/>
+    <entryLink import="true" name="Matrix Monitors" hidden="false" id="d305-a75c-bcb2-0b05" targetId="0963-c96b-307d-ea3c" type="selectionEntry"/>
+    <entryLink import="true" name="Monarch Monitors" hidden="false" id="3c3c-8ef7-35e0-3a18" targetId="6d1a-16ed-cb53-6825" type="selectionEntry"/>
+    <entryLink import="true" name="Mantle Monitors" hidden="false" id="9d2c-115c-9eb6-466b" targetId="2930-1f2a-0ea6-675e" type="selectionEntry"/>
     <entryLink import="true" name="Fresco Frigates" hidden="false" id="2605-f3b5-cc22-b502" targetId="6378-1b82-30f6-9eaa" type="selectionEntry"/>
     <entryLink import="true" name="Fulcrum Frigates" hidden="false" id="7cf0-9705-d184-d698" targetId="ded5-7fd6-1efa-a3d8" type="selectionEntry"/>
     <entryLink import="true" name="Foray Frigates" hidden="false" id="b88d-f17d-a87f-30b2" targetId="ad2f-d6f3-2ca6-ec3f" type="selectionEntry"/>
@@ -2308,18 +2308,15 @@
     <entryLink import="true" name="Fugue Frigates" hidden="false" id="0ef2-a415-647b-432f" targetId="6259-8c71-8d27-795e" type="selectionEntry"/>
     <entryLink import="true" name="Logic Lighters" hidden="false" id="0a9e-b4bd-c3a3-40c7" targetId="6671-3a2e-f0e8-2252" type="selectionEntry"/>
     <entryLink import="true" name="Vertex Corvettes" hidden="false" id="9c04-8386-612d-4f2c" targetId="ee76-490b-5857-b425" type="selectionEntry"/>
-    <entryLink import="true" name="Cells" hidden="false" id="b564-7735-e5e5-4f3c" targetId="3d3b-858f-509f-4646" type="selectionEntry"/>
+    <entryLink import="true" name="Prism Cells" hidden="false" id="b564-7735-e5e5-4f3c" targetId="3d3b-858f-509f-4646" type="selectionEntry"/>
     <entryLink import="true" name="Torpedo Cells" hidden="false" id="b947-694b-874c-cd35" targetId="a73b-16d7-dde0-f99c" type="selectionEntry"/>
     <entryLink import="true" name="Lander Cells" hidden="false" id="3b8c-679b-7024-c96c" targetId="0784-3c85-ebd0-a488" type="selectionEntry"/>
     <entryLink import="true" name="Invasion Cells" hidden="false" id="efe3-417a-eebe-af34" targetId="dd68-15ce-e117-d142" type="selectionEntry"/>
-    <entryLink import="true" name="Deployable Features" hidden="false" id="4914-5bb9-b90c-eb3d" targetId="b598-59fa-cab1-15ee" type="selectionEntry"/>
+    <entryLink import="true" name="Genitor Towers" hidden="false" id="4914-5bb9-b90c-eb3d" targetId="b598-59fa-cab1-15ee" type="selectionEntry"/>
   </entryLinks>
   <publications>
     <publication name="Bioficer Combined Fleet Stats (241016)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (241016)"/>
   </publications>
-  <catalogueLinks>
-    <catalogueLink type="catalogue" name="New Catalogue (link)" id="347a-e74b-6284-bab3" targetId="23ac-37ab-d4cb-5dd5"/>
-  </catalogueLinks>
   <sharedRules>
     <rule name="Tractor Beamer" id="c9fa-8382-0412-768a" hidden="false">
       <description>At the end of this Ship’s activation, you may pick a single friendly Ship with the Payload special rule within 6”. Move that ship up to 4” in any direction.</description>
