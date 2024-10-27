@@ -340,6 +340,7 @@ During a Porter’s activation, it may attach any detached Payload Ships within
     </rule>
     <rule name="Regenerate-X" id="df32-1b16-f0f9-7b85" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>This Ship recovers X lost Hull Points at the end of its activation.</description>
+      <alias>Regenerate-4</alias>
     </rule>
     <rule name="Shield-X" id="40e4-1c82-9e61-c8c1" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>You may use a Shield Save instead of this Group’s Energy or Kinetic Save, declaring their use before any other saves are made. Shield saves can be used against any Damage Type and function like other saves. Modifiers to Energy or Kinetic Saves do not apply.
@@ -385,6 +386,8 @@ Improve the Lock of this Weapon by 2 when attacking Cities.</description>
     </rule>
     <rule name="Calibre-X" id="aa1f-b200-394a-dbcf" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <alias>Calibre-L</alias>
+      <alias>Calibre-M</alias>
+      <alias>Calibre-H</alias>
       <alias>Calibre-H/C</alias>
       <description>Improve the Lock value of this Weapon by 1 when attacking Groups of any of the listed X Tonnage values.</description>
     </rule>
@@ -398,6 +401,7 @@ Improve the Lock of this Weapon by 2 when attacking Cities.</description>
       <description>If this Weapon scores a Critical hit and then damages a Ship with that attack (following normal damage allocation rules), the damaged Ship gains the stated X Crippling Effect regardless of Tonnage. If no effect is listed, roll for Crippling Effects.
 Crippling Effects caused by Crippling Weapons are in addition to the usual one per Ship. Duplicate effects are still ignored.</description>
       <alias>Crippling</alias>
+      <alias>Crippling-Weapons Offline</alias>
     </rule>
     <rule name="Critical-X" id="7cc5-6830-9e54-6d11" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <alias>Critical-1</alias>
@@ -435,7 +439,10 @@ Damage caused by this Weapon is allocated to only the targeted Ship.</descripti
     <rule name="Limited-X" id="0c02-c41a-e1a2-882e" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <description>This Weapon can only be fired X times per game.
 You may launch a total of X of this Asset per game.</description>
+      <alias>Limited-1</alias>
       <alias>Limited-2</alias>
+      <alias>Limited-3</alias>
+      <alias>Limited-4</alias>
     </rule>
     <rule name="Linked-X" id="fc9b-53d4-3bb3-3413" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="39">
       <description>Weapons with the same Linked-X value on the same Ship count as 1 Weapon for Orders purposes. When you attack with a Linked-X Weapon, you attack with all other Weapons on that Ship with the same Linked-X value.</description>
@@ -469,6 +476,7 @@ Close Action weapons with this special rule may be used against targets in Atm
     </rule>
     <rule name="Volley-X" id="2313-61f3-8840-3e8b" hidden="false" page="39" publicationId="45b0-3e3b-e83d-fd70">
       <alias>Volley-2</alias>
+      <alias>Volley-4</alias>
       <description>This Weapon counts as 1 Weapon for Orders purposes. When you assign this Weapon to a target, you assign it to targets up to X times (either the same or different). Once assigned, treat each separate allocation as a separate Weapon profile for the subsequent steps in the attack sequence.
 Broadside Weapons using Volley must alternate arcs when determining and assigning targets (so cannot target the same Group on the same side twice in a row).</description>
     </rule>
