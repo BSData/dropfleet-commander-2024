@@ -8,6 +8,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9603-a35a-eecd-928b" includeChildSelections="false"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Famous Admirals" id="daa7-4c13-fe75-9281" hidden="false"/>
     <categoryEntry name="Group" id="default-category">
       <constraints>
         <constraint type="max" value="16" field="selections" scope="force" shared="true" id="944d-d5c8-c46e-76c6"/>
@@ -114,6 +115,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Famous Admirals" hidden="false" id="ef6e-551e-e16a-f783" targetId="daa7-4c13-fe75-9281" type="category"/>
         <categoryLink name="Colossal Groups" hidden="false" id="38b2-ab85-cf30-7c97" targetId="52fa-6578-d171-57d6"/>
         <categoryLink name="Heavy Groups" hidden="false" id="6ae6-148d-4a39-919c" targetId="8d99-053d-ffeb-98c5"/>
         <categoryLink name="Medium Groups" hidden="false" id="62fc-b5b7-b670-4429" targetId="e555-ff57-c478-18cd"/>
