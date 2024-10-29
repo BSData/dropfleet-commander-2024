@@ -115,7 +115,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Famous Admirals" hidden="false" id="ef6e-551e-e16a-f783" targetId="daa7-4c13-fe75-9281" type="category"/>
+        <categoryLink name="Famous Admirals" hidden="false" id="ef6e-551e-e16a-f783" targetId="daa7-4c13-fe75-9281"/>
         <categoryLink name="Colossal Groups" hidden="false" id="38b2-ab85-cf30-7c97" targetId="52fa-6578-d171-57d6"/>
         <categoryLink name="Heavy Groups" hidden="false" id="6ae6-148d-4a39-919c" targetId="8d99-053d-ffeb-98c5"/>
         <categoryLink name="Medium Groups" hidden="false" id="62fc-b5b7-b670-4429" targetId="e555-ff57-c478-18cd"/>
@@ -246,7 +246,7 @@
     <entryLink import="true" name="Admiral (Lvl 4)" hidden="false" id="4e39-4406-1f57-84c1" targetId="15ed-22eb-2e08-32e3" type="selectionEntry"/>
   </entryLinks>
   <profileTypes>
-    <profileType name="Ship" id="8a2d-efd5-4b60-f4fa" hidden="false" sortIndex="1">
+    <profileType name="Ship" id="8a2d-efd5-4b60-f4fa" hidden="false" sortIndex="3">
       <characteristicTypes>
         <characteristicType name="Thrust" id="d821-4294-3117-e8a6"/>
         <characteristicType name="Scan" id="960a-5d0e-18c5-4310"/>
@@ -259,7 +259,7 @@
         <characteristicType name="Special" id="fdf5-89b6-e62e-570f"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Weapon" id="02b7-2433-f72f-d510" hidden="false" sortIndex="3">
+    <profileType name="Weapon" id="02b7-2433-f72f-d510" hidden="false" sortIndex="5">
       <characteristicTypes>
         <characteristicType name="Arc" id="7fb7-39ec-1352-3b97"/>
         <characteristicType name="Att" id="af4e-6eec-3cb5-5aae"/>
@@ -269,17 +269,28 @@
         <characteristicType name="Special" id="1e8b-4801-6eb9-f278"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Load" id="7ba8-a64f-b5fb-8c3e" hidden="false" sortIndex="4">
+    <profileType name="Load" id="7ba8-a64f-b5fb-8c3e" hidden="false" sortIndex="6">
       <characteristicTypes>
         <characteristicType name="Launch" id="bcc4-f844-acff-aa94"/>
         <characteristicType name="Special" id="d3be-1a27-21ac-fb65"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Feature" id="e69b-d424-94a2-0fe1" hidden="false" sortIndex="2">
+    <profileType name="Admiral" id="92cf-ddd3-4d79-e408" hidden="false" sortIndex="1">
+      <characteristicTypes>
+        <characteristicType name="Level" id="391a-b7ae-831e-4cf0"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Feature" id="e69b-d424-94a2-0fe1" hidden="false" sortIndex="4">
       <characteristicTypes>
         <characteristicType name="ES" id="b3be-7f64-867b-94f7"/>
         <characteristicType name="KS" id="4e0b-e781-cee2-504d"/>
         <characteristicType name="Special" id="0042-a956-225d-9293"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Admiral Ability" id="705b-98a3-a21d-7118" hidden="false" sortIndex="2">
+      <characteristicTypes>
+        <characteristicType name="Cost" id="e725-1a05-f360-abc6"/>
+        <characteristicType name="Effect" id="49ae-26b2-d6ec-81aa"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
