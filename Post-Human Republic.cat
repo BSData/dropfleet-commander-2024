@@ -40,6 +40,239 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gaius Chau - Romulus" hidden="false" id="416b-ac4b-0ec7-e966" page="5" publicationId="6462-e99b-594c-193a">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="4dac-3c9d-9431-c175" targetId="default-category" primary="false"/>
+        <categoryLink name="Famous Admirals" hidden="false" id="32c7-e487-ffba-7775" targetId="daa7-4c13-fe75-9281" primary="true"/>
+        <categoryLink name="Faction/Famous Admirals" hidden="false" id="d224-a49e-ba2e-3f02" targetId="79f7-4244-6fb7-d41a" primary="false"/>
+        <categoryLink name="Admirals" hidden="false" id="8b2a-6c39-d415-68ad" targetId="fb8b-57b3-d46c-d679" primary="false"/>
+        <categoryLink targetId="52fa-6578-d171-57d6" id="e165-5ecf-4550-f3a9" primary="false" name="Colossal Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Gaius Chau" hidden="false" id="9507-690f-5625-4e73" subType="crew" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8daf-47c5-2650-043e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b216-af35-aeb5-261a" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Gaius Chau" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="47fb-51dc-5d46-60dd">
+              <characteristics>
+                <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">5</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Backup Systems Engaged" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="43f1-1c5a-49eb-824b">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly ship would roll for Crippling Damage, roll a dice. On a 4+ that Ship does not roll on the Crippling Damage table but is still Crippled.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="90"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Romulus Dreadnought" hidden="false" id="d4ba-6454-a4f5-6756" type="selectionEntry" targetId="24f3-bf29-8263-56f4" sortIndex="2">
+          <infoLinks>
+            <infoLink name="Cutting Power" id="8772-48fd-8df1-82c2" hidden="false" type="rule" targetId="4307-771a-1d85-2af8"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="Cutting Power" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1580-1a6b-429f-64cb"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="-1" field="1580-1a6b-429f-64cb">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Claudia Rhee - Heracles" hidden="false" id="fc7e-9c9b-0758-b590" page="4" publicationId="6462-e99b-594c-193a">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="3a06-a526-e352-74fd" targetId="default-category" primary="false"/>
+        <categoryLink name="Famous Admirals" hidden="false" id="3906-76c2-4f2e-d789" targetId="daa7-4c13-fe75-9281" primary="true"/>
+        <categoryLink name="Faction/Famous Admirals" hidden="false" id="1afe-e2ff-046e-4b12" targetId="79f7-4244-6fb7-d41a" primary="false"/>
+        <categoryLink name="Medium Groups" hidden="false" id="a2f7-3099-1add-8fb9" targetId="e555-ff57-c478-18cd" primary="false"/>
+        <categoryLink name="Admirals" hidden="false" id="75f2-df79-608e-a6b4" targetId="fb8b-57b3-d46c-d679" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Claudia Rhee" hidden="false" id="821d-4002-c383-4bcc" subType="crew" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6756-e09a-a5ee-25cb" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90ae-9f68-9f9d-e5a4" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Claudia Rhee" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="0450-d5cf-7fdc-207a">
+              <characteristics>
+                <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">4</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="High-G Manouevre" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="db14-31da-1ac5-5ca1">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group is given a Max Thrust order, it may turn as if it was on General Quarters.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="70"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Heracles Battleship" hidden="false" id="5958-2e69-1a9f-f054" type="selectionEntry" targetId="8b0c-9463-8922-0703" sortIndex="2">
+          <modifiers>
+            <modifier type="set" value="255" field="ab32-c9b6-10f3-cbdb"/>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Hornet Drones" hidden="false" id="f1b8-9437-9507-593d" type="selectionEntry" targetId="07d3-ae7d-c07b-ce68"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d375-1336-6507-d1d5"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="-1" field="d375-1336-6507-d1d5">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Helena of Asgard - Pompeius" hidden="false" id="3498-03f8-e547-1c37" page="3" publicationId="6462-e99b-594c-193a">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="6622-3f1a-f35f-6637" targetId="default-category" primary="false"/>
+        <categoryLink name="Famous Admirals" hidden="false" id="4ed6-87d9-5345-ef3d" targetId="daa7-4c13-fe75-9281" primary="true"/>
+        <categoryLink name="Faction/Famous Admirals" hidden="false" id="7685-3391-11e3-bfae" targetId="79f7-4244-6fb7-d41a" primary="false"/>
+        <categoryLink name="Medium Groups" hidden="false" id="cf23-6dec-fb5d-e6d4" targetId="e555-ff57-c478-18cd" primary="false"/>
+        <categoryLink name="Admirals" hidden="false" id="0797-75a3-d4cd-1da3" targetId="fb8b-57b3-d46c-d679" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Helena of Asgard" hidden="false" id="4ce1-df00-0db3-ca07" subType="crew" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a8a5-48ba-00f7-a6b3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e3c-7405-728f-e329" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Helena of Asgard" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="dcde-25ef-2d7e-c365">
+              <characteristics>
+                <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Experimental Munitions" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4e91-7a62-d3c3-7ddf">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to weapons, select one of those weapons with the Calibre-X special rule. That weapon gains the benefits of its Calibre-X special rule regardless of the Tonnage of the target Group for that attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Pompeius Battlecruiser" hidden="false" id="7af1-36a0-b6bc-9355" publicationId="6462-e99b-594c-193a" page="40" sortIndex="2">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="140"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Heavy Ship" hidden="false" id="d4da-9490-0d72-0cae" targetId="9d6f-26b0-7969-496b" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Pompeius" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="da74-71c2-a496-d339" publicationId="6462-e99b-594c-193a" page="40">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">15</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42a4-e9d3-125b-9255" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cd3-7fce-2fe5-5f07" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Quad Battery" hidden="false" id="e140-727d-da60-6cea" type="selectionEntry" targetId="7276-4155-59af-c39a"/>
+          </entryLinks>
+          <comment>Modified weapon</comment>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Javelin - Achilles" hidden="false" id="7ef9-eaa2-4a63-34ad" page="2" publicationId="6462-e99b-594c-193a">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="286b-8329-33e0-f65f" targetId="default-category" primary="false"/>
+        <categoryLink name="Famous Admirals" hidden="false" id="3758-f330-2cd5-aaa2" targetId="daa7-4c13-fe75-9281" primary="true"/>
+        <categoryLink name="Faction/Famous Admirals" hidden="false" id="4efa-c887-e597-5c05" targetId="79f7-4244-6fb7-d41a" primary="false"/>
+        <categoryLink name="Medium Groups" hidden="false" id="012c-9656-4139-c12a" targetId="e555-ff57-c478-18cd" primary="false"/>
+        <categoryLink name="Admirals" hidden="false" id="2217-258f-9e13-6c0c" targetId="fb8b-57b3-d46c-d679" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Javelin" hidden="false" id="bcbc-2d77-aaf4-71cf" subType="crew" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ef0-374c-d37f-38e2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e80a-45d0-a803-c15b" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Javelin" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="6753-3d62-6f1a-464b">
+              <characteristics>
+                <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Heavy Sniper" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4c47-6012-29da-5bda">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with the Calibre-H special rule, the attacking Ship doubles its Scan value against H Tonnage Ships for that weapon’s attack (other attacks and weapons are unaffected).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Achilles Heavy Cruiser" hidden="false" id="2e04-8a3c-b9df-8260" type="selectionEntry" targetId="ddc5-947c-b560-d484" sortIndex="2">
+          <infoLinks>
+            <infoLink name="Regenerate-X" id="3ac2-10fb-6d59-b887" hidden="false" type="rule" targetId="df32-1b16-f0f9-7b85"/>
+            <infoLink name="Self Repairing Armour Systems" id="b42b-3637-6c8a-55d4" hidden="false" type="rule" targetId="9a6b-935a-9e3f-1c05"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="Regenerate-2, Self Repairing Armour Systems" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5881-ca82-de92-ecd1"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="-1" field="5881-ca82-de92-ecd1">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Groups -----" hidden="true" id="b303-eea2-dff8-cd8d"/>
     <selectionEntry type="upgrade" import="true" name="Remus Dreadnought" hidden="false" id="0950-b68a-8d06-12cd">
@@ -2803,6 +3036,10 @@
   </publications>
   <entryLinks>
     <entryLink import="true" name="Vice Director" hidden="false" id="8930-69ed-4c21-3881" targetId="c974-a513-7df9-d0fe" type="selectionEntry"/>
+    <entryLink import="true" name="Gaius Chau - Romulus" hidden="false" id="d774-12ad-6966-a3c9" targetId="416b-ac4b-0ec7-e966" type="selectionEntry"/>
+    <entryLink import="true" name="Gaius Chau - Romulus" hidden="false" id="75db-0ebf-3f9a-81f8" targetId="fc7e-9c9b-0758-b590" type="selectionEntry"/>
+    <entryLink import="true" name="Gaius Chau - Romulus" hidden="false" id="2eb7-46fd-4e49-8b4c" targetId="3498-03f8-e547-1c37" type="selectionEntry"/>
+    <entryLink import="true" name="Gaius Chau - Romulus" hidden="false" id="3432-9402-0fd2-cd4f" targetId="7ef9-eaa2-4a63-34ad" type="selectionEntry"/>
     <entryLink import="true" name="Remus Dreadnought" hidden="false" id="75d2-0cba-5c9b-76e3" targetId="0950-b68a-8d06-12cd" type="selectionEntry"/>
     <entryLink import="true" name="Romulus Dreadnought" hidden="false" id="aefa-78aa-a958-e601" targetId="1b60-1121-d2d9-27b9" type="selectionEntry"/>
     <entryLink import="true" name="Rhadamanthus Battleship" hidden="false" id="733d-7c54-1aec-78e5" targetId="6e34-bf2a-f70f-9aa6" type="selectionEntry"/>

@@ -353,6 +353,7 @@ During a Porter’s activation, it may attach any detached Payload Ships within
     </rule>
     <rule name="Regenerate-X" id="df32-1b16-f0f9-7b85" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>This Ship recovers X lost Hull Points at the end of its activation.</description>
+      <alias>Regenerate-2</alias>
       <alias>Regenerate-4</alias>
     </rule>
     <rule name="Shield-X" id="40e4-1c82-9e61-c8c1" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
