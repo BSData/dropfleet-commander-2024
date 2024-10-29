@@ -9,6 +9,35 @@
         <categoryLink targetId="79f7-4244-6fb7-d41a" id="e6d8-f6d0-e635-1c24" primary="false" name="Faction/Famous Admirals"/>
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="c99e-9644-af19-1ea8" primary="true" name="Admirals"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2a3a-b87f-fc61-ced7"/>
+      </constraints>
+      <profiles>
+        <profile name="Accumulator" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="995c-34a2-7195-b011">
+          <characteristics>
+            <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gravitic Manoeuvring" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="af89-69f8-9075-5270">
+          <characteristics>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group is given a Max Thrust Order, it may turn as if it was on General Quarters.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kinetic Deconstruction" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5f9d-652a-4ede-7e0c">
+          <characteristics>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Decon” in its name, those weapons change their Type to Kinetic until the end of its activation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="-1" field="2a3a-b87f-fc61-ced7">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Groups -----" hidden="true" id="f85e-349a-b7ce-3de8"/>
     <selectionEntry type="unit" import="true" name="Stature Battlecruiser" hidden="false" id="cb41-4584-3cda-d11f">

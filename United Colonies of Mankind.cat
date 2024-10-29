@@ -10,6 +10,38 @@
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="a1cb-367e-591b-d718" primary="true" name="Admirals"/>
         <categoryLink targetId="79f7-4244-6fb7-d41a" id="f3c2-b057-c337-24aa" primary="false" name="Faction/Famous Admirals"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9e10-bb7e-f3e8-a76b"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="-1" field="9e10-bb7e-f3e8-a76b">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Rear Admiral" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="4c21-b20c-07ec-484f">
+          <characteristics>
+            <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Push Engines to Max" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9d10-e2f4-7de0-6014">
+          <characteristics>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, each Ship in it suffers 1 Damage and improves its Thrust by 2” until the end of its activation.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Overcharge Lasers" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="faec-ba26-51df-5c7e">
+          <characteristics>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a Group makes an attack with any number of weapons with “Laser” in its name, those weapons gain Fusillade-2 until the end of its activation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fusillade-X" id="4e4b-02f3-5e0c-dc48" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="“Granite” Halsey - Washington" hidden="false" id="0df1-8a69-e48b-af52">
       <categoryLinks>
@@ -86,6 +118,21 @@
           <comment>Needed while Halsey&apos;s Washington has different core battery</comment>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="-1" field="6f16-586b-f538-9c6c">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6f16-586b-f538-9c6c"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Havelock - New York" hidden="false" id="35e6-a97b-0bc4-a778">
       <categoryLinks>
@@ -129,6 +176,21 @@
           </modifiers>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="-1" field="3cfe-d4e9-16f6-7bff">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3cfe-d4e9-16f6-7bff"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Weaver - Perth" hidden="false" id="0691-dfab-1c01-7865">
       <categoryLinks>
@@ -175,6 +237,16 @@
           </modifiers>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="106e-1113-d1f5-f4a7"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="-1" field="106e-1113-d1f5-f4a7">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tayne - Warsaw" hidden="false" id="6d3f-389f-1a9c-cdba" page="">
       <categoryLinks>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="1" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="66a8-ba07-3fa8-ecf7"/>
     <selectionEntry type="unit" import="true" name="Vice Director" hidden="false" id="c974-a513-7df9-d0fe" publicationId="6462-e99b-594c-193a" page="1">
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
@@ -9,6 +10,36 @@
         <categoryLink targetId="79f7-4244-6fb7-d41a" id="2c7b-44d9-7ea1-8222" primary="false" name="Faction/Famous Admirals"/>
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="3307-19af-f329-3b04" primary="true" name="Admirals"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e9f4-2a8a-ec8c-0ea8"/>
+      </constraints>
+      <profiles>
+        <profile name="Vice Director" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="7626-9574-a960-0fd7">
+          <characteristics>
+            <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Re-route Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fe8f-80c2-e818-99e1">
+          <characteristics>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, remove one Crippling Effect token (of any type) from that Group.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ranked Fire" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="8ed1-95f9-04eb-bfc6">
+          <characteristics>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to Broadside Arc weapons, select one of those weapons with the Volley-X special rule. That weapon does not need to alternate arcs due to its Volley-X special rule (so can attack the same target in the same arc using each Volley attack) for that attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="-1" field="e9f4-2a8a-ec8c-0ea8">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Groups -----" hidden="true" id="b303-eea2-dff8-cd8d"/>
     <selectionEntry type="upgrade" import="true" name="Remus Dreadnought" hidden="false" id="0950-b68a-8d06-12cd">
@@ -2101,7 +2132,7 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>B 3/4+/3/K Cal-HC Pen Vol-2</comment>
+      <comment>B 3/3+/3/K Cal-HC Pen Vol-2</comment>
       <infoLinks>
         <infoLink name="Calibre-X" id="81fa-20c8-e20e-5ab8" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
         <infoLink name="Penetrator" id="7888-b56b-d1d8-17a5" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
