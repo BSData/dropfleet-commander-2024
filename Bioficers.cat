@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
     <selectionEntry type="unit" import="true" name="Accumulator" hidden="false" id="ee44-fd8d-2aec-361f" publicationId="c835-461f-ea00-a841" page="1">
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
@@ -38,6 +39,106 @@
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Atom - Scion" hidden="false" id="11f9-e5a6-1b81-6015" page="4" publicationId="c835-461f-ea00-a841">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="9c32-2344-b23f-e152" targetId="default-category" primary="false"/>
+        <categoryLink name="Famous Admirals" hidden="false" id="a141-1eed-897a-bca3" targetId="daa7-4c13-fe75-9281" primary="true"/>
+        <categoryLink name="Faction/Famous Admirals" hidden="false" id="8f96-bf03-c9a7-3f9f" targetId="79f7-4244-6fb7-d41a" primary="false"/>
+        <categoryLink name="Admirals" hidden="false" id="bb46-a0a1-131d-a1a4" targetId="fb8b-57b3-d46c-d679" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="cd24-2ac3-bf53-d914" primary="false" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Atom" hidden="false" id="ff34-582b-b0c9-702d" subType="crew" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12f1-94dc-1f6c-59d5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2d3-1331-acd2-ee39" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Atom" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="fd99-68ff-a5dc-2215">
+              <characteristics>
+                <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Vice Lightly" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fd3c-eefc-a6b0-a23b">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with “Lightvice” in its name, that weapon ignores its Focused rule for that attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Scion Battlecruiser" hidden="false" id="8513-ba08-1043-7f34" publicationId="c835-461f-ea00-a841" page="39">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="150"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Heavy Ship" hidden="false" id="e917-a5fc-02c2-48e4" targetId="9d6f-26b0-7969-496b" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Scion" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="411f-789d-a696-3ae7" publicationId="c835-461f-ea00-a841" page="39">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">4&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">12</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Godray Lightvice" hidden="false" id="903c-76fa-1987-aebe" type="selectionEntry" targetId="a6c7-1d0a-81cc-3f21"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fac4-fb89-3bd4-16e7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7039-1ab3-1cda-6196" includeChildSelections="false"/>
+          </constraints>
+          <comment>Modified weapon</comment>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Atlas - Catastrophe" hidden="false" id="df31-ecfa-33ff-265e" page="3" publicationId="c835-461f-ea00-a841">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="fa78-25dc-c22a-2813" targetId="default-category" primary="false"/>
+        <categoryLink name="Famous Admirals" hidden="false" id="ff1f-4cd5-ba27-9204" targetId="daa7-4c13-fe75-9281" primary="true"/>
+        <categoryLink name="Faction/Famous Admirals" hidden="false" id="a945-1bf3-cece-a971" targetId="79f7-4244-6fb7-d41a" primary="false"/>
+        <categoryLink name="Medium Groups" hidden="false" id="4acf-94d6-a6e9-633f" targetId="e555-ff57-c478-18cd" primary="false"/>
+        <categoryLink name="Admirals" hidden="false" id="1499-e81f-61ec-0216" targetId="fb8b-57b3-d46c-d679" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Atlas" hidden="false" id="517a-9750-882d-e7dc" subType="crew" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="938c-f525-2272-3606" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4386-f71a-e165-05aa" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Atlas" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="a8a3-690f-f05f-7699">
+              <characteristics>
+                <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Emergency Reattachment Protocol" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="576b-f6af-291f-d7e9">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When an enemy would destroy one of your Payload Ships, it is not destroyed and is instead reattached to a valid Porter Ship within 6”.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Catastrophe Heavy Cruiser" hidden="false" id="33cd-7dfe-ad23-2e56" type="selectionEntry" targetId="068e-36ac-efdc-a588"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Groups -----" hidden="true" id="f85e-349a-b7ce-3de8"/>
     <selectionEntry type="unit" import="true" name="Stature Battlecruiser" hidden="false" id="cb41-4584-3cda-d11f">
@@ -1824,6 +1925,32 @@
       </constraints>
       <comment>F/S/R 1/4+/1/E</comment>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Godray Lightvice" hidden="false" id="a6c7-1d0a-81cc-3f21">
+      <profiles>
+        <profile name="Godray Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c65f-bcb1-bf6d-806b">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">5</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Bombardment, Close Action, Focused</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bloom-X" id="bd9b-8303-776d-2e9c" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+        <infoLink name="Bombardment" id="9b33-fcc6-d73a-8b50" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
+        <infoLink name="Close Action" id="2ccb-1089-db0f-154a" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Focused" id="102a-e3f7-afc7-49d5" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+        <infoLink name="Godray Lightvice" id="64ad-b8b2-1ea0-3531" hidden="false" type="rule" targetId="8590-da53-d799-e5d8"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c773-61f2-8559-f78e" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f28-14c0-efe9-4a9b" includeChildSelections="false"/>
+      </constraints>
+      <comment>F 2/2+/5/K Bl-1 Bmb CA Foc</comment>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hyper Lightvice" hidden="false" id="f7df-7ebb-ffb8-301c">
       <profiles>
         <profile name="Hyper Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="542b-6a5e-0b2d-bfcc">
@@ -2247,6 +2374,8 @@
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Accumulator" hidden="false" id="f332-a9eb-0f60-764a" targetId="ee44-fd8d-2aec-361f" type="selectionEntry"/>
+    <entryLink import="true" name="Atom - Scion" hidden="false" id="ec2c-7c4f-da19-a790" targetId="11f9-e5a6-1b81-6015" type="selectionEntry"/>
+    <entryLink import="true" name="Atlas - Catastrophe" hidden="false" id="68bb-f0bc-e42e-e40d" targetId="df31-ecfa-33ff-265e" type="selectionEntry"/>
     <entryLink import="true" name="Stature Battlecruiser" hidden="false" id="fc31-dc77-0dd6-8806" targetId="cb41-4584-3cda-d11f" type="selectionEntry"/>
     <entryLink import="true" name="Sanctum Battlecruiser" hidden="false" id="b6d9-ada1-ac12-9790" targetId="1783-2070-1d67-2713" type="selectionEntry"/>
     <entryLink import="true" name="Scion Battlecruiser" hidden="false" id="cc73-2a60-3a70-7f69" targetId="8004-510f-6229-136c" type="selectionEntry"/>
@@ -2301,6 +2430,9 @@
     </rule>
     <rule name="Scythe Cluster" id="b632-52e2-1b0a-c0a3" hidden="false">
       <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
+    </rule>
+    <rule name="Godray Lightvice" id="8590-da53-d799-e5d8" hidden="false">
+      <description>This weapon’s Bombardment special rule has no effect on Ships in Atmosphere.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
