@@ -304,6 +304,8 @@
     <rule name="Cloak-X" id="69fa-32f1-0a4f-c052" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
       <description>This Group may have a maximum of X Spikes.</description>
       <alias>Cloak-1</alias>
+      <alias>Cloak-2</alias>
+      <alias>Cloak-3</alias>
     </rule>
     <rule name="Command Ship-X" id="af88-13e6-5004-d00a" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
       <alias>Command Ship-1</alias>
@@ -416,6 +418,8 @@ Improve the Lock of this Weapon by 2 when attacking Cities.</description>
       <description>If this Weapon scores a Critical hit and then damages a Ship with that attack (following normal damage allocation rules), the damaged Ship gains the stated X Crippling Effect regardless of Tonnage. If no effect is listed, roll for Crippling Effects.
 Crippling Effects caused by Crippling Weapons are in addition to the usual one per Ship. Duplicate effects are still ignored.</description>
       <alias>Crippling</alias>
+      <alias>Crippling-Fire</alias>
+      <alias>Crippling-Navigation Offline</alias>
       <alias>Crippling-Weapons Offline</alias>
     </rule>
     <rule name="Critical-X" id="7cc5-6830-9e54-6d11" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
