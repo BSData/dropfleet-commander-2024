@@ -278,6 +278,7 @@
     <profileType name="Admiral" id="92cf-ddd3-4d79-e408" hidden="false" sortIndex="1">
       <characteristicTypes>
         <characteristicType name="Level" id="391a-b7ae-831e-4cf0"/>
+        <characteristicType name="Special" id="2a6e-dc3c-846c-d4c2"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Feature" id="e69b-d424-94a2-0fe1" hidden="false" sortIndex="4">

@@ -24,6 +24,7 @@
         <profile name="Rear Admiral" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="4c21-b20c-07ec-484f">
           <characteristics>
             <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">3</characteristic>
+            <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
           </characteristics>
         </profile>
         <profile name="Push Engines to Max" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9d10-e2f4-7de0-6014">
@@ -64,6 +65,7 @@
             <profile name="“Granite” Halsey" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="219f-919b-8465-d54c">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">5</characteristic>
+                <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Master Tactician" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3fc2-b60a-4d3e-b1ee">
@@ -152,6 +154,7 @@
             <profile name="Havelock" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="a8d6-9f14-d971-7f72">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">4</characteristic>
+                <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Ballistic Prediction" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="75e0-50bf-afac-52ff">
@@ -210,6 +213,7 @@
             <profile name="Weaver" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="0fef-85d2-39d7-e1d1">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">3</characteristic>
+                <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Laser Bombardment" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="026e-baa5-c8df-271f">
@@ -266,6 +270,7 @@
             <profile name="Tayne" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="15d2-f047-517b-5d9f">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">2</characteristic>
+                <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Close Quarter Battle" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="1245-9f86-345a-7f3f">
@@ -3289,7 +3294,7 @@
     <entryLink import="true" name="Santiago Corvettes" hidden="false" id="3aab-479f-514c-d482" targetId="84e6-ca0e-1727-4bfc" type="selectionEntry"/>
   </entryLinks>
   <publications>
-    <publication name="UCM Combined Fleet Stats (241016)" id="9813-8e60-542d-9381" hidden="false" shortName="UCM Stats (241016)"/>
+    <publication name="UCM Combined Fleet Stats (241024)" id="9813-8e60-542d-9381" hidden="false" shortName="UCM Stats (241024)"/>
   </publications>
   <sharedProfiles>
     <profile name="UF-9000 Mass Driver Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="8cc9-f479-28a7-d8b3">

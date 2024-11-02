@@ -17,6 +17,7 @@
         <profile name="Vice Director" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="7626-9574-a960-0fd7">
           <characteristics>
             <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">3</characteristic>
+            <characteristic typeId="2a6e-dc3c-846c-d4c2" name="Special"/>
           </characteristics>
         </profile>
         <profile name="Re-route Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fe8f-80c2-e818-99e1">
@@ -58,6 +59,7 @@
             <profile name="Gaius Chau" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="47fb-51dc-5d46-60dd">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">5</characteristic>
+                <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Backup Systems Engaged" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="43f1-1c5a-49eb-824b">
@@ -116,6 +118,7 @@
             <profile name="Claudia Rhee" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="0450-d5cf-7fdc-207a">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">4</characteristic>
+                <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
             <profile name="High-G Manouevre" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="db14-31da-1ac5-5ca1">
@@ -174,6 +177,7 @@
             <profile name="Helena of Asgard" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="dcde-25ef-2d7e-c365">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">2</characteristic>
+                <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Experimental Munitions" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4e91-7a62-d3c3-7ddf">
@@ -238,6 +242,7 @@
             <profile name="Javelin" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="6753-3d62-6f1a-464b">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">3</characteristic>
+                <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Heavy Sniper" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4c47-6012-29da-5bda">
@@ -3032,7 +3037,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <publications>
-    <publication name="PHR Combined Fleet Stats (241016)" id="6462-e99b-594c-193a" hidden="false" shortName="PHR Stats (241016)"/>
+    <publication name="PHR Combined Fleet Stats (241024)" id="6462-e99b-594c-193a" hidden="false" shortName="PHR Stats (241024)"/>
   </publications>
   <entryLinks>
     <entryLink import="true" name="Vice Director" hidden="false" id="8930-69ed-4c21-3881" targetId="c974-a513-7df9-d0fe" type="selectionEntry"/>

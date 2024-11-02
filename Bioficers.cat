@@ -17,6 +17,7 @@
         <profile name="Accumulator" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="995c-34a2-7195-b011">
           <characteristics>
             <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">3</characteristic>
+            <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
           </characteristics>
         </profile>
         <profile name="Gravitic Manoeuvring" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="af89-69f8-9075-5270">
@@ -58,6 +59,7 @@
             <profile name="Atom" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="fd99-68ff-a5dc-2215">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">2</characteristic>
+                <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Vice Lightly" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fd3c-eefc-a6b0-a23b">
@@ -122,6 +124,7 @@
             <profile name="Atlas" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="a8a3-690f-f05f-7699">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">2</characteristic>
+                <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
             <profile name="Emergency Reattachment Protocol" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="576b-f6af-291f-d7e9">
@@ -2416,7 +2419,7 @@
     <entryLink import="true" name="Genitor Towers" hidden="false" id="4914-5bb9-b90c-eb3d" targetId="b598-59fa-cab1-15ee" type="selectionEntry"/>
   </entryLinks>
   <publications>
-    <publication name="Bioficer Combined Fleet Stats (241016)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (241016)"/>
+    <publication name="Bioficer Combined Fleet Stats (241024)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (241024)"/>
   </publications>
   <sharedRules>
     <rule name="Tractor Beamer" id="c9fa-8382-0412-768a" hidden="false">
