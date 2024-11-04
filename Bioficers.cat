@@ -2417,6 +2417,8 @@
     <entryLink import="true" name="Lander Cells" hidden="false" id="3b8c-679b-7024-c96c" targetId="0784-3c85-ebd0-a488" type="selectionEntry"/>
     <entryLink import="true" name="Invasion Cells" hidden="false" id="efe3-417a-eebe-af34" targetId="dd68-15ce-e117-d142" type="selectionEntry"/>
     <entryLink import="true" name="Genitor Towers" hidden="false" id="4914-5bb9-b90c-eb3d" targetId="b598-59fa-cab1-15ee" type="selectionEntry"/>
+    <entryLink import="true" name="Pungari Thresher Hive Ship" hidden="false" id="8644-cf70-2702-f9f1" type="selectionEntry" targetId="1fd6-31e0-548c-cc1e"/>
+    <entryLink import="true" name="Hyperyacht Aurorum" hidden="false" id="8cea-bf55-5971-fe3f" type="selectionEntry" targetId="f6dd-dee6-9cfb-43b4"/>
   </entryLinks>
   <publications>
     <publication name="Bioficer Combined Fleet Stats (241024)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (241024)"/>
@@ -2460,4 +2462,7 @@
       </characteristics>
     </profile>
   </sharedProfiles>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Misc" id="2ccd-d6e9-0a0b-88aa" targetId="1b65-4911-bd01-73aa"/>
+  </catalogueLinks>
 </catalogue>

@@ -3292,6 +3292,9 @@
     <entryLink import="true" name="Toulon Frigates" hidden="false" id="1a9f-1edd-ab9b-4aed" targetId="b5be-2bba-917f-b935" type="selectionEntry"/>
     <entryLink import="true" name="Lysander Stealth Lighters" hidden="false" id="a3d5-9ce4-f086-fce9" targetId="aeaf-4fdb-0c32-b85f" type="selectionEntry"/>
     <entryLink import="true" name="Santiago Corvettes" hidden="false" id="3aab-479f-514c-d482" targetId="84e6-ca0e-1727-4bfc" type="selectionEntry"/>
+    <entryLink import="true" name="Pungari Thresher Hive Ship" hidden="false" id="b3ea-710d-9440-8689" type="selectionEntry" targetId="1fd6-31e0-548c-cc1e"/>
+    <entryLink import="true" name="Hyperyacht Aurorum" hidden="false" id="8493-404a-67e6-0b30" type="selectionEntry" targetId="f6dd-dee6-9cfb-43b4"/>
+    <entryLink import="true" name="Palatine Command Barge" hidden="false" id="839a-0f1b-2dd4-256a" type="selectionEntry" targetId="39f3-e983-5400-5b03"/>
   </entryLinks>
   <publications>
     <publication name="UCM Combined Fleet Stats (241024)" id="9813-8e60-542d-9381" hidden="false" shortName="UCM Stats (241024)"/>
@@ -3361,4 +3364,7 @@
       <description>Fighters &amp; Bombers launched from this ship may be placed up to 8” away instead of 6”.</description>
     </rule>
   </sharedRules>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Misc" id="b6c4-248a-bdbe-f398" targetId="1b65-4911-bd01-73aa"/>
+  </catalogueLinks>
 </catalogue>
