@@ -1530,8 +1530,8 @@
             <entryLink import="true" name="Decon Slayer" hidden="false" id="dc93-b339-1c03-0f63" type="selectionEntry" targetId="e47a-d1ac-1256-852f"/>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="82f8-f280-e9b1-d31f" includeChildSelections="false"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8c7f-3013-08e3-4b2c" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82f8-f280-e9b1-d31f" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8c7f-3013-08e3-4b2c" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Descent" id="f86e-d3d1-a7a2-be89" hidden="false" type="rule" targetId="2ae8-7705-ab9a-03c0"/>
