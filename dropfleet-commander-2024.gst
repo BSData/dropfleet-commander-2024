@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
@@ -323,6 +323,8 @@
     </rule>
     <rule name="Gateship-X" id="4572-00d5-81d2-4fcc" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
       <description>Shaltari Motherships must launch their Dropships via a Ship with this rule. Each Ship with Gateship can have up to X Dropships deployed from it each round. Note: though the launch is measured from the Ship with the Gateship rule, it is the Mothership that is launching</description>
+      <alias>Gateship-1</alias>
+      <alias>Gateship-2</alias>
     </rule>
     <rule name="Marines-X" id="93f3-7932-b233-4d38" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
       <description>Remove X enemy Battalions from this Ship at the beginning of the Battalion Combat step.</description>
@@ -362,6 +364,9 @@ During a Porter’s activation, it may attach any detached Payload Ships within
     <rule name="Shield-X" id="40e4-1c82-9e61-c8c1" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>You may use a Shield Save instead of this Group’s Energy or Kinetic Save, declaring their use before any other saves are made. Shield saves can be used against any Damage Type and function like other saves. Modifiers to Energy or Kinetic Saves do not apply.
 A Group gains a Spike each time it uses its Shield saves.</description>
+      <alias>Shield-3+</alias>
+      <alias>Shield-4+</alias>
+      <alias>Shield-5+</alias>
     </rule>
     <rule name="Stealth" id="9306-4cd5-b59e-5898" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>This Ship may fire one Weapon while Silent Running.</description>
@@ -454,6 +459,7 @@ Damage caused by this Weapon is allocated to only the targeted Ship.</descripti
     </rule>
     <rule name="Impel-X" id="9944-ada1-19c8-2d06" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <description>If the attacking Group scores at least X critical hits against the target Group, turn all Ships in the targeted Group up to 45 degrees in the same direction. A Group can only be affected by this rule once per attack.</description>
+      <alias>Impel-1</alias>
     </rule>
     <rule name="Limited-X" id="0c02-c41a-e1a2-882e" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <description>This Weapon can only be fired X times per game.

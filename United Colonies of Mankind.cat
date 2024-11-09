@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Rear Admiral" hidden="false" id="a461-4e5d-ff05-31f0" publicationId="9813-8e60-542d-9381" page="1">
@@ -341,7 +341,7 @@
             <entryLink import="true" name="UF-4200 Mass Driver Turret Core Battery" hidden="false" id="2d86-a9a6-6980-e369" type="selectionEntry" targetId="f819-d58c-9c21-4a53" sortIndex="2"/>
             <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="ec36-caf4-fa7b-c069" type="selectionEntry" targetId="bb41-2fcb-66bd-acd5" sortIndex="3"/>
             <entryLink import="true" name="Leviathan Missile Bays" hidden="false" id="3566-aaef-30b0-6b3e" type="selectionEntry" targetId="0a54-c4e1-6baf-ee55" sortIndex="4"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="b134-aff6-7b69-e1da" type="selectionEntry" targetId="9b0d-8d65-cdda-f785"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="b134-aff6-7b69-e1da" type="selectionEntry" targetId="9b0d-8d65-cdda-f785" sortIndex="5"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
