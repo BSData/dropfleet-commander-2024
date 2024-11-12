@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="7e9b-b6ba-2178-6eb5" name="Fleet Space Stations" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="1" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication name="Fleet Space Stations (241016)" id="4be7-d555-8518-dd99" hidden="false" shortName="Fleet Space Stations (241016)"/>
+  </publications>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Small Space Station" hidden="false" id="914b-3a7a-039e-34df" publicationId="4be7-d555-8518-dd99" page="2">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="ba08-cc06-67e0-7e60" primary="true" name="Space Stations"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Small Space Station" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="7c20-66da-3b01-ec4d" publicationId="4be7-d555-8518-dd99" page="2">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">10</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">4+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Upgrades" hidden="false" id="1fd7-eaca-d5ca-cae5" type="selectionEntryGroup" targetId="36e8-0b5d-d2bd-9075" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d791-5ca0-da18-b3d7" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Weapon Systems" hidden="false" id="325f-7290-c0fd-2e46" type="selectionEntryGroup" targetId="ab77-bbd9-74cd-0e9b" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c924-fb74-1532-797f" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Structures" hidden="false" id="c4b6-76c4-9cd9-da93" type="selectionEntryGroup" targetId="6fb3-4607-f12c-3fb0" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Medium Space Station" hidden="false" id="218b-faf8-ffab-2cd5" publicationId="4be7-d555-8518-dd99" page="2">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="55"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="0c91-f4df-e8d3-9f64" primary="true" name="Space Stations"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Medium Space Station" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="79d8-60c0-e626-91fa" publicationId="4be7-d555-8518-dd99" page="2">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">6&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">15</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">4+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Upgrades" hidden="false" id="4737-6467-6944-f2a3" type="selectionEntryGroup" targetId="36e8-0b5d-d2bd-9075" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee83-542f-4683-8b3a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Weapon Systems" hidden="false" id="084c-d0aa-db4e-2d4a" type="selectionEntryGroup" targetId="ab77-bbd9-74cd-0e9b" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b915-653f-d6b1-9d87" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Structures" hidden="false" id="3dfd-894a-eaa9-8a4c" type="selectionEntryGroup" targetId="6fb3-4607-f12c-3fb0" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Large Space Station" hidden="false" id="6f26-fe48-4135-7ed3" publicationId="4be7-d555-8518-dd99" page="2">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="90"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="39f8-ab5b-2d3f-feee" primary="true" name="Space Stations"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Large Space Station" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="4ebc-defc-74f5-0531" publicationId="4be7-d555-8518-dd99" page="2">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">8&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">25</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">4+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Upgrades" hidden="false" id="60d9-3ca6-820c-9d07" type="selectionEntryGroup" targetId="36e8-0b5d-d2bd-9075" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9bd7-44db-1b6d-99d5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Weapon Systems" hidden="false" id="531f-291f-fbb1-4913" type="selectionEntryGroup" targetId="ab77-bbd9-74cd-0e9b" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a60c-ba37-4218-db4b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Structures" hidden="false" id="759d-0a4f-16d5-9de5" type="selectionEntryGroup" targetId="6fb3-4607-f12c-3fb0" sortIndex="2"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Defence Hangar" hidden="false" id="68e9-14ab-4493-0656">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="80"/>
+      </costs>
+      <profiles>
+        <profile name="Defence Hangar" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="c6e0-e772-e5c6-7f29" publicationId="4be7-d555-8518-dd99" page="4">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">8</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">3+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">5+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="da5d-c864-2182-4ca3">
+          <profiles>
+            <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="f159-3446-2bde-3488">
+              <characteristics>
+                <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+                <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df7b-152a-4afe-ab2b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df7b-152a-4afe-ab2b-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="9e63-9785-576c-a824" primary="true" name="Space Stations"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Munitions Platform" hidden="false" id="6b40-0777-a810-a170">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
+      </costs>
+      <profiles>
+        <profile name="Munitions Platform" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="d3a7-2840-7692-a2af" publicationId="4be7-d555-8518-dd99" page="4">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">8</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">3+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">5+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="fec4-c698-2be7-a1f8">
+          <profiles>
+            <profile name="Medium Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="8b9d-0f6c-76fb-fab0">
+              <characteristics>
+                <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+                <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Limited-X" id="6f7b-93d2-c6ae-c23b" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cb5-be3a-5d35-7dad-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cb5-be3a-5d35-7dad-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="a1e4-6078-1c4a-f719" primary="true" name="Space Stations"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ephyra" hidden="false" id="2d1a-7c81-0ced-b810">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
+      </costs>
+      <profiles>
+        <profile name="Ephyra" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="5cab-72e3-e9ed-be1c" publicationId="4be7-d555-8518-dd99" page="5">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">8</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">3+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Oculus Ward" hidden="false" id="d6c0-aea1-067d-d53d">
+          <profiles>
+            <profile name="Oculus Ward" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="fa53-4325-c222-90d1">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Scald-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Close Action" id="b0c0-aa7b-4dd7-e40b" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+            <infoLink name="Scald-X" id="d2b1-a1c1-ac13-3cae" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="764d-bc7e-4a42-f068" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="427e-e98f-1674-1f4c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="d51e-0a2f-514e-9bbf" primary="true" name="Space Stations"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Nematocyst" hidden="false" id="fec6-51a8-6e61-26f1">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
+      </costs>
+      <profiles>
+        <profile name="Nematocyst" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="ce77-8fda-cd03-8633" publicationId="4be7-d555-8518-dd99" page="5">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">8</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">3+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Volcano Lance" hidden="false" id="31e4-b091-f7c6-0bfe">
+          <profiles>
+            <profile name="Volcano Lance" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a20d-b356-de0b-d249">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Burnthrough-1, Flash-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Bloom-X" id="07db-b8e5-8fe6-6fe7" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+            <infoLink name="Burnthrough-X" id="b217-fd37-ced4-6f6e" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+            <infoLink name="Flash-X" id="b1d3-f75f-9b31-7a5b" hidden="false" type="rule" targetId="9e6d-bb41-7c8b-a3b6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7269-69d9-2752-0ff4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbfd-5d30-9cb7-df09" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="1d12-b4d2-dd1c-cce6" primary="true" name="Space Stations"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Orbital Picket" hidden="false" id="ec51-7e59-4419-d22d">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
+      </costs>
+      <profiles>
+        <profile name="Orbital Picket" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="9aca-8ce5-2224-4155" publicationId="4be7-d555-8518-dd99" page="6">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">9</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">3+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Neutron Missiles" hidden="false" id="a003-36f7-8a13-e9f8" sortIndex="1">
+          <profiles>
+            <profile name="Neutron Missiles" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ebd3-34d7-4227-c79d">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Crippling</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Close Action" id="4970-ecd1-2e6c-b237" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+            <infoLink name="Crippling-X" id="631e-1628-d0f6-498e" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e5e-ed82-b6a0-aca3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da6d-27c7-de66-a96d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Station Turret Rack" hidden="false" id="b36a-e370-9011-8bbb" sortIndex="2">
+          <profiles>
+            <profile name="Station Turret Rack" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="fe04-00de-ccb0-a7e0">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Close Action" id="e3ce-326a-d75f-5738" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+            <infoLink name="Station Turret Rack" id="0a54-bf67-ba6e-929a" hidden="false" type="rule" targetId="948f-7ca1-de52-166b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="260f-6d5a-50bb-d788" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d01-8a06-ab26-40fd" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="018d-22da-3c0a-8639" primary="true" name="Space Stations"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Orbital Outpost" hidden="false" id="41e5-a021-0745-4a30">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
+      </costs>
+      <profiles>
+        <profile name="Orbital Outpost" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="cf42-3e34-1c96-5ffa" publicationId="4be7-d555-8518-dd99" page="6">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">4&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">9</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">3+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Triple Supernova Laser" hidden="false" id="9a0c-0e81-062b-56f7" sortIndex="1">
+          <profiles>
+            <profile name="Triple Supernova Laser" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="31bc-4f04-c7fd-86a1">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-2, Flash-2, Focused</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Burnthrough-X" id="0382-432e-70b1-1640" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+            <infoLink name="Flash-X" id="1927-a127-9c28-8588" hidden="false" type="rule" targetId="9e6d-bb41-7c8b-a3b6"/>
+            <infoLink name="Focused" id="5aee-6aba-3d2d-d1e6" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a9c5-ef76-17b4-8e39" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74da-de8d-6ae8-fffe" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Station Turret Rack" hidden="false" id="acaf-1f93-f779-543d" sortIndex="2">
+          <profiles>
+            <profile name="Station Turret Rack" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a9d3-d8da-4b6f-2d1d">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Close Action" id="7c64-704d-57bb-45ce" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+            <infoLink name="Station Turret Rack" id="58de-d825-7d15-34ea" hidden="false" type="rule" targetId="948f-7ca1-de52-166b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d62a-637f-63ae-7f4d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="810d-33dc-984c-4ece" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="de90-59de-828b-1296" primary="true" name="Space Stations"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Defence Halo (QSL)" hidden="false" id="4bd7-5d82-80d3-afe1">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
+      </costs>
+      <profiles>
+        <profile name="Defence Halo" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="61f8-3d3a-a1a7-5431" publicationId="4be7-d555-8518-dd99" page="7">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">6&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">26</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">3+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Quad Supernova Laser" hidden="false" id="2719-aef2-be67-9ba9" sortIndex="1">
+          <profiles>
+            <profile name="Quad Supernova Laser" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="40e8-8b5d-772c-e52a">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-2, Flash-2, Focused, Volley-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Burnthrough-X" id="b2d2-7735-c3d0-518b" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+            <infoLink name="Flash-X" id="117f-4229-85a8-6505" hidden="false" type="rule" targetId="9e6d-bb41-7c8b-a3b6"/>
+            <infoLink name="Focused" id="b3ce-e119-654e-fd26" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+            <infoLink name="Volley-X" id="8847-e27d-9dba-3808" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0574-69d6-d553-c840" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f24-a4a9-e9de-c043" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Station Turret Ring" hidden="false" id="0b48-f840-7106-c324" sortIndex="2">
+          <profiles>
+            <profile name="Station Turret Ring" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="06cc-b467-4309-d507">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Close Action" id="e68f-d40b-2b65-5277" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+            <infoLink name="Station Turret Ring" id="4211-7ef3-fdba-bfa3" hidden="false" type="rule" targetId="f2a6-4a86-f8e6-c8e6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8cb-bafe-b5cf-3869" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38a2-2235-60c5-4b0f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="a7de-9822-121e-eb0a" primary="true" name="Space Stations"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Defence Halo (NM)" hidden="false" id="432d-69c3-2a23-b3d8">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
+      </costs>
+      <profiles>
+        <profile name="Defence Halo" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="bb35-8ccd-d29c-da14" publicationId="4be7-d555-8518-dd99" page="7">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">8&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">6&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">26</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">3+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Neutron Missiles" hidden="false" id="bb86-2e45-8d80-a0bf" sortIndex="1">
+          <profiles>
+            <profile name="Neutron Missiles" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="b9fd-15d5-c2d6-9097">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Crippling</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Close Action" id="849e-dd3d-593b-7ef1" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+            <infoLink name="Crippling-X" id="3b74-bb19-6d09-d71b" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0861-e8a8-49a9-adf8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8e2-7b21-49f7-4fc5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Station Turret Ring" hidden="false" id="ea80-917d-5680-11c1" sortIndex="2">
+          <profiles>
+            <profile name="Station Turret Ring" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="e8ab-2c46-c63e-7b78">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Close Action" id="2be7-6405-725a-9741" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+            <infoLink name="Station Turret Ring" id="022f-72c1-7de4-4cfb" hidden="false" type="rule" targetId="f2a6-4a86-f8e6-c8e6"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10bb-1f29-bf22-b1ab" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6059-3d0d-4b2f-b782" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="04f4-e36b-5c54-e583" primary="true" name="Space Stations"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gatestation" hidden="false" id="a3e1-a57d-5032-0fed">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
+      </costs>
+      <profiles>
+        <profile name="Gatestation" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="a2f3-af44-cbec-a9e9" publicationId="4be7-d555-8518-dd99" page="8">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">4&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">6&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">10</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">4+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">Mothership, Shield-4+, Gate Node</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Charged Aura" hidden="false" id="6ede-ac68-d536-e88f" sortIndex="1">
+          <profiles>
+            <profile name="Charged Aura" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5aa7-6130-6a50-d975">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">6+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Close Action" id="4f1b-5925-9570-ca1e" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50d0-43da-6f78-6305" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5118-df13-f1c8-15fd" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="aa71-d4ff-8718-dac9" sortIndex="2">
+          <profiles>
+            <profile name="Dropships" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="64b0-aa38-d9da-1a42">
+              <characteristics>
+                <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+                <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7403-e3c5-ce2c-9e90" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9591-05d5-73e3-255d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="3ecc-5da8-d189-9a12" primary="true" name="Space Stations"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Mothership" id="c26a-78a4-f380-b92a" hidden="false" type="rule" targetId="928d-4467-6cc7-1771"/>
+        <infoLink name="Shield-X" id="b63c-5943-fb48-3017" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+        <infoLink name="Gate Node" id="5f94-5a79-cb0f-32c7" hidden="false" type="rule" targetId="9641-6e30-3c8e-a9ab"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Grav Hook" hidden="false" id="e3fe-8a69-be4d-97e4">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
+      </costs>
+      <profiles>
+        <profile name="Grav Hook" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="fc44-bb8d-a5d8-694b" publicationId="4be7-d555-8518-dd99" page="8">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">4&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">6&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">10</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">4+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">Shield-4+, Gravity Manipulator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="e866-b943-30ef-c752" primary="true" name="Space Stations"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Shield-X" id="2479-ce56-fa41-696a" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+        <infoLink name="Gravity Manipulator" id="785c-dfc0-26e0-395e" hidden="false" type="rule" targetId="1377-0988-f6d3-4a38"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Anchor" hidden="false" id="0854-c0bb-b001-626d">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="120"/>
+      </costs>
+      <profiles>
+        <profile name="Anchor" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="5034-1178-542c-68ab" publicationId="4be7-d555-8518-dd99" page="9">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">12&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">6&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">24</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">4+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">Shield-4+, Gateship-0, Voidspace Anchor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="0565-a5da-08ad-46e4" primary="true" name="Space Stations"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Shield-X" id="952f-2a92-6453-1cf5" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+        <infoLink name="Gateship-X" id="b17f-2411-0342-25b5" hidden="false" type="rule" targetId="4572-00d5-81d2-4fcc"/>
+        <infoLink name="Voidspace Anchor" id="04db-53fe-b954-44fb" hidden="false" type="rule" targetId="9b37-61fe-6eac-8888"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Shuriken" hidden="false" id="8cf6-6559-ba2d-64a2">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="120"/>
+      </costs>
+      <profiles>
+        <profile name="Shuriken" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="37fa-1c41-e389-4567" publicationId="4be7-d555-8518-dd99" page="9">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">12&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">6&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">24</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">4+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">Shield-4+, Gateship-0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="7d5e-bfaf-0d2e-8605" primary="true" name="Space Stations"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Shield-X" id="64ff-ef46-d542-79eb" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+        <infoLink name="Gateship-X" id="8218-8c0a-7aab-2776" hidden="false" type="rule" targetId="4572-00d5-81d2-4fcc"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Disintegrator Bank" hidden="false" id="6f9a-3e80-4849-e917">
+          <profiles>
+            <profile name="Disintegrator Bank" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="3cd4-34b7-59c8-29a1">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">*</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">8</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Volley-5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Volley-X" id="45e8-b227-5004-8a53" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+            <infoLink name="Disintegrator Bank" id="97a8-0104-6712-ff42" hidden="false" type="rule" targetId="00a0-f924-fd56-2694"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75d4-a91a-9247-6727" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16b4-3697-a23a-7d25" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Upgrades" id="36e8-0b5d-d2bd-9075" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Astrobotanical Lab" hidden="false" id="c69a-7814-dfec-a20a" publicationId="4be7-d555-8518-dd99" page="3">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+          </costs>
+          <rules>
+            <rule name="Signature Bloom" id="d91a-35d5-a2f7-aeae" hidden="false">
+              <description>Friendly Ships within 6” of this Space Station are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship’s Group ignore a Spike for each Hidden Ship in that Group.
+This rule has no effect while this Space Station is controlled by an enemy player.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="Signature Bloom" field="473b-cbb5-5ba2-c2de" scope="parent" affects="profiles.Space Station" join=", "/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Defence Grid" hidden="false" id="9f87-bd75-739f-4e4b" publicationId="4be7-d555-8518-dd99" page="3">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="80"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="35-KL Quad Mass Driver" hidden="false" id="cf4f-d58c-f968-7d22" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a13d-b460-95cf-ecfe-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a13d-b460-95cf-ecfe-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="35-KL Quad Mass Driver" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="00e5-c609-5f5f-9bd8">
+                  <characteristics>
+                    <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                    <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+                    <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                    <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                    <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
+                    <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-4, Focused</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Bloom-X" id="ca16-aa43-f418-6ea6" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+                <infoLink name="Focused" id="14c8-6b93-031d-dfc5" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="9K-S Mass Driver" hidden="false" id="2c1c-17c4-69c0-ec9d" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6653-4544-af12-221b-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6653-4544-af12-221b-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="9K-S Mass Driver" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="faa9-562f-39f1-d662">
+                  <characteristics>
+                    <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                    <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+                    <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+                    <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                    <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                    <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="NC-16 Missiles" hidden="false" id="6fa1-5e00-0aaf-f231" sortIndex="3">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6cca-031f-9523-0435-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6cca-031f-9523-0435-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="NC-16 Missiles" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="bb4e-e334-11b9-b068">
+                  <characteristics>
+                    <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                    <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+                    <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                    <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                    <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                    <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Close Action" id="8619-552d-fc3e-05e2" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Weapon Systems" id="ab77-bbd9-74cd-0e9b" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Laser Armament" hidden="false" id="e952-e88f-324a-5b9c" publicationId="4be7-d555-8518-dd99" page="2">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+          </costs>
+          <profiles>
+            <profile name="Laser Armament" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="e362-19f6-4620-4f3e" publicationId="4be7-d555-8518-dd99" page="2">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1, Flash-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Burnthrough-X" id="4181-5e0d-73b1-fa66" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+            <infoLink name="Flash-X" id="d506-dc51-3217-8e40" hidden="false" type="rule" targetId="9e6d-bb41-7c8b-a3b6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mass Driver Armament" hidden="false" id="6851-5d66-ff61-8dcd" publicationId="4be7-d555-8518-dd99" page="2">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+          </costs>
+          <profiles>
+            <profile name="Mass Driver Armament" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="68af-7467-1b2c-b80f" publicationId="4be7-d555-8518-dd99" page="2">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Missile Armament" hidden="false" id="9a6a-f098-4b71-fc9c" publicationId="4be7-d555-8518-dd99" page="2">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+          </costs>
+          <profiles>
+            <profile name="Missile Armament" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="1c9a-c53d-c47d-8c76" publicationId="4be7-d555-8518-dd99" page="2">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Close Action" id="475e-57a5-0baf-5ed0" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Structures" id="6fb3-4607-f12c-3fb0" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Deep Space Tracking" hidden="false" id="2115-0e7b-53cc-f676" publicationId="4be7-d555-8518-dd99" page="2">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fce1-b643-16da-6191" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Deep Space Tracking" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="c527-3690-5537-9d8f" publicationId="4be7-d555-8518-dd99" page="2">
+              <characteristics>
+                <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">When this Space Station targets enemy ships, Spikes on those ships have double their normal effect. So a Minor Spike increases the ship’s Signature by 12” and a Major Spike increases it by 24” when targeted by this Space Station.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scanner Uplink" hidden="false" id="829e-31a8-1ad5-b547" publicationId="4be7-d555-8518-dd99" page="2">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cc1-3956-4397-de53" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Scanner Uplink" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="8be2-7caa-6a68-2d03" publicationId="4be7-d555-8518-dd99" page="2">
+              <characteristics>
+                <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">This Space Station’s Scan range is increased by 3”. In addition, friendly ships within 3” of one or more Space Stations with this special rule increase their Scan range by 3”. This special rule ceases to function while this Space Station is controlled by an enemy player.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule name="Station Turret Rack" id="948f-7ca1-de52-166b" hidden="false">
+      <description>When you attack with this weapon, roll once and apply the roll to all enemy Groups within range.</description>
+    </rule>
+    <rule name="Station Turret Ring" id="f2a6-4a86-f8e6-c8e6" hidden="false">
+      <description>When you attack with this weapon, roll once and apply the roll to all enemy Groups within range.</description>
+    </rule>
+    <rule name="Gate Node" id="9641-6e30-3c8e-a9ab" hidden="false">
+      <description>This Gatestation’s Dropships may only be used while you control it.</description>
+    </rule>
+    <rule name="Gravity Manipulator" id="1377-0988-f6d3-4a38" hidden="false">
+      <description>Friendly Ships that start their movement within this station’s Scan range measure their movement from any point at the edge of this space station’s Scan range, retaining their facing. Enemy Ships that start their movement within this station’s Scan range measure their movement from this station (distances are measured from the flight stem), retaining their facing.
+This special rule ceases to function while you do not control this station.</description>
+    </rule>
+    <rule name="Voidspace Anchor" id="9b37-61fe-6eac-8888" hidden="false">
+      <description>When an enemy Group within 6” of this Space Station activates, that Group may only move up to half of its Thrust this activation regardless of selected Order</description>
+    </rule>
+    <rule name="Disintegrator Bank" id="00a0-f924-fd56-2694" hidden="false">
+      <description>Instead of the normal Arcs, Shaltari Shurikens have their own Arcs. A Shuriken has 5 Arcs, each 72 degrees. The easiest way to define these Arcs is to follow the lines of adjacent vertical vanes, measured from the flight stand as normal. Follow these arcs when attacking instead of the normal rules for Arcs.
+When you assign targets to this weapon, you may only use each Arc once.</description>
+    </rule>
+  </sharedRules>
+</catalogue>

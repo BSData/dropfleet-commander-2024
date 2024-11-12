@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="4" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="5" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="66a8-ba07-3fa8-ecf7"/>
     <selectionEntry type="unit" import="true" name="Vice Director" hidden="false" id="c974-a513-7df9-d0fe" publicationId="6462-e99b-594c-193a" page="1">
@@ -3091,6 +3091,13 @@
     <entryLink import="true" name="Pungari Thresher Hive Ship" hidden="false" id="382f-e062-0f13-5ea2" type="selectionEntry" targetId="1fd6-31e0-548c-cc1e"/>
     <entryLink import="true" name="Hyperyacht Aurorum" hidden="false" id="0ba4-43fe-d4db-f0af" type="selectionEntry" targetId="f6dd-dee6-9cfb-43b4"/>
     <entryLink import="true" name="Palatine Command Barge" hidden="false" id="8282-e589-ee41-41ba" type="selectionEntry" targetId="39f3-e983-5400-5b03"/>
+    <entryLink import="true" name="Small Space Station" hidden="false" id="11b2-c65f-687a-03d4" type="selectionEntry" targetId="914b-3a7a-039e-34df"/>
+    <entryLink import="true" name="Medium Space Station" hidden="false" id="f4e1-b977-5b37-5236" type="selectionEntry" targetId="218b-faf8-ffab-2cd5"/>
+    <entryLink import="true" name="Large Space Station" hidden="false" id="fc59-7db4-0026-3b8c" type="selectionEntry" targetId="6f26-fe48-4135-7ed3"/>
+    <entryLink import="true" name="Orbital Picket" hidden="false" id="cd9c-05ef-7846-6ed1" type="selectionEntry" targetId="ec51-7e59-4419-d22d"/>
+    <entryLink import="true" name="Orbital Outpost" hidden="false" id="b640-933e-7118-b2f7" type="selectionEntry" targetId="41e5-a021-0745-4a30"/>
+    <entryLink import="true" name="Defence Halo (QSL)" hidden="false" id="c10f-4044-fe3c-a98b" type="selectionEntry" targetId="4bd7-5d82-80d3-afe1"/>
+    <entryLink import="true" name="Defence Halo (NM)" hidden="false" id="243f-4b38-7c12-779c" type="selectionEntry" targetId="432d-69c3-2a23-b3d8"/>
   </entryLinks>
   <sharedRules>
     <rule name="Holo-Debris Field" id="8857-c5fc-0b83-e275" hidden="false">
@@ -3171,5 +3178,6 @@
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="96ad-a8d5-d575-5988" targetId="1b65-4911-bd01-73aa"/>
+    <catalogueLink type="catalogue" name="Fleet Space Stations" id="af1f-8897-1ad8-e506" targetId="7e9b-b6ba-2178-6eb5"/>
   </catalogueLinks>
 </catalogue>

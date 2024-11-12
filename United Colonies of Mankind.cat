@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="7" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Rear Admiral" hidden="false" id="a461-4e5d-ff05-31f0" publicationId="9813-8e60-542d-9381" page="1">
@@ -3295,6 +3295,11 @@
     <entryLink import="true" name="Pungari Thresher Hive Ship" hidden="false" id="b3ea-710d-9440-8689" type="selectionEntry" targetId="1fd6-31e0-548c-cc1e"/>
     <entryLink import="true" name="Hyperyacht Aurorum" hidden="false" id="8493-404a-67e6-0b30" type="selectionEntry" targetId="f6dd-dee6-9cfb-43b4"/>
     <entryLink import="true" name="Palatine Command Barge" hidden="false" id="839a-0f1b-2dd4-256a" type="selectionEntry" targetId="39f3-e983-5400-5b03"/>
+    <entryLink import="true" name="Small Space Station" hidden="false" id="ea81-6a27-30a5-abc4" type="selectionEntry" targetId="914b-3a7a-039e-34df"/>
+    <entryLink import="true" name="Medium Space Station" hidden="false" id="bca6-a4d6-2a55-8ea6" type="selectionEntry" targetId="218b-faf8-ffab-2cd5"/>
+    <entryLink import="true" name="Large Space Station" hidden="false" id="c817-791d-dba4-c88c" type="selectionEntry" targetId="6f26-fe48-4135-7ed3"/>
+    <entryLink import="true" name="Defence Hangar" hidden="false" id="240e-a423-ea96-be88" type="selectionEntry" targetId="68e9-14ab-4493-0656"/>
+    <entryLink import="true" name="Munitions Platform" hidden="false" id="56ac-8d47-3476-3af6" type="selectionEntry" targetId="6b40-0777-a810-a170"/>
   </entryLinks>
   <publications>
     <publication name="UCM Combined Fleet Stats (241024)" id="9813-8e60-542d-9381" hidden="false" shortName="UCM Stats (241024)"/>
@@ -3366,5 +3371,6 @@
   </sharedRules>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="b6c4-248a-bdbe-f398" targetId="1b65-4911-bd01-73aa"/>
+    <catalogueLink type="catalogue" name="Fleet Space Stations" id="cded-8c4c-5653-444c" targetId="7e9b-b6ba-2178-6eb5"/>
   </catalogueLinks>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="2" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="3" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Fleet Champion" hidden="false" id="d094-8254-44f9-d6eb" publicationId="260d-362c-d403-80ae" page="1">
@@ -2712,6 +2712,11 @@
     <entryLink import="true" name="Nickar Hunter-Killers" hidden="false" id="7072-f7a5-5952-7753" targetId="9fed-a759-b2c2-06d9" type="selectionEntry"/>
     <entryLink import="true" name="Pungari Thresher Hive Ship" hidden="false" id="1f67-cdbd-32ba-fa1d" type="selectionEntry" targetId="1fd6-31e0-548c-cc1e"/>
     <entryLink import="true" name="Hyperyacht Aurorum" hidden="false" id="19c2-b493-d995-4047" type="selectionEntry" targetId="f6dd-dee6-9cfb-43b4"/>
+    <entryLink import="true" name="Small Space Station" hidden="false" id="8081-d2c4-fb85-897b" type="selectionEntry" targetId="914b-3a7a-039e-34df"/>
+    <entryLink import="true" name="Medium Space Station" hidden="false" id="f761-8676-93b5-318c" type="selectionEntry" targetId="218b-faf8-ffab-2cd5"/>
+    <entryLink import="true" name="Large Space Station" hidden="false" id="cc25-0871-166c-c71e" type="selectionEntry" targetId="6f26-fe48-4135-7ed3"/>
+    <entryLink import="true" name="Ephyra" hidden="false" id="823a-c87d-4f37-c9ec" type="selectionEntry" targetId="2d1a-7c81-0ced-b810"/>
+    <entryLink import="true" name="Nematocyst" hidden="false" id="ccfa-7f9b-a3c5-e6d5" type="selectionEntry" targetId="fec6-51a8-6e61-26f1"/>
   </entryLinks>
   <sharedRules>
     <rule name="Winged Bulwark" id="aafc-3f0d-e8a5-6302" hidden="false">
@@ -2781,5 +2786,6 @@
   </sharedProfiles>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="1d29-8cc1-8448-f7f8" targetId="1b65-4911-bd01-73aa"/>
+    <catalogueLink type="catalogue" name="Fleet Space Stations" id="f24a-5501-0d0e-2949" targetId="7e9b-b6ba-2178-6eb5"/>
   </catalogueLinks>
 </catalogue>

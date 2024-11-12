@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
@@ -95,6 +95,7 @@
     <categoryEntry name="Medium Ship" id="53c3-afc0-63ef-413a" hidden="false"/>
     <categoryEntry name="Light Ship" id="f942-8f88-d77b-13c1" hidden="false"/>
     <categoryEntry name="Payload" id="3fa9-60d3-d9be-6611" hidden="false"/>
+    <categoryEntry name="Space Stations" id="5ca8-89b2-52c6-d394" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Fleet" hidden="false" id="fa3c-5c2f-ae78-ba22">
@@ -121,6 +122,11 @@
         <categoryLink name="Medium Groups" hidden="false" id="62fc-b5b7-b670-4429" targetId="e555-ff57-c478-18cd"/>
         <categoryLink name="Light Groups" hidden="false" id="27be-f8fa-6328-ee30" targetId="f51b-d892-62c0-3f1e"/>
         <categoryLink name="Payload Groups" hidden="false" id="7362-17e3-5fb1-9a39" targetId="8c2b-ea4d-8bea-c6a2"/>
+        <categoryLink name="Space Stations" hidden="false" id="838d-d872-d190-a1d5" targetId="5ca8-89b2-52c6-d394">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d88c-dc9b-1bb3-4c11" includeChildSelections="false"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="501" field="ab32-c9b6-10f3-cbdb" scope="self" shared="true" id="0657-bf3e-e983-c5e7"/>
@@ -259,7 +265,7 @@
         <characteristicType name="Special" id="fdf5-89b6-e62e-570f"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Weapon" id="02b7-2433-f72f-d510" hidden="false" sortIndex="5">
+    <profileType name="Weapon" id="02b7-2433-f72f-d510" hidden="false" sortIndex="6">
       <characteristicTypes>
         <characteristicType name="Arc" id="7fb7-39ec-1352-3b97"/>
         <characteristicType name="Att" id="af4e-6eec-3cb5-5aae"/>
@@ -269,7 +275,7 @@
         <characteristicType name="Special" id="1e8b-4801-6eb9-f278"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Load" id="7ba8-a64f-b5fb-8c3e" hidden="false" sortIndex="6">
+    <profileType name="Load" id="7ba8-a64f-b5fb-8c3e" hidden="false" sortIndex="7">
       <characteristicTypes>
         <characteristicType name="Launch" id="bcc4-f844-acff-aa94"/>
         <characteristicType name="Special" id="d3be-1a27-21ac-fb65"/>
@@ -281,7 +287,7 @@
         <characteristicType name="Special" id="2a6e-dc3c-846c-d4c2"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Feature" id="e69b-d424-94a2-0fe1" hidden="false" sortIndex="4">
+    <profileType name="Feature" id="e69b-d424-94a2-0fe1" hidden="false" sortIndex="5">
       <characteristicTypes>
         <characteristicType name="ES" id="b3be-7f64-867b-94f7"/>
         <characteristicType name="KS" id="4e0b-e781-cee2-504d"/>
@@ -292,6 +298,23 @@
       <characteristicTypes>
         <characteristicType name="Cost" id="e725-1a05-f360-abc6"/>
         <characteristicType name="Effect" id="49ae-26b2-d6ec-81aa"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Space Station" id="a685-1a7d-ba2d-3db8" hidden="false" sortIndex="4">
+      <characteristicTypes>
+        <characteristicType name="Scan" id="e1ee-74b3-00a9-8744"/>
+        <characteristicType name="Sig" id="1fb1-6992-a308-b4c8"/>
+        <characteristicType name="Hull" id="c2b4-8dc9-7506-debb"/>
+        <characteristicType name="ES" id="3afd-b020-ec74-2ea2"/>
+        <characteristicType name="KS" id="595f-3318-8065-9225"/>
+        <characteristicType name="BS" id="750b-9043-034b-c27a"/>
+        <characteristicType name="G" id="8b8c-53e9-20d1-9cbc"/>
+        <characteristicType name="Special" id="473b-cbb5-5ba2-c2de"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Structure" id="2f84-97db-deff-fa6f" hidden="false" sortIndex="8">
+      <characteristicTypes>
+        <characteristicType name="Effect" id="1f58-541b-60dc-ea2a"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -322,7 +345,8 @@
       <description>When a friendly Ship of H or C tonnage within 6” of this Ship on the same Orbital Layer is attacked, you may allocate all hits from that attack to this Ship’s Group, even if it is out of range, arc, and line of sight of the attacking Group. Only the effects of Scenery to the original target apply.</description>
     </rule>
     <rule name="Gateship-X" id="4572-00d5-81d2-4fcc" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
-      <description>Shaltari Motherships must launch their Dropships via a Ship with this rule. Each Ship with Gateship can have up to X Dropships deployed from it each round. Note: though the launch is measured from the Ship with the Gateship rule, it is the Mothership that is launching</description>
+      <description>Shaltari Motherships must launch their Dropships via a Ship with this rule. Each Ship with Gateship can have up to X Dropships deployed from it each round. Note: though the launch is measured from the Ship with the Gateship rule, it is the Mothership that is launching.</description>
+      <alias>Gateship-0</alias>
       <alias>Gateship-1</alias>
       <alias>Gateship-2</alias>
     </rule>
@@ -395,6 +419,7 @@ All Alt Weapons with the same number count as the same Weapon when determining
     <rule name="Bloom-X" id="a944-3ee8-9a6c-6440" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <alias>Bloom-1</alias>
       <alias>Bloom-2</alias>
+      <alias>Bloom-4</alias>
       <description>Whenever you fire this Weapon (including separate attacks generated by the Volley-X special rule), the attacking Group gains X Spikes.</description>
     </rule>
     <rule name="Bombardment" id="858c-a2ff-ed65-3e47" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
@@ -502,6 +527,7 @@ Close Action weapons with this special rule may be used against targets in Atm
     <rule name="Volley-X" id="2313-61f3-8840-3e8b" hidden="false" page="39" publicationId="45b0-3e3b-e83d-fd70">
       <alias>Volley-2</alias>
       <alias>Volley-4</alias>
+      <alias>Volley-5</alias>
       <description>This Weapon counts as 1 Weapon for Orders purposes. When you assign this Weapon to a target, you assign it to targets up to X times (either the same or different). Once assigned, treat each separate allocation as a separate Weapon profile for the subsequent steps in the attack sequence.
 Broadside Weapons using Volley must alternate arcs when determining and assigning targets (so cannot target the same Group on the same side twice in a row).</description>
     </rule>
