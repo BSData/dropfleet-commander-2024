@@ -96,6 +96,7 @@
     <categoryEntry name="Light Ship" id="f942-8f88-d77b-13c1" hidden="false"/>
     <categoryEntry name="Payload" id="3fa9-60d3-d9be-6611" hidden="false"/>
     <categoryEntry name="Space Stations" id="5ca8-89b2-52c6-d394" hidden="false"/>
+    <categoryEntry name="Game" id="492c-ac66-3724-83bc" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Fleet" hidden="false" id="fa3c-5c2f-ae78-ba22">
@@ -127,6 +128,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d88c-dc9b-1bb3-4c11" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Game" hidden="false" id="2618-a0a9-42fb-4431" targetId="492c-ac66-3724-83bc" type="category"/>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="501" field="ab32-c9b6-10f3-cbdb" scope="self" shared="true" id="0657-bf3e-e983-c5e7"/>
@@ -169,7 +171,7 @@
     <costType name="pts" id="ab32-c9b6-10f3-cbdb" defaultCostLimit="-1"/>
   </costTypes>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Game Size" id="1e1a-b867-1538-7a64" hidden="false" defaultSelectionEntryId="c6ef-6271-e246-47a8">
+    <selectionEntryGroup name="Game Size" id="1e1a-b867-1538-7a64" hidden="false" defaultSelectionEntryId="3fda-65f2-6cc3-ee33">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Skirmish" hidden="false" id="7895-d441-b903-8bb2" sortIndex="1"/>
         <selectionEntry type="upgrade" import="true" name="Clash" hidden="false" id="3fda-65f2-6cc3-ee33" sortIndex="2"/>
@@ -180,6 +182,110 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86f0-d3d8-5cde-7273-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86f0-d3d8-5cde-7273-max" includeChildSelections="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Secondary Objectives" id="ce84-f336-4628-4d73" hidden="false" defaultSelectionEntryId="none">
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="253d-f789-42e4-a3d9-min" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="253d-f789-42e4-a3d9-max" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Key Site" hidden="false" id="3ae4-514d-c480-da31" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1b0-fa5e-9056-d5ab" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Key Site" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="fbaf-56a4-2c11-2115">
+              <characteristics>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one Dropsite over 24” from your Deployment Zone before the game. If you Control it at the end of the game, gain 2VP.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Priority Target" hidden="false" id="94af-d3b8-352b-e8e8" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ee8-68f2-6b46-1afe" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Priority Target" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="3cf8-58ab-3bdd-2ce1">
+              <characteristics>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one Medium or Large Dropsite over 24” from your Deployment Zone before the game. If you have Levelled it, at the end of the game, gain 2VP.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Long Shot" hidden="false" id="f604-6c06-89f4-0b1e" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="758e-1ceb-d47c-2cad" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Long Shot" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="5e1c-cb5e-984f-10df">
+              <characteristics>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one Feature in a Dropsite within 12” of an opponent’s Deployment Zone before the game. If you have destroyed it, at the end of the game, gain 2VP. Each Feature can only be nominated once but a Dropsite can have more than one nominated Feature.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Annihilate" hidden="false" id="a130-1ed1-e4fc-22e4" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f7d-9bd7-0925-0121" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Annihilate" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="5d7b-fe7a-e5b9-bfdc">
+              <characteristics>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">You are awarded 1VP at the end of the game for every 500 points of Ships and Admirals you have destroyed. A maximum of 3VP may be scored using this Secondary Objective.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Take Prizes" hidden="false" id="2baf-72ad-7bd4-6412" sortIndex="5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87ef-4a9f-829e-539d" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Take Prizes" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="6046-f437-c473-fe1a">
+              <characteristics>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">You are awarded 1VP at the end of the game for every 100 points of Ships you have captured. A maximum of 3VP may be scored using this Secondary Objective.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gather Intel" hidden="false" id="5187-3987-177d-ea6f" sortIndex="6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1de1-a6ea-8a28-d107" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Gather Intel" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="79db-f0ec-8018-8345">
+              <characteristics>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">You are awarded 1VP whenever you Survey Dropsites. Any Capital Ship within 6” of the Dropsite and able to fire Weapons may substitute all attacking and launching that round to Survey it. A maximum of 3VP may be scored using this Secondary Objective. If the Scenario normally uses Survey, these VP are scored in addition to those in the Scenario.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Decapitate" hidden="false" id="83df-849c-976c-11bb" sortIndex="7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="862b-cfb7-db04-a47f" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Decapitate" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="780c-77cc-fcdc-ee47">
+              <characteristics>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">You are awarded 2VP if you kill your opponent’s highest-Level Admiral (or one of if there are multiple with the same Level).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Objectives Beyond" hidden="false" id="a45f-827c-97d7-edd3" sortIndex="8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8701-11e6-d697-4bf6" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Objectives Beyond" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="febc-b6ef-9cf8-bf43">
+              <characteristics>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one of your Ships of Tonnage M or higher. You may permanently fly that Ship off the board in any opponent’s Deployment Zone. If you do, gain 2VP.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedSelectionEntries>
@@ -244,12 +350,24 @@
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="873e-e01f-4fb3-58d5" primary="true" name="Admirals"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Secondary Objectives" hidden="false" id="6fb6-4519-d945-0495">
+      <entryLinks>
+        <entryLink import="true" name="Secondary Objectives" hidden="false" id="d2ef-a3c8-0171-6596" type="selectionEntryGroup" targetId="ce84-f336-4628-4d73"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da4d-0c54-3d92-1378" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="492c-ac66-3724-83bc" id="2b6f-70ee-e676-4dc1" primary="true" name="Game"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Game Size" hidden="false" id="bb40-2353-6ff5-0468" targetId="71a0-476c-277b-1c28" type="selectionEntry"/>
     <entryLink import="true" name="Admiral (Lvl 2)" hidden="false" id="7d94-9e0f-7676-288a" targetId="c2e3-744c-214a-624e" type="selectionEntry"/>
     <entryLink import="true" name="Admiral (Lvl 3)" hidden="false" id="3bcf-f613-6677-4a35" targetId="6d39-b64d-ed12-d1b4" type="selectionEntry"/>
     <entryLink import="true" name="Admiral (Lvl 4)" hidden="false" id="4e39-4406-1f57-84c1" targetId="15ed-22eb-2e08-32e3" type="selectionEntry"/>
+    <entryLink import="true" name="Secondary Objectives" hidden="false" id="6c09-4194-940f-8f98" targetId="6fb6-4519-d945-0495" type="selectionEntry"/>
   </entryLinks>
   <profileTypes>
     <profileType name="Ship" id="8a2d-efd5-4b60-f4fa" hidden="false" sortIndex="3">
@@ -315,6 +433,11 @@
     <profileType name="Structure" id="2f84-97db-deff-fa6f" hidden="false" sortIndex="8">
       <characteristicTypes>
         <characteristicType name="Effect" id="1f58-541b-60dc-ea2a"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Objective" id="a7a6-a4ed-a906-e919" hidden="false" sortIndex="9">
+      <characteristicTypes>
+        <characteristicType name="Description" id="f3e2-be91-7cd0-fd3a"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
