@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="5" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="6" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="66a8-ba07-3fa8-ecf7"/>
     <selectionEntry type="unit" import="true" name="Vice Director" hidden="false" id="c974-a513-7df9-d0fe" publicationId="6462-e99b-594c-193a" page="1">
@@ -3098,6 +3098,7 @@
     <entryLink import="true" name="Orbital Outpost" hidden="false" id="b640-933e-7118-b2f7" type="selectionEntry" targetId="41e5-a021-0745-4a30"/>
     <entryLink import="true" name="Defence Halo (QSL)" hidden="false" id="c10f-4044-fe3c-a98b" type="selectionEntry" targetId="4bd7-5d82-80d3-afe1"/>
     <entryLink import="true" name="Defence Halo (NM)" hidden="false" id="243f-4b38-7c12-779c" type="selectionEntry" targetId="432d-69c3-2a23-b3d8"/>
+    <entryLink import="true" name="Centurion Grand Cruisers" hidden="false" id="40a2-8d59-d163-5d8d" type="selectionEntry" targetId="e131-eb84-312c-6fd2"/>
   </entryLinks>
   <sharedRules>
     <rule name="Holo-Debris Field" id="8857-c5fc-0b83-e275" hidden="false">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="2" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="3" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Pungari Thresher Hive Ship" hidden="false" id="1fd6-31e0-548c-cc1e">
       <categoryLinks>
@@ -305,6 +305,114 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Centurion Grand Cruisers" hidden="false" id="e131-eb84-312c-6fd2">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="7ddc-e507-0965-9f08" targetId="default-category" primary="false"/>
+        <categoryLink name="Medium Groups" hidden="false" id="a603-a6c9-b776-d6ad" targetId="e555-ff57-c478-18cd" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Centurion Grand Cruiser" hidden="false" id="42b7-e1fb-431b-d0be" publicationId="3038-2db1-cc27-8561" page="16">
+          <categoryLinks>
+            <categoryLink name="Medium Ship" hidden="false" id="d518-5d35-fb57-4164" targetId="53c3-afc0-63ef-413a" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Centurion" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6fe5-f366-c9a5-17dd" publicationId="7fb8-995d-767a-783d" page="23">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">5&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">14</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Remnant</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="append" value="Rare" field="fdf5-89b6-e62e-570f" affects="" join=", ">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="40a3-46c5-d9fd-74c7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a35-a488-2010-2d63" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="125"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73eb-648b-f35e-caaf" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0d18-7759-52f3-605f" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Rare" id="5e1b-c5dc-2348-403d" hidden="true" type="rule" targetId="f7ad-85f9-39f4-7e10">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="40a3-46c5-d9fd-74c7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a35-a488-2010-2d63" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Remnant" id="12be-6356-423d-e29a" hidden="false" type="rule" targetId="e265-3e7d-a8fe-839f"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="9K Mass Driver Turret" hidden="false" id="bd89-4aa8-e952-47b2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9853-517d-15c7-40f2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9853-517d-15c7-40f2-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="9K Mass Driver Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="8842-1b5d-4300-68f2">
+                  <characteristics>
+                    <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+                    <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+                    <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+                    <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                    <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                    <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Critical-1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Critical-X" id="e8c9-cfe6-53b7-6039" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="N-31 Hybrid Gun Battery" hidden="false" id="706c-61ef-dfcd-b6e2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02db-8944-101b-7cce-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02db-8944-101b-7cce-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="N-31 Hybrid Gun Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="507a-4bf7-950b-0544">
+                  <characteristics>
+                    <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">B</characteristic>
+                    <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">8</characteristic>
+                    <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+                    <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                    <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                    <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Volley-2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Volley-X" id="4557-630e-2315-0b57" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <publications>
     <publication name="Misc Combined Fleet Stats (241024)" id="3038-2db1-cc27-8561" hidden="false" shortName="Misc Stats (241024)"/>
@@ -324,6 +432,11 @@
     </rule>
     <rule name="Remnant" id="28e0-87bb-6048-a48a" hidden="false">
       <description>This Ship may be used in UCM, PHR, or Resistance fleets.</description>
+      <comment>UCM/PHR/Resistance</comment>
+    </rule>
+    <rule name="Remnant" id="e265-3e7d-a8fe-839f" hidden="false">
+      <description>This ship may be used in UCM or PHR fleets in addition to Resistance fleets. In UCM and PHR fleets, they gain the Rare special rule.</description>
+      <comment>UCM/PHR/Resistance + Rare</comment>
     </rule>
   </sharedRules>
 </catalogue>
