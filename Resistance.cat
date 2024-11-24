@@ -418,7 +418,7 @@
             <infoLink name="Command Ship-X" id="d3d0-2d16-73ac-f95f" hidden="false" type="rule" targetId="af88-13e6-5004-d00a"/>
           </infoLinks>
           <entryLinks>
-            <entryLink import="true" name="NC-16 Missiles" hidden="false" id="abe6-7300-fafc-dc22" type="selectionEntry" targetId="d400-5faf-9f12-f1b8"/>
+            <entryLink import="true" name="NC-16 Missiles" hidden="false" id="abe6-7300-fafc-dc22" type="selectionEntry" targetId="d400-5faf-9f12-f1b8" collective="true"/>
             <entryLink import="true" name="Dreadnought Systems" hidden="false" id="3666-7087-6e40-12aa" type="selectionEntryGroup" targetId="1beb-f1d1-0251-ca15"/>
           </entryLinks>
         </selectionEntry>
@@ -457,7 +457,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d283-a80f-bb4a-1c45" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="NC-16 Missiles" hidden="false" id="8c08-29e8-0c16-9bb8" type="selectionEntry" targetId="d400-5faf-9f12-f1b8"/>
+            <entryLink import="true" name="NC-16 Missiles" hidden="false" id="8c08-29e8-0c16-9bb8" type="selectionEntry" targetId="d400-5faf-9f12-f1b8" collective="true"/>
             <entryLink import="true" name="Dreadnought Systems" hidden="false" id="b4a9-6cc4-ce73-82e2" type="selectionEntryGroup" targetId="1beb-f1d1-0251-ca15"/>
           </entryLinks>
         </selectionEntry>
@@ -496,7 +496,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16dc-c1de-a1ef-d8b6" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="NC-16 Missiles" hidden="false" id="9573-ff39-c56b-975d" type="selectionEntry" targetId="d400-5faf-9f12-f1b8"/>
+            <entryLink import="true" name="NC-16 Missiles" hidden="false" id="9573-ff39-c56b-975d" type="selectionEntry" targetId="d400-5faf-9f12-f1b8" collective="true"/>
             <entryLink import="true" name="Dreadnought Systems" hidden="false" id="bacb-b1de-02a1-c443" type="selectionEntryGroup" targetId="1beb-f1d1-0251-ca15"/>
           </entryLinks>
         </selectionEntry>
@@ -1419,8 +1419,8 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="53c8-088e-f127-89ad" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Dropships" hidden="false" id="f810-ef5f-a156-610d" type="selectionEntry" targetId="03d1-f9cd-4d9d-f991"/>
-            <entryLink import="true" name="Frigate Systems" hidden="false" id="73fc-3307-cc30-4b1e" type="selectionEntryGroup" targetId="c6cf-5821-f6b2-1ffd"/>
+            <entryLink import="true" name="Dropships" hidden="false" id="f810-ef5f-a156-610d" type="selectionEntry" targetId="03d1-f9cd-4d9d-f991" collective="true" sortIndex="2"/>
+            <entryLink import="true" name="Frigate Systems" hidden="false" id="73fc-3307-cc30-4b1e" type="selectionEntryGroup" targetId="c6cf-5821-f6b2-1ffd" sortIndex="1"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Descent" id="71a1-e5df-bbc9-1169" hidden="false" type="rule" targetId="2ae8-7705-ab9a-03c0"/>
