@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="3" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="4" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Fleet Champion" hidden="false" id="d094-8254-44f9-d6eb" publicationId="260d-362c-d403-80ae" page="1">
@@ -1177,9 +1177,10 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Oculus Rays" hidden="false" id="129f-b54d-ae99-c3c5" type="selectionEntry" targetId="1ba1-b0c8-b113-0659" sortIndex="1"/>
-            <entryLink import="true" name="Plasma Vortex" hidden="false" id="dfbb-76cf-5f5b-026a" type="selectionEntry" targetId="2927-fc54-ed84-1891" sortIndex="2"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="4acc-f222-939c-d5c8" type="selectionEntry" targetId="2c33-7816-d10d-6bf4" sortIndex="3"/>
+            <entryLink import="true" name="Oculus Rays" hidden="false" id="129f-b54d-ae99-c3c5" type="selectionEntry" targetId="1ba1-b0c8-b113-0659" sortIndex="1" collective="true"/>
+            <entryLink import="true" name="Plasma Vortex" hidden="false" id="dfbb-76cf-5f5b-026a" type="selectionEntry" targetId="2927-fc54-ed84-1891" sortIndex="2" collective="true"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="4acc-f222-939c-d5c8" type="selectionEntry" targetId="2c33-7816-d10d-6bf4" sortIndex="3" collective="true"/>
+            <entryLink import="true" name="Cloaking Crest" hidden="false" id="f6e2-fa34-7630-962a" type="selectionEntry" targetId="826c-a34f-6a51-fea9" collective="true"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Cloak-X" id="4a5c-493a-5e85-a930" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
@@ -1187,9 +1188,6 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Cloaking Crest" hidden="false" id="f6e2-fa34-7630-962a" type="selectionEntry" targetId="826c-a34f-6a51-fea9"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Succubus Destroyers" hidden="false" id="b3d0-777a-a409-fdb8" page="">
       <categoryLinks>
@@ -1224,8 +1222,9 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Oculus Beams" hidden="false" id="f090-9267-2a73-2c69" type="selectionEntry" targetId="61d3-2201-7930-c105" sortIndex="1"/>
-            <entryLink import="true" name="Seekers" hidden="false" id="d0af-a6f1-b6ba-09f5" type="selectionEntry" targetId="9861-f774-8b0c-7095" sortIndex="2"/>
+            <entryLink import="true" name="Oculus Beams" hidden="false" id="f090-9267-2a73-2c69" type="selectionEntry" targetId="61d3-2201-7930-c105" sortIndex="1" collective="true"/>
+            <entryLink import="true" name="Seekers" hidden="false" id="d0af-a6f1-b6ba-09f5" type="selectionEntry" targetId="9861-f774-8b0c-7095" sortIndex="2" collective="true"/>
+            <entryLink import="true" name="Cloaking Crest" hidden="false" id="6f29-f88a-f684-8e92" type="selectionEntry" targetId="826c-a34f-6a51-fea9" collective="true"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Cloak-X" id="6e5a-f98a-04f0-2c22" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
@@ -1233,9 +1232,6 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Cloaking Crest" hidden="false" id="6f29-f88a-f684-8e92" type="selectionEntry" targetId="826c-a34f-6a51-fea9"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Incubus Destroyers" hidden="false" id="1406-527b-24ca-4f89" page="">
       <categoryLinks>
@@ -1270,8 +1266,9 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Oculus Rays" hidden="false" id="024d-6f23-e2da-7cbb" type="selectionEntry" targetId="1ba1-b0c8-b113-0659" sortIndex="1"/>
-            <entryLink import="true" name="Furnace Blaster" hidden="false" id="fbb6-d19c-31ff-ddb7" type="selectionEntry" targetId="2ecb-d313-83b9-eb80" sortIndex="2"/>
+            <entryLink import="true" name="Oculus Rays" hidden="false" id="024d-6f23-e2da-7cbb" type="selectionEntry" targetId="1ba1-b0c8-b113-0659" sortIndex="1" collective="true"/>
+            <entryLink import="true" name="Furnace Blaster" hidden="false" id="fbb6-d19c-31ff-ddb7" type="selectionEntry" targetId="2ecb-d313-83b9-eb80" sortIndex="2" collective="true"/>
+            <entryLink import="true" name="Cloaking Crest" hidden="false" id="c070-3c6f-daec-3c36" type="selectionEntry" targetId="826c-a34f-6a51-fea9" collective="true"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Cloak-X" id="ad78-d0ca-ba7c-1bb6" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
@@ -1279,9 +1276,6 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Cloaking Crest" hidden="false" id="c070-3c6f-daec-3c36" type="selectionEntry" targetId="826c-a34f-6a51-fea9"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Parasite Radiation Leeches" hidden="false" id="dd68-828f-4be5-e8c7" page="">
       <categoryLinks>
@@ -2650,17 +2644,15 @@
     <selectionEntry type="upgrade" import="false" name="----- Equipment -----" hidden="true" id="c05c-5151-80d7-9368"/>
     <selectionEntry type="upgrade" import="true" name="Cloaking Crest" hidden="false" id="826c-a34f-6a51-fea9">
       <modifiers>
-        <modifier type="increment" value="5" field="ab32-c9b6-10f3-cbdb">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="set" value="Cloak-3, Stealth" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" scope="parent" join=", "/>
-        <modifier type="set" value="false" field="hidden" scope="parent" affects="childs.recursive.model.rules"/>
+        <modifier type="set" value="Cloak-3, Stealth" field="fdf5-89b6-e62e-570f" affects="profiles.Ship" scope="parent" join=", "/>
+        <modifier type="set" value="false" field="hidden" scope="parent" affects="rules"/>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4e2-5500-2522-2800" includeChildSelections="false"/>
       </constraints>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <publications>
