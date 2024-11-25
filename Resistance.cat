@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (241028)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (241028)"/>
   </publications>
@@ -57,7 +57,7 @@
         <categoryLink name="Famous Admirals" hidden="false" id="9f88-c020-4aac-0cc3" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="4e50-5cad-0183-71c1" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="e7c5-ed74-512e-eded" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink name="Heavy Groups" hidden="false" id="cbb7-d241-c7f2-98e0" targetId="8d99-053d-ffeb-98c5" primary="false"/>
+        <categoryLink targetId="52fa-6578-d171-57d6" id="bea4-64d9-cd6b-0842" primary="false" name="Colossal Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Magellan" hidden="false" id="ac3e-76cc-8024-fb87" subType="crew" sortIndex="1">
@@ -205,6 +205,9 @@
           <modifiers>
             <modifier type="set" value="Extensive Reactor Modifications" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="2042-1c14-6e4b-9cc2" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <modifiers>
@@ -228,8 +231,8 @@
         <categoryLink name="Group" hidden="false" id="f638-ef16-ce68-194e" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="061e-ddec-a686-e051" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="87e9-c434-7129-ac55" targetId="79f7-4244-6fb7-d41a" primary="false"/>
-        <categoryLink name="Medium Groups" hidden="false" id="8ab0-dfef-1ded-b44f" targetId="e555-ff57-c478-18cd" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="0861-6949-a0fb-16f4" targetId="fb8b-57b3-d46c-d679" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="b791-bc56-a9d8-7c95" primary="false" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hagen" hidden="false" id="0ac2-c3f6-3ae9-efe1" subType="crew" sortIndex="1">
