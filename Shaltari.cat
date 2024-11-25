@@ -50,9 +50,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Quetzalcoatl - Uranium" hidden="false" id="9782-06cf-cd06-44c5" publicationId="fbb6-a765-5882-6bcb" page="5">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="9df4-6e36-8cdd-0c7d" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="0ce2-83d3-44a2-3304" targetId="daa7-4c13-fe75-9281" primary="true"/>
-        <categoryLink name="Colossal Groups" hidden="false" id="0b83-d792-c75a-565e" targetId="52fa-6578-d171-57d6" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="bc2b-fc74-2cdd-4f47" targetId="fb8b-57b3-d46c-d679" primary="false"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="9846-36bd-ed47-5530" targetId="79f7-4244-6fb7-d41a" primary="false"/>
       </categoryLinks>
@@ -104,16 +102,18 @@
           <modifiers>
             <modifier type="append" value="Radiation Aura" field="fdf5-89b6-e62e-570f" scope="parent" affects="childs.recursive.model.profiles.Ship" join=", "/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="c27c-9762-5224-473d" primary="false" name="Group"/>
+            <categoryLink targetId="52fa-6578-d171-57d6" id="26b0-3401-3d92-0f10" primary="false" name="Colossal Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mergen the Learned - Diamond" hidden="false" id="4a39-2a06-9bbe-9563" publicationId="fbb6-a765-5882-6bcb" page="4">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="d986-50f8-9bc8-d653" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="28c8-13ef-5c93-fb16" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="56eb-496f-079e-d9f7" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="b4eb-b0f5-554b-278f" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink name="Heavy Groups" hidden="false" id="b789-f26f-e429-d3ff" targetId="8d99-053d-ffeb-98c5" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Mergen the Learned" hidden="false" id="77e4-d7e8-400b-6853" subType="crew" sortIndex="1">
@@ -151,6 +151,10 @@
           <modifiers>
             <modifier type="append" value="True Disintegration" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="b3d8-2cef-3a1a-dbf9" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="2bb9-24fd-0c45-8d01" primary="false" name="Heavy Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>
@@ -166,11 +170,9 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Seth - Sapphire" hidden="false" id="60ba-9a6d-3eca-7e54" page="3" publicationId="fbb6-a765-5882-6bcb">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="eaf4-af55-6a74-08fd" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="8e3f-e255-cee1-6689" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="55b3-36a5-66c5-24e5" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="2b76-577a-8054-45fe" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink targetId="8d99-053d-ffeb-98c5" id="d28c-74e1-1d48-c59c" primary="false" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Seth" hidden="false" id="c498-20f9-a90e-fa3f" subType="crew" sortIndex="1">
@@ -209,6 +211,10 @@
           <modifiers>
             <modifier type="append" value="Gravitational Draw" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="1d3d-60a5-d11b-4fea" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="1991-ebeb-7296-2335" primary="false" name="Heavy Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>
@@ -217,11 +223,9 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Twins of Aaru - Amber x 2" hidden="false" id="d871-8769-d471-c13f" publicationId="fbb6-a765-5882-6bcb" page="2">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="a6a2-1c83-e8db-1d45" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="be1c-ead6-41eb-1694" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Admirals" hidden="false" id="4fe1-b0d7-1db7-7444" targetId="fb8b-57b3-d46c-d679" primary="false"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="a0d3-49b0-a597-b4d4" targetId="79f7-4244-6fb7-d41a" primary="false"/>
-        <categoryLink targetId="e555-ff57-c478-18cd" id="7837-c8fb-914c-5f80" primary="false" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Twins of Aaru" hidden="false" id="bd54-2409-329d-56e5" sortIndex="1" subType="crew">
@@ -259,12 +263,20 @@
             <modifier type="set" value="2" field="32ce-7bbb-1d0f-8c80" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
             <modifier type="set" value="Shield-4+" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="d962-1abf-75e3-91fc" primary="false" name="Group"/>
+            <categoryLink targetId="e555-ff57-c478-18cd" id="97df-eff4-40e7-df4c" primary="false" name="Medium Groups"/>
+          </categoryLinks>
         </entryLink>
         <entryLink import="true" name="Amber Cruiser" hidden="false" id="2225-d146-1554-95b2" type="selectionEntry" targetId="2e10-c4db-c19a-47ca" sortIndex="3">
           <modifiers>
             <modifier type="set" value="2" field="32ce-7bbb-1d0f-8c80" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
             <modifier type="set" value="Shield-4+" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="00e8-1b12-08f0-e669" primary="false" name="Group"/>
+            <categoryLink targetId="e555-ff57-c478-18cd" id="08b5-bb83-6c51-4f88" primary="false" name="Medium Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>

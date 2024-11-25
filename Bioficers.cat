@@ -43,11 +43,9 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Atom - Scion" hidden="false" id="11f9-e5a6-1b81-6015" page="4" publicationId="c835-461f-ea00-a841">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="9c32-2344-b23f-e152" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="a141-1eed-897a-bca3" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="8f96-bf03-c9a7-3f9f" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="bb46-a0a1-131d-a1a4" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink targetId="8d99-053d-ffeb-98c5" id="cd24-2ac3-bf53-d914" primary="false" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Atom" hidden="false" id="ff34-582b-b0c9-702d" subType="crew" sortIndex="1">
@@ -79,6 +77,8 @@
           </costs>
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="e917-a5fc-02c2-48e4" targetId="9d6f-26b0-7969-496b" primary="true"/>
+            <categoryLink targetId="default-category" id="1014-3611-42b3-f040" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="a523-4313-63bb-ede8" primary="false" name="Heavy Groups"/>
           </categoryLinks>
           <profiles>
             <profile name="Scion" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="411f-789d-a696-3ae7" publicationId="c835-461f-ea00-a841" page="39">
@@ -108,10 +108,8 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Atlas - Catastrophe" hidden="false" id="df31-ecfa-33ff-265e" page="3" publicationId="c835-461f-ea00-a841">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="fa78-25dc-c22a-2813" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="ff1f-4cd5-ba27-9204" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="a945-1bf3-cece-a971" targetId="79f7-4244-6fb7-d41a" primary="false"/>
-        <categoryLink name="Medium Groups" hidden="false" id="4acf-94d6-a6e9-633f" targetId="e555-ff57-c478-18cd" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="1499-e81f-61ec-0216" targetId="fb8b-57b3-d46c-d679" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -140,7 +138,12 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Catastrophe Heavy Cruiser" hidden="false" id="33cd-7dfe-ad23-2e56" type="selectionEntry" targetId="068e-36ac-efdc-a588"/>
+        <entryLink import="true" name="Catastrophe Heavy Cruiser" hidden="false" id="33cd-7dfe-ad23-2e56" type="selectionEntry" targetId="068e-36ac-efdc-a588">
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="c807-26ca-9e02-13c5" primary="false" name="Group"/>
+            <categoryLink targetId="e555-ff57-c478-18cd" id="eeb1-558b-d743-6be6" primary="false" name="Medium Groups"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Groups -----" hidden="true" id="f85e-349a-b7ce-3de8"/>

@@ -43,11 +43,9 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Overlord of Flies - Nosferatu" hidden="false" id="b0b3-4b12-b0c8-aca3" page="5" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="c15a-72ff-c250-18fb" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="9956-7e51-e2b1-fb5f" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="e3b7-53b6-cf4a-ce9a" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="1a0a-c65b-43b6-717b" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink name="Colossal Groups" hidden="false" id="9b8b-d18a-a68f-9b5a" targetId="52fa-6578-d171-57d6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Overlord of Flies" hidden="false" id="50cb-b1c3-4b95-2f41" subType="crew" sortIndex="1">
@@ -83,6 +81,10 @@
             <modifier type="append" value="Winged Bulwark" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
             <modifier type="set" value="4+" field="05b6-9825-68e8-4983" scope="parent" affects="childs.recursive.model.profiles.Ship"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="92d6-4671-e33f-94a4" primary="false" name="Group"/>
+            <categoryLink targetId="52fa-6578-d171-57d6" id="a057-eef8-88ad-6434" primary="false" name="Colossal Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>
@@ -103,11 +105,9 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Baba Yaga - Daemon" hidden="false" id="6aad-bbb7-c1bf-9583" page="4" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="82f4-e82e-47f8-3003" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="9934-6a61-6b75-2519" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="f75f-32b9-6fea-214e" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="905e-7ca0-4543-b571" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink targetId="8d99-053d-ffeb-98c5" id="3081-564b-861f-ef0c" primary="false" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Baba Yaga" hidden="false" id="1148-690f-4cb6-90db" subType="crew" sortIndex="1">
@@ -138,16 +138,19 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Daemon Battleship" hidden="false" id="e72a-ef39-8f62-962b" type="selectionEntry" targetId="cb4a-214d-dff6-d924" sortIndex="2"/>
+        <entryLink import="true" name="Daemon Battleship" hidden="false" id="e72a-ef39-8f62-962b" type="selectionEntry" targetId="cb4a-214d-dff6-d924" sortIndex="2">
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="6a2c-227a-d6df-c5c4" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="688b-659a-9815-1f05" primary="false" name="Heavy Groups"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Flayer - Shadow" hidden="false" id="0b1b-4cad-329b-7d5a" page="3" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="76f9-0ba3-a236-40cc" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="e727-2519-315a-cb74" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="6635-97e0-ebe9-e001" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="4ab3-f38b-abd5-1b13" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink targetId="8d99-053d-ffeb-98c5" id="c552-4af2-3b5d-5362" primary="false" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Flayer" hidden="false" id="ecc2-550a-847f-2bda" subType="crew" sortIndex="1">
@@ -192,15 +195,17 @@
           <modifiers>
             <modifier type="set" value="Savagery" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="7d94-0ebb-02d3-db71" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="b867-bf4a-ff41-411d" primary="false" name="Heavy Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Enslaver - Raiju" hidden="false" id="b472-ebd8-dca8-b337" page="2" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="a3b9-3511-59af-714d" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="7d99-60d5-a74c-3fc1" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="c1b7-7a18-fd6b-c2fb" targetId="79f7-4244-6fb7-d41a" primary="false"/>
-        <categoryLink name="Medium Groups" hidden="false" id="35f3-03b5-d697-6199" targetId="e555-ff57-c478-18cd" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="10d7-d52f-6104-9758" targetId="fb8b-57b3-d46c-d679" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -232,7 +237,12 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Raiju Heavy Cruiser" hidden="false" id="19d8-5ceb-4262-f8f6" type="selectionEntry" targetId="0085-0755-c7e4-27b9" sortIndex="2"/>
+        <entryLink import="true" name="Raiju Heavy Cruiser" hidden="false" id="19d8-5ceb-4262-f8f6" type="selectionEntry" targetId="0085-0755-c7e4-27b9" sortIndex="2">
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="3762-c944-527b-70c2" primary="false" name="Group"/>
+            <categoryLink targetId="e555-ff57-c478-18cd" id="8379-ec65-6db4-dd0b" primary="false" name="Medium Groups"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="66ae-0789-1748-c756"/>

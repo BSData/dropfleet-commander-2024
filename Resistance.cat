@@ -53,11 +53,9 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Magellan - Coloniser" hidden="false" id="9d4b-69f2-b535-656c">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="3e4b-209b-504f-2c92" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="9f88-c020-4aac-0cc3" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="4e50-5cad-0183-71c1" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="e7c5-ed74-512e-eded" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink targetId="52fa-6578-d171-57d6" id="bea4-64d9-cd6b-0842" primary="false" name="Colossal Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Magellan" hidden="false" id="ac3e-76cc-8024-fb87" subType="crew" sortIndex="1">
@@ -86,6 +84,8 @@
         <selectionEntry type="model" import="true" name="Coloniser Interstellar Dreadnought" hidden="false" id="9bed-c61e-b656-5308" publicationId="7fb8-995d-767a-783d" page="36" sortIndex="2">
           <categoryLinks>
             <categoryLink name="Colossal Ship" hidden="false" id="f69b-fe0f-2a60-1f07" targetId="6e44-cb75-e25f-8b24" primary="true"/>
+            <categoryLink targetId="default-category" id="ddc9-b319-715b-edb4" primary="false" name="Group"/>
+            <categoryLink targetId="52fa-6578-d171-57d6" id="fcf2-0041-2048-dcbc" primary="false" name="Colossal Groups"/>
           </categoryLinks>
           <profiles>
             <profile name="Coloniser" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="8c25-a499-6576-4902" publicationId="7fb8-995d-767a-783d" page="36">
@@ -163,9 +163,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Nguen - Olympus" hidden="false" id="996f-f331-e84f-11f1">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="d11d-8048-0121-43cc" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="47df-2ff4-a960-a2b3" targetId="daa7-4c13-fe75-9281" primary="true"/>
-        <categoryLink name="Heavy Groups" hidden="false" id="d6cb-8dcf-0804-b350" targetId="8d99-053d-ffeb-98c5" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="515c-869e-7a7d-ac26" targetId="fb8b-57b3-d46c-d679" primary="false"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="6fa4-beeb-c2da-17e8" targetId="79f7-4244-6fb7-d41a" primary="false"/>
       </categoryLinks>
@@ -207,6 +205,8 @@
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="9d6f-26b0-7969-496b" id="2042-1c14-6e4b-9cc2" primary="true" name="Heavy Ship"/>
+            <categoryLink targetId="default-category" id="e857-05b2-352c-2313" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="5041-a38e-edba-f5d2" primary="false" name="Heavy Groups"/>
           </categoryLinks>
         </entryLink>
       </entryLinks>
@@ -228,11 +228,9 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hagen - Tribune" hidden="false" id="cee5-c500-357a-d910" page="">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="f638-ef16-ce68-194e" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="061e-ddec-a686-e051" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="87e9-c434-7129-ac55" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="0861-6949-a0fb-16f4" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink targetId="8d99-053d-ffeb-98c5" id="b791-bc56-a9d8-7c95" primary="false" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hagen" hidden="false" id="0ac2-c3f6-3ae9-efe1" subType="crew" sortIndex="1">
@@ -261,6 +259,8 @@
         <selectionEntry type="model" import="true" name="Tribune Battlecruiser" hidden="false" id="b440-9fb4-98f5-d300" publicationId="7fb8-995d-767a-783d" page="27" sortIndex="2">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="557b-bcf5-f340-9f4e" targetId="9d6f-26b0-7969-496b" primary="true"/>
+            <categoryLink targetId="default-category" id="5dda-6c9c-5f73-bb6b" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="70a5-0f41-4ada-bef3" primary="false" name="Heavy Groups"/>
           </categoryLinks>
           <profiles>
             <profile name="Tribune" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="27c7-a605-d580-2701" publicationId="7fb8-995d-767a-783d" page="27">
@@ -296,10 +296,8 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Typhoon Vasquez - Heavy Cruiser" hidden="false" id="6839-7d0a-57fd-5ad9" page="">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="04e0-f799-c3f5-b4ff" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="a5b4-695c-a1c7-12bb" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="03cc-ea38-7afa-50a2" targetId="79f7-4244-6fb7-d41a" primary="false"/>
-        <categoryLink name="Medium Groups" hidden="false" id="0fab-e2f4-0cad-5e4e" targetId="e555-ff57-c478-18cd" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="b0c0-7b0b-2435-a37d" targetId="fb8b-57b3-d46c-d679" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -329,6 +327,8 @@
         <selectionEntry type="model" import="true" name="Heavy Cruiser" hidden="false" id="9920-ce1c-c576-f0c2" publicationId="7fb8-995d-767a-783d" page="21">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="aaf9-f7a0-82d3-bd34" targetId="53c3-afc0-63ef-413a" primary="true"/>
+            <categoryLink targetId="default-category" id="74ca-2164-d0b8-10db" primary="false" name="Group"/>
+            <categoryLink targetId="e555-ff57-c478-18cd" id="8f1e-60be-0aa6-55ca" primary="false" name="Medium Groups"/>
           </categoryLinks>
           <profiles>
             <profile name="Heavy Cruiser" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="3f10-04e6-0394-be17" publicationId="7fb8-995d-767a-783d" page="21">

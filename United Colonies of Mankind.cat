@@ -46,9 +46,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="“Granite” Halsey - Washington" hidden="false" id="0df1-8a69-e48b-af52">
       <categoryLinks>
-        <categoryLink targetId="default-category" id="87c2-d340-108c-ebde" primary="false" name="Group"/>
         <categoryLink targetId="daa7-4c13-fe75-9281" id="5472-abec-d0e0-955f" primary="true" name="Famous Admirals"/>
-        <categoryLink targetId="52fa-6578-d171-57d6" id="fa06-865e-331f-3ab9" primary="false" name="Colossal Groups"/>
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="e57b-c51d-c748-4ccd" primary="false" name="Admirals"/>
         <categoryLink targetId="79f7-4244-6fb7-d41a" id="e88e-204d-800b-113b" primary="false" name="Faction/Famous Admirals"/>
       </categoryLinks>
@@ -79,6 +77,8 @@
         <selectionEntry type="model" import="true" name="Washington Supercarrier" hidden="false" id="adff-9045-f5aa-9334" publicationId="9813-8e60-542d-9381" page="52" sortIndex="2">
           <categoryLinks>
             <categoryLink name="Colossal Ship" hidden="false" id="b772-5d7f-88d6-cb4a" targetId="6e44-cb75-e25f-8b24" primary="true"/>
+            <categoryLink targetId="default-category" id="222a-d5f4-dc00-e6dd" primary="false" name="Group"/>
+            <categoryLink targetId="52fa-6578-d171-57d6" id="f6f0-2396-fa8a-8f22" primary="false" name="Colossal Groups"/>
           </categoryLinks>
           <profiles>
             <profile name="Washington" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d75f-7dcf-e804-4449" publicationId="9813-8e60-542d-9381" page="52">
@@ -138,9 +138,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Havelock - New York" hidden="false" id="35e6-a97b-0bc4-a778">
       <categoryLinks>
-        <categoryLink targetId="default-category" id="581d-b45a-0e6a-128d" primary="false" name="Group"/>
         <categoryLink targetId="daa7-4c13-fe75-9281" id="0289-2a3a-68f4-0264" primary="true" name="Famous Admirals"/>
-        <categoryLink targetId="8d99-053d-ffeb-98c5" id="eaa7-6b4d-81b6-832c" primary="false" name="Heavy Groups"/>
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="6de9-c5e9-d720-8c4d" primary="false" name="Admirals"/>
         <categoryLink targetId="79f7-4244-6fb7-d41a" id="eb2e-6855-c2a9-9777" primary="false" name="Faction/Famous Admirals"/>
       </categoryLinks>
@@ -177,6 +175,10 @@
           <modifiers>
             <modifier type="set" value="Vanguard" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="8ab7-6fe6-06f3-b3be" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="fa2f-97c9-36a9-5370" primary="false" name="Heavy Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <modifiers>
@@ -197,11 +199,9 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Weaver - Perth" hidden="false" id="0691-dfab-1c01-7865">
       <categoryLinks>
-        <categoryLink targetId="default-category" id="bd5f-cab4-f18c-85b8" primary="false" name="Group"/>
         <categoryLink targetId="daa7-4c13-fe75-9281" id="9ac6-47ba-4c14-95e9" primary="true" name="Famous Admirals"/>
         <categoryLink targetId="79f7-4244-6fb7-d41a" id="985d-6ccc-3cc5-b785" primary="false" name="Faction/Famous Admirals"/>
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="ded6-b1ad-0ccd-f44f" primary="false" name="Admirals"/>
-        <categoryLink targetId="8d99-053d-ffeb-98c5" id="0f22-7551-7c26-4a99" primary="false" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Weaver" hidden="false" id="5bfd-f3f3-3675-97a8" subType="crew" sortIndex="1">
@@ -239,6 +239,10 @@
           <modifiers>
             <modifier type="set" value="Jink" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="6d22-189f-d8eb-4182" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="7807-5a31-6666-dcca" primary="false" name="Heavy Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>
@@ -254,10 +258,8 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tayne - Warsaw" hidden="false" id="6d3f-389f-1a9c-cdba" page="">
       <categoryLinks>
-        <categoryLink targetId="default-category" id="75d8-a664-fbc1-be1b" primary="false" name="Group"/>
         <categoryLink targetId="daa7-4c13-fe75-9281" id="a8b5-191b-482f-fa75" primary="true" name="Famous Admirals"/>
         <categoryLink targetId="79f7-4244-6fb7-d41a" id="4c4c-f82d-badd-2be6" primary="false" name="Faction/Famous Admirals"/>
-        <categoryLink targetId="e555-ff57-c478-18cd" id="06ed-479d-5802-205b" primary="false" name="Medium Groups"/>
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="0bbd-381f-c38c-cdd2" primary="false" name="Admirals"/>
       </categoryLinks>
       <selectionEntries>
@@ -296,6 +298,10 @@
           <modifiers>
             <modifier type="set" value="Stressful Manoeuvre" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="35e8-c25e-0a2c-70df" primary="false" name="Group"/>
+            <categoryLink targetId="e555-ff57-c478-18cd" id="beb1-6db6-8ca9-360c" primary="false" name="Medium Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>

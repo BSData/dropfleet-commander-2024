@@ -43,11 +43,9 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gaius Chau - Romulus" hidden="false" id="416b-ac4b-0ec7-e966" page="5" publicationId="6462-e99b-594c-193a">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="4dac-3c9d-9431-c175" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="32c7-e487-ffba-7775" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="d224-a49e-ba2e-3f02" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="8b2a-6c39-d415-68ad" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink targetId="52fa-6578-d171-57d6" id="e165-5ecf-4550-f3a9" primary="false" name="Colossal Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Gaius Chau" hidden="false" id="9507-690f-5625-4e73" subType="crew" sortIndex="1">
@@ -82,6 +80,10 @@
           <modifiers>
             <modifier type="set" value="Cutting Power" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="1ed9-356e-1714-8e26" primary="false" name="Group"/>
+            <categoryLink targetId="52fa-6578-d171-57d6" id="6548-86e3-c3fc-786a" primary="false" name="Colossal Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>
@@ -102,11 +104,9 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Claudia Rhee - Heracles" hidden="false" id="fc7e-9c9b-0758-b590" page="4" publicationId="6462-e99b-594c-193a">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="3a06-a526-e352-74fd" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="3906-76c2-4f2e-d789" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="1afe-e2ff-046e-4b12" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="75f2-df79-608e-a6b4" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink targetId="8d99-053d-ffeb-98c5" id="1054-11fc-f867-5662" primary="false" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Claudia Rhee" hidden="false" id="821d-4002-c383-4bcc" subType="crew" sortIndex="1">
@@ -141,6 +141,10 @@
           <entryLinks>
             <entryLink import="true" name="Hornet Drones" hidden="false" id="f1b8-9437-9507-593d" type="selectionEntry" targetId="07d3-ae7d-c07b-ce68"/>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="8b67-a91d-baf5-2a13" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="b100-6a9a-5414-3de3" primary="false" name="Heavy Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>
@@ -161,11 +165,9 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Helena of Asgard - Pompeius" hidden="false" id="3498-03f8-e547-1c37" page="3" publicationId="6462-e99b-594c-193a">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="6622-3f1a-f35f-6637" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="4ed6-87d9-5345-ef3d" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="7685-3391-11e3-bfae" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="0797-75a3-d4cd-1da3" targetId="fb8b-57b3-d46c-d679" primary="false"/>
-        <categoryLink targetId="8d99-053d-ffeb-98c5" id="ae86-d477-5e69-bfb6" primary="false" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Helena of Asgard" hidden="false" id="4ce1-df00-0db3-ca07" subType="crew" sortIndex="1">
@@ -197,6 +199,8 @@
           </costs>
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="d4da-9490-0d72-0cae" targetId="9d6f-26b0-7969-496b" primary="true"/>
+            <categoryLink targetId="default-category" id="f1ef-0639-21c6-bf72" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="918b-cb79-3c90-21b4" primary="false" name="Heavy Groups"/>
           </categoryLinks>
           <profiles>
             <profile name="Pompeius" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="da74-71c2-a496-d339" publicationId="6462-e99b-594c-193a" page="40">
@@ -226,10 +230,8 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Javelin - Achilles" hidden="false" id="7ef9-eaa2-4a63-34ad" page="2" publicationId="6462-e99b-594c-193a">
       <categoryLinks>
-        <categoryLink name="Group" hidden="false" id="286b-8329-33e0-f65f" targetId="default-category" primary="false"/>
         <categoryLink name="Famous Admirals" hidden="false" id="3758-f330-2cd5-aaa2" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="4efa-c887-e597-5c05" targetId="79f7-4244-6fb7-d41a" primary="false"/>
-        <categoryLink name="Medium Groups" hidden="false" id="012c-9656-4139-c12a" targetId="e555-ff57-c478-18cd" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="2217-258f-9e13-6c0c" targetId="fb8b-57b3-d46c-d679" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -266,6 +268,10 @@
           <modifiers>
             <modifier type="set" value="Regenerate-2, Self Repairing Armour Systems" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="1ee2-9557-4023-b487" primary="false" name="Group"/>
+            <categoryLink targetId="e555-ff57-c478-18cd" id="ea7c-94d5-a98b-fddb" primary="false" name="Medium Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <constraints>
