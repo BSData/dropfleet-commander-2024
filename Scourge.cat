@@ -23,13 +23,13 @@
         <profile name="Dissipate Energy" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9b8d-7ca5-bdc0-e637">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of any Group’s activation, target a friendly Group. Remove a Spike from the friendly Group.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of any Group’s activation, target a friendly Group. Remove a Spike from the friendly Group.</characteristic>
           </characteristics>
         </profile>
         <profile name="Silent Launch" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3c79-435f-533f-1e0b">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group is given the Silent Running Order, that Group may use Launch Assets this round in addition to reducing its Signature to 0” until the start of its next activation.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group is given the Silent Running Order, that Group may use Launch Assets this round in addition to reducing its Signature to 0” until the start of its next activation.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -65,7 +65,7 @@
             <profile name="Limitless Pestilence" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="d53d-d3b0-8f45-daa2">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Fighter or Bomber Wing is completely removed due to an opponent’s Fighters, you may immediately launch a single Fighter or Bomber from this Admiral’s ship.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Fighter or Bomber Wing is completely removed due to an opponent’s Fighters, you may immediately launch a single Fighter or Bomber from this Admiral’s ship.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -125,7 +125,7 @@
             <profile name="Death Dispenser" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="68fd-a07e-7661-384b">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you launch Dropships or Bulk Landers at a Dropsite, place an additional D3 Battalion tokens on that Dropsite.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you launch Dropships or Bulk Landers at a Dropsite, place an additional D3 Battalion tokens on that Dropsite.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -165,7 +165,7 @@
             <profile name="Close in and Personal" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a28a-5919-a4b9-5e0f">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group is given the Max Thrust special order, each Ship in that Group may fire a single Close Action weapon during this activation.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group is given the Max Thrust special order, each Ship in that Group may fire a single Close Action weapon during this activation.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -219,7 +219,7 @@
             <profile name="Infernal Maw" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5996-2832-9d8f-5bcc">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After you roll to hit with a Furnace weapon, re-roll all of that weapon’s attack dice (both hits and misses).</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After you roll to hit with a Furnace weapon, re-roll all of that weapon’s attack dice (both hits and misses).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2712,7 +2712,7 @@
   </entryLinks>
   <sharedRules>
     <rule name="Winged Bulwark" id="aafc-3f0d-e8a5-6302" hidden="false">
-      <description>Increase the Launch of this Flagship’s Fighters &amp; Bombers to 8. Friendly Fighters &amp; Bombers that activate within 14” of this Flagship may not move further than 14” away from this Flagship.</description>
+      <description>Increase the Launch of this Flagship’s Fighters &amp; Bombers to 8. Friendly Fighters &amp; Bombers that activate within 14” of this Flagship may not move further than 14” away from this Flagship.</description>
     </rule>
     <rule name="Death Mistress" id="da80-c120-515a-4d23" hidden="false">
       <description>Whenever an enemy group is destroyed, roll a dice. On a 4+ gain 1AP.</description>
@@ -2724,10 +2724,10 @@
       <description>Whenever you capture an enemy ship, gain 2AP.</description>
     </rule>
     <rule name="Oculus Booster" id="1b05-5002-dd72-fef6" hidden="false">
-      <description>While this ship is on General Quarters, other friendly Group’s weapon with “Oculus” in their names improve their Scald-X value by 1 when firing at Groups within this ship’s Front Arc and Scan range.</description>
+      <description>While this ship is on General Quarters, other friendly Group’s weapon with “Oculus” in their names improve their Scald-X value by 1 when firing at Groups within this ship’s Front Arc and Scan range.</description>
     </rule>
     <rule name="Energy Siphon" id="37fb-a24b-24a0-e201" hidden="false">
-      <description>At the start of this Group’s activation, you may pick a friendly or enemy Group within 3” without the Energy Siphon special rule. That Group loses up to 2 Spikes and this Group gains those spikes. If this Group gained any number of Spikes due to this rule, each ship in it increases the Attack of Oculus Rays by 1.</description>
+      <description>At the start of this Group’s activation, you may pick a friendly or enemy Group within 3” without the Energy Siphon special rule. That Group loses up to 2 Spikes and this Group gains those spikes. If this Group gained any number of Spikes due to this rule, each ship in it increases the Attack of Oculus Rays by 1.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

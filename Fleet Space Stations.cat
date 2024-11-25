@@ -733,7 +733,7 @@
           </costs>
           <rules>
             <rule name="Signature Bloom" id="d91a-35d5-a2f7-aeae" hidden="false">
-              <description>Friendly Ships within 6” of this Space Station are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship’s Group ignore a Spike for each Hidden Ship in that Group.
+              <description>Friendly Ships within 6” of this Space Station are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship’s Group ignore a Spike for each Hidden Ship in that Group.
 This rule has no effect while this Space Station is controlled by an enemy player.</description>
             </rule>
           </rules>
@@ -885,7 +885,7 @@ This rule has no effect while this Space Station is controlled by an enemy playe
           <profiles>
             <profile name="Deep Space Tracking" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="c527-3690-5537-9d8f" publicationId="4be7-d555-8518-dd99" page="2">
               <characteristics>
-                <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">When this Space Station targets enemy ships, Spikes on those ships have double their normal effect. So a Minor Spike increases the ship’s Signature by 12” and a Major Spike increases it by 24” when targeted by this Space Station.</characteristic>
+                <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">When this Space Station targets enemy ships, Spikes on those ships have double their normal effect. So a Minor Spike increases the ship’s Signature by 12” and a Major Spike increases it by 24” when targeted by this Space Station.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -900,7 +900,7 @@ This rule has no effect while this Space Station is controlled by an enemy playe
           <profiles>
             <profile name="Scanner Uplink" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="8be2-7caa-6a68-2d03" publicationId="4be7-d555-8518-dd99" page="2">
               <characteristics>
-                <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">This Space Station’s Scan range is increased by 3”. In addition, friendly ships within 3” of one or more Space Stations with this special rule increase their Scan range by 3”. This special rule ceases to function while this Space Station is controlled by an enemy player.</characteristic>
+                <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">This Space Station’s Scan range is increased by 3”. In addition, friendly ships within 3” of one or more Space Stations with this special rule increase their Scan range by 3”. This special rule ceases to function while this Space Station is controlled by an enemy player.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -919,14 +919,14 @@ This rule has no effect while this Space Station is controlled by an enemy playe
       <description>This Gatestation’s Dropships may only be used while you control it.</description>
     </rule>
     <rule name="Gravity Manipulator" id="1377-0988-f6d3-4a38" hidden="false">
-      <description>Friendly Ships that start their movement within this station’s Scan range measure their movement from any point at the edge of this space station’s Scan range, retaining their facing. Enemy Ships that start their movement within this station’s Scan range measure their movement from this station (distances are measured from the flight stem), retaining their facing.
+      <description>Friendly Ships that start their movement within this station’s Scan range measure their movement from any point at the edge of this space station’s Scan range, retaining their facing. Enemy Ships that start their movement within this station’s Scan range measure their movement from this station (distances are measured from the flight stem), retaining their facing.
 This special rule ceases to function while you do not control this station.</description>
     </rule>
     <rule name="Voidspace Anchor" id="9b37-61fe-6eac-8888" hidden="false">
-      <description>When an enemy Group within 6” of this Space Station activates, that Group may only move up to half of its Thrust this activation regardless of selected Order</description>
+      <description>When an enemy Group within 6” of this Space Station activates, that Group may only move up to half of its Thrust this activation regardless of selected Order</description>
     </rule>
     <rule name="Disintegrator Bank" id="00a0-f924-fd56-2694" hidden="false">
-      <description>Instead of the normal Arcs, Shaltari Shurikens have their own Arcs. A Shuriken has 5 Arcs, each 72 degrees. The easiest way to define these Arcs is to follow the lines of adjacent vertical vanes, measured from the flight stand as normal. Follow these arcs when attacking instead of the normal rules for Arcs.
+      <description>Instead of the normal Arcs, Shaltari Shurikens have their own Arcs. A Shuriken has 5 Arcs, each 72 degrees. The easiest way to define these Arcs is to follow the lines of adjacent vertical vanes, measured from the flight stand as normal. Follow these arcs when attacking instead of the normal rules for Arcs.
 When you assign targets to this weapon, you may only use each Arc once.</description>
     </rule>
   </sharedRules>

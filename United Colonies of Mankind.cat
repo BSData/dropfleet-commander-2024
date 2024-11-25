@@ -30,13 +30,13 @@
         <profile name="Push Engines to Max" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9d10-e2f4-7de0-6014">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, each Ship in it suffers 1 Damage and improves its Thrust by 2” until the end of its activation.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, each Ship in it suffers 1 Damage and improves its Thrust by 2” until the end of its activation.</characteristic>
           </characteristics>
         </profile>
         <profile name="Overcharge Lasers" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="faec-ba26-51df-5c7e">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a Group makes an attack with any number of weapons with “Laser” in its name, those weapons gain Fusillade-2 until the end of its activation.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a Group makes an attack with any number of weapons with “Laser” in its name, those weapons gain Fusillade-2 until the end of its activation.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -71,7 +71,7 @@
             <profile name="Master Tactician" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3fc2-b60a-4d3e-b1ee">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Before you roll for initiative this round, your initiative roll for this round automatically becomes a roll of 6.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Before you roll for initiative this round, your initiative roll for this round automatically becomes a roll of 6.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -160,7 +160,7 @@
             <profile name="Ballistic Prediction" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="75e0-50bf-afac-52ff">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with “Mass Driver” in its name, improve the Lock value of that weapon by 1 for that attack.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with “Mass Driver” in its name, improve the Lock value of that weapon by 1 for that attack.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -219,7 +219,7 @@
             <profile name="Laser Bombardment" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="026e-baa5-c8df-271f">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with “Laser” in its name and an Arc of FN, that weapon gains Bombardment for that attack.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with “Laser” in its name and an Arc of FN, that weapon gains Bombardment for that attack.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -276,7 +276,7 @@
             <profile name="Close Quarter Battle" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="1245-9f86-345a-7f3f">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group moves, each ship in it suffers 1 point of Damage and gains Vectored until the end of the round.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group moves, each ship in it suffers 1 point of Damage and gains Vectored until the end of the round.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3353,18 +3353,18 @@
   </sharedProfiles>
   <sharedRules>
     <rule name="Stressful Manoeuvre" id="ad61-5ace-2bb6-9477" hidden="false">
-      <description>When firing its Cobra Heavy Laser Pair, this Admiral’s Flagship may suffer 1 point of damage to change the Arc of its Cobra Heavy Laser Pair to F.</description>
+      <description>When firing its Cobra Heavy Laser Pair, this Admiral’s Flagship may suffer 1 point of damage to change the Arc of its Cobra Heavy Laser Pair to F.</description>
     </rule>
     <rule name="UCM Battlenet" id="6f5b-bd82-2aa9-c900" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="45">
       <description>An admiral assigned to this ship gains the following Command Abilities:
- • Telemetry Link (2AP): Pick a Group in Orbit within 12” of this Ship. That Group increases its total movement (after orders) by 4” this round.
- • Order to Fire (2AP): Pick a Group in Orbit within 12” of this Ship. Each Ship in that Group increases the number of weapons it may attack with this round by 1 while on Orders that allow it to attack, following any other restrictions (such as type or rules).</description>
+ • Telemetry Link (2AP): Pick a Group in Orbit within 12” of this Ship. That Group increases its total movement (after orders) by 4” this round.
+ • Order to Fire (2AP): Pick a Group in Orbit within 12” of this Ship. Each Ship in that Group increases the number of weapons it may attack with this round by 1 while on Orders that allow it to attack, following any other restrictions (such as type or rules).</description>
     </rule>
     <rule name="Jink" id="8008-c897-2756-2472" hidden="false">
-      <description>At the start or end of this Flagship’s movement, you may place it up to 2” away on a line drawn directly through the centre of both side arcs. If this Flagship is on the Max Thrust Special Order, you may place it 4” along that line instead.</description>
+      <description>At the start or end of this Flagship’s movement, you may place it up to 2” away on a line drawn directly through the centre of both side arcs. If this Flagship is on the Max Thrust Special Order, you may place it 4” along that line instead.</description>
     </rule>
     <rule name="Vanguard" id="8612-0822-de10-5e03" hidden="false">
-      <description>While this Flagship is within 12” of your opponent’s deployment zone, you may re-roll its failed Backup saves.</description>
+      <description>While this Flagship is within 12” of your opponent’s deployment zone, you may re-roll its failed Backup saves.</description>
     </rule>
     <rule name="Fighter Command" id="83c4-4e63-ad54-d9c7" hidden="false">
       <description>Fighters &amp; Bombers launched from this ship may be placed up to 8” away instead of 6”.</description>

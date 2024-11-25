@@ -23,13 +23,13 @@
         <profile name="Re-route Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fe8f-80c2-e818-99e1">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, remove one Crippling Effect token (of any type) from that Group.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, remove one Crippling Effect token (of any type) from that Group.</characteristic>
           </characteristics>
         </profile>
         <profile name="Ranked Fire" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="8ed1-95f9-04eb-bfc6">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to Broadside Arc weapons, select one of those weapons with the Volley-X special rule. That weapon does not need to alternate arcs due to its Volley-X special rule (so can attack the same target in the same arc using each Volley attack) for that attack.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to Broadside Arc weapons, select one of those weapons with the Volley-X special rule. That weapon does not need to alternate arcs due to its Volley-X special rule (so can attack the same target in the same arc using each Volley attack) for that attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -65,7 +65,7 @@
             <profile name="Backup Systems Engaged" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="43f1-1c5a-49eb-824b">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly ship would roll for Crippling Damage, roll a dice. On a 4+ that Ship does not roll on the Crippling Damage table but is still Crippled.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly ship would roll for Crippling Damage, roll a dice. On a 4+ that Ship does not roll on the Crippling Damage table but is still Crippled.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -124,7 +124,7 @@
             <profile name="High-G Manouevre" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="db14-31da-1ac5-5ca1">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group is given a Max Thrust order, it may turn as if it was on General Quarters.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group is given a Max Thrust order, it may turn as if it was on General Quarters.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -183,7 +183,7 @@
             <profile name="Experimental Munitions" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4e91-7a62-d3c3-7ddf">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to weapons, select one of those weapons with the Calibre-X special rule. That weapon gains the benefits of its Calibre-X special rule regardless of the Tonnage of the target Group for that attack.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to weapons, select one of those weapons with the Calibre-X special rule. That weapon gains the benefits of its Calibre-X special rule regardless of the Tonnage of the target Group for that attack.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -248,7 +248,7 @@
             <profile name="Heavy Sniper" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4c47-6012-29da-5bda">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with the Calibre-H special rule, the attacking Ship doubles its Scan value against H Tonnage Ships for that weapon’s attack (other attacks and weapons are unaffected).</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with the Calibre-H special rule, the attacking Ship doubles its Scan value against H Tonnage Ships for that weapon’s attack (other attacks and weapons are unaffected).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3102,19 +3102,19 @@
   </entryLinks>
   <sharedRules>
     <rule name="Holo-Debris Field" id="8857-c5fc-0b83-e275" hidden="false">
-      <description>At the end of this ship’s activation, if it was on the Weapons Free Special Order, you may place a Holo-Debris Field within 3” of this ship. These Holo-Debris Fields are removed during the Cleanup step of the Roundup phase and are circular with a 4” diameter (a D6 or custom template are perfect tokens to represent these). Enemy Ships ignore the target’s Signature (but still count Spikes) when attacking through a Holo-Debris Field. Friendly ships and all Launch Assets (friendly &amp; enemy) ignore these Debris Fields.</description>
+      <description>At the end of this ship’s activation, if it was on the Weapons Free Special Order, you may place a Holo-Debris Field within 3” of this ship. These Holo-Debris Fields are removed during the Cleanup step of the Roundup phase and are circular with a 4” diameter (a D6 or custom template are perfect tokens to represent these). Enemy Ships ignore the target’s Signature (but still count Spikes) when attacking through a Holo-Debris Field. Friendly ships and all Launch Assets (friendly &amp; enemy) ignore these Debris Fields.</description>
     </rule>
     <rule name="Targeting Link" id="2ed1-c30a-07f6-063d" hidden="false">
-      <description>If a friendly ship can measure its Weapons Range to this ship (discounting any spikes), it may use this ship as the origin of its attacks. If it does, it measures Weapons Range from the Ourania (using the Ourania’s Scan). Attacks made this way must still be in the weapon arc of the firing ship. This rule has no effect on Close Action weapons.</description>
+      <description>If a friendly ship can measure its Weapons Range to this ship (discounting any spikes), it may use this ship as the origin of its attacks. If it does, it measures Weapons Range from the Ourania (using the Ourania’s Scan). Attacks made this way must still be in the weapon arc of the firing ship. This rule has no effect on Close Action weapons.</description>
     </rule>
     <rule name="Cutting Power" id="4307-771a-1d85-2af8" hidden="false">
-      <description>If you attack with and do not Overcharge any of this Flagship’s Energy Glaive Batteries, they gain Scald-1 for their attacks this activation.</description>
+      <description>If you attack with and do not Overcharge any of this Flagship’s Energy Glaive Batteries, they gain Scald-1 for their attacks this activation.</description>
     </rule>
     <rule name="Self Repairing Armour Systems" id="9a6b-935a-9e3f-1c05" hidden="false">
       <description>This Flagship cannot have its Energy Save reduced below a 5+.</description>
     </rule>
     <rule name="Advanced ECM Suite" id="309d-c322-d206-2dac" hidden="false">
-      <description>Once per round, when a friendly Group (including this one) within 4” of this Ship is attacked, after all weapons have been assigned, reduce the Lock of one of those weapons by 1 for the rest of the round. The attacking Group must be on the same orbital layer as this Ship. A weapon can be affected multiple times each round by this rule.</description>
+      <description>Once per round, when a friendly Group (including this one) within 4” of this Ship is attacked, after all weapons have been assigned, reduce the Lock of one of those weapons by 1 for the rest of the round. The attacking Group must be on the same orbital layer as this Ship. A weapon can be affected multiple times each round by this rule.</description>
     </rule>
     <rule name="Cull the Weak" id="cf3e-0b69-d6ca-7598" hidden="false">
       <description>Heavy Quad Battery (Flak) may only be used to attack Ships of L Tonnage.</description>

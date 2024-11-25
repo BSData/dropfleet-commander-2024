@@ -23,13 +23,13 @@
         <profile name="Gravitic Manoeuvring" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="af89-69f8-9075-5270">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group is given a Max Thrust Order, it may turn as if it was on General Quarters.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group is given a Max Thrust Order, it may turn as if it was on General Quarters.</characteristic>
           </characteristics>
         </profile>
         <profile name="Kinetic Deconstruction" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5f9d-652a-4ede-7e0c">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Decon” in its name, those weapons change their Type to Kinetic until the end of its activation.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Decon” in its name, those weapons change their Type to Kinetic until the end of its activation.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -65,7 +65,7 @@
             <profile name="Vice Lightly" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fd3c-eefc-a6b0-a23b">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with “Lightvice” in its name, that weapon ignores its Focused rule for that attack.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with “Lightvice” in its name, that weapon ignores its Focused rule for that attack.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -130,7 +130,7 @@
             <profile name="Emergency Reattachment Protocol" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="576b-f6af-291f-d7e9">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When an enemy would destroy one of your Payload Ships, it is not destroyed and is instead reattached to a valid Porter Ship within 6”.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When an enemy would destroy one of your Payload Ships, it is not destroyed and is instead reattached to a valid Porter Ship within 6”.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1937,7 +1937,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">5</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Bombardment, Close Action, Focused</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Bombardment, Close Action, Focused</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2428,16 +2428,16 @@
   </publications>
   <sharedRules>
     <rule name="Tractor Beamer" id="c9fa-8382-0412-768a" hidden="false">
-      <description>At the end of this Ship’s activation, you may pick a single friendly Ship with the Payload special rule within 6”. Move that ship up to 4” in any direction.</description>
+      <description>At the end of this Ship’s activation, you may pick a single friendly Ship with the Payload special rule within 6”. Move that ship up to 4” in any direction.</description>
     </rule>
     <rule name="Gravitational Lensing" id="2fcc-32b0-e2ea-3d0d" hidden="false">
-      <description>Once per round, when determining targets for a friendly ship within 8” of this ship, you may treat one of its weapons as having an Arc of F/S instead of its normal Arcs for that attack.</description>
+      <description>Once per round, when determining targets for a friendly ship within 8” of this ship, you may treat one of its weapons as having an Arc of F/S instead of its normal Arcs for that attack.</description>
     </rule>
     <rule name="Scythes" id="da6d-9de5-99cb-d405" hidden="false">
-      <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
+      <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
     </rule>
     <rule name="Scythe Cluster" id="b632-52e2-1b0a-c0a3" hidden="false">
-      <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
+      <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
     </rule>
     <rule name="Godray Lightvice" id="8590-da53-d799-e5d8" hidden="false">
       <description>This weapon’s Bombardment special rule has no effect on Ships in Atmosphere.</description>

@@ -37,13 +37,13 @@
         <profile name="Manic Repairs" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="ce47-e585-75b9-2ac2">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you activate a Group, all ships in that group gain Regenerate-2 until the end of the round.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you activate a Group, all ships in that group gain Regenerate-2 until the end of the round.</characteristic>
           </characteristics>
         </profile>
         <profile name="Resistance Elite Force" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="82ab-7f67-7fe5-f354">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the round, remove 2D3 enemy Battalions from a friendly ship.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the round, remove 2D3 enemy Battalions from a friendly ship.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -75,7 +75,7 @@
             <profile name="All Terrain Spaceships" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="c637-172d-cd2b-d3a0">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a friendly Group through Micrometeor Clouds or Debris Fields, that Group does not suffer damage from that scenery piece for that movement.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a friendly Group through Micrometeor Clouds or Debris Fields, that Group does not suffer damage from that scenery piece for that movement.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -185,7 +185,7 @@
             <profile name="Vent Cannon Mastery" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a67d-4965-9d98-708d">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you Overcharge a Group’s weapon with “Vent” in its name, each Ship in the firing Group may Overcharge a second weapon this activation.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you Overcharge a Group’s weapon with “Vent” in its name, each Ship in the firing Group may Overcharge a second weapon this activation.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -250,7 +250,7 @@
             <profile name="Reinforce Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="1b1f-68ea-637f-45f9">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage would roll its Backup save due to an attack, improve its Backup save for that attack by 1.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage would roll its Backup save due to an attack, improve its Backup save for that attack by 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -318,7 +318,7 @@
             <profile name="Bullet Baron" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4119-fdd3-79b8-3025">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with “Artillery” in its name, that weapon’s damage type becomes Core for that attack.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with “Artillery” in its name, that weapon’s damage type becomes Core for that attack.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1622,7 +1622,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Critical-1, Fusillade-2</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Critical-1, Fusillade-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1667,7 +1667,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Fusillade-1, Scald-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Fusillade-1, Scald-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1690,7 +1690,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Low Power, Volley-2</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Low Power, Volley-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1713,7 +1713,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-1, Low Power</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-1, Low Power</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1881,7 +1881,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Fusillade-1, Scald-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Fusillade-1, Scald-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2071,7 +2071,7 @@
       <profiles>
         <profile name="Sensor Dome" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="5abd-b57e-dad8-3b63">
           <characteristics>
-            <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">This Ship gains the Detector special rule. This ship counts as having an additional weapon for its Detector rule.</characteristic>
+            <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">This Ship gains the Detector special rule. This ship counts as having an additional weapon for its Detector rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2232,7 +2232,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Low Power</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Low Power</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2439,7 +2439,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Crippling, Critical-2, High Power</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Crippling, Critical-2, High Power</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2712,37 +2712,37 @@
       <description>If Hull points lost due to its Vent Cannon Batteries’ Overcharge rule would cause this Ship to be destroyed, it rolls 3D3 for its explosion and that explosion also affects Ships in other Orbital Layers.</description>
     </rule>
     <rule name="Scanning Systems" id="0a7f-cfc9-e2e8-18e4" hidden="false">
-      <description>When this Ship uses its Detector special rule, you may place an additional two Spikes on a different enemy Group in line of sight.</description>
+      <description>When this Ship uses its Detector special rule, you may place an additional two Spikes on a different enemy Group in line of sight.</description>
     </rule>
     <rule name="Repair Bay" id="2fc9-d1f9-059b-c3c1" hidden="false">
-      <description>Friendly Ships within 6” of this Ship that roll to repair Crippling Effects during the Repair step of the End Phase repair those effects on a roll of a 2+ instead of a 4+.</description>
+      <description>Friendly Ships within 6” of this Ship that roll to repair Crippling Effects during the Repair step of the End Phase repair those effects on a roll of a 2+ instead of a 4+.</description>
     </rule>
     <rule name="Box of Scraps" id="6042-7b1a-9cc8-2cc6" hidden="false">
-      <description>At the end of this ship’s activation, pick one friendly ship within 6” in line of sight (including this one). Place a Box Of Scraps token next to that ship. The next time that ship would be destroyed, it isn’t. Instead, before continuing to inflict damage, remove the Box of Scraps token and that ship remains in play with D3 Hull Points remaining, then continue inflicting damage as normal. Box Of Scraps tokens persist through rounds but a ship may only have 1 Box Of Scraps token.</description>
+      <description>At the end of this ship’s activation, pick one friendly ship within 6” in line of sight (including this one). Place a Box Of Scraps token next to that ship. The next time that ship would be destroyed, it isn’t. Instead, before continuing to inflict damage, remove the Box of Scraps token and that ship remains in play with D3 Hull Points remaining, then continue inflicting damage as normal. Box Of Scraps tokens persist through rounds but a ship may only have 1 Box Of Scraps token.</description>
     </rule>
     <rule name="VX Bomb" id="4bf8-0d06-02c2-f60b" hidden="false">
-      <description>If this weapon does damage to a Dropsite, remove all Battalions (friendly and enemy) from that Dropsite and its Features.</description>
+      <description>If this weapon does damage to a Dropsite, remove all Battalions (friendly and enemy) from that Dropsite and its Features.</description>
     </rule>
     <rule name="Swacs" id="74c2-9532-b423-0407" hidden="false">
-      <description>Enemy Ships within 12” of this ship may be targeted by friendly Ships firing Close Action weapons using the firing Ship’s normal Weapon Range (Scan + Sig).</description>
+      <description>Enemy Ships within 12” of this ship may be targeted by friendly Ships firing Close Action weapons using the firing Ship’s normal Weapon Range (Scan + Sig).</description>
     </rule>
     <rule name="Fighter Support" id="a315-6216-8cd2-6a19" hidden="false">
-      <description>When any number friendly Fighters within 6” of this ship are used to provide Kinetic Save re-rolls, increase the total number of re-rolls provided by 1 (after declaring how many fighters you are going to use). When any number of Friendly fighters are used to attack enemy Fighters &amp; Bombers within 6” of this ship, treat the friendly Fighters as having 1 additional Fighter.</description>
+      <description>When any number friendly Fighters within 6” of this ship are used to provide Kinetic Save re-rolls, increase the total number of re-rolls provided by 1 (after declaring how many fighters you are going to use). When any number of Friendly fighters are used to attack enemy Fighters &amp; Bombers within 6” of this ship, treat the friendly Fighters as having 1 additional Fighter.</description>
     </rule>
     <rule name="Debris Clearance" id="01ec-39c9-8ad8-2b37" hidden="false">
-      <description>Once per game, this Ship may forgo any attacks it may make. If it does, instead of attacking, this Ship may replace a piece of Debris Field within 6” (measuring to the edge of that Debris Field) with a Micrometeor Cloud of approximately the same size in the same location, or remove a piece of Micrometeor Cloud within 6” from the table.</description>
+      <description>Once per game, this Ship may forgo any attacks it may make. If it does, instead of attacking, this Ship may replace a piece of Debris Field within 6” (measuring to the edge of that Debris Field) with a Micrometeor Cloud of approximately the same size in the same location, or remove a piece of Micrometeor Cloud within 6” from the table.</description>
     </rule>
     <rule name="Space Telescope" id="5ee6-e5d1-1b32-cceb" hidden="false">
-      <description>This ship counts as having a single weapon for its Detector rule. When this ship uses its Detector rule, it may place an additional Spike on that Group, or it may place a Telescope token on that Group.</description>
+      <description>This ship counts as having a single weapon for its Detector rule. When this ship uses its Detector rule, it may place an additional Spike on that Group, or it may place a Telescope token on that Group.</description>
     </rule>
     <rule name="Telescope Token" id="5e41-e47d-2eee-9f6d" hidden="false">
-      <description>When you attack a Group that has a Telescope Token, you may remove the token. If you do, one weapon of the same type on each attacking Ship targeting that Group causes criticals when exceeding its Lock value by 1 instead of 2.</description>
+      <description>When you attack a Group that has a Telescope Token, you may remove the token. If you do, one weapon of the same type on each attacking Ship targeting that Group causes criticals when exceeding its Lock value by 1 instead of 2.</description>
     </rule>
     <rule name="Explosive" id="0208-e00f-13ea-f5b3" hidden="false">
-      <description>When this ship is destroyed, it explodes with a range of 3” and rolls 1D3 on the Explosion Effect table.</description>
+      <description>When this ship is destroyed, it explodes with a range of 3” and rolls 1D3 on the Explosion Effect table.</description>
     </rule>
     <rule name="Spinal Mass Annihilator" id="1a44-54c0-a125-435a" hidden="false">
-      <description>If damage from this weapon or any Crippling Effect it would cause would destroy a ship, remove that ship from the game without rolling for Explosion.</description>
+      <description>If damage from this weapon or any Crippling Effect it would cause would destroy a ship, remove that ship from the game without rolling for Explosion.</description>
     </rule>
   </sharedRules>
   <entryLinks>

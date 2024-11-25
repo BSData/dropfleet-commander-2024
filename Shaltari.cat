@@ -37,13 +37,13 @@
         <profile name="Overclock Gates" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fb7f-bc05-e8e4-3c07">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Activation Phase, pick a friendly Ship with the Gateship-X rule. That Ship doubles its X value until the end of the round. A Ship can only be affected by this Ability once each round.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Activation Phase, pick a friendly Ship with the Gateship-X rule. That Ship doubles its X value until the end of the round. A Ship can only be affected by this Ability once each round.</characteristic>
           </characteristics>
         </profile>
         <profile name="Espionage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="b332-b1c2-6f49-254e">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When an opponent uses an Ability, negate that use of that Ability (AP is still spent as usual and subsequent uses are unaffected).</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When an opponent uses an Ability, negate that use of that Ability (AP is still spent as usual and subsequent uses are unaffected).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -75,7 +75,7 @@
             <profile name="Radioactivity" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="8f18-51e8-ba6e-f0ce">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When any player rolls for Explosion (friendly or enemy), make the final result of that roll a 5.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When any player rolls for Explosion (friendly or enemy), make the final result of that roll a 5.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -131,7 +131,7 @@
             <profile name="Ancient Teleportation Node" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="6654-8f67-d03f-40bc">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Once per round, at the end of the Planning Phase, target a Dropsite with friendly Battalions on it. That Dropsite gains the Gateship-1 special rule until the end of the round, treating the Dropsite as a Ship for this rule (any other rules are unaffected).</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Once per round, at the end of the Planning Phase, target a Dropsite with friendly Battalions on it. That Dropsite gains the Gateship-1 special rule until the end of the round, treating the Dropsite as a Ship for this rule (any other rules are unaffected).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -188,7 +188,7 @@
             <profile name="Master of Gravity" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="501d-6af0-a3ad-049f">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent activates a Group, pick another Group (friendly or enemy) that has not activated this round. Turn that Group as if it was successfully critically hit by an attack with Impel-X. Ships in that Group gain Vectored until the end of the round.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent activates a Group, pick another Group (friendly or enemy) that has not activated this round. Turn that Group as if it was successfully critically hit by an attack with Impel-X. Ships in that Group gain Vectored until the end of the round.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -239,7 +239,7 @@
             <profile name="Cunning Positioning" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="6dab-2067-da53-1dbd">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group of M Tonnage, that Group gains Vectored for that movement.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group of M Tonnage, that Group gains Vectored for that movement.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -248,7 +248,7 @@
           </costs>
           <rules>
             <rule name="Twins" id="c7f4-b24f-5c06-5eb5" hidden="false">
-              <description>This Admiral counts as being in both Amber Cruisers in this Group and is only removed once the Group is destroyed.</description>
+              <description>This Admiral counts as being in both Amber Cruisers in this Group and is only removed once the Group is destroyed.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -2590,7 +2590,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">*</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1, Close Action, Mauler</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1, Close Action, Mauler</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2614,7 +2614,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">*</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-2, Close Action, Mauler</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-2, Close Action, Mauler</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2852,28 +2852,28 @@
       <description>At the end of this Ship’s activation, each enemy Group within 4” suffers D3 Core hits.</description>
     </rule>
     <rule name="True Disintegration" id="26e6-abd4-740e-1ba1" hidden="false">
-      <description>When damage from this Flagship’s Disintegrator Battery is part of an attack that causes a Ship to be destroyed, instead of rolling for explosion, all Ships in explosion range suffer 1 damage.</description>
+      <description>When damage from this Flagship’s Disintegrator Battery is part of an attack that causes a Ship to be destroyed, instead of rolling for explosion, all Ships in explosion range suffer 1 damage.</description>
     </rule>
     <rule name="Ion Overload" id="0278-c899-4a68-0dac" hidden="false">
-      <description>While this ship is on Weapons Free, it may use its Ion Aura and Ion Storm as if it did not have the Alt-1 special rule.</description>
+      <description>While this ship is on Weapons Free, it may use its Ion Aura and Ion Storm as if it did not have the Alt-1 special rule.</description>
     </rule>
     <rule name="Gravitational Draw" id="c143-3e3f-e516-3fe5" hidden="false">
       <description>Whenever this Flagship’s Gravity Coils would cause a ship to turn due to the Impel rule, gain 1AP.</description>
     </rule>
     <rule name="Gravitic Beamer" id="87ff-b872-9060-a999" hidden="false">
-      <description>If this weapon successfully deals damage to a Group, the next time that Group would move this round, it is moved an additional 2D3” after orders and modifiers.</description>
+      <description>If this weapon successfully deals damage to a Group, the next time that Group would move this round, it is moved an additional 2D3” after orders and modifiers.</description>
     </rule>
     <rule name="Shield Booster" id="f0c0-4983-dfb5-1878" hidden="false">
-      <description>While this Ship’s Group is in coherency, when another friendly Group within 6” of this Ship uses its Shield Save, you may improve that Group’s Shield-X special rule by 1 for that Save (so Shield-6+ would become Shield-5+). If you do, this Ship’s Group gains a Spike. Each Shield Save can only be affected by this rule once and Ships with this special rule are unaffected.</description>
+      <description>While this Ship’s Group is in coherency, when another friendly Group within 6” of this Ship uses its Shield Save, you may improve that Group’s Shield-X special rule by 1 for that Save (so Shield-6+ would become Shield-5+). If you do, this Ship’s Group gains a Spike. Each Shield Save can only be affected by this rule once and Ships with this special rule are unaffected.</description>
     </rule>
     <rule name="Void Skip" id="3c13-4dce-2534-ad09" hidden="false">
-      <description>If this ship goes on General Quarters when within 6” of a Ship with the Gateship special rule, rather than making a normal move, you may place it within 6” of any other Gateship in that Gateship’s chain (within 18” of each other as normal), facing any direction. If it does, it gains a Spike. It may be put in either Orbit or Atmosphere, regardless of the Voidgate it is placed by. When doing this, the whole group must move together.</description>
+      <description>If this ship goes on General Quarters when within 6” of a Ship with the Gateship special rule, rather than making a normal move, you may place it within 6” of any other Gateship in that Gateship’s chain (within 18” of each other as normal), facing any direction. If it does, it gains a Spike. It may be put in either Orbit or Atmosphere, regardless of the Voidgate it is placed by. When doing this, the whole group must move together.</description>
     </rule>
     <rule name="Open Network" id="6d98-dd49-c44e-7af7" hidden="false">
-      <description>Ships in this Group have a Coherency of 18”. While these Ships are outside of the normal 3” Coherency range, they have no Lead Ship, do not gain Formation Benefits, are targeted by attacks individually, and these attacks can only damage the targeted Ship.</description>
+      <description>Ships in this Group have a Coherency of 18”. While these Ships are outside of the normal 3” Coherency range, they have no Lead Ship, do not gain Formation Benefits, are targeted by attacks individually, and these attacks can only damage the targeted Ship.</description>
     </rule>
     <rule name="Force Projectors" id="aae7-bb69-749e-ed86" hidden="false">
-      <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
+      <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
     </rule>
   </sharedRules>
   <entryLinks>
