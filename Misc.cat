@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="4" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="5" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Pungari Thresher Hive Ship" hidden="false" id="1fd6-31e0-548c-cc1e">
       <categoryLinks>
@@ -326,7 +326,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Remnant</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Remnant (Rare)</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="append" value="Rare" field="fdf5-89b6-e62e-570f" affects="" join=", ">
@@ -364,7 +364,7 @@
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink name="Remnant" id="12be-6356-423d-e29a" hidden="false" type="rule" targetId="e265-3e7d-a8fe-839f"/>
+            <infoLink name="Remnant (Rare)" id="12be-6356-423d-e29a" hidden="false" type="rule" targetId="e265-3e7d-a8fe-839f"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="9K Mass Driver Turret" hidden="false" id="bd89-4aa8-e952-47b2">
@@ -434,7 +434,7 @@
       <description>This Ship may be used in UCM, PHR, or Resistance fleets.</description>
       <comment>UCM/PHR/Resistance</comment>
     </rule>
-    <rule name="Remnant" id="e265-3e7d-a8fe-839f" hidden="false">
+    <rule name="Remnant (Rare)" id="e265-3e7d-a8fe-839f" hidden="false">
       <description>This ship may be used in UCM or PHR fleets in addition to Resistance fleets. In UCM and PHR fleets, they gain the Rare special rule.</description>
       <comment>UCM/PHR/Resistance + Rare</comment>
     </rule>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="5" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="6" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Fleet Champion" hidden="false" id="d094-8254-44f9-d6eb" publicationId="260d-362c-d403-80ae" page="1">
@@ -2719,6 +2719,9 @@
     <entryLink import="true" name="Large Space Station" hidden="false" id="cc25-0871-166c-c71e" type="selectionEntry" targetId="6f26-fe48-4135-7ed3"/>
     <entryLink import="true" name="Ephyra" hidden="false" id="823a-c87d-4f37-c9ec" type="selectionEntry" targetId="2d1a-7c81-0ced-b810"/>
     <entryLink import="true" name="Nematocyst" hidden="false" id="ccfa-7f9b-a3c5-e6d5" type="selectionEntry" targetId="fec6-51a8-6e61-26f1"/>
+    <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="b8c4-36e3-3536-6ee7" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
+    <entryLink import="true" name="M-Type Barge" hidden="false" id="6a39-49c6-afcb-ec4c" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
+    <entryLink import="true" name="T-Type Tugboat" hidden="false" id="dd9b-207f-d671-2e7f" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
   </entryLinks>
   <sharedRules>
     <rule name="Winged Bulwark" id="aafc-3f0d-e8a5-6302" hidden="false">
@@ -2789,5 +2792,6 @@
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="1d29-8cc1-8448-f7f8" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="f24a-5501-0d0e-2949" targetId="7e9b-b6ba-2178-6eb5"/>
+    <catalogueLink type="catalogue" name="Civilian" id="6b98-e892-d82f-dcb4" targetId="903e-8fb9-3fe2-4460"/>
   </catalogueLinks>
 </catalogue>

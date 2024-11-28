@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="4" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="1c77-28ea-5fb6-dc6f" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="1282-2cce-85a8-ebe4" targetId="7e9b-b6ba-2178-6eb5"/>
+    <catalogueLink type="catalogue" name="Civilian" id="827c-88f9-114a-2316" targetId="903e-8fb9-3fe2-4460"/>
   </catalogueLinks>
   <publications>
     <publication name="Shaltari Combined Fleet Stats (241024)" id="fbb6-a765-5882-6bcb" hidden="false" shortName="Shaltari Stats (241024)"/>
@@ -2942,6 +2943,9 @@
     <entryLink import="true" name="Grav Hook" hidden="false" id="b753-e46f-6455-de5b" type="selectionEntry" targetId="e3fe-8a69-be4d-97e4"/>
     <entryLink import="true" name="Anchor" hidden="false" id="3542-02e8-1ac3-26a5" type="selectionEntry" targetId="0854-c0bb-b001-626d"/>
     <entryLink import="true" name="Shuriken" hidden="false" id="ab08-a3f5-bc9b-95cd" type="selectionEntry" targetId="8cf6-6559-ba2d-64a2"/>
+    <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="d9ee-89e3-0f06-7d6a" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
+    <entryLink import="true" name="M-Type Barge" hidden="false" id="0d50-e001-e69d-99fc" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
+    <entryLink import="true" name="T-Type Tugboat" hidden="false" id="f09e-6224-80b5-b8ef" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Disintegrator Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="4cb0-3c95-f8d1-9459">

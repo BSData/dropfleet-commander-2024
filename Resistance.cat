@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="3" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="4" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (241028)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (241028)"/>
   </publications>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="f86a-4bed-c096-781e" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="be4c-2910-f23a-8de4" targetId="7e9b-b6ba-2178-6eb5"/>
+    <catalogueLink type="catalogue" name="Civilian" id="8790-3181-d8e1-06fb" targetId="903e-8fb9-3fe2-4460" importRootEntries="false"/>
   </catalogueLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="5c17-bb7c-8a82-0675"/>
@@ -2788,6 +2789,9 @@
     <entryLink import="true" name="Large Space Station" hidden="false" id="d99a-4df5-e2dd-4274" type="selectionEntry" targetId="6f26-fe48-4135-7ed3"/>
     <entryLink import="true" name="Kalium KNC-5 Line Cruisers" hidden="false" id="d632-626e-7efe-cbd6" targetId="675e-18e1-0e9c-c3f1" type="selectionEntry"/>
     <entryLink import="true" name="Kalium KNC-12 Line Cruisers" hidden="false" id="fd33-fe23-e5ea-aab1" targetId="5554-9f7d-880e-8f1f" type="selectionEntry"/>
+    <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="fefe-f3c6-e175-0c70" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
+    <entryLink import="true" name="M-Type Barge" hidden="false" id="0274-8158-4c93-0937" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
+    <entryLink import="true" name="T-Type Tugboat" hidden="false" id="ccd2-fd0d-58bd-948d" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Dreadnought Systems" id="1beb-f1d1-0251-ca15" hidden="false" flatten="false">
