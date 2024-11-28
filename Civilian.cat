@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Civilian Ship Scenarios (241128)" id="1322-3c59-0db2-ee7c" hidden="false" shortName="Civilian Ship Scenarios (241128)"/>
   </publications>
@@ -108,7 +108,7 @@
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Deterrence Missiles" hidden="false" id="9719-b6ca-ecd0-1597">
+            <selectionEntry type="upgrade" import="true" name="Deterrence Missiles" hidden="false" id="9719-b6ca-ecd0-1597" sortIndex="1">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="59eb-0e7b-8e7f-a4ef-min" includeChildSelections="false"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="59eb-0e7b-8e7f-a4ef-max" includeChildSelections="false"/>
@@ -129,7 +129,7 @@
                 <infoLink name="Close Action" id="a242-d431-247f-6a84" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Military Outpost" hidden="false" id="a528-0bbf-1a34-cefd">
+            <selectionEntry type="upgrade" import="true" name="Military Outpost" hidden="false" id="a528-0bbf-1a34-cefd" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1df-0637-ef03-ef7a-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1df-0637-ef03-ef7a-max" includeChildSelections="false"/>
@@ -190,7 +190,7 @@
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Deterrence Missiles" hidden="false" id="98dc-263e-dc8a-9154">
+            <selectionEntry type="upgrade" import="true" name="Deterrence Missiles" hidden="false" id="98dc-263e-dc8a-9154" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b885-3be2-4dd8-fcd3-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b885-3be2-4dd8-fcd3-max" includeChildSelections="false"/>
@@ -211,7 +211,7 @@
                 <infoLink name="Close Action" id="904d-6f39-dfb4-499b" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Drag to Hell" hidden="false" id="9724-11b5-979a-f99d">
+            <selectionEntry type="upgrade" import="true" name="Drag to Hell" hidden="false" id="9724-11b5-979a-f99d" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1341-592a-7092-26d2-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1341-592a-7092-26d2-max" includeChildSelections="false"/>
