@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="6" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="7" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
+    <selectionEntry type="unit" import="true" name="Fleet Thrall" hidden="false" id="7fe9-330a-0598-35d7" publicationId="260d-362c-d403-80ae" page="1">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Faction/Famous Admirals" hidden="false" id="0a26-61ff-2857-aac5" targetId="79f7-4244-6fb7-d41a" primary="false"/>
+        <categoryLink name="Admirals" hidden="false" id="70eb-517e-1c40-fc0d" targetId="fb8b-57b3-d46c-d679" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdb9-4018-e21c-b5b4"/>
+      </constraints>
+      <profiles>
+        <profile name="Fleet Thrall" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="1355-1c19-8466-983b">
+          <characteristics>
+            <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">1</characteristic>
+            <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Launch Free" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="0088-2d02-24b0-4751">
+          <characteristics>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you pick the Weapons Free Order for a Group you activate, that Group may launch Assets this activation. If it does, it gains an additional Spike due to its Order this activation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fleet Champion" hidden="false" id="d094-8254-44f9-d6eb" publicationId="260d-362c-d403-80ae" page="1">
       <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="d20d-20d2-f82c-3f7f" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -28,7 +54,7 @@
         </profile>
         <profile name="Silent Launch" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3c79-435f-533f-1e0b">
           <characteristics>
-            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
             <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group is given the Silent Running Order, that Group may use Launch Assets this round in addition to reducing its Signature to 0” until the start of its next activation.</characteristic>
           </characteristics>
         </profile>
@@ -68,7 +94,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="70"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -130,7 +156,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="55"/>
           </costs>
           <infoLinks>
             <infoLink name="Death Mistress" id="6761-9b61-3dad-3a5c" hidden="false" type="rule" targetId="da80-c120-515a-4d23"/>
@@ -173,7 +199,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -194,6 +220,7 @@
           </infoLinks>
           <modifiers>
             <modifier type="set" value="Savagery" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
+            <modifier type="set" value="230" field="ab32-c9b6-10f3-cbdb"/>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="default-category" id="7d94-0ebb-02d3-db71" primary="false" name="Group"/>
@@ -224,12 +251,12 @@
             <profile name="Infernal Maw" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5996-2832-9d8f-5bcc">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After you roll to hit with a Furnace weapon, re-roll all of that weapon’s attack dice (both hits and misses).</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After you roll to hit with a Furnace weapon, you may re-roll any of that weapon’s attack dice (both hits and misses).</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
           <infoLinks>
             <infoLink name="Doomed" id="95a3-a657-9b37-dea1" hidden="false" type="rule" targetId="9480-f97c-1712-5fd2"/>
@@ -268,7 +295,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0205-3df2-69a7-9177-max" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="540"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="505"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="6e44-cb75-e25f-8b24" id="f003-8881-a734-673e" primary="true" name="Colossal Ship"/>
@@ -312,7 +339,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b99f-e818-5d6d-c438-max" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="525"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="490"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="6e44-cb75-e25f-8b24" id="a9a0-692e-6edd-2ed1" primary="true" name="Colossal Ship"/>
@@ -356,7 +383,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbcb-7549-72e7-42cc-max" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="235"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="205"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="9d6f-26b0-7969-496b" id="7c78-ad92-4da3-2ff5" primary="true" name="Heavy Ship"/>
@@ -378,7 +405,7 @@
           </profiles>
           <entryLinks>
             <entryLink import="true" name="Oculus Beam Array" hidden="false" id="12fe-2fba-a5eb-f8d1" type="selectionEntry" targetId="0520-4df6-bb75-2888" sortIndex="1"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="034c-7719-aaa9-4bc1" type="selectionEntry" targetId="4967-9e01-1e2d-2641" sortIndex="2"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="034c-7719-aaa9-4bc1" type="selectionEntry" targetId="7222-b464-ba97-8347" sortIndex="2"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -395,7 +422,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b052-12b2-777e-f8f3-max" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="290"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="265"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="9d6f-26b0-7969-496b" id="a42f-3132-da06-24d0" primary="true" name="Heavy Ship"/>
@@ -418,7 +445,7 @@
           <entryLinks>
             <entryLink import="true" name="Mega Plasma Lance Battery" hidden="false" id="d154-0b9a-808d-1316" type="selectionEntry" targetId="ae05-6d16-64e3-33c4" sortIndex="1"/>
             <entryLink import="true" name="Oculus Beam Array" hidden="false" id="d6bf-d172-eaa1-9a82" type="selectionEntry" targetId="0520-4df6-bb75-2888" sortIndex="2"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="7df4-da7a-945d-5e4f" type="selectionEntry" targetId="4967-9e01-1e2d-2641" sortIndex="3"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="7df4-da7a-945d-5e4f" type="selectionEntry" targetId="7222-b464-ba97-8347" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -435,7 +462,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85e6-7b64-c3eb-1e37-max" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="275"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="270"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="9d6f-26b0-7969-496b" id="9c70-2d35-2cac-4451" primary="true" name="Heavy Ship"/>
@@ -476,7 +503,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67a3-8eb1-e89c-9326-max" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="280"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="260"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="9d6f-26b0-7969-496b" id="5c81-911a-86c9-98b9" primary="true" name="Heavy Ship"/>
@@ -557,7 +584,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b238-cfcc-49e6-4120-max" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="255"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="230"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="9d6f-26b0-7969-496b" id="24f8-8c66-eaff-ce94" primary="true" name="Heavy Ship"/>
@@ -600,7 +627,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be9c-e24e-2927-b43f-max" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="255"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="220"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="9d6f-26b0-7969-496b" id="de9c-aad4-53c9-2665" primary="true" name="Heavy Ship"/>
@@ -728,7 +755,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eda3-ef0d-3d46-ce3a-max" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="175"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="155"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="53c3-afc0-63ef-413a" id="4cb9-0508-ff6a-1646" primary="true" name="Medium Ship"/>
@@ -854,7 +881,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e845-505c-9527-9825-max" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="135"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="53c3-afc0-63ef-413a" id="f396-2808-3543-75a9" primary="true" name="Medium Ship"/>
@@ -1166,7 +1193,7 @@
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4278-4ded-45b5-6969" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="f942-8f88-d77b-13c1" id="a3c0-32a5-82b4-5a01" primary="true" name="Light Ship"/>
@@ -1211,7 +1238,7 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ccb9-a284-9659-e4cd" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="55"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="f942-8f88-d77b-13c1" id="0177-55d7-21ff-66bf" primary="true" name="Light Ship"/>
@@ -1404,7 +1431,7 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="da3f-02d8-8f28-97f9" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="f942-8f88-d77b-13c1" id="0789-24ee-1153-29c9" primary="true" name="Light Ship"/>
@@ -1985,10 +2012,9 @@
       <infoLinks>
         <infoLink name="Close Action" id="b2ae-97e9-9e64-162c" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Mauler" id="04ca-2c62-c5fe-b7a8" hidden="false" type="rule" targetId="c093-8c13-6119-8d37"/>
-        <infoLink name="Scald-X" id="9d82-cb74-3175-91e4" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
-        <infoLink name="Sustained Fire" id="49e0-5a9c-2932-90ce" hidden="false" type="rule" targetId="52ba-6610-b0f0-92d3"/>
+        <infoLink name="Penetrator" id="9d82-cb74-3175-91e4" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
-      <comment>FN 4/*/1/E CA Maul Sc-2 SusFire</comment>
+      <comment>FN 4/*/2/E CA Maul Pen</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="150e-2987-6d63-2302-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="150e-2987-6d63-2302-max" includeChildSelections="false"/>
@@ -1999,9 +2025,9 @@
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">*</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Mauler, Scald-2, Sustained Fire</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Mauler, Penetrator</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2010,8 +2036,9 @@
       <infoLinks>
         <infoLink name="Scald-X" id="1eda-62ce-4a03-1c39" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
         <infoLink name="Mega Plasma Lance Battery" id="99a2-faf2-a1e2-4d81" hidden="false" type="profile" targetId="a286-17ae-128f-321a"/>
+        <infoLink name="Reave-X" id="279b-08df-8459-f6ba" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
-      <comment>[x2] F/S 3/3+/2/E Cal-HC</comment>
+      <comment>[x2] F/S 3/3+/2/E Cal-HC Rv-2</comment>
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0e01-582f-d6c0-425a-min" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0e01-582f-d6c0-425a-max" includeChildSelections="false"/>
@@ -2211,7 +2238,7 @@
         <infoLink name="Scald-X" id="d4e0-0bd4-4c11-3adf" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
         <infoLink name="Oculus Beams" id="273f-6675-e5f3-ad59" hidden="false" type="profile" targetId="a432-a71d-a4d4-42bb"/>
       </infoLinks>
-      <comment>F/S 1/3+/2/E Sc-1</comment>
+      <comment>F/S 2/3+/2/E Sc-1</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91d1-7d0a-9248-d091-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91d1-7d0a-9248-d091-max" includeChildSelections="false"/>
@@ -2266,7 +2293,7 @@
         <infoLink name="Bombardment" id="b707-dc11-25ff-b912" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
         <infoLink name="Scald-X" id="84ad-fa96-9121-301a" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
-      <comment>F/S 2/4+/1/E Bmb Sc-1</comment>
+      <comment>F/S 2/5+/1/E Bmb Sc-2</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c23-bb80-5470-3b15-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c23-bb80-5470-3b15-max" includeChildSelections="false"/>
@@ -2276,10 +2303,10 @@
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
-            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Scald-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Scald-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2289,7 +2316,7 @@
         <infoLink name="Bombardment" id="5c82-c954-ea87-e4dd" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
         <infoLink name="Scald-X" id="e71d-f749-d0d6-e394" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
-      <comment>F/S 4/6+/1/E Bmb Sc-1</comment>
+      <comment>F/S 4/5+/1/E Bmb Sc-2</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae9d-93b5-ca9e-33a4-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae9d-93b5-ca9e-33a4-max" includeChildSelections="false"/>
@@ -2299,10 +2326,10 @@
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
-            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">6+</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Scald-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Scald-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2562,12 +2589,34 @@
             <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">6</characteristic>
             <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="8" field="bcc4-f844-acff-aa94">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b54f-f8e4-8dea-d620" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
-      <comment>6</comment>
+      <comment>6 (8 for OoF-Nos)</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d92-5b58-655b-f30a-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d92-5b58-655b-f30a-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="7222-b464-ba97-8347">
+      <profiles>
+        <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="0f4b-0d50-1ed4-6f0e">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">5</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>5</comment>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="caf7-c31f-dc26-fa0e" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de1b-47e8-6136-1553" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="4967-9e01-1e2d-2641">
@@ -2654,7 +2703,7 @@
     <selectionEntry type="upgrade" import="false" name="----- Equipment -----" hidden="true" id="c05c-5151-80d7-9368"/>
     <selectionEntry type="upgrade" import="true" name="Cloaking Crest" hidden="false" id="826c-a34f-6a51-fea9">
       <modifiers>
-        <modifier type="set" value="Cloak-3, Stealth" field="fdf5-89b6-e62e-570f" affects="profiles.Ship" scope="parent" join=", "/>
+        <modifier type="set" value="Cloak-2, Stealth" field="fdf5-89b6-e62e-570f" affects="profiles.Ship" scope="parent" join=", "/>
         <modifier type="set" value="false" field="hidden" scope="parent" affects="rules"/>
       </modifiers>
       <constraints>
@@ -2669,6 +2718,7 @@
     <publication name="Scourge Combined Fleet Stats (241024)" id="260d-362c-d403-80ae" hidden="false" shortName="Scourge Stats (241024)"/>
   </publications>
   <entryLinks>
+    <entryLink import="true" name="Fleet Thrall" hidden="false" id="713e-8ad5-9098-0f2c" targetId="7fe9-330a-0598-35d7" type="selectionEntry"/>
     <entryLink import="true" name="Fleet Champion" hidden="false" id="91cf-9409-46b0-42fb" targetId="d094-8254-44f9-d6eb" type="selectionEntry"/>
     <entryLink import="true" name="Overlord of Flies - Nosferatu" hidden="false" id="b54f-f8e4-8dea-d620" targetId="b0b3-4b12-b0c8-aca3" type="selectionEntry"/>
     <entryLink import="true" name="Baba Yaga - Daemon" hidden="false" id="0049-f92c-e131-85c2" targetId="6aad-bbb7-c1bf-9583" type="selectionEntry"/>
@@ -2725,7 +2775,8 @@
   </entryLinks>
   <sharedRules>
     <rule name="Winged Bulwark" id="aafc-3f0d-e8a5-6302" hidden="false">
-      <description>Increase the Launch of this Flagship’s Fighters &amp; Bombers to 8. Friendly Fighters &amp; Bombers that activate within 14” of this Flagship may not move further than 14” away from this Flagship.</description>
+      <description>Friendly Wings that activate within 14” of this Flagship may not move further than 14” away from this Flagship.
+This Ship may launch Assets regardless of its order, keeping its Signature of 0” on Silent Running and additional turn on Course Change.</description>
     </rule>
     <rule name="Death Mistress" id="da80-c120-515a-4d23" hidden="false">
       <description>Whenever an enemy group is destroyed, roll a dice. On a 4+ gain 1AP.</description>
@@ -2734,13 +2785,14 @@
       <description>When this Flagship becomes Crippled, improve the Lock on all of its weapons by 1.</description>
     </rule>
     <rule name="Doomed" id="9480-f97c-1712-5fd2" hidden="false">
-      <description>Whenever you capture an enemy ship, gain 2AP.</description>
+      <description>Whenever you capture an enemy Ship or an enemy Ship is destroyed due to the Fire Crippling Effect, gain 2AP.</description>
     </rule>
     <rule name="Oculus Booster" id="1b05-5002-dd72-fef6" hidden="false">
       <description>While this ship is on General Quarters, other friendly Group’s weapon with “Oculus” in their names improve their Scald-X value by 1 when firing at Groups within this ship’s Front Arc and Scan range.</description>
     </rule>
     <rule name="Energy Siphon" id="37fb-a24b-24a0-e201" hidden="false">
-      <description>At the start of this Group’s activation, you may pick a friendly or enemy Group within 3” without the Energy Siphon special rule. That Group loses up to 2 Spikes and this Group gains those spikes. If this Group gained any number of Spikes due to this rule, each ship in it increases the Attack of Oculus Rays by 1.</description>
+      <description>Before or after this Group completes any step in its activation, you may pick a friendly or enemy Group within 3” without the Energy Siphon special rule. That Group loses all Spikes and this Group gains those spikes. 
+If this Group gained any number of Spikes this round due to this rule, each Ship in it increases the Attack of Oculus Rays by 1 until the end of the round. If it gained 3 or more Spikes due to this rule, each Ship increases the Attack of Oculus Rays by 2 until the end of the round instead.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2762,7 +2814,7 @@
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Reave-2</characteristic>
       </characteristics>
       <comment>F/S 3/3+/2/E Cal-HC</comment>
     </profile>
@@ -2780,7 +2832,7 @@
     <profile name="Oculus Beams" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a432-a71d-a4d4-42bb">
       <characteristics>
         <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
-        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">1</characteristic>
+        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>

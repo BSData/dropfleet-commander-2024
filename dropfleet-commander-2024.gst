@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
@@ -256,7 +256,7 @@
           <profiles>
             <profile name="Gather Intel" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="79db-f0ec-8018-8345">
               <characteristics>
-                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">You are awarded 1VP whenever you Survey Dropsites. Any Capital Ship within 6” of the Dropsite and able to fire Weapons may substitute all attacking and launching that round to Survey it. A maximum of 3VP may be scored using this Secondary Objective. If the Scenario normally uses Survey, these VP are scored in addition to those in the Scenario.</characteristic>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">You are awarded 1VP whenever you Survey Dropsites. Any Capital Ship within 6” of the Dropsite and able to fire Weapons may substitute all attacking and launching that round to Survey it. Each Dropsite may be Surveyed once per player per game. A maximum of 2VP may be scored using this Secondary Objective. If the Scenario normally uses Survey, these VP are scored in addition to those in the Scenario.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -445,7 +445,11 @@
     <rule name="Aegis-X" id="9cd1-441e-8ee8-7f13" hidden="false" page="36" publicationId="45b0-3e3b-e83d-fd70">
       <alias>Aegis-4</alias>
       <alias>Aegis-8</alias>
-      <description>Ships within X” may re-roll failed Kinetic Save rolls.</description>
+      <description>All Ships with this rule in a Group combine their X values into a single value, Y.
+Friendly Groups in coherency within 6” of a Ship with this rule and the same Orbital Layer (including its own Group) gain the benefits of Aegis.
+When rolling saves against Close Action and Bomber (of any type) attacks, those Groups gain Y additional save dice they may add to those saves. The defending payer assigns these dice against specific weapons, divided up as they choose. 
+An Aegis Group can only grant the benefits of Aegis once each time a friendly group is attacked.
+A friendly Group can only benefit from Aegis from one Group each time it is attacked.</description>
     </rule>
     <rule name="Cloak-X" id="69fa-32f1-0a4f-c052" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
       <description>This Group may have a maximum of X Spikes.</description>
@@ -468,7 +472,8 @@
       <description>When a friendly Ship of H or C tonnage within 6” of this Ship on the same Orbital Layer is attacked, you may allocate all hits from that attack to this Ship’s Group, even if it is out of range, arc, and line of sight of the attacking Group. Only the effects of Scenery to the original target apply.</description>
     </rule>
     <rule name="Gateship-X" id="4572-00d5-81d2-4fcc" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
-      <description>Shaltari Motherships must launch their Dropships via a Ship with this rule. Each Ship with Gateship can have up to X Dropships deployed from it each round. Note: though the launch is measured from the Ship with the Gateship rule, it is the Mothership that is launching.</description>
+      <description>Shaltari Motherships must launch their Dropships via a Ship with this rule. Each Ship with Gateship can have up to X Dropships deployed from it each round. Note: though the launch is measured from the Ship with the Gateship rule, it is the Mothership that is launching.
+When this Ship goes on the Weapons Free, Max Thrust, or Damage Control orders, it reduces its Gateship-X value to 0 until the start of its next activation.</description>
       <alias>Gateship-0</alias>
       <alias>Gateship-1</alias>
       <alias>Gateship-2</alias>
@@ -486,14 +491,16 @@
     </rule>
     <rule name="Payload S/L-X" id="7a4f-55fd-3916-978f" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
       <description>When building your fleet, you may choose as many Payload Ships as you like— tonnage limits do not apply to these Ships, and they have no Group size. All Payload S/L Ships must be assigned to a Porter S/L Ship with the same letter. Payload Ships may not activate or be targeted until detached.
-During the Porter Ship’s activation, if it is on an Order that allows it to Launch, you may detach one or more of its Payload Ships and place them within 3” of it. In the round they are detached, these Payloads activate together immediately as part of the Porter Ship’s activation after it has completed its Order. In subsequent rounds, all your Payload Ships count as being part of a single Group.
+Payload Ships take up X of a Porter Ship’s capacity.
+During the Porter Ship’s activation, if it is on an Order that allows it to Launch, you may detach one or more of its Payload Ships and place them within 3” of it. In the round they are detached, these Payloads activate together immediately as part of the Porter Ship’s activation after it has completed its Order. In subsequent rounds, all your Payload Ships count as being part of a single Group. Crippling Effects, Spikes, and other rules that affect an entire Group only affect the targeted Payload Ship.
 Payload Ships always follow General Quarters Orders, even if its Porter is on different Orders. Payload Ships ignore Coherency rules (and do not gain Formation Benefits), have no Lead Ship, are targeted by attacks individually, and these attacks can only damage the targeted Payload Ship.
 If a Payload Ship is attached to a Porter Ship when that Ship is destroyed, the Payload Ship is destroyed.</description>
       <alias>Payload S-1</alias>
     </rule>
     <rule name="Porter S/L-X" id="11cb-e973-8a2c-f0f6" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
-      <description>This Ship may be assigned up to X Payload Ships with the same letter.
-During a Porter’s activation, it may attach any detached Payload Ships within 3” if it has available capacity. Payload Ships reattached to a Porter Ship are removed from the table to be deployed in a later round.</description>
+      <description>This Ship may be assigned Payload Ships with the same letter up to a total capacity of X.
+During a Porter’s activation, it may attach any detached Payload Ships within 3” if it has available capacity. Payload Ships reattached to a Porter Ship are removed from the table to be deployed in a later round.
+Any tokens, Spikes, or effects affecting the reattached Payload Ship are removed from that Ship.</description>
       <alias>Porter S-1</alias>
       <alias>Porter S-2</alias>
     </rule>
@@ -509,8 +516,9 @@ During a Porter’s activation, it may attach any detached Payload Ships within 
       <alias>Regenerate-4</alias>
     </rule>
     <rule name="Shield-X" id="40e4-1c82-9e61-c8c1" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
-      <description>You may use a Shield Save instead of this Group’s Energy or Kinetic Save, declaring their use before any other saves are made. Shield saves can be used against any Damage Type and function like other saves. Modifiers to Energy or Kinetic Saves do not apply.
-A Group gains a Spike each time it uses its Shield saves.</description>
+      <description>This Group has a Shield Save of X+. When this Group would be required to roll to Save, you may declare the use of Shield Saves, replacing its Energy and Kinetic Saves for those rolls. Shield Saves can be used against Energy, Kinetic, and Core damage and ignore any modifiers to Energy and Kinetic Saves. Backup Saves may then be used after Shield Saves as normal.
+A Group gains a single Spike each time it uses its Shield saves (regardless of the number of saves made per use).
+Hits caused by Boarding Actions cannot be saved by Shield Saves.</description>
       <alias>Shield-3+</alias>
       <alias>Shield-4+</alias>
       <alias>Shield-5+</alias>
@@ -535,6 +543,9 @@ All Alt Weapons with the same number count as the same Weapon when determining h
     <rule name="Alt Launch" id="b63a-36ea-4020-10c5" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>In a round this Weapon is fired this Ship may not launch Assets.</description>
     </rule>
+    <rule name="Anti Wing" id="d7b1-2768-13e8-009f" hidden="false">
+      <description>This weapon may target enemy Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, for each hit, remove 1 Fighter or 1 Bomber from that Wing or any other enemy Wing within 3” of the target.</description>
+    </rule>
     <rule name="Arrest-X" id="7fa4-03e2-d2a7-de9b" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>A Ship damaged by this Weapon reduces its Thrust by X” during its next activation. A Ship can only be affected by this rule once each round.</description>
       <alias>Arrest-2</alias>
@@ -547,7 +558,9 @@ All Alt Weapons with the same number count as the same Weapon when determining h
     </rule>
     <rule name="Bombardment" id="858c-a2ff-ed65-3e47" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>This Weapon ignores the penalties for attacking Cities and Ships in Atmosphere.
-Improve the Lock of this Weapon by 2 when attacking Cities.</description>
+Improve the Lock of this Weapon by 2 when attacking Cities.
+When attacking a Ship in Orbit with this weapon, it always hits on a 6+ and can never cause a critical.
+This weapon cannot be used to attack Ships in Orbit while the attacking Ship is in Atmosphere.</description>
     </rule>
     <rule name="Burnthrough-X" id="91ae-f561-0802-3f8e" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <alias>Burnthrough-1</alias>
@@ -585,7 +598,7 @@ Crippling Effects caused by Crippling Weapons are in addition to the usual one p
 Close Action weapons with this special rule may be used against targets in Orbit while the attacking Ship is in Atmosphere.</description>
     </rule>
     <rule name="Flash-X" id="9e6d-bb41-7c8b-a3b6" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
-      <description>When this Weapon damages a Ship, that Ship gains X Spikes.</description>
+      <description>When this Weapon inflicts damage, the damaged Group (or Ship if it ignores the usual coherency rules) gains X Spikes.</description>
       <alias>Flash-1</alias>
       <alias>Flash-2</alias>
     </rule>
@@ -603,7 +616,8 @@ Damage caused by this Weapon is allocated to only the targeted Ship.</descriptio
       <description>This Weapon increases its Attack value by X while its Ship is on Weapons Free.</description>
     </rule>
     <rule name="High Power" id="4a8c-aae4-c959-2437" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
-      <description>Attacking with this Weapon counts as attacking with two Weapons (though it only fires once).</description>
+      <description>Unless the attacking Ship is on the Weapons Free Order, attacking with this Weapon counts as attacking with two Weapons (though it only fires once).
+Ships with only a single High Power Weapon can only attack with it while on the Weapons Free Order.</description>
     </rule>
     <rule name="Impel-X" id="9944-ada1-19c8-2d06" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <description>If the attacking Group scores at least X critical hits against the target Group, turn all Ships in the targeted Group up to 45 degrees in the same direction. A Group can only be affected by this rule once per attack.</description>
@@ -636,13 +650,17 @@ You may launch a total of X of this Asset per game.</description>
       <description>This weapon ignores the penalties for attacking Ships in Atmosphere while the attacking Ship is in Orbit.
 Close Action weapons with this special rule may be used against targets in Atmosphere while the attacking Ship is in Orbit.</description>
     </rule>
+    <rule name="Reave-X" id="4def-e674-d37c-707a" hidden="false">
+      <description>Each of this Weapon’s criticals reduces the Energy/Kinetic save used against that hit by X.</description>
+    </rule>
     <rule name="Scald-X" id="41b3-55a2-8d71-ee88" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="39">
       <alias>Scald-1</alias>
       <alias>Scald-2</alias>
-      <description>If this Weapon attacks a target within Scan range, reduce the target’s Energy/ Kinetic Save against that attack by X.</description>
+      <description>If this weapon attacks a target within Scan range, reduce the target’s Energy / Kinetic save against this weapon’s attack (other attacks and weapons are unaffected).</description>
     </rule>
     <rule name="Status" id="ea58-a80c-c3de-e165" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="39">
-      <description>When you hit with this Weapon, place your choice of one of the following tokens on the target Ship: Defence Systems Offline, Scanners Offline, or Navigation Offline. This token is automatically removed before making repairs.</description>
+      <description>When you hit with this Weapon, pick one of the following tokens; Defence Systems Offline, Scanners Offline, or Navigation Offline. 
+At the end of the Inflict Damage step, choose one of the defending Ships to gain the selected token, regardless of the amount of damage caused by the attack or amount of hits saved. This token is automatically removed at the start of the End Phase, before making repairs.</description>
     </rule>
     <rule name="Sustained Fire" id="52ba-6610-b0f0-92d3" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="39">
       <description>If this Weapon attacks a target Group it hit in the previous round, double its Attack value for this attack.</description>

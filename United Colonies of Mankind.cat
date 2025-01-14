@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
+    <selectionEntry type="unit" import="true" name="Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="fb8b-57b3-d46c-d679" id="d70e-8627-a932-d3c2" primary="true" name="Admirals"/>
+        <categoryLink targetId="79f7-4244-6fb7-d41a" id="49a3-6d04-e51c-a896" primary="false" name="Faction/Famous Admirals"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83ec-e7d5-9eba-d253"/>
+      </constraints>
+      <profiles>
+        <profile name="Captain" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="12a8-9848-47e5-4ddd">
+          <characteristics>
+            <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">1</characteristic>
+            <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dedicated Survey Teams" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="aaeb-5823-27d5-5902">
+          <characteristics>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you activate a Group of a single Ship, that Ship may Survey a Dropsite and attack with a single weapon this round (but still cannot launch Assets).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rear Admiral" hidden="false" id="a461-4e5d-ff05-31f0" publicationId="9813-8e60-542d-9381" page="1">
       <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="a1cb-367e-591b-d718" primary="true" name="Admirals"/>
@@ -36,7 +62,7 @@
         <profile name="Overcharge Lasers" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="faec-ba26-51df-5c7e">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a Group makes an attack with any number of weapons with “Laser” in its name, those weapons gain Fusillade-2 until the end of its activation.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a Group makes an attack with any number of weapons with “Laser” in its name, those weapons gain Fusillade-1 until the end of its activation.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -53,7 +79,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="“Granite” Halsey" hidden="false" id="99c9-35db-a980-0b16" subType="crew" sortIndex="1">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="90"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="105"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c0d9-1823-3ac2-457a-min" includeChildSelections="false"/>
@@ -68,8 +94,8 @@
             </profile>
             <profile name="Master Tactician" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3fc2-b60a-4d3e-b1ee">
               <characteristics>
-                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Before you roll for initiative this round, your initiative roll for this round automatically becomes a roll of 6.</characteristic>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">4AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of this Group’s activation, discard a Pass Token and target another friendly Group of L or M Tonnage. If you do, that Group may turn, then move up to a quarter of its Thrust, and then each Ship in it may attack with a single weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -96,7 +122,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="595"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="560"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29f9-57fd-251a-e829" includeChildSelections="false"/>
@@ -109,7 +135,7 @@
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="UF-9000 Mass Driver Turret" hidden="false" id="e5bf-c0b1-2dc4-1884" type="selectionEntry" targetId="00cb-22ad-7191-43cf" sortIndex="1"/>
-            <entryLink import="true" name="UF-4200 Mass Driver Turret Core Battery" hidden="false" id="9943-9412-66ef-15c4" type="selectionEntry" targetId="ec1c-bf4b-d809-1a5c" sortIndex="2"/>
+            <entryLink import="true" name="UF-4200 Mass Driver Turret Core Battery" hidden="false" id="9943-9412-66ef-15c4" type="selectionEntry" targetId="f819-d58c-9c21-4a53" sortIndex="2"/>
             <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="8af7-ae0b-5d43-ef62" type="selectionEntry" targetId="bb41-2fcb-66bd-acd5" sortIndex="3"/>
             <entryLink import="true" name="Leviathan Missile Bays" hidden="false" id="b2f2-d753-209a-e7cd" type="selectionEntry" targetId="0a54-c4e1-6baf-ee55" sortIndex="4"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="fd81-866f-0d7c-1b20" type="selectionEntry" targetId="9b0d-8d65-cdda-f785"/>
@@ -158,12 +184,12 @@
             <profile name="Ballistic Prediction" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="75e0-50bf-afac-52ff">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with “Mass Driver” in its name, improve the Lock value of that weapon by 1 for that attack.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Mass Driver” in its name, those weapons improve their Lock value by 1 until the end of its activation.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="70"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -174,6 +200,7 @@
           </infoLinks>
           <modifiers>
             <modifier type="set" value="Vanguard" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
+            <modifier type="set" value="240" field="ab32-c9b6-10f3-cbdb"/>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="default-category" id="8ab7-6fe6-06f3-b3be" primary="false" name="Group"/>
@@ -227,7 +254,7 @@
             <infoLink name="Bombardment" id="ff28-2d35-fe5a-4d87" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -286,7 +313,7 @@
             <infoLink name="Vectored" id="4e9c-31dd-1794-ef6e" hidden="false" type="rule" targetId="7a2f-fbe0-b3cd-98c8"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -327,12 +354,12 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-8, Command Ship-2</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-4, Command Ship-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="595"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="530"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c869-c063-db9d-e9af" includeChildSelections="false"/>
@@ -373,12 +400,12 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-8, Command Ship-2</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-4, Command Ship-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="465"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="435"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9366-abc8-99c9-b6de" includeChildSelections="false"/>
@@ -507,7 +534,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="215"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="225"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b694-8246-aa6c-df0c" includeChildSelections="false"/>
@@ -547,7 +574,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="270"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="245"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c75b-91e9-fd21-dc95" includeChildSelections="false"/>
@@ -587,7 +614,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="210"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="220"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8686-e72e-9f7e-1205" includeChildSelections="false"/>
@@ -665,12 +692,12 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-8</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-4</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="215"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="185"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd18-3f22-2e05-ad19" includeChildSelections="false"/>
@@ -751,7 +778,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="190"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="180"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6c6-e70a-f84a-f27e" includeChildSelections="false"/>
@@ -795,7 +822,7 @@
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="8ffd-d1d7-3aa0-2dea" type="selectionEntry" targetId="ba6a-589a-610d-5df4" sortIndex="2"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="155"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21f2-bdfe-6739-8a92" includeChildSelections="false"/>
@@ -840,7 +867,7 @@
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="858d-99e0-6f8e-9885" type="selectionEntry" targetId="ba6a-589a-610d-5df4" sortIndex="3"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="135"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aaa5-cea5-c785-27f4-min" includeChildSelections="false"/>
@@ -992,7 +1019,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="125"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="120"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc25-539b-8540-f8b5" includeChildSelections="false"/>
@@ -1001,7 +1028,7 @@
           <entryLinks>
             <entryLink import="true" name="Piranha Missile Turrets" hidden="false" id="fa9d-727a-c6b2-0fcc" type="selectionEntry" targetId="2b58-e200-7147-945f" sortIndex="1"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="9007-f13b-9e13-ab51" type="selectionEntry" targetId="ba6a-589a-610d-5df4" sortIndex="2"/>
-            <entryLink import="true" name="Light Torpedo" hidden="false" id="70b7-512e-cca7-dcc2" type="selectionEntry" targetId="51d6-e7e9-ef28-0396" sortIndex="3"/>
+            <entryLink import="true" name="Medium Torpedo" hidden="false" id="70b7-512e-cca7-dcc2" type="selectionEntry" targetId="8c44-d969-a7eb-bc76" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1032,7 +1059,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="120"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="105"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="230d-62b8-067b-d13e" includeChildSelections="false"/>
@@ -1175,10 +1202,10 @@
           <entryLinks>
             <entryLink import="true" name="Taipan Laser Turrets" hidden="false" id="ed72-589c-fe1c-3417" type="selectionEntry" targetId="f24c-4fcc-cab4-a25e" sortIndex="1"/>
             <entryLink import="true" name="Piranha Missile Turrets" hidden="false" id="7670-fa20-6d03-1c6e" type="selectionEntry" targetId="2b58-e200-7147-945f" sortIndex="2"/>
-            <entryLink import="true" name="Light Torpedo" hidden="false" id="387a-1256-08ca-14f5" type="selectionEntry" targetId="51d6-e7e9-ef28-0396" sortIndex="3"/>
+            <entryLink import="true" name="Medium Torpedo" hidden="false" id="387a-1256-08ca-14f5" type="selectionEntry" targetId="8c44-d969-a7eb-bc76" sortIndex="3"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="90"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ecf-0b18-4cbf-816c" includeChildSelections="false"/>
@@ -1238,10 +1265,10 @@
           <entryLinks>
             <entryLink import="true" name="Arowana Missile Turrets" hidden="false" id="e353-106e-022d-fc02" type="selectionEntry" targetId="1970-7c4f-729c-c6ca" sortIndex="1"/>
             <entryLink import="true" name="Piranha Missile Turrets" hidden="false" id="11c2-9eee-ff0f-1ab7" type="selectionEntry" targetId="2b58-e200-7147-945f" sortIndex="2"/>
-            <entryLink import="true" name="Light Torpedo" hidden="false" id="73bd-95ba-e039-9869" type="selectionEntry" targetId="51d6-e7e9-ef28-0396" sortIndex="3"/>
+            <entryLink import="true" name="Medium Torpedo" hidden="false" id="73bd-95ba-e039-9869" type="selectionEntry" targetId="8c44-d969-a7eb-bc76" sortIndex="3"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="90"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22f9-3936-4bb8-91a1" includeChildSelections="false"/>
@@ -1283,7 +1310,7 @@
             <entryLink import="true" name="Taipan Laser Turrets" hidden="false" id="e83e-2b9d-284d-c71e" type="selectionEntry" targetId="f24c-4fcc-cab4-a25e" sortIndex="2"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="80"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="90"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a843-233f-720d-c468" includeChildSelections="false"/>
@@ -1436,10 +1463,10 @@
           </profiles>
           <entryLinks>
             <entryLink import="true" name="Piranha Missile Turrets" hidden="false" id="4fc9-7834-487b-53a0" type="selectionEntry" targetId="2b58-e200-7147-945f" sortIndex="1"/>
-            <entryLink import="true" name="Light Torpedo" hidden="false" id="b59b-51e7-147e-6c59" type="selectionEntry" targetId="51d6-e7e9-ef28-0396" sortIndex="2"/>
+            <entryLink import="true" name="Medium Torpedo" hidden="false" id="b59b-51e7-147e-6c59" type="selectionEntry" targetId="8c44-d969-a7eb-bc76" sortIndex="2"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="70"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
           </costs>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="cfea-0132-a9ba-295a" includeChildSelections="false"/>
@@ -1627,7 +1654,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="55"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cde-6955-d8f8-a0b0" includeChildSelections="false"/>
@@ -1866,20 +1893,20 @@
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">4&quot;</characteristic>
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
-                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">2+</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
-                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-4</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-4, Escort</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-2, Escort</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad51-e747-919f-51ab" includeChildSelections="false"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0fbd-421b-ec28-bde5" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0fbd-421b-ec28-bde5" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Mamba Laser" hidden="false" id="8d92-ccc7-48af-349f" type="selectionEntry" targetId="caa6-209d-9f7b-ccbe"/>
@@ -1908,10 +1935,10 @@
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">4&quot;</characteristic>
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
-                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">2+</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
-                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-4</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Monitor</characteristic>
               </characteristics>
             </profile>
@@ -1921,7 +1948,7 @@
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="03a9-b9c7-f579-8d53" includeChildSelections="false"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="9af8-98b4-e032-9da0" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="9af8-98b4-e032-9da0" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="UF-B-9000s" hidden="false" id="2397-07f0-8e42-fdd9" type="selectionEntry" targetId="d8ff-a3b5-c461-1eca"/>
@@ -1948,7 +1975,7 @@
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
-                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">5</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
@@ -1987,7 +2014,7 @@
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
-                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">5</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
@@ -1997,7 +2024,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="55"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a231-9176-8849-5f05" includeChildSelections="false"/>
@@ -2135,12 +2162,12 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">2-4</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-4</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
           </costs>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="75c6-f786-6654-3820" includeChildSelections="false"/>
@@ -2220,7 +2247,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="35"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
           </costs>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bbe4-45c5-4457-0136" includeChildSelections="false"/>
@@ -2343,7 +2370,7 @@
         <profile name="Python Super Heavy Laser" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c150-f69d-d596-ace6">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
@@ -2535,7 +2562,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Scald-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2543,9 +2570,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a20e-3cbd-0d81-f903" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a62c-4ddf-31fd-8f08" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S/R 2/4+/2/K Bmb</comment>
+      <comment>F/S/R 2/4+/2/K Bmb Sc-1</comment>
       <infoLinks>
         <infoLink name="Bombardment" id="3b83-64b4-f9c9-7db4" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
+        <infoLink name="Scald-X" id="567e-bb22-1196-2e91" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="UF-12000 Twin Mass Driver" hidden="false" id="728d-cebe-832c-6151">
@@ -2556,8 +2584,8 @@
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">4</characteristic>
-            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Crippling, Penetrator</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Crippling</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2565,10 +2593,9 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9eeb-398d-3dc5-853d" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a90a-2ca4-f49f-9475" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 2/2+/4/K Crip Pen</comment>
+      <comment>FN 2/2+/4/K Crip</comment>
       <infoLinks>
         <infoLink name="Crippling-X" id="a1d4-85f2-a437-cc54" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
-        <infoLink name="Penetrator" id="26bb-6dee-c0cb-f3cc" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="UF-9000-S Twin Mass Driver" hidden="false" id="025f-cd80-4758-9dc6">
@@ -2726,29 +2753,6 @@
         <infoLink name="Volley-X" id="a5e5-c816-526a-a1d7" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turret Core Battery" hidden="false" id="ec1c-bf4b-d809-1a5c">
-      <profiles>
-        <profile name="UF-4200 Mass Driver Turret Core Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6c0d-ef5f-976b-dae4">
-          <characteristics>
-            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
-            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
-            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Volley-2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="84ac-63d8-da41-ff3b" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="872e-9b42-c637-71eb" includeChildSelections="false"/>
-      </constraints>
-      <comment>F/S 6/4+/1/K Fus-2 Vol-2</comment>
-      <infoLinks>
-        <infoLink name="Fusillade-X" id="6d67-04ea-1fe4-be0e" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
-        <infoLink name="Volley-X" id="e26d-0cc3-9e6b-334b" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="bb41-2fcb-66bd-acd5">
       <profiles>
         <profile name="UF-4200 Mass Driver Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="d5cb-f374-cbc5-db63">
@@ -2873,11 +2877,11 @@
         <profile name="UF-B-8000 Bombardment Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cb7e-c2a4-17ba-94f3">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">9</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">12</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Scald-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2885,9 +2889,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bddc-7326-8bcf-0bc8" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0c5-3826-81e9-4cdb" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S/R 9/4+/1/K Bmb</comment>
+      <comment>F/S/R 9/4+/1/K Bmb Sc-1</comment>
       <infoLinks>
         <infoLink name="Bombardment" id="ee41-982a-685e-67f2" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
+        <infoLink name="Scald-X" id="eb96-2b85-2f73-39ba" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="UF-B-8000 Bombardment Turret Pair" hidden="false" id="ad72-8029-d11e-e5a0">
@@ -2895,11 +2900,11 @@
         <profile name="UF-B-8000 Bombardment Turret Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="14f1-b105-5ac6-076c">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">8</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Scald-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2907,9 +2912,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04b6-249b-9b36-47c1" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f49-8523-bbe8-272b" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S/R 6/4+/1/K Bmb</comment>
+      <comment>F/S/R 6/4+/1/K Bmb Sc-1</comment>
       <infoLinks>
         <infoLink name="Bombardment" id="6d75-56bf-80e7-1bfe" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
+        <infoLink name="Scald-X" id="b2b1-bd1a-141f-39bf" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leviathan Missile Bays" hidden="false" id="0a54-c4e1-6baf-ee55">
@@ -3006,7 +3012,7 @@
         <profile name="Orca Missile Bays" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="3788-b36a-d479-998b">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">7</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
@@ -3075,7 +3081,7 @@
         <profile name="Heavy Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="f1de-3831-78c6-e5b9">
           <characteristics>
             <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
-            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-2, Penetrator</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3083,9 +3089,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d3b-ea1e-3232-bf47" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc35-06e5-91c2-310e" includeChildSelections="false"/>
       </constraints>
-      <comment>2 L-2</comment>
+      <comment>2 L-2 Pen</comment>
       <infoLinks>
         <infoLink name="Limited-X" id="eac6-cff6-e416-7f0e" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
+        <infoLink name="Penetrator" id="c5fd-57f4-b7e7-625c" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="1ac0-a1aa-8566-6c8e">
@@ -3093,7 +3100,7 @@
         <profile name="Medium Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="a3a3-9227-9166-2ff0">
           <characteristics>
             <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">1</characteristic>
-            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-2, Penetrator</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3101,9 +3108,29 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3465-4150-8757-f9cc" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10e4-ffb2-567a-4b4e" includeChildSelections="false"/>
       </constraints>
-      <comment>1 L-2</comment>
+      <comment>1 L-2 Pen</comment>
       <infoLinks>
         <infoLink name="Limited-X" id="4cff-d9d2-4c91-3970" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
+        <infoLink name="Penetrator" id="25d4-e1a7-db5e-d2e3" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="8c44-d969-a7eb-bc76">
+      <profiles>
+        <profile name="Medium Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="a5bc-c5ec-211c-072d">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">1</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-1, Penetrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c3e9-fd2c-b736-26f8" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ee-ef87-c68a-9f9b" includeChildSelections="false"/>
+      </constraints>
+      <comment>1 L-1 Pen</comment>
+      <infoLinks>
+        <infoLink name="Limited-X" id="cfc8-7e95-0c51-3998" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
+        <infoLink name="Penetrator" id="905f-5e64-a8a7-f886" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Light Torpedo" hidden="false" id="51d6-e7e9-ef28-0396">
@@ -3111,7 +3138,7 @@
         <profile name="Light Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="b0eb-4847-a05c-a87d">
           <characteristics>
             <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">1</characteristic>
-            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-2, Penetrator</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3119,9 +3146,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b6b-7615-4bcd-1162" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fbc-a6b5-c547-af38" includeChildSelections="false"/>
       </constraints>
-      <comment>1 L-2</comment>
+      <comment>1 L-2 Pen</comment>
       <infoLinks>
         <infoLink name="Limited-X" id="d647-c609-60dc-532a" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
+        <infoLink name="Penetrator" id="1d74-e7b5-851b-a889" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="9b0d-8d65-cdda-f785">
@@ -3246,6 +3274,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
+    <entryLink import="true" name="Captain" hidden="false" id="481d-7863-ffb3-aa4f" targetId="19a9-7d1f-50b2-e998" type="selectionEntry"/>
     <entryLink import="true" name="Rear Admiral" hidden="false" id="967d-15d6-55c9-501c" targetId="a461-4e5d-ff05-31f0" type="selectionEntry"/>
     <entryLink import="true" name="“Granite” Halsey - Washington" hidden="false" id="b5f9-7931-9faf-d4f6" targetId="0df1-8a69-e48b-af52" type="selectionEntry"/>
     <entryLink import="true" name="Havelock - New York" hidden="false" id="bded-f78c-6f10-c372" targetId="35e6-a97b-0bc4-a778" type="selectionEntry"/>
@@ -3366,8 +3395,10 @@
     </rule>
     <rule name="UCM Battlenet" id="6f5b-bd82-2aa9-c900" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="45">
       <description>An admiral assigned to this ship gains the following Command Abilities:
- • Telemetry Link (2AP): Pick a Group in Orbit within 12” of this Ship. That Group increases its total movement (after orders) by 4” this round.
- • Order to Fire (2AP): Pick a Group in Orbit within 12” of this Ship. Each Ship in that Group increases the number of weapons it may attack with this round by 1 while on Orders that allow it to attack, following any other restrictions (such as type or rules).</description>
+Telemetry Link (2AP): When you activate another friendly Group in Orbit, that Group increases its total movement (after orders) by 4” this round.
+Order to Fire (2AP): When you activate another friendly Group in Orbit, pick one of the following options:
+• While that Group is on the General Quarters, Course Change, or Damage Control orders, each Ship may attack with an additional weapon.
+• While that Group is on the Weapons Free or Damage Control orders, each Ship may Launch Assets.</description>
     </rule>
     <rule name="Jink" id="8008-c897-2756-2472" hidden="false">
       <description>At the start or end of this Flagship’s movement, you may place it up to 2” away on a line drawn directly through the centre of both side arcs. If this Flagship is on the Max Thrust Special Order, you may place it 4” along that line instead.</description>

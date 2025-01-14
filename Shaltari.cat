@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="5" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="6" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="1c77-28ea-5fb6-dc6f" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="1282-2cce-85a8-ebe4" targetId="7e9b-b6ba-2178-6eb5"/>
@@ -10,9 +10,35 @@
   </publications>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="98cc-5609-e532-4875"/>
+    <selectionEntry type="unit" import="true" name="Skychief" hidden="false" id="eaea-025c-59d6-2236" publicationId="fbb6-a765-5882-6bcb" page="1">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Admirals" hidden="false" id="f31a-c49c-7d4f-91d0" targetId="fb8b-57b3-d46c-d679" primary="true"/>
+        <categoryLink name="Faction/Famous Admirals" hidden="false" id="b430-81cc-70e4-80d7" targetId="79f7-4244-6fb7-d41a" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1d9d-603f-74e7-c7a7"/>
+      </constraints>
+      <profiles>
+        <profile name="Skychief" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="3020-47e9-93b0-0e1d">
+          <characteristics>
+            <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">1</characteristic>
+            <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Voidgate Redeployment" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="cc87-9763-1ec6-3c1c">
+          <characteristics>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, before Battalion Combat, select a Dropsite or Feature containing friendly Battalions. If that Dropsite/Feature is within 3” of a friendly Ship with the Gateship special rule, you may move all friendly Battalions assigned to the selected Dropsite or Feature to another Dropsite or one of its Features within 3” of another Ship in the same Gateship chain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Starchief" hidden="false" id="0a4e-0313-c2e7-58dc" publicationId="fbb6-a765-5882-6bcb" page="1">
       <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Admirals" hidden="false" id="faa1-4ef9-c82c-20ea" targetId="fb8b-57b3-d46c-d679" primary="true"/>
@@ -58,7 +84,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Quetzalcoatl" hidden="false" id="8237-2da4-1e5d-6bcc" subType="crew" sortIndex="1">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="70"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eadd-8e95-0fc3-e494" includeChildSelections="false"/>
@@ -140,7 +166,7 @@
             <infoLink name="Gateship-X" id="a3e3-efeb-ec23-745f" hidden="false" type="rule" targetId="4572-00d5-81d2-4fcc"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -200,7 +226,7 @@
             <infoLink name="Vectored" id="e079-6cfd-74a7-a999" hidden="false" type="rule" targetId="7a2f-fbe0-b3cd-98c8"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -249,7 +275,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
           <rules>
             <rule name="Twins" id="c7f4-b24f-5c06-5eb5" hidden="false">
@@ -311,7 +337,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="395"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="410"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7cbf-35e0-2dd0-d4d7" includeChildSelections="false"/>
@@ -356,7 +382,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="420"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="435"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1cf0-1eed-56fb-27e3" includeChildSelections="false"/>
@@ -401,7 +427,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="230"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="220"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe94-4562-695b-8f43" includeChildSelections="false"/>
@@ -487,7 +513,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="320"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="295"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f21-f014-7882-1ae5" includeChildSelections="false"/>
@@ -531,7 +557,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="305"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="280"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3600-f03b-3520-46e1" includeChildSelections="false"/>
@@ -576,7 +602,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="220"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="230"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="463c-96ff-339d-a620" includeChildSelections="false"/>
@@ -620,7 +646,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="220"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="210"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56b9-8eed-81d5-2f30" includeChildSelections="false"/>
@@ -788,7 +814,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="180"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="175"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="892b-9c77-c53c-fe2e" includeChildSelections="false"/>
@@ -966,8 +992,8 @@
             <infoLink name="Shield-X" id="21a6-2b5b-eea4-84ed" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
           </infoLinks>
           <entryLinks>
-            <entryLink import="true" name="Disintegrator Battery Pair" hidden="false" id="8090-4bb9-b111-9dfe" type="selectionEntry" sortIndex="1" targetId="8bee-12e8-8c3d-102a"/>
-            <entryLink import="true" name="Dropships" hidden="false" id="c09b-61fa-49dc-fe94" type="selectionEntry" sortIndex="2" targetId="5150-ad0f-67e9-d4a0"/>
+            <entryLink import="true" name="Disintegrator Battery" hidden="false" id="8090-4bb9-b111-9dfe" type="selectionEntry" sortIndex="1" targetId="e742-5130-c811-5c02"/>
+            <entryLink import="true" name="Dropships" hidden="false" id="c09b-61fa-49dc-fe94" type="selectionEntry" sortIndex="2" targetId="552f-108c-a300-ca26"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1010,7 +1036,7 @@
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Disruptor Pair" hidden="false" id="caae-5575-d1c2-d2f1" type="selectionEntry" sortIndex="1" targetId="a238-c7d3-57d8-42df"/>
-            <entryLink import="true" name="Dropships" hidden="false" id="5816-673d-0651-4fa1" type="selectionEntry" sortIndex="2" targetId="5150-ad0f-67e9-d4a0"/>
+            <entryLink import="true" name="Dropships" hidden="false" id="5816-673d-0651-4fa1" type="selectionEntry" sortIndex="2" targetId="552f-108c-a300-ca26"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1041,7 +1067,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="130"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac0a-9387-6a97-93ab" includeChildSelections="false"/>
@@ -1206,7 +1232,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="90"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
           </costs>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2904-2c63-ef99-3be8" includeChildSelections="false"/>
@@ -1248,7 +1274,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="90"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
           </costs>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="08e0-72e0-e381-57c1" includeChildSelections="false"/>
@@ -1580,7 +1606,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Descent, Gateship-2, Shield-4+</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Descent, Gateship-3, Shield-4+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1874,7 +1900,7 @@
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
-                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">2-6</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">2-4</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Descent, Shield-5+</characteristic>
               </characteristics>
             </profile>
@@ -1884,7 +1910,7 @@
           </costs>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="20e0-1fb7-3744-d575" includeChildSelections="false"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="662e-318e-702e-ded4" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="662e-318e-702e-ded4" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Descent" id="3fb8-3a90-1b43-a290" hidden="false" type="rule" targetId="2ae8-7705-ab9a-03c0"/>
@@ -1912,12 +1938,12 @@
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">2&quot;</characteristic>
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">2&quot;</characteristic>
-                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">2</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">3</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
-                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">6+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Descent, Gateship-1, Shield-5+, Open Network</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Descent, Gateship-2, Shield-5+, Open Network</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2010,7 +2036,7 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3129-c463-43b8-6c85-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3129-c463-43b8-6c85-max" includeChildSelections="false"/>
       </constraints>
-      <comment>F 2/3+/1/E</comment>
+      <comment>F 2/3+/1/E Rv-1</comment>
       <profiles>
         <profile name="Disintegrator Bank" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="e992-fada-c695-c0ed">
           <characteristics>
@@ -2019,30 +2045,34 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-1</characteristic>
           </characteristics>
           <comment>F/S 4/3+/1/E Vol-2</comment>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Reave-X" id="2375-4166-8515-9223" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Disintegrator Battery Pair" hidden="false" id="8bee-12e8-8c3d-102a">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f8a-1e04-00f5-e836-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f8a-1e04-00f5-e836-max" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S 4/3+/1/E Vol-2</comment>
+      <comment>F/S 5/3+/1/E Rv-1 Vol-2</comment>
       <infoLinks>
+        <infoLink name="Reave-X" id="5098-89b6-3e39-2fc6" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
         <infoLink name="Volley-X" id="a585-ef76-5e6c-459c" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
       <profiles>
         <profile name="Disintegrator Battery Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7cb3-668a-007f-4e3f">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Volley-2</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-1, Volley-2</characteristic>
           </characteristics>
           <comment>F/S 4/3+/1/E Vol-2</comment>
         </profile>
@@ -2053,9 +2083,10 @@
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1002-1413-07c6-7c9d-min" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1002-1413-07c6-7c9d-max" includeChildSelections="false"/>
       </constraints>
-      <comment>[x2] F/S 4/3+/1/E Vol-2</comment>
+      <comment>[x2] F/S 5/3+/1/E Rv-1 Vol-2</comment>
       <infoLinks>
         <infoLink name="Disintegrator Battery" id="531f-27aa-eeb2-0f8e" hidden="false" type="profile" targetId="4cb0-3c95-f8d1-9459"/>
+        <infoLink name="Reave-X" id="2209-1d30-b0c7-91bf" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
         <infoLink name="Volley-X" id="32a0-e7e3-ca0d-2c73" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
@@ -2064,9 +2095,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ef8-475f-3aba-03ad-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ef8-475f-3aba-03ad-max" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S 4/3+/1/E Vol-2</comment>
+      <comment>F/S 5/3+/1/E Rv-1 Vol-2</comment>
       <infoLinks>
         <infoLink name="Disintegrator Battery" id="4bd1-4a24-e625-9ace" hidden="false" type="profile" targetId="4cb0-3c95-f8d1-9459"/>
+        <infoLink name="Reave-X" id="9e55-6067-90b3-10c1" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
         <infoLink name="Volley-X" id="e676-f12d-b31a-f5ac" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
@@ -2075,10 +2107,10 @@
         <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a188-16fe-be01-4f6f-min" includeChildSelections="false"/>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a188-16fe-be01-4f6f-max" includeChildSelections="false"/>
       </constraints>
-      <comment>[x3] F/S 4/3+/1/E</comment>
+      <comment>[x3] F/S 5/3+/1/E Rv-1</comment>
       <infoLinks>
         <infoLink name="Disintegrator Battery" id="4fc8-0b5e-0b0f-e4c8" hidden="false" type="profile" targetId="db9b-4876-0799-4ee3"/>
-        <infoLink name="Volley-X" id="d0ff-a3fb-dfa8-ce3a" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+        <infoLink name="Reave-X" id="d0ff-a3fb-dfa8-ce3a" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="e742-5130-c811-5c02">
@@ -2086,10 +2118,10 @@
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f244-12a3-6b28-266d-min" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f244-12a3-6b28-266d-max" includeChildSelections="false"/>
       </constraints>
-      <comment>[x2] F/S 4/3+/1/E</comment>
+      <comment>[x2] F/S 5/3+/1/E Rv-1</comment>
       <infoLinks>
         <infoLink name="Disintegrator Battery" id="af6d-067d-f374-ce53" hidden="false" type="profile" targetId="db9b-4876-0799-4ee3"/>
-        <infoLink name="Volley-X" id="8b8b-7cd4-69c0-66f3" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+        <infoLink name="Reave-X" id="8b8b-7cd4-69c0-66f3" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="c4f9-b751-7e09-adac">
@@ -2097,9 +2129,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2b8-d49a-4ae7-38c6-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2b8-d49a-4ae7-38c6-max" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S 4/3+/1/E</comment>
+      <comment>F/S 5/3+/1/E Rv-1</comment>
       <infoLinks>
         <infoLink name="Disintegrator Battery" id="de20-4f1c-ea24-ef94" hidden="false" type="profile" targetId="db9b-4876-0799-4ee3"/>
+        <infoLink name="Reave-X" id="7db3-1263-4a05-0b2d" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Disruption Beamers" hidden="false" id="a544-f7cd-6fd8-e8bd">
@@ -2126,7 +2159,7 @@
         <profile name="Disruptor Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="0a89-4f9f-948f-32cd">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">8</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
@@ -2138,7 +2171,7 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1866-2c6e-1873-0443-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1866-2c6e-1873-0443-max" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 6/4+/1/E</comment>
+      <comment>FN 8/4+/1/E</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Distortion Cannons" hidden="false" id="85e0-1bf1-6492-90fe">
       <profiles>
@@ -2172,7 +2205,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Close Action</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2180,10 +2213,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a88-c82e-c4f7-7b06-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a88-c82e-c4f7-7b06-max" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S 6/3+/1/K CA</comment>
+      <comment>F/S 6/3+/1/K AW CA</comment>
       <infoLinks>
+        <infoLink name="Anti Wing" id="dca8-27c3-a258-149a" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
         <infoLink name="Close Action" id="5fa8-2847-5137-ea7a" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
-        <infoLink name="Force Projectors" id="10ee-9ecf-9369-4fbd" hidden="false" type="rule" targetId="aae7-bb69-749e-ed86"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gravitic Beamer" hidden="false" id="3078-5bbc-4a92-b46b">
@@ -2284,17 +2317,17 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Close Action</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Scald-1</characteristic>
           </characteristics>
         </profile>
         <profile name="Ion Storm" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="0f67-0cde-58f7-c7ac">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Bombardment</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Scald-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2302,11 +2335,11 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b716-9a3c-d760-ddce-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b716-9a3c-d760-ddce-max" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S/R 6/3+/1/E Alt-1 CA || F/S/R 4/4+/1/E Alt-1 Bmb</comment>
+      <comment>F/S/R 6/3+/1/E CA Sc-1 || F/S/R 5/4+/1/E Bmb Sc-1</comment>
       <infoLinks>
-        <infoLink name="Alt-X" id="cae8-f4ec-8390-1db2" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
         <infoLink name="Close Action" id="1b7b-e13e-2f33-76e6" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Bombardment" id="1a33-d5ea-f9cf-ab3f" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
+        <infoLink name="Scald-X" id="cae8-f4ec-8390-1db2" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ion Cannonade" hidden="false" id="0187-5621-3a7c-549d">
@@ -2335,9 +2368,9 @@
       <profiles>
         <profile name="Ion Lance" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f3ee-64b8-d1f7-33df">
           <characteristics>
-            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
-            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
             <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Air to Air, Close Action</characteristic>
@@ -2352,7 +2385,7 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94d3-d3fb-ba99-2435-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94d3-d3fb-ba99-2435-max" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S 5/5+/1/E AtA CA</comment>
+      <comment>F 5/4+/1/E AtA CA</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kinetic Lance" hidden="false" id="03ae-6758-e130-7b7b">
       <profiles>
@@ -2603,7 +2636,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">*</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1, Close Action, Mauler</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-2, Close Action, Mauler</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2616,7 +2649,7 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a007-7c98-ec96-dea9-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a007-7c98-ec96-dea9-max" includeChildSelections="false"/>
       </constraints>
-      <comment>F 4/*/1/E BT-1 CA Maul</comment>
+      <comment>F 4/*/1/E BT-2 CA Maul</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pulse Ioniser Battery" hidden="false" id="0990-3903-15ed-efc1">
       <profiles>
@@ -2877,13 +2910,16 @@
       <description>If this weapon successfully deals damage to a Group, the next time that Group would move this round, it is moved an additional 2D3” after orders and modifiers.</description>
     </rule>
     <rule name="Shield Booster" id="f0c0-4983-dfb5-1878" hidden="false">
-      <description>While this Ship’s Group is in coherency, when another friendly Group within 6” of this Ship uses its Shield Save, you may improve that Group’s Shield-X special rule by 1 for that Save (so Shield-6+ would become Shield-5+). If you do, this Ship’s Group gains a Spike. Each Shield Save can only be affected by this rule once and Ships with this special rule are unaffected.</description>
+      <description>While this Ship’s Group is in coherency, when another friendly Group within 6” of this Ship uses its Shield Save, you may improve that Group’s Shield-X special rule by 1 for that Save (so Shield-6+ would become Shield-5+). If you do, this Ship’s Group gains a Spike. Each Shield Save can only be affected by this rule once and Ships with this special rule are unaffected.
+This rule can only be used while this Ship’s Group has fewer than 4 Spikes.</description>
     </rule>
     <rule name="Void Skip" id="3c13-4dce-2534-ad09" hidden="false">
       <description>If this ship goes on General Quarters when within 6” of a Ship with the Gateship special rule, rather than making a normal move, you may place it within 6” of any other Gateship in that Gateship’s chain (within 18” of each other as normal), facing any direction. If it does, it gains a Spike. It may be put in either Orbit or Atmosphere, regardless of the Voidgate it is placed by. When doing this, the whole group must move together.</description>
     </rule>
     <rule name="Open Network" id="6d98-dd49-c44e-7af7" hidden="false">
-      <description>Ships in this Group have a Coherency of 18”. While these Ships are outside of the normal 3” Coherency range, they have no Lead Ship, do not gain Formation Benefits, are targeted by attacks individually, and these attacks can only damage the targeted Ship.</description>
+      <description>In a round this Group is deployed, it activates following the normal activation, group, and deployment rules. In subsequent rounds all of your Open Network Ships count as being part of a single Group. Ships in this single Group choose their orders individually when it activates. From the second round onwards, all friendly Open Network Groups count as a single Group when generating Pass Tokens.
+Open Network Ships ignore Coherency rules (and do not gain Formation Benefits), have no Lead Ship, are targeted by attacks individually, and these attacks can only damage and affect the targeted Open Network Ship. 
+Crippling Effects, Spikes, and other rules that affect an entire Group only affect the targeted Open Network Ship.</description>
     </rule>
     <rule name="Force Projectors" id="aae7-bb69-749e-ed86" hidden="false">
       <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
@@ -2951,11 +2987,11 @@
     <profile name="Disintegrator Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="4cb0-3c95-f8d1-9459">
       <characteristics>
         <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
-        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Volley-2</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-1, Volley-2</characteristic>
       </characteristics>
       <comment>F/S 4/3+/1/E Vol-2</comment>
     </profile>
@@ -2973,13 +3009,13 @@
     <profile name="Disintegrator Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="db9b-4876-0799-4ee3">
       <characteristics>
         <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
-        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-1</characteristic>
       </characteristics>
-      <comment>F/S 4/3+/1/E</comment>
+      <comment>F/S 5/3+/1/E Rv-1</comment>
     </profile>
   </sharedProfiles>
 </catalogue>

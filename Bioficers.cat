@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="9" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
+    <selectionEntry type="unit" import="true" name="Ardent" hidden="false" id="253f-2124-1abd-87e5" publicationId="c835-461f-ea00-a841" page="1">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="79f7-4244-6fb7-d41a" id="48f4-47ac-3663-8041" primary="false" name="Faction/Famous Admirals"/>
+        <categoryLink targetId="fb8b-57b3-d46c-d679" id="aa78-0bc5-aaeb-91a4" primary="true" name="Admirals"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d63c-1b25-6dba-bbf1-max" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Ardent" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="3c8a-629c-058d-39d9">
+          <characteristics>
+            <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">1</characteristic>
+            <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Backpedal" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a48c-8d8e-a8e0-f864">
+          <characteristics>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, pick any friendly Group. You may move each Ship in that Group up to 3” directly backwards.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Accumulator" hidden="false" id="ee44-fd8d-2aec-361f" publicationId="c835-461f-ea00-a841" page="1">
       <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="79f7-4244-6fb7-d41a" id="e6d8-f6d0-e635-1c24" primary="false" name="Faction/Famous Admirals"/>
@@ -68,7 +94,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Scion Battlecruiser" hidden="false" id="8513-ba08-1043-7f34" publicationId="c835-461f-ea00-a841" page="39">
@@ -133,7 +159,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -193,7 +219,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Sanctum Battlecruiser" hidden="false" id="35b9-0e68-1ca4-37ed" publicationId="c835-461f-ea00-a841" page="40">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="245"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="200"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="7d97-6d79-e026-4b05" targetId="9d6f-26b0-7969-496b" primary="true"/>
@@ -270,7 +296,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Carronade Heavy Cruiser" hidden="false" id="cd32-8ac0-3a3f-d465" publicationId="c835-461f-ea00-a841" page="38">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="105"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="110"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="30ec-022a-c83e-f41e" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -477,7 +503,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Cavern Fleet Carrier" hidden="false" id="bad1-cefb-c4a1-0cf9" publicationId="c835-461f-ea00-a841" page="33">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="140"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="125"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="ce89-dc64-6fef-5180" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -1005,14 +1031,14 @@
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
-                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Rare, Gravitational Lensing</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dab5-1d3f-09c8-c0f7" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f923-e878-2069-55dc" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f923-e878-2069-55dc" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Graviton Lens" hidden="false" id="a0c0-9f6c-dca7-243b" type="selectionEntry" targetId="087e-6d37-cefe-4ce1"/>
@@ -1150,7 +1176,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Monarch Monitor" hidden="false" id="9438-d4b5-068e-bf7a" publicationId="c835-461f-ea00-a841" page="17">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="105"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="1621-7f30-0feb-fb58" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -1392,7 +1418,7 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Scythes" hidden="false" id="7e9d-6835-1d3e-cc8c" type="selectionEntry" targetId="27d7-86ff-8ab9-5438"/>
+            <entryLink import="true" name="Scythe Nodule" hidden="false" id="7e9d-6835-1d3e-cc8c" type="selectionEntry" targetId="27d7-86ff-8ab9-5438"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e0cf-7926-46a4-c6f1" includeChildSelections="false"/>
@@ -1509,7 +1535,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Vertex Corvette" hidden="false" id="9de8-4cbb-5205-cad7" publicationId="c835-461f-ea00-a841" page="9">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="8ac8-ec75-2a4d-1563" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -1563,7 +1589,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">-</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-4, Payload S-1, Vectored</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-1, Payload S-1, Vectored, Limited Aegis Bandwidth</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1571,6 +1597,7 @@
             <infoLink name="Aegis-X" id="48ae-0ccf-f95e-871a" hidden="false" type="rule" targetId="9cd1-441e-8ee8-7f13"/>
             <infoLink name="Payload S/L-X" id="b690-b7cd-a391-700b" hidden="false" type="rule" targetId="7a4f-55fd-3916-978f"/>
             <infoLink name="Vectored" id="f234-6564-f548-1b4a" hidden="false" type="rule" targetId="7a2f-fbe0-b3cd-98c8"/>
+            <infoLink name="Limited Aegis Bandwidth" id="9b63-c4a6-f0a3-9dc9" hidden="false" type="rule" targetId="8d89-0b9b-38c0-d33c"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Prism" hidden="false" id="914f-18d9-8aef-04d5" type="selectionEntry" targetId="1dc8-aee7-bcb1-c5b1"/>
@@ -1591,7 +1618,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Torpedo Cell" hidden="false" id="eb27-a8cc-a626-aab0" publicationId="c835-461f-ea00-a841" page="7">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
           </costs>
           <profiles>
             <profile name="Torpedo Cell" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="27b6-3a4b-ee66-6791" publicationId="c835-461f-ea00-a841" page="7">
@@ -1599,7 +1626,7 @@
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">2&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
-                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">1</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">2</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
@@ -1638,7 +1665,7 @@
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">2&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
-                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">1</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">2</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
@@ -1678,7 +1705,7 @@
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">2&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">1&quot;</characteristic>
-                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">1</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">2</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
@@ -1737,9 +1764,10 @@
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1cea-020d-eaf0-2d4f" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1dc3-f573-72c4-66f4" includeChildSelections="false"/>
       </constraints>
-      <comment>[x2] FN 1/2+/4/K</comment>
+      <comment>[x2] FN 1/2+/4/K Rv-1</comment>
       <infoLinks>
         <infoLink name="Barb Launcher" id="bacb-b134-0f05-4ba4" hidden="false" type="profile" targetId="76b6-65c7-226b-b98f"/>
+        <infoLink name="Reave-X" id="aecc-000f-49e0-dec1" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Barb Launcher" hidden="false" id="c5fe-cf87-763d-5a5e">
@@ -1747,9 +1775,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fba-adbb-3769-5c04" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6403-47ce-866d-49ff" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 1/2+/4/K</comment>
+      <comment>FN 1/2+/4/K Rv-1</comment>
       <infoLinks>
         <infoLink name="Barb Launcher" id="5a5c-3314-03aa-a808" hidden="false" type="profile" targetId="76b6-65c7-226b-b98f"/>
+        <infoLink name="Reave-X" id="be3d-3b25-b560-cdcf" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Barb Spiker" hidden="false" id="a4ee-58c6-f41d-c3e2">
@@ -1761,7 +1790,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1769,7 +1798,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a2b4-0d09-8819-2c90" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1969-7f54-430a-5b3c" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 1/2+/2/K</comment>
+      <comment>FN 1/2+/2/K Rv-1</comment>
+      <infoLinks>
+        <infoLink name="Reave-X" id="584d-743e-1389-ec78" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Barb Stinger" hidden="false" id="491b-4989-9981-2c90">
       <profiles>
@@ -1780,7 +1812,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1788,7 +1820,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fb2-ae2d-c897-a253" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffde-8c6b-f1dd-404d" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 1/2+/2/K</comment>
+      <comment>FN 1/2+/2/K Rv-1</comment>
+      <infoLinks>
+        <infoLink name="Reave-X" id="f6e0-addf-d8d9-098c" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bisector" hidden="false" id="fbb0-03e1-e6ea-0f34">
       <profiles>
@@ -1823,7 +1858,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1831,7 +1866,10 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2170-23a5-b268-a362" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63cf-1e7a-0ae9-5a2e" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 12/3+/1/E</comment>
+      <comment>FN 12/3+/1/E Rv-1</comment>
+      <infoLinks>
+        <infoLink name="Reave-X" id="96d9-2fb3-f7fd-9734" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Decon Cannon" hidden="false" id="61be-530f-81e1-90f2">
       <profiles>
@@ -1966,7 +2004,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">5</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Close Action, Focused</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Close Action, Focused, Scald-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1974,6 +2012,7 @@
         <infoLink name="Bloom-X" id="d0c2-117e-41a1-274f" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
         <infoLink name="Close Action" id="4150-422a-6972-8583" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Focused" id="eb96-0d6b-2b8b-d25e" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+        <infoLink name="Scald-X" id="161d-389e-5391-1015" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1ad-7d02-61ae-4966" includeChildSelections="false"/>
@@ -2028,40 +2067,40 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="41e6-babb-2487-3b35">
       <infoLinks>
-        <infoLink name="Burnthrough-X" id="09f7-9f3a-2603-8bce" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
-        <infoLink name="Fusillade-X" id="6b20-3379-f26e-2c30" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
         <infoLink name="Scythes" id="7870-c261-b15e-1a60" hidden="false" type="profile" targetId="afaa-6d9f-302b-4524"/>
-        <infoLink name="Scythes" id="2e4e-7d00-9588-9b94" hidden="false" type="rule" targetId="da6d-9de5-99cb-d405"/>
+        <infoLink name="Anti Wing" id="3c02-04fb-3b26-f2ef" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
+        <infoLink name="Fusillade-X" id="b5bc-4680-1b07-d326" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Reave-X" id="daf0-eaae-d32f-55ce" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2dd1-a898-374e-509f-min" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2dd1-a898-374e-509f-max" includeChildSelections="false"/>
       </constraints>
-      <comment>[x2] FN 8/4+/1/E BT-1 Fus-2</comment>
+      <comment>[x2] FN 8/4+/1/E AW Fus-2 Rv-1</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="b420-9dac-d07e-3511">
       <infoLinks>
-        <infoLink name="Burnthrough-X" id="86b6-edfd-98a5-daff" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+        <infoLink name="Anti Wing" id="86b6-edfd-98a5-daff" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
         <infoLink name="Fusillade-X" id="4b6d-4703-7495-7221" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
         <infoLink name="Scythes" id="2eba-db38-d95b-bbef" hidden="false" type="profile" targetId="afaa-6d9f-302b-4524"/>
-        <infoLink name="Scythes" id="b4cf-58e1-b46e-d237" hidden="false" type="rule" targetId="da6d-9de5-99cb-d405"/>
+        <infoLink name="Reave-X" id="5b52-ab2e-3829-bac2" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d24-d960-d9b6-1986" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98fc-66cb-6cf7-2cdc" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 8/4+/1/E BT-1 Fus-2</comment>
+      <comment>FN 8/4+/1/E AW Fus-2 Rv-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="27d7-86ff-8ab9-5438">
+    <selectionEntry type="upgrade" import="true" name="Scythe Nodule" hidden="false" id="27d7-86ff-8ab9-5438">
       <infoLinks>
-        <infoLink name="Burnthrough-X" id="7c7d-22d5-9ebe-c9df" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
-        <infoLink name="Scythes" id="1edc-1298-cc93-5216" hidden="false" type="rule" targetId="da6d-9de5-99cb-d405"/>
+        <infoLink name="Anti Wing" id="7c7d-22d5-9ebe-c9df" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
+        <infoLink name="Reave-X" id="46cc-3f5b-8ae9-0376" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bcd-bac3-244f-0f5f" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f389-d71b-ed55-6ccb" includeChildSelections="false"/>
       </constraints>
-      <comment>F 4/4+/1/E BT-1</comment>
+      <comment>F 4/4+/1/E AW Rv-1</comment>
       <profiles>
         <profile name="Scythes" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f92c-967f-a6e0-77c5">
           <characteristics>
@@ -2070,23 +2109,34 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Reave-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scythe Cluster" hidden="false" id="14d0-202c-3e93-cfee">
       <infoLinks>
-        <infoLink name="Burnthrough-X" id="3429-2491-6f4c-cd01" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+        <infoLink name="Anti Wing" id="3af8-ff43-61b8-a59b" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
         <infoLink name="Fusillade-X" id="82a0-f084-8d6a-e5df" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
-        <infoLink name="Scythes" id="ef32-01d7-d2b4-268b" hidden="false" type="profile" targetId="afaa-6d9f-302b-4524"/>
-        <infoLink name="Scythe Cluster" id="4a42-ae7b-1b04-aac9" hidden="false" type="rule" targetId="b632-52e2-1b0a-c0a3"/>
+        <infoLink name="Reave-X" id="3429-2491-6f4c-cd01" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e759-0279-53bb-0e3b" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b0f-2da7-ee9a-b1f3" includeChildSelections="false"/>
       </constraints>
-      <comment>F 6/4+/1/E BT-1 Fus-4</comment>
+      <comment>F 5/4+/1/E AW Fus-3 Rv-1</comment>
+      <profiles>
+        <profile name="Scythe Cluster" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="b10d-bc37-e7ea-de11">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Fusillade-3, Reave-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Winnower" hidden="false" id="d0e9-7919-19c0-b2c8">
       <profiles>
@@ -2379,6 +2429,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
+    <entryLink import="true" name="Ardent" hidden="false" id="5719-9230-5709-a789" targetId="253f-2124-1abd-87e5" type="selectionEntry"/>
     <entryLink import="true" name="Accumulator" hidden="false" id="f332-a9eb-0f60-764a" targetId="ee44-fd8d-2aec-361f" type="selectionEntry"/>
     <entryLink import="true" name="Atom - Scion" hidden="false" id="ec2c-7c4f-da19-a790" targetId="11f9-e5a6-1b81-6015" type="selectionEntry"/>
     <entryLink import="true" name="Atlas - Catastrophe" hidden="false" id="68bb-f0bc-e42e-e40d" targetId="df31-ecfa-33ff-265e" type="selectionEntry"/>
@@ -2442,11 +2493,11 @@
     <rule name="Scythes" id="da6d-9de5-99cb-d405" hidden="false">
       <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
     </rule>
-    <rule name="Scythe Cluster" id="b632-52e2-1b0a-c0a3" hidden="false">
-      <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
-    </rule>
     <rule name="Godray Lightvice" id="8590-da53-d799-e5d8" hidden="false">
       <description>This weapon’s Bombardment special rule has no effect on Ships in Atmosphere.</description>
+    </rule>
+    <rule name="Limited Aegis Bandwidth" id="8d89-0b9b-38c0-d33c" hidden="false">
+      <description>These Ships do not combine their Aegis-X rule into a single value. Only their X value is used when gaining additional dice due to the Aegis special rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2457,17 +2508,17 @@
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">4</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-1</characteristic>
       </characteristics>
     </profile>
     <profile name="Scythes" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="afaa-6d9f-302b-4524">
       <characteristics>
         <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
-        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">8</characteristic>
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1, Fusillade-4</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Fusillade-2, Reave-1</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
