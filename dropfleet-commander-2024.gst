@@ -301,7 +301,7 @@
         <categoryLink targetId="8a9e-8399-ae64-5be9" id="4b1f-78ba-b6cc-2dc2" primary="true" name="Configuration"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Admiral (Lvl 2)" hidden="false" id="c2e3-744c-214a-624e">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Admiral" hidden="false" id="c2e3-744c-214a-624e">
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
       </costs>
@@ -309,7 +309,7 @@
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="d279-4b1a-eb65-2a64" primary="true" name="Admirals"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Admiral (Lvl 3)" hidden="false" id="6d39-b64d-ed12-d1b4">
+    <selectionEntry type="unit" import="true" name="Lvl 3: Admiral" hidden="false" id="6d39-b64d-ed12-d1b4">
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
       </costs>
@@ -327,7 +327,7 @@
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="8ccd-72a3-4a43-0f9a" primary="true" name="Admirals"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Admiral (Lvl 4)" hidden="false" id="15ed-22eb-2e08-32e3">
+    <selectionEntry type="unit" import="true" name="Lvl 4: Admiral" hidden="false" id="15ed-22eb-2e08-32e3">
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
       </costs>

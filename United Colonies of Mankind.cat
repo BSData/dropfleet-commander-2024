@@ -2,7 +2,7 @@
 <catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
-    <selectionEntry type="unit" import="true" name="Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
+    <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
       </costs>
@@ -28,7 +28,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Rear Admiral" hidden="false" id="a461-4e5d-ff05-31f0" publicationId="9813-8e60-542d-9381" page="1">
+    <selectionEntry type="unit" import="true" name="Lvl 3: Rear Admiral" hidden="false" id="a461-4e5d-ff05-31f0" publicationId="9813-8e60-542d-9381" page="1">
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
       </costs>
