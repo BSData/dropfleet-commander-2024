@@ -364,9 +364,9 @@
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Game Size" hidden="false" id="bb40-2353-6ff5-0468" targetId="71a0-476c-277b-1c28" type="selectionEntry"/>
-    <entryLink import="true" name="Admiral (Lvl 2)" hidden="false" id="7d94-9e0f-7676-288a" targetId="c2e3-744c-214a-624e" type="selectionEntry"/>
-    <entryLink import="true" name="Admiral (Lvl 3)" hidden="false" id="3bcf-f613-6677-4a35" targetId="6d39-b64d-ed12-d1b4" type="selectionEntry"/>
-    <entryLink import="true" name="Admiral (Lvl 4)" hidden="false" id="4e39-4406-1f57-84c1" targetId="15ed-22eb-2e08-32e3" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 2: Admiral" hidden="false" id="7d94-9e0f-7676-288a" targetId="c2e3-744c-214a-624e" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 3: Admiral" hidden="false" id="3bcf-f613-6677-4a35" targetId="6d39-b64d-ed12-d1b4" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 4: Admiral" hidden="false" id="4e39-4406-1f57-84c1" targetId="15ed-22eb-2e08-32e3" type="selectionEntry"/>
     <entryLink import="true" name="Secondary Objectives" hidden="false" id="6c09-4194-940f-8f98" targetId="6fb6-4519-d945-0495" type="selectionEntry"/>
   </entryLinks>
   <profileTypes>
