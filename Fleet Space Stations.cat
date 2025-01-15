@@ -723,6 +723,135 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Grand Station" hidden="false" id="eedb-96cd-d7a3-6b75">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
+      </costs>
+      <profiles>
+        <profile name="Grand Station" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="c234-6c22-29e5-486e" publicationId="4be7-d555-8518-dd99" page="10">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">6&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">14</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">3+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">5+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy Vent Cannon Turret" hidden="false" id="35f3-ebe7-4058-42ef">
+          <profiles>
+            <profile name="Heavy Vent Cannon Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="106d-a9c6-e6f2-a671">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-1, Overcharge, Reave-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fusillade-X" id="da7f-3eab-8c0b-9f65" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+            <infoLink name="Overcharge" id="82dd-cdd9-d4db-d87e" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
+            <infoLink name="Reave-X" id="ac6d-ed3a-ce98-a223" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a46f-09a5-c030-3fc5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a576-0b48-001c-e9a6" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Heavy Vent Cannon Turret" id="547e-379e-e417-0009" hidden="false">
+              <description>When you assign targets to this weapon, you may have this Space Station gain 2 Spikes, if you do, it counts as going on Weapons Free Orders for the purposes of its Special rules.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="XN-31-S Mass Driver Turret Pair" hidden="false" id="d96d-3224-a82e-873e">
+          <profiles>
+            <profile name="XN-31-S Mass Driver Turret Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7280-333c-c99c-42d0">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Critical-1, Volley-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Critical-X" id="f177-d269-486e-c1a2" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
+            <infoLink name="Volley-X" id="b1a7-4b6e-e42e-a6b4" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea20-40cb-238a-6d95" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0884-2716-d4e2-c30e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="0c04-8d01-c96f-3992" primary="true" name="Space Stations"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Astrobotanical Outpost" hidden="false" id="1343-3008-33a4-59aa">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
+      </costs>
+      <profiles>
+        <profile name="Astrobotanical Outpost" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="18ce-1014-48b5-c977" publicationId="4be7-d555-8518-dd99" page="10">
+          <characteristics>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">6&quot;</characteristic>
+            <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">14</characteristic>
+            <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">3+</characteristic>
+            <characteristic name="KS" typeId="595f-3318-8065-9225">5+</characteristic>
+            <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
+            <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">Signature Bloom</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heavy Vent Cannon Turret" hidden="false" id="7ab4-3444-773c-ee67">
+          <profiles>
+            <profile name="Heavy Vent Cannon Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="b3de-7723-718a-e678">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-1, Overcharge, Reave-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fusillade-X" id="7360-b782-35df-6095" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+            <infoLink name="Overcharge" id="5935-6b67-ae43-7d3e" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
+            <infoLink name="Reave-X" id="598f-3737-21c0-83fc" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c55f-5734-82f8-c79b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86d4-e3bf-7ea2-0a5b" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Heavy Vent Cannon Turret" id="0706-d927-4892-6afe" hidden="false">
+              <description>When you assign targets to this weapon, you may have this Space Station gain 2 Spikes, if you do, it counts as going on Weapons Free Orders for the purposes of its Special rules.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="5ca8-89b2-52c6-d394" id="dd00-1632-f31f-c9c7" primary="true" name="Space Stations"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Signature Bloom" id="ff6a-ea4d-2248-c022" hidden="false" type="rule" targetId="53c7-8bbb-2618-15b2"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Upgrades" id="36e8-0b5d-d2bd-9075" hidden="false">
@@ -731,15 +860,12 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
           </costs>
-          <rules>
-            <rule name="Signature Bloom" id="d91a-35d5-a2f7-aeae" hidden="false">
-              <description>Friendly Ships within 6” of this Space Station are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship’s Group ignore a Spike for each Hidden Ship in that Group.
-This rule has no effect while this Space Station is controlled by an enemy player.</description>
-            </rule>
-          </rules>
           <modifiers>
             <modifier type="set" value="Signature Bloom" field="473b-cbb5-5ba2-c2de" scope="parent" affects="profiles.Space Station" join=", "/>
           </modifiers>
+          <infoLinks>
+            <infoLink name="Signature Bloom" id="160e-d48a-1e86-ace1" hidden="false" type="rule" targetId="53c7-8bbb-2618-15b2"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Defence Grid" hidden="false" id="9f87-bd75-739f-4e4b" publicationId="4be7-d555-8518-dd99" page="3">
           <costs>
@@ -928,6 +1054,10 @@ This special rule ceases to function while you do not control this station.</des
     <rule name="Disintegrator Bank" id="00a0-f924-fd56-2694" hidden="false">
       <description>Instead of the normal Arcs, Shaltari Shurikens have their own Arcs. A Shuriken has 5 Arcs, each 72 degrees. The easiest way to define these Arcs is to follow the lines of adjacent vertical vanes, measured from the flight stand as normal. Follow these arcs when attacking instead of the normal rules for Arcs.
 When you assign targets to this weapon, you may only use each Arc once.</description>
+    </rule>
+    <rule name="Signature Bloom" id="53c7-8bbb-2618-15b2" hidden="false">
+      <description>Friendly Ships within 6” of this Space Station are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship’s Group ignore a Spike for each Hidden Ship in that Group.
+This rule has no effect while this Space Station is controlled by an enemy player.</description>
     </rule>
   </sharedRules>
 </catalogue>
