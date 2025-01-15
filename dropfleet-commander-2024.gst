@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
