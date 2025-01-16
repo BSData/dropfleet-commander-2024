@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="8" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="1c77-28ea-5fb6-dc6f" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="1282-2cce-85a8-ebe4" targetId="7e9b-b6ba-2178-6eb5"/>
@@ -35,6 +35,93 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Abilities" id="691c-885f-e75f-fac6" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Impel Mines" hidden="false" id="1774-5bda-678e-273b">
+              <profiles>
+                <profile name="Impel Mines" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="6cdf-953c-4d9e-926f">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Carrier with H or C Tonnage launches assets, it may launch a single Impel Mine in addition to its normal Assets this round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba7b-2297-4760-c97f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Picket Ships" hidden="false" id="02d6-edd7-643b-f0a8">
+              <profiles>
+                <profile name="Advanced Picket Ships" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="8e5c-7cb9-8a1a-261b">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you use a Group’s Shield-X special rule, roll a dice. On a 4+ do not gain a Spike from that use of the Shield-X special rule (other uses are unaffected).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cb0-4bbb-7020-0b0a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Misdirection" hidden="false" id="6b04-cfac-7563-2646">
+              <profiles>
+                <profile name="Misdirection" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="6dfa-a459-8718-4400">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a Dropsite. You may redistribute the allocation of all friendly Assets in that Dropsite and its Features.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8112-998e-4570-183c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Navigational Mastery" hidden="false" id="b2f3-cbc3-e8f3-5cb0">
+              <profiles>
+                <profile name="Navigational Mastery" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="f2e1-d5cb-2b01-7467">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, that Group increases its Thrust by D3” until the end of its activation.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14a2-7a3e-67b5-78bc" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Power to the Weapons" hidden="false" id="e1be-4c1e-1a26-2b8f">
+              <profiles>
+                <profile name="Power to the Weapons" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9ec9-9b34-5d6c-0c56">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation that Group may fire any number of its Weapons on General Quarters but may not use Shield Saves until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="740b-06a4-1199-bb5b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lives of Experience" hidden="false" id="f67d-5d02-735c-c860">
+              <profiles>
+                <profile name="Lives of Experience" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4107-5869-b196-6745">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">*AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of each round, pick one Ability from any other Admiral on the table. This Ability becomes a copy of that Ability until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9168-8b07-a1f6-3e9d" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7937-ac7c-5132-7bb0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lvl 3: Starchief" hidden="false" id="0a4e-0313-c2e7-58dc" publicationId="fbb6-a765-5882-6bcb" page="1">
       <costs>
@@ -74,6 +161,93 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Abilities" id="f531-fdf2-7c20-d1fe" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Impel Mines" hidden="false" id="9f92-702a-9dc7-1340">
+              <profiles>
+                <profile name="Impel Mines" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="95e1-308a-afbd-9707">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Carrier with H or C Tonnage launches assets, it may launch a single Impel Mine in addition to its normal Assets this round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb1a-7a0e-8e98-97e7" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Picket Ships" hidden="false" id="0147-2ced-7ee2-a486">
+              <profiles>
+                <profile name="Advanced Picket Ships" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="e896-d786-6aa8-06c0">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you use a Group’s Shield-X special rule, roll a dice. On a 4+ do not gain a Spike from that use of the Shield-X special rule (other uses are unaffected).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3418-1d48-23bf-8423" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Misdirection" hidden="false" id="460a-4a18-1ab5-4966">
+              <profiles>
+                <profile name="Misdirection" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="c78e-d7b7-065e-54e1">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a Dropsite. You may redistribute the allocation of all friendly Assets in that Dropsite and its Features.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a352-f784-0c0a-41e2" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Navigational Mastery" hidden="false" id="fcb6-ccfd-d765-6401">
+              <profiles>
+                <profile name="Navigational Mastery" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5ac3-d1dd-8312-8dd6">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, that Group increases its Thrust by D3” until the end of its activation.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d38-172e-fd3a-0110" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Power to the Weapons" hidden="false" id="211e-632b-1eca-237a">
+              <profiles>
+                <profile name="Power to the Weapons" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="e626-d432-202e-0f7e">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation that Group may fire any number of its Weapons on General Quarters but may not use Shield Saves until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c65-a229-ff4e-61e3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lives of Experience" hidden="false" id="89e2-243f-daaf-e345">
+              <profiles>
+                <profile name="Lives of Experience" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fb28-3249-bdd1-2e15">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">*AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of each round, pick one Ability from any other Admiral on the table. This Ability becomes a copy of that Ability until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a51-2be6-95d0-44ee" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f3c-ea47-516b-3fff" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Quetzalcoatl - Uranium" hidden="false" id="9782-06cf-cd06-44c5" publicationId="fbb6-a765-5882-6bcb" page="5">
       <categoryLinks>
@@ -104,6 +278,93 @@
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="0bf1-308f-a1b4-27b8" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Impel Mines" hidden="false" id="8afe-2eaf-54d3-0b79">
+                  <profiles>
+                    <profile name="Impel Mines" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="95f2-d888-3652-d35b">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Carrier with H or C Tonnage launches assets, it may launch a single Impel Mine in addition to its normal Assets this round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a34-06b2-83ea-ad0d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Advanced Picket Ships" hidden="false" id="f174-e79d-ce41-52ad">
+                  <profiles>
+                    <profile name="Advanced Picket Ships" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="cb6b-8663-8c71-62ce">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you use a Group’s Shield-X special rule, roll a dice. On a 4+ do not gain a Spike from that use of the Shield-X special rule (other uses are unaffected).</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a57-2087-9a75-d7c9" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Misdirection" hidden="false" id="ccf4-f84f-03f2-b3c6">
+                  <profiles>
+                    <profile name="Misdirection" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="eac7-f32a-0d67-9264">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a Dropsite. You may redistribute the allocation of all friendly Assets in that Dropsite and its Features.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6642-056a-a30e-3f97" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Navigational Mastery" hidden="false" id="1cbe-92f3-d69e-099d">
+                  <profiles>
+                    <profile name="Navigational Mastery" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="b840-9144-67a4-e0d0">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, that Group increases its Thrust by D3” until the end of its activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0297-85ef-fb6f-f1be" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Power to the Weapons" hidden="false" id="4411-ec1a-1cc2-c511">
+                  <profiles>
+                    <profile name="Power to the Weapons" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="59f9-aea9-b0dc-4dbb">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation that Group may fire any number of its Weapons on General Quarters but may not use Shield Saves until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e65-709b-1126-39a0" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lives of Experience" hidden="false" id="f5de-bba7-169a-408d">
+                  <profiles>
+                    <profile name="Lives of Experience" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="c6c4-4887-4b0e-8f97">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">*AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of each round, pick one Ability from any other Admiral on the table. This Ability becomes a copy of that Ability until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c77-c772-d511-92e9" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4ccb-915e-6755-b115" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -168,6 +429,93 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="6659-d3b6-9559-88b9" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Impel Mines" hidden="false" id="844a-5707-0f64-74d7">
+                  <profiles>
+                    <profile name="Impel Mines" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2112-8ef8-328d-b680">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Carrier with H or C Tonnage launches assets, it may launch a single Impel Mine in addition to its normal Assets this round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99a3-bf6d-a213-d84a" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Advanced Picket Ships" hidden="false" id="7f1c-37f9-cca0-a00e">
+                  <profiles>
+                    <profile name="Advanced Picket Ships" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5641-b180-cd5b-9bc0">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you use a Group’s Shield-X special rule, roll a dice. On a 4+ do not gain a Spike from that use of the Shield-X special rule (other uses are unaffected).</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7db2-f26b-5444-bd53" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Misdirection" hidden="false" id="6081-b53f-1113-95fc">
+                  <profiles>
+                    <profile name="Misdirection" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9e5d-aab1-39db-e211">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a Dropsite. You may redistribute the allocation of all friendly Assets in that Dropsite and its Features.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d56-471b-7d3b-4080" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Navigational Mastery" hidden="false" id="fdd8-7263-82ed-1ea0">
+                  <profiles>
+                    <profile name="Navigational Mastery" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4a7e-10b9-a35d-9b29">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, that Group increases its Thrust by D3” until the end of its activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9092-c95a-bbc4-1eca" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Power to the Weapons" hidden="false" id="1a8f-2bf5-2459-45e8">
+                  <profiles>
+                    <profile name="Power to the Weapons" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2483-b143-0448-f8dc">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation that Group may fire any number of its Weapons on General Quarters but may not use Shield Saves until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2db-26d6-59c0-8650" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lives of Experience" hidden="false" id="06bd-2490-c290-2cb3">
+                  <profiles>
+                    <profile name="Lives of Experience" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="c772-ae44-3144-cf12">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">*AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of each round, pick one Ability from any other Admiral on the table. This Ability becomes a copy of that Ability until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="662e-f400-7a72-e25c" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ae6-1689-a98d-3904" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -228,6 +576,93 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="8e1a-1d7f-d525-103a" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Impel Mines" hidden="false" id="cf5d-d47f-5583-8a8d">
+                  <profiles>
+                    <profile name="Impel Mines" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2ac9-4030-7598-d6de">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Carrier with H or C Tonnage launches assets, it may launch a single Impel Mine in addition to its normal Assets this round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1be6-dfbc-6d97-3285" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Advanced Picket Ships" hidden="false" id="9847-762f-118b-387c">
+                  <profiles>
+                    <profile name="Advanced Picket Ships" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="e3ee-7ec9-a137-23d2">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you use a Group’s Shield-X special rule, roll a dice. On a 4+ do not gain a Spike from that use of the Shield-X special rule (other uses are unaffected).</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bd6-c28d-6226-5aa3" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Misdirection" hidden="false" id="fe36-ea7a-857e-4264">
+                  <profiles>
+                    <profile name="Misdirection" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="10f8-800e-ec15-7e39">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a Dropsite. You may redistribute the allocation of all friendly Assets in that Dropsite and its Features.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="181d-19d7-f594-2a10" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Navigational Mastery" hidden="false" id="8b75-802e-e0a5-d31b">
+                  <profiles>
+                    <profile name="Navigational Mastery" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="ce1f-199e-d5ba-adaf">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, that Group increases its Thrust by D3” until the end of its activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfae-0d3d-b00b-34c0" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Power to the Weapons" hidden="false" id="7082-71b9-378f-fe7d">
+                  <profiles>
+                    <profile name="Power to the Weapons" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="f608-db1e-732a-d51d">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation that Group may fire any number of its Weapons on General Quarters but may not use Shield Saves until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7d4-ce3c-f80a-1897" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lives of Experience" hidden="false" id="a107-d728-0584-73f1">
+                  <profiles>
+                    <profile name="Lives of Experience" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="dfed-b438-5ca6-7052">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">*AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of each round, pick one Ability from any other Admiral on the table. This Ability becomes a copy of that Ability until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddc0-5651-cb55-be15" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a47c-17ce-5120-a4e9" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -282,6 +717,93 @@
               <description>This Admiral counts as being in both Amber Cruisers in this Group and is only removed once the Group is destroyed.</description>
             </rule>
           </rules>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="941b-2458-90dd-6996" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Impel Mines" hidden="false" id="8590-4db2-78ef-07cb">
+                  <profiles>
+                    <profile name="Impel Mines" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4e1b-f194-5fad-c22a">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Carrier with H or C Tonnage launches assets, it may launch a single Impel Mine in addition to its normal Assets this round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d11d-d325-9af4-fee0" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Advanced Picket Ships" hidden="false" id="fceb-fa67-0144-c46e">
+                  <profiles>
+                    <profile name="Advanced Picket Ships" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="01b5-21a9-cbe1-72d8">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you use a Group’s Shield-X special rule, roll a dice. On a 4+ do not gain a Spike from that use of the Shield-X special rule (other uses are unaffected).</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77be-131f-3214-ac7f" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Misdirection" hidden="false" id="4e3f-73d5-d7a9-d7c5">
+                  <profiles>
+                    <profile name="Misdirection" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="d6cf-a4f1-1e2d-054e">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a Dropsite. You may redistribute the allocation of all friendly Assets in that Dropsite and its Features.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ada5-a56b-32d5-886d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Navigational Mastery" hidden="false" id="2afb-03d9-7367-89f4">
+                  <profiles>
+                    <profile name="Navigational Mastery" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="0dfd-9b0d-3854-2cc5">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, that Group increases its Thrust by D3” until the end of its activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e52-4e0c-8d79-a0d4" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Power to the Weapons" hidden="false" id="1234-1a83-f3e0-8679">
+                  <profiles>
+                    <profile name="Power to the Weapons" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="67de-a924-8af5-f53f">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation that Group may fire any number of its Weapons on General Quarters but may not use Shield Saves until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f341-4521-d354-b304" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lives of Experience" hidden="false" id="662a-f70d-026b-b760">
+                  <profiles>
+                    <profile name="Lives of Experience" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="426e-8ef4-b4ba-edc0">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">*AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of each round, pick one Ability from any other Admiral on the table. This Ability becomes a copy of that Ability until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9b7-44b0-2440-09c1" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="999a-3de6-2e7f-71d2" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3019,4 +3541,91 @@ Crippling Effects, Spikes, and other rules that affect an entire Group only affe
       <comment>F/S 5/3+/1/E Rv-1</comment>
     </profile>
   </sharedProfiles>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Abilities" id="120f-5b56-e0cb-e3f9" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Impel Mines" hidden="false" id="c597-b81d-3a26-f56c">
+          <profiles>
+            <profile name="Impel Mines" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2f32-c445-6be1-b27f">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Carrier with H or C Tonnage launches assets, it may launch a single Impel Mine in addition to its normal Assets this round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee36-f572-6875-a42a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Advanced Picket Ships" hidden="false" id="3ece-0729-8ae3-13a2">
+          <profiles>
+            <profile name="Advanced Picket Ships" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="307a-c3c7-cd37-6225">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you use a Group’s Shield-X special rule, roll a dice. On a 4+ do not gain a Spike from that use of the Shield-X special rule (other uses are unaffected).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06ea-f6b4-a2f6-dc22" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="f2de-e346-96fc-0048" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Misdirection" hidden="false" id="a02e-1b27-d48f-5148">
+          <profiles>
+            <profile name="Misdirection" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="8b41-0dfa-d4e4-2989">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a Dropsite. You may redistribute the allocation of all friendly Assets in that Dropsite and its Features.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c35-93a9-6154-adb8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Navigational Mastery" hidden="false" id="fae0-3362-857c-38d1">
+          <profiles>
+            <profile name="Navigational Mastery" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="1e58-0e6b-8379-b6df">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, that Group increases its Thrust by D3” until the end of its activation.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50b1-e455-b050-2adc" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Power to the Weapons" hidden="false" id="28e1-e8b7-80df-c366">
+          <profiles>
+            <profile name="Power to the Weapons" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="bd43-dc68-79f2-ca53">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation that Group may fire any number of its Weapons on General Quarters but may not use Shield Saves until the end of the round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae30-eeb2-33aa-0a2d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Lives of Experience" hidden="false" id="a342-553e-5e00-0e8c">
+          <profiles>
+            <profile name="Lives of Experience" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="8f51-6c81-12c7-7fab">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">*AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of each round, pick one Ability from any other Admiral on the table. This Ability becomes a copy of that Ability until the end of the round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d41-1ade-5dde-901a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>

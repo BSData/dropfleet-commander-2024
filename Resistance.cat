@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="7" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="8" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (241028)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (241028)"/>
   </publications>
@@ -38,6 +38,93 @@
       <infoLinks>
         <infoLink name="Linked-X" id="f3b7-bc70-99e7-22ed" hidden="false" type="rule" targetId="fc9b-53d4-3bb3-3413"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Abilities" id="76a9-b0dd-2eaf-4850" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="91f3-c9e0-c358-a859">
+              <profiles>
+                <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5674-c4ec-fbc1-6d8a">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e1e-95c4-7d39-42ff" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="5739-b0ba-4ae7-46ec">
+              <profiles>
+                <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="e448-ea0f-feac-2334">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d7f-fbd7-3139-51fd" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="b835-0b29-a147-3c5b">
+              <profiles>
+                <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="50af-4d0e-98b9-123a">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7032-80f0-11e5-b6b6" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="c8a8-b9b3-e056-ce55">
+              <profiles>
+                <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a66f-a0ad-28ce-1fa0">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ecf-72c6-917e-1366" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="886b-1cad-cfe6-46b4">
+              <profiles>
+                <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="df49-f9e5-f7d5-c07f">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32db-92ff-21b9-d8aa" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="9e9d-36c1-3911-537a">
+              <profiles>
+                <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5f17-887d-ea5d-17fc">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfb4-79dd-b8f1-f276" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e76-b307-9362-b9e4" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lvl 3: Artificer" hidden="false" id="3010-be38-92cd-7f82" publicationId="7fb8-995d-767a-783d" page="1">
       <costs>
@@ -80,6 +167,93 @@
       <infoLinks>
         <infoLink name="Regenerate-X" id="4edd-0925-000b-b5ef" hidden="false" type="rule" targetId="df32-1b16-f0f9-7b85"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Abilities" id="ec55-2735-beab-35b8" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="805b-1ab4-9bb9-f3c2">
+              <profiles>
+                <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2652-4fc9-5b21-2c8a">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ede-2e5b-7f6c-f919" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="4f59-a92d-9302-ad75">
+              <profiles>
+                <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="1119-8411-6b97-af42">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efd7-638e-55ac-38b0" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="6ee5-532d-c211-b6b0">
+              <profiles>
+                <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="256e-3adc-0aa0-dd83">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5751-dd79-6fbf-38b8" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="6066-4752-f196-c67d">
+              <profiles>
+                <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="7fec-8223-6d5a-3f1e">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc3c-7555-5bd1-6a24" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="f024-85ed-fc17-d91b">
+              <profiles>
+                <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="d33a-13c3-e45f-0e5d">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eeda-fa46-ed9e-1b7f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="8b55-eb1f-489e-5b90">
+              <profiles>
+                <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2e71-1b54-0b57-6c8a">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24d1-ce77-a980-12dc" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5255-89d3-b593-8f2f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Magellan - Coloniser" hidden="false" id="9d4b-69f2-b535-656c">
       <categoryLinks>
@@ -110,6 +284,93 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="03d4-6666-75d3-377a" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="cbc9-1dc4-c36c-31ab">
+                  <profiles>
+                    <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4a51-4cef-ed90-ec08">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11a6-92a1-51a3-ee0e" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="4a6c-9c0c-86a3-0d79">
+                  <profiles>
+                    <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="126f-10bc-d68a-a8f1">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64a6-398a-eb8d-24ec" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="3146-29e6-9d98-62fd">
+                  <profiles>
+                    <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a821-9220-b180-161f">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bd3-15b4-6821-220f" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="1f83-e518-4745-c913">
+                  <profiles>
+                    <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="b728-7804-15b9-0d6f">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d45-ae6c-10ed-b6e6" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="6d45-0da7-ac07-de20">
+                  <profiles>
+                    <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="00e3-ec05-3e1a-d4a3">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6071-7761-9017-7eb7" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="2ad8-d43b-affc-5f90">
+                  <profiles>
+                    <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a3df-0180-6478-28c3">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="934b-7c43-203c-ef85" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89d4-a4fb-dc03-21ef" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Coloniser Interstellar Dreadnought" hidden="false" id="9bed-c61e-b656-5308" publicationId="7fb8-995d-767a-783d" page="36" sortIndex="2">
           <categoryLinks>
@@ -224,6 +485,93 @@
           <infoLinks>
             <infoLink name="Overcharge" id="5252-e306-7e31-4fa0" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="2448-e467-8897-3a98" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="695a-a871-e24d-51d5">
+                  <profiles>
+                    <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="c053-e98e-8ef0-9826">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e57a-6380-ac2b-a191" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="dc45-49f7-731e-b0c9">
+                  <profiles>
+                    <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fcb3-d431-bf46-3495">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b574-9ce4-0b53-8667" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="1c3d-7ca4-519d-71b3">
+                  <profiles>
+                    <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="0d80-d32a-cc33-9e4a">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bb2-8462-9d90-6a5e" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="7ccf-5b92-26f3-4a4d">
+                  <profiles>
+                    <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="ee12-585a-67df-a776">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea5a-65b8-2bd8-f4b6" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="f691-b84a-c40b-1b25">
+                  <profiles>
+                    <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a86b-ae09-e880-8179">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33eb-c363-9c44-bb1a" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="20a2-e7cd-45a6-79b9">
+                  <profiles>
+                    <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3588-fa05-e822-fc0e">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ade-b026-b161-b6d4" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41a2-51a2-e982-b4f2" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -287,6 +635,93 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="db17-1f38-6402-0e36" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="241b-b8da-6e39-f133">
+                  <profiles>
+                    <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9b2f-a027-e4f4-aea5">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b79-97fe-2222-b8d5" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="7e0b-6229-794c-ce9f">
+                  <profiles>
+                    <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="44f2-55ae-ee8d-c9cf">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8016-7651-2e32-cd85" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="bcbd-af78-c5ff-3b21">
+                  <profiles>
+                    <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="352e-cee0-d083-bc9f">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5927-05a4-5ff7-881d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="a1de-ed9f-570e-d8e3">
+                  <profiles>
+                    <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3f66-0c02-135f-9681">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1b2-6fd6-2f0d-eb94" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="5d29-e2a3-0fc6-770d">
+                  <profiles>
+                    <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="8b02-f6b7-51b7-12b1">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="840e-14eb-c065-a80d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="14ef-f874-b138-13cd">
+                  <profiles>
+                    <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3d7b-1e4f-85ca-6530">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ff3-9e6a-0e24-9b8e" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="837f-6d25-84de-3ad3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Tribune Battlecruiser" hidden="false" id="b440-9fb4-98f5-d300" publicationId="7fb8-995d-767a-783d" page="27" sortIndex="2">
           <categoryLinks>
@@ -356,6 +791,93 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="9034-2f8f-b28b-fa37" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="b6fd-7301-489c-4ce9">
+                  <profiles>
+                    <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="7ebc-836a-7532-458b">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2405-1f36-19ea-d290" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="3cf0-35a8-b4dc-e4d7">
+                  <profiles>
+                    <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fae0-29fb-f73f-e3a1">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d284-5654-2e06-6c3b" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="c692-3708-6b4a-23cf">
+                  <profiles>
+                    <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="7889-b8f2-1c17-3b03">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cfc-7d42-de68-f843" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="b828-327e-23d0-71d1">
+                  <profiles>
+                    <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="cdc1-a367-b2ba-c188">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdda-55ed-0fd3-9567" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="8959-b415-a41e-e66c">
+                  <profiles>
+                    <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="bc83-7c8f-1e29-6db4">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c96c-feac-0b5a-06df" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="1060-164e-f35c-1fcc">
+                  <profiles>
+                    <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4b49-4d11-7a98-f212">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dc8-9f73-8235-7f82" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d29-71c7-149a-2e07" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Heavy Cruiser" hidden="false" id="9920-ce1c-c576-f0c2" publicationId="7fb8-995d-767a-783d" page="21">
           <categoryLinks>
@@ -3179,6 +3701,91 @@ Telescope tokens are removed at the end of the round.</description>
           <comment>Strike Carrier</comment>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Abilities" id="b374-7196-fcc1-9fcb" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="f874-5946-e437-80eb">
+          <profiles>
+            <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="6fae-87a1-de6e-1801">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4d3-e86e-46de-4b5e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="c45a-4a5f-99c8-6de1">
+          <profiles>
+            <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="844e-f9be-10ce-1557">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be7a-d629-5176-fee8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="bed7-6a0e-f72f-3558">
+          <profiles>
+            <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9371-86ac-12ff-c0c1">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b9e-dc1d-4aad-2c99" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="6ba3-6065-79fa-4712">
+          <profiles>
+            <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5a8a-71f8-86af-fc3f">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f6b-7b3a-9a8b-966c" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Corruptor-X" id="73ac-93d6-1ea1-c6bf" hidden="false" type="rule" targetId="b495-5934-9bf1-d595"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="b75d-e1ca-9588-2c57">
+          <profiles>
+            <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="61b0-32ca-9f50-7705">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f714-f7bd-f579-4d04" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="99f0-8027-2809-a4fc">
+          <profiles>
+            <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="f3b1-e3bf-bb5c-b345">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ce8-9144-a6c4-244d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>

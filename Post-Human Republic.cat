@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="10" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="11" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="66a8-ba07-3fa8-ecf7"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Vizier" hidden="false" id="4d5f-828e-aece-77fe" publicationId="6462-e99b-594c-193a" page="1">
@@ -27,6 +27,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Abilities" hidden="false" id="e765-62c7-b967-878a" type="selectionEntryGroup" targetId="5ccb-88fa-8be6-97f7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94b0-6c44-f065-6070" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lvl 3: Vice Director" hidden="false" id="c974-a513-7df9-d0fe" publicationId="6462-e99b-594c-193a" page="1">
       <costs>
@@ -66,6 +73,13 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Abilities" hidden="false" id="c869-035f-f26a-9961" type="selectionEntryGroup" targetId="5ccb-88fa-8be6-97f7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a38-6151-947a-0115" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gaius Chau - Romulus" hidden="false" id="416b-ac4b-0ec7-e966" page="5" publicationId="6462-e99b-594c-193a">
       <categoryLinks>
@@ -96,6 +110,13 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="105"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Abilities" hidden="false" id="1e61-91ee-0405-ec8a" type="selectionEntryGroup" targetId="5ccb-88fa-8be6-97f7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82f1-1de8-5651-d7d3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -157,6 +178,13 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Abilities" hidden="false" id="7a11-1f58-1235-26c0" type="selectionEntryGroup" targetId="5ccb-88fa-8be6-97f7">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="afb5-50e5-ed8b-7257" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -218,6 +246,13 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Abilities" hidden="false" id="644e-a73b-b7d4-8f8d" type="selectionEntryGroup" targetId="5ccb-88fa-8be6-97f7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86ce-3e03-55c4-be29" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Pompeius Battlecruiser" hidden="false" id="7af1-36a0-b6bc-9355" publicationId="6462-e99b-594c-193a" page="40" sortIndex="2">
           <costs>
@@ -283,6 +318,13 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Abilities" hidden="false" id="5ace-fc8a-749f-6b02" type="selectionEntryGroup" targetId="5ccb-88fa-8be6-97f7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1249-172e-de1c-b93b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3215,4 +3257,88 @@
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="af1f-8897-1ad8-e506" targetId="7e9b-b6ba-2178-6eb5"/>
     <catalogueLink type="catalogue" name="Civilian" id="80cb-fed7-ff65-dce2" targetId="903e-8fb9-3fe2-4460"/>
   </catalogueLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Abilities" id="5ccb-88fa-8be6-97f7" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Countermeasures Hack" hidden="false" id="6fc7-3cf3-6f03-d2a2">
+          <profiles>
+            <profile name="Countermeasures Hack" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="cb68-6b97-138d-a8af">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation target an enemy Group. Until the end of the friendly Groups activation, the targeted Group reduces its Kinetic Save by 1. When used against a Group of C Tonnage, this Ability requires a roll of a 4+ to succeed (AP is still spent).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09e4-b97f-f384-7a2c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Weapons Hack" hidden="false" id="0c79-1d48-87b4-a4bd">
+          <profiles>
+            <profile name="Weapons Hack" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="07a1-0339-9a7d-ab5f">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Once per round, at the end of the Planning Phase, target an enemy Group. When Ships in that group attack, they attack with one fewer weapon than allowed by their order until the end of the round. Those Ships may use their Backup Saves to negate this effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4d0-f524-d427-5ec0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Command Hack" hidden="false" id="90b6-2f28-b038-77af">
+          <profiles>
+            <profile name="Command Hack" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="cf96-2a5c-d012-409f">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target an opponent and one of their Abilities. That opponent rolls 2D6 in secret. Then you roll 2D6 and guess if the result is higher, lower, or the same as the opponent’s roll. If you are correct, the targeted Ability cannot be used for the rest of the round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7fe-12e2-ffc7-70fd" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Drive Hack" hidden="false" id="8a96-cf9b-0a5c-cd42">
+          <profiles>
+            <profile name="Drive Hack" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="f3de-89de-ee3c-87a7">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Once per round, at the end of the Planning Phase, target an enemy Group. D3 Ships (of your choice) in that Group gain a Navigation Offline token. Those Ships may use their Backup Saves to negate this effect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="633b-159f-5344-55e6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Repair Drone Squadron" hidden="false" id="fc46-ef6e-3e3a-ad43">
+          <profiles>
+            <profile name="Repair Drone Squadron" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9e82-6d86-7a4c-4f6f">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Repair step of the End Phase, target a friendly Ship. That Ship recovers D3 lost Hull Points.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5730-3dc4-23ac-4e83" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Elite Ground Forces" hidden="false" id="4fd0-3f75-2c7d-6881">
+          <profiles>
+            <profile name="Elite Ground Forces" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="1bcc-3b52-a1ac-def1">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, target a Dropsite or Feature containing friendly Battalions. Add D3 Battalions to that Dropsite or Feature.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4483-2121-377c-8b2c" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="8" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="9" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Fleet Thrall" hidden="false" id="7fe9-330a-0598-35d7" publicationId="260d-362c-d403-80ae" page="1">
@@ -27,6 +27,93 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Abilities" id="0919-e26d-1b33-3cb9" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="For the Species" hidden="false" id="785c-738e-8586-b783">
+              <profiles>
+                <profile name="For the Species" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="92c9-7b00-1df4-7e51">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of a friendly Groups’ activation, pick a Ship in that Group and target an enemy Ship within 3” of it on the same Orbital Layer. Roll a dice for each of the friendly Ship’s remaining Hull Points. The target Ship suffers 1 Core hit for each result of a 4+ and the friendly Ship is destroyed and does not roll for explosion.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d559-7576-e202-f88c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Augmentations" hidden="false" id="0e4e-1feb-463d-cd2c">
+              <profiles>
+                <profile name="Augmentations" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="e87b-688e-6985-b5f4">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Carrier’s activation, if that Carrier has 2 or more Bulk Landers, it replaces all its Bulk Landers with a single deployable Orbital Defence Gun Feature (see 7.4.2 Deploying Features and 11.3 Features) until the end of the round. This Ability can only be used once each round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9e6-3559-4b0f-2199" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Abandon all Hope" hidden="false" id="277f-2f7d-8793-6e9e">
+              <profiles>
+                <profile name="Abandon all Hope" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="d174-8954-ea8a-8538">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target an opponent. That opponent discards D3 Ability Points.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07f0-83e4-80e5-09a2" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Assimilated Bioforms" hidden="false" id="c8bb-31bf-5f5c-9631">
+              <profiles>
+                <profile name="Assimilated Bioforms" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="0fb4-00e2-e132-1df5">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When friendly Battalions on a Dropsite or Feature would completely remove an opponents Battalions on that Dropsite or Feature, place D3 friendly Battalions on that Dropsite or Feature.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fdc-2db7-fb1a-809b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="High Speed Launch" hidden="false" id="7347-d14e-6555-b999">
+              <profiles>
+                <profile name="High Speed Launch" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2492-c083-4e76-16b0">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick a friendly Group. That Group gains Rapid Drop until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6748-96c3-306c-7814" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Expert Defence Crews" hidden="false" id="d08c-81ef-ddd2-10dd">
+              <profiles>
+                <profile name="Expert Defence Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="ae78-edd4-4653-fdd1">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a friendly Group. That Group gains Marines-2D3 until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90f8-9ba9-d73a-ab79" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e220-3487-e1ad-85f9" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lvl 3: Fleet Champion" hidden="false" id="d094-8254-44f9-d6eb" publicationId="260d-362c-d403-80ae" page="1">
       <costs>
@@ -66,6 +153,93 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Abilities" id="1423-00d8-99af-68e7" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="For the Species" hidden="false" id="dcf0-6748-3956-96c4">
+              <profiles>
+                <profile name="For the Species" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="b9cb-4a0d-64fd-8835">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of a friendly Groups’ activation, pick a Ship in that Group and target an enemy Ship within 3” of it on the same Orbital Layer. Roll a dice for each of the friendly Ship’s remaining Hull Points. The target Ship suffers 1 Core hit for each result of a 4+ and the friendly Ship is destroyed and does not roll for explosion.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5af8-39d0-9a39-18ea" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Augmentations" hidden="false" id="3c65-8c04-c711-89bf">
+              <profiles>
+                <profile name="Augmentations" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2fc9-db14-4d49-84ed">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Carrier’s activation, if that Carrier has 2 or more Bulk Landers, it replaces all its Bulk Landers with a single deployable Orbital Defence Gun Feature (see 7.4.2 Deploying Features and 11.3 Features) until the end of the round. This Ability can only be used once each round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46b6-d2b2-876c-a61c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Abandon all Hope" hidden="false" id="a03d-6b0f-cf05-647b">
+              <profiles>
+                <profile name="Abandon all Hope" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="c813-afee-2645-ffdf">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target an opponent. That opponent discards D3 Ability Points.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63d7-03d1-9449-c8e8" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Assimilated Bioforms" hidden="false" id="9b08-0ccd-3f02-4079">
+              <profiles>
+                <profile name="Assimilated Bioforms" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="844c-6ed2-89c6-66c8">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When friendly Battalions on a Dropsite or Feature would completely remove an opponents Battalions on that Dropsite or Feature, place D3 friendly Battalions on that Dropsite or Feature.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6ad-c085-45f0-98b2" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="High Speed Launch" hidden="false" id="56ad-1b57-8372-f7ff">
+              <profiles>
+                <profile name="High Speed Launch" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="0cdc-a8b4-fcfb-37cc">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick a friendly Group. That Group gains Rapid Drop until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ce9-afc3-fbda-8070" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Expert Defence Crews" hidden="false" id="26e8-a200-9a63-dc79">
+              <profiles>
+                <profile name="Expert Defence Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="6944-975f-6b16-a3f5">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a friendly Group. That Group gains Marines-2D3 until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69c6-2f23-b582-ec52" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b83d-43b6-b34a-8c34" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Overlord of Flies - Nosferatu" hidden="false" id="b0b3-4b12-b0c8-aca3" page="5" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
@@ -96,6 +270,93 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="feea-e36b-ba3e-45a7" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="For the Species" hidden="false" id="da94-4a75-aae3-3462">
+                  <profiles>
+                    <profile name="For the Species" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="be09-85c6-f7cc-087c">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of a friendly Groups’ activation, pick a Ship in that Group and target an enemy Ship within 3” of it on the same Orbital Layer. Roll a dice for each of the friendly Ship’s remaining Hull Points. The target Ship suffers 1 Core hit for each result of a 4+ and the friendly Ship is destroyed and does not roll for explosion.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ffc-57d2-56ea-dfc4" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Augmentations" hidden="false" id="9ffa-c345-4ef6-e818">
+                  <profiles>
+                    <profile name="Augmentations" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="40e7-faaf-e3d4-f485">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Carrier’s activation, if that Carrier has 2 or more Bulk Landers, it replaces all its Bulk Landers with a single deployable Orbital Defence Gun Feature (see 7.4.2 Deploying Features and 11.3 Features) until the end of the round. This Ability can only be used once each round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="650d-70d8-15f6-fb82" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Abandon all Hope" hidden="false" id="ee7e-94bb-6121-d3bc">
+                  <profiles>
+                    <profile name="Abandon all Hope" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4115-6f2f-27a3-c375">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target an opponent. That opponent discards D3 Ability Points.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="180c-ecfe-f2cc-3e51" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Assimilated Bioforms" hidden="false" id="0141-0cb7-2f37-0977">
+                  <profiles>
+                    <profile name="Assimilated Bioforms" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="ecae-bfac-2f5f-13d8">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When friendly Battalions on a Dropsite or Feature would completely remove an opponents Battalions on that Dropsite or Feature, place D3 friendly Battalions on that Dropsite or Feature.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="847a-543e-05a0-7cee" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="High Speed Launch" hidden="false" id="33b0-8848-cc70-c798">
+                  <profiles>
+                    <profile name="High Speed Launch" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="28a1-c563-edd7-4af8">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick a friendly Group. That Group gains Rapid Drop until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55dd-ee44-075c-d406" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Expert Defence Crews" hidden="false" id="ecd3-1917-3960-f2fb">
+                  <profiles>
+                    <profile name="Expert Defence Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9168-3704-4d2c-a9d7">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a friendly Group. That Group gains Marines-2D3 until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d34e-701f-df9b-fa1b" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c504-6ec2-3fe3-764c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -161,6 +422,93 @@
           <infoLinks>
             <infoLink name="Death Mistress" id="6761-9b61-3dad-3a5c" hidden="false" type="rule" targetId="da80-c120-515a-4d23"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="3959-d08e-ba7b-3dca" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="For the Species" hidden="false" id="549a-88e3-6e24-628e">
+                  <profiles>
+                    <profile name="For the Species" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="40cb-02f8-788c-54e0">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of a friendly Groups’ activation, pick a Ship in that Group and target an enemy Ship within 3” of it on the same Orbital Layer. Roll a dice for each of the friendly Ship’s remaining Hull Points. The target Ship suffers 1 Core hit for each result of a 4+ and the friendly Ship is destroyed and does not roll for explosion.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66ce-d6d1-a731-2525" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Augmentations" hidden="false" id="d388-6f6c-51e4-e850">
+                  <profiles>
+                    <profile name="Augmentations" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="419d-714b-a072-f0a1">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Carrier’s activation, if that Carrier has 2 or more Bulk Landers, it replaces all its Bulk Landers with a single deployable Orbital Defence Gun Feature (see 7.4.2 Deploying Features and 11.3 Features) until the end of the round. This Ability can only be used once each round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2882-5d72-178d-60b9" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Abandon all Hope" hidden="false" id="10ce-30ae-2007-9424">
+                  <profiles>
+                    <profile name="Abandon all Hope" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="10a5-e55f-db9a-a00a">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target an opponent. That opponent discards D3 Ability Points.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ca3-8a0e-0598-123d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Assimilated Bioforms" hidden="false" id="3f11-48d6-d399-0cb2">
+                  <profiles>
+                    <profile name="Assimilated Bioforms" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="c9c8-d472-9501-f5f8">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When friendly Battalions on a Dropsite or Feature would completely remove an opponents Battalions on that Dropsite or Feature, place D3 friendly Battalions on that Dropsite or Feature.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5e5-0d86-af51-9ea1" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="High Speed Launch" hidden="false" id="9710-6563-7bf2-a4ab">
+                  <profiles>
+                    <profile name="High Speed Launch" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="7d4a-a743-02e4-319a">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick a friendly Group. That Group gains Rapid Drop until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46ac-6eda-9694-fc3e" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Expert Defence Crews" hidden="false" id="c861-8f5c-8a89-3dbe">
+                  <profiles>
+                    <profile name="Expert Defence Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="98e6-5143-2bed-15dd">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a friendly Group. That Group gains Marines-2D3 until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c5a-b183-7c84-4cd6" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="385e-b0b3-0982-fac6" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -201,6 +549,93 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="ad36-4e5a-eed7-404f" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="For the Species" hidden="false" id="df29-40d6-9e59-3c38">
+                  <profiles>
+                    <profile name="For the Species" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2e75-3268-85c4-f97b">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of a friendly Groups’ activation, pick a Ship in that Group and target an enemy Ship within 3” of it on the same Orbital Layer. Roll a dice for each of the friendly Ship’s remaining Hull Points. The target Ship suffers 1 Core hit for each result of a 4+ and the friendly Ship is destroyed and does not roll for explosion.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9c0-532f-e4e0-4c6a" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Augmentations" hidden="false" id="c908-0e3e-cedf-3a46">
+                  <profiles>
+                    <profile name="Augmentations" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="b771-06e5-8b12-eb2e">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Carrier’s activation, if that Carrier has 2 or more Bulk Landers, it replaces all its Bulk Landers with a single deployable Orbital Defence Gun Feature (see 7.4.2 Deploying Features and 11.3 Features) until the end of the round. This Ability can only be used once each round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f46-cbe8-356a-f308" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Abandon all Hope" hidden="false" id="7dae-44ce-3bd6-d47b">
+                  <profiles>
+                    <profile name="Abandon all Hope" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5947-b831-8517-d357">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target an opponent. That opponent discards D3 Ability Points.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6eba-6eb8-906c-6296" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Assimilated Bioforms" hidden="false" id="e63b-0547-9822-c14e">
+                  <profiles>
+                    <profile name="Assimilated Bioforms" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="38f3-5382-d62e-aa32">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When friendly Battalions on a Dropsite or Feature would completely remove an opponents Battalions on that Dropsite or Feature, place D3 friendly Battalions on that Dropsite or Feature.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e537-e00e-bc9b-27c5" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="High Speed Launch" hidden="false" id="78d2-e85e-94e7-242d">
+                  <profiles>
+                    <profile name="High Speed Launch" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="45f7-6878-5d5a-36b4">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick a friendly Group. That Group gains Rapid Drop until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d799-ec50-656d-0acd" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Expert Defence Crews" hidden="false" id="78ee-a97c-e621-c56a">
+                  <profiles>
+                    <profile name="Expert Defence Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5c2e-eb5e-d9a8-8c59">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a friendly Group. That Group gains Marines-2D3 until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="441e-af73-e5b6-6ef4" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4249-554f-7e00-a355" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -261,6 +696,93 @@
           <infoLinks>
             <infoLink name="Doomed" id="95a3-a657-9b37-dea1" hidden="false" type="rule" targetId="9480-f97c-1712-5fd2"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="8929-11b1-1bad-acdb" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="For the Species" hidden="false" id="f807-824a-6814-645e">
+                  <profiles>
+                    <profile name="For the Species" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="591a-a44b-4311-5ee8">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of a friendly Groups’ activation, pick a Ship in that Group and target an enemy Ship within 3” of it on the same Orbital Layer. Roll a dice for each of the friendly Ship’s remaining Hull Points. The target Ship suffers 1 Core hit for each result of a 4+ and the friendly Ship is destroyed and does not roll for explosion.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c439-f591-fb86-b5da" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Augmentations" hidden="false" id="b3cc-d243-4109-abbd">
+                  <profiles>
+                    <profile name="Augmentations" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2462-d6e9-aca7-b169">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Carrier’s activation, if that Carrier has 2 or more Bulk Landers, it replaces all its Bulk Landers with a single deployable Orbital Defence Gun Feature (see 7.4.2 Deploying Features and 11.3 Features) until the end of the round. This Ability can only be used once each round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7fb-77c4-d685-171d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Abandon all Hope" hidden="false" id="a5b3-6ad6-1110-e948">
+                  <profiles>
+                    <profile name="Abandon all Hope" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="ab91-b39f-2f91-5358">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target an opponent. That opponent discards D3 Ability Points.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="820c-5d86-25bd-9ded" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Assimilated Bioforms" hidden="false" id="9ab4-7247-d154-6b45">
+                  <profiles>
+                    <profile name="Assimilated Bioforms" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="bef2-2605-6fe6-968a">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When friendly Battalions on a Dropsite or Feature would completely remove an opponents Battalions on that Dropsite or Feature, place D3 friendly Battalions on that Dropsite or Feature.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00fd-d26f-9d8f-f7b9" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="High Speed Launch" hidden="false" id="7160-8a5f-ed14-d681">
+                  <profiles>
+                    <profile name="High Speed Launch" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="f093-7871-0012-e6ea">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick a friendly Group. That Group gains Rapid Drop until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34ba-3db6-0b84-f270" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Expert Defence Crews" hidden="false" id="f5cc-e8e1-d482-5af8">
+                  <profiles>
+                    <profile name="Expert Defence Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="44b3-271f-7e95-be86">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a friendly Group. That Group gains Marines-2D3 until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c72d-d80e-32e0-f9b1" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3f51-1949-347e-cbdb" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2846,4 +3368,94 @@ If this Group gained any number of Spikes this round due to this rule, each Ship
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="f24a-5501-0d0e-2949" targetId="7e9b-b6ba-2178-6eb5"/>
     <catalogueLink type="catalogue" name="Civilian" id="6b98-e892-d82f-dcb4" targetId="903e-8fb9-3fe2-4460"/>
   </catalogueLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Abilities" id="148a-48ec-a0d4-5554" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="For the Species" hidden="false" id="1d25-6a91-3287-f5e0">
+          <profiles>
+            <profile name="For the Species" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="ab49-458e-edf6-3b0f">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of a friendly Groups’ activation, pick a Ship in that Group and target an enemy Ship within 3” of it on the same Orbital Layer. Roll a dice for each of the friendly Ship’s remaining Hull Points. The target Ship suffers 1 Core hit for each result of a 4+ and the friendly Ship is destroyed and does not roll for explosion.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70c0-70b7-8e11-99e7" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Augmentations" hidden="false" id="4ce6-3312-db85-34d9">
+          <profiles>
+            <profile name="Augmentations" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3274-35f3-1069-c6e0">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Carrier’s activation, if that Carrier has 2 or more Bulk Landers, it replaces all its Bulk Landers with a single deployable Orbital Defence Gun Feature (see 7.4.2 Deploying Features and 11.3 Features) until the end of the round. This Ability can only be used once each round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fa7-3e17-13b0-2af3" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Abandon all Hope" hidden="false" id="5da9-eeef-b115-0d5c">
+          <profiles>
+            <profile name="Abandon all Hope" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="d719-73ef-71df-e683">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target an opponent. That opponent discards D3 Ability Points.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7267-6b3c-3ac4-73d3" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Assimilated Bioforms" hidden="false" id="00cf-49c2-632f-da02">
+          <profiles>
+            <profile name="Assimilated Bioforms" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3287-047b-4bc1-c976">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When friendly Battalions on a Dropsite or Feature would completely remove an opponents Battalions on that Dropsite or Feature, place D3 friendly Battalions on that Dropsite or Feature.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2b9-0cf1-e751-3404" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="High Speed Launch" hidden="false" id="b5f0-5c2b-228c-1a71">
+          <profiles>
+            <profile name="High Speed Launch" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="6bbc-3bd5-83f2-ba62">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick a friendly Group. That Group gains Rapid Drop until the end of the round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="beb7-f740-b98e-6279" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Rapid Drop" id="e703-aaa2-cf43-8166" hidden="false" type="rule" targetId="8b74-2f05-9de9-8b32"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Expert Defence Crews" hidden="false" id="b1a8-5429-6c31-4619">
+          <profiles>
+            <profile name="Expert Defence Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="71ad-1215-eb18-d903">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a friendly Group. That Group gains Marines-2D3 until the end of the round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de5a-c8e7-abc4-e1e1" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Marines-X" id="6a1c-14e0-07c5-0e5e" hidden="false" type="rule" targetId="93f3-7932-b233-4d38"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>

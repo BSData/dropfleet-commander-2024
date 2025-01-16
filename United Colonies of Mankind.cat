@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="12" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="13" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -27,6 +27,93 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Abilities" id="7479-06ba-aa1e-9f9f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Colonial Legions" hidden="false" id="07d2-8198-a564-44d3">
+              <profiles>
+                <profile name="Colonial Legions" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="8ffc-7357-2179-01ff">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After the Battalion Combat step of the Asset Phase, target a Dropsite or Feature. If any enemy Battalions completely removed any friendly Battalions from that Dropsite or Feature, place 1 Battalion on that Dropsite or Feature.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7f8-f458-29c8-5705" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Intensify Point-Defence" hidden="false" id="216c-d9b8-1d9b-b5bd">
+              <profiles>
+                <profile name="Intensify Point-Defence" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="baec-e0ae-aec8-1d8b">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick one friendly Group. All ships in that Group gain Aegis-1 until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d52-f3f6-6c47-a8bd" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Infiltrate and Sabotage" hidden="false" id="dc65-a519-4bc1-0bb1">
+              <profiles>
+                <profile name="Infiltrate and Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="75aa-a2c8-3234-64e4">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one Dropsite. That Dropsite takes D3 Core hits.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f110-0557-fcf6-5243" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mass Driver Volley" hidden="false" id="15db-3e57-8001-2738">
+              <profiles>
+                <profile name="Mass Driver Volley" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="b716-09cb-0394-8181">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Mass Driver” in its name, those weapons increase their Attack value by 1 until the end of its activation.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad64-96e1-33a2-44a2" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Atmospheric Bombing Run" hidden="false" id="539c-7474-dcab-b422">
+              <profiles>
+                <profile name="Atmospheric Bombing Run" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4db7-a74b-a434-9557">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, target one friendly Wing of Bombers. That Wing gains the Bombardment special rule until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d51c-4d45-afb4-3535" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Next-Gen Armour Plating" hidden="false" id="3fc1-65a2-8af2-4d7b">
+              <profiles>
+                <profile name="Next-Gen Armour Plating" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="e6b9-df65-dfca-55e8">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one friendly Group. That Group may re-roll failed Energy Saves until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d3f-953f-d905-6efa" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83ab-36d7-fb66-7ad1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lvl 3: Rear Admiral" hidden="false" id="a461-4e5d-ff05-31f0" publicationId="9813-8e60-542d-9381" page="1">
       <costs>
@@ -69,6 +156,93 @@
       <infoLinks>
         <infoLink name="Fusillade-X" id="4e4b-02f3-5e0c-dc48" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Abilities" id="29bc-7785-6bb5-f344" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Colonial Legions" hidden="false" id="cf41-3832-e11a-b5c5">
+              <profiles>
+                <profile name="Colonial Legions" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9991-97a5-cf9b-50ee">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After the Battalion Combat step of the Asset Phase, target a Dropsite or Feature. If any enemy Battalions completely removed any friendly Battalions from that Dropsite or Feature, place 1 Battalion on that Dropsite or Feature.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ac0-08f2-b06f-5f64" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Intensify Point-Defence" hidden="false" id="dc08-42e7-363e-f66f">
+              <profiles>
+                <profile name="Intensify Point-Defence" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="b9d2-058b-ea2c-0b34">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick one friendly Group. All ships in that Group gain Aegis-1 until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42e9-f8f8-46d9-9832" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Infiltrate and Sabotage" hidden="false" id="9712-0905-0751-b01f">
+              <profiles>
+                <profile name="Infiltrate and Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5f73-dbbc-146b-54f2">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one Dropsite. That Dropsite takes D3 Core hits.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee14-e6b0-253b-a36e" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mass Driver Volley" hidden="false" id="b180-3c86-c405-3617">
+              <profiles>
+                <profile name="Mass Driver Volley" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5f6c-0219-bb49-5a41">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Mass Driver” in its name, those weapons increase their Attack value by 1 until the end of its activation.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="183f-e6e4-def9-5013" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Atmospheric Bombing Run" hidden="false" id="9b1b-2dd5-19b7-f14f">
+              <profiles>
+                <profile name="Atmospheric Bombing Run" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3182-8576-3676-8f72">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, target one friendly Wing of Bombers. That Wing gains the Bombardment special rule until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dca-2175-f3a6-7bf9" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Next-Gen Armour Plating" hidden="false" id="bb3f-dcd6-a279-9585">
+              <profiles>
+                <profile name="Next-Gen Armour Plating" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="06b2-beea-e77c-30ea">
+                  <characteristics>
+                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one friendly Group. That Group may re-roll failed Energy Saves until the end of the round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61ff-cc1f-d72a-5070" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="179a-095f-e4d1-cd95" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="“Granite” Halsey - Washington" hidden="false" id="0df1-8a69-e48b-af52">
       <categoryLinks>
@@ -99,6 +273,93 @@
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="7afd-4c58-d670-80f2" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Colonial Legions" hidden="false" id="bf15-5ff8-3ba3-707a">
+                  <profiles>
+                    <profile name="Colonial Legions" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2d2e-3cfc-5dcd-3bf7">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After the Battalion Combat step of the Asset Phase, target a Dropsite or Feature. If any enemy Battalions completely removed any friendly Battalions from that Dropsite or Feature, place 1 Battalion on that Dropsite or Feature.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="984f-124e-0350-671d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Intensify Point-Defence" hidden="false" id="cc3a-1342-2126-c34c">
+                  <profiles>
+                    <profile name="Intensify Point-Defence" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2f8b-4b1f-4900-7a3e">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick one friendly Group. All ships in that Group gain Aegis-1 until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd4f-3dca-0d7c-0ac7" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Infiltrate and Sabotage" hidden="false" id="da50-73ae-ef7d-9649">
+                  <profiles>
+                    <profile name="Infiltrate and Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="dd7a-2f7a-a32a-145f">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one Dropsite. That Dropsite takes D3 Core hits.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba70-cc39-1907-9deb" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Mass Driver Volley" hidden="false" id="3531-10d8-d4bb-8535">
+                  <profiles>
+                    <profile name="Mass Driver Volley" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="7ac1-7885-0cf8-b099">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Mass Driver” in its name, those weapons increase their Attack value by 1 until the end of its activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c82f-33ff-2778-d386" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Atmospheric Bombing Run" hidden="false" id="e444-15d2-2af2-1fa8">
+                  <profiles>
+                    <profile name="Atmospheric Bombing Run" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="556a-9554-cde0-270a">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, target one friendly Wing of Bombers. That Wing gains the Bombardment special rule until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad17-4a2a-283c-c149" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Next-Gen Armour Plating" hidden="false" id="2b66-d753-8c09-18ff">
+                  <profiles>
+                    <profile name="Next-Gen Armour Plating" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="d482-5528-80f5-59f2">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one friendly Group. That Group may re-roll failed Energy Saves until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="278a-4b4f-b3db-862c" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e33c-6250-98d2-6492" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Washington Supercarrier" hidden="false" id="adff-9045-f5aa-9334" publicationId="9813-8e60-542d-9381" page="52" sortIndex="2">
           <categoryLinks>
@@ -191,6 +452,93 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="676a-13d1-7192-92a8" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Colonial Legions" hidden="false" id="ae17-df8d-71fc-2abb">
+                  <profiles>
+                    <profile name="Colonial Legions" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3e82-5bb1-1d2a-7a73">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After the Battalion Combat step of the Asset Phase, target a Dropsite or Feature. If any enemy Battalions completely removed any friendly Battalions from that Dropsite or Feature, place 1 Battalion on that Dropsite or Feature.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d313-9fdf-d5d8-5d12" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Intensify Point-Defence" hidden="false" id="68cf-20a1-c9af-eeaf">
+                  <profiles>
+                    <profile name="Intensify Point-Defence" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="02a0-2202-a104-4522">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick one friendly Group. All ships in that Group gain Aegis-1 until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7a0-1f89-8d83-1f35" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Infiltrate and Sabotage" hidden="false" id="7cb8-bbec-1ad4-64e3">
+                  <profiles>
+                    <profile name="Infiltrate and Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="22f7-bb90-9279-0f5f">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one Dropsite. That Dropsite takes D3 Core hits.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9857-a70f-6cf2-907d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Mass Driver Volley" hidden="false" id="9227-4a5a-106f-1cb2">
+                  <profiles>
+                    <profile name="Mass Driver Volley" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fb37-93b5-b0ff-881d">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Mass Driver” in its name, those weapons increase their Attack value by 1 until the end of its activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8875-baea-bafd-7028" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Atmospheric Bombing Run" hidden="false" id="995b-b659-9edb-f104">
+                  <profiles>
+                    <profile name="Atmospheric Bombing Run" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="357f-8355-38d9-36b6">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, target one friendly Wing of Bombers. That Wing gains the Bombardment special rule until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c836-6a77-2935-0194" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Next-Gen Armour Plating" hidden="false" id="9b11-2227-ac41-a513">
+                  <profiles>
+                    <profile name="Next-Gen Armour Plating" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="0ff5-7907-2a6d-0dab">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one friendly Group. That Group may re-roll failed Energy Saves until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="559d-947a-cfb9-794e" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22b3-7213-e3ea-8aba" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -256,6 +604,93 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="78bb-8760-9654-88c7" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Colonial Legions" hidden="false" id="b5e1-8ac5-5b44-d05b">
+                  <profiles>
+                    <profile name="Colonial Legions" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="7b71-cdc6-98ed-cf1f">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After the Battalion Combat step of the Asset Phase, target a Dropsite or Feature. If any enemy Battalions completely removed any friendly Battalions from that Dropsite or Feature, place 1 Battalion on that Dropsite or Feature.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a15-6cf8-684c-ba67" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Intensify Point-Defence" hidden="false" id="753a-c585-46a8-59ac">
+                  <profiles>
+                    <profile name="Intensify Point-Defence" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="7a49-9903-58f2-e0e0">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick one friendly Group. All ships in that Group gain Aegis-1 until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fba-0c93-8c5f-9550" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Infiltrate and Sabotage" hidden="false" id="4601-962b-b8bd-2530">
+                  <profiles>
+                    <profile name="Infiltrate and Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9747-4421-9b7e-a1da">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one Dropsite. That Dropsite takes D3 Core hits.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9e4-0204-352c-d3bd" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Mass Driver Volley" hidden="false" id="df67-c2bf-7f5c-a370">
+                  <profiles>
+                    <profile name="Mass Driver Volley" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="58d9-12a2-555e-6ea7">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Mass Driver” in its name, those weapons increase their Attack value by 1 until the end of its activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="282a-7d6c-d331-bf60" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Atmospheric Bombing Run" hidden="false" id="b85d-6f9f-53e0-f87f">
+                  <profiles>
+                    <profile name="Atmospheric Bombing Run" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="d32c-efc5-5a04-1f46">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, target one friendly Wing of Bombers. That Wing gains the Bombardment special rule until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a844-d0d6-67fe-6fa2" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Next-Gen Armour Plating" hidden="false" id="e6d6-4b82-e98c-c18d">
+                  <profiles>
+                    <profile name="Next-Gen Armour Plating" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="27b7-bd26-b47e-d0a9">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one friendly Group. That Group may re-roll failed Energy Saves until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e06d-6208-9b4f-4d5b" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9b9-e2e6-e255-bbaf" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -315,6 +750,93 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Abilities" id="2db6-4ae1-9442-6afa" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Colonial Legions" hidden="false" id="401b-a56d-5b7c-a9ac">
+                  <profiles>
+                    <profile name="Colonial Legions" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a7f7-1e12-398d-ba78">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After the Battalion Combat step of the Asset Phase, target a Dropsite or Feature. If any enemy Battalions completely removed any friendly Battalions from that Dropsite or Feature, place 1 Battalion on that Dropsite or Feature.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f25-060c-e469-85f7" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Intensify Point-Defence" hidden="false" id="8205-09ae-1a81-3bb7">
+                  <profiles>
+                    <profile name="Intensify Point-Defence" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="bd65-32f0-1029-cb78">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick one friendly Group. All ships in that Group gain Aegis-1 until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ce4-721c-7f91-16c4" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Infiltrate and Sabotage" hidden="false" id="8572-ede0-5298-2935">
+                  <profiles>
+                    <profile name="Infiltrate and Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="70d6-368c-8978-421c">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one Dropsite. That Dropsite takes D3 Core hits.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="662d-ea20-1a74-c67d" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Mass Driver Volley" hidden="false" id="9aa9-4fbb-8cc8-6309">
+                  <profiles>
+                    <profile name="Mass Driver Volley" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="0d30-d686-6dfe-7f39">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Mass Driver” in its name, those weapons increase their Attack value by 1 until the end of its activation.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a9e-e51a-4cf1-4ca1" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Atmospheric Bombing Run" hidden="false" id="c576-474e-7a5a-c462">
+                  <profiles>
+                    <profile name="Atmospheric Bombing Run" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="320a-ed91-69a0-e20a">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, target one friendly Wing of Bombers. That Wing gains the Bombardment special rule until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5589-344e-9382-5a08" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Next-Gen Armour Plating" hidden="false" id="dd36-5c9d-942c-4876">
+                  <profiles>
+                    <profile name="Next-Gen Armour Plating" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fb11-84c6-af93-4b55">
+                      <characteristics>
+                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one friendly Group. That Group may re-roll failed Energy Saves until the end of the round.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a74b-9ae5-42e6-d599" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4722-0c94-24e8-28f4" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3415,4 +3937,94 @@ Order to Fire (2AP): When you activate another friendly Group in Orbit, pick one
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="cded-8c4c-5653-444c" targetId="7e9b-b6ba-2178-6eb5"/>
     <catalogueLink type="catalogue" name="Civilian" id="565d-d66e-f3ca-265d" targetId="903e-8fb9-3fe2-4460"/>
   </catalogueLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Abilities" id="d584-3bb8-45c6-cf81" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Colonial Legions" hidden="false" id="231e-63d2-9a92-cb74">
+          <profiles>
+            <profile name="Colonial Legions" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="eca9-927e-b04a-f31b">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After the Battalion Combat step of the Asset Phase, target a Dropsite or Feature. If any enemy Battalions completely removed any friendly Battalions from that Dropsite or Feature, place 1 Battalion on that Dropsite or Feature.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4bb-2aad-df4a-d961" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Intensify Point-Defence" hidden="false" id="b5b5-ebd3-40d8-dcd7">
+          <profiles>
+            <profile name="Intensify Point-Defence" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4095-2c5b-ffa0-a183">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, pick one friendly Group. All ships in that Group gain Aegis-1 until the end of the round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1ef-9c39-520a-ab25" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Aegis-X" id="1737-e454-4f67-d7bc" hidden="false" type="rule" targetId="9cd1-441e-8ee8-7f13"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Infiltrate and Sabotage" hidden="false" id="1254-f99b-3712-3448">
+          <profiles>
+            <profile name="Infiltrate and Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5271-15c1-3509-9e4b">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one Dropsite. That Dropsite takes D3 Core hits.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a49b-d235-5a41-9488" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mass Driver Volley" hidden="false" id="6443-99fe-f04d-7fae">
+          <profiles>
+            <profile name="Mass Driver Volley" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="83b8-21e7-843b-877b">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Mass Driver” in its name, those weapons increase their Attack value by 1 until the end of its activation.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="590c-d6d2-304d-ea0d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Atmospheric Bombing Run" hidden="false" id="b912-8bc5-40b9-2d90">
+          <profiles>
+            <profile name="Atmospheric Bombing Run" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4c9d-8a47-6ab5-7907">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, target one friendly Wing of Bombers. That Wing gains the Bombardment special rule until the end of the round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a39-54ba-f48a-f4dd" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Bombardment" id="0206-3833-b771-a48f" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Next-Gen Armour Plating" hidden="false" id="11c5-8819-6ec9-a323">
+          <profiles>
+            <profile name="Next-Gen Armour Plating" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="854c-4f7f-63d7-e6a7">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target one friendly Group. That Group may re-roll failed Energy Saves until the end of the round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c750-ebdc-f946-9027" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>

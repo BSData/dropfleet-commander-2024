@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
@@ -443,6 +443,8 @@
   </profileTypes>
   <sharedRules>
     <rule name="Aegis-X" id="9cd1-441e-8ee8-7f13" hidden="false" page="36" publicationId="45b0-3e3b-e83d-fd70">
+      <alias>Aegis-1</alias>
+      <alias>Aegis-2</alias>
       <alias>Aegis-4</alias>
       <alias>Aegis-8</alias>
       <description>All Ships with this rule in a Group combine their X values into a single value, Y.
@@ -482,6 +484,7 @@ When this Ship goes on the Weapons Free, Max Thrust, or Damage Control orders, i
       <description>Remove X enemy Battalions from this Ship at the beginning of the Battalion Combat step.</description>
       <alias>Marines-1</alias>
       <alias>Marines-2</alias>
+      <alias>Marines-2D3</alias>
     </rule>
     <rule name="Monitor" id="cc9f-9be5-cc19-2fc9" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
       <description>Ships with this rule may not use Course Change or Max Thrust orders.</description>
@@ -579,6 +582,7 @@ This weapon cannot be used to attack Ships in Orbit while the attacking Ship is 
     </rule>
     <rule name="Corruptor-X" id="b495-5934-9bf1-d595" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <description>When this Weapon successfully inflicts damage, place X Battalions on the target.</description>
+      <alias>Corruptor-2</alias>
     </rule>
     <rule name="Crippling-X" id="8b64-93ea-39c6-ab29" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <description>If this Weapon scores a Critical hit and then damages a Ship with that attack (following normal damage allocation rules), the damaged Ship gains the stated X Crippling Effect regardless of Tonnage. If no effect is listed, roll for Crippling Effects.
@@ -652,6 +656,8 @@ Close Action weapons with this special rule may be used against targets in Atmos
     </rule>
     <rule name="Reave-X" id="4def-e674-d37c-707a" hidden="false">
       <description>Each of this Weapon’s criticals reduces the Energy/Kinetic save used against that hit by X.</description>
+      <alias>Reave-1</alias>
+      <alias>Reave-2</alias>
     </rule>
     <rule name="Scald-X" id="41b3-55a2-8d71-ee88" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="39">
       <alias>Scald-1</alias>
