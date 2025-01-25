@@ -241,20 +241,20 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Overlord of Flies - Nosferatu" hidden="false" id="b0b3-4b12-b0c8-aca3" page="5" publicationId="260d-362c-d403-80ae">
+    <selectionEntry type="unit" import="true" name="Overlord of Flies - Nosferatu" hidden="false" id="b0b3-4b12-b0c8-aca3" page="6" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="9956-7e51-e2b1-fb5f" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="e3b7-53b6-cf4a-ce9a" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="1a0a-c65b-43b6-717b" targetId="fb8b-57b3-d46c-d679" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Overlord of Flies" hidden="false" id="50cb-b1c3-4b95-2f41" subType="crew" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Overlord of Flies" hidden="false" id="50cb-b1c3-4b95-2f41" subType="crew" sortIndex="1" publicationId="260d-362c-d403-80ae" page="6">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e9e-bece-c79b-46b0" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c730-1c49-d520-99cd" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Overlord of Flies" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="f59e-b8d4-d341-1281">
+            <profile name="Overlord of Flies" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="f59e-b8d4-d341-1281" publicationId="260d-362c-d403-80ae" page="6">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">4</characteristic>
                 <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
@@ -390,20 +390,20 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Baba Yaga - Daemon" hidden="false" id="6aad-bbb7-c1bf-9583" page="4" publicationId="260d-362c-d403-80ae">
+    <selectionEntry type="unit" import="true" name="Baba Yaga - Daemon" hidden="false" id="6aad-bbb7-c1bf-9583" page="5" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="9934-6a61-6b75-2519" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="f75f-32b9-6fea-214e" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="905e-7ca0-4543-b571" targetId="fb8b-57b3-d46c-d679" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Baba Yaga" hidden="false" id="1148-690f-4cb6-90db" subType="crew" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Baba Yaga" hidden="false" id="1148-690f-4cb6-90db" subType="crew" sortIndex="1" publicationId="260d-362c-d403-80ae" page="5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d37-f673-3d9d-4705" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7fc-62d8-cf01-c18f" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Baba Yaga" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="6f0a-468b-a9c3-5d1f">
+            <profile name="Baba Yaga" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="6f0a-468b-a9c3-5d1f" publicationId="260d-362c-d403-80ae" page="5">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">2</characteristic>
                 <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">Death Mistress</characteristic>
@@ -520,20 +520,20 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Flayer - Shadow" hidden="false" id="0b1b-4cad-329b-7d5a" page="3" publicationId="260d-362c-d403-80ae">
+    <selectionEntry type="unit" import="true" name="Flayer - Shadow" hidden="false" id="0b1b-4cad-329b-7d5a" page="4" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="e727-2519-315a-cb74" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="6635-97e0-ebe9-e001" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="4ab3-f38b-abd5-1b13" targetId="fb8b-57b3-d46c-d679" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Flayer" hidden="false" id="ecc2-550a-847f-2bda" subType="crew" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Flayer" hidden="false" id="ecc2-550a-847f-2bda" subType="crew" sortIndex="1" publicationId="260d-362c-d403-80ae" page="4">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="436e-29a3-cb21-61c9" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a40-19a7-2f5f-8fd9" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Flayer" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="bc62-b384-6c7d-680f">
+            <profile name="Flayer" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="bc62-b384-6c7d-680f" publicationId="260d-362c-d403-80ae" page="4">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">3</characteristic>
                 <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
@@ -664,20 +664,20 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Enslaver - Raiju" hidden="false" id="b472-ebd8-dca8-b337" page="2" publicationId="260d-362c-d403-80ae">
+    <selectionEntry type="unit" import="true" name="Enslaver - Raiju" hidden="false" id="b472-ebd8-dca8-b337" page="3" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="7d99-60d5-a74c-3fc1" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="c1b7-7a18-fd6b-c2fb" targetId="79f7-4244-6fb7-d41a" primary="false"/>
         <categoryLink name="Admirals" hidden="false" id="10d7-d52f-6104-9758" targetId="fb8b-57b3-d46c-d679" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Enslaver" hidden="false" id="3fbd-127e-4378-3c8c" subType="crew" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Enslaver" hidden="false" id="3fbd-127e-4378-3c8c" subType="crew" sortIndex="1" publicationId="260d-362c-d403-80ae" page="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="723c-282f-01b7-634f" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25d5-7b5f-45f1-b780" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Enslaver" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="8cdc-aa8e-f3a6-4ede">
+            <profile name="Enslaver" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="8cdc-aa8e-f3a6-4ede" publicationId="260d-362c-d403-80ae" page="3">
               <characteristics>
                 <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">2</characteristic>
                 <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">Doomed</characteristic>
@@ -801,7 +801,7 @@
         <categoryLink targetId="default-category" id="11e9-f38d-babd-975f" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Cthulhu Dreadnought" hidden="false" id="1947-b15f-360b-255c" publicationId="260d-362c-d403-80ae" page="43">
+        <selectionEntry type="model" import="true" name="Cthulhu Dreadnought" hidden="false" id="1947-b15f-360b-255c" publicationId="260d-362c-d403-80ae" page="49">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0205-3df2-69a7-9177-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0205-3df2-69a7-9177-max" includeChildSelections="false"/>
@@ -813,7 +813,7 @@
             <categoryLink targetId="6e44-cb75-e25f-8b24" id="f003-8881-a734-673e" primary="true" name="Colossal Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Cthulhu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="57e1-c88f-5e42-1c30" publicationId="260d-362c-d403-80ae" page="43">
+            <profile name="Cthulhu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="57e1-c88f-5e42-1c30" publicationId="260d-362c-d403-80ae" page="49">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
@@ -845,7 +845,7 @@
         <categoryLink targetId="default-category" id="ef6c-2c2c-d323-5f3c" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Nosferatu Dreadnought" hidden="false" id="b3ee-2468-e8c1-ebfb" publicationId="260d-362c-d403-80ae" page="42">
+        <selectionEntry type="model" import="true" name="Nosferatu Dreadnought" hidden="false" id="b3ee-2468-e8c1-ebfb" publicationId="260d-362c-d403-80ae" page="48">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b99f-e818-5d6d-c438-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b99f-e818-5d6d-c438-max" includeChildSelections="false"/>
@@ -857,7 +857,7 @@
             <categoryLink targetId="6e44-cb75-e25f-8b24" id="a9a0-692e-6edd-2ed1" primary="true" name="Colossal Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Nosferatu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="531e-582b-caf0-b622" publicationId="260d-362c-d403-80ae" page="42">
+            <profile name="Nosferatu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="531e-582b-caf0-b622" publicationId="260d-362c-d403-80ae" page="48">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
@@ -1119,7 +1119,7 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="5cc4-7047-09bf-0c8f" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Lucifer Battleship" hidden="false" id="cdea-e72b-2d9e-d98d" publicationId="260d-362c-d403-80ae" page="41">
+        <selectionEntry type="model" import="true" name="Lucifer Battleship" hidden="false" id="cdea-e72b-2d9e-d98d" publicationId="260d-362c-d403-80ae" page="42">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbcb-7549-72e7-42cc-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbcb-7549-72e7-42cc-max" includeChildSelections="false"/>
@@ -1131,7 +1131,7 @@
             <categoryLink targetId="9d6f-26b0-7969-496b" id="7c78-ad92-4da3-2ff5" primary="true" name="Heavy Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Lucifer" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5840-a940-c1c3-78bf" publicationId="260d-362c-d403-80ae" page="41">
+            <profile name="Lucifer" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5840-a940-c1c3-78bf" publicationId="260d-362c-d403-80ae" page="42">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">11&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1158,7 +1158,7 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="8251-bc49-5d7b-308c" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Devil Battleship" hidden="false" id="ae2c-4fd1-9478-2dd5" publicationId="260d-362c-d403-80ae" page="40">
+        <selectionEntry type="model" import="true" name="Devil Battleship" hidden="false" id="ae2c-4fd1-9478-2dd5" publicationId="260d-362c-d403-80ae" page="41">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b052-12b2-777e-f8f3-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b052-12b2-777e-f8f3-max" includeChildSelections="false"/>
@@ -1170,7 +1170,7 @@
             <categoryLink targetId="9d6f-26b0-7969-496b" id="a42f-3132-da06-24d0" primary="true" name="Heavy Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Devil" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d2b2-d465-d0ce-62c5" publicationId="260d-362c-d403-80ae" page="40">
+            <profile name="Devil" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d2b2-d465-d0ce-62c5" publicationId="260d-362c-d403-80ae" page="41">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1203,7 +1203,7 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="8b05-5658-9f3b-77d5" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Beelzebub Battleship" hidden="false" id="9a5a-de7d-d5c4-bbbd" publicationId="260d-362c-d403-80ae" page="39">
+        <selectionEntry type="model" import="true" name="Beelzebub Battleship" hidden="false" id="9a5a-de7d-d5c4-bbbd" publicationId="260d-362c-d403-80ae" page="40">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85e6-7b64-c3eb-1e37-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85e6-7b64-c3eb-1e37-max" includeChildSelections="false"/>
@@ -1215,7 +1215,7 @@
             <categoryLink targetId="9d6f-26b0-7969-496b" id="9c70-2d35-2cac-4451" primary="true" name="Heavy Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Beelzebub" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7ce4-d96b-5fb9-26ab" publicationId="260d-362c-d403-80ae" page="39">
+            <profile name="Beelzebub" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7ce4-d96b-5fb9-26ab" publicationId="260d-362c-d403-80ae" page="40">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1249,7 +1249,7 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="985c-06be-52f4-baee" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Dragon Battleship" hidden="false" id="eed3-43bc-c384-698a" publicationId="260d-362c-d403-80ae" page="38">
+        <selectionEntry type="model" import="true" name="Dragon Battleship" hidden="false" id="eed3-43bc-c384-698a" publicationId="260d-362c-d403-80ae" page="39">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="67a3-8eb1-e89c-9326-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67a3-8eb1-e89c-9326-max" includeChildSelections="false"/>
@@ -1261,7 +1261,7 @@
             <categoryLink targetId="9d6f-26b0-7969-496b" id="5c81-911a-86c9-98b9" primary="true" name="Heavy Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Dragon" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0942-86dd-fc44-7443" publicationId="260d-362c-d403-80ae" page="38">
+            <profile name="Dragon" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0942-86dd-fc44-7443" publicationId="260d-362c-d403-80ae" page="39">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1295,7 +1295,7 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="86f2-98a6-f533-23ea" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Daemon Battleship" hidden="false" id="cb4a-214d-dff6-d924" publicationId="260d-362c-d403-80ae" page="37">
+        <selectionEntry type="model" import="true" name="Daemon Battleship" hidden="false" id="cb4a-214d-dff6-d924" publicationId="260d-362c-d403-80ae" page="38">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6dcb-9a98-f73b-af49-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dcb-9a98-f73b-af49-max" includeChildSelections="false"/>
@@ -1307,7 +1307,7 @@
             <categoryLink targetId="9d6f-26b0-7969-496b" id="2ba0-04da-85b4-92c5" primary="true" name="Heavy Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Daemon" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="adb6-d37a-eb20-4c9f" publicationId="260d-362c-d403-80ae" page="37">
+            <profile name="Daemon" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="adb6-d37a-eb20-4c9f" publicationId="260d-362c-d403-80ae" page="38">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1340,7 +1340,7 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="6be2-40ba-74c6-a933" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Umbra Battlecruiser" hidden="false" id="d7af-3fa0-6bf0-f3f7" publicationId="260d-362c-d403-80ae" page="36">
+        <selectionEntry type="model" import="true" name="Umbra Battlecruiser" hidden="false" id="d7af-3fa0-6bf0-f3f7" publicationId="260d-362c-d403-80ae" page="37">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b238-cfcc-49e6-4120-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b238-cfcc-49e6-4120-max" includeChildSelections="false"/>
@@ -1352,7 +1352,7 @@
             <categoryLink targetId="9d6f-26b0-7969-496b" id="24f8-8c66-eaff-ce94" primary="true" name="Heavy Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Umbra" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4528-bc42-df41-cb88" publicationId="260d-362c-d403-80ae" page="36">
+            <profile name="Umbra" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4528-bc42-df41-cb88" publicationId="260d-362c-d403-80ae" page="37">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1383,7 +1383,7 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="ef11-4cb1-5ad1-b83b" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Shadow Battlecruiser" hidden="false" id="77f8-9476-5aa7-1280" publicationId="260d-362c-d403-80ae" page="35">
+        <selectionEntry type="model" import="true" name="Shadow Battlecruiser" hidden="false" id="77f8-9476-5aa7-1280" publicationId="260d-362c-d403-80ae" page="36">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="be9c-e24e-2927-b43f-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be9c-e24e-2927-b43f-max" includeChildSelections="false"/>
@@ -1395,7 +1395,7 @@
             <categoryLink targetId="9d6f-26b0-7969-496b" id="de9c-aad4-53c9-2665" primary="true" name="Heavy Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Shadow" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9977-f338-a550-24d4" publicationId="260d-362c-d403-80ae" page="35">
+            <profile name="Shadow" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9977-f338-a550-24d4" publicationId="260d-362c-d403-80ae" page="36">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1424,7 +1424,7 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="ee80-3eaa-6895-d5a3" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Banshee Battlecruiser" hidden="false" id="3165-5d79-0aad-c4f4" publicationId="260d-362c-d403-80ae" page="34">
+        <selectionEntry type="model" import="true" name="Banshee Battlecruiser" hidden="false" id="3165-5d79-0aad-c4f4" publicationId="260d-362c-d403-80ae" page="35">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6405-aab2-fb78-53c0-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6405-aab2-fb78-53c0-max" includeChildSelections="false"/>
@@ -1436,7 +1436,7 @@
             <categoryLink targetId="9d6f-26b0-7969-496b" id="9138-5755-8b2d-ee0f" primary="true" name="Heavy Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Banshee" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9531-1eda-af8c-5975" publicationId="260d-362c-d403-80ae" page="34">
+            <profile name="Banshee" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9531-1eda-af8c-5975" publicationId="260d-362c-d403-80ae" page="35">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1468,7 +1468,7 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="f324-99ad-e467-a202" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Akuma Battlecruiser" hidden="false" id="a1d7-d4d0-b3c1-1254" publicationId="260d-362c-d403-80ae" page="33">
+        <selectionEntry type="model" import="true" name="Akuma Battlecruiser" hidden="false" id="a1d7-d4d0-b3c1-1254" publicationId="260d-362c-d403-80ae" page="34">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a59f-fe79-6678-2ffd-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a59f-fe79-6678-2ffd-max" includeChildSelections="false"/>
@@ -1480,7 +1480,7 @@
             <categoryLink targetId="9d6f-26b0-7969-496b" id="3c08-c496-fbfe-82ec" primary="true" name="Heavy Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Akuma" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="a947-e675-2f06-b157" publicationId="260d-362c-d403-80ae" page="33">
+            <profile name="Akuma" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="a947-e675-2f06-b157" publicationId="260d-362c-d403-80ae" page="34">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1511,7 +1511,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="4dd2-71ba-7827-2127" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Kulshedra Heavy Carrier" hidden="false" id="0e39-49e1-7589-7284" publicationId="260d-362c-d403-80ae" page="32">
+        <selectionEntry type="model" import="true" name="Kulshedra Heavy Carrier" hidden="false" id="0e39-49e1-7589-7284" publicationId="260d-362c-d403-80ae" page="33">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eda3-ef0d-3d46-ce3a-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eda3-ef0d-3d46-ce3a-max" includeChildSelections="false"/>
@@ -1523,7 +1523,7 @@
             <categoryLink targetId="53c3-afc0-63ef-413a" id="4cb9-0508-ff6a-1646" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Kulshedra" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7889-dadc-1c60-772b" publicationId="260d-362c-d403-80ae" page="32">
+            <profile name="Kulshedra" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7889-dadc-1c60-772b" publicationId="260d-362c-d403-80ae" page="33">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1551,7 +1551,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="82e4-9e44-3189-26b1" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Shenlong Heavy Cruiser" hidden="false" id="69d0-026c-320c-0d55" publicationId="260d-362c-d403-80ae" page="31">
+        <selectionEntry type="model" import="true" name="Shenlong Heavy Cruiser" hidden="false" id="69d0-026c-320c-0d55" publicationId="260d-362c-d403-80ae" page="32">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d9c-acd2-9606-f820-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d9c-acd2-9606-f820-max" includeChildSelections="false"/>
@@ -1563,7 +1563,7 @@
             <categoryLink targetId="53c3-afc0-63ef-413a" id="01ec-afdf-044c-b820" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Shenlong" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6a6f-e7c3-5c49-be0c" publicationId="260d-362c-d403-80ae" page="31">
+            <profile name="Shenlong" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6a6f-e7c3-5c49-be0c" publicationId="260d-362c-d403-80ae" page="32">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1594,7 +1594,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="1960-a176-d060-0cef" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Raiju Heavy Cruiser" hidden="false" id="0085-0755-c7e4-27b9" publicationId="260d-362c-d403-80ae" page="30">
+        <selectionEntry type="model" import="true" name="Raiju Heavy Cruiser" hidden="false" id="0085-0755-c7e4-27b9" publicationId="260d-362c-d403-80ae" page="31">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d94-21a7-81f7-b93c-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d94-21a7-81f7-b93c-max" includeChildSelections="false"/>
@@ -1606,7 +1606,7 @@
             <categoryLink targetId="53c3-afc0-63ef-413a" id="bc25-4707-ccc8-b8da" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Raiju" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="2f87-475d-60f1-495f" publicationId="260d-362c-d403-80ae" page="30">
+            <profile name="Raiju" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="2f87-475d-60f1-495f" publicationId="260d-362c-d403-80ae" page="31">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1637,7 +1637,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="a8ac-318b-9464-dfe2" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hydra Fleet Carrier" hidden="false" id="aef8-bd10-6ce6-719f" publicationId="260d-362c-d403-80ae" page="29">
+        <selectionEntry type="model" import="true" name="Hydra Fleet Carrier" hidden="false" id="aef8-bd10-6ce6-719f" publicationId="260d-362c-d403-80ae" page="30">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e845-505c-9527-9825-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e845-505c-9527-9825-max" includeChildSelections="false"/>
@@ -1649,7 +1649,7 @@
             <categoryLink targetId="53c3-afc0-63ef-413a" id="f396-2808-3543-75a9" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Hydra" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="11d0-940f-ec2d-fdfa" publicationId="260d-362c-d403-80ae" page="29">
+            <profile name="Hydra" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="11d0-940f-ec2d-fdfa" publicationId="260d-362c-d403-80ae" page="30">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1676,7 +1676,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="bde5-57c9-a5cf-809a" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Chimera Troopship" hidden="false" id="4939-ce35-8f27-91e7" publicationId="260d-362c-d403-80ae" page="28">
+        <selectionEntry type="model" import="true" name="Chimera Troopship" hidden="false" id="4939-ce35-8f27-91e7" publicationId="260d-362c-d403-80ae" page="29">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="14da-51c1-738f-671d-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14da-51c1-738f-671d-max" includeChildSelections="false"/>
@@ -1688,7 +1688,7 @@
             <categoryLink targetId="53c3-afc0-63ef-413a" id="7003-2239-2004-eacc" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Chimera" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7c67-171b-ac07-1048" publicationId="260d-362c-d403-80ae" page="28">
+            <profile name="Chimera" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7c67-171b-ac07-1048" publicationId="260d-362c-d403-80ae" page="29">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1715,7 +1715,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="5513-b979-f178-9f6d" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Wyvern Cruiser" hidden="false" id="6dec-35b8-a6eb-bcaa" publicationId="260d-362c-d403-80ae" page="27">
+        <selectionEntry type="model" import="true" name="Wyvern Cruiser" hidden="false" id="6dec-35b8-a6eb-bcaa" publicationId="260d-362c-d403-80ae" page="28">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ab4-cee1-b9db-e792" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e77d-3454-bd5f-e031" includeChildSelections="false"/>
@@ -1727,7 +1727,7 @@
             <categoryLink targetId="53c3-afc0-63ef-413a" id="c64d-6140-ba47-9f2e" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Wyvern" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="cbfe-be75-f5ab-4bc5" publicationId="260d-362c-d403-80ae" page="27">
+            <profile name="Wyvern" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="cbfe-be75-f5ab-4bc5" publicationId="260d-362c-d403-80ae" page="28">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1754,7 +1754,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="3db2-c6ea-3af1-bf4d" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Sphinx Cruiser" hidden="false" id="a4b2-64fa-4ac7-0979" publicationId="260d-362c-d403-80ae" page="26">
+        <selectionEntry type="model" import="true" name="Sphinx Cruiser" hidden="false" id="a4b2-64fa-4ac7-0979" publicationId="260d-362c-d403-80ae" page="27">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0233-adc4-1386-eb5d" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3d8f-a802-a5b5-8251" includeChildSelections="false"/>
@@ -1766,7 +1766,7 @@
             <categoryLink targetId="53c3-afc0-63ef-413a" id="3c69-0c0b-3d44-4f0a" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Sphinx" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c242-b708-073a-a2f1" publicationId="260d-362c-d403-80ae" page="26">
+            <profile name="Sphinx" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c242-b708-073a-a2f1" publicationId="260d-362c-d403-80ae" page="27">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1793,7 +1793,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="9f25-a081-48e8-a96a" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Ifrit Cruiser" hidden="false" id="fe8e-c0a4-3be6-ef00" publicationId="260d-362c-d403-80ae" page="25">
+        <selectionEntry type="model" import="true" name="Ifrit Cruiser" hidden="false" id="fe8e-c0a4-3be6-ef00" publicationId="260d-362c-d403-80ae" page="26">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e094-cd60-3d34-d682" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3f35-bf48-4b76-7b41" includeChildSelections="false"/>
@@ -1805,7 +1805,7 @@
             <categoryLink targetId="53c3-afc0-63ef-413a" id="ba5e-8af1-7ae7-1d07" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Ifrit" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0938-c72f-7983-d9dc" publicationId="260d-362c-d403-80ae" page="25">
+            <profile name="Ifrit" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0938-c72f-7983-d9dc" publicationId="260d-362c-d403-80ae" page="26">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1832,7 +1832,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="f359-9aee-a762-a639" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Yokai Light Cruiser" hidden="false" id="dd4a-d972-3396-cb5a" publicationId="260d-362c-d403-80ae" page="24">
+        <selectionEntry type="model" import="true" name="Yokai Light Cruiser" hidden="false" id="dd4a-d972-3396-cb5a" publicationId="260d-362c-d403-80ae" page="25">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6f25-f48d-8a50-5665" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2795-5d68-8360-9f32" includeChildSelections="false"/>
@@ -1844,7 +1844,7 @@
             <categoryLink targetId="53c3-afc0-63ef-413a" id="0600-b3c2-c7c6-3534" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Yokai" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="22ec-e0f3-ce87-e3a8" publicationId="260d-362c-d403-80ae" page="24">
+            <profile name="Yokai" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="22ec-e0f3-ce87-e3a8" publicationId="260d-362c-d403-80ae" page="25">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1871,7 +1871,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="b3d0-10b9-b03e-e031" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Strix Light Cruiser" hidden="false" id="e748-daba-c6da-f2cc" publicationId="260d-362c-d403-80ae" page="23">
+        <selectionEntry type="model" import="true" name="Strix Light Cruiser" hidden="false" id="e748-daba-c6da-f2cc" publicationId="260d-362c-d403-80ae" page="24">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4437-ce97-4d23-4533" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="90e1-3355-3d83-ad99" includeChildSelections="false"/>
@@ -1883,7 +1883,7 @@
             <categoryLink targetId="53c3-afc0-63ef-413a" id="15c5-54e8-3243-b2c5" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Strix" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b4a3-296c-67fb-45b1" publicationId="260d-362c-d403-80ae" page="23">
+            <profile name="Strix" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b4a3-296c-67fb-45b1" publicationId="260d-362c-d403-80ae" page="24">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1910,7 +1910,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="086c-da04-ce45-3df6" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Gremlin Light Cruiser" hidden="false" id="72aa-fa7a-81ee-f7b6" publicationId="260d-362c-d403-80ae" page="22">
+        <selectionEntry type="model" import="true" name="Gremlin Light Cruiser" hidden="false" id="72aa-fa7a-81ee-f7b6" publicationId="260d-362c-d403-80ae" page="23">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d72d-f52b-29d1-99a3" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="096b-9d54-43bb-7f3d" includeChildSelections="false"/>
@@ -1922,7 +1922,7 @@
             <categoryLink targetId="53c3-afc0-63ef-413a" id="b57f-481f-4516-0976" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Gremlin" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="ef5f-dd6a-bdc0-573b" publicationId="260d-362c-d403-80ae" page="22">
+            <profile name="Gremlin" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="ef5f-dd6a-bdc0-573b" publicationId="260d-362c-d403-80ae" page="23">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1949,7 +1949,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="fed2-0ea8-d10a-ddb7" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Revenant Destroyer" hidden="false" id="6c44-628e-cbd6-f5a2" publicationId="260d-362c-d403-80ae" page="21">
+        <selectionEntry type="model" import="true" name="Revenant Destroyer" hidden="false" id="6c44-628e-cbd6-f5a2" publicationId="260d-362c-d403-80ae" page="22">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4e5-1b58-1bae-bbfe" includeChildSelections="false"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4278-4ded-45b5-6969" includeChildSelections="false"/>
@@ -1961,7 +1961,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="a3c0-32a5-82b4-5a01" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Revenant" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="01d1-1c42-d119-aa1e" publicationId="260d-362c-d403-80ae" page="21">
+            <profile name="Revenant" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="01d1-1c42-d119-aa1e" publicationId="260d-362c-d403-80ae" page="22">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1994,7 +1994,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="a8f6-b250-33f6-90e6" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Succubus Destroyer" hidden="false" id="ee7a-8051-cfc1-5dd1" publicationId="260d-362c-d403-80ae" page="20">
+        <selectionEntry type="model" import="true" name="Succubus Destroyer" hidden="false" id="ee7a-8051-cfc1-5dd1" publicationId="260d-362c-d403-80ae" page="21">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b2d-079c-da24-9cb3" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ccb9-a284-9659-e4cd" includeChildSelections="false"/>
@@ -2006,7 +2006,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="0177-55d7-21ff-66bf" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Succubus" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="3271-01d9-59fa-2c93" publicationId="260d-362c-d403-80ae" page="20">
+            <profile name="Succubus" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="3271-01d9-59fa-2c93" publicationId="260d-362c-d403-80ae" page="21">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2038,7 +2038,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="7392-4896-36f9-7dab" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Incubus Destroyer" hidden="false" id="5f89-9674-ed9c-c1df" publicationId="260d-362c-d403-80ae" page="19">
+        <selectionEntry type="model" import="true" name="Incubus Destroyer" hidden="false" id="5f89-9674-ed9c-c1df" publicationId="260d-362c-d403-80ae" page="20">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e11d-e3ae-d31d-2d2a" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b2f1-26ac-eb5e-8908" includeChildSelections="false"/>
@@ -2050,7 +2050,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="416c-8515-e5c6-7fa0" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Incubus" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d7c0-b816-3a60-18dd" publicationId="260d-362c-d403-80ae" page="19">
+            <profile name="Incubus" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d7c0-b816-3a60-18dd" publicationId="260d-362c-d403-80ae" page="20">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2082,7 +2082,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="d5ad-e826-d93e-43f1" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Parasite Radiation Leech" hidden="false" id="8abd-765a-ee38-76d6" publicationId="260d-362c-d403-80ae" page="18">
+        <selectionEntry type="model" import="true" name="Parasite Radiation Leech" hidden="false" id="8abd-765a-ee38-76d6" publicationId="260d-362c-d403-80ae" page="19">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a94-9022-ac59-bcee" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="eb2d-3183-c53c-db16" includeChildSelections="false"/>
@@ -2094,7 +2094,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="876b-b82e-225b-45aa" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Parasite" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7d30-9022-b29b-a956" publicationId="260d-362c-d403-80ae" page="18">
+            <profile name="Parasite" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7d30-9022-b29b-a956" publicationId="260d-362c-d403-80ae" page="19">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">16&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2145,7 +2145,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="8407-30f9-4df3-3fbf" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Wraith Cutter" hidden="false" id="42a3-1a26-a07f-013b" publicationId="260d-362c-d403-80ae" page="17">
+        <selectionEntry type="model" import="true" name="Wraith Cutter" hidden="false" id="42a3-1a26-a07f-013b" publicationId="260d-362c-d403-80ae" page="18">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8129-fe73-8eb1-1c5a" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a3ee-850c-6373-cfe2" includeChildSelections="false"/>
@@ -2157,7 +2157,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="6e26-099d-0ccb-2659" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Wraith" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b646-f577-dad2-e4fe" publicationId="260d-362c-d403-80ae" page="17">
+            <profile name="Wraith" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b646-f577-dad2-e4fe" publicationId="260d-362c-d403-80ae" page="18">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">16&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2187,7 +2187,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="2971-cc9c-0f54-a43b" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Apsasu Barge" hidden="false" id="83b6-7053-d82a-0cb6" publicationId="260d-362c-d403-80ae" page="16">
+        <selectionEntry type="model" import="true" name="Apsasu Barge" hidden="false" id="83b6-7053-d82a-0cb6" publicationId="260d-362c-d403-80ae" page="17">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6137-68a8-2600-fb93" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="da3f-02d8-8f28-97f9" includeChildSelections="false"/>
@@ -2199,7 +2199,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="0789-24ee-1153-29c9" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Apsasu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="345c-a053-ae97-96de" publicationId="260d-362c-d403-80ae" page="16">
+            <profile name="Apsasu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="345c-a053-ae97-96de" publicationId="260d-362c-d403-80ae" page="17">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -2227,7 +2227,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="8f8b-ee9d-a734-dff3" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Lamassu Barge" hidden="false" id="1c17-6158-1d8b-89b9" publicationId="260d-362c-d403-80ae" page="15">
+        <selectionEntry type="model" import="true" name="Lamassu Barge" hidden="false" id="1c17-6158-1d8b-89b9" publicationId="260d-362c-d403-80ae" page="16">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1eae-8335-46fc-194b" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7484-eaf9-4a8c-8378" includeChildSelections="false"/>
@@ -2239,7 +2239,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="4bd8-d6d4-8857-c557" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Lamassu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e0ed-0761-dd8d-b5da" publicationId="260d-362c-d403-80ae" page="15">
+            <profile name="Lamassu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e0ed-0761-dd8d-b5da" publicationId="260d-362c-d403-80ae" page="16">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -2267,7 +2267,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="cb76-d4a1-3e8f-6526" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Shedu Monitor" hidden="false" id="9bc8-382a-d5ff-3e79" publicationId="260d-362c-d403-80ae" page="14">
+        <selectionEntry type="model" import="true" name="Shedu Monitor" hidden="false" id="9bc8-382a-d5ff-3e79" publicationId="260d-362c-d403-80ae" page="15">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d91b-e248-19e3-0268" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="bf94-b889-dc6b-3a45" includeChildSelections="false"/>
@@ -2279,7 +2279,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="d271-7b03-13f5-80c2" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Shedu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="69db-eb2f-4fd8-5d99" publicationId="260d-362c-d403-80ae" page="14">
+            <profile name="Shedu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="69db-eb2f-4fd8-5d99" publicationId="260d-362c-d403-80ae" page="15">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -2309,7 +2309,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="a956-b89a-a8a0-e146" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Gargoyle Strike Carrier" hidden="false" id="2af1-74f5-798e-1b17" publicationId="260d-362c-d403-80ae" page="13">
+        <selectionEntry type="model" import="true" name="Gargoyle Strike Carrier" hidden="false" id="2af1-74f5-798e-1b17" publicationId="260d-362c-d403-80ae" page="14">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a13-8466-01fd-2f5a" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a9e7-3a92-5beb-c1eb" includeChildSelections="false"/>
@@ -2321,7 +2321,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="c0f6-ad63-d997-16ef" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Gargoyle" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="f28b-6c52-112e-58c4" publicationId="260d-362c-d403-80ae" page="13">
+            <profile name="Gargoyle" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="f28b-6c52-112e-58c4" publicationId="260d-362c-d403-80ae" page="14">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2351,7 +2351,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="d19f-cea9-1655-edad" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Scylla Frigate" hidden="false" id="72ee-7fe7-6489-5ad9" publicationId="260d-362c-d403-80ae" page="12">
+        <selectionEntry type="model" import="true" name="Scylla Frigate" hidden="false" id="72ee-7fe7-6489-5ad9" publicationId="260d-362c-d403-80ae" page="13">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="deaa-231f-4045-b967" includeChildSelections="false"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e278-c8cc-f1b4-6a9f" includeChildSelections="false"/>
@@ -2363,7 +2363,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="8a7a-f9f3-9ce1-6880" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Scylla" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="8ffc-09ab-835e-2c13" publicationId="260d-362c-d403-80ae" page="12">
+            <profile name="Scylla" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="8ffc-09ab-835e-2c13" publicationId="260d-362c-d403-80ae" page="13">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2393,7 +2393,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="6980-0ac3-a564-cc36" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Charybdis Frigate" hidden="false" id="5125-878f-504c-53b9" publicationId="260d-362c-d403-80ae" page="11">
+        <selectionEntry type="model" import="true" name="Charybdis Frigate" hidden="false" id="5125-878f-504c-53b9" publicationId="260d-362c-d403-80ae" page="12">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8429-515c-0919-3da1" includeChildSelections="false"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="41ad-26a2-a4b0-bb6c" includeChildSelections="false"/>
@@ -2405,7 +2405,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="0a5c-11b8-2f76-d6a8" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Charybdis" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6243-9f87-ceef-12d7" publicationId="260d-362c-d403-80ae" page="11">
+            <profile name="Charybdis" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6243-9f87-ceef-12d7" publicationId="260d-362c-d403-80ae" page="12">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2435,7 +2435,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="98e7-df6a-8900-64ec" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Djinn Frigate" hidden="false" id="8159-75e2-d4bb-3387" publicationId="260d-362c-d403-80ae" page="10">
+        <selectionEntry type="model" import="true" name="Djinn Frigate" hidden="false" id="8159-75e2-d4bb-3387" publicationId="260d-362c-d403-80ae" page="11">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8ce5-a64e-7b99-670e" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1813-abb0-34c7-c80b" includeChildSelections="false"/>
@@ -2447,7 +2447,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="1ac9-f58b-b3de-9064" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Djinn" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0aa2-bd35-7fd2-3a07" publicationId="260d-362c-d403-80ae" page="10">
+            <profile name="Djinn" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0aa2-bd35-7fd2-3a07" publicationId="260d-362c-d403-80ae" page="11">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2477,7 +2477,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="c3be-5b9b-9619-6f71" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Harpy Frigate" hidden="false" id="db97-aace-1382-225c" publicationId="260d-362c-d403-80ae" page="9">
+        <selectionEntry type="model" import="true" name="Harpy Frigate" hidden="false" id="db97-aace-1382-225c" publicationId="260d-362c-d403-80ae" page="10">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a4c9-50c8-33b0-6848" includeChildSelections="false"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="cb9a-e79d-e965-18b7" includeChildSelections="false"/>
@@ -2489,7 +2489,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="1c23-fcd1-33e9-5e66" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Harpy" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5075-8ea1-5cfe-3463" publicationId="260d-362c-d403-80ae" page="9">
+            <profile name="Harpy" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5075-8ea1-5cfe-3463" publicationId="260d-362c-d403-80ae" page="10">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2518,7 +2518,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="aae8-912a-b9dd-22b4" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Ebisu Tackling Cutter" hidden="false" id="db62-551a-3561-5735" publicationId="260d-362c-d403-80ae" page="8">
+        <selectionEntry type="model" import="true" name="Ebisu Tackling Cutter" hidden="false" id="db62-551a-3561-5735" publicationId="260d-362c-d403-80ae" page="9">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b899-4f7e-5caa-7e0e" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8477-9a79-a945-c70d" includeChildSelections="false"/>
@@ -2530,7 +2530,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="3f30-2c72-6505-8863" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Ebisu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="491e-564c-d017-6ee8" publicationId="260d-362c-d403-80ae" page="8">
+            <profile name="Ebisu" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="491e-564c-d017-6ee8" publicationId="260d-362c-d403-80ae" page="9">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2580,7 +2580,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="18b5-2f81-355e-9845" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hiruko Boarding Cutter" hidden="false" id="bd56-58fc-aa54-5954" publicationId="260d-362c-d403-80ae" page="7">
+        <selectionEntry type="model" import="true" name="Hiruko Boarding Cutter" hidden="false" id="bd56-58fc-aa54-5954" publicationId="260d-362c-d403-80ae" page="8">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="898d-ff25-e43f-54ee" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="77b0-04e6-949a-4d3c" includeChildSelections="false"/>
@@ -2592,7 +2592,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="d2ac-5273-89f2-f586" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Hiruko" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b3a6-a076-8dc9-db1d" publicationId="260d-362c-d403-80ae" page="7">
+            <profile name="Hiruko" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b3a6-a076-8dc9-db1d" publicationId="260d-362c-d403-80ae" page="8">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2619,7 +2619,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="0e91-995a-3d8f-9ce8" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Nickar Hunter-Killer" hidden="false" id="625e-f1fe-63d5-1972" publicationId="260d-362c-d403-80ae" page="6">
+        <selectionEntry type="model" import="true" name="Nickar Hunter-Killer" hidden="false" id="625e-f1fe-63d5-1972" publicationId="260d-362c-d403-80ae" page="7">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6b3-fa51-e436-5dc4" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3ab2-a4e6-f35f-cb4f" includeChildSelections="false"/>
@@ -2631,7 +2631,7 @@
             <categoryLink targetId="f942-8f88-d77b-13c1" id="0bfb-30fa-2f61-e66f" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Nickar" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="05f5-1cd7-87d4-8a57" publicationId="260d-362c-d403-80ae" page="6">
+            <profile name="Nickar" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="05f5-1cd7-87d4-8a57" publicationId="260d-362c-d403-80ae" page="7">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">16&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
