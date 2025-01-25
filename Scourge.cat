@@ -883,6 +883,236 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Faust Super Battleship" hidden="false" id="459e-016d-26f9-4e93" page="">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="f3b3-f1c4-8683-03f2" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="bec8-a292-f5ec-bd81" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Faust Super Battleship" hidden="false" id="6e19-4dde-73dd-865b" publicationId="260d-362c-d403-80ae" page="47">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7557-c57e-1b3a-7dc8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1463-543c-2473-1c88" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="275"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="3ba4-83ca-5c04-2f66" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Faust" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4052-b1c1-deca-dee4" publicationId="260d-362c-d403-80ae" page="47">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">20</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Plasma Beam Pair" hidden="false" id="ee5d-53fc-4cc3-b0ff" type="selectionEntry" targetId="082f-4161-0ad4-397c" sortIndex="1"/>
+            <entryLink import="true" name="Oculus Beam Array" hidden="false" id="b02a-e2f1-1c2e-3370" type="selectionEntry" targetId="0520-4df6-bb75-2888" sortIndex="2"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="bceb-2da9-1814-242e" type="selectionEntry" targetId="7222-b464-ba97-8347" sortIndex="3"/>
+            <entryLink import="true" name="Keel Options" hidden="false" id="67f8-2eeb-d11c-0228" type="selectionEntryGroup" targetId="5747-604d-a99a-4dbc"/>
+            <entryLink import="true" name="Torpedo" hidden="false" id="fdf5-e454-2103-f907" type="selectionEntry" targetId="2963-cbdd-60db-a407" sortIndex="4"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Cloak-X" id="1ff8-6de4-3cd2-26e3" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
+            <infoLink name="Stealth" id="6a22-6074-4c36-6cb0" hidden="true" type="rule" targetId="9306-4cd5-b59e-5898"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Samael Super Battleship" hidden="false" id="a6b5-9b78-a490-2e55" page="">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="9bd4-d84e-53b4-500e" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="a7f3-b828-9b51-1d2d" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Samael Super Battleship" hidden="false" id="70e2-5dcb-fdf2-48ba" publicationId="260d-362c-d403-80ae" page="46">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e81-55c4-e4af-83a0" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e805-3e1b-6b70-c1b3" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="300"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="c55a-3348-8026-7823" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Samael" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="68a2-da9b-d063-2c4b" publicationId="260d-362c-d403-80ae" page="46">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">20</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Mega Plasma Lance Battery" hidden="false" id="f837-6360-c7cc-586e" type="selectionEntry" targetId="9972-6174-84e1-4f78" sortIndex="1"/>
+            <entryLink import="true" name="Oculus Beam Phalanx" hidden="false" id="736e-a0f6-4613-0f26" type="selectionEntry" targetId="2cd7-52c1-070d-c7cd" sortIndex="2"/>
+            <entryLink import="true" name="Furnace Fangs" hidden="false" id="fb0a-db51-5c15-da47" type="selectionEntry" targetId="cc1e-4277-6de6-e142" sortIndex="3"/>
+            <entryLink import="true" name="Keel Options" hidden="false" id="5b6b-b384-5e39-9efa" type="selectionEntryGroup" targetId="5747-604d-a99a-4dbc"/>
+            <entryLink import="true" name="Oculus Beam Array" hidden="false" id="a811-d38c-4cd6-f89c" type="selectionEntry" targetId="0520-4df6-bb75-2888" sortIndex="4"/>
+            <entryLink import="true" name="Torpedo" hidden="false" id="d5e6-9ee1-a09a-4934" type="selectionEntry" targetId="2963-cbdd-60db-a407" sortIndex="5"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Cloak-X" id="561c-f094-9569-efda" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
+            <infoLink name="Stealth" id="f6c7-b500-4188-68ef" hidden="true" type="rule" targetId="9306-4cd5-b59e-5898"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bael Super Battleship" hidden="false" id="a2ca-f4ca-2530-e26d" page="">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="fba9-04c0-b009-cb6d" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="6950-4171-f43c-1a37" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Bael Super Battleship" hidden="false" id="38fd-6608-bb56-d0fa" publicationId="260d-362c-d403-80ae" page="45">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e340-1b7e-f4ce-17ec" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4180-f04e-5afe-85fd" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="305"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="6dfa-fb9e-b3a2-f291" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Bael" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="696d-b946-a12f-bd47" publicationId="260d-362c-d403-80ae" page="45">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">20</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Mega Plasma Lance Battery" hidden="false" id="8c65-8c2b-de68-62e1" type="selectionEntry" targetId="9972-6174-84e1-4f78" sortIndex="1"/>
+            <entryLink import="true" name="Oculus Beam Phalanx" hidden="false" id="2296-ef79-d7d3-5e36" type="selectionEntry" targetId="2cd7-52c1-070d-c7cd" sortIndex="2"/>
+            <entryLink import="true" name="Oculus Beam Array" hidden="false" id="7327-e1e5-234d-83ac" type="selectionEntry" targetId="0520-4df6-bb75-2888" sortIndex="3"/>
+            <entryLink import="true" name="Keel Options" hidden="false" id="90ec-0721-968d-a763" type="selectionEntryGroup" targetId="5747-604d-a99a-4dbc"/>
+            <entryLink import="true" name="Torpedo" hidden="false" id="f3e0-a45c-cfd6-8b9e" type="selectionEntry" targetId="2963-cbdd-60db-a407" sortIndex="4"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="29d6-c9c5-74fd-01c1" type="selectionEntry" targetId="a0c8-4af1-529a-310d" sortIndex="5"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Cloak-X" id="de67-2e39-0cc8-c0ca" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
+            <infoLink name="Stealth" id="aab9-dbe2-a8b8-8de0" hidden="true" type="rule" targetId="9306-4cd5-b59e-5898"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Nephilim Super Battleship" hidden="false" id="802d-776e-2014-8e14" page="">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="85f2-1065-88c2-e00a" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="e5d2-269a-2ce9-d09d" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Nephilim Super Battleship" hidden="false" id="b6f7-d263-5cc1-f151" publicationId="260d-362c-d403-80ae" page="44">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0065-cc7f-a160-4e6f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aac-d9e9-dc7b-ff0d" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="255"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="9adf-40b5-08c9-7439" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Nephilim" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5841-fa4f-71fd-039e" publicationId="260d-362c-d403-80ae" page="44">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">20</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Plasma Beam Triad" hidden="false" id="b77d-bf70-72ab-6866" type="selectionEntry" targetId="6b0e-d2c0-9a71-a05e" sortIndex="1"/>
+            <entryLink import="true" name="Furnace Fangs" hidden="false" id="45eb-fd0b-b8be-9dad" type="selectionEntry" targetId="dfff-6c67-396f-af99" sortIndex="2"/>
+            <entryLink import="true" name="Oculus Beam Array" hidden="false" id="26a8-420c-f870-0c6a" type="selectionEntry" targetId="0520-4df6-bb75-2888" sortIndex="3"/>
+            <entryLink import="true" name="Keel Options" hidden="false" id="34d9-681c-727f-be10" type="selectionEntryGroup" targetId="5747-604d-a99a-4dbc"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Cloak-X" id="6a8d-011e-0ff7-026f" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
+            <infoLink name="Stealth" id="2e82-efa5-52c0-13aa" hidden="true" type="rule" targetId="9306-4cd5-b59e-5898"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Raum Battleship" hidden="false" id="a783-9615-ef7a-c03b" page="">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="1da2-fb37-e2d5-4088" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="585e-e9b0-b2d5-dc99" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Raum Battleship" hidden="false" id="d069-8063-f33e-7abf" publicationId="260d-362c-d403-80ae" page="43">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="83c1-65f4-b7be-60ef" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="847b-e901-3a67-ee66" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="250"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="4c5f-76a3-06f9-a8bc" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Raum" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5961-8519-f85d-8ad9" publicationId="260d-362c-d403-80ae" page="43">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">20</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Cloak-2, Command Ship-1, Stealth</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Plasma Beam" hidden="false" id="ef49-cdb3-a13b-f906" type="selectionEntry" targetId="eba1-f92a-6456-13e1" sortIndex="1"/>
+            <entryLink import="true" name="Oculus Beam Array" hidden="false" id="a562-66af-f0f1-b44e" type="selectionEntry" targetId="0520-4df6-bb75-2888" sortIndex="2"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="198c-bc00-89fe-0397" type="selectionEntry" targetId="7222-b464-ba97-8347" sortIndex="3"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Cloak-X" id="3774-baa3-b7eb-2d71" hidden="false" type="rule" targetId="69fa-32f1-0a4f-c052"/>
+            <infoLink name="Command Ship-X" id="afe6-470b-88a8-6090" hidden="false" type="rule" targetId="af88-13e6-5004-d00a"/>
+            <infoLink name="Stealth" id="e64b-a842-8ff1-2b6f" hidden="false" type="rule" targetId="9306-4cd5-b59e-5898"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lucifer Battleship" hidden="false" id="3ab8-3cff-8762-84df" page="">
       <categoryLinks>
         <categoryLink targetId="default-category" id="944e-2eec-d166-60c4" primary="false" name="Group"/>
@@ -955,10 +1185,15 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Mega Plasma Lance Battery" hidden="false" id="d154-0b9a-808d-1316" type="selectionEntry" targetId="ae05-6d16-64e3-33c4" sortIndex="1"/>
+            <entryLink import="true" name="Mega Plasma Lance Battery" hidden="false" id="d154-0b9a-808d-1316" type="selectionEntry" targetId="9972-6174-84e1-4f78" sortIndex="1"/>
             <entryLink import="true" name="Oculus Beam Array" hidden="false" id="d6bf-d172-eaa1-9a82" type="selectionEntry" targetId="0520-4df6-bb75-2888" sortIndex="2"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="7df4-da7a-945d-5e4f" type="selectionEntry" targetId="7222-b464-ba97-8347" sortIndex="3"/>
+            <entryLink import="true" name="Keel Refit" hidden="false" id="a4b8-7127-9fb3-5c6d" type="selectionEntryGroup" targetId="85d3-1602-8b91-be14"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Cloak-X" id="29ad-60b4-a93f-3514" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
+            <infoLink name="Stealth" id="0947-627c-87f4-7a69" hidden="true" type="rule" targetId="9306-4cd5-b59e-5898"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -995,11 +1230,16 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Mega Plasma Lance Battery" hidden="false" id="a827-50ce-32a6-6915" type="selectionEntry" targetId="ae05-6d16-64e3-33c4" sortIndex="1"/>
+            <entryLink import="true" name="Mega Plasma Lance Battery" hidden="false" id="a827-50ce-32a6-6915" type="selectionEntry" targetId="9972-6174-84e1-4f78" sortIndex="1"/>
             <entryLink import="true" name="Oculus Beam Array" hidden="false" id="36cb-138c-0a94-eb50" type="selectionEntry" targetId="0520-4df6-bb75-2888" sortIndex="2"/>
             <entryLink import="true" name="Furnace Fangs" hidden="false" id="8baf-6ba0-942d-aa59" type="selectionEntry" targetId="cc1e-4277-6de6-e142" sortIndex="3"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="af7b-c958-6e9f-5a20" type="selectionEntry" targetId="a0c8-4af1-529a-310d" sortIndex="4"/>
+            <entryLink import="true" name="Keel Refit" hidden="false" id="d46b-3e16-2bcc-2723" type="selectionEntryGroup" targetId="85d3-1602-8b91-be14"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Cloak-X" id="faef-6d27-7f1f-b218" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
+            <infoLink name="Stealth" id="5272-609a-c47b-bd8b" hidden="true" type="rule" targetId="9306-4cd5-b59e-5898"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1040,7 +1280,12 @@
             <entryLink import="true" name="Furnace Fangs" hidden="false" id="aec9-de8f-440b-5c68" type="selectionEntry" targetId="cc1e-4277-6de6-e142" sortIndex="2"/>
             <entryLink import="true" name="Torpedo" hidden="false" id="8753-866c-6818-2947" type="selectionEntry" targetId="2963-cbdd-60db-a407" sortIndex="3"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="eac2-de9a-1c8b-2a75" type="selectionEntry" targetId="a0c8-4af1-529a-310d" sortIndex="4"/>
+            <entryLink import="true" name="Keel Refit" hidden="false" id="37a7-2a45-8174-996a" type="selectionEntryGroup" targetId="85d3-1602-8b91-be14"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Cloak-X" id="34b7-30aa-30ce-ff35" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
+            <infoLink name="Stealth" id="e46c-68d9-870f-9ab3" hidden="true" type="rule" targetId="9306-4cd5-b59e-5898"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1080,7 +1325,12 @@
             <entryLink import="true" name="Oculus Beam Array" hidden="false" id="82b7-d72a-0505-90c9" type="selectionEntry" targetId="0520-4df6-bb75-2888" sortIndex="1"/>
             <entryLink import="true" name="Oculus Beam Phalanx" hidden="false" id="9950-f371-eb5d-b7fb" type="selectionEntry" targetId="d668-50c9-0dfb-8f23" sortIndex="2"/>
             <entryLink import="true" name="Furnace Fangs" hidden="false" id="23ad-2628-66f3-c7ba" type="selectionEntry" targetId="cc1e-4277-6de6-e142" sortIndex="3"/>
+            <entryLink import="true" name="Keel Refit" hidden="false" id="39b2-a40d-5a82-a04c" type="selectionEntryGroup" targetId="85d3-1602-8b91-be14"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Cloak-X" id="8ada-ad0d-4586-a204" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
+            <infoLink name="Stealth" id="0374-537f-e09e-505b" hidden="true" type="rule" targetId="9306-4cd5-b59e-5898"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2472,23 +2722,25 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3754-065a-9eef-c39a-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Furnace Fangs" hidden="false" id="dfff-6c67-396f-af99">
+      <infoLinks>
+        <infoLink name="Burnthrough-X" id="f059-85b2-196e-2222" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+        <infoLink name="Crippling-X" id="16da-7ef3-4be7-b81e" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
+        <infoLink name="Focused" id="0d01-0ee0-d342-bf38" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+        <infoLink name="Furnace Fangs" id="e491-7115-920c-bff4" hidden="false" type="profile" targetId="fe15-8fff-d925-5e3c"/>
+      </infoLinks>
+      <comment>[x2] FN 6/3+/1/E BT-1 Crip-Fire Foc</comment>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a63e-1e3a-a197-c5b5" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="75a1-0f1a-acb4-15d8" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Furnace Fangs" hidden="false" id="cc1e-4277-6de6-e142">
-      <profiles>
-        <profile name="Furnace Fangs" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="783b-c079-2fc2-8be2">
-          <characteristics>
-            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
-            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
-            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1, Crippling-Fire, Focused</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Burnthrough-X" id="58c1-223e-c7b0-d31e" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
         <infoLink name="Crippling-X" id="a5ae-e102-91b5-8e21" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
         <infoLink name="Focused" id="2387-e5db-9ad5-99a2" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+        <infoLink name="Furnace Fangs" id="ebd0-5d6e-bc44-2d30" hidden="false" type="profile" targetId="fe15-8fff-d925-5e3c"/>
       </infoLinks>
       <comment>FN 6/3+/1/E BT-1 Crip-Fire Foc</comment>
       <constraints>
@@ -2520,6 +2772,75 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0651-82f4-b01c-6fad-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Plasma Beam Triad" hidden="false" id="6b0e-d2c0-9a71-a05e">
+      <infoLinks>
+        <infoLink name="Close Action" id="7e95-0af3-7167-2376" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Penetrator" id="3108-67d8-cffc-77c5" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+      </infoLinks>
+      <comment>F 3/3+/3/E CA Pen</comment>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0563-4ac9-be35-c5be" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="527f-603e-65bd-e589" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Heavy Plasma Beam" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="bfce-457c-a8d4-5aed">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Penetrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Plasma Beam Pair" hidden="false" id="082f-4161-0ad4-397c">
+      <infoLinks>
+        <infoLink name="Close Action" id="9145-142e-25ea-3003" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Penetrator" id="ed62-63c7-061c-d47c" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+      </infoLinks>
+      <comment>F 3/3+/2/E CA Pen</comment>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0eb8-efc6-fbed-763c" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9cc-cb02-8425-da7c" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Heavy Plasma Beam Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="d016-9d2b-a47c-8622">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Penetrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Plasma Beam" hidden="false" id="eba1-f92a-6456-13e1">
+      <infoLinks>
+        <infoLink name="Close Action" id="e9eb-5dff-c4e5-d718" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Penetrator" id="b1df-ed6d-9ae2-bd1e" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+      </infoLinks>
+      <comment>F 3/3+/1/E CA Pen</comment>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa89-bd67-763d-e943" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99ee-0f59-a6fb-47df" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Heavy Plasma Beam" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="271a-0c57-6e8f-0455">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Penetrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Magneton Lash" hidden="false" id="877f-b86b-ad85-6a5a">
       <infoLinks>
         <infoLink name="Close Action" id="b2ae-97e9-9e64-162c" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
@@ -2543,6 +2864,19 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mega Plasma Lance Battery" hidden="false" id="9972-6174-84e1-4f78">
+      <infoLinks>
+        <infoLink name="Scald-X" id="fe08-1297-b037-b977" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
+        <infoLink name="Mega Plasma Lance Battery" id="c3f2-6082-1249-8130" hidden="false" type="profile" targetId="1a15-fe90-d9fa-58d1"/>
+        <infoLink name="Reave-X" id="e4b7-f0cc-69f8-6968" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+        <infoLink name="Volley-X" id="615f-2ed0-7c70-1aa5" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+      </infoLinks>
+      <comment>F/S 3/3+/2/E Cal-HC Rv-2 Vol-2</comment>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80cc-d149-b576-1b12" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76e1-ea80-afff-0d23" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mega Plasma Lance Battery" hidden="false" id="ae05-6d16-64e3-33c4">
       <infoLinks>
@@ -3225,6 +3559,51 @@
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cloaking Keel" hidden="false" id="8129-e004-6cb0-724f">
+      <modifiers>
+        <modifier type="set" value="Cloak-2, Stealth" field="fdf5-89b6-e62e-570f" affects="profiles.Ship" scope="parent" join=", "/>
+        <modifier type="set" value="false" field="hidden" scope="parent" affects="rules"/>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="318a-1701-4872-de21" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+      </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="318a-1701-4872-de21"/>
+            <modifier type="set" value="true" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aad-bbb7-c1bf-9583" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Engine Upgrade" hidden="false" id="4fdb-59b7-06e1-c171">
+      <modifiers>
+        <modifier type="increment" value="3" field="d821-4294-3117-e8a6" affects="profiles.Ship" scope="parent" join=", "/>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f199-5056-c5ef-96a1" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+      </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="0" field="f199-5056-c5ef-96a1"/>
+            <modifier type="set" value="true" field="hidden"/>
+          </modifiers>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6aad-bbb7-c1bf-9583" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <publications>
     <publication name="Scourge Combined Fleet Stats (241024)" id="260d-362c-d403-80ae" hidden="false" shortName="Scourge Stats (241024)"/>
@@ -3238,6 +3617,9 @@
     <entryLink import="true" name="Enslaver - Raiju" hidden="false" id="c033-79c8-27dd-7e91" targetId="b472-ebd8-dca8-b337" type="selectionEntry"/>
     <entryLink import="true" name="Cthulhu Dreadnought" hidden="false" id="6310-04d8-aaf0-921c" targetId="c08f-b0f0-9ffe-fb10" type="selectionEntry"/>
     <entryLink import="true" name="Nosferatu Dreadnought" hidden="false" id="58c5-d945-de4e-7eed" targetId="c831-7bc7-be97-7728" type="selectionEntry"/>
+    <entryLink import="true" name="Bael Super Battleship" hidden="false" id="67a4-783e-3f85-6500" targetId="a2ca-f4ca-2530-e26d" type="selectionEntry"/>
+    <entryLink import="true" name="Nephilim Battleship" hidden="false" id="e9aa-366d-d715-f4b8" targetId="802d-776e-2014-8e14" type="selectionEntry"/>
+    <entryLink import="true" name="Raum Battleship" hidden="false" id="455f-cf03-41e9-abe6" targetId="a783-9615-ef7a-c03b" type="selectionEntry"/>
     <entryLink import="true" name="Lucifer Battleship" hidden="false" id="7321-4383-4ee3-bbc1" targetId="3ab8-3cff-8762-84df" type="selectionEntry"/>
     <entryLink import="true" name="Devil Battleship" hidden="false" id="5b6a-d6ad-0765-cec2" targetId="a19c-21ff-f13d-6165" type="selectionEntry"/>
     <entryLink import="true" name="Beelzebub Battleship" hidden="false" id="2070-3e3f-221d-6b6a" targetId="0144-a2e5-e8fa-972d" type="selectionEntry"/>
@@ -3319,6 +3701,17 @@ If this Group gained any number of Spikes this round due to this rule, each Ship
       </characteristics>
       <comment>F/S 2/3+/2/E Sc-1 Vol-2</comment>
     </profile>
+    <profile name="Mega Plasma Lance Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="1a15-fe90-d9fa-58d1">
+      <characteristics>
+        <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+        <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+        <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+        <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Reave-2, Volley-2</characteristic>
+      </characteristics>
+      <comment>F/S 3/3+/2/E Cal-HC Rv-2 Vol-2</comment>
+    </profile>
     <profile name="Mega Plasma Lance Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a286-17ae-128f-321a">
       <characteristics>
         <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
@@ -3328,7 +3721,7 @@ If this Group gained any number of Spikes this round due to this rule, each Ship
         <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
         <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Reave-2</characteristic>
       </characteristics>
-      <comment>F/S 3/3+/2/E Cal-HC</comment>
+      <comment>F/S 3/3+/2/E Cal-HC Rv-2</comment>
     </profile>
     <profile name="Oculus Beam Phalanx" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="71e6-abd4-7f61-15cd">
       <characteristics>
@@ -3362,6 +3755,17 @@ If this Group gained any number of Spikes this round due to this rule, each Ship
         <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Scald-1</characteristic>
       </characteristics>
       <comment>F/S 1/3+/2/E Sc-1</comment>
+    </profile>
+    <profile name="Furnace Fangs" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="fe15-8fff-d925-5e3c">
+      <characteristics>
+        <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+        <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+        <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+        <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1, Crippling-Fire, Focused</characteristic>
+      </characteristics>
+      <comment>FN 6/3+/1/E BT-1 Crip-Fire Foc</comment>
     </profile>
   </sharedProfiles>
   <catalogueLinks>
@@ -3457,6 +3861,25 @@ If this Group gained any number of Spikes this round due to this rule, each Ship
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Keel Refit" id="85d3-1602-8b91-be14" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Cloaking Keel" hidden="false" id="352d-c169-f1cb-5919" type="selectionEntry" targetId="8129-e004-6cb0-724f"/>
+        <entryLink import="true" name="Engine Upgrade" hidden="false" id="1ea3-e9de-9759-6755" type="selectionEntry" targetId="4fdb-59b7-06e1-c171"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13e5-9b39-5423-43fc"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Keel Options" id="5747-604d-a99a-4dbc" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Cloaking Keel" hidden="false" id="af3d-f6d7-f460-ca45" type="selectionEntry" targetId="8129-e004-6cb0-724f"/>
+        <entryLink import="true" name="Engine Upgrade" hidden="false" id="9172-857a-64ae-642f" type="selectionEntry" targetId="4fdb-59b7-06e1-c171"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c95-dc37-3bbe-ff81"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9c5-2584-4711-3310"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
