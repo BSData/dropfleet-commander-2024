@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="10" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="11" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Fleet Thrall" hidden="false" id="7fe9-330a-0598-35d7" publicationId="260d-362c-d403-80ae" page="1">
@@ -3567,9 +3567,6 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="318a-1701-4872-de21" includeChildSelections="false"/>
       </constraints>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
-      </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -3589,9 +3586,6 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f199-5056-c5ef-96a1" includeChildSelections="false"/>
       </constraints>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
-      </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -3620,7 +3614,7 @@
     <entryLink import="true" name="Faust Super Battleship" hidden="false" id="7af1-3759-ba21-5633" targetId="459e-016d-26f9-4e93" type="selectionEntry"/>
     <entryLink import="true" name="Samael Super Battleship" hidden="false" id="96e0-de11-e46f-cae4" targetId="a6b5-9b78-a490-2e55" type="selectionEntry"/>
     <entryLink import="true" name="Bael Super Battleship" hidden="false" id="67a4-783e-3f85-6500" targetId="a2ca-f4ca-2530-e26d" type="selectionEntry"/>
-    <entryLink import="true" name="Nephilim Battleship" hidden="false" id="e9aa-366d-d715-f4b8" targetId="802d-776e-2014-8e14" type="selectionEntry"/>
+    <entryLink import="true" name="Nephilim Super Battleship" hidden="false" id="e9aa-366d-d715-f4b8" targetId="802d-776e-2014-8e14" type="selectionEntry"/>
     <entryLink import="true" name="Raum Battleship" hidden="false" id="455f-cf03-41e9-abe6" targetId="a783-9615-ef7a-c03b" type="selectionEntry"/>
     <entryLink import="true" name="Lucifer Battleship" hidden="false" id="7321-4383-4ee3-bbc1" targetId="3ab8-3cff-8762-84df" type="selectionEntry"/>
     <entryLink import="true" name="Devil Battleship" hidden="false" id="5b6a-d6ad-0765-cec2" targetId="a19c-21ff-f13d-6165" type="selectionEntry"/>
@@ -3866,8 +3860,16 @@ If this Group gained any number of Spikes this round due to this rule, each Ship
     </selectionEntryGroup>
     <selectionEntryGroup name="Keel Refit" id="85d3-1602-8b91-be14" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Cloaking Keel" hidden="false" id="352d-c169-f1cb-5919" type="selectionEntry" targetId="8129-e004-6cb0-724f"/>
-        <entryLink import="true" name="Engine Upgrade" hidden="false" id="1ea3-e9de-9759-6755" type="selectionEntry" targetId="4fdb-59b7-06e1-c171"/>
+        <entryLink import="true" name="Cloaking Keel" hidden="false" id="352d-c169-f1cb-5919" type="selectionEntry" targetId="8129-e004-6cb0-724f">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Engine Upgrade" hidden="false" id="1ea3-e9de-9759-6755" type="selectionEntry" targetId="4fdb-59b7-06e1-c171">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13e5-9b39-5423-43fc"/>
