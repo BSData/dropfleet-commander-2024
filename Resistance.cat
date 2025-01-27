@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="8" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="9" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (241028)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (241028)"/>
   </publications>
@@ -255,7 +255,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Magellan - Coloniser" hidden="false" id="9d4b-69f2-b535-656c">
+    <selectionEntry type="unit" import="true" name="Lvl 3: Magellan - Coloniser" hidden="false" id="9d4b-69f2-b535-656c">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="9f88-c020-4aac-0cc3" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="4e50-5cad-0183-71c1" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -453,7 +453,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Nguen - Olympus" hidden="false" id="996f-f331-e84f-11f1">
+    <selectionEntry type="unit" import="true" name="Lvl 4: Nguen - Olympus" hidden="false" id="996f-f331-e84f-11f1">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="47df-2ff4-a960-a2b3" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Admirals" hidden="false" id="515c-869e-7a7d-ac26" targetId="fb8b-57b3-d46c-d679" primary="false"/>
@@ -606,7 +606,7 @@
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a54a-9e94-51ba-27b0"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Hagen - Tribune" hidden="false" id="cee5-c500-357a-d910" page="">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Hagen - Tribune" hidden="false" id="cee5-c500-357a-d910" page="">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="061e-ddec-a686-e051" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="87e9-c434-7129-ac55" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -762,7 +762,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Typhoon Vasquez - Heavy Cruiser" hidden="false" id="6839-7d0a-57fd-5ad9" page="">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Typhoon Vasquez - Heavy Cruiser" hidden="false" id="6839-7d0a-57fd-5ad9" page="">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="a5b4-695c-a1c7-12bb" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="03cc-ea38-7afa-50a2" targetId="79f7-4244-6fb7-d41a" primary="false"/>

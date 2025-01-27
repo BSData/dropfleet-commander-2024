@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="9" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="10" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="1c77-28ea-5fb6-dc6f" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="1282-2cce-85a8-ebe4" targetId="7e9b-b6ba-2178-6eb5"/>
@@ -249,7 +249,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Quetzalcoatl - Uranium" hidden="false" id="9782-06cf-cd06-44c5" publicationId="fbb6-a765-5882-6bcb" page="5">
+    <selectionEntry type="unit" import="true" name="Lvl 4: Quetzalcoatl - Uranium" hidden="false" id="9782-06cf-cd06-44c5" publicationId="fbb6-a765-5882-6bcb" page="5">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="0ce2-83d3-44a2-3304" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Admirals" hidden="false" id="bc2b-fc74-2cdd-4f47" targetId="fb8b-57b3-d46c-d679" primary="false"/>
@@ -397,7 +397,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Mergen the Learned - Diamond" hidden="false" id="4a39-2a06-9bbe-9563" publicationId="fbb6-a765-5882-6bcb" page="4">
+    <selectionEntry type="unit" import="true" name="Lvl 3: Mergen the Learned - Diamond" hidden="false" id="4a39-2a06-9bbe-9563" publicationId="fbb6-a765-5882-6bcb" page="4">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="28c8-13ef-5c93-fb16" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="56eb-496f-079e-d9f7" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -543,7 +543,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Seth - Sapphire" hidden="false" id="60ba-9a6d-3eca-7e54" page="3" publicationId="fbb6-a765-5882-6bcb">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Seth - Sapphire" hidden="false" id="60ba-9a6d-3eca-7e54" page="3" publicationId="fbb6-a765-5882-6bcb">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="8e3f-e255-cee1-6689" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="55b3-36a5-66c5-24e5" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -683,7 +683,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="85ea-f2f3-7eb7-db30"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Twins of Aaru - Amber x 2" hidden="false" id="d871-8769-d471-c13f" publicationId="fbb6-a765-5882-6bcb" page="2">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Twins of Aaru - Amber x 2" hidden="false" id="d871-8769-d471-c13f" publicationId="fbb6-a765-5882-6bcb" page="2">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="be1c-ead6-41eb-1694" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Admirals" hidden="false" id="4fe1-b0d7-1db7-7444" targetId="fb8b-57b3-d46c-d679" primary="false"/>

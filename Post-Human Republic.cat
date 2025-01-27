@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="11" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="12" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="66a8-ba07-3fa8-ecf7"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Vizier" hidden="false" id="4d5f-828e-aece-77fe" publicationId="6462-e99b-594c-193a" page="1">
@@ -81,7 +81,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Gaius Chau - Romulus" hidden="false" id="416b-ac4b-0ec7-e966" page="5" publicationId="6462-e99b-594c-193a">
+    <selectionEntry type="unit" import="true" name="Lvl 5: Gaius Chau - Romulus" hidden="false" id="416b-ac4b-0ec7-e966" page="5" publicationId="6462-e99b-594c-193a">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="32c7-e487-ffba-7775" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="d224-a49e-ba2e-3f02" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -149,7 +149,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Claudia Rhee - Heracles" hidden="false" id="fc7e-9c9b-0758-b590" page="4" publicationId="6462-e99b-594c-193a">
+    <selectionEntry type="unit" import="true" name="Lvl 4: Claudia Rhee - Heracles" hidden="false" id="fc7e-9c9b-0758-b590" page="4" publicationId="6462-e99b-594c-193a">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="3906-76c2-4f2e-d789" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="1afe-e2ff-046e-4b12" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -217,7 +217,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Helena of Asgard - Pompeius" hidden="false" id="3498-03f8-e547-1c37" page="3" publicationId="6462-e99b-594c-193a">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Helena of Asgard - Pompeius" hidden="false" id="3498-03f8-e547-1c37" page="3" publicationId="6462-e99b-594c-193a">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="4ed6-87d9-5345-ef3d" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="7685-3391-11e3-bfae" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -289,7 +289,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Javelin - Achilles" hidden="false" id="7ef9-eaa2-4a63-34ad" page="2" publicationId="6462-e99b-594c-193a">
+    <selectionEntry type="unit" import="true" name="Lvl 3: Javelin - Achilles" hidden="false" id="7ef9-eaa2-4a63-34ad" page="2" publicationId="6462-e99b-594c-193a">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="3758-f330-2cd5-aaa2" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="4efa-c887-e597-5c05" targetId="79f7-4244-6fb7-d41a" primary="false"/>

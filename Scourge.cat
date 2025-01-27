@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="11" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="12" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Fleet Thrall" hidden="false" id="7fe9-330a-0598-35d7" publicationId="260d-362c-d403-80ae" page="1">
@@ -241,7 +241,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Overlord of Flies - Nosferatu" hidden="false" id="b0b3-4b12-b0c8-aca3" page="6" publicationId="260d-362c-d403-80ae">
+    <selectionEntry type="unit" import="true" name="Lvl 4: Overlord of Flies - Nosferatu" hidden="false" id="b0b3-4b12-b0c8-aca3" page="6" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="9956-7e51-e2b1-fb5f" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="e3b7-53b6-cf4a-ce9a" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -390,7 +390,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Baba Yaga - Daemon" hidden="false" id="6aad-bbb7-c1bf-9583" page="5" publicationId="260d-362c-d403-80ae">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Baba Yaga - Daemon" hidden="false" id="6aad-bbb7-c1bf-9583" page="5" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="9934-6a61-6b75-2519" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="f75f-32b9-6fea-214e" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -520,7 +520,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Flayer - Shadow" hidden="false" id="0b1b-4cad-329b-7d5a" page="4" publicationId="260d-362c-d403-80ae">
+    <selectionEntry type="unit" import="true" name="Lvl 3: Flayer - Shadow" hidden="false" id="0b1b-4cad-329b-7d5a" page="4" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="e727-2519-315a-cb74" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="6635-97e0-ebe9-e001" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -664,7 +664,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Enslaver - Raiju" hidden="false" id="b472-ebd8-dca8-b337" page="3" publicationId="260d-362c-d403-80ae">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Enslaver - Raiju" hidden="false" id="b472-ebd8-dca8-b337" page="3" publicationId="260d-362c-d403-80ae">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="7d99-60d5-a74c-3fc1" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="c1b7-7a18-fd6b-c2fb" targetId="79f7-4244-6fb7-d41a" primary="false"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="14" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="15" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -244,7 +244,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="“Granite” Halsey - Washington" hidden="false" id="0df1-8a69-e48b-af52">
+    <selectionEntry type="unit" import="true" name="Lvl 5: “Granite” Halsey - Washington" hidden="false" id="0df1-8a69-e48b-af52">
       <categoryLinks>
         <categoryLink targetId="daa7-4c13-fe75-9281" id="5472-abec-d0e0-955f" primary="true" name="Famous Admirals"/>
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="e57b-c51d-c748-4ccd" primary="false" name="Admirals"/>
@@ -388,7 +388,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Havelock - New York" hidden="false" id="35e6-a97b-0bc4-a778">
+    <selectionEntry type="unit" import="true" name="Lvl 4: Havelock - New York" hidden="false" id="35e6-a97b-0bc4-a778">
       <categoryLinks>
         <categoryLink targetId="daa7-4c13-fe75-9281" id="0289-2a3a-68f4-0264" primary="true" name="Famous Admirals"/>
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="6de9-c5e9-d720-8c4d" primary="false" name="Admirals"/>
@@ -532,7 +532,7 @@
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3cfe-d4e9-16f6-7bff"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Weaver - Perth" hidden="false" id="0691-dfab-1c01-7865">
+    <selectionEntry type="unit" import="true" name="Lvl 3: Weaver - Perth" hidden="false" id="0691-dfab-1c01-7865">
       <categoryLinks>
         <categoryLink targetId="daa7-4c13-fe75-9281" id="9ac6-47ba-4c14-95e9" primary="true" name="Famous Admirals"/>
         <categoryLink targetId="79f7-4244-6fb7-d41a" id="985d-6ccc-3cc5-b785" primary="false" name="Faction/Famous Admirals"/>
@@ -678,7 +678,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Tayne - Warsaw" hidden="false" id="6d3f-389f-1a9c-cdba" page="">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Tayne - Warsaw" hidden="false" id="6d3f-389f-1a9c-cdba" page="">
       <categoryLinks>
         <categoryLink targetId="daa7-4c13-fe75-9281" id="a8b5-191b-482f-fa75" primary="true" name="Famous Admirals"/>
         <categoryLink targetId="79f7-4244-6fb7-d41a" id="4c4c-f82d-badd-2be6" primary="false" name="Faction/Famous Admirals"/>
