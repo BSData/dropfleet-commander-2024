@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="13" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="14" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -361,51 +361,6 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Washington Supercarrier" hidden="false" id="adff-9045-f5aa-9334" publicationId="9813-8e60-542d-9381" page="52" sortIndex="2">
-          <categoryLinks>
-            <categoryLink name="Colossal Ship" hidden="false" id="b772-5d7f-88d6-cb4a" targetId="6e44-cb75-e25f-8b24" primary="true"/>
-            <categoryLink targetId="default-category" id="222a-d5f4-dc00-e6dd" primary="false" name="Group"/>
-            <categoryLink targetId="52fa-6578-d171-57d6" id="f6f0-2396-fa8a-8f22" primary="false" name="Colossal Groups"/>
-          </categoryLinks>
-          <profiles>
-            <profile name="Washington" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d75f-7dcf-e804-4449" publicationId="9813-8e60-542d-9381" page="52">
-              <characteristics>
-                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
-                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
-                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">14&quot;</characteristic>
-                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">24</characteristic>
-                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
-                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
-                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
-                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-8, Command Ship-2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="560"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29f9-57fd-251a-e829" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31e7-c428-9204-6d78" includeChildSelections="false"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Aegis-X" id="cda5-96c9-111e-0664" hidden="false" type="rule" targetId="9cd1-441e-8ee8-7f13"/>
-            <infoLink name="Command Ship-X" id="5baf-d40d-4427-eda7" hidden="false" type="rule" targetId="af88-13e6-5004-d00a"/>
-            <infoLink name="Fighter Command" id="7ed9-929f-e13d-7c35" hidden="false" type="rule" targetId="83c4-4e63-ad54-d9c7"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink import="true" name="UF-9000 Mass Driver Turret" hidden="false" id="e5bf-c0b1-2dc4-1884" type="selectionEntry" targetId="00cb-22ad-7191-43cf" sortIndex="1"/>
-            <entryLink import="true" name="UF-4200 Mass Driver Turret Core Battery" hidden="false" id="9943-9412-66ef-15c4" type="selectionEntry" targetId="f819-d58c-9c21-4a53" sortIndex="2"/>
-            <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="8af7-ae0b-5d43-ef62" type="selectionEntry" targetId="bb41-2fcb-66bd-acd5" sortIndex="3"/>
-            <entryLink import="true" name="Leviathan Missile Bays" hidden="false" id="b2f2-d753-209a-e7cd" type="selectionEntry" targetId="0a54-c4e1-6baf-ee55" sortIndex="4"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="fd81-866f-0d7c-1b20" type="selectionEntry" targetId="9b0d-8d65-cdda-f785"/>
-          </entryLinks>
-          <modifiers>
-            <modifier type="append" value="Fighter Command" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
-          </modifiers>
-          <comment>Needed while Halsey&apos;s Washington has different core battery</comment>
-        </selectionEntry>
       </selectionEntries>
       <modifiers>
         <modifier type="set" value="-1" field="6f16-586b-f538-9c6c">
@@ -422,6 +377,16 @@
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6f16-586b-f538-9c6c"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Washington Supercarrier" hidden="false" id="7dfa-dec0-9013-3225" type="selectionEntry" targetId="e965-1de9-4353-d144" sortIndex="2">
+          <infoLinks>
+            <infoLink name="Fighter Command" id="97bd-8100-1fa4-ffec" hidden="false" type="rule" targetId="83c4-4e63-ad54-d9c7"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="append" value="Fighter Command" field="fdf5-89b6-e62e-570f" affects="recursive.childs.model.profiles.Ship" join=", " scope="parent"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Havelock - New York" hidden="false" id="35e6-a97b-0bc4-a778">
       <categoryLinks>
@@ -542,18 +507,13 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="New York Battleship" hidden="false" id="d375-a5fa-3fa8-5d41" type="selectionEntry" targetId="2b00-cb51-ae94-5a7a" sortIndex="2">
-          <infoLinks>
-            <infoLink name="Vanguard" id="d0c8-197b-6c49-626d" hidden="false" type="rule" targetId="8612-0822-de10-5e03"/>
-          </infoLinks>
+        <entryLink import="true" name="New York Battleship" hidden="false" id="9f44-0b22-c9d3-819d" type="selectionEntry" targetId="2b00-cb51-ae94-5a7a">
           <modifiers>
-            <modifier type="set" value="Vanguard" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
-            <modifier type="set" value="240" field="ab32-c9b6-10f3-cbdb"/>
+            <modifier type="set" value="Vanguard" field="fdf5-89b6-e62e-570f" affects="recursive.childs.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
-          <categoryLinks>
-            <categoryLink targetId="default-category" id="8ab7-6fe6-06f3-b3be" primary="false" name="Group"/>
-            <categoryLink targetId="8d99-053d-ffeb-98c5" id="fa2f-97c9-36a9-5370" primary="false" name="Heavy Groups"/>
-          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Vanguard" id="6f06-1aa1-5eaa-7d31" hidden="false" type="rule" targetId="8612-0822-de10-5e03"/>
+          </infoLinks>
         </entryLink>
       </entryLinks>
       <modifiers>
@@ -861,12 +821,12 @@
         <categoryLink targetId="52fa-6578-d171-57d6" id="9aae-22ef-60e0-9420" primary="true" name="Colossal Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Washington Supercarrier" hidden="false" id="e965-1de9-4353-d144" publicationId="9813-8e60-542d-9381" page="52">
+        <selectionEntry type="model" import="true" name="Washington Supercarrier" hidden="false" id="e965-1de9-4353-d144" publicationId="9813-8e60-542d-9381" page="57">
           <categoryLinks>
             <categoryLink name="Colossal Ship" hidden="false" id="8228-0c69-baba-e60e" targetId="6e44-cb75-e25f-8b24" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Washington" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7374-3d88-586f-5121" publicationId="9813-8e60-542d-9381" page="52">
+            <profile name="Washington" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7374-3d88-586f-5121" publicationId="9813-8e60-542d-9381" page="57">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
@@ -896,7 +856,8 @@
             <entryLink import="true" name="UF-4200 Mass Driver Turret Core Battery" hidden="false" id="2d86-a9a6-6980-e369" type="selectionEntry" targetId="f819-d58c-9c21-4a53" sortIndex="2"/>
             <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="ec36-caf4-fa7b-c069" type="selectionEntry" targetId="bb41-2fcb-66bd-acd5" sortIndex="3"/>
             <entryLink import="true" name="Leviathan Missile Bays" hidden="false" id="3566-aaef-30b0-6b3e" type="selectionEntry" targetId="0a54-c4e1-6baf-ee55" sortIndex="4"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="b134-aff6-7b69-e1da" type="selectionEntry" targetId="9b0d-8d65-cdda-f785" sortIndex="5"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="b134-aff6-7b69-e1da" type="selectionEntry" targetId="c0db-56ff-db29-5f8a" sortIndex="5"/>
+            <entryLink import="true" name="Heavy Bombers" hidden="false" id="e0f5-3c15-8fc9-9326" type="selectionEntry" targetId="8b69-b212-604a-7d8e" sortIndex="6"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -907,12 +868,12 @@
         <categoryLink targetId="52fa-6578-d171-57d6" id="a963-363b-f1e6-af5d" primary="true" name="Colossal Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="London Dreadnought" hidden="false" id="da36-f033-ec33-1ed9" publicationId="9813-8e60-542d-9381" page="51">
+        <selectionEntry type="model" import="true" name="London Dreadnought" hidden="false" id="da36-f033-ec33-1ed9" publicationId="9813-8e60-542d-9381" page="56">
           <categoryLinks>
             <categoryLink name="Colossal Ship" hidden="false" id="3177-9fc2-6b63-6bbe" targetId="6e44-cb75-e25f-8b24" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="London" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9403-23ea-3cd2-fbf4" publicationId="9813-8e60-542d-9381" page="51">
+            <profile name="London" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9403-23ea-3cd2-fbf4" publicationId="9813-8e60-542d-9381" page="56">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
@@ -947,18 +908,192 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Thebes Super Battleship" hidden="false" id="f57f-e917-875a-dba3">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="366b-c5b0-2a6b-84c4" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="e2fc-4248-7fe9-f316" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Thebes Super Battleship" hidden="false" id="2f1b-bfd9-3c22-33b1" publicationId="9813-8e60-542d-9381" page="55">
+          <categoryLinks>
+            <categoryLink name="Heavy Ship" hidden="false" id="12a5-84bb-e206-946c" targetId="9d6f-26b0-7969-496b" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Thebes" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e73f-c92a-3371-e6b7" publicationId="9813-8e60-542d-9381" page="55">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">20</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Marines-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="295"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3cd-0c0e-c24d-af91" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="781f-9cf2-81ce-f575" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Marines-X" id="3f13-c1cc-1ac7-8ce8" hidden="false" type="rule" targetId="93f3-7932-b233-4d38"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="UF-12000 Twin Mass Driver" hidden="false" id="090c-57cf-2a72-5ab5" type="selectionEntry" targetId="728d-cebe-832c-6151" sortIndex="1"/>
+            <entryLink import="true" name="Laser Refit" hidden="false" id="bdd8-bfb9-769a-a2dc" type="selectionEntryGroup" targetId="1cae-3b48-d446-10f7" sortIndex="3"/>
+            <entryLink import="true" name="Drop Pods" hidden="false" id="1f5f-a95c-88b0-126a" type="selectionEntry" targetId="f91a-73e2-1d0a-6ff1" sortIndex="5"/>
+            <entryLink import="true" name="Bulk Landers" hidden="false" id="c6a1-25d7-9014-eb14" type="selectionEntry" targetId="18b9-de5b-35be-c1d3" sortIndex="4"/>
+            <entryLink import="true" name="Boarding Pods" hidden="false" id="9fc5-e1c9-5f8b-7081" type="selectionEntry" targetId="1a84-70a6-1f42-aa28" sortIndex="6"/>
+            <entryLink import="true" name="UF-6400 Mass Driver Turrets" hidden="false" id="8fca-cd31-96e8-c1f0" type="selectionEntry" targetId="24ef-131a-f7ce-85bd" sortIndex="2"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Carthage Super Battleship" hidden="false" id="2c1b-c8a1-018b-6862">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="71b7-269b-3ac7-e91b" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="e0de-fa2b-4c54-4820" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Carthage Super Battleship" hidden="false" id="1f89-17bb-fffe-a1de" publicationId="9813-8e60-542d-9381" page="54">
+          <categoryLinks>
+            <categoryLink name="Heavy Ship" hidden="false" id="6787-de38-1003-dc47" targetId="9d6f-26b0-7969-496b" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Carthage" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="495d-9132-4b58-718e" publicationId="9813-8e60-542d-9381" page="54">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">20</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="305"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="845a-5f5f-e443-c6b9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e77a-f949-7a6f-5daa" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="UF-12000 Twin Mass Driver" hidden="false" id="8d2d-967a-164e-57ef" type="selectionEntry" targetId="728d-cebe-832c-6151" sortIndex="1"/>
+            <entryLink import="true" name="Laser Refit" hidden="false" id="565a-b1bb-2e28-b4ad" type="selectionEntryGroup" targetId="1cae-3b48-d446-10f7" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Bombers" hidden="false" id="9663-c1b6-ba82-8511" type="selectionEntry" targetId="6db4-cb9d-ecd7-9762" sortIndex="4"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="e2d5-371a-9e8f-6f89" type="selectionEntry" targetId="f206-27fd-c5f5-34aa" sortIndex="3"/>
+            <entryLink import="true" name="Medium Torpedo" hidden="false" id="0757-3c8c-ed6d-7f19" type="selectionEntry" targetId="1ac0-a1aa-8566-6c8e" sortIndex="5"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Byzantium Super Battleship" hidden="false" id="1a28-a35d-01f6-2fc2">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="cc99-2bd8-682d-a150" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="41e5-1728-522a-8d51" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Byzantium Super Battleship" hidden="false" id="b00b-2548-ff05-7dfe" publicationId="9813-8e60-542d-9381" page="53">
+          <categoryLinks>
+            <categoryLink name="Heavy Ship" hidden="false" id="3f89-575a-4d2b-14e6" targetId="9d6f-26b0-7969-496b" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Byzantium" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6bbc-c576-9565-24c0" publicationId="9813-8e60-542d-9381" page="53">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">20</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="310"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aec1-599d-5d27-6ee1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afc8-b2a9-6d33-2cfc" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Python Super Heavy Laser" hidden="false" id="6359-11e4-580f-d8ec" type="selectionEntry" targetId="d53e-0373-c6d3-d548" sortIndex="1"/>
+            <entryLink import="true" name="Laser Refit" hidden="false" id="0c3b-030c-2bec-3af8" type="selectionEntryGroup" targetId="1cae-3b48-d446-10f7" sortIndex="3"/>
+            <entryLink import="true" name="Heavy Bombers" hidden="false" id="e284-f6b3-0d20-6d62" type="selectionEntry" targetId="6db4-cb9d-ecd7-9762" sortIndex="5"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="ee67-8f38-6d3a-955f" type="selectionEntry" targetId="f206-27fd-c5f5-34aa" sortIndex="4"/>
+            <entryLink import="true" name="Medium Torpedo" hidden="false" id="2409-61b9-cfc0-9c82" type="selectionEntry" targetId="1ac0-a1aa-8566-6c8e" sortIndex="6"/>
+            <entryLink import="true" name="UF-B-8000 Bombardment Turrets" hidden="false" id="e7ac-b150-53d6-e6c3" type="selectionEntry" targetId="a682-7a31-5652-bb18" sortIndex="2"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Babylon Super Battleship" hidden="false" id="5809-e880-7d4f-d1f2">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="d09b-ba96-385e-a297" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="c8b3-4257-4b1a-d647" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Babylon Super Battleship" hidden="false" id="218b-9246-056b-d3c1" publicationId="9813-8e60-542d-9381" page="52">
+          <categoryLinks>
+            <categoryLink name="Heavy Ship" hidden="false" id="76d2-8ac2-e1d3-0cff" targetId="9d6f-26b0-7969-496b" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Babylon" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e213-f7cc-9a9f-1c11" publicationId="9813-8e60-542d-9381" page="52">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">20</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="310"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d1f-9f9a-8653-4cc7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adc3-79b1-18f9-7c13" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Python Super Heavy Laser" hidden="false" id="c688-d8d9-052a-5ebe" type="selectionEntry" targetId="d53e-0373-c6d3-d548" sortIndex="1"/>
+            <entryLink import="true" name="Laser Refit" hidden="false" id="98de-2311-997b-3dd7" type="selectionEntryGroup" targetId="1cae-3b48-d446-10f7" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Bombers" hidden="false" id="87ae-3cb0-c6d9-dcdb" type="selectionEntry" targetId="6db4-cb9d-ecd7-9762" sortIndex="4"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="ef7d-e6ab-9f61-e2f0" type="selectionEntry" targetId="f206-27fd-c5f5-34aa" sortIndex="3"/>
+            <entryLink import="true" name="Medium Torpedo" hidden="false" id="aad4-2570-9ba1-bb58" type="selectionEntry" targetId="1ac0-a1aa-8566-6c8e" sortIndex="5"/>
+            <entryLink import="true" name="UF-6400 Mass Driver Turret Triad" hidden="false" id="55b0-1596-6be7-4b5e" type="selectionEntry" targetId="58c9-a95a-e442-2f10" sortIndex="1"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Delhi Battleship" hidden="false" id="875a-25cf-eef9-98eb">
       <categoryLinks>
         <categoryLink targetId="default-category" id="2d63-6358-59a7-90f4" primary="false" name="Group"/>
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="3dce-59c3-46b9-813c" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Delhi Battleship" hidden="false" id="8543-dca5-b0a4-8566" publicationId="9813-8e60-542d-9381" page="50">
+        <selectionEntry type="model" import="true" name="Delhi Battleship" hidden="false" id="8543-dca5-b0a4-8566" publicationId="9813-8e60-542d-9381" page="51">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="f435-62d3-3954-7575" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Delhi" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="1225-2aa4-ae57-1e12" publicationId="9813-8e60-542d-9381" page="50">
+            <profile name="Delhi" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="1225-2aa4-ae57-1e12" publicationId="9813-8e60-542d-9381" page="51">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
@@ -984,9 +1119,11 @@
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="UF-6400 Mass Driver Turrets" hidden="false" id="b3b8-b0f1-9e79-a832" type="selectionEntry" targetId="24ef-131a-f7ce-85bd" sortIndex="1"/>
-            <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="8f47-9501-b704-6034" type="selectionEntry" targetId="e3cc-ed50-4435-2a87" sortIndex="2"/>
-            <entryLink import="true" name="Drop Pods" hidden="false" id="fac5-1ee8-3436-c03e" type="selectionEntry" targetId="f91a-73e2-1d0a-6ff1" sortIndex="3"/>
-            <entryLink import="true" name="Bulk Landers" hidden="false" id="d984-5abc-cedf-f68b" type="selectionEntry" targetId="18b9-de5b-35be-c1d3" sortIndex="4"/>
+            <entryLink import="true" name="Laser Refit" hidden="false" id="8f47-9501-b704-6034" type="selectionEntryGroup" targetId="1cae-3b48-d446-10f7" sortIndex="2"/>
+            <entryLink import="true" name="Drop Pods" hidden="false" id="fac5-1ee8-3436-c03e" type="selectionEntry" targetId="f91a-73e2-1d0a-6ff1" sortIndex="4"/>
+            <entryLink import="true" name="Bulk Landers" hidden="false" id="d984-5abc-cedf-f68b" type="selectionEntry" targetId="18b9-de5b-35be-c1d3" sortIndex="3"/>
+            <entryLink import="true" name="Boarding Pods" hidden="false" id="6b47-c59a-722d-e297" type="selectionEntry" targetId="1a84-70a6-1f42-aa28" sortIndex="5"/>
+            <entryLink import="true" name="Drive Refit" hidden="false" id="a270-ae1d-b251-b0e9" type="selectionEntry" targetId="282b-d9a0-5864-b290"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -997,12 +1134,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="9ec3-9992-7fc7-ac98" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hanoi Battleship" hidden="false" id="9547-6acd-a3b0-7149" publicationId="9813-8e60-542d-9381" page="49">
+        <selectionEntry type="model" import="true" name="Hanoi Battleship" hidden="false" id="9547-6acd-a3b0-7149" publicationId="9813-8e60-542d-9381" page="50">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="afda-85ec-e013-0a81" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Hanoi" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d645-05a7-f475-d031" publicationId="9813-8e60-542d-9381" page="49">
+            <profile name="Hanoi" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d645-05a7-f475-d031" publicationId="9813-8e60-542d-9381" page="50">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
@@ -1025,7 +1162,8 @@
           </constraints>
           <entryLinks>
             <entryLink import="true" name="UF-12000 Twin Mass Driver" hidden="false" id="1029-1d38-4856-9200" type="selectionEntry" targetId="728d-cebe-832c-6151" sortIndex="1"/>
-            <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="1150-c48e-d6ce-5f30" type="selectionEntry" targetId="e3cc-ed50-4435-2a87" sortIndex="2"/>
+            <entryLink import="true" name="Laser Refit" hidden="false" id="1150-c48e-d6ce-5f30" type="selectionEntryGroup" targetId="1cae-3b48-d446-10f7" sortIndex="2"/>
+            <entryLink import="true" name="Drive Refit" hidden="false" id="2aa4-e315-ca66-25af" type="selectionEntry" targetId="282b-d9a0-5864-b290"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1036,12 +1174,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="89a3-079e-ed77-aadc" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Tokyo Battleship" hidden="false" id="bfa8-326e-6baa-8c22" publicationId="9813-8e60-542d-9381" page="48">
+        <selectionEntry type="model" import="true" name="Tokyo Battleship" hidden="false" id="bfa8-326e-6baa-8c22" publicationId="9813-8e60-542d-9381" page="49">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="a21d-b040-0545-f8bb" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Tokyo" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="32cf-f50f-80cc-824d" publicationId="9813-8e60-542d-9381" page="48">
+            <profile name="Tokyo" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="32cf-f50f-80cc-824d" publicationId="9813-8e60-542d-9381" page="49">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
@@ -1065,7 +1203,8 @@
           <entryLinks>
             <entryLink import="true" name="Python Super Heavy Laser" hidden="false" id="76f3-c500-cccc-a527" type="selectionEntry" targetId="d53e-0373-c6d3-d548" sortIndex="1"/>
             <entryLink import="true" name="UF-B-8000 Bombardment Turrets" hidden="false" id="e2bc-ac83-4d5f-b862" type="selectionEntry" targetId="a682-7a31-5652-bb18" sortIndex="2"/>
-            <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="5864-fec3-8eef-f8c1" type="selectionEntry" targetId="e3cc-ed50-4435-2a87" sortIndex="3"/>
+            <entryLink import="true" name="Laser Refit" hidden="false" id="5864-fec3-8eef-f8c1" type="selectionEntryGroup" targetId="1cae-3b48-d446-10f7" sortIndex="3"/>
+            <entryLink import="true" name="Drive Refit" hidden="false" id="c619-9bc3-1a28-dee5" type="selectionEntry" targetId="282b-d9a0-5864-b290"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1076,12 +1215,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="bb6b-145f-aa4e-534d" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="New York Battleship" hidden="false" id="2b00-cb51-ae94-5a7a" publicationId="9813-8e60-542d-9381" page="47">
+        <selectionEntry type="model" import="true" name="New York Battleship" hidden="false" id="2b00-cb51-ae94-5a7a" publicationId="9813-8e60-542d-9381" page="46">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="3dbe-0ad2-5ae6-7da4" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="New York" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c3ea-1aed-c1b4-bf56" publicationId="9813-8e60-542d-9381" page="47">
+            <profile name="New York" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c3ea-1aed-c1b4-bf56" publicationId="9813-8e60-542d-9381" page="46">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
@@ -1103,9 +1242,10 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fc6-82a8-8ab1-5946" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="c109-f75d-8b42-fb6a" type="selectionEntry" targetId="e3cc-ed50-4435-2a87" sortIndex="1"/>
+            <entryLink import="true" name="Laser Refit" hidden="false" id="c109-f75d-8b42-fb6a" type="selectionEntryGroup" targetId="1cae-3b48-d446-10f7" sortIndex="1"/>
             <entryLink import="true" name="Medium Torpedo" hidden="false" id="36ef-1f28-34c8-7ba7" type="selectionEntry" targetId="1ac0-a1aa-8566-6c8e" sortIndex="2"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="a41c-125e-2200-19ef" type="selectionEntry" targetId="b67c-66bb-bb24-0ffc" sortIndex="3"/>
+            <entryLink import="true" name="Drive Refit" hidden="false" id="c108-a5b3-343c-d440" type="selectionEntry" targetId="282b-d9a0-5864-b290"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1116,12 +1256,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="2d7f-c5cf-5c71-3873" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Beijing Battleship" hidden="false" id="39b3-7894-8d8d-4f6b" publicationId="9813-8e60-542d-9381" page="46">
+        <selectionEntry type="model" import="true" name="Beijing Battleship" hidden="false" id="39b3-7894-8d8d-4f6b" publicationId="9813-8e60-542d-9381" page="47">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="bd2c-3b9e-3354-0829" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Beijing" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e611-1bf8-dfd0-f200" publicationId="9813-8e60-542d-9381" page="46">
+            <profile name="Beijing" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e611-1bf8-dfd0-f200" publicationId="9813-8e60-542d-9381" page="47">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
@@ -1145,7 +1285,8 @@
           <entryLinks>
             <entryLink import="true" name="Python Super Heavy Laser" hidden="false" id="6305-bbed-07ae-e49b" type="selectionEntry" targetId="d53e-0373-c6d3-d548" sortIndex="1"/>
             <entryLink import="true" name="UF-6400 Mass Driver Turret Triad" hidden="false" id="16f4-baef-3722-00c6" type="selectionEntry" targetId="58c9-a95a-e442-2f10" sortIndex="2"/>
-            <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="9492-9b3b-95a5-26de" type="selectionEntry" targetId="e3cc-ed50-4435-2a87" sortIndex="3"/>
+            <entryLink import="true" name="Laser Refit" hidden="false" id="9492-9b3b-95a5-26de" type="selectionEntryGroup" targetId="1cae-3b48-d446-10f7" sortIndex="3"/>
+            <entryLink import="true" name="Drive Refit" hidden="false" id="a99b-6554-a398-1997" type="selectionEntry" targetId="282b-d9a0-5864-b290"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1156,12 +1297,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="560d-2ec8-d88d-382a" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Venice Command Battlecruiser" hidden="false" id="00e5-db59-2db8-4f45" publicationId="9813-8e60-542d-9381" page="45">
+        <selectionEntry type="model" import="true" name="Venice Command Battlecruiser" hidden="false" id="00e5-db59-2db8-4f45" publicationId="9813-8e60-542d-9381" page="46">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="be80-dc33-530f-12f8" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Venice" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="56ca-7d6d-892e-6849" publicationId="9813-8e60-542d-9381" page="45">
+            <profile name="Venice" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="56ca-7d6d-892e-6849" publicationId="9813-8e60-542d-9381" page="46">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1199,12 +1340,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="4669-d441-0d85-dd93" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Rome Battlecruiser" hidden="false" id="cfed-c699-802c-6d59" publicationId="9813-8e60-542d-9381" page="44">
+        <selectionEntry type="model" import="true" name="Rome Battlecruiser" hidden="false" id="cfed-c699-802c-6d59" publicationId="9813-8e60-542d-9381" page="45">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="91c8-2242-a502-2470" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Rome" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="3d6c-6bb1-6a7f-5b8a" publicationId="9813-8e60-542d-9381" page="44">
+            <profile name="Rome" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="3d6c-6bb1-6a7f-5b8a" publicationId="9813-8e60-542d-9381" page="45">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1241,12 +1382,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="a9cd-ea3c-3188-18c8" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Perth Battlecruiser" hidden="false" id="b468-8c8f-5d76-c8d2" publicationId="9813-8e60-542d-9381" page="43">
+        <selectionEntry type="model" import="true" name="Perth Battlecruiser" hidden="false" id="b468-8c8f-5d76-c8d2" publicationId="9813-8e60-542d-9381" page="44">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="ed84-6b3b-a651-683d" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Perth" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="aec9-b58d-801a-d599" publicationId="9813-8e60-542d-9381" page="43">
+            <profile name="Perth" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="aec9-b58d-801a-d599" publicationId="9813-8e60-542d-9381" page="44">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1280,12 +1421,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="8ecb-6cae-dfc8-cb11" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Johannesburg Battlecruiser" hidden="false" id="f240-6c84-c8a8-d2a1" publicationId="9813-8e60-542d-9381" page="42">
+        <selectionEntry type="model" import="true" name="Johannesburg Battlecruiser" hidden="false" id="f240-6c84-c8a8-d2a1" publicationId="9813-8e60-542d-9381" page="43">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="7c37-1a72-df81-febe" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Johannesburg" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7883-4445-7bc3-3ee5" publicationId="9813-8e60-542d-9381" page="42">
+            <profile name="Johannesburg" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7883-4445-7bc3-3ee5" publicationId="9813-8e60-542d-9381" page="43">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1320,12 +1461,12 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="4f60-cf5c-f680-f9d6" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Las Vegas Command Carrier" hidden="false" id="567c-810c-be20-34bc" page="41" publicationId="9813-8e60-542d-9381">
+        <selectionEntry type="model" import="true" name="Las Vegas Command Carrier" hidden="false" id="567c-810c-be20-34bc" page="42" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="6e40-4c2a-d2d8-c6c1" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Las Vegas" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="2893-908e-70a2-dcdc" publicationId="9813-8e60-542d-9381" page="41">
+            <profile name="Las Vegas" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="2893-908e-70a2-dcdc" publicationId="9813-8e60-542d-9381" page="42">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
@@ -1364,12 +1505,12 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="7249-0fbc-930b-b3ce" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Edmonton Heavy Carrier" hidden="false" id="424a-0edc-26c2-c24f" publicationId="9813-8e60-542d-9381" page="40">
+        <selectionEntry type="model" import="true" name="Edmonton Heavy Carrier" hidden="false" id="424a-0edc-26c2-c24f" publicationId="9813-8e60-542d-9381" page="41">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="7e72-cb28-80e4-b47e" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Edmonton" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="55e1-c108-dbb4-6bcd" publicationId="9813-8e60-542d-9381" page="40">
+            <profile name="Edmonton" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="55e1-c108-dbb4-6bcd" publicationId="9813-8e60-542d-9381" page="41">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1404,12 +1545,12 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="96de-b57e-21c0-d362" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Vilnius Heavy Cruiser" hidden="false" id="8bd5-9def-5ab3-8f12" publicationId="9813-8e60-542d-9381" page="39">
+        <selectionEntry type="model" import="true" name="Vilnius Heavy Cruiser" hidden="false" id="8bd5-9def-5ab3-8f12" publicationId="9813-8e60-542d-9381" page="40">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="dca7-6632-6175-c1d6" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Vilnius" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7c09-6970-2cd2-d212" publicationId="9813-8e60-542d-9381" page="39">
+            <profile name="Vilnius" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7c09-6970-2cd2-d212" publicationId="9813-8e60-542d-9381" page="40">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1443,12 +1584,12 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="0752-c8f5-ff53-6abb" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Warsaw Heavy Cruiser" hidden="false" id="ad08-ca42-0895-17bb" publicationId="9813-8e60-542d-9381" page="38">
+        <selectionEntry type="model" import="true" name="Warsaw Heavy Cruiser" hidden="false" id="ad08-ca42-0895-17bb" publicationId="9813-8e60-542d-9381" page="39">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="1f8c-e809-d814-f5d7" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Warsaw" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="de29-d1a2-0b5b-c51a" publicationId="9813-8e60-542d-9381" page="38">
+            <profile name="Warsaw" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="de29-d1a2-0b5b-c51a" publicationId="9813-8e60-542d-9381" page="39">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1482,12 +1623,12 @@
         <categoryLink targetId="default-category" id="cf1f-eb06-3f70-6eaa" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="San Francisco Troopship" hidden="false" id="e3ba-f676-455c-ee99" publicationId="9813-8e60-542d-9381" page="37">
+        <selectionEntry type="model" import="true" name="San Francisco Troopship" hidden="false" id="e3ba-f676-455c-ee99" publicationId="9813-8e60-542d-9381" page="38">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="72de-0ea4-52d6-0c28" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="San Francisco" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="669a-6804-ff8e-b5ca" publicationId="9813-8e60-542d-9381" page="37">
+            <profile name="San Francisco" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="669a-6804-ff8e-b5ca" publicationId="9813-8e60-542d-9381" page="38">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1521,12 +1662,12 @@
         <categoryLink targetId="default-category" id="5918-2cb7-3069-2760" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="New Mombasa Vanguard Carrier" hidden="false" id="40b4-cfba-de7e-759a" publicationId="9813-8e60-542d-9381" page="36">
+        <selectionEntry type="model" import="true" name="New Mombasa Vanguard Carrier" hidden="false" id="40b4-cfba-de7e-759a" publicationId="9813-8e60-542d-9381" page="37">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="daab-8b4b-a1f6-754b" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="New Mombasa" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="28ed-3a90-1e79-67f2" publicationId="9813-8e60-542d-9381" page="36">
+            <profile name="New Mombasa" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="28ed-3a90-1e79-67f2" publicationId="9813-8e60-542d-9381" page="37">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1561,12 +1702,12 @@
         <categoryLink targetId="default-category" id="9184-316d-171b-5e85" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Seattle Fleet Carrier" hidden="false" id="fbd1-2dcf-2ed6-37b5" publicationId="9813-8e60-542d-9381" page="35">
+        <selectionEntry type="model" import="true" name="Seattle Fleet Carrier" hidden="false" id="fbd1-2dcf-2ed6-37b5" publicationId="9813-8e60-542d-9381" page="36">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="f097-41a1-b474-0add" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Seattle" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c7e9-5a62-1577-2a7e" publicationId="9813-8e60-542d-9381" page="35">
+            <profile name="Seattle" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c7e9-5a62-1577-2a7e" publicationId="9813-8e60-542d-9381" page="36">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1600,12 +1741,12 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="d76a-312c-f90b-645d" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Geneva Command Cruiser" hidden="false" id="a055-382a-90ac-1cd0" page="34" publicationId="9813-8e60-542d-9381">
+        <selectionEntry type="model" import="true" name="Geneva Command Cruiser" hidden="false" id="a055-382a-90ac-1cd0" page="35" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="d00b-8dae-3ebc-74d4" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Geneva" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="52ff-0b21-ea72-c2d1" publicationId="9813-8e60-542d-9381" page="34">
+            <profile name="Geneva" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="52ff-0b21-ea72-c2d1" publicationId="9813-8e60-542d-9381" page="35">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
@@ -1643,12 +1784,12 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="b29a-7d1c-53aa-4a88" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Glasgow Cruiser" hidden="false" id="7108-6c3b-a26e-d9d0" page="33" publicationId="9813-8e60-542d-9381">
+        <selectionEntry type="model" import="true" name="Glasgow Cruiser" hidden="false" id="7108-6c3b-a26e-d9d0" page="34" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="c6d4-45af-52e5-f925" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Glasgow" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9c96-a7d7-29a8-9212" publicationId="9813-8e60-542d-9381" page="33">
+            <profile name="Glasgow" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9c96-a7d7-29a8-9212" publicationId="9813-8e60-542d-9381" page="34">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1702,12 +1843,12 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Bucharest Cruiser" hidden="false" id="4920-d528-a837-6cc3" page="32" publicationId="9813-8e60-542d-9381">
+        <selectionEntry type="model" import="true" name="Bucharest Cruiser" hidden="false" id="4920-d528-a837-6cc3" page="33" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="6595-a31d-4eaf-55c9" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Bucharest" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7454-64bf-4680-1350" publicationId="9813-8e60-542d-9381" page="32">
+            <profile name="Bucharest" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7454-64bf-4680-1350" publicationId="9813-8e60-542d-9381" page="33">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1765,12 +1906,12 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Ulaanbaatar Cruiser" hidden="false" id="1420-661d-f5ba-e8a4" page="31" publicationId="9813-8e60-542d-9381">
+        <selectionEntry type="model" import="true" name="Ulaanbaatar Cruiser" hidden="false" id="1420-661d-f5ba-e8a4" page="32" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="5adf-bec0-7ca4-922d" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Ulaanbaatar" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="aaec-fbda-bce6-fedf" publicationId="9813-8e60-542d-9381" page="31">
+            <profile name="Ulaanbaatar" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="aaec-fbda-bce6-fedf" publicationId="9813-8e60-542d-9381" page="32">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1808,12 +1949,12 @@
         <categoryLink targetId="default-category" id="39ac-a0ac-7b28-a4cc" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Bruges Cruiser" hidden="false" id="35fc-69db-2edd-c87d" publicationId="9813-8e60-542d-9381" page="30">
+        <selectionEntry type="model" import="true" name="Bruges Cruiser" hidden="false" id="35fc-69db-2edd-c87d" publicationId="9813-8e60-542d-9381" page="31">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="cf60-46ab-ed34-4738" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Bruges" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="a6e1-c0db-ae34-1d8b" publicationId="9813-8e60-542d-9381" page="30">
+            <profile name="Bruges" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="a6e1-c0db-ae34-1d8b" publicationId="9813-8e60-542d-9381" page="31">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1847,12 +1988,12 @@
         <categoryLink targetId="default-category" id="593b-2b8e-eb9e-b7eb" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Madrid Cruiser" hidden="false" id="77ed-3527-ad3a-1233" publicationId="9813-8e60-542d-9381" page="29">
+        <selectionEntry type="model" import="true" name="Madrid Cruiser" hidden="false" id="77ed-3527-ad3a-1233" publicationId="9813-8e60-542d-9381" page="30">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="1e3c-c5a0-ab5b-588b" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Madrid" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0b91-9bdf-5c22-babc" publicationId="9813-8e60-542d-9381" page="29">
+            <profile name="Madrid" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0b91-9bdf-5c22-babc" publicationId="9813-8e60-542d-9381" page="30">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1886,12 +2027,12 @@
         <categoryLink targetId="default-category" id="c054-ee62-f8ab-5d23" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Berlin Cruiser" hidden="false" id="3715-6721-2c77-9483" publicationId="9813-8e60-542d-9381" page="28">
+        <selectionEntry type="model" import="true" name="Berlin Cruiser" hidden="false" id="3715-6721-2c77-9483" publicationId="9813-8e60-542d-9381" page="29">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="172d-eabc-518f-894f" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Berlin" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0d1c-bd51-a927-3fa0" publicationId="9813-8e60-542d-9381" page="28">
+            <profile name="Berlin" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0d1c-bd51-a927-3fa0" publicationId="9813-8e60-542d-9381" page="29">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1925,12 +2066,12 @@
         <categoryLink targetId="default-category" id="72b0-e0c1-2208-853a" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Rio Cruiser" hidden="false" id="6731-8ebd-9fde-711b" publicationId="9813-8e60-542d-9381" page="27">
+        <selectionEntry type="model" import="true" name="Rio Cruiser" hidden="false" id="6731-8ebd-9fde-711b" publicationId="9813-8e60-542d-9381" page="28">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="fbb4-b90b-6c7a-b2ea" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Rio" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="8838-131f-0775-6181" publicationId="9813-8e60-542d-9381" page="27">
+            <profile name="Rio" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="8838-131f-0775-6181" publicationId="9813-8e60-542d-9381" page="28">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1964,12 +2105,12 @@
         <categoryLink targetId="default-category" id="bc3d-b387-b577-2b23" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Boston Light Cruiser" hidden="false" id="bf74-acd4-ff0f-f50c" publicationId="9813-8e60-542d-9381" page="26">
+        <selectionEntry type="model" import="true" name="Boston Light Cruiser" hidden="false" id="bf74-acd4-ff0f-f50c" publicationId="9813-8e60-542d-9381" page="27">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="8a27-de4e-bd11-7650" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Boston" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="ba7b-fa84-6bfb-8a9a" publicationId="9813-8e60-542d-9381" page="26">
+            <profile name="Boston" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="ba7b-fa84-6bfb-8a9a" publicationId="9813-8e60-542d-9381" page="27">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2003,12 +2144,12 @@
         <categoryLink targetId="default-category" id="4b69-dc75-291a-dacc" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="New Cairo Light Cruiser" hidden="false" id="5181-ca5a-7ad6-e28a" publicationId="9813-8e60-542d-9381" page="25">
+        <selectionEntry type="model" import="true" name="New Cairo Light Cruiser" hidden="false" id="5181-ca5a-7ad6-e28a" publicationId="9813-8e60-542d-9381" page="26">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="e288-1a2d-f046-0ab4" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="New Cairo" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d918-c0ca-50eb-867a" publicationId="9813-8e60-542d-9381" page="25">
+            <profile name="New Cairo" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d918-c0ca-50eb-867a" publicationId="9813-8e60-542d-9381" page="26">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2041,12 +2182,12 @@
         <categoryLink targetId="default-category" id="d25f-a587-040e-8bca" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Osaka Light Cruiser" hidden="false" id="f356-9e8d-929e-e577" publicationId="9813-8e60-542d-9381" page="24">
+        <selectionEntry type="model" import="true" name="Osaka Light Cruiser" hidden="false" id="f356-9e8d-929e-e577" publicationId="9813-8e60-542d-9381" page="25">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="e5cf-1dd6-db8c-32ab" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Osaka" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="80c8-0d7f-f909-ee8e" publicationId="9813-8e60-542d-9381" page="24">
+            <profile name="Osaka" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="80c8-0d7f-f909-ee8e" publicationId="9813-8e60-542d-9381" page="25">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2079,12 +2220,12 @@
         <categoryLink targetId="default-category" id="b519-13e0-7047-31ed" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Caracas Heavy Destroyer" hidden="false" id="5696-f619-5f0e-dbbd" publicationId="9813-8e60-542d-9381" page="23">
+        <selectionEntry type="model" import="true" name="Caracas Heavy Destroyer" hidden="false" id="5696-f619-5f0e-dbbd" publicationId="9813-8e60-542d-9381" page="24">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="fe5a-7623-f5d9-160c" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Caracas" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5400-0ea6-fba9-0eef" publicationId="9813-8e60-542d-9381" page="23">
+            <profile name="Caracas" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5400-0ea6-fba9-0eef" publicationId="9813-8e60-542d-9381" page="24">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2118,12 +2259,12 @@
         <categoryLink targetId="default-category" id="3366-9acb-5a77-7ce6" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Kyiv Heavy Destroyer" hidden="false" id="35be-c6df-e319-6d83" publicationId="9813-8e60-542d-9381" page="22">
+        <selectionEntry type="model" import="true" name="Kyiv Heavy Destroyer" hidden="false" id="35be-c6df-e319-6d83" publicationId="9813-8e60-542d-9381" page="23">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="39e3-94b6-750b-68e4" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Kyiv" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="62c5-d987-efbf-94f7" publicationId="9813-8e60-542d-9381" page="22">
+            <profile name="Kyiv" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="62c5-d987-efbf-94f7" publicationId="9813-8e60-542d-9381" page="23">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2156,12 +2297,12 @@
         <categoryLink targetId="default-category" id="80f4-52ca-4a61-78e3" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Vancouver Escort Carrier" hidden="false" id="20c7-6248-2592-ae2a" publicationId="9813-8e60-542d-9381" page="21">
+        <selectionEntry type="model" import="true" name="Vancouver Escort Carrier" hidden="false" id="20c7-6248-2592-ae2a" publicationId="9813-8e60-542d-9381" page="22">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="1760-362e-6990-8cad" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Vancouver" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c00d-b215-c3a4-7d76" publicationId="9813-8e60-542d-9381" page="21">
+            <profile name="Vancouver" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c00d-b215-c3a4-7d76" publicationId="9813-8e60-542d-9381" page="22">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2218,12 +2359,12 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Havana Destroyer" hidden="false" id="7fc3-c87e-3302-d5b5" publicationId="9813-8e60-542d-9381" page="20">
+        <selectionEntry type="model" import="true" name="Havana Destroyer" hidden="false" id="7fc3-c87e-3302-d5b5" publicationId="9813-8e60-542d-9381" page="21">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="6d76-35b3-f10b-121e" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Havana" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="bc24-e632-9c8d-1b0c" publicationId="9813-8e60-542d-9381" page="20">
+            <profile name="Havana" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="bc24-e632-9c8d-1b0c" publicationId="9813-8e60-542d-9381" page="21">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2260,12 +2401,12 @@
         <categoryLink targetId="default-category" id="42b9-de1a-7be0-69b5" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Oslo Cutter" hidden="false" id="fd86-229b-3839-f43e" publicationId="9813-8e60-542d-9381" page="19">
+        <selectionEntry type="model" import="true" name="Oslo Cutter" hidden="false" id="fd86-229b-3839-f43e" publicationId="9813-8e60-542d-9381" page="20">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="7d6b-09d8-2e15-cd72" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Oslo" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4345-b626-f43e-69fd" publicationId="9813-8e60-542d-9381" page="19">
+            <profile name="Oslo" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4345-b626-f43e-69fd" publicationId="9813-8e60-542d-9381" page="20">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2321,12 +2462,12 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Nuuk EM Harasser" hidden="false" id="a722-3ad2-8894-44cb" publicationId="9813-8e60-542d-9381" page="18">
+        <selectionEntry type="model" import="true" name="Nuuk EM Harasser" hidden="false" id="a722-3ad2-8894-44cb" publicationId="9813-8e60-542d-9381" page="19">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="4ad9-a7a6-4972-0a55" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Nuuk" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c53a-d2e6-d07d-270c" publicationId="9813-8e60-542d-9381" page="18">
+            <profile name="Nuuk" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c53a-d2e6-d07d-270c" publicationId="9813-8e60-542d-9381" page="19">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2363,12 +2504,12 @@
         <categoryLink targetId="default-category" id="3852-60bc-4a1a-7be2" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Reykjavik Cutter" hidden="false" id="088e-9741-d5e5-0b77" publicationId="9813-8e60-542d-9381" page="17">
+        <selectionEntry type="model" import="true" name="Reykjavik Cutter" hidden="false" id="088e-9741-d5e5-0b77" publicationId="9813-8e60-542d-9381" page="18">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="145b-c193-0149-32f0" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Reykjavik" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7787-5e2a-1765-e0d7" publicationId="9813-8e60-542d-9381" page="17">
+            <profile name="Reykjavik" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7787-5e2a-1765-e0d7" publicationId="9813-8e60-542d-9381" page="18">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2404,12 +2545,12 @@
         <categoryLink targetId="default-category" id="df97-a89a-e8c9-7532" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Vienna Escort Frigate" hidden="false" id="7f03-6934-bc81-9e3e" publicationId="9813-8e60-542d-9381" page="16">
+        <selectionEntry type="model" import="true" name="Vienna Escort Frigate" hidden="false" id="7f03-6934-bc81-9e3e" publicationId="9813-8e60-542d-9381" page="17">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="481b-c413-b4db-b53a" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Vienna" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="88df-863c-643e-84dd" publicationId="9813-8e60-542d-9381" page="16">
+            <profile name="Vienna" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="88df-863c-643e-84dd" publicationId="9813-8e60-542d-9381" page="17">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2446,12 +2587,12 @@
         <categoryLink targetId="default-category" id="9484-0c9f-8ef9-7c99" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Istanbul Monitor" hidden="false" id="bc46-5686-a3ce-b978" publicationId="9813-8e60-542d-9381" page="15">
+        <selectionEntry type="model" import="true" name="Istanbul Monitor" hidden="false" id="bc46-5686-a3ce-b978" publicationId="9813-8e60-542d-9381" page="16">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="d72b-0c0c-b504-1ab9" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Istanbul" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7341-ef72-d948-c0e9" publicationId="9813-8e60-542d-9381" page="15">
+            <profile name="Istanbul" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7341-ef72-d948-c0e9" publicationId="9813-8e60-542d-9381" page="16">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2487,12 +2628,12 @@
         <categoryLink targetId="default-category" id="7369-6090-6830-0a96" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Detroit Heavy Frigate" hidden="false" id="21f9-9a17-47c9-12d0" publicationId="9813-8e60-542d-9381" page="14">
+        <selectionEntry type="model" import="true" name="Detroit Heavy Frigate" hidden="false" id="21f9-9a17-47c9-12d0" publicationId="9813-8e60-542d-9381" page="15">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="aa58-6419-f0f6-158c" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Detroit" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="340b-cc4a-5944-3942" publicationId="9813-8e60-542d-9381" page="14">
+            <profile name="Detroit" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="340b-cc4a-5944-3942" publicationId="9813-8e60-542d-9381" page="15">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2526,12 +2667,12 @@
         <categoryLink targetId="default-category" id="f796-8c24-4314-5aea" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Sheffield Heavy Frigate" hidden="false" id="cf66-e241-f4c7-70be" publicationId="9813-8e60-542d-9381" page="13">
+        <selectionEntry type="model" import="true" name="Sheffield Heavy Frigate" hidden="false" id="cf66-e241-f4c7-70be" publicationId="9813-8e60-542d-9381" page="14">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="249c-f77b-3a41-e1e0" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Sheffield" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="90dc-9afc-041c-b446" publicationId="9813-8e60-542d-9381" page="13">
+            <profile name="Sheffield" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="90dc-9afc-041c-b446" publicationId="9813-8e60-542d-9381" page="14">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2565,12 +2706,12 @@
         <categoryLink targetId="default-category" id="3960-60a8-b34f-f15f" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="New Orleans Strike Carrier" hidden="false" id="6deb-1a15-94d6-649c" publicationId="9813-8e60-542d-9381" page="12">
+        <selectionEntry type="model" import="true" name="New Orleans Strike Carrier" hidden="false" id="6deb-1a15-94d6-649c" publicationId="9813-8e60-542d-9381" page="13">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="af15-6884-4874-f8a1" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="New Orleans" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="018b-e2a8-6bef-2091" publicationId="9813-8e60-542d-9381" page="12">
+            <profile name="New Orleans" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="018b-e2a8-6bef-2091" publicationId="9813-8e60-542d-9381" page="13">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2627,12 +2768,12 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Lima Detector Frigate" hidden="false" id="8f61-5638-0c1d-9bd7" publicationId="9813-8e60-542d-9381" page="11">
+        <selectionEntry type="model" import="true" name="Lima Detector Frigate" hidden="false" id="8f61-5638-0c1d-9bd7" publicationId="9813-8e60-542d-9381" page="12">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="71be-f592-504d-981d" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Lima" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9d6d-a91e-9262-5cd8" publicationId="9813-8e60-542d-9381" page="11">
+            <profile name="Lima" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9d6d-a91e-9262-5cd8" publicationId="9813-8e60-542d-9381" page="12">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2669,12 +2810,12 @@
         <categoryLink targetId="default-category" id="5425-b606-f176-9d98" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Jakarta Aegis Frigate" hidden="false" id="6f93-d40e-074d-e7cc" publicationId="9813-8e60-542d-9381" page="10">
+        <selectionEntry type="model" import="true" name="Jakarta Aegis Frigate" hidden="false" id="6f93-d40e-074d-e7cc" publicationId="9813-8e60-542d-9381" page="11">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="cd69-7f23-a25d-ea3e" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Jakarta" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b849-b2de-ebcb-d99e" publicationId="9813-8e60-542d-9381" page="10">
+            <profile name="Jakarta" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b849-b2de-ebcb-d99e" publicationId="9813-8e60-542d-9381" page="11">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2710,12 +2851,12 @@
         <categoryLink targetId="default-category" id="48c9-58cf-9d33-09c0" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Taipei Missile Frigate" hidden="false" id="02b8-150d-95ee-cae7" publicationId="9813-8e60-542d-9381" page="9">
+        <selectionEntry type="model" import="true" name="Taipei Missile Frigate" hidden="false" id="02b8-150d-95ee-cae7" publicationId="9813-8e60-542d-9381" page="10">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="cf5a-f085-3edb-0191" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Taipei" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="153e-f0fb-33e0-e785" publicationId="9813-8e60-542d-9381" page="9">
+            <profile name="Taipei" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="153e-f0fb-33e0-e785" publicationId="9813-8e60-542d-9381" page="10">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2749,12 +2890,12 @@
         <categoryLink targetId="default-category" id="1ce4-107f-57e4-04c3" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Toulon Frigate" hidden="false" id="0b60-3521-b4ca-6711" publicationId="9813-8e60-542d-9381" page="8">
+        <selectionEntry type="model" import="true" name="Toulon Frigate" hidden="false" id="0b60-3521-b4ca-6711" publicationId="9813-8e60-542d-9381" page="9">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="4f2f-3b75-eff1-edd4" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Toulon" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5e57-4df7-8ce2-2f18" publicationId="9813-8e60-542d-9381" page="8">
+            <profile name="Toulon" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5e57-4df7-8ce2-2f18" publicationId="9813-8e60-542d-9381" page="9">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2807,12 +2948,12 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Lysander Stealth Lighter" hidden="false" id="364a-f59e-23ac-37de" publicationId="9813-8e60-542d-9381" page="7">
+        <selectionEntry type="model" import="true" name="Lysander Stealth Lighter" hidden="false" id="364a-f59e-23ac-37de" publicationId="9813-8e60-542d-9381" page="8">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="83b0-d47a-e886-febf" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Lysander" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7375-2a59-7de3-b771" publicationId="9813-8e60-542d-9381" page="7">
+            <profile name="Lysander" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7375-2a59-7de3-b771" publicationId="9813-8e60-542d-9381" page="8">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2851,12 +2992,12 @@
         <categoryLink targetId="default-category" id="7d62-0d46-063b-4084" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Santiago Corvette" hidden="false" id="4c97-1c8e-e3a9-ad0c" publicationId="9813-8e60-542d-9381" page="6">
+        <selectionEntry type="model" import="true" name="Santiago Corvette" hidden="false" id="4c97-1c8e-e3a9-ad0c" publicationId="9813-8e60-542d-9381" page="7">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="04ea-3828-c362-3a3b" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Santiago" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="ce81-292c-9789-5212" publicationId="9813-8e60-542d-9381" page="6">
+            <profile name="Santiago" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="ce81-292c-9789-5212" publicationId="9813-8e60-542d-9381" page="7">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2910,7 +3051,7 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0438-cdf0-bd33-d7ef" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d787-ca5c-e102-7be8" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 6/3+/2/E Bl-2 BT-2 Fl-1 Foc</comment>
+      <comment>FN 5/3+/2/E Bl-2 BT-2 Fl-1 Foc</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Viper Super Heavy Laser" hidden="false" id="5f7b-3797-3168-219b">
       <profiles>
@@ -3115,7 +3256,7 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9eeb-398d-3dc5-853d" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a90a-2ca4-f49f-9475" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 2/2+/4/K Crip</comment>
+      <comment>FN 2/2+/4/C Crip</comment>
       <infoLinks>
         <infoLink name="Crippling-X" id="a1d4-85f2-a437-cc54" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
       </infoLinks>
@@ -3411,7 +3552,7 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bddc-7326-8bcf-0bc8" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0c5-3826-81e9-4cdb" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S/R 9/4+/1/K Bmb Sc-1</comment>
+      <comment>F/S/R 12/4+/1/K Bmb Sc-1</comment>
       <infoLinks>
         <infoLink name="Bombardment" id="ee41-982a-685e-67f2" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
         <infoLink name="Scald-X" id="eb96-2b85-2f73-39ba" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
@@ -3689,6 +3830,24 @@
       </constraints>
       <comment>6</comment>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="c0db-56ff-db29-5f8a">
+      <profiles>
+        <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="d990-25f2-027f-402d">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">6</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Alt-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6977-79b9-898e-7c87" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9a3-f8f5-3120-1247" includeChildSelections="false"/>
+      </constraints>
+      <comment>6 Alt-1</comment>
+      <infoLinks>
+        <infoLink name="Alt-X" id="8500-fd61-5256-4e90" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="b67c-66bb-bb24-0ffc">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="a294-c5ce-9416-8d72">
@@ -3703,6 +3862,24 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9dc-ed6c-0a5b-67bd" includeChildSelections="false"/>
       </constraints>
       <comment>4</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="f206-27fd-c5f5-34aa">
+      <profiles>
+        <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="f375-f0d1-18e9-bf83">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">4</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Alt-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3ac-4398-5961-9851" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80a9-0953-4c5c-7c7d" includeChildSelections="false"/>
+      </constraints>
+      <comment>4 Alt-1</comment>
+      <infoLinks>
+        <infoLink name="Alt-X" id="81b3-9c52-2497-594d" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="ba6a-589a-610d-5df4">
       <profiles>
@@ -3733,6 +3910,42 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e97-d302-a4de-208f" includeChildSelections="false"/>
       </constraints>
       <comment>1</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Bombers" hidden="false" id="8b69-b212-604a-7d8e">
+      <profiles>
+        <profile name="Heavy Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="8090-bed6-fd90-e496">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">4</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Alt-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8abb-f4f2-64c5-c7d7" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b73a-5185-767a-4b20" includeChildSelections="false"/>
+      </constraints>
+      <comment>4 Alt-1</comment>
+      <infoLinks>
+        <infoLink name="Alt-X" id="7923-63fa-ac60-bd9f" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Bombers" hidden="false" id="6db4-cb9d-ecd7-9762">
+      <profiles>
+        <profile name="Heavy Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="751c-fc8e-6b81-0981">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">3</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Alt-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f8f-d41f-216b-6126" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1435-bf20-377c-6a92" includeChildSelections="false"/>
+      </constraints>
+      <comment>3 Alt-1</comment>
+      <infoLinks>
+        <infoLink name="Alt-X" id="036d-ff5c-eb1d-a899" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="18b9-de5b-35be-c1d3">
       <profiles>
@@ -3781,10 +3994,10 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Drop Pods" hidden="false" id="f91a-73e2-1d0a-6ff1">
       <profiles>
-        <profile name="Dropships" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="81f2-d030-30ad-f108">
+        <profile name="Drop Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="81f2-d030-30ad-f108">
           <characteristics>
             <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
-            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Alt-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3792,7 +4005,48 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5230-a9df-e77a-b4b7" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f27-4545-e1e4-320b" includeChildSelections="false"/>
       </constraints>
-      <comment>2</comment>
+      <comment>2 Alt-1</comment>
+      <infoLinks>
+        <infoLink name="Alt-X" id="606d-ff00-e60e-31e4" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="1a84-70a6-1f42-aa28">
+      <profiles>
+        <profile name="Boarding Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="32a3-3769-0ac6-99cc">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Alt-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bb4-00f1-bb90-ef89" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1a3-44a1-5e29-9a25" includeChildSelections="false"/>
+      </constraints>
+      <comment>2 Alt-1</comment>
+      <infoLinks>
+        <infoLink name="Alt-X" id="2973-cf5a-47dc-ed23" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Equipment -----" hidden="true" id="cf19-6940-d58e-be37"/>
+    <selectionEntry type="upgrade" import="true" name="Drive Refit" hidden="false" id="282b-d9a0-5864-b290">
+      <modifiers>
+        <modifier type="increment" value="3" field="d821-4294-3117-e8a6" affects="profiles.Ship" scope="parent" join=", "/>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff72-ce7e-94fd-2ca7" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Laser Refit" hidden="false" id="a773-89c3-bfbd-b367">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d0c-612e-295e-1765" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -3804,6 +4058,10 @@
     <entryLink import="true" name="Tayne - Warsaw" hidden="false" id="a0c4-6bed-15f4-73d3" targetId="6d3f-389f-1a9c-cdba" type="selectionEntry"/>
     <entryLink import="true" name="Washington Supercarrier" hidden="false" id="af2a-fcc8-bf14-7696" targetId="0129-61bd-271f-de28" type="selectionEntry"/>
     <entryLink import="true" name="London Dreadnought" hidden="false" id="4f52-08ec-a7df-fc01" targetId="1340-f453-5d39-67ef" type="selectionEntry"/>
+    <entryLink import="true" name="Thebes Super Battleship" hidden="false" id="435f-a449-f48f-70ce" targetId="f57f-e917-875a-dba3" type="selectionEntry"/>
+    <entryLink import="true" name="Carthage Super Battleship" hidden="false" id="70d2-d7a8-56bb-81cf" targetId="2c1b-c8a1-018b-6862" type="selectionEntry"/>
+    <entryLink import="true" name="Byzantium Super Battleship" hidden="false" id="ff78-c094-161d-cf99" targetId="1a28-a35d-01f6-2fc2" type="selectionEntry"/>
+    <entryLink import="true" name="Babylon Super Battleship" hidden="false" id="7686-7f62-cca2-955d" targetId="5809-e880-7d4f-d1f2" type="selectionEntry"/>
     <entryLink import="true" name="Delhi Battleship" hidden="false" id="916a-e73e-fe3b-1028" targetId="875a-25cf-eef9-98eb" type="selectionEntry"/>
     <entryLink import="true" name="Hanoi Battleship" hidden="false" id="0fab-ff40-2488-b809" targetId="8e9c-8158-fd48-6c66" type="selectionEntry"/>
     <entryLink import="true" name="Tokyo Battleship" hidden="false" id="4fbf-c205-cd7a-476c" targetId="caa2-0401-d771-d370" type="selectionEntry"/>
@@ -3929,7 +4187,7 @@ Order to Fire (2AP): When you activate another friendly Group in Orbit, pick one
       <description>While this Flagship is within 12” of your opponent’s deployment zone, you may re-roll its failed Backup saves.</description>
     </rule>
     <rule name="Fighter Command" id="83c4-4e63-ad54-d9c7" hidden="false">
-      <description>Fighters &amp; Bombers launched from this ship may be placed up to 8” away instead of 6”.</description>
+      <description>Fighters, Bombers, &amp; Heavy Bombers launched from this ship may be placed up to 8” away instead of 6”.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>
@@ -4025,6 +4283,68 @@ Order to Fire (2AP): When you activate another friendly Group in Orbit, pick one
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Laser Refit" id="1cae-3b48-d446-10f7" hidden="false" flatten="true" defaultSelectionEntryId="a7d7-445a-8b57-df38">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d077-0b34-b1e4-236f" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0d5-4435-29f7-b386" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="a7d7-445a-8b57-df38" flatten="false" sortIndex="1" defaultAmount="1">
+          <entryLinks>
+            <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="a2df-a6c6-d934-ebe7" type="selectionEntry" targetId="e3cc-ed50-4435-2a87"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3779-db8e-d03b-3846"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5737-1145-f508-13a6" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cobra Heavy Laser Pair" hidden="false" id="2de4-d314-f1e7-1793" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8fc3-83b0-aa46-83c9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff3c-deb9-1174-1a03" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Cobra Heavy Laser Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="930f-457f-0edf-44b0">
+              <characteristics>
+                <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+                <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+                <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-2, Flash-2, Focused</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Burnthrough-X" id="8a44-8fd3-31b3-59ba" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+            <infoLink name="Flash-X" id="f8db-46ca-2fdf-6193" hidden="false" type="rule" targetId="9e6d-bb41-7c8b-a3b6"/>
+            <infoLink name="Focused" id="fdba-e0bb-1bb7-1cca" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="15" field="ab32-c9b6-10f3-cbdb">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a9b3-812c-215e-c8f3" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="35e6-a97b-0bc4-a778" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="UF-4200 Mass Driver Turrets" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="35e6-a97b-0bc4-a778" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
