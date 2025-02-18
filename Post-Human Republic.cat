@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="12" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="13" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="66a8-ba07-3fa8-ecf7"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Vizier" hidden="false" id="4d5f-828e-aece-77fe" publicationId="6462-e99b-594c-193a" page="1">
@@ -310,7 +310,7 @@
             </profile>
             <profile name="Heavy Sniper" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4c47-6012-29da-5bda">
               <characteristics>
-                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
                 <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with the Calibre-H special rule, the attacking Ship doubles its Scan value against H Tonnage Ships for that weapon’s attack (other attacks and weapons are unaffected).</characteristic>
               </characteristics>
             </profile>
