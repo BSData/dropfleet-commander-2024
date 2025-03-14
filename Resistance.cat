@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="9" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="10" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (241028)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (241028)"/>
   </publications>
@@ -606,7 +606,7 @@
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a54a-9e94-51ba-27b0"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Lvl 2: Hagen - Tribune" hidden="false" id="cee5-c500-357a-d910" page="">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Hagen - Tribune" hidden="false" id="cee5-c500-357a-d910">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="061e-ddec-a686-e051" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="87e9-c434-7129-ac55" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -762,7 +762,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Lvl 2: Typhoon Vasquez - Heavy Cruiser" hidden="false" id="6839-7d0a-57fd-5ad9" page="">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Typhoon Vasquez - Heavy Cruiser" hidden="false" id="6839-7d0a-57fd-5ad9">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="a5b4-695c-a1c7-12bb" targetId="daa7-4c13-fe75-9281" primary="true"/>
         <categoryLink name="Faction/Famous Admirals" hidden="false" id="03cc-ea38-7afa-50a2" targetId="79f7-4244-6fb7-d41a" primary="false"/>
@@ -3182,8 +3182,8 @@
         <infoLink name="Penetrator" id="a020-8163-06fd-8622" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
       <constraints>
-        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e672-7c4e-1a96-a821-min" includeChildSelections="false"/>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e672-7c4e-1a96-a821-max" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e672-7c4e-1a96-a821-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e672-7c4e-1a96-a821-max" includeChildSelections="false"/>
       </constraints>
       <profiles>
         <profile name="XN-40 “Godray” Orbital Mass Driver" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6530-50e1-5e15-2358">
@@ -3444,10 +3444,10 @@ Telescope tokens are removed at the end of the round.</description>
   <entryLinks>
     <entryLink import="true" name="Lvl 1: Engineer" hidden="false" id="273c-1dc2-0683-3a07" targetId="99a8-0b20-997d-f628" type="selectionEntry"/>
     <entryLink import="true" name="Lvl 3: Artificer" hidden="false" id="7f2c-186e-fcf1-7f37" targetId="3010-be38-92cd-7f82" type="selectionEntry"/>
-    <entryLink import="true" name="Magellan - Coloniser" hidden="false" id="b049-5e1c-c84f-7def" targetId="9d4b-69f2-b535-656c" type="selectionEntry"/>
-    <entryLink import="true" name="Nguen - Olympus" hidden="false" id="684b-3711-924f-0a34" targetId="996f-f331-e84f-11f1" type="selectionEntry"/>
-    <entryLink import="true" name="Hagen - Tribune" hidden="false" id="159f-8af2-bd01-6373" targetId="cee5-c500-357a-d910" type="selectionEntry"/>
-    <entryLink import="true" name="Typhoon Vasquez - Heavy Cruiser" hidden="false" id="66e9-8273-844f-a587" targetId="6839-7d0a-57fd-5ad9" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 3: Magellan - Coloniser" hidden="false" id="b049-5e1c-c84f-7def" targetId="9d4b-69f2-b535-656c" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 4: Nguen - Olympus" hidden="false" id="684b-3711-924f-0a34" targetId="996f-f331-e84f-11f1" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 2: Hagen - Tribune" hidden="false" id="159f-8af2-bd01-6373" targetId="cee5-c500-357a-d910" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 2: Typhoon Vasquez - Heavy Cruiser" hidden="false" id="66e9-8273-844f-a587" targetId="6839-7d0a-57fd-5ad9" type="selectionEntry"/>
     <entryLink import="true" name="Coloniser Interstellar Dreadnought" hidden="false" id="2e14-5e5b-41cb-ff70" targetId="b789-b9d6-4b9a-c3d4" type="selectionEntry"/>
     <entryLink import="true" name="Explorer Interstellar Ark" hidden="false" id="aecd-91df-7c7a-0213" targetId="09d3-712e-c465-d337" type="selectionEntry"/>
     <entryLink import="true" name="Pathfinder Interstellar Raft" hidden="false" id="2d3d-1540-85f7-128b" targetId="4222-223d-1a41-c600" type="selectionEntry"/>
