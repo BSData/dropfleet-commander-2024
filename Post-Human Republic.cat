@@ -354,7 +354,7 @@
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Groups -----" hidden="true" id="b303-eea2-dff8-cd8d"/>
-    <selectionEntry type="upgrade" import="true" name="Remus Dreadnought" hidden="false" id="0950-b68a-8d06-12cd">
+    <selectionEntry type="unit" import="true" name="Remus Dreadnought" hidden="false" id="0950-b68a-8d06-12cd">
       <categoryLinks>
         <categoryLink targetId="52fa-6578-d171-57d6" id="15c8-c8fa-e6dd-f36e" primary="true" name="Colossal Groups"/>
         <categoryLink targetId="default-category" id="14bc-2b81-67d7-4728" primary="false" name="Group"/>
@@ -395,7 +395,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Romulus Dreadnought" hidden="false" id="1b60-1121-d2d9-27b9">
+    <selectionEntry type="unit" import="true" name="Romulus Dreadnought" hidden="false" id="1b60-1121-d2d9-27b9">
       <categoryLinks>
         <categoryLink targetId="52fa-6578-d171-57d6" id="59f2-8457-f555-d231" primary="true" name="Colossal Groups"/>
         <categoryLink targetId="default-category" id="b99a-2fb4-e470-ecc2" primary="false" name="Group"/>
@@ -675,7 +675,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Rhadamanthus Battleship" hidden="false" id="6e34-bf2a-f70f-9aa6">
+    <selectionEntry type="unit" import="true" name="Rhadamanthus Battleship" hidden="false" id="6e34-bf2a-f70f-9aa6">
       <categoryLinks>
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="4f01-f952-ce45-5bb6" primary="true" name="Heavy Groups"/>
         <categoryLink targetId="default-category" id="2a3a-f1b3-f894-768b" primary="false" name="Group"/>
@@ -715,7 +715,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Kairos Battleship" hidden="false" id="ee86-1308-9db9-6299">
+    <selectionEntry type="unit" import="true" name="Kairos Battleship" hidden="false" id="ee86-1308-9db9-6299">
       <categoryLinks>
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="639a-83ac-4eb1-c08e" primary="true" name="Heavy Groups"/>
         <categoryLink targetId="default-category" id="1657-f670-6fad-2d01" primary="false" name="Group"/>
@@ -754,7 +754,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sarpedon Battleship" hidden="false" id="5621-21e8-7294-8b87">
+    <selectionEntry type="unit" import="true" name="Sarpedon Battleship" hidden="false" id="5621-21e8-7294-8b87">
       <categoryLinks>
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="1961-15fb-3b73-802e" primary="true" name="Heavy Groups"/>
         <categoryLink targetId="default-category" id="8e5d-740c-affa-76ba" primary="false" name="Group"/>
@@ -793,7 +793,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Minos Battleship" hidden="false" id="8763-b0c6-5998-5e8f">
+    <selectionEntry type="unit" import="true" name="Minos Battleship" hidden="false" id="8763-b0c6-5998-5e8f">
       <categoryLinks>
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="71fe-1fd7-090e-3d6d" primary="true" name="Heavy Groups"/>
         <categoryLink targetId="default-category" id="96e4-7dbf-2dee-2d81" primary="false" name="Group"/>
@@ -833,7 +833,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heracles Battleship" hidden="false" id="fc9e-c3b8-5f42-615c">
+    <selectionEntry type="unit" import="true" name="Heracles Battleship" hidden="false" id="fc9e-c3b8-5f42-615c">
       <categoryLinks>
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="81c6-9b7e-dcbb-cfe8" primary="true" name="Heavy Groups"/>
         <categoryLink targetId="default-category" id="efb7-9814-690b-fc81" primary="false" name="Group"/>
@@ -872,7 +872,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Agrippa Battlecruiser" hidden="false" id="a0af-fd5a-1456-74ee">
+    <selectionEntry type="unit" import="true" name="Agrippa Battlecruiser" hidden="false" id="a0af-fd5a-1456-74ee">
       <categoryLinks>
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="c814-12ea-f7f0-47c4" primary="true" name="Heavy Groups"/>
         <categoryLink targetId="default-category" id="efc2-2cb5-76fd-e575" primary="false" name="Group"/>
@@ -913,7 +913,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pompeius Battlecruiser" hidden="false" id="dfdb-5ed7-e81d-d2d9">
+    <selectionEntry type="unit" import="true" name="Pompeius Battlecruiser" hidden="false" id="dfdb-5ed7-e81d-d2d9">
       <categoryLinks>
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="e56d-dabe-79a9-817f" primary="true" name="Heavy Groups"/>
         <categoryLink targetId="default-category" id="2201-68ee-e32a-2fa1" primary="false" name="Group"/>
@@ -951,7 +951,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Priam Battlecruiser" hidden="false" id="ae6b-c8c1-0302-2825">
+    <selectionEntry type="unit" import="true" name="Priam Battlecruiser" hidden="false" id="ae6b-c8c1-0302-2825">
       <categoryLinks>
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="ba16-dd1c-79ac-8bac" primary="true" name="Heavy Groups"/>
         <categoryLink targetId="default-category" id="a6b7-cf82-6c0d-7f41" primary="false" name="Group"/>
@@ -990,7 +990,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Agamemnon Battlecruiser" hidden="false" id="b550-31c0-1b25-829b">
+    <selectionEntry type="unit" import="true" name="Agamemnon Battlecruiser" hidden="false" id="b550-31c0-1b25-829b">
       <categoryLinks>
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="9d10-7f07-185c-a619" primary="true" name="Heavy Groups"/>
         <categoryLink targetId="default-category" id="4693-eb3e-99c1-8709" primary="false" name="Group"/>
@@ -1029,7 +1029,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ganymede Assault Troopship" hidden="false" id="ef2c-1c7b-5a13-0e53">
+    <selectionEntry type="unit" import="true" name="Ganymede Assault Troopship" hidden="false" id="ef2c-1c7b-5a13-0e53">
       <categoryLinks>
         <categoryLink targetId="default-category" id="11e0-a07d-c570-19d9" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="92d6-fb23-c49e-86ff" primary="true" name="Medium Groups"/>
@@ -1070,7 +1070,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Orpheus Assault Troopship" hidden="false" id="7130-fc17-006a-217a">
+    <selectionEntry type="unit" import="true" name="Orpheus Assault Troopship" hidden="false" id="7130-fc17-006a-217a">
       <categoryLinks>
         <categoryLink targetId="default-category" id="fe10-2041-4dc9-2e12" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="3bb5-0c17-553e-51b9" primary="true" name="Medium Groups"/>
@@ -1110,7 +1110,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sysyphus Heavy Cruiser" hidden="false" id="988e-c3cb-9eab-90b1">
+    <selectionEntry type="unit" import="true" name="Sysyphus Heavy Cruiser" hidden="false" id="988e-c3cb-9eab-90b1">
       <categoryLinks>
         <categoryLink targetId="default-category" id="6253-d4d4-acc3-08e3" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="888f-0826-ef93-a4f5" primary="true" name="Medium Groups"/>
@@ -1150,7 +1150,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hector Heavy Cruiser" hidden="false" id="518e-03dd-6988-faf9">
+    <selectionEntry type="unit" import="true" name="Hector Heavy Cruiser" hidden="false" id="518e-03dd-6988-faf9">
       <categoryLinks>
         <categoryLink targetId="default-category" id="e244-8f7a-6edd-1825" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="bd9b-1640-7c7a-5c8a" primary="true" name="Medium Groups"/>
@@ -1189,7 +1189,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bellerophon Heavy Cruiser" hidden="false" id="64f8-3f16-0e65-1a8d">
+    <selectionEntry type="unit" import="true" name="Bellerophon Heavy Cruiser" hidden="false" id="64f8-3f16-0e65-1a8d">
       <categoryLinks>
         <categoryLink targetId="default-category" id="4347-080e-a6bd-1cfa" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="369f-91ab-c007-4655" primary="true" name="Medium Groups"/>
@@ -1228,7 +1228,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Achilles Heavy Cruiser" hidden="false" id="02ed-2702-3631-13be">
+    <selectionEntry type="unit" import="true" name="Achilles Heavy Cruiser" hidden="false" id="02ed-2702-3631-13be">
       <categoryLinks>
         <categoryLink targetId="default-category" id="7002-ba3b-4bb0-c222" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="9649-84ea-256d-bfe0" primary="true" name="Medium Groups"/>
@@ -1267,7 +1267,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Teucer Cruisers" hidden="false" id="8690-4ba5-4bd5-36d2">
+    <selectionEntry type="unit" import="true" name="Teucer Cruisers" hidden="false" id="8690-4ba5-4bd5-36d2">
       <categoryLinks>
         <categoryLink targetId="default-category" id="9cad-858c-b7d0-5456" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="6845-91f4-ee3a-4bfe" primary="true" name="Medium Groups"/>
@@ -1307,7 +1307,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ikarus Vanguard Carriers" hidden="false" id="848a-8893-1137-f5d8">
+    <selectionEntry type="unit" import="true" name="Ikarus Vanguard Carriers" hidden="false" id="848a-8893-1137-f5d8">
       <categoryLinks>
         <categoryLink targetId="default-category" id="d370-6cc4-9641-9247" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="d117-1791-f576-d173" primary="true" name="Medium Groups"/>
@@ -1347,7 +1347,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Orion Cruisers" hidden="false" id="13c2-5890-aead-e477">
+    <selectionEntry type="unit" import="true" name="Orion Cruisers" hidden="false" id="13c2-5890-aead-e477">
       <categoryLinks>
         <categoryLink targetId="default-category" id="55d8-7a09-17f4-fe1c" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="d65e-f7de-f9f9-783e" primary="true" name="Medium Groups"/>
@@ -1386,7 +1386,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Perseus Cruisers" hidden="false" id="a516-a7ce-7857-5f4f">
+    <selectionEntry type="unit" import="true" name="Perseus Cruisers" hidden="false" id="a516-a7ce-7857-5f4f">
       <categoryLinks>
         <categoryLink targetId="default-category" id="0fcc-33e0-eaea-a28c" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="e235-161d-6897-f751" primary="true" name="Medium Groups"/>
@@ -1426,7 +1426,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ajax Cruisers" hidden="false" id="6830-87fe-7d8e-043f">
+    <selectionEntry type="unit" import="true" name="Ajax Cruisers" hidden="false" id="6830-87fe-7d8e-043f">
       <categoryLinks>
         <categoryLink targetId="default-category" id="25fb-448c-e1ba-655e" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="0606-96ff-c6bb-b55b" primary="true" name="Medium Groups"/>
@@ -1465,7 +1465,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Otera Light Cruisers" hidden="false" id="e91e-7347-6395-46a8">
+    <selectionEntry type="unit" import="true" name="Otera Light Cruisers" hidden="false" id="e91e-7347-6395-46a8">
       <categoryLinks>
         <categoryLink targetId="default-category" id="90bd-f0e4-e2b3-a719" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="2d1f-bab3-950f-6402" primary="true" name="Medium Groups"/>
@@ -1504,7 +1504,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Theseus Light Cruisers" hidden="false" id="1733-c4da-4789-9d7a">
+    <selectionEntry type="unit" import="true" name="Theseus Light Cruisers" hidden="false" id="1733-c4da-4789-9d7a">
       <categoryLinks>
         <categoryLink targetId="default-category" id="2224-942f-0c33-c53e" primary="false" name="Group"/>
         <categoryLink targetId="e555-ff57-c478-18cd" id="a57e-9f8b-1845-bec1" primary="true" name="Medium Groups"/>
@@ -1543,7 +1543,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Meleager Blockade Runners" hidden="false" id="9c24-a2e8-6fb4-9d31">
+    <selectionEntry type="unit" import="true" name="Meleager Blockade Runners" hidden="false" id="9c24-a2e8-6fb4-9d31">
       <categoryLinks>
         <categoryLink targetId="default-category" id="4f17-74b5-cb87-f542" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="f993-3b33-a30e-879f" primary="true" name="Light Groups"/>
@@ -1605,7 +1605,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Odysseus Blockade Runners" hidden="false" id="3bbd-b418-843c-7f58">
+    <selectionEntry type="unit" import="true" name="Odysseus Blockade Runners" hidden="false" id="3bbd-b418-843c-7f58">
       <categoryLinks>
         <categoryLink targetId="default-category" id="02cb-c1ba-e5c6-3f4c" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="6244-626c-f785-4d2d" primary="true" name="Light Groups"/>
@@ -1667,7 +1667,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Jason Blockade Runners" hidden="false" id="2d82-727e-6708-3a24">
+    <selectionEntry type="unit" import="true" name="Jason Blockade Runners" hidden="false" id="2d82-727e-6708-3a24">
       <categoryLinks>
         <categoryLink targetId="default-category" id="a452-2523-f292-5af8" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="916f-b9bc-b275-97c3" primary="true" name="Light Groups"/>
@@ -1729,7 +1729,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cadmus Destroyers" hidden="false" id="1a5a-317c-eb3e-55d5">
+    <selectionEntry type="unit" import="true" name="Cadmus Destroyers" hidden="false" id="1a5a-317c-eb3e-55d5">
       <categoryLinks>
         <categoryLink targetId="default-category" id="8579-1711-488e-0dbb" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="aa85-edb0-23ed-2595" primary="true" name="Light Groups"/>
@@ -1768,7 +1768,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ariadne Destroyers" hidden="false" id="ca58-fce3-0a4d-32c7">
+    <selectionEntry type="unit" import="true" name="Ariadne Destroyers" hidden="false" id="ca58-fce3-0a4d-32c7">
       <categoryLinks>
         <categoryLink targetId="default-category" id="4f48-1bf1-1c16-1b83" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="41b6-8dd9-a317-df2b" primary="true" name="Light Groups"/>
@@ -1807,7 +1807,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Electra Destroyers" hidden="false" id="cbdb-04fa-dffe-d619">
+    <selectionEntry type="unit" import="true" name="Electra Destroyers" hidden="false" id="cbdb-04fa-dffe-d619">
       <categoryLinks>
         <categoryLink targetId="default-category" id="b28f-846c-eb50-b953" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="dbd1-9017-495c-5c54" primary="true" name="Light Groups"/>
@@ -1845,7 +1845,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Chrysaor Cutters" hidden="false" id="9870-1a5b-783d-fe92">
+    <selectionEntry type="unit" import="true" name="Chrysaor Cutters" hidden="false" id="9870-1a5b-783d-fe92">
       <categoryLinks>
         <categoryLink targetId="default-category" id="ad25-7d08-6235-f2d5" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="02f5-80e6-a379-afac" primary="true" name="Light Groups"/>
@@ -1883,7 +1883,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ourania Swiftlinks" hidden="false" id="549e-a40e-d511-5aea">
+    <selectionEntry type="unit" import="true" name="Ourania Swiftlinks" hidden="false" id="549e-a40e-d511-5aea">
       <categoryLinks>
         <categoryLink targetId="default-category" id="4e5a-d27a-16f8-5175" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="6d88-b8b7-dbc7-0c44" primary="true" name="Light Groups"/>
@@ -1942,7 +1942,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pegasus Nano-Hive Cutters" hidden="false" id="b2b7-a1ef-69b3-172b">
+    <selectionEntry type="unit" import="true" name="Pegasus Nano-Hive Cutters" hidden="false" id="b2b7-a1ef-69b3-172b">
       <categoryLinks>
         <categoryLink targetId="default-category" id="d18c-3777-310c-a4d0" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="7f8f-a3fe-2740-8aa7" primary="true" name="Light Groups"/>
@@ -1983,7 +1983,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Philonoe Torpedo Monitors" hidden="false" id="87df-47cd-5481-6a6c">
+    <selectionEntry type="unit" import="true" name="Philonoe Torpedo Monitors" hidden="false" id="87df-47cd-5481-6a6c">
       <categoryLinks>
         <categoryLink targetId="default-category" id="f428-71f9-6195-b471" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="e9c3-c41c-5764-d63c" primary="true" name="Light Groups"/>
@@ -2025,7 +2025,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pollux Escort Frigates" hidden="false" id="63f4-fd9f-7973-1ee1">
+    <selectionEntry type="unit" import="true" name="Pollux Escort Frigates" hidden="false" id="63f4-fd9f-7973-1ee1">
       <categoryLinks>
         <categoryLink targetId="default-category" id="95b0-2c03-38dd-c7b5" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="1aec-2965-a116-4e21" primary="true" name="Light Groups"/>
@@ -2067,7 +2067,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Castor Monitors" hidden="false" id="626d-aba1-d38e-bc51">
+    <selectionEntry type="unit" import="true" name="Castor Monitors" hidden="false" id="626d-aba1-d38e-bc51">
       <categoryLinks>
         <categoryLink targetId="default-category" id="cfc8-cbfb-18f5-246f" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="ff03-a381-8a6d-c8ce" primary="true" name="Light Groups"/>
@@ -2108,7 +2108,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Medea Strike Carriers" hidden="false" id="e495-e948-a9aa-314a">
+    <selectionEntry type="unit" import="true" name="Medea Strike Carriers" hidden="false" id="e495-e948-a9aa-314a">
       <categoryLinks>
         <categoryLink targetId="default-category" id="5fee-e370-a400-1cae" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="fc11-fab3-a898-641d" primary="true" name="Light Groups"/>
@@ -2150,7 +2150,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Andromeda Escort Carriers" hidden="false" id="a781-87f8-eba8-da3c">
+    <selectionEntry type="unit" import="true" name="Andromeda Escort Carriers" hidden="false" id="a781-87f8-eba8-da3c">
       <categoryLinks>
         <categoryLink targetId="default-category" id="dca3-b286-45d9-0bf7" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="71e5-458d-7b8f-99d1" primary="true" name="Light Groups"/>
@@ -2192,7 +2192,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Calypso Frigates" hidden="false" id="38cc-118b-1748-5164">
+    <selectionEntry type="unit" import="true" name="Calypso Frigates" hidden="false" id="38cc-118b-1748-5164">
       <categoryLinks>
         <categoryLink targetId="default-category" id="fef5-47e6-3322-3a77" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="8d55-bc83-f859-848c" primary="true" name="Light Groups"/>
@@ -2254,7 +2254,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pandora Frigates" hidden="false" id="829b-ecf1-9023-b1ea">
+    <selectionEntry type="unit" import="true" name="Pandora Frigates" hidden="false" id="829b-ecf1-9023-b1ea">
       <categoryLinks>
         <categoryLink targetId="default-category" id="73d8-d9eb-407f-945a" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="ca9f-9d7b-2847-be42" primary="true" name="Light Groups"/>
@@ -2292,7 +2292,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Europa Frigates" hidden="false" id="2b77-20e2-5cab-f045">
+    <selectionEntry type="unit" import="true" name="Europa Frigates" hidden="false" id="2b77-20e2-5cab-f045">
       <categoryLinks>
         <categoryLink targetId="default-category" id="5909-f2f6-4343-406c" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="b568-27e4-e8da-f0c9" primary="true" name="Light Groups"/>
@@ -2330,7 +2330,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Harpocrates Guerrilla Lighters" hidden="false" id="4437-bc7a-0ad0-60eb">
+    <selectionEntry type="unit" import="true" name="Harpocrates Guerrilla Lighters" hidden="false" id="4437-bc7a-0ad0-60eb">
       <categoryLinks>
         <categoryLink targetId="default-category" id="2ca4-686c-607a-dcbf" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="908d-5bc4-c3bf-fa0d" primary="true" name="Light Groups"/>
@@ -2371,7 +2371,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Echo Corvettes" hidden="false" id="4c43-92f3-2f77-56e9">
+    <selectionEntry type="unit" import="true" name="Echo Corvettes" hidden="false" id="4c43-92f3-2f77-56e9">
       <categoryLinks>
         <categoryLink targetId="default-category" id="fd87-3320-f09a-a5e1" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="dac5-b0e4-c84f-afac" primary="true" name="Light Groups"/>
