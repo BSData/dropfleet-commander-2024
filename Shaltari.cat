@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="10" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="1c77-28ea-5fb6-dc6f" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="1282-2cce-85a8-ebe4" targetId="7e9b-b6ba-2178-6eb5"/>
     <catalogueLink type="catalogue" name="Civilian" id="827c-88f9-114a-2316" targetId="903e-8fb9-3fe2-4460"/>
   </catalogueLinks>
   <publications>
-    <publication name="Shaltari Combined Fleet Stats (241024)" id="fbb6-a765-5882-6bcb" hidden="false" shortName="Shaltari Stats (241024)"/>
+    <publication name="Shaltari Combined Fleet Stats (250324)" id="fbb6-a765-5882-6bcb" hidden="false" shortName="Shaltari Stats (250324)"/>
   </publications>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="98cc-5609-e532-4875"/>
@@ -839,12 +839,12 @@
         <categoryLink name="Colossal Groups" hidden="false" id="a9d6-9219-e137-b2fd" targetId="52fa-6578-d171-57d6" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Uranium Dreadnought" hidden="false" id="4953-08a4-562a-93a9" publicationId="fbb6-a765-5882-6bcb" page="44">
+        <selectionEntry type="model" import="true" name="Uranium Dreadnought" hidden="false" id="4953-08a4-562a-93a9" publicationId="fbb6-a765-5882-6bcb" page="51">
           <categoryLinks>
             <categoryLink name="Colossal Ship" hidden="false" id="eb88-bab0-7418-dfc8" targetId="6e44-cb75-e25f-8b24" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Uranium" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4cd9-cd5e-8d7d-a8c0" publicationId="fbb6-a765-5882-6bcb" page="44">
+            <profile name="Uranium" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4cd9-cd5e-8d7d-a8c0" publicationId="fbb6-a765-5882-6bcb" page="51">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">14&quot;</characteristic>
@@ -884,12 +884,12 @@
         <categoryLink name="Colossal Groups" hidden="false" id="b3ef-3d45-118f-f3f7" targetId="52fa-6578-d171-57d6" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Plutonium Dreadnought" hidden="false" id="91a5-759b-c500-389c" publicationId="fbb6-a765-5882-6bcb" page="43">
+        <selectionEntry type="model" import="true" name="Plutonium Dreadnought" hidden="false" id="91a5-759b-c500-389c" publicationId="fbb6-a765-5882-6bcb" page="50">
           <categoryLinks>
             <categoryLink name="Colossal Ship" hidden="false" id="4b35-6af4-7e29-c282" targetId="6e44-cb75-e25f-8b24" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Plutonium" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e574-8053-43d6-93f8" publicationId="fbb6-a765-5882-6bcb" page="43">
+            <profile name="Plutonium" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e574-8053-43d6-93f8" publicationId="fbb6-a765-5882-6bcb" page="50">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">14&quot;</characteristic>
@@ -923,6 +923,267 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Thorium Super Battleship" hidden="false" id="5e97-5754-00b4-d5df">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="0b4a-e749-0d06-92ab" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="b951-81e1-962b-362e" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Thorium Super Battleship" hidden="false" id="5d51-3060-31c5-e783" publicationId="fbb6-a765-5882-6bcb" page="49">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="601c-c708-76e5-cf18" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Thorium" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="8814-7d98-a6e0-d4bb" publicationId="fbb6-a765-5882-6bcb" page="49">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">18</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="305"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a78e-8d94-a05f-9712" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f58-547c-6b3b-4f94" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="a341-2e38-0adf-3909" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Obliterator Cannon" hidden="false" id="a9c5-863a-3258-f70a" type="selectionEntry" sortIndex="1" targetId="e81a-1f26-662d-b42a"/>
+            <entryLink import="true" name="Electrosurge Projectors" hidden="false" id="6bc2-a3a9-0202-6a70" type="selectionEntry" sortIndex="2" targetId="5f71-aa7e-6a79-eee9"/>
+            <entryLink import="true" name="Bulk Landers" hidden="false" id="222d-e10f-f475-fdde" type="selectionEntry" sortIndex="3" targetId="0139-8bb3-23a4-1510"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="4c15-e99f-177f-22c6" type="selectionEntry" targetId="ea44-0637-e863-e4f6" sortIndex="4"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cerium Super Battleship" hidden="false" id="b87a-583e-aa65-ae2b">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="fcb6-146f-5a11-e5b5" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="ce2a-289d-0e7a-a6f1" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Cerium Super Battleship" hidden="false" id="c767-2641-72fa-9179" publicationId="fbb6-a765-5882-6bcb" page="48">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="bf69-ceab-d9e1-5393" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Cerium" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="935a-c2a9-7d09-3702" publicationId="fbb6-a765-5882-6bcb" page="48">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">18</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="230"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ae1-1a5a-0f3a-7da2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21b2-92f5-2a41-9be0" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="414a-a95c-c312-b920" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Mega Thermal Lance Cannon" hidden="false" id="f7d7-b713-6a59-2d65" type="selectionEntry" sortIndex="1" targetId="67e3-014c-4c6e-f7be"/>
+            <entryLink import="true" name="Microwave Array Bank" hidden="false" id="c6eb-1320-7c9b-9079" type="selectionEntry" sortIndex="2" targetId="8baa-59ac-c429-b93f"/>
+            <entryLink import="true" name="Torpedo" hidden="false" id="8e92-589a-c676-7522" type="selectionEntry" sortIndex="3" targetId="34d2-2816-e958-ad8b"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lanthanum Super Battleship" hidden="false" id="7e74-93aa-627f-ce08">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="3ec8-9d23-0a9d-dc9b" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="fbdb-3357-a7e7-5b7d" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Lanthanum Super Battleship" hidden="false" id="bb40-3438-5bd6-e469" publicationId="fbb6-a765-5882-6bcb" page="47">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="ce09-a757-d170-28e6" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Lanthanum" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9134-1e1c-a179-b075" publicationId="fbb6-a765-5882-6bcb" page="47">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">18</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="265"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2465-89f6-6a60-9a92" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14dc-9bfc-6742-3198" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="dd2d-1024-a142-0388" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Particle Lance Triad" hidden="false" id="b88a-e95c-431d-1652" type="selectionEntry" sortIndex="1" targetId="26be-572f-6722-b237"/>
+            <entryLink import="true" name="Mega Thermal Lance Cannon" hidden="false" id="fe44-ebad-6ba5-d7b1" type="selectionEntry" sortIndex="2" targetId="67e3-014c-4c6e-f7be"/>
+            <entryLink import="true" name="Electrosurge Projectors" hidden="false" id="29b2-4644-bf8c-d43f" type="selectionEntry" sortIndex="3" targetId="5f71-aa7e-6a79-eee9"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Actinium Battleship" hidden="false" id="ce1c-19ba-e851-1de4">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="47d8-4f72-30d4-c277" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="1a75-0f27-146b-3687" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Actinium Battleship" hidden="false" id="dc67-2557-7b6f-e165" publicationId="fbb6-a765-5882-6bcb" page="46">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="752b-13cc-ad01-2b8a" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Actinium" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7516-251c-02ed-7232" publicationId="fbb6-a765-5882-6bcb" page="46">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">18</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="255"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="620f-a06e-4011-bf1a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b77-095a-60b5-cc57" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="a0af-e692-0b9d-3725" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Disintegrator Battery" hidden="false" id="ca48-7449-2a2a-2304" type="selectionEntry" sortIndex="1" targetId="56d2-37ef-ce6f-7457"/>
+            <entryLink import="true" name="Gravitic Beamer" hidden="false" id="f3a1-30fd-fad5-b051" type="selectionEntry" sortIndex="2" targetId="3078-5bbc-4a92-b46b"/>
+            <entryLink import="true" name="Electrosurge Projectors" hidden="false" id="e763-d47b-02c8-34ba" type="selectionEntry" sortIndex="3" targetId="5f71-aa7e-6a79-eee9"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Iron Supercarrier" hidden="false" id="63c3-42f4-7ebf-8da2">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="e67e-8994-97c8-f5c8" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="19f4-986c-e9f4-13f3" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Iron Supercarrier" hidden="false" id="58a8-444c-483e-a3de" publicationId="fbb6-a765-5882-6bcb" page="45">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="189c-dbf7-34f3-3331" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Iron" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b59e-fc7e-00eb-dcfb" publicationId="fbb6-a765-5882-6bcb" page="45">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">18</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="285"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="def5-0171-c123-60c4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ce9-dc80-f61b-ee42" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="fd9f-722d-aa74-3e34" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Harpoon Deluge" hidden="false" id="50dd-009f-e49a-2f9e" type="selectionEntry" sortIndex="1" targetId="f5ba-fd82-3d62-f23e"/>
+            <entryLink import="true" name="Torpedo" hidden="false" id="2e43-befc-bf98-5288" type="selectionEntry" sortIndex="2" targetId="34d2-2816-e958-ad8b"/>
+            <entryLink import="true" name="Bulk Landers" hidden="false" id="6d0c-7a89-3dd0-c4e4" type="selectionEntry" sortIndex="3" targetId="0139-8bb3-23a4-1510"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="d99b-c72e-44df-537d" type="selectionEntry" sortIndex="4" targetId="ea44-0637-e863-e4f6"/>
+            <entryLink import="true" name="Drive Augmentation" hidden="false" id="1647-7407-d387-a880" type="selectionEntry" targetId="1644-6e6f-2512-45c0"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Copper Battleship" hidden="false" id="7879-4641-69ee-91da">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="2d9a-c654-ff87-79dd" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="a085-79db-780e-e309" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Copper Battleship" hidden="false" id="eb55-72e5-351b-e3c8" publicationId="fbb6-a765-5882-6bcb" page="44">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="7dc8-21e4-0f50-c8cf" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Copper" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="8c76-91c3-be9a-827b" publicationId="fbb6-a765-5882-6bcb" page="44">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">18</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="210"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c07-6a8b-c7d9-2165" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="600a-c112-4739-36e3" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="a85e-29bb-1c2d-9119" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Mega Thermal Lance Cannon" hidden="false" id="a347-a93a-f5f6-d342" type="selectionEntry" sortIndex="1" targetId="67e3-014c-4c6e-f7be"/>
+            <entryLink import="true" name="Microwave Array Bank" hidden="false" id="f909-a942-46b8-a2cc" type="selectionEntry" sortIndex="2" targetId="8baa-59ac-c429-b93f"/>
+            <entryLink import="true" name="Drive Augmentation" hidden="false" id="59e5-16fe-b870-510c" type="selectionEntry" targetId="1644-6e6f-2512-45c0"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bronze Battleship" hidden="false" id="3b96-e7dd-d729-9790">
       <categoryLinks>
         <categoryLink name="Group" hidden="false" id="38f6-dfba-b13d-3ccd" targetId="default-category" primary="false"/>
@@ -949,7 +1210,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="220"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="230"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe94-4562-695b-8f43" includeChildSelections="false"/>
@@ -962,6 +1223,7 @@
             <entryLink import="true" name="Ion Cannonade" hidden="false" id="9b52-b3ce-cee0-a011" type="selectionEntry" sortIndex="1" targetId="0187-5621-3a7c-549d"/>
             <entryLink import="true" name="Microwave Array Bank" hidden="false" id="ae4c-d3f8-0f59-0838" type="selectionEntry" sortIndex="2" targetId="8baa-59ac-c429-b93f"/>
             <entryLink import="true" name="Gravitic Beamer" hidden="false" id="68fb-15ba-de02-c9db" type="selectionEntry" sortIndex="3" targetId="3078-5bbc-4a92-b46b"/>
+            <entryLink import="true" name="Drive Augmentation" hidden="false" id="61a5-7919-e0d2-208d" type="selectionEntry" targetId="1644-6e6f-2512-45c0"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1005,6 +1267,7 @@
             <entryLink import="true" name="Obliterator Cannon" hidden="false" id="8b22-6355-8ccf-dfed" type="selectionEntry" sortIndex="1" targetId="e81a-1f26-662d-b42a"/>
             <entryLink import="true" name="Microwave Array Bank" hidden="false" id="7d0f-ba26-f6e2-3983" type="selectionEntry" sortIndex="2" targetId="8baa-59ac-c429-b93f"/>
             <entryLink import="true" name="Gravitic Beamer" hidden="false" id="bef1-b974-bcad-2c92" type="selectionEntry" sortIndex="3" targetId="3078-5bbc-4a92-b46b"/>
+            <entryLink import="true" name="Drive Augmentation" hidden="false" id="74c2-8124-7091-f6b1" type="selectionEntry" targetId="1644-6e6f-2512-45c0"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1049,6 +1312,7 @@
             <entryLink import="true" name="Microwave Array Bank" hidden="false" id="9643-5721-f97f-c2b7" type="selectionEntry" sortIndex="2" targetId="8baa-59ac-c429-b93f"/>
             <entryLink import="true" name="Bulk Landers" hidden="false" id="1dd2-c393-de69-1661" type="selectionEntry" sortIndex="3" targetId="0139-8bb3-23a4-1510"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="d6ea-072b-8724-e117" type="selectionEntry" sortIndex="4" targetId="ea44-0637-e863-e4f6"/>
+            <entryLink import="true" name="Drive Augmentation" hidden="false" id="f7c1-e751-625f-45a4" type="selectionEntry" targetId="1644-6e6f-2512-45c0"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1094,6 +1358,7 @@
             <entryLink import="true" name="Harpoon Deluge" hidden="false" id="0403-a9b4-a72c-9b0f" type="selectionEntry" sortIndex="2" targetId="f5ba-fd82-3d62-f23e"/>
             <entryLink import="true" name="Dropships" hidden="false" id="b095-3e92-ca11-8b61" type="selectionEntry" sortIndex="3" targetId="bc21-a66c-a102-d7d3"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="881a-205f-53ce-26a0" type="selectionEntry" sortIndex="4" targetId="6c4f-6b3d-efb8-7319"/>
+            <entryLink import="true" name="Drive Augmentation" hidden="false" id="6475-09ff-e30b-dc4f" type="selectionEntry" targetId="1644-6e6f-2512-45c0"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1138,6 +1403,7 @@
             <entryLink import="true" name="Disintegrator Battery" hidden="false" id="4a5d-e659-7a6c-a08b" type="selectionEntry" sortIndex="1" targetId="56d2-37ef-ce6f-7457"/>
             <entryLink import="true" name="Particle Lance Triad" hidden="false" id="8476-4a57-07cc-f9fc" type="selectionEntry" sortIndex="2" targetId="26be-572f-6722-b237"/>
             <entryLink import="true" name="Dropships" hidden="false" id="d240-a256-0d4f-959d" type="selectionEntry" sortIndex="3" targetId="bc21-a66c-a102-d7d3"/>
+            <entryLink import="true" name="Drive Augmentation" hidden="false" id="c929-21d4-0edc-6aa4" type="selectionEntry" targetId="1644-6e6f-2512-45c0"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2718,6 +2984,29 @@
         <infoLink name="Penetrator" id="7021-0332-3c6d-4111" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Electrosurge Projectors" hidden="false" id="5f71-aa7e-6a79-eee9">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f398-3cd0-867b-d1e1" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bb8-1497-36c7-7599" includeChildSelections="false"/>
+      </constraints>
+      <comment>B 3/4+/1/E St Vol-2</comment>
+      <infoLinks>
+        <infoLink name="Status" id="fcd8-6454-835a-8780" hidden="false" type="rule" targetId="ea58-a80c-c3de-e165"/>
+        <infoLink name="Volley-X" id="4cb9-9967-7ab3-cb9d" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Electrosurge Projectors" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="47b4-f599-3a94-d5c9">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">B</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Status, Volley-2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Force Projectors" hidden="false" id="5d02-7208-15e1-e85d">
       <profiles>
         <profile name="Force Projectors" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="bc86-81f3-323c-9206">
@@ -2952,6 +3241,25 @@
       <infoLinks>
         <infoLink name="Calibre-X" id="d39c-8c49-9ddb-8919" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mega Thermal Lance Cannon" hidden="false" id="67e3-014c-4c6e-f7be">
+      <profiles>
+        <profile name="Mega Thermal Lance Cannon" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5de8-6470-4a5f-bb69">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278"> Burnthrough-1, Bloom-2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="870d-86af-d675-4ebb" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="760f-d2fb-258c-eeb3" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 5/2+/2/E BT-1 Bl-2</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Microwave Array Bank" hidden="false" id="8baa-59ac-c429-b93f">
       <profiles>
@@ -3414,6 +3722,36 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="34d2-2816-e958-ad8b">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06b9-94a1-b836-2858" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47bf-ba88-fb96-45b8" includeChildSelections="false"/>
+      </constraints>
+      <comment>2 L-4</comment>
+      <profiles>
+        <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="133f-835c-a3e4-aa93">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Limited-X" id="4c01-5a1e-2675-407a" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Equipment -----" hidden="true" id="8615-7c0d-58f3-72b1"/>
+    <selectionEntry type="upgrade" import="true" name="Drive Augmentation" hidden="false" id="1644-6e6f-2512-45c0">
+      <modifiers>
+        <modifier type="increment" value="3" field="d821-4294-3117-e8a6" affects="profiles.Ship" scope="parent" join=", "/>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d24-cb05-c266-38da" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Radiation Aura" id="9414-fec0-adb3-c786" hidden="false">
@@ -3450,12 +3788,18 @@ Crippling Effects, Spikes, and other rules that affect an entire Group only affe
   <entryLinks>
     <entryLink import="true" name="Lvl 1: Skychief" hidden="false" id="aa45-127a-725a-2868" targetId="eaea-025c-59d6-2236" type="selectionEntry"/>
     <entryLink import="true" name="Lvl 3: Starchief" hidden="false" id="0267-714f-f13b-1763" targetId="0a4e-0313-c2e7-58dc" type="selectionEntry"/>
-    <entryLink import="true" name="Quetzalcoatl - Uranium" hidden="false" id="3494-c884-9b7d-1cf1" targetId="9782-06cf-cd06-44c5" type="selectionEntry"/>
-    <entryLink import="true" name="Mergen the Learned - Diamond" hidden="false" id="b24d-0f1c-f9d2-ab8f" targetId="4a39-2a06-9bbe-9563" type="selectionEntry"/>
-    <entryLink import="true" name="Seth - Sapphire" hidden="false" id="5d9b-2ce9-7066-763c" targetId="60ba-9a6d-3eca-7e54" type="selectionEntry"/>
-    <entryLink import="true" name="Twins of Aaru - Amber x 2" hidden="false" id="059b-5f23-0409-3a4c" targetId="d871-8769-d471-c13f" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 4: Quetzalcoatl - Uranium" hidden="false" id="3494-c884-9b7d-1cf1" targetId="9782-06cf-cd06-44c5" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 3: Mergen the Learned - Diamond" hidden="false" id="b24d-0f1c-f9d2-ab8f" targetId="4a39-2a06-9bbe-9563" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 2: Seth - Sapphire" hidden="false" id="5d9b-2ce9-7066-763c" targetId="60ba-9a6d-3eca-7e54" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 2: Twins of Aaru - Amber x 2" hidden="false" id="059b-5f23-0409-3a4c" targetId="d871-8769-d471-c13f" type="selectionEntry"/>
     <entryLink import="true" name="Uranium Dreadnought" hidden="false" id="ac03-5817-c48a-12d2" targetId="e7b6-09cd-2f6a-f433" type="selectionEntry"/>
     <entryLink import="true" name="Plutonium Dreadnought" hidden="false" id="decd-f4f1-70b4-0eb1" targetId="f233-d4e1-f1fd-b0fe" type="selectionEntry"/>
+    <entryLink import="true" name="Thorium Super Battleship" hidden="false" id="e91c-a348-986e-d912" targetId="5e97-5754-00b4-d5df" type="selectionEntry"/>
+    <entryLink import="true" name="Cerium Super Battleship" hidden="false" id="41db-0b94-442b-df4e" targetId="b87a-583e-aa65-ae2b" type="selectionEntry"/>
+    <entryLink import="true" name="Lanthanum Super Battleship" hidden="false" id="12b8-24f6-3851-85d6" targetId="7e74-93aa-627f-ce08" type="selectionEntry"/>
+    <entryLink import="true" name="Actinium Battleship" hidden="false" id="6d37-d936-68a5-ca4a" targetId="ce1c-19ba-e851-1de4" type="selectionEntry"/>
+    <entryLink import="true" name="Iron Supercarrier" hidden="false" id="4821-0146-16ce-08da" targetId="63c3-42f4-7ebf-8da2" type="selectionEntry"/>
+    <entryLink import="true" name="Copper Battleship" hidden="false" id="102f-90a1-6cd3-52ef" targetId="7879-4641-69ee-91da" type="selectionEntry"/>
     <entryLink import="true" name="Bronze Battleship" hidden="false" id="68b4-84d9-714d-e973" targetId="3b96-e7dd-d729-9790" type="selectionEntry"/>
     <entryLink import="true" name="Silver Battleship" hidden="false" id="d9f5-3679-8800-76e6" targetId="f18f-bdc2-dfd8-5ca4" type="selectionEntry"/>
     <entryLink import="true" name="Gold Supercarrier" hidden="false" id="3105-eb1c-200e-ec4e" targetId="7a31-3efb-7cae-cc4e" type="selectionEntry"/>
