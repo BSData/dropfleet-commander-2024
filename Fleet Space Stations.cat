@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="true" id="7e9b-b6ba-2178-6eb5" name="Fleet Space Stations" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="3" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication name="Fleet Space Stations (241016)" id="4be7-d555-8518-dd99" hidden="false" shortName="Fleet Space Stations (241016)"/>
+    <publication name="Fleet Space Stations (250113)" id="4be7-d555-8518-dd99" hidden="false" shortName="Fleet Space Stations (250113)"/>
   </publications>
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Small Space Station" hidden="false" id="914b-3a7a-039e-34df" publicationId="4be7-d555-8518-dd99" page="2">
@@ -962,7 +962,7 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mass Driver Armament" hidden="false" id="6851-5d66-ff61-8dcd" publicationId="4be7-d555-8518-dd99" page="2">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
           </costs>
           <profiles>
             <profile name="Mass Driver Armament" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="68af-7467-1b2c-b80f" publicationId="4be7-d555-8518-dd99" page="2">
@@ -979,7 +979,7 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Missile Armament" hidden="false" id="9a6a-f098-4b71-fc9c" publicationId="4be7-d555-8518-dd99" page="2">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
           </costs>
           <profiles>
             <profile name="Missile Armament" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="1c9a-c53d-c47d-8c76" publicationId="4be7-d555-8518-dd99" page="2">
