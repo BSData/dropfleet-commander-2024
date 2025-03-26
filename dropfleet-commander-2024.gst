@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
@@ -499,6 +499,7 @@ During the Porter Ship’s activation, if it is on an Order that allows it to La
 Payload Ships always follow General Quarters Orders, even if its Porter is on different Orders. Payload Ships ignore Coherency rules (and do not gain Formation Benefits), have no Lead Ship, are targeted by attacks individually, and these attacks can only damage the targeted Payload Ship.
 If a Payload Ship is attached to a Porter Ship when that Ship is destroyed, the Payload Ship is destroyed.</description>
       <alias>Payload S-1</alias>
+      <alias>Payload L-1</alias>
     </rule>
     <rule name="Porter S/L-X" id="11cb-e973-8a2c-f0f6" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>This Ship may be assigned Payload Ships with the same letter up to a total capacity of X.
@@ -506,6 +507,7 @@ During a Porter’s activation, it may attach any detached Payload Ships within 
 Any tokens, Spikes, or effects affecting the reattached Payload Ship are removed from that Ship.</description>
       <alias>Porter S-1</alias>
       <alias>Porter S-2</alias>
+      <alias>Porter L-1</alias>
     </rule>
     <rule name="Rapid Drop" id="8b74-2f05-9de9-8b32" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>This Ship may launch its Assets at any point during its movement</description>
@@ -552,6 +554,7 @@ All Alt Weapons with the same number count as the same Weapon when determining h
     <rule name="Arrest-X" id="7fa4-03e2-d2a7-de9b" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>A Ship damaged by this Weapon reduces its Thrust by X” during its next activation. A Ship can only be affected by this rule once each round.</description>
       <alias>Arrest-2</alias>
+      <alias>Arrest-4</alias>
     </rule>
     <rule name="Bloom-X" id="a944-3ee8-9a6c-6440" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <alias>Bloom-1</alias>
