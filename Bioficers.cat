@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="14" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="15" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Ardent" hidden="false" id="253f-2124-1abd-87e5" publicationId="c835-461f-ea00-a841" page="1">
@@ -146,7 +146,7 @@
           <entryLinks>
             <entryLink import="true" name="Gravitic Hyperspear" hidden="false" id="8687-19db-3310-7140" type="selectionEntry" targetId="75d2-47ca-e94a-00b8" sortIndex="1"/>
             <entryLink import="true" name="Thermator" hidden="false" id="5fdc-755b-9df4-f3cd" type="selectionEntry" targetId="0c95-f250-f157-3f91" sortIndex="2"/>
-            <entryLink import="true" name="Torpedo Upgrade" hidden="false" id="e1be-e30e-e03f-7ded" type="selectionEntry" targetId="189a-9129-d599-806a"/>
+            <entryLink import="true" name="Torpedo" hidden="false" id="55ee-118c-9bcf-4359" type="selectionEntry" targetId="2a03-3fe4-51e0-5a5a" sortIndex="3"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b863-4868-e2d3-9a4e" includeChildSelections="false"/>
@@ -2022,7 +2022,7 @@
             <infoLink name="Summoning Cell" id="ef2f-bbd7-1270-f0c5" hidden="false" type="rule" targetId="d985-9763-6332-5798"/>
           </infoLinks>
           <entryLinks>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="b286-6ed8-ad8a-d67d" type="selectionEntry" targetId="3c3f-c5c4-b2e6-5037"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="b286-6ed8-ad8a-d67d" type="selectionEntry" targetId="9f7a-e289-c37f-ffa8"/>
           </entryLinks>
           <categoryLinks>
             <categoryLink name="Payload" hidden="false" id="9250-72af-e3ef-e0a9" targetId="3fa9-60d3-d9be-6611" primary="true"/>
@@ -2987,6 +2987,21 @@
       </constraints>
       <comment>5</comment>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="9f7a-e289-c37f-ffa8">
+      <profiles>
+        <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="c7ca-faf6-179f-cdac">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">3</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0690-def9-223e-3835" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97da-8b0e-5276-cfc1" includeChildSelections="false"/>
+      </constraints>
+      <comment>3</comment>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="65bd-53c9-d2c9-643c">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="5ce0-026b-37b8-62fc">
@@ -3001,21 +3016,6 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f2a-c272-f456-62ae" includeChildSelections="false"/>
       </constraints>
       <comment>2</comment>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="3c3f-c5c4-b2e6-5037">
-      <profiles>
-        <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="e611-ac58-b481-776d">
-          <characteristics>
-            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">1</characteristic>
-            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf53-66f2-3328-32b6" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cca2-e796-9c77-54a4" includeChildSelections="false"/>
-      </constraints>
-      <comment>1</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="0089-5f09-3647-73df">
       <profiles>
@@ -3061,6 +3061,24 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f6f-03f3-35e4-d0cf" includeChildSelections="false"/>
       </constraints>
       <comment>1</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="2a03-3fe4-51e0-5a5a">
+      <profiles>
+        <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="b19f-168b-962d-dc67">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbae-0886-4982-ddae" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4180-b198-71d7-9232" includeChildSelections="false"/>
+      </constraints>
+      <comment>2 L-4</comment>
+      <infoLinks>
+        <infoLink name="Limited-X" id="4aa9-4311-531b-62d3" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="e90b-9b11-28fe-af2e">
       <profiles>
