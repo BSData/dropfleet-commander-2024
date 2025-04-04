@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="15" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="16" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Ardent" hidden="false" id="253f-2124-1abd-87e5" publicationId="c835-461f-ea00-a841" page="1">
@@ -126,7 +126,8 @@
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="245"/>
           </costs>
           <categoryLinks>
-            <categoryLink name="Heavy Ship" hidden="false" id="3186-3fa9-e54d-58e1" targetId="9d6f-26b0-7969-496b" primary="true"/>
+            <categoryLink targetId="default-category" id="c11d-ee99-af23-e3a3" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="246f-e81b-5c95-5eb4" primary="false" name="Heavy Groups"/>
           </categoryLinks>
           <profiles>
             <profile name="Bastion" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4d75-f307-3941-01a4" publicationId="c835-461f-ea00-a841" page="48">
@@ -210,7 +211,6 @@
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="150"/>
           </costs>
           <categoryLinks>
-            <categoryLink name="Heavy Ship" hidden="false" id="e917-a5fc-02c2-48e4" targetId="9d6f-26b0-7969-496b" primary="true"/>
             <categoryLink targetId="default-category" id="1014-3611-42b3-f040" primary="false" name="Group"/>
             <categoryLink targetId="8d99-053d-ffeb-98c5" id="a523-4313-63bb-ede8" primary="false" name="Heavy Groups"/>
           </categoryLinks>
@@ -3127,7 +3127,7 @@
     <entryLink import="true" name="Blackbird Super Battleship" hidden="false" id="bac1-7e40-1e0d-e3b0" targetId="54ed-865d-5a8d-7b98" type="selectionEntry"/>
     <entryLink import="true" name="Bastion Battleship" hidden="false" id="774e-c7a8-566a-d11b" targetId="1fb8-78ad-726b-32e1" type="selectionEntry"/>
     <entryLink import="true" name="Brutal Battleship" hidden="false" id="e777-258d-7396-ab08" targetId="6d79-cc8e-0583-1acc" type="selectionEntry"/>
-    <entryLink import="true" name="Brutal Battleship" hidden="false" id="9394-cc65-4d82-a309" targetId="441d-7007-d812-9ed7" type="selectionEntry"/>
+    <entryLink import="true" name="Binary Battleship" hidden="false" id="9394-cc65-4d82-a309" targetId="441d-7007-d812-9ed7" type="selectionEntry"/>
     <entryLink import="true" name="Stature Battlecruiser" hidden="false" id="fc31-dc77-0dd6-8806" targetId="cb41-4584-3cda-d11f" type="selectionEntry"/>
     <entryLink import="true" name="Sanctum Battlecruiser" hidden="false" id="b6d9-ada1-ac12-9790" targetId="1783-2070-1d67-2713" type="selectionEntry"/>
     <entryLink import="true" name="Scion Battlecruiser" hidden="false" id="cc73-2a60-3a70-7f69" targetId="8004-510f-6229-136c" type="selectionEntry"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="15" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="16" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -514,6 +514,10 @@
           <infoLinks>
             <infoLink name="Vanguard" id="6f06-1aa1-5eaa-7d31" hidden="false" type="rule" targetId="8612-0822-de10-5e03"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink targetId="default-category" id="d1fd-00ba-06f9-6cdc" primary="false" name="Group"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="bafc-e3b4-d0a1-faa1" primary="false" name="Heavy Groups"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <modifiers>
@@ -678,7 +682,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Lvl 2: Tayne - Warsaw" hidden="false" id="6d3f-389f-1a9c-cdba" page="">
+    <selectionEntry type="unit" import="true" name="Lvl 2: Tayne - Warsaw" hidden="false" id="6d3f-389f-1a9c-cdba">
       <categoryLinks>
         <categoryLink targetId="daa7-4c13-fe75-9281" id="a8b5-191b-482f-fa75" primary="true" name="Famous Admirals"/>
         <categoryLink targetId="79f7-4244-6fb7-d41a" id="4c4c-f82d-badd-2be6" primary="false" name="Faction/Famous Admirals"/>
@@ -4052,10 +4056,10 @@
   <entryLinks>
     <entryLink import="true" name="Lvl 1: Captain" hidden="false" id="481d-7863-ffb3-aa4f" targetId="19a9-7d1f-50b2-e998" type="selectionEntry"/>
     <entryLink import="true" name="Lvl 3: Rear Admiral" hidden="false" id="967d-15d6-55c9-501c" targetId="a461-4e5d-ff05-31f0" type="selectionEntry"/>
-    <entryLink import="true" name="“Granite” Halsey - Washington" hidden="false" id="b5f9-7931-9faf-d4f6" targetId="0df1-8a69-e48b-af52" type="selectionEntry"/>
-    <entryLink import="true" name="Havelock - New York" hidden="false" id="bded-f78c-6f10-c372" targetId="35e6-a97b-0bc4-a778" type="selectionEntry"/>
-    <entryLink import="true" name="Weaver - Perth" hidden="false" id="65d5-cf13-6004-72f5" targetId="0691-dfab-1c01-7865" type="selectionEntry"/>
-    <entryLink import="true" name="Tayne - Warsaw" hidden="false" id="a0c4-6bed-15f4-73d3" targetId="6d3f-389f-1a9c-cdba" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 5: “Granite” Halsey - Washington" hidden="false" id="b5f9-7931-9faf-d4f6" targetId="0df1-8a69-e48b-af52" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 4: Havelock - New York" hidden="false" id="bded-f78c-6f10-c372" targetId="35e6-a97b-0bc4-a778" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 3: Weaver - Perth" hidden="false" id="65d5-cf13-6004-72f5" targetId="0691-dfab-1c01-7865" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 2: Tayne - Warsaw" hidden="false" id="a0c4-6bed-15f4-73d3" targetId="6d3f-389f-1a9c-cdba" type="selectionEntry"/>
     <entryLink import="true" name="Washington Supercarrier" hidden="false" id="af2a-fcc8-bf14-7696" targetId="0129-61bd-271f-de28" type="selectionEntry"/>
     <entryLink import="true" name="London Dreadnought" hidden="false" id="4f52-08ec-a7df-fc01" targetId="1340-f453-5d39-67ef" type="selectionEntry"/>
     <entryLink import="true" name="Thebes Super Battleship" hidden="false" id="435f-a449-f48f-70ce" targetId="f57f-e917-875a-dba3" type="selectionEntry"/>
