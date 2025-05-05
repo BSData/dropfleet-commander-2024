@@ -3125,6 +3125,87 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Limited-X" id="3379-4d1a-3e65-b447" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Launch Assets" hidden="false" id="9cad-9c67-a317-939d" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink targetId="9cef-c723-f3e7-2dd2" id="cdf5-3e19-cc3e-da20" primary="true" name="Launch Asset"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c509-f98e-8d6d-7714" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="8f14-23fc-4b70-4021" sortIndex="1" flatten="true">
+          <profiles>
+            <profile name="Torpedo" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="acda-7ba0-06e1-08f1">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">9&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">3</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">2+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">Corruptor-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13f5-b21a-5840-3495-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13f5-b21a-5840-3495-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Corruptor-X" id="e652-4046-7c34-3295" hidden="false" type="rule" targetId="b495-5934-9bf1-d595"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bombers" hidden="false" id="6e71-ca91-e7b0-f278" sortIndex="2" flatten="true">
+          <profiles>
+            <profile name="Bombers" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="0a8a-bd3f-31f5-6f00">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">13&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">3</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">4+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f7b-1625-3b41-5ad0-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f7b-1625-3b41-5ad0-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mines" hidden="false" id="c716-82f0-6270-a01d" sortIndex="3" flatten="true">
+          <profiles>
+            <profile name="Mines" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="d03b-3e31-043d-8f0f">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">5&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">4</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">3+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ebcc-10a7-c33f-2dae-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebcc-10a7-c33f-2dae-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fighters" hidden="false" id="91d2-601f-26e2-cd83" sortIndex="4" flatten="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0fbd-8c46-924d-6aae-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fbd-8c46-924d-6aae-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Fighters" typeId="3057-ca91-b261-38a8" typeName="Launch Asset" hidden="false" id="2817-4275-954a-c690">
+              <characteristics>
+                <characteristic name="Thrust" typeId="ea0d-696a-c5fa-1684">16&quot;</characteristic>
+                <characteristic name="KS Re-roll" typeId="d1c9-654e-a9f1-a88f">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Lvl 1: Ardent" hidden="false" id="5719-9230-5709-a789" targetId="253f-2124-1abd-87e5" type="selectionEntry"/>
@@ -3187,6 +3268,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="d4c6-8b2d-fc48-ae12" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
     <entryLink import="true" name="M-Type Barge" hidden="false" id="c239-bd3d-8baa-8824" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
     <entryLink import="true" name="T-Type Tugboat" hidden="false" id="949e-c10a-06c3-9ca0" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
+    <entryLink import="true" name="Launch Assets" hidden="false" id="e18f-e6a0-3a5b-0c3e" targetId="9cad-9c67-a317-939d" type="selectionEntry"/>
   </entryLinks>
   <publications>
     <publication name="Bioficer Combined Fleet Stats (250324)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (250324)"/>

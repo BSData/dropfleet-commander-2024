@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="11" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="12" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="1c77-28ea-5fb6-dc6f" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="1282-2cce-85a8-ebe4" targetId="7e9b-b6ba-2178-6eb5"/>
@@ -3251,7 +3251,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278"> Burnthrough-1, Bloom-2</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1, Bloom-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3752,6 +3752,127 @@
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Launch Assets" hidden="false" id="cc1b-9d8b-db2d-9d32" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink name="Launch Assets" hidden="false" id="d375-7ce2-79cf-3ff3" targetId="9cef-c723-f3e7-2dd2" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3475-a267-6185-0028" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="5c90-ad99-d9f2-b629" sortIndex="1" flatten="true">
+          <profiles>
+            <profile name="Torpedo" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="ab0a-610d-2a21-bc08">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">6&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">3</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">4+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">3</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">C</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">Flash-2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abef-a022-9173-decb-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abef-a022-9173-decb-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Flash-X" id="b102-ce08-0587-d7ae" hidden="false" type="rule" targetId="9e6d-bb41-7c8b-a3b6"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bombers" hidden="false" id="c5db-9670-0e64-1873" sortIndex="2" flatten="true">
+          <profiles>
+            <profile name="Bombers" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="685b-7dec-8330-7ae1">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">13&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">2</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">3+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">E</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd01-c185-2de6-2b98-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd01-c185-2de6-2b98-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mines" hidden="false" id="bd8b-3147-8def-ff8a" sortIndex="4" flatten="true">
+          <profiles>
+            <profile name="Mines" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="f30b-918f-2f2f-cb78">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">6&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">4</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">3+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">E</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f288-1a74-324f-50c1-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f288-1a74-324f-50c1-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fighters" hidden="false" id="76b4-ad01-a64f-d243" sortIndex="6" flatten="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73f4-ad04-7928-e3f4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73f4-ad04-7928-e3f4-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Fighters" typeId="3057-ca91-b261-38a8" typeName="Launch Asset" hidden="false" id="9857-8bbc-049e-048e">
+              <characteristics>
+                <characteristic name="Thrust" typeId="ea0d-696a-c5fa-1684">16&quot;</characteristic>
+                <characteristic name="KS Re-roll" typeId="d1c9-654e-a9f1-a88f">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fire Ships" hidden="false" id="5387-d551-c2f8-3cb9" sortIndex="3" flatten="true">
+          <profiles>
+            <profile name="Fire Ships" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="70d3-b1a8-afb1-c1fa">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">7&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">4</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">5+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bec3-5168-ef3e-d19a-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bec3-5168-ef3e-d19a-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Impel Mines" hidden="false" id="1a3e-8cac-c907-e1aa" sortIndex="5" flatten="true">
+          <profiles>
+            <profile name="Impel Mines" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="8ab5-7abe-10d6-e876">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">6&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">3</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">4+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">E</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">Arrest-4, Impel-1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25e3-b607-60ee-a28f-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25e3-b607-60ee-a28f-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Arrest-X" id="ec9f-304e-230b-5adf" hidden="false" type="rule" targetId="7fa4-03e2-d2a7-de9b"/>
+            <infoLink name="Impel-X" id="51b9-ec7a-1477-fa24" hidden="false" type="rule" targetId="9944-ada1-19c8-2d06"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Radiation Aura" id="9414-fec0-adb3-c786" hidden="false">
@@ -3849,6 +3970,7 @@ Crippling Effects, Spikes, and other rules that affect an entire Group only affe
     <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="d9ee-89e3-0f06-7d6a" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
     <entryLink import="true" name="M-Type Barge" hidden="false" id="0d50-e001-e69d-99fc" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
     <entryLink import="true" name="T-Type Tugboat" hidden="false" id="f09e-6224-80b5-b8ef" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
+    <entryLink import="true" name="Launch Assets" hidden="false" id="cbd6-11ce-4156-d0c4" targetId="cc1b-9d8b-db2d-9d32" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Disintegrator Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="4cb0-3c95-f8d1-9459">

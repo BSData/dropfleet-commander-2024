@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
@@ -97,6 +97,7 @@
     <categoryEntry name="Payload" id="3fa9-60d3-d9be-6611" hidden="false"/>
     <categoryEntry name="Space Stations" id="5ca8-89b2-52c6-d394" hidden="false"/>
     <categoryEntry name="Game" id="492c-ac66-3724-83bc" hidden="false"/>
+    <categoryEntry name="Launch Assets" id="9cef-c723-f3e7-2dd2" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Fleet" hidden="false" id="fa3c-5c2f-ae78-ba22">
@@ -128,6 +129,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d88c-dc9b-1bb3-4c11" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Launch Asset" hidden="false" id="40cf-76cf-cc5c-6706" targetId="9cef-c723-f3e7-2dd2" type="categoryEntry"/>
         <categoryLink name="Game" hidden="false" id="2618-a0a9-42fb-4431" targetId="492c-ac66-3724-83bc"/>
       </categoryLinks>
       <constraints>
@@ -440,6 +442,22 @@
         <characteristicType name="Description" id="f3e2-be91-7cd0-fd3a"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Launch Asset" id="2011-41e1-9c7c-9e25" hidden="false" sortIndex="10">
+      <characteristicTypes>
+        <characteristicType name="Thrust" id="8c30-992b-18d3-9a9e"/>
+        <characteristicType name="Att" id="09f1-844b-5ba1-7b58"/>
+        <characteristicType name="Lock" id="243e-e8ac-7e08-3636"/>
+        <characteristicType name="DMG" id="1f0f-7a09-a26f-cccf"/>
+        <characteristicType name="Type" id="1dc7-5577-b848-5b24"/>
+        <characteristicType name="Special" id="9b33-7e68-b136-77db"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Launch Asset" id="3057-ca91-b261-38a8" hidden="false" sortIndex="11">
+      <characteristicTypes>
+        <characteristicType name="Thrust" id="ea0d-696a-c5fa-1684"/>
+        <characteristicType name="KS Re-roll" id="d1c9-654e-a9f1-a88f"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedRules>
     <rule name="Aegis-X" id="9cd1-441e-8ee8-7f13" hidden="false" page="36" publicationId="45b0-3e3b-e83d-fd70">
@@ -585,6 +603,7 @@ This weapon cannot be used to attack Ships in Orbit while the attacking Ship is 
     </rule>
     <rule name="Corruptor-X" id="b495-5934-9bf1-d595" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <description>When this Weapon successfully inflicts damage, place X Battalions on the target.</description>
+      <alias>Corruptor-1</alias>
       <alias>Corruptor-2</alias>
     </rule>
     <rule name="Crippling-X" id="8b64-93ea-39c6-ab29" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">

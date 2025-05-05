@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="16" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="17" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -4052,6 +4052,151 @@
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Launch Assets" hidden="false" id="76f2-9ded-5c83-da35" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink name="Launch Assets" hidden="false" id="e45b-93dd-6a32-0ef0" targetId="9cef-c723-f3e7-2dd2" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a42c-e159-ac6e-a287" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Light Torpedo" hidden="false" id="f674-0de3-eab7-9a33" sortIndex="1" flatten="true">
+          <profiles>
+            <profile name="Light Torpedo" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="ba97-de7c-1aa8-1522">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">6&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">4</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">2+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">Penetrator</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="faec-ec84-5167-0f70-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faec-ec84-5167-0f70-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Penetrator" id="427f-11f9-cf90-a034" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bombers" hidden="false" id="ac18-a118-905d-3622" sortIndex="4" flatten="true">
+          <profiles>
+            <profile name="Bombers" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="2e8c-63f1-356f-cc8c">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">10&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">2</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">3+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a39-b1f0-ac39-1951-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a39-b1f0-ac39-1951-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mine" hidden="false" id="b9b6-51fe-63ac-1565" sortIndex="6" flatten="true">
+          <profiles>
+            <profile name="Mine" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="2581-de45-44b0-9a20">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">4&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">2</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">2+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">2</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0079-b473-4c9c-0ff8-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0079-b473-4c9c-0ff8-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fighters" hidden="false" id="b5c2-7967-721a-2fe8" sortIndex="7" flatten="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37df-0637-182a-dc86-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37df-0637-182a-dc86-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Fighters" typeId="3057-ca91-b261-38a8" typeName="Launch Asset" hidden="false" id="ded8-a202-5f6e-abac">
+              <characteristics>
+                <characteristic name="Thrust" typeId="ea0d-696a-c5fa-1684">13&quot;</characteristic>
+                <characteristic name="KS Re-roll" typeId="d1c9-654e-a9f1-a88f">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="c568-eaa2-be35-9960" sortIndex="2" flatten="true">
+          <profiles>
+            <profile name="Medium Torpedo" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="1605-0770-a20b-21a4">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">4&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">4</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">2+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">2</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">Penetrator</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e67-527a-df00-2b34-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e67-527a-df00-2b34-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Penetrator" id="ce97-34e4-9737-ffd9" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Torpedo" hidden="false" id="ddf4-16a1-6472-e029" sortIndex="3" flatten="true">
+          <profiles>
+            <profile name="Heavy Torpedo" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="9865-8a28-d912-1e0a">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">4&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">4</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">2+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">4</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">Penetrator</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96ba-b7a9-f37c-bca6-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96ba-b7a9-f37c-bca6-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Penetrator" id="2699-80ee-8cae-6a82" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Bombers" hidden="false" id="8f49-8731-e480-3f5c" sortIndex="5" flatten="true">
+          <profiles>
+            <profile name="Heavy Bombers" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="0231-de02-7782-18a2">
+              <characteristics>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">8&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">2</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">3+</characteristic>
+                <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
+                <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">Calibre-H/C, Penetrator</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe99-6c0b-1e22-0c50-min" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe99-6c0b-1e22-0c50-max" includeChildSelections="false" automatic="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Calibre-X" id="6970-b989-852f-17d7" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
+            <infoLink name="Penetrator" id="a649-d432-cf77-7e8c" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Lvl 1: Captain" hidden="false" id="481d-7863-ffb3-aa4f" targetId="19a9-7d1f-50b2-e998" type="selectionEntry"/>
@@ -4123,6 +4268,7 @@
     <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="07b0-7286-6d3b-4f33" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
     <entryLink import="true" name="M-Type Barge" hidden="false" id="a6c1-ef68-42b0-93af" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
     <entryLink import="true" name="T-Type Tugboat" hidden="false" id="ee03-5982-f3ca-0362" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
+    <entryLink import="true" name="Launch Assets" hidden="false" id="d611-8ddb-8967-32b1" targetId="76f2-9ded-5c83-da35" type="selectionEntry"/>
   </entryLinks>
   <publications>
     <publication name="UCM Combined Fleet Stats (241024)" id="9813-8e60-542d-9381" hidden="false" shortName="UCM Stats (241024)"/>
