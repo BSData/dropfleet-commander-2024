@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="12" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="13" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Fleet Thrall" hidden="false" id="7fe9-330a-0598-35d7" publicationId="260d-362c-d403-80ae" page="1">
@@ -3632,12 +3632,12 @@
           <profiles>
             <profile name="Bombers" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="8a1d-31fd-3342-536e">
               <characteristics>
-                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">6&quot;</characteristic>
-                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">3</characteristic>
-                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">4+</characteristic>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">12&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">2</characteristic>
+                <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">3+</characteristic>
                 <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
                 <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
-                <characteristic name="Special" typeId="9b33-7e68-b136-77db">Corruptor-1, Bombers</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">Crippling-Fire, Bombers</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3646,7 +3646,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38fe-bf8e-04ef-0ab5-max" includeChildSelections="false" automatic="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Corruptor-X" id="4623-dfd3-c738-c2c0" hidden="false" type="rule" targetId="b495-5934-9bf1-d595"/>
+            <infoLink name="Crippling-X" id="4623-dfd3-c738-c2c0" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
             <infoLink name="Bombers" id="1581-4df8-90db-5f7a" hidden="false" type="rule" targetId="cce9-530e-4cc7-817e"/>
           </infoLinks>
         </selectionEntry>
@@ -3654,12 +3654,12 @@
           <profiles>
             <profile name="Mines" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="7339-0615-f765-7ac6">
               <characteristics>
-                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">3&quot;</characteristic>
-                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">5</characteristic>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">6&quot;</characteristic>
+                <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">3</characteristic>
                 <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">4+</characteristic>
                 <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
                 <characteristic name="Type" typeId="1dc7-5577-b848-5b24">K</characteristic>
-                <characteristic name="Special" typeId="9b33-7e68-b136-77db">-</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">Corruptor-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3667,6 +3667,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9643-da84-b46d-eecb-min" includeChildSelections="false" automatic="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9643-da84-b46d-eecb-max" includeChildSelections="false" automatic="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Corruptor-X" id="4fdf-bd70-7af1-999f" hidden="false" type="rule" targetId="b495-5934-9bf1-d595"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Fighters" hidden="false" id="a165-5923-289a-c757" sortIndex="4" flatten="true">
           <constraints>
