@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="12" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
@@ -129,7 +129,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d88c-dc9b-1bb3-4c11" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Launch Asset" hidden="false" id="40cf-76cf-cc5c-6706" targetId="9cef-c723-f3e7-2dd2" type="categoryEntry"/>
+        <categoryLink name="Launch Assets" hidden="false" id="40cf-76cf-cc5c-6706" targetId="9cef-c723-f3e7-2dd2"/>
         <categoryLink name="Game" hidden="false" id="2618-a0a9-42fb-4431" targetId="492c-ac66-3724-83bc"/>
       </categoryLinks>
       <constraints>
@@ -198,7 +198,7 @@
           <profiles>
             <profile name="Key Site" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="fbaf-56a4-2c11-2115">
               <characteristics>
-                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one Dropsite over 24” from your Deployment Zone before the game. If you Control it at the end of the game, gain 2VP.</characteristic>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one Dropsite at least 24” from your Deployment Zone before the game. If you Control it at the end of the game, gain 2VP.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -210,7 +210,7 @@
           <profiles>
             <profile name="Priority Target" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="3cf8-58ab-3bdd-2ce1">
               <characteristics>
-                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one Medium or Large Dropsite over 24” from your Deployment Zone before the game. If you have Levelled it, at the end of the game, gain 2VP.</characteristic>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one Dropsite at least 24” from your Deployment Zone before the game. If you have Levelled it, at the end of the game, gain 2VP.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -258,7 +258,7 @@
           <profiles>
             <profile name="Gather Intel" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="79db-f0ec-8018-8345">
               <characteristics>
-                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">You are awarded 1VP whenever you Survey Dropsites. Any Capital Ship within 6” of the Dropsite and able to fire Weapons may substitute all attacking and launching that round to Survey it. Each Dropsite may be Surveyed once per player per game. A maximum of 2VP may be scored using this Secondary Objective. If the Scenario normally uses Survey, these VP are scored in addition to those in the Scenario.</characteristic>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">You are awarded 1VP whenever you survey a Dropsite at least 24&quot; away from your deployment zone. Any Capital Ship within 6” of the Dropsite and able to fire Weapons may substitute all attacking and launching that round to Survey it. Each Dropsite may be Surveyed once per player per game. A maximum of 2VP may be scored using this Secondary Objective. If the Scenario normally uses Survey, these VP are scored in addition to those in the Scenario.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -282,7 +282,7 @@
           <profiles>
             <profile name="Objectives Beyond" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="febc-b6ef-9cf8-bf43">
               <characteristics>
-                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one of your Ships of Tonnage M or higher. You may permanently fly that Ship off the board in any opponent’s Deployment Zone. If you do, gain 2VP.</characteristic>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one of your Ships of Tonnage M or higher. You may permanently fly that Ship off the board in any opponent’s Deployment Zone. If you do and that ship is not Crippled, gain 1VP. If that ship was H or C tonnage, gain 2VP instead.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -465,11 +465,11 @@
       <alias>Aegis-2</alias>
       <alias>Aegis-4</alias>
       <alias>Aegis-8</alias>
-      <description>All Ships with this rule in a Group combine their X values into a single value, Y.
-Friendly Groups in coherency within 6” of a Ship with this rule and the same Orbital Layer (including its own Group) gain the benefits of Aegis.
-When rolling saves against Close Action and Bomber (of any type) attacks, those Groups gain Y additional save dice they may add to those saves. The defending payer assigns these dice against specific weapons, divided up as they choose. 
-An Aegis Group can only grant the benefits of Aegis once each time a friendly group is attacked.
-A friendly Group can only benefit from Aegis from one Group each time it is attacked.</description>
+      <description>All Ships with this rule in a Group combine their X values into a single value, Y.
+Friendly Groups in coherency within 6” of a Ship with this rule and the same Orbital Layer (including its own Group) gain the benefits of Aegis.
+When rolling saves against Close Action and Bomber (of any type) attacks, those Groups gain Y additional save dice they may add to those saves. Before rolling to save, the defending player assigns these dice against specific weapons, divided up as they choose (including any modified hits).
+An Aegis Group can only grant the benefits of Aegis once each time a friendly group is attacked.
+A friendly Group can only benefit from Aegis from one Group each time it is attacked.</description>
     </rule>
     <rule name="Cloak-X" id="69fa-32f1-0a4f-c052" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
       <description>This Group may have a maximum of X Spikes.</description>
@@ -486,17 +486,22 @@ A friendly Group can only benefit from Aegis from one Group each time it is atta
       <description>This special rule confers various benefits covered in the core rules.</description>
     </rule>
     <rule name="Detector" id="ff6a-7b9f-fca1-ef36" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
-      <description>If this Ship is on an order that allows it to attack, this Ship may forgo one allowed Weapon use during its activation. If it does, at the end of its activation place two Spikes on an enemy Group in line of sight.</description>
+      <description>If this Ship is on an order that allows it to attack, this Ship may forgo one allowed Weapon use during its activation. If it does, at the end of its activation place two Spikes on an enemy Group in line of sight. A Group that uses Detector gains a Spike (regardless of the amount of Ships using this rule).</description>
     </rule>
     <rule name="Escort" id="03da-77d7-bd73-eeb4" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
-      <description>When a friendly Ship of H or C tonnage within 6” of this Ship on the same Orbital Layer is attacked, you may allocate all hits from that attack to this Ship’s Group, even if it is out of range, arc, and line of sight of the attacking Group. Only the effects of Scenery to the original target apply.</description>
+      <description>After Weapons have been assigned to a friendly Ship of H or C tonnage within 6” of this Ship on the same Orbital Layer, you may declare the use of Escort for the friendly Ship. Only one Group may Escort at a time and it must be in Coherency.
+After your opponent rolls to hit the original target, allocate an amount of hits from that roll to this Group. An Escort Group cannot be allocated more damage by those hits than each remaining Ship in it has in starting Hull. You may use this even if the Escort Group is out of range, arc, and line of sight of the attacking Group. Continue the attack sequence using the Escort Group.
+Weapons with the Focused rule cannot be affected by the Escort rule.</description>
     </rule>
     <rule name="Gateship-X" id="4572-00d5-81d2-4fcc" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
-      <description>Shaltari Motherships must launch their Dropships via a Ship with this rule. Each Ship with Gateship can have up to X Dropships deployed from it each round. Note: though the launch is measured from the Ship with the Gateship rule, it is the Mothership that is launching.
+      <description>Shaltari Motherships must launch their Dropships via a Ship/Dropsite with this rule (sometimes referred to as Gateships). Each Gateship can have up to X Dropships deployed from it each round. Note: though the launch is measured from the Gateship, it is the Mothership that is launching.
 When this Ship goes on the Weapons Free, Max Thrust, or Damage Control orders, it reduces its Gateship-X value to 0 until the start of its next activation.</description>
       <alias>Gateship-0</alias>
       <alias>Gateship-1</alias>
       <alias>Gateship-2</alias>
+    </rule>
+    <rule name="Impetuous" id="6f09-5ccc-4dae-ff72" hidden="false">
+      <description>At the start of each round, friendly Groups with this rule improve the Lock of their Weapon Systems by 1 until you activate a friendly Group without this rule.</description>
     </rule>
     <rule name="Marines-X" id="93f3-7932-b233-4d38" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
       <description>Remove X enemy Battalions from this Ship at the beginning of the Battalion Combat step.</description>
@@ -508,7 +513,7 @@ When this Ship goes on the Weapons Free, Max Thrust, or Damage Control orders, i
       <description>Ships with this rule may not use Course Change or Max Thrust orders.</description>
     </rule>
     <rule name="Mothership" id="928d-4467-6cc7-1771" hidden="false">
-      <description>Shaltari Motherships can only deploy their Dropships via friendly Ships with the Gateship-X special rule. These Ships must be within 18” of the Mothership or part of a chain of Gateship-X Ships with each Ship in the chain being within 18” of another. Note: though the launch is measured from the Gateship, it is the Mothership that is launching.</description>
+      <description>Shaltari Motherships can only deploy their Dropships via friendly Ships/Dropsites with the Gateship-X special rule (sometimes referred to as Gateships). These Gateships must be within 18” of the Mothership or part of a chain of Gateships with each Gateship in the chain being within 18” of another. Note: though the launch is measured from the Gateship, it is the Mothership that is launching.</description>
     </rule>
     <rule name="Payload S/L-X" id="7a4f-55fd-3916-978f" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
       <description>When building your fleet, you may choose as many Payload Ships as you like— tonnage limits do not apply to these Ships, and they have no Group size. All Payload S/L Ships must be assigned to a Porter S/L Ship with the same letter. Payload Ships may not activate or be targeted until detached.
@@ -538,10 +543,13 @@ Any tokens, Spikes, or effects affecting the reattached Payload Ship are removed
       <alias>Regenerate-2</alias>
       <alias>Regenerate-4</alias>
     </rule>
+    <rule name="Reinforced Armour" id="231e-a3d0-35e6-9a33" hidden="false">
+      <description>Weapons rolling to hit this Ship or its Group increase the result needed to score a critical by 1 (so a weapon that would crit on a 4+ crits on a 5+ instead).</description>
+    </rule>
     <rule name="Shield-X" id="40e4-1c82-9e61-c8c1" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
-      <description>This Group has a Shield Save of X+. When this Group would be required to roll to Save, you may declare the use of Shield Saves, replacing its Energy and Kinetic Saves for those rolls. Shield Saves can be used against Energy, Kinetic, and Core damage and ignore any modifiers to Energy and Kinetic Saves. Backup Saves may then be used after Shield Saves as normal.
-A Group gains a single Spike each time it uses its Shield saves (regardless of the number of saves made per use).
-Hits caused by Boarding Actions cannot be saved by Shield Saves.</description>
+      <description>This Group has a Shield Save of X+. After Weapons have been assigned to this Group or Assets attack this Group, you may declare the use of Shield Saves for this Group. If you do, this Group replaces its Energy and Kinetic Saves with their Shield Saves for that attack sequence. Shield Saves can be used against Energy, Kinetic, and Core damage and ignore any modifiers to Energy and Kinetic Saves. Backup Saves may then be used after Shield Saves as normal.
+A Group gains a single Spike each time it uses its Shield saves (regardless of the number of saves made per use).
+Hits caused by Boarding Actions cannot be saved by Shield Saves.</description>
       <alias>Shield-3+</alias>
       <alias>Shield-4+</alias>
       <alias>Shield-5+</alias>
@@ -552,6 +560,9 @@ Hits caused by Boarding Actions cannot be saved by Shield Saves.</description>
     <rule name="Unique" id="3f45-7047-464a-3be4" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>You may only take one Group of this Ship.</description>
     </rule>
+    <rule name="Vanguard-X" id="0afa-aca9-640a-973e" hidden="false">
+      <description>Groups with this rule may begin the game Directly Deployed, ignoring the normal Scenario Deployment and Approach Types (though still counting towards Groups Directly Deployed). If it does, it may be deployed up to X” away from your Deployment Zone.</description>
+    </rule>
     <rule name="Vectored" id="7a2f-fbe0-b3cd-98c8" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>This Ship may make an additional turn at any point during its movement, regardless of the Order its Group has taken.</description>
     </rule>
@@ -559,7 +570,7 @@ Hits caused by Boarding Actions cannot be saved by Shield Saves.</description>
       <description>This weapon ignores the penalties for attacking Ships in Atmosphere while the attacking Ship is also in Atmosphere.</description>
     </rule>
     <rule name="Alt-X" id="f354-1b03-966f-f667" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
-      <description>Only one Weapon with the same Alt number on the same Ship may be fired by that Ship each round.
+      <description>Only one Weapon or Load with the same Alt value on the same Ship may be used by that Ship each round.
 All Alt Weapons with the same number count as the same Weapon when determining how many Weapons a Ship has.</description>
       <alias>Alt-1</alias>
     </rule>
@@ -607,8 +618,9 @@ This weapon cannot be used to attack Ships in Orbit while the attacking Ship is 
       <alias>Corruptor-2</alias>
     </rule>
     <rule name="Crippling-X" id="8b64-93ea-39c6-ab29" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
-      <description>If this Weapon scores a Critical hit and then damages a Ship with that attack (following normal damage allocation rules), the damaged Ship gains the stated X Crippling Effect regardless of Tonnage. If no effect is listed, roll for Crippling Effects.
-Crippling Effects caused by Crippling Weapons are in addition to the usual one per Ship. Duplicate effects are still ignored.</description>
+      <description>If an attack from this Weapon scores at least one Critical hit and then damages a Ship (following normal damage allocation rules), the damaged Ship gains the stated X Crippling Effect regardless of Tonnage. If no effect is listed, roll 2D6 and apply the corresponding Crippling Effect (from the Crippling Effect table).
+Crippling Effects caused by Crippling Weapons are in addition to those caused by 7.3.6 Roll for Crippling Effects.
+Except for Fire, a Ship can only have one of each type of Crippling Effect token at a time (Spikes are not a Crippling Effect), even when placed from different sources or at different times. Any duplicate effects are ignored and discarded.</description>
       <alias>Crippling</alias>
       <alias>Crippling-Fire</alias>
       <alias>Crippling-Navigation Offline</alias>
@@ -630,9 +642,9 @@ Close Action weapons with this special rule may be used against targets in Orbit
     </rule>
     <rule name="Focused" id="464a-0e99-0229-5190" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <description>Instead of the normal potential targets for Weapons, this Weapon’s potential targets are either:
- • A single enemy Ship.
- • A Dropsite containing no friendly Battalions.
-Damage caused by this Weapon is allocated to only the targeted Ship.</description>
+• A single enemy Ship.
+• A Dropsite containing no friendly Battalions.
+Damage caused by this Weapon is allocated to only the target.</description>
     </rule>
     <rule name="Fusillade-X" id="4f05-4fdc-fad2-c566" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
       <alias>Fusillade-1</alias>
@@ -646,7 +658,10 @@ Damage caused by this Weapon is allocated to only the targeted Ship.</descriptio
 Ships with only a single High Power Weapon can only attack with it while on the Weapons Free Order.</description>
     </rule>
     <rule name="Impel-X" id="9944-ada1-19c8-2d06" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
-      <description>If the attacking Group scores at least X critical hits against the target Group, turn all Ships in the targeted Group up to 45 degrees in the same direction. A Group can only be affected by this rule once per attack.</description>
+      <description>If an attacking Group scores at least X critical hits with this Weapon System against a Group, choose one of the following for each affected Group:
+• Turn all Ships in that Group 45 degrees in the same direction. If the Group scored at least twice X, turn all Ships in that Group 90 degrees in the same direction instead.
+• Move all Ships in that Group up to twice X in inches directly forward (measuring from the affected Ships). Ships moved this way cannot be moved into Large Objects or off of the table.
+A Group can only be affected by each effect once per Weapon System per attack sequence.</description>
       <alias>Impel-1</alias>
     </rule>
     <rule name="Limited-X" id="0c02-c41a-e1a2-882e" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="38">
@@ -684,7 +699,7 @@ Close Action weapons with this special rule may be used against targets in Atmos
     <rule name="Scald-X" id="41b3-55a2-8d71-ee88" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="39">
       <alias>Scald-1</alias>
       <alias>Scald-2</alias>
-      <description>If this weapon attacks a target within Scan range, reduce the target’s Energy / Kinetic save against this weapon’s attack (other attacks and weapons are unaffected).</description>
+      <description>If this weapon attacks a target within Scan range, reduce the target’s Energy / Kinetic save against this weapon&apos;s hits by X (other attacks and Weapons are unaffected).</description>
     </rule>
     <rule name="Status" id="ea58-a80c-c3de-e165" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="39">
       <description>When you hit with this Weapon, pick one of the following tokens; Defence Systems Offline, Scanners Offline, or Navigation Offline. 
@@ -697,7 +712,7 @@ At the end of the Inflict Damage step, choose one of the defending Ships to gain
       <alias>Volley-2</alias>
       <alias>Volley-4</alias>
       <alias>Volley-5</alias>
-      <description>This Weapon counts as 1 Weapon for Orders purposes. When you assign this Weapon to a target, you assign it to targets up to X times (either the same or different). Once assigned, treat each separate allocation as a separate Weapon profile for the subsequent steps in the attack sequence.
+      <description>This Weapon counts as 1 Weapon for Orders purposes. When you assign this Weapon to a target, you assign it to targets up to X times (either the same or different). Once assigned, treat each allocation as a separate weapon for the subsequent steps in the attack sequence.
 Broadside Weapons using Volley must alternate arcs when determining and assigning targets (so cannot target the same Group on the same side twice in a row).</description>
     </rule>
   </sharedRules>
