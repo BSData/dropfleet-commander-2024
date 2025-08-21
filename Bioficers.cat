@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="18" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="19" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Ardent" hidden="false" id="253f-2124-1abd-87e5" publicationId="c835-461f-ea00-a841" page="1">
@@ -61,7 +61,7 @@
         </profile>
         <profile name="Kinetic Deconstruction" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5f9d-652a-4ede-7e0c">
           <characteristics>
-            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
             <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Group makes an attack with any number of weapons with “Decon” in its name, those weapons change their Type to Kinetic until the end of its activation.</characteristic>
           </characteristics>
         </profile>
@@ -190,7 +190,7 @@
             </profile>
             <profile name="Vice Lightly" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fd3c-eefc-a6b0-a23b">
               <characteristics>
-                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
                 <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a weapon with “Lightvice” in its name, that weapon ignores its Focused rule for that attack.</characteristic>
               </characteristics>
             </profile>
@@ -225,7 +225,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-6&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -237,6 +237,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7039-1ab3-1cda-6196" includeChildSelections="false"/>
           </constraints>
           <comment>Modified weapon</comment>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="f7d8-e8e9-ab5e-7e5a" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -310,7 +313,7 @@
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">19</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
-                <characteristic name="BS" typeId="05b6-9825-68e8-4983">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Marines-1, Porter L-1</characteristic>
               </characteristics>
@@ -356,7 +359,7 @@
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">19</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
-                <characteristic name="BS" typeId="05b6-9825-68e8-4983">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Marines-1, Porter L-1</characteristic>
               </characteristics>
@@ -402,7 +405,7 @@
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">19</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
-                <characteristic name="BS" typeId="05b6-9825-68e8-4983">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Marines-1, Porter L-1</characteristic>
               </characteristics>
@@ -448,7 +451,7 @@
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">17</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
-                <characteristic name="BS" typeId="05b6-9825-68e8-4983">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter L-1</characteristic>
               </characteristics>
@@ -477,7 +480,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Brutal Battleship" hidden="false" id="f481-bd12-b390-15c1" publicationId="c835-461f-ea00-a841" page="47">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="230"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="215"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="9eef-db08-d495-efd1" targetId="9d6f-26b0-7969-496b" primary="true"/>
@@ -491,7 +494,7 @@
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">17</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
-                <characteristic name="BS" typeId="05b6-9825-68e8-4983">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter L-1</characteristic>
               </characteristics>
@@ -534,7 +537,7 @@
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">17</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
-                <characteristic name="BS" typeId="05b6-9825-68e8-4983">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter L-1</characteristic>
               </characteristics>
@@ -579,7 +582,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-6</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -590,6 +593,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2373-3632-2e63-339e" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07e0-f5b8-cb9a-0b9e" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="5be0-3f81-7b80-59c9" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -601,7 +607,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Sanctum Battlecruiser" hidden="false" id="35b9-0e68-1ca4-37ed" publicationId="c835-461f-ea00-a841" page="44">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="200"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="185"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="7d97-6d79-e026-4b05" targetId="9d6f-26b0-7969-496b" primary="true"/>
@@ -617,7 +623,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-6&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -629,6 +635,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6dae-22d1-18c2-d998" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5feb-71d7-6e46-4deb" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="952b-de40-4d9b-37e5" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -656,7 +665,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-6&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -667,6 +676,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="789f-7f42-a5e7-bfaf" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78b7-ea14-17dd-ab20" includeChildSelections="false"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="e1df-2cc0-0b13-c0e3" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -678,7 +690,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Carronade Heavy Cruiser" hidden="false" id="cd32-8ac0-3a3f-d465" publicationId="c835-461f-ea00-a841" page="42">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="110"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="120"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="30ec-022a-c83e-f41e" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -761,7 +773,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Cacophony Heavy Cruiser" hidden="false" id="6601-9350-3d0a-6a5a" publicationId="c835-461f-ea00-a841" page="40">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="140"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="132"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="248d-61ab-ac0b-60b5" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -802,7 +814,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Cataphract Heavy Cruiser" hidden="false" id="dab1-373b-7f18-9204" publicationId="c835-461f-ea00-a841" page="39">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="105"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="108"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="9fdf-7232-1655-fc99" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -927,7 +939,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Cosmic Cruiser" hidden="false" id="5e63-f71e-203a-145d" publicationId="c835-461f-ea00-a841" page="36">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="80"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="88"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="cd58-b672-5ae2-5378" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -969,7 +981,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Comet Cruiser" hidden="false" id="da54-2c5a-83c6-7cef" publicationId="c835-461f-ea00-a841" page="35">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="90"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="82"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="63af-7658-c44f-e22c" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -1095,7 +1107,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Construct Cruiser" hidden="false" id="609e-2d80-9e0f-a10a" publicationId="c835-461f-ea00-a841" page="32">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="100"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="96"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="2a8e-55ed-12c5-bcef" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -1481,7 +1493,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tine Cutter" hidden="false" id="517e-39fc-729f-9877" publicationId="c835-461f-ea00-a841" page="23">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="55"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="52"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="c488-8eed-02de-0645" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -1565,25 +1577,25 @@
           <profiles>
             <profile name="Matrix" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="f40f-18da-08c9-d9da" publicationId="c835-461f-ea00-a841" page="21">
               <characteristics>
-                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">4&quot;</characteristic>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
-                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Monitor</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23d8-0572-b3a4-e36a" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b72a-0547-bae8-e859" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b72a-0547-bae8-e859" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Decon Blast" hidden="false" id="8eb1-237e-9354-c537" type="selectionEntry" targetId="ff82-4f61-22da-9d39" sortIndex="1"/>
-            <entryLink import="true" name="Torpedo" hidden="false" id="1ff7-11a8-c889-3188" type="selectionEntry" targetId="e90b-9b11-28fe-af2e" sortIndex="2"/>
+            <entryLink import="true" name="Boarding Pods" hidden="false" id="1ff7-11a8-c889-3188" type="selectionEntry" targetId="dab4-536f-2ff8-1650" sortIndex="2"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Monitor" id="c442-0dd3-035f-0f06" hidden="false" type="rule" targetId="cc9f-9be5-cc19-2fc9"/>
@@ -1607,7 +1619,7 @@
           <profiles>
             <profile name="Monarch" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="ae9e-adfe-db57-3901" publicationId="c835-461f-ea00-a841" page="20">
               <characteristics>
-                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">4&quot;</characteristic>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
@@ -1625,7 +1637,7 @@
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Decon Blast" hidden="false" id="9552-927b-9d8d-456f" type="selectionEntry" targetId="ff82-4f61-22da-9d39" sortIndex="1"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="89d7-bd93-87b4-98fc" type="selectionEntry" targetId="65bd-53c9-d2c9-643c" sortIndex="2"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="89d7-bd93-87b4-98fc" type="selectionEntry" targetId="9f7a-e289-c37f-ffa8" sortIndex="2"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Monitor" id="831a-0a99-8443-06b9" hidden="false" type="rule" targetId="cc9f-9be5-cc19-2fc9"/>
@@ -1669,7 +1681,7 @@
           <profiles>
             <profile name="Mantle" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="736f-a25b-3a23-d460" publicationId="c835-461f-ea00-a841" page="19">
               <characteristics>
-                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">4&quot;</characteristic>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
@@ -1703,7 +1715,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Fresco Frigate" hidden="false" id="404f-014a-f934-c455" publicationId="c835-461f-ea00-a841" page="18">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="36"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="480c-b1a4-c003-4114" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -1741,7 +1753,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Fulcrum Frigate" hidden="false" id="2038-d32a-a059-b173" publicationId="c835-461f-ea00-a841" page="17">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="37"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="a31d-4d51-5214-761a" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -1820,7 +1832,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Forestall Frigate" hidden="false" id="73a0-e3eb-d183-a175" publicationId="c835-461f-ea00-a841" page="15">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="38"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="6750-9f25-2506-25bb" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -1931,7 +1943,7 @@
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
-                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-4</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Rare</characteristic>
               </characteristics>
             </profile>
@@ -1942,7 +1954,7 @@
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1d6-dfdc-0aa7-43c0" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="bf1d-61cc-c80a-74ab" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="bf1d-61cc-c80a-74ab" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Rare" id="dd0d-bbba-e3cb-aa6e" hidden="false" type="rule" targetId="f7ad-85f9-39f4-7e10"/>
@@ -1999,7 +2011,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Summoner Cell" hidden="false" id="2b19-b721-77d9-d7b1" publicationId="c835-461f-ea00-a841" page="11">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="70"/>
           </costs>
           <profiles>
             <profile name="Summoner Cell" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="de68-90aa-171f-70a4" publicationId="c835-461f-ea00-a841" page="11">
@@ -2244,7 +2256,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Genitor Tower" hidden="false" id="394d-a0b8-bee0-c4a9" publicationId="c835-461f-ea00-a841" page="2">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Payload" hidden="false" id="b101-522e-5150-3a90" targetId="3fa9-60d3-d9be-6611" primary="true"/>
@@ -2264,7 +2276,7 @@
           <rules>
             <rule name="Genitor Tower" id="7072-a805-3f53-8030" hidden="false">
               <description>This Feature may be purchased for your fleet when you build your list. It must be assigned to a Ship with the Porter special rule as if it were a Ship with the Payload S-1 special rule.
-When any number of enemy Battalions on this Dropsite and its Features are removed for any reason, place 2 friendly Battalions on this Dropsite (regardless of the number of Battalions removed). If these Battalions are gained through Battalion Combat, they are placed after Battalion Combat.
+When one or more enemy Battalions on this Dropsite and its Features are removed for any reason, place 2 friendly Battalions on this Dropsite regardless of the number of Battalions removed or Genitor Towers on this Dropsite. If these Battalions are gained through Battalion Combat, they are placed after Battalion Combat.
 When this Feature is destroyed, it contributes its points to the Kill Points of the opposing player that destroyed it.</description>
             </rule>
           </rules>
@@ -2280,7 +2292,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1cea-020d-eaf0-2d4f" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1dc3-f573-72c4-66f4" includeChildSelections="false"/>
       </constraints>
-      <comment>[x2] FN 1/2+/4/K Rv-1</comment>
+      <comment>[x2] FN 1/2+/4/K Rv-2</comment>
       <infoLinks>
         <infoLink name="Barb Launcher" id="bacb-b134-0f05-4ba4" hidden="false" type="profile" targetId="76b6-65c7-226b-b98f"/>
         <infoLink name="Reave-X" id="aecc-000f-49e0-dec1" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
@@ -2291,7 +2303,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fba-adbb-3769-5c04" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6403-47ce-866d-49ff" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 1/2+/4/K Rv-1</comment>
+      <comment>FN 1/2+/4/K Rv-2</comment>
       <infoLinks>
         <infoLink name="Barb Launcher" id="5a5c-3314-03aa-a808" hidden="false" type="profile" targetId="76b6-65c7-226b-b98f"/>
         <infoLink name="Reave-X" id="be3d-3b25-b560-cdcf" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
@@ -2306,7 +2318,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2314,7 +2326,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a2b4-0d09-8819-2c90" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1969-7f54-430a-5b3c" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 1/2+/2/K Rv-1</comment>
+      <comment>FN 1/2+/2/K Rv-2</comment>
       <infoLinks>
         <infoLink name="Reave-X" id="584d-743e-1389-ec78" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
@@ -2328,7 +2340,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2346,11 +2358,11 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <profile name="Bisector" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7652-71b7-6b0a-89f4">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">5</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Crippling, Penetrator, Bloom-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Crippling, Penetrator, Bloom-2, Focused</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2359,12 +2371,13 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Crippling-X" id="cfd5-3535-ab3d-b49f" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
         <infoLink name="Penetrator" id="0139-6a5f-1427-e2f5" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
         <infoLink name="Bloom-X" id="c71e-0498-9943-175f" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+        <infoLink name="Focused" id="9d16-9828-3526-55e2" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a2e1-b738-0994-94b2" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c73e-f898-bd3a-9abc" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 2/3+/5/E Cal-H/C Crip Pen Bl-1</comment>
+      <comment>FN 5/3+/3/E Cal-H/C Crip Pen Bl-2 Foc</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bisector" hidden="false" id="fbb0-03e1-e6ea-0f34">
       <profiles>
@@ -2375,7 +2388,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Calibre-H/C, Penetrator</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Calibre-H/C, Penetrator, Focused</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2383,12 +2396,13 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Bloom-X" id="8c0d-2abe-70b4-4fc8" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
         <infoLink name="Calibre-X" id="46c7-0dd4-98b1-5c32" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
         <infoLink name="Penetrator" id="38f2-2431-b691-1730" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+        <infoLink name="Focused" id="4a7b-4b55-e223-6aed" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd43-fed0-c6fa-5ec5-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd43-fed0-c6fa-5ec5-max" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 2/3+/3/E Bl-1 Cal-H/C Pen</comment>
+      <comment>FN 2/3+/3/E Bl-1 Cal-H/C Pen Foc</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Decon Annihilator" hidden="false" id="a4a4-23e2-4ab4-e239">
       <profiles>
@@ -2512,38 +2526,50 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Godray Lightvice" hidden="false" id="a6c7-1d0a-81cc-3f21">
       <profiles>
-        <profile name="Godray Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c65f-bcb1-bf6d-806b">
+        <profile name="Godray Lightvice (Anti-Ship)" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c65f-bcb1-bf6d-806b">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">5</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Bombardment, Close Action, Focused</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Bloom-1, Close Action, Focused, Scald-1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Godray Lightvice (Bombardment)" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="e5f4-a628-4391-cba8">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Bloom-1, Bombardment, Close Action, Focused, Scald-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
+        <infoLink name="Alt-X" id="59ff-825c-2e96-2f84" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
         <infoLink name="Bloom-X" id="bd9b-8303-776d-2e9c" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
         <infoLink name="Bombardment" id="9b33-fcc6-d73a-8b50" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
         <infoLink name="Close Action" id="2ccb-1089-db0f-154a" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Focused" id="102a-e3f7-afc7-49d5" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+        <infoLink name="Scald-X" id="432b-a3bd-0b81-d7ba" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
         <infoLink name="Godray Lightvice" id="64ad-b8b2-1ea0-3531" hidden="false" type="rule" targetId="8590-da53-d799-e5d8"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c773-61f2-8559-f78e" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f28-14c0-efe9-4a9b" includeChildSelections="false"/>
       </constraints>
-      <comment>F 2/2+/5/K Bl-1 Bmb CA Foc</comment>
+      <comment>F 5/2+/3/K Alt-1 Bl-1 CA Foc Sc-1 / F 5/4+/3/K Alt-1 Bl-1 Bmb CA Foc Sc-1</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hyper Lightvice" hidden="false" id="f7df-7ebb-ffb8-301c">
       <profiles>
         <profile name="Hyper Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="542b-6a5e-0b2d-bfcc">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">5</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
             <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Close Action, Focused, Scald-1</characteristic>
           </characteristics>
@@ -2559,16 +2585,16 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1ad-7d02-61ae-4966" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e136-8d71-8c9a-62ed" includeChildSelections="false"/>
       </constraints>
-      <comment>F 2/2+/5/K Bl-1 CA Foc</comment>
+      <comment>F 5/2+/3/K Bl-1 CA Foc</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Lightvice" hidden="false" id="d945-02c0-f69a-78e8">
       <profiles>
-        <profile name="Heavy Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="e760-4a60-6d81-246e">
+        <profile name="Heavy Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="98e0-27ad-d2be-fe86">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
             <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Focused</characteristic>
           </characteristics>
@@ -2582,29 +2608,30 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7ed-a145-7d41-0d08-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7ed-a145-7d41-0d08-max" includeChildSelections="false"/>
       </constraints>
-      <comment>F 2/2+/3/K CA Foc</comment>
+      <comment>F 5/2+/2/K CA Foc</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lightvice" hidden="false" id="8a12-4124-e587-9095">
       <profiles>
         <profile name="Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ee2e-07ab-a4d8-e718">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">1</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Focused</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Close Action" id="6ab0-e569-3300-c834" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Focused" id="f2bf-a4c4-01ca-c9f0" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88bc-127d-9871-bed0" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c14-9fed-f7af-ba6e" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S 1/2+/3/K CA</comment>
+      <comment>F/S 4/2+/1/K CA</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="41e6-babb-2487-3b35">
       <infoLinks>
@@ -2617,7 +2644,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2dd1-a898-374e-509f-min" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2dd1-a898-374e-509f-max" includeChildSelections="false"/>
       </constraints>
-      <comment>[x2] FN 8/4+/1/E AW Fus-2 Rv-1</comment>
+      <comment>[x2] FN 8/4+/1/E AW Fus-3 Rv-1</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="b420-9dac-d07e-3511">
       <infoLinks>
@@ -2630,31 +2657,57 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d24-d960-d9b6-1986" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98fc-66cb-6cf7-2cdc" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 8/4+/1/E AW Fus-2 Rv-1</comment>
+      <comment>FN 8/4+/1/E AW Fus-3 Rv-1</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scythe Nodule" hidden="false" id="27d7-86ff-8ab9-5438">
       <infoLinks>
         <infoLink name="Anti Wing" id="7c7d-22d5-9ebe-c9df" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
-        <infoLink name="Reave-X" id="46cc-3f5b-8ae9-0376" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
-        <infoLink name="Scythe Nodule" id="643c-31db-84df-af17" hidden="false" type="profile" targetId="f957-7a48-6f4d-6978"/>
+        <infoLink name="Fusillade-X" id="46cc-3f5b-8ae9-0376" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Reave-X" id="3c05-f401-d2fb-b3ce" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bcd-bac3-244f-0f5f" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f389-d71b-ed55-6ccb" includeChildSelections="false"/>
       </constraints>
-      <comment>F 4/4+/1/E AW Rv-1</comment>
+      <comment>F 4/4+/1/E AW Fus-2 Rv-1</comment>
+      <profiles>
+        <profile name="Scythe Nodule" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c40b-5980-ffa0-0372">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Fusilade-2, Reave-1</characteristic>
+          </characteristics>
+          <comment>F 4/4+/1/E AW Rv-1</comment>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scythe Nodule" hidden="false" id="a171-2923-b3ac-bcce">
       <infoLinks>
         <infoLink name="Anti Wing" id="b86a-752a-aa07-305e" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
+        <infoLink name="Fusillade-X" id="4a6a-df8e-220c-30aa" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
         <infoLink name="Reave-X" id="fbb2-735e-eff7-72cc" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
-        <infoLink name="Scythe Nodule" id="01d6-2982-7968-c880" hidden="false" type="profile" targetId="f957-7a48-6f4d-6978"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2d86-837b-6c2f-dbf4" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4704-d62f-b451-bc57" includeChildSelections="false"/>
       </constraints>
       <comment>[x2] F 4/4+/1/E AW Rv-1</comment>
+      <profiles>
+        <profile name="Scythe Nodule" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="33d8-261d-3c5d-ebe6">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Fusilade-1, Reave-1</characteristic>
+          </characteristics>
+          <comment>F 4/4+/1/E AW Fus-1 Rv-1</comment>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scythe Cluster" hidden="false" id="14d0-202c-3e93-cfee">
       <infoLinks>
@@ -2666,12 +2719,12 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e759-0279-53bb-0e3b" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b0f-2da7-ee9a-b1f3" includeChildSelections="false"/>
       </constraints>
-      <comment>F 5/4+/1/E AW Fus-3 Rv-1</comment>
+      <comment>F 7/4+/1/E AW Fus-3 Rv-1</comment>
       <profiles>
         <profile name="Scythe Cluster" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="b10d-bc37-e7ea-de11">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">7</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
@@ -2689,19 +2742,20 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Fusillade-5</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Fusillade-5, Calibre-L</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Close Action" id="581e-1e35-a56e-010f" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Fusillade-X" id="f646-9aec-4359-53cc" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Calibre-X" id="5bfb-a2a7-dbfd-b939" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c88c-8351-ba89-08d5" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d630-b5f6-43d7-9bf3" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S 15/3+/1/E CA Fus-5</comment>
+      <comment>F/S 15/3+/1/E CA Fus-5 Cal-L</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Winnower" hidden="false" id="d0e9-7919-19c0-b2c8">
       <profiles>
@@ -2758,13 +2812,13 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt Launch, Bombardment</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Bombardment</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <comment>F/S/R 3/5+/2/E Alt-L Bmb</comment>
       <infoLinks>
-        <infoLink name="Alt Launch" id="8732-a271-b70f-db37" hidden="false" type="rule" targetId="b63a-36ea-4020-10c5"/>
+        <infoLink name="Alt-X" id="8732-a271-b70f-db37" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
         <infoLink name="Bombardment" id="d46d-5fd0-15af-69fc" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
       </infoLinks>
       <constraints>
@@ -2781,14 +2835,14 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Alt Launch</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Alt-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <comment>F/S/R 3/5+/1/E Bmb Alt-L</comment>
       <infoLinks>
         <infoLink name="Bombardment" id="e5da-6c2f-5dbb-d27e" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
-        <infoLink name="Alt Launch" id="c377-0fb2-8eb7-9307" hidden="false" type="rule" targetId="b63a-36ea-4020-10c5"/>
+        <infoLink name="Alt-X" id="c377-0fb2-8eb7-9307" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad06-83f2-58b9-bae7-min" includeChildSelections="false"/>
@@ -2801,14 +2855,14 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
-            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
             <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Status</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <comment>F/S 2/4+/2/E CA St</comment>
+      <comment>F/S 2/3+/2/E CA St</comment>
       <infoLinks>
         <infoLink name="Close Action" id="122f-ede5-9a58-2687" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Status" id="fdc3-927f-b47b-6bd8" hidden="false" type="rule" targetId="ea58-a80c-c3de-e165"/>
@@ -2967,7 +3021,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <profile name="Prism" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a50f-825c-e0d1-97f1">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
@@ -2975,7 +3029,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
           </characteristics>
         </profile>
       </profiles>
-      <comment>F/S/R 3/3+/1/E</comment>
+      <comment>F/S/R 4/3+/1/E</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ed2-4fb2-36df-c218-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ed2-4fb2-36df-c218-max" includeChildSelections="false"/>
@@ -3042,6 +3096,21 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>2</comment>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="dab4-536f-2ff8-1650">
+      <profiles>
+        <profile name="Boarding Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="cbf4-0f4e-519c-d07a">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c55-1ef4-e4c7-7fc6" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6dab-6bf3-daf0-ac1f" includeChildSelections="false"/>
+      </constraints>
+      <comment>2</comment>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="b7be-f842-2ebd-bca6">
       <profiles>
         <profile name="Boarding Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="32a4-7f60-3972-3a92">
@@ -3062,7 +3131,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <profile name="Drop Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="105f-e689-353c-6520">
           <characteristics>
             <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">1</characteristic>
-            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Alt-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3071,6 +3140,9 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f6f-03f3-35e4-d0cf" includeChildSelections="false"/>
       </constraints>
       <comment>1</comment>
+      <infoLinks>
+        <infoLink name="Alt-X" id="ab28-75e3-295f-ef89" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="2a03-3fe4-51e0-5a5a">
       <profiles>
@@ -3127,7 +3199,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Launch Assets" hidden="false" id="9cad-9c67-a317-939d" defaultAmount="1">
       <categoryLinks>
-        <categoryLink targetId="9cef-c723-f3e7-2dd2" id="cdf5-3e19-cc3e-da20" primary="true" name="Launch Asset"/>
+        <categoryLink targetId="9cef-c723-f3e7-2dd2" id="cdf5-3e19-cc3e-da20" primary="true" name="Launch Assets"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c509-f98e-8d6d-7714" includeChildSelections="false"/>
@@ -3137,7 +3209,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
           <profiles>
             <profile name="Torpedo" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="acda-7ba0-06e1-08f1">
               <characteristics>
-                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">9&quot;</characteristic>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">12&quot;</characteristic>
                 <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">3</characteristic>
                 <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">2+</characteristic>
                 <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
@@ -3152,6 +3224,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
           </constraints>
           <infoLinks>
             <infoLink name="Corruptor-X" id="e652-4046-7c34-3295" hidden="false" type="rule" targetId="b495-5934-9bf1-d595"/>
+            <infoLink name="Torpedo" id="91df-279b-4d63-1f23" hidden="false" type="rule" targetId="a845-5a68-5784-e761"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Bombers" hidden="false" id="6e71-ca91-e7b0-f278" sortIndex="2" flatten="true">
@@ -3284,13 +3357,16 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
     </rule>
     <rule name="Godray Lightvice" id="8590-da53-d799-e5d8" hidden="false">
-      <description>This weapon’s Bombardment special rule has no effect on Ships in Atmosphere.</description>
+      <description>If this weapon targets a Dropsite containing a friendly Bioficer Deployable Feature, friendly Battalions assigned to that Feature ignore Collateral Damage due to this weapon.</description>
     </rule>
     <rule name="Limited Aegis Bandwidth" id="8d89-0b9b-38c0-d33c" hidden="false">
-      <description>These Ships do not combine their Aegis-X rule into a single value. Only their X value is used when gaining additional dice due to the Aegis special rule.</description>
+      <description>Friendly Ships with this rule may combine their Aegis values as if they were the same Group. When these Ships combine their Aegis value, only those within 6” of the Group using the benefits of Aegis are counted. A Ship with this rule cannot gain the benefit of Aegis from another Ship with this rule.</description>
     </rule>
     <rule name="Summoning Cell" id="d985-9763-6332-5798" hidden="false">
-      <description>When activating Fighters &amp; Bombers within 4” of this Ship, you may place them anywhere within 18” of this ship instead of moving them normally.</description>
+      <description>When you activate a Wing within 4” of this Ship, instead of moving them normally, you may remove them from the table, then place them anywhere within 18” of this Ship. Wings placed this way suffer the effects of any scenery they are placed on but ignore intervening scenery. Wings placed this way may form and divide into Wings as if they had moved normally.</description>
+    </rule>
+    <rule name="Torpedo" id="a845-5a68-5784-e761" hidden="false">
+      <description>This asset is automatically removed during the Cleanup step of the End Phase.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -3301,7 +3377,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">4</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-1</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-2</characteristic>
       </characteristics>
     </profile>
     <profile name="Scythes" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="afaa-6d9f-302b-4524">
@@ -3311,7 +3387,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Fusillade-2, Reave-1</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Fusillade-3, Reave-1</characteristic>
       </characteristics>
     </profile>
     <profile name="Scythe Nodule" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f957-7a48-6f4d-6978">
@@ -3321,7 +3397,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Reave-1</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Fusilade-2, Reave-1</characteristic>
       </characteristics>
       <comment>F 4/4+/1/E AW Rv-1</comment>
     </profile>
@@ -3365,7 +3441,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
             <profile name="Forcing an Unfair Fight" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="09a7-ae65-b317-17a1">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, pick a Dropsite you contest. Each player rolls D6 and adds that many Battalions to The Dropsite or any of its Features they already have Battalions on.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Activation Phase, pick a Dropsite you contest. Add a friendly Battalion to each Feature on that Dropsite. At the beginning of the Cleanup step of the End Phase, remove a friendly Battalion from each Feature on that Dropsite.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3377,8 +3453,8 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
           <profiles>
             <profile name="Precision Strike" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3561-5ec9-d1fb-5b71">
               <characteristics>
-                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with a Group, pick one of its Weapons. Each Ship in the Group with the same Weapon improves the lock of that Weapon by 1.</characteristic>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign a Group’s weapons to targets, pick one of the attacking Group’s Weapon Systems. Improve the Lock of that Weapon System by 1 for this attack sequence.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3403,8 +3479,8 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
           <profiles>
             <profile name="Unsportsmanlike Behaviour" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9c31-acb1-e30e-90d5">
               <characteristics>
-                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">4AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of a round, all players retain any unspent AP from this round into the next round. In the next round, players cannot gain any AP in the Planning Phase.</characteristic>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">During this round’s Cleanup step of the End Phase, all players retain any unspent AP from this round into the next round. In the next round, only players that have used this Ability this round can generate AP in the Planning Phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
