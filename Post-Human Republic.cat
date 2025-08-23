@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="16" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="17" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="66a8-ba07-3fa8-ecf7"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Vizier" hidden="false" id="4d5f-828e-aece-77fe" publicationId="6462-e99b-594c-193a" page="1">
@@ -22,8 +22,8 @@
         </profile>
         <profile name="Akira Manoeuvre" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="d625-d5fb-d235-c690">
           <characteristics>
-            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you activate a Group of a single Ship, that Group must go on General Quarters this activation. That Group only removes a single Spike and does not turn before its movement. After its movement, the Group must turn a full 90 degrees, then continues its activation as normal.</characteristic>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you activate a Group of a single Ship, that Group must go on General Quarters this activation. That Group only removes a single Spike and does not turn before its movement. After its movement, the Group must turn between 45 and 90 degrees, then continue its activation as normal.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -56,7 +56,7 @@
         <profile name="Re-route Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fe8f-80c2-e818-99e1">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, remove one Crippling Effect token (of any type) from that Group.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, remove one Crippling Effect token (of any type) from that Group.</characteristic>
           </characteristics>
         </profile>
         <profile name="Ranked Fire" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="8ed1-95f9-04eb-bfc6">
@@ -102,7 +102,7 @@
             </profile>
             <profile name="Backup Systems Engaged" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="43f1-1c5a-49eb-824b">
               <characteristics>
-                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
                 <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly ship would roll for Crippling Damage, roll a dice. On a 4+ that Ship does not roll on the Crippling Damage table but is still Crippled.</characteristic>
               </characteristics>
             </profile>
@@ -113,7 +113,7 @@
           <entryLinks>
             <entryLink import="true" name="Abilities" hidden="false" id="1e61-91ee-0405-ec8a" type="selectionEntryGroup" targetId="5ccb-88fa-8be6-97f7">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82f1-1de8-5651-d7d3" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="82f1-1de8-5651-d7d3" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -123,9 +123,10 @@
         <entryLink import="true" name="Romulus Dreadnought" hidden="false" id="d4ba-6454-a4f5-6756" type="selectionEntry" targetId="24f3-bf29-8263-56f4" sortIndex="2">
           <infoLinks>
             <infoLink name="Cutting Power" id="8772-48fd-8df1-82c2" hidden="false" type="rule" targetId="4307-771a-1d85-2af8"/>
+            <infoLink name="Reave-X" id="ce73-efd4-7b03-993e" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
           </infoLinks>
           <modifiers>
-            <modifier type="set" value="Cutting Power" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
+            <modifier type="append" value="Cutting Power" field="fdf5-89b6-e62e-570f" affects="recursive.childs.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="default-category" id="1ed9-356e-1714-8e26" primary="false" name="Group"/>
@@ -176,7 +177,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
           </costs>
           <entryLinks>
             <entryLink import="true" name="Abilities" hidden="false" id="7a11-1f58-1235-26c0" type="selectionEntryGroup" targetId="5ccb-88fa-8be6-97f7">
@@ -189,9 +190,6 @@
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Heracles Battleship" hidden="false" id="5958-2e69-1a9f-f054" type="selectionEntry" targetId="8b0c-9463-8922-0703" sortIndex="2">
-          <modifiers>
-            <modifier type="set" value="255" field="ab32-c9b6-10f3-cbdb"/>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hornet Drones" hidden="false" id="f1b8-9437-9507-593d" type="selectionEntry" targetId="07d3-ae7d-c07b-ce68"/>
           </entryLinks>
@@ -331,10 +329,11 @@
         <entryLink import="true" name="Achilles Heavy Cruiser" hidden="false" id="2e04-8a3c-b9df-8260" type="selectionEntry" targetId="ddc5-947c-b560-d484" sortIndex="2">
           <infoLinks>
             <infoLink name="Regenerate-X" id="3ac2-10fb-6d59-b887" hidden="false" type="rule" targetId="df32-1b16-f0f9-7b85"/>
+            <infoLink name="Reinforced Armour" id="39a1-c6f7-d9d3-e105" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
             <infoLink name="Self Repairing Armour Systems" id="b42b-3637-6c8a-55d4" hidden="false" type="rule" targetId="9a6b-935a-9e3f-1c05"/>
           </infoLinks>
           <modifiers>
-            <modifier type="set" value="Regenerate-2, Self Repairing Armour Systems" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
+            <modifier type="set" value="Regenerate-2, Reinforced Armour, Self Repairing Armour Systems" field="fdf5-89b6-e62e-570f" affects="recursive.childs.model.profiles.Ship" join=", " scope="parent"/>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="default-category" id="1ee2-9557-4023-b487" primary="false" name="Group"/>
@@ -362,7 +361,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Remus Dreadnought" hidden="false" id="6c3f-c518-ef63-d9dc" publicationId="6462-e99b-594c-193a" page="55">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="470"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="455"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Colossal Ship" hidden="false" id="fc46-d80b-b7a7-1049" targetId="6e44-cb75-e25f-8b24" primary="true"/>
@@ -376,9 +375,9 @@
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">25</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">2+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
-                <characteristic name="BS" typeId="05b6-9825-68e8-4983">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Reinforced Armour</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -392,6 +391,9 @@
             <entryLink import="true" name="Hornet Drone Hive" hidden="false" id="22a9-6dc1-a9cf-535c" type="selectionEntry" targetId="4f5c-a55e-37ee-fbbe" sortIndex="3"/>
             <entryLink import="true" name="Torpedo" hidden="false" id="77f2-e8de-3f94-e01e" type="selectionEntry" targetId="54f4-8855-f1b9-fdf5" sortIndex="4"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Reinforced Armour" id="8287-b02e-de85-5104" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -417,9 +419,9 @@
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">25</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">2+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
-                <characteristic name="BS" typeId="05b6-9825-68e8-4983">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Reinforced Armour</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -431,6 +433,9 @@
             <entryLink import="true" name="Hypernova Laser" hidden="false" id="9ab3-7ad9-5e8b-f2c2" type="selectionEntry" targetId="d34c-e151-349f-1e33" sortIndex="1"/>
             <entryLink import="true" name="Energy Glaive Battery" hidden="false" id="5213-7e33-5e04-3138" type="selectionEntry" targetId="694e-c9a3-913d-e953" sortIndex="2"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Reinforced Armour" id="73b6-d41d-19de-c3db" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -483,7 +488,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Caesar Super Battleship" hidden="false" id="4022-84db-f406-3c37" publicationId="6462-e99b-594c-193a" page="52">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="255"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="270"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="9d6f-26b0-7969-496b" id="c82e-83fc-3dc5-037a" primary="true" name="Heavy Ship"/>
@@ -539,7 +544,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Regenerate-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -553,6 +558,9 @@
             <entryLink import="true" name="Black Nano Drones" hidden="false" id="116d-038f-466f-b0a5" type="selectionEntry" targetId="2a21-e088-bee9-3546" sortIndex="3"/>
             <entryLink import="true" name="Torpedo" hidden="false" id="6459-7efe-4ca4-9820" type="selectionEntry" targetId="1ecd-8724-e3ea-ea21" sortIndex="4"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Regenerate-X" id="fa83-6780-8ee6-a3f4" hidden="false" type="rule" targetId="df32-1b16-f0f9-7b85"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -580,7 +588,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Regenerate-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -593,6 +601,9 @@
             <entryLink import="true" name="Hornet Drone Cluster" hidden="false" id="06f3-f46a-af03-f1db" type="selectionEntry" targetId="1780-c172-abd0-6d3d" sortIndex="2"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="9c8f-0080-3d44-cff8" type="selectionEntry" targetId="2fe0-cfd4-7c48-0f83" sortIndex="3"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Regenerate-X" id="0917-da29-1fc5-4f0a" hidden="false" type="rule" targetId="df32-1b16-f0f9-7b85"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -604,7 +615,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Memnon Supercarrier" hidden="false" id="d0c3-24ee-6aaa-1ef3" publicationId="6462-e99b-594c-193a" page="49">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="300"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="320"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="9d6f-26b0-7969-496b" id="15b3-7474-eae7-eec5" primary="true" name="Heavy Ship"/>
@@ -896,7 +907,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Holo-Debris Field</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Holo-Debris Field, Vanguard-4&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -908,7 +919,8 @@
             <entryLink import="true" name="Holographic Drones" hidden="false" id="f8a5-a33d-95a5-313c" type="selectionEntry" targetId="fc0f-285f-3cba-2254"/>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Holo-Debris Field" id="cb2e-2fb2-e780-b97d" hidden="false" type="rule" targetId="8857-c5fc-0b83-e275"/>
+            <infoLink name="Holo Interference Field" id="cb2e-2fb2-e780-b97d" hidden="false" type="rule" targetId="8857-c5fc-0b83-e275"/>
+            <infoLink name="Vanguard-X" id="ebf2-acd5-5d30-0c48" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -937,7 +949,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-4&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -948,6 +960,9 @@
           <entryLinks>
             <entryLink import="true" name="Heavy Quad Battery" hidden="false" id="3ebe-c53a-e296-5c29" type="selectionEntry" targetId="d898-57f0-9449-2003"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="7191-459c-32aa-11de" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -975,7 +990,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-4&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -987,6 +1002,9 @@
             <entryLink import="true" name="Light Calibre Broadside" hidden="false" id="ee23-6dcc-5373-b741" type="selectionEntry" targetId="59ca-a9be-70de-6eea" sortIndex="1"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="1540-3aba-d831-bbfd" type="selectionEntry" targetId="2fe0-cfd4-7c48-0f83" sortIndex="2"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="f262-8073-d0ab-cf79" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1014,7 +1032,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-4&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1026,6 +1044,9 @@
             <entryLink import="true" name="Light Calibre Broadside" hidden="false" id="3b52-0c4d-288f-41d0" type="selectionEntry" targetId="59ca-a9be-70de-6eea" sortIndex="1"/>
             <entryLink import="true" name="Medium Calibre Broadside" hidden="false" id="ad5a-d4ef-a3c3-b510" type="selectionEntry" targetId="21ae-c657-c054-890d" sortIndex="2"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="03c9-b987-a8a4-0d17" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1118,7 +1139,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Sysyphus Heavy Cruiser" hidden="false" id="84e9-92a0-d09f-dd24" publicationId="6462-e99b-594c-193a" page="35">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="125"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="122"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="7fb6-bada-02fd-4dc9" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -1158,7 +1179,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hector Heavy Cruiser" hidden="false" id="180c-8c7e-527e-85e8" publicationId="6462-e99b-594c-193a" page="34">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="134"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="c128-139e-8636-8ad5" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -1236,7 +1257,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Achilles Heavy Cruiser" hidden="false" id="ddc5-947c-b560-d484" publicationId="6462-e99b-594c-193a" page="32">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="142"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="52d7-2da5-bb0e-b9b3" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -1275,7 +1296,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Teucer Cruiser" hidden="false" id="7637-3613-eab0-0b69" publicationId="6462-e99b-594c-193a" page="31">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="115"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="130"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="51c5-ca0d-9ef3-858d" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -1331,7 +1352,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-4&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1344,6 +1365,9 @@
             <entryLink import="true" name="Medium Calibre Turret" hidden="false" id="62fa-6687-ccdb-7d03" type="selectionEntry" targetId="977b-b42b-23a9-4dd7" sortIndex="2"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="8b9b-5dba-f527-7560" type="selectionEntry" targetId="530d-2e49-faec-6427" sortIndex="3"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="32a3-242f-f0ba-4cfc" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1394,7 +1418,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Perseus Cruiser" hidden="false" id="8ef8-1908-7df0-172b" publicationId="6462-e99b-594c-193a" page="28">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="115"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="108"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="274d-2e2f-1f8e-3ea4" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -1434,7 +1458,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Ajax Cruiser" hidden="false" id="9b24-6990-284b-0ba7" publicationId="6462-e99b-594c-193a" page="27">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="100"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="114"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="6a1b-42d3-f6e7-8f42" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -1512,7 +1536,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Theseus Light Cruiser" hidden="false" id="b51d-94ae-4873-5b65" publicationId="6462-e99b-594c-193a" page="25">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="110"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="88"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="a7ad-17f8-2f31-4de2" targetId="53c3-afc0-63ef-413a" primary="true"/>
@@ -1633,7 +1657,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Odysseus Blockade Runner" hidden="false" id="b8ff-be79-2c41-5a66" publicationId="6462-e99b-594c-193a" page="23">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="63"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="c6c2-eaef-c134-6557" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -1695,7 +1719,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Jason Blockade Runner" hidden="false" id="147f-122b-5b00-f2d9" publicationId="6462-e99b-594c-193a" page="22">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="55"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="9b5f-ab9a-4fd8-99d3" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -1737,7 +1761,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Cadmus Destroyer" hidden="false" id="6581-0c86-ae35-52b4" publicationId="6462-e99b-594c-193a" page="21">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="0f70-d941-8460-0eff" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -1950,7 +1974,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Pegasus Nano-Hive Cutter" hidden="false" id="f49b-2121-714f-bca5" publicationId="6462-e99b-594c-193a" page="16">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="58"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="a83d-de5d-a257-8765" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -2007,7 +2031,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Monitor</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Monitor, Catapult Launcher</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2017,10 +2041,11 @@
           </constraints>
           <infoLinks>
             <infoLink name="Monitor" id="13b4-c2de-cfca-c2fe" hidden="false" type="rule" targetId="cc9f-9be5-cc19-2fc9"/>
+            <infoLink name="Catapult Launcher" id="4fed-9aa2-5c43-c736" hidden="false" type="rule" targetId="303e-849d-20ef-489b"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Wasp Drones" hidden="false" id="388d-91a2-5954-e7a4" type="selectionEntry" targetId="720e-e694-575f-45b6" sortIndex="1"/>
-            <entryLink import="true" name="Torpedo" hidden="false" id="1b83-acb4-adc3-4390" type="selectionEntry" targetId="d857-e700-e938-065c" sortIndex="2"/>
+            <entryLink import="true" name="Torpedo" hidden="false" id="1b83-acb4-adc3-4390" type="selectionEntry" targetId="3314-8677-f456-ed4c" sortIndex="2"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2063,6 +2088,7 @@
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Wasp Drones" hidden="false" id="751a-01d0-1dc1-1e88" type="selectionEntry" targetId="720e-e694-575f-45b6"/>
+            <entryLink import="true" name="Point Defence Array" hidden="false" id="4283-8212-dfe1-b052" type="selectionEntry" targetId="893e-2557-a7c6-9b43"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2075,7 +2101,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Castor Monitor" hidden="false" id="4e06-fab5-c9f8-3da0" publicationId="6462-e99b-594c-193a" page="13">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="55"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="9551-6a01-2f31-c126" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -2262,7 +2288,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Pandora Frigate" hidden="false" id="ea50-44dd-2d1a-5456" publicationId="6462-e99b-594c-193a" page="9">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="42"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="c2cd-c771-fb55-7c99" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -2300,7 +2326,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Europa Frigate" hidden="false" id="1e11-4f1c-46f5-06aa" publicationId="6462-e99b-594c-193a" page="8">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="38"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="5e51-4c2d-7f33-4e7c" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -2379,7 +2405,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Echo Corvette" hidden="false" id="9edf-62e3-be93-a3ce" publicationId="6462-e99b-594c-193a" page="6">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="28"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="c4fb-654b-c899-e670" targetId="f942-8f88-d77b-13c1" primary="true"/>
@@ -2394,14 +2420,14 @@
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">6+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
-                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-4</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Descent, Stealth</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e7a-ffa9-984c-1f2f" includeChildSelections="false"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2fcf-f54b-c655-7e2c" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2fcf-f54b-c655-7e2c" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Medium Calibre Turret" hidden="false" id="8314-77be-6a6a-f050" type="selectionEntry" targetId="e024-834a-015b-6b7b"/>
@@ -2447,21 +2473,20 @@
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
-            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Overcharge, Penetrator</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bombardment, Overcharge</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Bombardment" id="f1e0-7202-31ac-7d6d" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
         <infoLink name="Overcharge" id="ddbb-2ffe-226b-5b40" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
-        <infoLink name="Penetrator" id="4d01-c869-26df-ebb2" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d5ce-49c1-67c9-9c18-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5ce-49c1-67c9-9c18-max" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 4/4+/2/E Bmb OC Pen</comment>
+      <comment>FN 4/4+/2/C Bmb OC Pen</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hypernova Laser" hidden="false" id="d34c-e151-349f-1e33">
       <profiles>
@@ -2628,7 +2653,7 @@
       <comment>F/S 3/5+/1/K Bmb</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Energy Glaive Battery" hidden="false" id="694e-c9a3-913d-e953">
-      <comment>[x3] B 3/3+/2/E OC Vol-2</comment>
+      <comment>[x3] B 6/3+/2/E OC Vol-2</comment>
       <infoLinks>
         <infoLink name="Overcharge" id="1564-cb39-06d1-406e" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
         <infoLink name="Volley-X" id="0ffd-f9dd-146f-8bbe" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
@@ -2640,7 +2665,7 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Energy Glaive Battery" hidden="false" id="131f-bd0f-ed3a-84e0">
-      <comment>[x2] B 3/3+/2/E OC Vol-2</comment>
+      <comment>[x2] B 6/3+/2/E OC Vol-2</comment>
       <infoLinks>
         <infoLink name="Overcharge" id="d27f-606e-c88f-62a4" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
         <infoLink name="Volley-X" id="8599-0447-6956-d064" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
@@ -2652,7 +2677,7 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Energy Glaive Pair" hidden="false" id="f7a3-3a17-8eaf-e4ac">
-      <comment>FN 2/3+/1/E OC</comment>
+      <comment>FN 2/3+/2/E OC</comment>
       <infoLinks>
         <infoLink name="Overcharge" id="64d8-46a1-1462-8491" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
       </infoLinks>
@@ -2666,7 +2691,7 @@
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
             <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge</characteristic>
           </characteristics>
@@ -2674,7 +2699,7 @@
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Energy Glaives" hidden="false" id="1adb-19f1-35e8-3867">
-      <comment>[x2] B 3/3+/1/E OC Vol-2</comment>
+      <comment>[x2] B 3/3+/2/E OC Vol-2</comment>
       <infoLinks>
         <infoLink name="Overcharge" id="2aa8-d0e9-58d9-bffb" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
         <infoLink name="Volley-X" id="db35-125a-a94c-55c2" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
@@ -2689,7 +2714,7 @@
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">B</characteristic>
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
             <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Volley-2</characteristic>
           </characteristics>
@@ -2750,8 +2775,9 @@
       <infoLinks>
         <infoLink name="Volley-X" id="b799-a9c9-2553-d691" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
         <infoLink name="Medium Calibre Broadside" id="e192-88a5-a498-22f1" hidden="false" type="profile" targetId="ffa2-878b-322b-7221"/>
+        <infoLink name="Fusillade-X" id="ca6f-1d89-d1aa-cf17" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
       </infoLinks>
-      <comment>[x2] B 3/4+/2/K Vol-2</comment>
+      <comment>[x2] B 3/4+/2/K Vol-2 Fus-1</comment>
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="23c0-b8a0-29a7-609f-min" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="23c0-b8a0-29a7-609f-max" includeChildSelections="false"/>
@@ -2761,8 +2787,9 @@
       <infoLinks>
         <infoLink name="Volley-X" id="9cdd-b2ec-31e0-0539" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
         <infoLink name="Medium Calibre Broadside" id="a418-844a-8d85-9360" hidden="false" type="profile" targetId="ffa2-878b-322b-7221"/>
+        <infoLink name="Fusillade-X" id="15f5-d5e9-e237-9571" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
       </infoLinks>
-      <comment>B 3/4+/2/K Vol-2</comment>
+      <comment>B 3/4+/2/K Vol-2 Fus-1</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95c9-1af5-5375-5860-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95c9-1af5-5375-5860-max" includeChildSelections="false"/>
@@ -2773,8 +2800,9 @@
         <infoLink name="Calibre-X" id="771a-fa66-8166-fbd2" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
         <infoLink name="Volley-X" id="5732-b41d-2663-d72c" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
         <infoLink name="Light Calibre Broadside" id="18f5-9df4-f991-87b2" hidden="false" type="profile" targetId="1c2c-95d0-6275-1625"/>
+        <infoLink name="Re-Entry" id="7ca9-1b58-1e58-a33a" hidden="false" type="rule" targetId="3438-1fc6-047d-47ad"/>
       </infoLinks>
-      <comment>[x2] B 6/5+/1/K Cal-L Vol-2</comment>
+      <comment>[x2] B 6/5+/1/K Cal-L Vol-2 ReEnt</comment>
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3acc-0843-7a23-3316-min" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3acc-0843-7a23-3316-max" includeChildSelections="false"/>
@@ -2785,8 +2813,9 @@
         <infoLink name="Calibre-X" id="1250-3213-5bce-4cf7" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
         <infoLink name="Volley-X" id="472d-f6a6-ff0a-8dd8" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
         <infoLink name="Light Calibre Broadside" id="c281-1358-9c46-aa5a" hidden="false" type="profile" targetId="1c2c-95d0-6275-1625"/>
+        <infoLink name="Re-Entry" id="0f4a-45f2-a676-dcb1" hidden="false" type="rule" targetId="3438-1fc6-047d-47ad"/>
       </infoLinks>
-      <comment>B 6/5+/1/K Cal-L Vol-2</comment>
+      <comment>B 6/5+/1/K Cal-L Vol-2 ReEnt</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a52-ae2a-342b-af0a-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a52-ae2a-342b-af0a-max" includeChildSelections="false"/>
@@ -2822,7 +2851,7 @@
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin Heavy Calibres" hidden="false" id="5ba3-7a58-441b-9185">
-      <comment>[x2] F 1/4+/2/K Cal-HC Pen</comment>
+      <comment>[x2] F 1/4+/3/K Cal-HC Pen</comment>
       <infoLinks>
         <infoLink name="Calibre-X" id="364c-d196-1185-91cf" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
         <infoLink name="Penetrator" id="fedb-60a3-eca5-05c0" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
@@ -2831,12 +2860,10 @@
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="db55-feb3-6993-138f-min" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="db55-feb3-6993-138f-max" includeChildSelections="false"/>
-        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4549-02cc-3c3b-b2fd-min" includeChildSelections="false"/>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4549-02cc-3c3b-b2fd-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin Heavy Calibres" hidden="false" id="450c-3a85-4876-af5c">
-      <comment>F 1/4+/2/K Cal-HC Pen</comment>
+      <comment>F 1/4+/3/K Cal-HC Pen</comment>
       <infoLinks>
         <infoLink name="Calibre-X" id="ba45-d95d-c560-5ce5" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
         <infoLink name="Penetrator" id="822c-f40b-2639-1d11" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
@@ -2848,7 +2875,7 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Long Heavy Calibres" hidden="false" id="5d19-3c81-4cb5-69e6">
-      <comment>FN 1/3+/2/K Cal-HC Pen</comment>
+      <comment>FN 1/3+/3/K Cal-HC Pen</comment>
       <infoLinks>
         <infoLink name="Calibre-X" id="007e-879d-c5d9-79af" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
         <infoLink name="Penetrator" id="ec17-51ba-27b2-fdde" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
@@ -2863,7 +2890,7 @@
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">1</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
             <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Penetrator</characteristic>
           </characteristics>
@@ -2909,14 +2936,14 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Quad Battery" hidden="false" id="d898-57f0-9449-2003">
-      <comment>F 2/3+/3/K Cal-HC Crit-1 Pen</comment>
+      <comment>F 4/3+/2/K Cal-HC Crit-1 Pen</comment>
       <profiles>
         <profile name="Heavy Quad Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="2dab-1b86-e19d-efec">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
             <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Critical-1, Penetrator</characteristic>
           </characteristics>
@@ -2933,14 +2960,14 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Quad Battery" hidden="false" id="7276-4155-59af-c39a">
-      <comment>F 2/3+/3/K Alt-1 Cal-HC Crit-1 Pen || F 8/3+/1/K Alt-1</comment>
+      <comment>F 4/3+/2/K Alt-1 Cal-HC Crit-1 Pen || F 12/2+/1/K Alt-1 Fus-4</comment>
       <profiles>
         <profile name="Heavy Quad Battery (Anti-Capital)" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="16b9-0d8e-e2af-08af">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
             <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Calibre-H/C, Critical-1, Penetrator</characteristic>
           </characteristics>
@@ -2948,11 +2975,11 @@
         <profile name="Heavy Quad Battery (Flak)" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="e7f3-933b-594c-1f10">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">8</characteristic>
-            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">12</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Cull the Weak</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Cull the Weak, Fusillade-4</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2962,6 +2989,7 @@
         <infoLink name="Critical-X" id="e913-a823-4fd4-2e80" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
         <infoLink name="Penetrator" id="f993-f4d7-3490-76c4" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
         <infoLink name="Cull the Weak" id="ea1d-0879-022f-2251" hidden="false" type="rule" targetId="cf3e-0b69-d6ca-7598"/>
+        <infoLink name="Fusillade-X" id="bd89-8132-d01f-624e" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cec5-3323-86ff-a204-min" includeChildSelections="false"/>
@@ -2969,7 +2997,7 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Quad Battery" hidden="false" id="4fd0-6697-f7aa-36ab">
-      <comment>F 2/3+/2/K Crit-1</comment>
+      <comment>F 2/3+/2/K Crit-1 Fus-2</comment>
       <profiles>
         <profile name="Quad Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="d00d-f4bf-4429-b62a">
           <characteristics>
@@ -2978,12 +3006,13 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Critical-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Critical-1, Fusillade-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Critical-X" id="c235-af44-3813-0b81" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
+        <infoLink name="Fusillade-X" id="71ae-b32f-f2d8-a776" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d236-3ce2-4e33-5400-min" includeChildSelections="false"/>
@@ -3013,12 +3042,12 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hornet Drone Cluster" hidden="false" id="1780-c172-abd0-6d3d">
-      <comment>F/S/R 4/3+/2/K CA</comment>
+      <comment>F/S/R 6/3+/2/K CA</comment>
       <profiles>
         <profile name="Hornet Drone Cluster" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f8c4-c000-b24b-6a4e">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
@@ -3106,7 +3135,7 @@
         <profile name="Nano Drones" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="9a60-84fc-7ed3-8664">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">8</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
@@ -3114,7 +3143,7 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>F/S 6/4+/1/K CA</comment>
+      <comment>F/S 8/4+/1/K CA</comment>
       <infoLinks>
         <infoLink name="Close Action" id="4b12-c026-4fdd-1d23" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
@@ -3128,7 +3157,7 @@
         <profile name="Black Nano Drones" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c14a-f80c-ae8c-8a31">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">8</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
@@ -3136,7 +3165,7 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>F/S 4/4+/1/K CA Pen</comment>
+      <comment>F/S 8/4+/1/K CA Pen</comment>
       <infoLinks>
         <infoLink name="Close Action" id="ace2-3b3e-f983-b3e1" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Penetrator" id="7649-404a-2c5e-e44f" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
@@ -3198,15 +3227,15 @@
         <profile name="Holographic Drones" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="65d8-cb25-1856-a8d9">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">S</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
-            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
             <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Close Action, Volley-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <comment>S 5/5+/1/E AW CA Vol-2</comment>
+      <comment>S 4/4+/1/E AW CA Vol-2</comment>
       <infoLinks>
         <infoLink name="Anti Wing" id="727a-5601-162e-a358" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
         <infoLink name="Close Action" id="11aa-8d41-cd72-0896" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
@@ -3238,6 +3267,30 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b78-3bce-bd35-9e5b-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b78-3bce-bd35-9e5b-max" includeChildSelections="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Point Defence Array" hidden="false" id="893e-2557-a7c6-9b43">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d6a-c1de-0da7-336a"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3aea-b082-36bc-9309"/>
+      </constraints>
+      <profiles>
+        <profile name="Point Defence Array" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7386-464c-1243-111a">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Anti Wing, Close Action, Fusillade-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Anti Wing" id="6022-f21a-76cb-7ca6" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
+        <infoLink name="Close Action" id="aa0f-1045-5fde-5362" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Fusillade-X" id="3262-c4bf-8010-4857" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+      </infoLinks>
+      <comment>F/S/R 3/3+/1/E AW CA Fus-1</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Load -----" hidden="true" id="a5ad-5a76-f0d2-36fa"/>
     <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="e036-b544-e1fc-cd41">
@@ -3364,6 +3417,25 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31f4-07aa-cef8-70a8-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="3314-8677-f456-ed4c">
+      <comment>3 L-3 Pen</comment>
+      <profiles>
+        <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="353e-1e72-9523-a44a">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">3</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-3, Penetrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Limited-X" id="6a44-cc76-b700-af4d" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
+        <infoLink name="Penetrator" id="2e07-4432-9dfa-5cc1" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a8af-94a2-2aca-3e54" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="171c-9805-be31-8590" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="1ecd-8724-e3ea-ea21">
       <comment>2 L-2 Pen</comment>
       <profiles>
@@ -3433,7 +3505,7 @@
           <profiles>
             <profile name="Torpedo" typeId="2011-41e1-9c7c-9e25" typeName="Launch Asset" hidden="false" id="aa93-fad9-35a7-a2e7">
               <characteristics>
-                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">4&quot;</characteristic>
+                <characteristic name="Thrust" typeId="8c30-992b-18d3-9a9e">6&quot;</characteristic>
                 <characteristic name="Att" typeId="09f1-844b-5ba1-7b58">4</characteristic>
                 <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">2+</characteristic>
                 <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">2</characteristic>
@@ -3579,30 +3651,33 @@
     <entryLink import="true" name="Launch Assets" hidden="false" id="7c92-6895-d024-3a5d" targetId="d178-9648-a5d6-f294" type="selectionEntry"/>
   </entryLinks>
   <sharedRules>
-    <rule name="Holo-Debris Field" id="8857-c5fc-0b83-e275" hidden="false">
-      <description>Before or after this Group completes any step in its activation, you may place a Holo-Debris Field within 3” of this ship. These Holo-Debris Fields are removed during the Cleanup step of the Roundup phase and are circular with a 4” diameter (a D6 or custom template are perfect tokens to represent these). Enemy Ships ignore the target’s Signature when attacking through a Holo-Debris Field. Friendly ships and friendly Launch Assets ignore these Debris Fields.</description>
+    <rule name="Holo Interference Field" id="8857-c5fc-0b83-e275" hidden="false">
+      <description>At the end of this ship&apos;s activation, you may place a Holo Interference Field within 3” of this ship. These Holo Interference Fields are removed during the Cleanup step of the End Phase and are circular with a 4” diameter (a D6 or custom template are perfect tokens to represent these). Enemy Ships ignore the target&apos;s Spikes and Signature when attacking through a Holo Interference Field. Enemy Fighters &amp; Bombers underneath the Holo Interference Field when it is placed, or that move/are placed into the Holo Interference Field are removed on a 4+.</description>
     </rule>
     <rule name="Targeting Link" id="2ed1-c30a-07f6-063d" hidden="false">
-      <description>If a friendly ship can measure its Weapons Range to this ship (discounting any spikes), it may use this ship as the origin of its attacks. If it does, it measures Weapons Range from the Ourania (using the Ourania’s Scan). Attacks made this way must still be in the weapon arc of the firing ship. This rule has no effect on Close Action weapons.</description>
+      <description>Friendly Ships within their Scan range of this Ship may use it as a spotter when they attack. If they do, before assigning weapons to targets, choose any amount of the attacking Ship’s weapons. When assigning targets to those weapons, measure Weapons Range from this Ship, using this Ship’s Scan. Attacks made this way must still be in Arc and line of sight of the attacking Ship. This rule has no effect on Close Action Weapons and weapons already benefiting from this rule.</description>
     </rule>
     <rule name="Cutting Power" id="4307-771a-1d85-2af8" hidden="false">
-      <description>If you attack with and do not Overcharge any of this Flagship’s Energy Glaive Batteries, they gain Scald-1 for their attacks this activation.</description>
+      <description>If you attack with and do not Overcharge any of this Flagship’s Energy Glaive Batteries, they gain Reave-2 for their attacks this activation.</description>
     </rule>
     <rule name="Self Repairing Armour Systems" id="9a6b-935a-9e3f-1c05" hidden="false">
       <description>This Flagship cannot have its Energy Save reduced below a 5+.</description>
     </rule>
     <rule name="Advanced ECM Suite" id="309d-c322-d206-2dac" hidden="false">
-      <description>Once per round, when a friendly Group (including this one) within 4” of this Ship is attacked, after all weapons have been assigned, reduce the Lock of one of those weapons by 1 for the rest of the round. The attacking Group must be on the same orbital layer as this Ship. A weapon can be affected multiple times each round by this rule.</description>
+      <description>When a friendly Group (including this Ship’s Group) within 4&quot; of this Ship is attacked, you may have this Ship use its Advanced ECM Suite. If you do, after all weapons have been assigned, reduce the Lock of weapons belonging to one of the attacking Ships by 1 for the rest of the round. The attacking group must be on the same orbital layer as this ship. A Ship can be affected multiple times each round by this rule but each Ship with this rule can only use it once per round.</description>
     </rule>
     <rule name="Cull the Weak" id="cf3e-0b69-d6ca-7598" hidden="false">
       <description>Heavy Quad Battery (Flak) may only be used to attack Ships of L Tonnage.</description>
+    </rule>
+    <rule name="Catapult Launcher" id="303e-849d-20ef-489b" hidden="false">
+      <description>When you launch Torpedoes from this Ship, if it launches a single Torpedo, you may launch that Torpedo up to 9” away instead of 6”.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
     <profile name="Energy Glaive Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="aaaa-8a8b-e7a0-09a3">
       <characteristics>
         <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">B</characteristic>
-        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
@@ -3628,7 +3703,7 @@
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Volley-2</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Volley-2, Fusillade-1</characteristic>
       </characteristics>
       <comment>B 3/4+/2/K Vol-2</comment>
     </profile>
@@ -3639,7 +3714,7 @@
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-L, Volley-2</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-L, Volley-2, Re-Entry</characteristic>
       </characteristics>
       <comment>B 6/5+/1/K Cal-L Vol-2</comment>
     </profile>
@@ -3648,7 +3723,7 @@
         <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
         <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">1</characteristic>
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
-        <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+        <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
         <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Penetrator</characteristic>
       </characteristics>
@@ -3667,8 +3742,8 @@
           <profiles>
             <profile name="Countermeasures Hack" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="cb68-6b97-138d-a8af">
               <characteristics>
-                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation target an enemy Group. Until the end of the friendly Groups activation, the targeted Group reduces its Kinetic Save by 1. When used against a Group of C Tonnage, this Ability requires a roll of a 4+ to succeed (AP is still spent).</characteristic>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of a friendly Group’s activation, target an enemy Group that a friendly Admiral can draw line of sight to. Until the end of the activation, that Group cannot use its Backup Save, cannot gain the benefits of Aegis, and cannot gain the benefits of Fighters’ Close Protection. If this Ability targets a H or C tonnage Group, this Ability costs 2AP.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3681,7 +3756,7 @@
             <profile name="Weapons Hack" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="07a1-0339-9a7d-ab5f">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Once per round, at the end of the Planning Phase, target an enemy Group. When Ships in that group attack, they attack with one fewer weapon than allowed by their order until the end of the round. Those Ships may use their Backup Saves to negate this effect.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Once per round, at the start of an enemy Group’s activation, choose one of that Group’s Weapon Systems. Until the end of that Group’s activation, each of that Weapon System’s attack dice results of a 1 causes the attacking Ship to lose the weapon’s unmodified Damage value in hull points.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3689,12 +3764,12 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4d0-f524-d427-5ec0" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Command Hack" hidden="false" id="90b6-2f28-b038-77af">
+        <selectionEntry type="upgrade" import="true" name="Ship of the Line" hidden="false" id="90b6-2f28-b038-77af">
           <profiles>
-            <profile name="Command Hack" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="cf96-2a5c-d012-409f">
+            <profile name="Ship of the Line" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="cf96-2a5c-d012-409f">
               <characteristics>
-                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Planning Phase, target an opponent and one of their Abilities. That opponent rolls 2D6 in secret. Then you roll 2D6 and guess if the result is higher, lower, or the same as the opponent’s roll. If you are correct, the targeted Ability cannot be used for the rest of the round.</characteristic>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a Group&apos;s weapons, that Group&apos;s Broadside Arc weapons that have the Fusillade-X special rule gain the benefit of their Fusillade rule regardless of the Group&apos;s Order for its attacks this activation. If the attacking Group is on the Weapons Free order, it instead doubles the Fusillade value of those weapons for that attack.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3707,7 +3782,7 @@
             <profile name="Drive Hack" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="f3de-89de-ee3c-87a7">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Once per round, at the end of the Planning Phase, target an enemy Group. D3 Ships (of your choice) in that Group gain a Navigation Offline token. Those Ships may use their Backup Saves to negate this effect.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Once per round, at the end of the Planning Phase, target an enemy Group that a friendly Admiral can draw line of sight to. At the start of that Group’s activation, it must make a single Backup save. If it fails (or has no) Backup save, that Group cannot go on the Course Change and Max Thrust orders.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3733,7 +3808,7 @@
             <profile name="Elite Ground Forces" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="1bcc-3b52-a1ac-def1">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, target a Dropsite or Feature containing friendly Battalions. Add D3 Battalions to that Dropsite or Feature.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Battalion Combat step of the Asset Phase, choose a Feature containing friendly Battalions. Until the end of the Battalion Combat step, those Battalions remove 2 enemy Battalions instead of 1 and may also be used to remove enemy Battalions from anywhere on that Dropsite in the 3rd step of the combat sequence.</characteristic>
               </characteristics>
             </profile>
           </profiles>
