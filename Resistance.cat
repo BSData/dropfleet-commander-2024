@@ -2095,7 +2095,12 @@
       </constraints>
       <modifiers>
         <modifier type="decrement" value="1" field="42ae-03c9-d0ff-61da" scope="parent" affects="profiles.Ship" join=", "/>
+        <modifier type="decrement" value="1" field="a4d4-4c63-1848-24f8" scope="parent" affects="profiles.Ship" join=", "/>
+        <modifier type="set" value="Reinforced Armour" field="fdf5-89b6-e62e-570f" scope="parent" affects="profiles.Ship" join=", "/>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Reinforced Armour" id="12f2-3fba-5632-cd96" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Drive Refit" hidden="false" id="9e57-79cc-21a0-72fb">
       <profiles>
@@ -2173,7 +2178,7 @@
         <infoLink name="Detector" id="e57d-363c-63a8-aa23" hidden="false" type="rule" targetId="ff6a-7b9f-fca1-ef36"/>
       </infoLinks>
       <modifiers>
-        <modifier type="append" value="Detector" field="fdf5-89b6-e62e-570f" scope="parent" affects="profiles.Ship" join=", "/>
+        <modifier type="set" value="Detector" field="fdf5-89b6-e62e-570f" scope="parent" affects="profiles.Ship" join=", "/>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Weapons -----" hidden="true" id="2d3f-36cb-66e7-5204"/>
