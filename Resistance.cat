@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="11" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="12" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (241028)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (241028)"/>
   </publications>
@@ -31,100 +31,16 @@
         <profile name="Subsystem Network" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5ef6-954d-e34b-32f7">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with a Group of M tonnage, pick one of its weapons. Each Ship in the Group may attack with one additional weapon with the same name, as if they had the same Linked-X rule for this attack.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">Before you attack with a Group of M tonnage, pick two of its weapon systems with the same name without the Linked-X special rule. Those weapons gain Linked-SSN for that attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Linked-X" id="f3b7-bc70-99e7-22ed" hidden="false" type="rule" targetId="fc9b-53d4-3bb3-3413"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Abilities" id="76a9-b0dd-2eaf-4850" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="91f3-c9e0-c358-a859">
-              <profiles>
-                <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5674-c4ec-fbc1-6d8a">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e1e-95c4-7d39-42ff" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="5739-b0ba-4ae7-46ec">
-              <profiles>
-                <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="e448-ea0f-feac-2334">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d7f-fbd7-3139-51fd" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="b835-0b29-a147-3c5b">
-              <profiles>
-                <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="50af-4d0e-98b9-123a">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7032-80f0-11e5-b6b6" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="c8a8-b9b3-e056-ce55">
-              <profiles>
-                <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a66f-a0ad-28ce-1fa0">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ecf-72c6-917e-1366" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="886b-1cad-cfe6-46b4">
-              <profiles>
-                <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="df49-f9e5-f7d5-c07f">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32db-92ff-21b9-d8aa" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="9e9d-36c1-3911-537a">
-              <profiles>
-                <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5f17-887d-ea5d-17fc">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfb4-79dd-b8f1-f276" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e76-b307-9362-b9e4" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Abilities" hidden="false" id="98f1-af73-b003-057c" type="selectionEntryGroup" targetId="b374-7196-fcc1-9fcb"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lvl 3: Artificer" hidden="false" id="3010-be38-92cd-7f82" publicationId="7fb8-995d-767a-783d" page="1">
       <costs>
@@ -153,7 +69,7 @@
         </profile>
         <profile name="Manic Repairs" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="ce47-e585-75b9-2ac2">
           <characteristics>
-            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+            <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
             <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you activate a Group, all ships in that group gain Regenerate-2 until the end of the round.</characteristic>
           </characteristics>
         </profile>
@@ -167,93 +83,9 @@
       <infoLinks>
         <infoLink name="Regenerate-X" id="4edd-0925-000b-b5ef" hidden="false" type="rule" targetId="df32-1b16-f0f9-7b85"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Abilities" id="ec55-2735-beab-35b8" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="805b-1ab4-9bb9-f3c2">
-              <profiles>
-                <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2652-4fc9-5b21-2c8a">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ede-2e5b-7f6c-f919" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="4f59-a92d-9302-ad75">
-              <profiles>
-                <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="1119-8411-6b97-af42">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efd7-638e-55ac-38b0" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="6ee5-532d-c211-b6b0">
-              <profiles>
-                <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="256e-3adc-0aa0-dd83">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5751-dd79-6fbf-38b8" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="6066-4752-f196-c67d">
-              <profiles>
-                <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="7fec-8223-6d5a-3f1e">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc3c-7555-5bd1-6a24" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="f024-85ed-fc17-d91b">
-              <profiles>
-                <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="d33a-13c3-e45f-0e5d">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eeda-fa46-ed9e-1b7f" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="8b55-eb1f-489e-5b90">
-              <profiles>
-                <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="2e71-1b54-0b57-6c8a">
-                  <characteristics>
-                    <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                    <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24d1-ce77-a980-12dc" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5255-89d3-b593-8f2f" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Abilities" hidden="false" id="cb88-856a-6ae1-6d0e" type="selectionEntryGroup" targetId="b374-7196-fcc1-9fcb"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lvl 3: Magellan - Coloniser" hidden="false" id="9d4b-69f2-b535-656c">
       <categoryLinks>
@@ -274,103 +106,19 @@
                 <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
-            <profile name="All Terrain Spaceships" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="c637-172d-cd2b-d3a0">
+            <profile name="Magellan Expedition" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="c637-172d-cd2b-d3a0">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a friendly Group through Micrometeor Clouds or Debris Fields, that Group does not suffer damage from that scenery piece for that movement.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you launch Bulk Landers from this Ship or a Ship within 6” of it, you may have that Ship launch an additional 2 or 4 Bulk Landers. Any Ship that does takes that much damage (causing Crippling Effects and Explosions where applicable).</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Abilities" id="03d4-6666-75d3-377a" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="cbc9-1dc4-c36c-31ab">
-                  <profiles>
-                    <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4a51-4cef-ed90-ec08">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11a6-92a1-51a3-ee0e" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="4a6c-9c0c-86a3-0d79">
-                  <profiles>
-                    <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="126f-10bc-d68a-a8f1">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64a6-398a-eb8d-24ec" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="3146-29e6-9d98-62fd">
-                  <profiles>
-                    <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a821-9220-b180-161f">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bd3-15b4-6821-220f" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="1f83-e518-4745-c913">
-                  <profiles>
-                    <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="b728-7804-15b9-0d6f">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d45-ae6c-10ed-b6e6" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="6d45-0da7-ac07-de20">
-                  <profiles>
-                    <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="00e3-ec05-3e1a-d4a3">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6071-7761-9017-7eb7" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="2ad8-d43b-affc-5f90">
-                  <profiles>
-                    <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a3df-0180-6478-28c3">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="934b-7c43-203c-ef85" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89d4-a4fb-dc03-21ef" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Abilities" hidden="false" id="593b-b24b-14ee-5ac4" type="selectionEntryGroup" targetId="b374-7196-fcc1-9fcb"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Coloniser Interstellar Dreadnought" hidden="false" id="9bed-c61e-b656-5308" publicationId="7fb8-995d-767a-783d" page="36" sortIndex="2">
           <categoryLinks>
@@ -485,93 +233,9 @@
           <infoLinks>
             <infoLink name="Overcharge" id="5252-e306-7e31-4fa0" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
           </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Abilities" id="2448-e467-8897-3a98" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="695a-a871-e24d-51d5">
-                  <profiles>
-                    <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="c053-e98e-8ef0-9826">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e57a-6380-ac2b-a191" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="dc45-49f7-731e-b0c9">
-                  <profiles>
-                    <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fcb3-d431-bf46-3495">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b574-9ce4-0b53-8667" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="1c3d-7ca4-519d-71b3">
-                  <profiles>
-                    <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="0d80-d32a-cc33-9e4a">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bb2-8462-9d90-6a5e" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="7ccf-5b92-26f3-4a4d">
-                  <profiles>
-                    <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="ee12-585a-67df-a776">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea5a-65b8-2bd8-f4b6" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="f691-b84a-c40b-1b25">
-                  <profiles>
-                    <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="a86b-ae09-e880-8179">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33eb-c363-9c44-bb1a" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="20a2-e7cd-45a6-79b9">
-                  <profiles>
-                    <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3588-fa05-e822-fc0e">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ade-b026-b161-b6d4" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41a2-51a2-e982-b4f2" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Abilities" hidden="false" id="226d-16e4-c016-5abb" type="selectionEntryGroup" targetId="b374-7196-fcc1-9fcb"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -582,6 +246,7 @@
           <modifiers>
             <modifier type="set" value="Extensive Reactor Modifications" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
             <modifier type="set" value="330" field="ab32-c9b6-10f3-cbdb"/>
+            <modifier type="set" value="6&quot;" field="d821-4294-3117-e8a6" affects="profiles.Ship"/>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="9d6f-26b0-7969-496b" id="2042-1c14-6e4b-9cc2" primary="true" name="Heavy Ship"/>
@@ -635,93 +300,9 @@
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Abilities" id="db17-1f38-6402-0e36" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="241b-b8da-6e39-f133">
-                  <profiles>
-                    <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9b2f-a027-e4f4-aea5">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b79-97fe-2222-b8d5" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="7e0b-6229-794c-ce9f">
-                  <profiles>
-                    <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="44f2-55ae-ee8d-c9cf">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8016-7651-2e32-cd85" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="bcbd-af78-c5ff-3b21">
-                  <profiles>
-                    <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="352e-cee0-d083-bc9f">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5927-05a4-5ff7-881d" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="a1de-ed9f-570e-d8e3">
-                  <profiles>
-                    <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3f66-0c02-135f-9681">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1b2-6fd6-2f0d-eb94" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="5d29-e2a3-0fc6-770d">
-                  <profiles>
-                    <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="8b02-f6b7-51b7-12b1">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="840e-14eb-c065-a80d" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="14ef-f874-b138-13cd">
-                  <profiles>
-                    <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3d7b-1e4f-85ca-6530">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ff3-9e6a-0e24-9b8e" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="837f-6d25-84de-3ad3" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Abilities" hidden="false" id="5b00-6618-7137-e463" type="selectionEntryGroup" targetId="b374-7196-fcc1-9fcb"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Tribune Battlecruiser" hidden="false" id="b440-9fb4-98f5-d300" publicationId="7fb8-995d-767a-783d" page="27" sortIndex="2">
           <categoryLinks>
@@ -740,7 +321,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-3&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -759,6 +340,9 @@
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="9d0e-998b-f2b2-eae7" type="selectionEntry" sortIndex="6" targetId="102e-aa25-a540-22fd"/>
             <entryLink import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="7f98-ad2c-958b-bae2" type="selectionEntry" sortIndex="5" targetId="4e14-e1f6-c2e6-d1a7"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="b00d-ed28-7ea7-f9aa" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -781,103 +365,19 @@
                 <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
               </characteristics>
             </profile>
-            <profile name="Bullet Baron" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4119-fdd3-79b8-3025">
+            <profile name="Artillery Strike" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4119-fdd3-79b8-3025">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP*</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a Weapon with “Artillery” in its name, that Weapon’s damage type becomes Core for those attacks (other Weapons are unaffected). If that Weapon is on a H or C tonnage Ship this Ability costs 3AP.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you assign targets to a Weapon System with “Artillery” in its name, that Weapon System’s damage type becomes Core for those attacks. If that Weapon System is on a H or C tonnage Ship this Ability costs 3AP.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
           </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Abilities" id="9034-2f8f-b28b-fa37" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Expert Repair Crews" hidden="false" id="b6fd-7301-489c-4ce9">
-                  <profiles>
-                    <profile name="Expert Repair Crews" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="7ebc-836a-7532-458b">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2405-1f36-19ea-d290" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Duct Tape and Bubblegum" hidden="false" id="3cf0-35a8-b4dc-e4d7">
-                  <profiles>
-                    <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="fae0-29fb-f73f-e3a1">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d284-5654-2e06-6c3b" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Redundant Ship Systems" hidden="false" id="c692-3708-6b4a-23cf">
-                  <profiles>
-                    <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="7889-b8f2-1c17-3b03">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cfc-7d42-de68-f843" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Final Mission" hidden="false" id="b828-327e-23d0-71d1">
-                  <profiles>
-                    <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="cdc1-a367-b2ba-c188">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdda-55ed-0fd3-9567" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Never Tell Me The Odds" hidden="false" id="8959-b415-a41e-e66c">
-                  <profiles>
-                    <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="bc83-7c8f-1e29-6db4">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c96c-feac-0b5a-06df" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Sabotage" hidden="false" id="1060-164e-f35c-1fcc">
-                  <profiles>
-                    <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="4b49-4d11-7a98-f212">
-                      <characteristics>
-                        <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                        <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dc8-9f73-8235-7f82" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d29-71c7-149a-2e07" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Abilities" hidden="false" id="655e-d818-fa41-a234" type="selectionEntryGroup" targetId="b374-7196-fcc1-9fcb"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Heavy Cruiser" hidden="false" id="9920-ce1c-c576-f0c2" publicationId="7fb8-995d-767a-783d" page="21">
           <categoryLinks>
@@ -893,10 +393,10 @@
                 <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">13</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
-                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Reinforced Armour</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -936,6 +436,12 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Reinforced Armour" id="3e34-2d87-139c-9ab8" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="increment" value="8" field="ab32-c9b6-10f3-cbdb"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -959,14 +465,14 @@
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">26</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
-                <characteristic name="BS" typeId="05b6-9825-68e8-4983">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Command Ship-2</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="275"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="265"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bf1-3fa0-6f9b-ec7e" includeChildSelections="false"/>
@@ -1001,14 +507,14 @@
                 <characteristic name="Hull" typeId="5253-be1d-917b-17d9">22</characteristic>
                 <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
-                <characteristic name="BS" typeId="05b6-9825-68e8-4983">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Command Ship-1</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="215"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="210"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b40-0e72-ede4-34b8" includeChildSelections="false"/>
@@ -1018,18 +524,21 @@
             <entryLink import="true" name="NC-16 Missiles" hidden="false" id="8c08-29e8-0c16-9bb8" type="selectionEntry" targetId="d400-5faf-9f12-f1b8" collective="true"/>
             <entryLink import="true" name="Dreadnought Systems" hidden="false" id="b4a9-6cc4-ce73-82e2" type="selectionEntryGroup" targetId="1beb-f1d1-0251-ca15"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Command Ship-X" id="f265-6010-3da1-a5f6" hidden="false" type="rule" targetId="af88-13e6-5004-d00a"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pathfinder Interstellar Raft" hidden="false" id="4222-223d-1a41-c600">
       <categoryLinks>
         <categoryLink name="Group" hidden="false" id="58dd-b61d-8ea9-682f" targetId="default-category" primary="false"/>
-        <categoryLink name="Colossal Groups" hidden="false" id="a622-a040-2e52-8475" targetId="52fa-6578-d171-57d6" primary="true"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="f3e7-9a24-950b-8fde" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Pathfinder Interstellar Raft" hidden="false" id="34a3-4980-1cbd-1061" publicationId="7fb8-995d-767a-783d" page="34">
           <categoryLinks>
-            <categoryLink name="Colossal Ship" hidden="false" id="f1a2-bb2c-de0d-03dc" targetId="6e44-cb75-e25f-8b24" primary="true"/>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="cac9-be0b-ca37-a32b" primary="true" name="Heavy Ship"/>
           </categoryLinks>
           <profiles>
             <profile name="Pathfinder" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d24a-67e5-3191-6c2f" publicationId="7fb8-995d-767a-783d" page="34">
@@ -1126,7 +635,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="235"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="215"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9fa4-a2e4-12e3-04ae" includeChildSelections="false"/>
@@ -1285,7 +794,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-3&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1303,6 +812,9 @@
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="4b15-2c9d-3794-37ab" type="selectionEntry" sortIndex="5" targetId="102e-aa25-a540-22fd"/>
             <entryLink import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="062a-be20-15a1-71a1" type="selectionEntry" sortIndex="4" targetId="4e14-e1f6-c2e6-d1a7"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="60d4-6759-fc6b-c8e6" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1327,7 +839,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-3&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1342,6 +854,9 @@
             <entryLink import="true" name="9K Mass Driver Turrets" hidden="false" id="69d6-a858-718e-a6d9" type="selectionEntry" sortIndex="1" targetId="fb8a-9de0-eb36-e2dc"/>
             <entryLink import="true" name="N-31 Hybrid Gun Long Battery" hidden="false" id="772d-b869-a648-a235" type="selectionEntry" sortIndex="2" targetId="cb9d-deec-4a42-b6e6"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="2bb1-6e23-1b83-77e2" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1366,7 +881,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Rare, Repair Bay, Box of Scraps</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Rare, Repair Bay, Box of Scraps, Vanguard-3&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1384,6 +899,7 @@
             <infoLink name="Rare" id="a185-81d6-59fc-5e0d" hidden="false" type="rule" targetId="f7ad-85f9-39f4-7e10"/>
             <infoLink name="Repair Bay" id="6723-6931-7cd3-14c3" hidden="false" type="rule" targetId="2fc9-d1f9-059b-c3c1"/>
             <infoLink name="Box of Scraps" id="41d6-11ba-437b-9780" hidden="false" type="rule" targetId="6042-7b1a-9cc8-2cc6"/>
+            <infoLink name="Vanguard-X" id="ca34-7e0e-d9af-6cec" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1409,7 +925,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Swacs</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Swacs, Vanguard-3&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1426,6 +942,7 @@
           </entryLinks>
           <infoLinks>
             <infoLink name="Swacs" id="970e-5533-3b36-f5b7" hidden="false" type="rule" targetId="74c2-9532-b423-0407"/>
+            <infoLink name="Vanguard-X" id="babb-93f5-d06a-1888" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1456,7 +973,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="148"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6640-828f-60aa-c69a" includeChildSelections="false"/>
@@ -1533,7 +1050,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fae7-f2d8-0706-4361" includeChildSelections="false"/>
@@ -1609,7 +1126,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="56"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c99-641f-cb66-dde7" includeChildSelections="false"/>
@@ -1617,7 +1134,7 @@
           </constraints>
           <infoLinks>
             <infoLink name="Rapid Drop" id="0f4c-d198-6753-8d57" hidden="false" type="rule" targetId="8b74-2f05-9de9-8b32"/>
-            <infoLink name="Fighter Support" id="d18e-1328-63d0-b965" hidden="false" type="rule" targetId="a315-6216-8cd2-6a19"/>
+            <infoLink name="Wing Support" id="d18e-1328-63d0-b965" hidden="false" type="rule" targetId="a315-6216-8cd2-6a19"/>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="4ea5-b5e2-20a6-efe0" type="selectionEntry" targetId="e2ac-0ab3-c6db-ae34"/>
@@ -1729,20 +1246,24 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vectored</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="55"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5b8-f62d-0aa1-0012" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0b9c-e7a8-3106-9309" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="1c75-cd01-a8da-aecb" type="selectionEntry" targetId="e2ac-0ab3-c6db-ae34"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="1c75-cd01-a8da-aecb" type="selectionEntry" targetId="bc73-4289-1429-828f" sortIndex="1"/>
+            <entryLink import="true" name="Bombers" hidden="false" id="3092-86ef-5d0e-8da9" type="selectionEntry" targetId="49cd-6676-c6a4-7574" sortIndex="2"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Vectored" id="38a2-4b21-8b79-c357" hidden="false" type="rule" targetId="7a2f-fbe0-b3cd-98c8"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1767,7 +1288,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">6+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vectored</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1781,6 +1302,9 @@
           <entryLinks>
             <entryLink import="true" name="N-12 Artillery Cannon" hidden="false" id="da7a-14f8-cdfe-2180" type="selectionEntry" targetId="0997-56e3-919e-03d0"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Vectored" id="2dfe-d72a-0939-0857" hidden="false" type="rule" targetId="7a2f-fbe0-b3cd-98c8"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1847,12 +1371,12 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">6+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-3</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Monitor</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Monitor, Vanguard-4&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="46"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f8a-a3d2-a43c-404a" includeChildSelections="false"/>
@@ -1863,6 +1387,7 @@
           </entryLinks>
           <infoLinks>
             <infoLink name="Monitor" id="cf21-a619-e028-6cf9" hidden="false" type="rule" targetId="cc9f-9be5-cc19-2fc9"/>
+            <infoLink name="Vanguard-X" id="e15e-a8de-72c5-e7f6" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1888,12 +1413,12 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">2-4</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Reinforced Armour</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="32"/>
           </costs>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0756-2bf6-f07a-e944" includeChildSelections="false"/>
@@ -1902,6 +1427,9 @@
           <entryLinks>
             <entryLink import="true" name="Frigate Systems" hidden="false" id="5072-9488-19de-ef81" type="selectionEntryGroup" targetId="c6cf-5821-f6b2-1ffd"/>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Reinforced Armour" id="3496-2c83-44a6-09ce" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1931,7 +1459,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="22"/>
           </costs>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c13c-d358-4504-2a47" includeChildSelections="false"/>
@@ -2053,7 +1581,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="19"/>
           </costs>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="034a-9a0d-3c5f-e931" includeChildSelections="false"/>
@@ -2176,7 +1704,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Critical-1, Fusillade-2</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Critical-2, Penetrator, Volley-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2185,8 +1713,10 @@
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
       </costs>
       <infoLinks>
+        <infoLink name="Calibre-X" id="d6c8-a3fc-78e1-fa7c" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
         <infoLink name="Critical-X" id="af40-eb8e-d128-58e5" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
-        <infoLink name="Fusillade-X" id="d3e6-e693-1436-d100" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Penetrator" id="a935-3ca3-0707-25f7" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+        <infoLink name="Volley-X" id="54b5-ee59-3fb6-0f03" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Dual Vent Cannon Turret" hidden="false" id="cb41-3833-86dc-21ff">
@@ -2198,7 +1728,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Overcharge, Reave-2</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Overcharge, Reave-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2217,37 +1747,24 @@
         <profile name="Light Vent Cannon Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="b602-3cdd-d5e0-4ff9">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">1</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Fusillade-1, Reave-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Reave-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/5] F/S 1/4+/1/E OC Fus-1 Rv-1</comment>
+      <comment>[NL/5] F/S 2/4+/1/E OC Rv-1</comment>
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
       </costs>
       <infoLinks>
         <infoLink name="Overcharge" id="5a51-4cf0-a114-db52" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
-        <infoLink name="Fusillade-X" id="4788-3520-64b1-4fc6" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
         <infoLink name="Reave-X" id="c4a8-1ff2-fea5-7987" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="N-8 Artillery Cannon Bank" hidden="false" id="4b65-d078-6d11-484c">
-      <profiles>
-        <profile name="N-8 Artillery Cannon Bank" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="d6b9-d4bb-e387-1c57">
-          <characteristics>
-            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">B</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
-            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
-            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
-            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Low Power, Volley-2</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <comment>[NL/10] B 4/5+/1/K Fus-2 LP Vol-2</comment>
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
@@ -2435,11 +1952,11 @@
         <profile name="Vent Cannon Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5f5f-adfe-5c3f-e6bd">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
-            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Fusillade-1, Reave-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Reave-1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2449,7 +1966,6 @@
       </costs>
       <infoLinks>
         <infoLink name="Overcharge" id="3415-c961-198c-cf51" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
-        <infoLink name="Fusillade-X" id="6fcd-56a6-6a31-b52a" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
         <infoLink name="Reave-X" id="be37-e342-ddaa-700e" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
@@ -2539,7 +2055,7 @@
       <profiles>
         <profile name="Ablative Armour" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="3de9-9377-0b27-1773">
           <characteristics>
-            <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">This Ship improves its Energy Save by 1.</characteristic>
+            <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">This Ship gains the Reinforced Armour special rule and improves its Kinetic and Energy save by 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2732,7 +2248,7 @@
     <selectionEntry type="upgrade" import="true" name="Heavy Vent Cannon Turret" hidden="false" id="3c90-e8b8-7b63-cbd7">
       <infoLinks>
         <infoLink name="Fusillade-X" id="ee66-b843-adac-6e74" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
-        <infoLink name="Overcharge" id="37bf-5ec2-3653-8d9c" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
+        <infoLink name="Overcharge" id="36b8-8538-8ce0-68fe" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
         <infoLink name="Reave-X" id="0a1f-ef39-2cbf-9cdf" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
         <infoLink name="Heavy Vent Cannon Turret" id="5f57-94e9-85d4-768d" hidden="false" type="profile" targetId="ab94-e594-6ea1-1f0e"/>
       </infoLinks>
@@ -2745,11 +2261,10 @@
     <selectionEntry type="upgrade" import="true" name="Heavy Vent Cannons" hidden="false" id="7c6e-925f-def1-fedb">
       <infoLinks>
         <infoLink name="Fusillade-X" id="656c-bfbd-19e2-356d" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
-        <infoLink name="Overcharge" id="3e3c-6b2c-c779-4bdf" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
-        <infoLink name="Reave-X" id="36b8-8538-8ce0-68fe" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
         <infoLink name="Heavy Vent Cannons" id="38f1-5c26-d132-cc8f" hidden="false" type="profile" targetId="56aa-6813-1b51-92a3"/>
+        <infoLink name="Reave-X" id="bc1a-d543-1f22-6ab2" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
-      <comment>F 4/3+/2/E Fus-1 OC Rv-1</comment>
+      <comment>F 4/3+/2/E Fus-1 Rv-1</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2425-2cba-cc55-8205-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2425-2cba-cc55-8205-max" includeChildSelections="false"/>
@@ -2757,22 +2272,35 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="HF-8 Clearance Laser" hidden="false" id="159e-0298-8da7-34e8">
       <profiles>
-        <profile name="HF-8 Clearance Laser" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="18b6-46db-e8c7-6170">
+        <profile name="HF-8 Clearance Laser (Focused)" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="18b6-46db-e8c7-6170">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">*</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-1, Mauler</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Burnthrough-1, Calibre-L/M, Mauler</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="HF-8 Clearance Laser (Wide)" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a1a1-03a5-d492-cde5">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">0</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Anti Wing</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
+        <infoLink name="Alt-X" id="f7db-0b9d-84f5-c3af" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
         <infoLink name="Burnthrough-X" id="0650-6cfc-774f-344f" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+        <infoLink name="Calibre-X" id="73ce-03a1-a404-e002" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
         <infoLink name="Mauler" id="7a07-120f-9f33-2057" hidden="false" type="rule" targetId="c093-8c13-6119-8d37"/>
+        <infoLink name="Anti Wing" id="7da3-d48f-992c-632d" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
       </infoLinks>
-      <comment>F 4/*/2/E BT-1 Maul</comment>
+      <comment>F 4/*/2/E Alt-1 BT-1 Cal-L/M Maul // F 6/3+/0/E Alt-1 AntiWing</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c382-d980-67b1-790e-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c382-d980-67b1-790e-max" includeChildSelections="false"/>
@@ -2795,7 +2323,7 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mega Vent Cannon Half Battery" hidden="false" id="aa03-5e72-aab7-ade1">
-      <comment>[x2] B 2/3+/3/E OC Fus-1 Rv-2 Vol-2</comment>
+      <comment>[x2] B 2/3+/3/E OC Fus-1 Rv-1 Vol-2</comment>
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="0"/>
       </costs>
@@ -2817,7 +2345,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Fusillade-1, Reave-2, Volley-2</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Fusillade-1, Reave-1, Volley-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2857,11 +2385,11 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">-</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <comment>F 4/4+/1/K</comment>
+      <comment>F 4/4+/1/K Fus-2</comment>
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="0"/>
       </costs>
@@ -2869,6 +2397,9 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36fb-a070-afc2-bf5c-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36fb-a070-afc2-bf5c-max" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Fusillade-X" id="50a8-1123-5cf7-896d" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="N-12 Artillery Cannon Battery" hidden="false" id="15e5-46d3-e053-9bef">
       <infoLinks>
@@ -3130,7 +2661,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Crippling, Critical-2, High Power</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Crippling, Critical-2, Focused, High Power</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3138,10 +2669,11 @@
         <infoLink name="Bloom-X" id="6468-7bb3-a372-d983" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
         <infoLink name="Crippling-X" id="53e2-da76-6aea-5763" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
         <infoLink name="Critical-X" id="692e-9b55-6387-e32e" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
+        <infoLink name="Focused" id="0e36-26c7-5dcd-e8a4" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
         <infoLink name="High Power" id="7614-c1d0-00d0-39b4" hidden="false" type="rule" targetId="4a8c-aae4-c959-2437"/>
         <infoLink name="Spinal Mass Annihilator" id="6322-3be0-ad53-4af6" hidden="false" type="rule" targetId="1a44-54c0-a125-435a"/>
       </infoLinks>
-      <comment>FN 2/2+/3/C Bl-1 Crip Crit-2 HP</comment>
+      <comment>FN 2/2+/3/C Bl-1 Crip Crit-2 Foc HP</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6e3-ae53-90ea-6004-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6e3-ae53-90ea-6004-max" includeChildSelections="false"/>
@@ -3164,6 +2696,7 @@
         <infoLink name="Bombardment" id="2693-294f-ff87-d524" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
         <infoLink name="Limited-X" id="4f32-bbbc-e738-074c" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
         <infoLink name="VX Bomb" id="7428-5af6-eebd-0d76" hidden="false" type="rule" targetId="4bf8-0d06-02c2-f60b"/>
+        <infoLink name="Scald-X" id="0991-557c-d4e1-36db" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
       <comment>F 3/4+/2/E Bomb L-3</comment>
       <constraints>
@@ -3172,7 +2705,7 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="XN-40 “Godray” Mass Driver" hidden="false" id="af21-562c-911f-edeb">
-      <comment>F 1/3+/3/C Alt-1 // F 1/4+/3/E Alt-1 Bomb Pen</comment>
+      <comment>F 1/3+/3/C Alt-1 Cal-H/C // F 1/4+/3/E Alt-1 Bomb Pen</comment>
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="0"/>
       </costs>
@@ -3180,6 +2713,7 @@
         <infoLink name="Alt-X" id="829b-aae8-d183-2a60" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
         <infoLink name="Bombardment" id="0c90-2f0c-45f1-8bca" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
         <infoLink name="Penetrator" id="a020-8163-06fd-8622" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+        <infoLink name="Calibre-X" id="db85-e893-5c13-ff80" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
       </infoLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e672-7c4e-1a96-a821-min" includeChildSelections="false"/>
@@ -3193,7 +2727,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Alt-1, Calibre-H/C</characteristic>
           </characteristics>
         </profile>
         <profile name="XN-40 “Godray” Bombardment Mass Driver" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a2ce-2c04-aef8-c5e1">
@@ -3315,6 +2849,42 @@
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a991-70dd-fbd4-c526-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a991-70dd-fbd4-c526-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fighters" hidden="false" id="bc73-4289-1429-828f">
+      <profiles>
+        <profile name="Fighters" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="b9f9-c92a-866f-287a">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Alt-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>2 Alt-1</comment>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4f2-db56-5fd5-970a" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5fd-a329-6f3d-26b3" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bombers" hidden="false" id="49cd-6676-c6a4-7574">
+      <profiles>
+        <profile name="Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="669c-cc2e-bcc9-6778">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">1</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Alt-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>1 Alt-1</comment>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="60e6-577b-8351-eee5" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18ae-053e-244d-b037" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fire Ships" hidden="false" id="67b4-a8dd-48ac-771f">
@@ -3512,19 +3082,19 @@
       <description>When this Ship uses its Detector special rule, you may place an additional two Spikes on a different enemy Group in line of sight.</description>
     </rule>
     <rule name="Repair Bay" id="2fc9-d1f9-059b-c3c1" hidden="false">
-      <description>Friendly Ships within 6” of this Ship that roll to repair Crippling Effects during the Repair step of the End Phase repair those effects on a roll of a 2+ instead of a 4+.</description>
+      <description>Friendly Ships within 6” of this Ship that roll to repair Crippling Effects during the Repair step of the End Phase repair those effects on a roll of a 2+ instead of a 4+. Friendly Ships that end their activation within 6” of this Ship on the same Orbital Layer recover 2 lost Hull Points.</description>
     </rule>
     <rule name="Box of Scraps" id="6042-7b1a-9cc8-2cc6" hidden="false">
-      <description>At the end of this ship’s activation, pick one friendly ship within 6” in line of sight (including this one). Place a Box Of Scraps token next to that ship. The next time that ship would be destroyed, it isn’t. Instead, before continuing to inflict damage, remove the Box of Scraps token and that ship remains in play with D3 Hull Points remaining, then continue inflicting damage as normal. Box Of Scraps tokens persist through rounds but a ship may only have 1 Box Of Scraps token.</description>
+      <description>At the end of this ship’s activation, pick one friendly ship within 6” in line of sight (including this one). Place a Box Of Scraps token next to that ship. The next time that Ship would be destroyed due to damage, it isn’t. Instead, before continuing to inflict damage, remove the Box of Scraps token and that ship remains in play with D3 Hull Points remaining, then continue inflicting damage as normal. Box Of Scraps tokens persist through rounds but a ship may only have 1 Box Of Scraps token.</description>
     </rule>
     <rule name="VX Bomb" id="4bf8-0d06-02c2-f60b" hidden="false">
-      <description>If this weapon does damage to a Dropsite, remove all Battalions (friendly and enemy) from that Dropsite and its Features.</description>
+      <description>This weapon gains the Scald-2 special rule when targeting Cities. If this weapon does damage to a Dropsite, remove all Battalions (friendly and enemy) from that Dropsite and its Features.</description>
     </rule>
     <rule name="Swacs" id="74c2-9532-b423-0407" hidden="false">
       <description>Enemy Ships within 12” of this ship may be targeted by friendly Ships firing Close Action weapons using the firing Ship’s normal Weapon Range (Scan + Sig).</description>
     </rule>
-    <rule name="Fighter Support" id="a315-6216-8cd2-6a19" hidden="false">
-      <description>When any number friendly Fighters within 6” of this ship are used to provide Kinetic Save re-rolls, increase the total number of re-rolls provided by 1 (after declaring how many fighters you are going to use). When any number of Friendly fighters are used to attack enemy Fighters &amp; Bombers within 6” of this ship, treat the friendly Fighters as having 1 additional Fighter.</description>
+    <rule name="Wing Support" id="a315-6216-8cd2-6a19" hidden="false">
+      <description>Friendly Fighters within 6” of this Ship can be used for Close Protection against any Kinetic weapons (in addition to Close Action and Bomber attacks). When friendly Fighters within 6” of this Ship are used to remove enemy Bombers, each Fighter removes 2 Bombers instead of 1. When friendly Bombers (of any type) within 6” of a Ship with this rule attack, they Saturation Fire when there are 5 or more Bombers in the attack instead of 6.</description>
     </rule>
     <rule name="Debris Clearance" id="01ec-39c9-8ad8-2b37" hidden="false">
       <description>Once per game, this Ship may forgo any attacks it may make. If it does, instead of attacking, this Ship may replace a piece of Debris Field within 6” (measuring to the edge of that Debris Field) with a Micrometeor Cloud of approximately the same size in the same location, or remove a piece of Micrometeor Cloud within 6” from the table.</description>
@@ -3533,8 +3103,8 @@
       <description>This ship counts as having a single weapon for its Detector rule. When this ship uses its Detector rule, it may place an additional Spike on that Group, or it may place a Telescope token on that Group.</description>
     </rule>
     <rule name="Telescope Token" id="5e41-e47d-2eee-9f6d" hidden="false">
-      <description>When you attack a Group that has a Telescope Token, you may remove the token. If you do, one weapon of the same type on each attacking Ship targeting that Group causes criticals when exceeding its Lock value by 1 instead of 2.
-Telescope tokens are removed at the end of the round.</description>
+      <description>When you assign weapons to a Group that has a Telescope token, you may remove the token. If you do, one of the Group&apos;s Weapon Systems lowers the result required to score a critical against that Group by 1 for that attack (so a weapon that would crit on a 5+ crits on a 4+ instead).
+Telescope tokens placed by this Ship persist between rounds and are only removed when this Ship would place another Telescope token or when a Ship with a Telescope token goes on the Silent Running order.</description>
     </rule>
     <rule name="Explosive" id="0208-e00f-13ea-f5b3" hidden="false">
       <description>When this ship is destroyed, it explodes with a range of 3” and rolls 1D3 on the Explosion Effect table.</description>
@@ -3602,8 +3172,16 @@ Telescope tokens are removed at the end of the round.</description>
       <selectionEntryGroups>
         <selectionEntryGroup name="Broadside Hardpoints" id="814d-a010-b55b-5380" hidden="false" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="NC-31 Hybrid Gun Battery" hidden="false" id="84b0-2f52-80cd-3ef5" type="selectionEntry" targetId="38a3-ace5-9f4c-5621" sortIndex="1" collective="true"/>
-            <entryLink import="true" name="NC-16 Missile Battery" hidden="false" id="68e9-70df-529d-153d" type="selectionEntry" targetId="f067-f2f0-6431-583b" sortIndex="2" collective="true"/>
+            <entryLink import="true" name="NC-31 Hybrid Gun Battery" hidden="false" id="84b0-2f52-80cd-3ef5" type="selectionEntry" targetId="38a3-ace5-9f4c-5621" sortIndex="1" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="NC-16 Missile Battery" hidden="false" id="68e9-70df-529d-153d" type="selectionEntry" targetId="f067-f2f0-6431-583b" sortIndex="2" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="35"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4280-14e7-e1cc-ab3d"/>
@@ -3625,15 +3203,52 @@ Telescope tokens are removed at the end of the round.</description>
         </selectionEntryGroup>
         <selectionEntryGroup name="Turret Hardpoints" id="b537-c393-11d1-eb15" hidden="false" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="10K Mass Driver Turret" hidden="false" id="5867-8bf9-641e-d7b7" type="selectionEntry" targetId="fa56-f516-23f3-fa9d" sortIndex="1" collective="true"/>
-            <entryLink import="true" name="Heavy Dual Vent Cannon Turret" hidden="false" id="fb8d-deba-f736-ea87" type="selectionEntry" targetId="cb41-3833-86dc-21ff" sortIndex="2" collective="true"/>
+            <entryLink import="true" name="10K Mass Driver Turret" hidden="false" id="5867-8bf9-641e-d7b7" type="selectionEntry" targetId="fa56-f516-23f3-fa9d" sortIndex="1" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Heavy Dual Vent Cannon Turret" hidden="false" id="fb8d-deba-f736-ea87" type="selectionEntry" targetId="cb41-3833-86dc-21ff" sortIndex="2" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
+              </costs>
+            </entryLink>
           </entryLinks>
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="adc8-0f88-cb26-6223"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="adc8-0f88-cb26-6223">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="34a3-4980-1cbd-1061" shared="true"/>
+              </conditions>
+              <comment>Pathfinder</comment>
+            </modifier>
+            <modifier type="set" value="3" field="adc8-0f88-cb26-6223">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="b118-3721-4c27-180b" shared="true"/>
+              </conditions>
+              <comment>Explorer</comment>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Launch Hardpoints" id="2262-56eb-3951-5244" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="5ea3-d91a-6fc9-be07" type="selectionEntry" targetId="f10e-2e99-413f-017f" sortIndex="1" collective="true"/>
-            <entryLink import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="b062-95b6-84ea-daee" type="selectionEntry" targetId="93ff-7d01-30f3-7dfe" sortIndex="2" collective="true"/>
-            <entryLink import="true" name="Torpedo" hidden="false" id="ce78-b7b1-bae0-76ab" type="selectionEntry" targetId="0743-e2f2-c2ba-5117" sortIndex="3" collective="true"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="5ea3-d91a-6fc9-be07" type="selectionEntry" targetId="f10e-2e99-413f-017f" sortIndex="1" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="b062-95b6-84ea-daee" type="selectionEntry" targetId="93ff-7d01-30f3-7dfe" sortIndex="2" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Torpedo" hidden="false" id="ce78-b7b1-bae0-76ab" type="selectionEntry" targetId="0743-e2f2-c2ba-5117" sortIndex="3" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="3" field="9800-c103-e614-7a5c">
@@ -3658,8 +3273,16 @@ Telescope tokens are removed at the end of the round.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a2f-3f5c-29db-9875" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Scanner Array" hidden="false" id="6f50-bf7d-d4a1-120c" type="selectionEntry" targetId="cc44-b172-47dd-d840" collective="true"/>
-            <entryLink import="true" name="Drive Refit" hidden="false" id="e742-dd3e-0fe6-8706" type="selectionEntry" targetId="9e57-79cc-21a0-72fb" collective="true"/>
+            <entryLink import="true" name="Scanner Array" hidden="false" id="6f50-bf7d-d4a1-120c" type="selectionEntry" targetId="cc44-b172-47dd-d840" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Drive Refit" hidden="false" id="e742-dd3e-0fe6-8706" type="selectionEntry" targetId="9e57-79cc-21a0-72fb" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="2" field="8a2f-3f5c-29db-9875">
@@ -3707,35 +3330,95 @@ Telescope tokens are removed at the end of the round.</description>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="355b-0893-cb21-c9cc" hidden="false" sortIndex="1" collective="false">
               <entryLinks>
-                <entryLink import="true" name="N-31 Hybrid Gun Bank" hidden="false" id="9c96-88dc-6607-edf7" type="selectionEntry" targetId="8a6f-b3d6-0576-aa06" collective="true"/>
-                <entryLink import="true" name="N-8 Artillery Cannon Bank" hidden="false" id="1662-3e33-0d1f-fb59" type="selectionEntry" targetId="4b65-d078-6d11-484c" collective="true"/>
-                <entryLink import="true" name="NC-16 Missile Bank" hidden="false" id="88ab-c9c1-352e-07cb" type="selectionEntry" targetId="c2b2-84f1-345c-c1e6" collective="true"/>
+                <entryLink import="true" name="N-31 Hybrid Gun Bank" hidden="false" id="9c96-88dc-6607-edf7" type="selectionEntry" targetId="8a6f-b3d6-0576-aa06" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="N-8 Artillery Cannon Bank" hidden="false" id="1662-3e33-0d1f-fb59" type="selectionEntry" targetId="4b65-d078-6d11-484c" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="8"/>
+                  </costs>
+                  <profiles>
+                    <profile name="N-8 Artillery Cannon Bank" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="248f-cdfa-1042-74fa">
+                      <characteristics>
+                        <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">B</characteristic>
+                        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+                        <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
+                        <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                        <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Low Power, Volley-2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </entryLink>
+                <entryLink import="true" name="NC-16 Missile Bank" hidden="false" id="88ab-c9c1-352e-07cb" type="selectionEntry" targetId="c2b2-84f1-345c-c1e6" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Launch" id="12fa-0b75-aacb-bed1" hidden="false" flatten="false" sortIndex="2" collective="false">
               <entryLinks>
-                <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="dbad-ddbd-0cd9-0a28" type="selectionEntry" targetId="f10e-2e99-413f-017f" collective="true"/>
-                <entryLink import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="6571-5d90-0442-53c0" type="selectionEntry" targetId="7215-cc99-8264-5944" collective="true"/>
+                <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="dbad-ddbd-0cd9-0a28" type="selectionEntry" targetId="f10e-2e99-413f-017f" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="6571-5d90-0442-53c0" type="selectionEntry" targetId="7215-cc99-8264-5944" collective="true">
+                  <costs>
+                    <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="18"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup name="Turrets" id="9eb7-5c2f-e064-0eec" hidden="false" sortIndex="3" collective="false">
           <entryLinks>
-            <entryLink import="true" name="XN-31 Mass Driver Turret" hidden="false" id="8ed8-36e8-685f-867f" type="selectionEntry" targetId="d14a-3915-dfc7-1d29" sortIndex="1" collective="true"/>
-            <entryLink import="true" name="N-11 Artillery Cannon Turret" hidden="false" id="9cc5-8ca0-21f5-5801" type="selectionEntry" targetId="b256-0978-ce23-7e26" sortIndex="2" collective="true"/>
-            <entryLink import="true" name="N-109 Bombardment Mortar Turret" hidden="false" id="24a3-14cf-a2fa-fa2c" type="selectionEntry" targetId="df14-ecce-1fb3-edd0" sortIndex="3" collective="true"/>
-            <entryLink import="true" name="Vent Cannon Turret" hidden="false" id="86cb-d7b2-bae1-51b6" type="selectionEntry" targetId="a66a-c4d6-094e-15b8" sortIndex="4" collective="true"/>
+            <entryLink import="true" name="XN-31 Mass Driver Turret" hidden="false" id="8ed8-36e8-685f-867f" type="selectionEntry" targetId="d14a-3915-dfc7-1d29" sortIndex="1" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="6"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="N-11 Artillery Cannon Turret" hidden="false" id="9cc5-8ca0-21f5-5801" type="selectionEntry" targetId="b256-0978-ce23-7e26" sortIndex="2" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="N-109 Bombardment Mortar Turret" hidden="false" id="24a3-14cf-a2fa-fa2c" type="selectionEntry" targetId="df14-ecce-1fb3-edd0" sortIndex="3" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="13"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Vent Cannon Turret" hidden="false" id="86cb-d7b2-bae1-51b6" type="selectionEntry" targetId="a66a-c4d6-094e-15b8" sortIndex="4" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Structures" id="751f-e67d-26f3-17fe" hidden="false" sortIndex="2" collective="false">
           <entryLinks>
-            <entryLink import="true" name="Scanner Array" hidden="false" id="2418-58f4-2d78-48f8" type="selectionEntry" targetId="1517-78fb-2a15-57eb" collective="true"/>
-            <entryLink import="true" name="Ablative Armour" hidden="false" id="307a-bb06-27f8-1acb" type="selectionEntry" targetId="d2af-e9e9-8f5c-2738" collective="true"/>
-            <entryLink import="true" name="Drive Refit" hidden="false" id="0e6b-aebf-8d53-f30f" type="selectionEntry" targetId="9e57-79cc-21a0-72fb" collective="true"/>
+            <entryLink import="true" name="Scanner Array" hidden="false" id="2418-58f4-2d78-48f8" type="selectionEntry" targetId="1517-78fb-2a15-57eb" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Ablative Armour" hidden="false" id="307a-bb06-27f8-1acb" type="selectionEntry" targetId="d2af-e9e9-8f5c-2738" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="12"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Drive Refit" hidden="false" id="0e6b-aebf-8d53-f30f" type="selectionEntry" targetId="9e57-79cc-21a0-72fb" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f06-a4d2-eddb-6fed" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0f06-a4d2-eddb-6fed" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3770,14 +3453,30 @@ Telescope tokens are removed at the end of the round.</description>
       <selectionEntryGroups>
         <selectionEntryGroup name="Turrets" id="d2e8-8883-bdd3-da39" hidden="false" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="N-31 Hybrid Gun Turret" hidden="false" id="469b-69d4-a732-3fda" type="selectionEntry" targetId="2456-5194-df61-6a2f" sortIndex="1" collective="true"/>
-            <entryLink import="true" name="NC-16 Missile Turret" hidden="false" id="048d-aa79-ad26-c17c" type="selectionEntry" targetId="a0a8-6b23-43dc-a016" sortIndex="2" collective="true"/>
-            <entryLink import="true" name="Light Vent Cannon Turret" hidden="false" id="1f10-9776-a6b1-8516" type="selectionEntry" targetId="a74c-4498-31f8-9a71" sortIndex="3" collective="true"/>
+            <entryLink import="true" name="N-31 Hybrid Gun Turret" hidden="false" id="469b-69d4-a732-3fda" type="selectionEntry" targetId="2456-5194-df61-6a2f" sortIndex="1" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="NC-16 Missile Turret" hidden="false" id="048d-aa79-ad26-c17c" type="selectionEntry" targetId="a0a8-6b23-43dc-a016" sortIndex="2" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Light Vent Cannon Turret" hidden="false" id="1f10-9776-a6b1-8516" type="selectionEntry" targetId="a74c-4498-31f8-9a71" sortIndex="3" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Structures" id="530b-22b0-2895-702f" hidden="false" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Sensor Dome" hidden="false" id="b314-ba15-48ae-5248" type="selectionEntry" targetId="9fc6-b78f-77eb-cad2" collective="true"/>
+            <entryLink import="true" name="Sensor Dome" hidden="false" id="b314-ba15-48ae-5248" type="selectionEntry" targetId="9fc6-b78f-77eb-cad2" collective="true">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3828,7 +3527,7 @@ Telescope tokens are removed at the end of the round.</description>
             <profile name="Duct Tape and Bubblegum" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="844e-f9be-10ce-1557">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of H or C tonnage is destroyed, it remains in play until the start of the End Phase. At the start of the End Phase, remove that Ship from play and roll for explosion. That Ship counts as destroyed.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When a friendly Ship of M, H, or C tonnage is destroyed by damage from an opponent&apos;s attack (including any Crippling or Explosion Effects), it remains in play until the start of the End Phase. At the start of the End Phase, roll for explosion and remove that Ship from play. That Ship counts as destroyed.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3841,7 +3540,7 @@ Telescope tokens are removed at the end of the round.</description>
             <profile name="Redundant Ship Systems" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="9371-86ac-12ff-c0c1">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When your opponent rolls to determine a crippling effect for a friendly Ship, they roll twice and you pick one of the results.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you would Roll for Crippling Effects for a friendly Ship (for any reason), roll 1D6 instead of 2D6 for that Ship’s Crippling Effect. Count a result of a 1 as a result of a 2.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3853,7 +3552,7 @@ Telescope tokens are removed at the end of the round.</description>
           <profiles>
             <profile name="Final Mission" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5a8a-71f8-86af-fc3f">
               <characteristics>
-                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
                 <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.</characteristic>
               </characteristics>
             </profile>
@@ -3870,7 +3569,7 @@ Telescope tokens are removed at the end of the round.</description>
             <profile name="Never Tell Me The Odds" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="61b0-32ca-9f50-7705">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery, that Group gains a 4+ Backup save against any hits from Scenery this activation.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you move a Group through Scenery or move/place a Wing of Assets through Scenery, that Group/Wing ignores the effects of that Scenery piece until the end of the movement.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3883,7 +3582,7 @@ Telescope tokens are removed at the end of the round.</description>
             <profile name="Sabotage" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="f3b1-e3bf-bb5c-b345">
               <characteristics>
                 <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
-                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player. That Dropsite cannot be activated this round.</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player within 6” of a friendly Group. That Dropsite takes D3+1 Core Hits. After rolling, you may spend an additional 1AP to re-roll the D3 and treat this ability as an attack for the purposes of removing a feature.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3892,6 +3591,9 @@ Telescope tokens are removed at the end of the round.</description>
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d43-9211-903e-17b3" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
@@ -3957,9 +3659,19 @@ Telescope tokens are removed at the end of the round.</description>
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-1, Overcharge, Reave-1</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-1, Reave-1</characteristic>
       </characteristics>
       <comment>F 4/3+/2/E Fus-1 OC Sc-1</comment>
+    </profile>
+    <profile name="N-8 Artillery Cannon Bank" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="d6b9-d4bb-e387-1c57">
+      <characteristics>
+        <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">B</characteristic>
+        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+        <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
+        <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+        <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Low Power, Volley-2</characteristic>
+      </characteristics>
     </profile>
   </sharedProfiles>
 </catalogue>

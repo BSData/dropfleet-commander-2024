@@ -606,6 +606,7 @@ This weapon cannot be used to attack Ships in Orbit while the attacking Ship is 
       <alias>Calibre-L</alias>
       <alias>Calibre-M</alias>
       <alias>Calibre-H</alias>
+      <alias>Calibre-L/M</alias>
       <alias>Calibre-H/C</alias>
       <description>Improve the Lock value of this Weapon by 1 when attacking Groups of any of the listed X Tonnage values.</description>
     </rule>
