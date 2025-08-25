@@ -591,6 +591,90 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Yamamoto Grand Battleship" hidden="false" id="e7d8-0482-a0d9-e08f">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="1257-cf6e-37e0-0fee" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="de7e-3431-0645-bc4b" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Yamamoto Grand Battleship" hidden="false" id="9c22-7b90-cd70-0a02" publicationId="7fb8-995d-767a-783d" page="39">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="c7d7-11a6-f74f-789a" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Yamamoto" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d5cd-1153-23cd-2000" publicationId="7fb8-995d-767a-783d" page="39">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">5&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">24</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="300"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80ba-3d97-46f9-bde9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="948c-c65d-216b-3fac" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Spinal Vent Lance" hidden="false" id="e1ea-947a-fccb-5772" type="selectionEntry" sortIndex="1" targetId="6358-0d50-97f5-b614"/>
+            <entryLink import="true" name="9K Mass Driver Turrets" hidden="false" id="8c38-3ada-51d7-eb81" type="selectionEntry" sortIndex="2" targetId="fb8a-9de0-eb36-e2dc"/>
+            <entryLink import="true" name="NC-16 Missile Battery Turret Pair" hidden="false" id="2c7b-57b0-c046-58cd" type="selectionEntry" sortIndex="3" targetId="f42f-25f9-043c-6923"/>
+            <entryLink import="true" name="Engine Refit" hidden="false" id="03cc-fde8-cd29-104c" type="selectionEntry" targetId="4a33-ab81-d18d-935f" sortIndex="5"/>
+            <entryLink import="true" name="Torpedo" hidden="false" id="bb13-6a01-20ae-b414" type="selectionEntry" sortIndex="4" targetId="01c6-6e77-c1f6-94ef"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Nimitz Grand Battleship" hidden="false" id="13f8-81d4-97be-01e5">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="6699-6ad3-2c9f-7a0f" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="2fc1-bb7d-ac6b-bd22" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Nimitz Grand Battleship" hidden="false" id="c8dd-267b-13a4-e2f2" publicationId="7fb8-995d-767a-783d" page="38">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="3c0c-524f-7c92-0379" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Nimitz" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7d82-2bc5-4dfe-2db8" publicationId="7fb8-995d-767a-783d" page="38">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">5&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">24</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="305"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba76-4f52-fa8d-76b5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="633a-71a1-bc45-f79f" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Spinal Vent Lance" hidden="false" id="40d9-df73-d86c-0cc0" type="selectionEntry" sortIndex="1" targetId="6358-0d50-97f5-b614"/>
+            <entryLink import="true" name="NC-16 Missile Battery Turret Pair" hidden="false" id="125e-1991-1fad-7a0b" type="selectionEntry" sortIndex="2" targetId="f42f-25f9-043c-6923"/>
+            <entryLink import="true" name="Engine Refit" hidden="false" id="c754-b5a6-8bde-02e0" type="selectionEntry" targetId="4a33-ab81-d18d-935f" sortIndex="5"/>
+            <entryLink import="true" name="NC-16 Missile Battery Turret Pair" hidden="false" id="c42e-88a9-6ca5-8fc5" type="selectionEntry" sortIndex="3" targetId="f42f-25f9-043c-6923"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="3d25-1bc4-4790-3d48" type="selectionEntry" sortIndex="4" targetId="39f8-a1dd-2c1a-7283"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Drake Grand Battleship" hidden="false" id="e695-487e-0d44-bcc4">
       <categoryLinks>
         <categoryLink name="Group" hidden="false" id="14fc-90dc-b9da-086e" targetId="default-category" primary="false"/>
@@ -796,6 +880,164 @@
             <entryLink import="true" name="N-12 Artillery Cannon Half Battery" hidden="false" id="1ffc-9d13-0411-e979" type="selectionEntry" sortIndex="2" targetId="5ae3-e645-a98c-9cc7"/>
             <entryLink import="true" name="Torpedo" hidden="false" id="57be-65f9-b3ff-4038" type="selectionEntry" sortIndex="3" targetId="c923-a4c4-7dac-a3f1"/>
             <entryLink import="true" name="Engine Refit" hidden="false" id="8ea9-cf82-6963-34fd" type="selectionEntry" targetId="4a33-ab81-d18d-935f" sortIndex="4"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vanguard Old Battleship" hidden="false" id="4195-626e-c042-2e71">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="a072-31bc-31dd-d46e" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="4b01-d54a-a8ee-8779" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Vanguard Old Battleship" hidden="false" id="208f-5ea1-1f1e-8250" publicationId="7fb8-995d-767a-783d" page="32">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="2eee-426c-d418-a085" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Vanguard" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="134e-f517-39b1-abed" publicationId="7fb8-995d-767a-783d" page="32">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">15</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="230"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="470d-2c56-d38c-d468" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2704-1b8a-9af6-4d83" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mega Vent Cannon Half Battery" hidden="false" id="765c-65da-dc2c-76e2" type="selectionEntry" sortIndex="1" targetId="aa03-5e72-aab7-ade1"/>
+            <entryLink import="true" name="Mega Vent Cannon Half Battery" hidden="false" id="8ad6-4153-903a-8888" type="selectionEntry" sortIndex="2" targetId="aa03-5e72-aab7-ade1"/>
+            <entryLink import="true" name="NC-16 Missile Battery Turret Pair" hidden="false" id="d212-8ad8-46c0-ca52" type="selectionEntry" sortIndex="3" targetId="f42f-25f9-043c-6923"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Iowa Old Battleship" hidden="false" id="5e58-3f7b-09c9-a474">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="04c5-2d13-6313-7561" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="1c02-cd3e-5270-e1fc" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Iowa Old Battleship" hidden="false" id="2c89-7c38-2778-9011" publicationId="7fb8-995d-767a-783d" page="31">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="d20e-13b0-1542-fa7d" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Iowa" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e075-37f6-30a6-5bb6" publicationId="7fb8-995d-767a-783d" page="31">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">15</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="175"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ee9-db8a-0daf-304a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cac0-7550-153a-e3e1" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Vent Cannon Turrets" hidden="false" id="dfe7-cca7-bafc-0ce2" type="selectionEntry" sortIndex="1" targetId="21e2-20b9-939e-933d"/>
+            <entryLink import="true" name="NC-16 Missile Battery" hidden="false" id="8927-809d-aa3a-6b0b" type="selectionEntry" sortIndex="3" targetId="11df-9d49-b088-7fa5"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lexington Old Battleship" hidden="false" id="8fc1-a852-071b-af3b">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="7266-b641-056d-f595" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="fe0a-e4d1-6edd-7dba" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Lexington Old Battleship" hidden="false" id="af4d-375e-8bb1-fa2c" publicationId="7fb8-995d-767a-783d" page="30">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="968b-430e-1519-12bb" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Lexington" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e2b1-e28a-464f-33ee" publicationId="7fb8-995d-767a-783d" page="30">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">15</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="190"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e10d-f14c-1ba5-0d71" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eae0-db69-e87c-951e" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="NC-16 Missile Battery Turret Pair" hidden="false" id="c9fe-bb21-e2c8-8b66" type="selectionEntry" sortIndex="1" targetId="f42f-25f9-043c-6923"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="8638-f0d3-1e36-bcc7" type="selectionEntry" sortIndex="2" targetId="39f8-a1dd-2c1a-7283"/>
+            <entryLink import="true" name="Torpedo" hidden="false" id="2e56-a013-8523-0d3b" type="selectionEntry" sortIndex="3" targetId="490b-2db4-cd16-af70"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Musashi Old Battleship" hidden="false" id="5ff9-93cf-aff3-8cf4">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="43a7-34b1-357a-17ef" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="c85e-bd95-fcd0-95b4" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Musashi Old Battleship" hidden="false" id="e556-5881-ab3c-422f" publicationId="7fb8-995d-767a-783d" page="29">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="f096-6d82-b6c0-effa" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Musashi" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7a72-f120-5c20-ccde" publicationId="7fb8-995d-767a-783d" page="29">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">8&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">15</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="175"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22b3-a7b7-b4ff-e60c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ee6-cc92-d768-8ccc" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="N-12 Artillery Cannon Half Battery" hidden="false" id="3dd0-6e6f-e12a-dc5d" type="selectionEntry" sortIndex="1" targetId="5ae3-e645-a98c-9cc7"/>
+            <entryLink import="true" name="9K Mass Driver Turrets" hidden="false" id="477d-c67c-0967-1816" type="selectionEntry" sortIndex="2" targetId="fb8a-9de0-eb36-e2dc"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2264,6 +2506,30 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Vent Cannon Turrets" hidden="false" id="21e2-20b9-939e-933d">
+      <infoLinks>
+        <infoLink name="Fusillade-X" id="98e9-5363-cbe6-0a23" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Overcharge" id="a7f5-0f27-586b-d11b" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
+        <infoLink name="Reave-X" id="0d03-a820-d0c1-210a" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+      </infoLinks>
+      <comment>F/S 4/3+/2/E Fus-1 OC Rv-1</comment>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a7a-39f3-7a4c-243f" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ec8-82a5-dd95-c9fc" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Heavy Vent Cannon Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="126d-9bec-f140-7d0c">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-1, Overcharge, Reave-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Vent Cannon Turret" hidden="false" id="039a-34de-4bd2-25bb">
       <infoLinks>
         <infoLink name="Fusillade-X" id="8471-10d2-3f27-e656" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
@@ -2617,6 +2883,29 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c88-55b4-ed5c-2cd8-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="NC-16 Missile Battery" hidden="false" id="11df-9d49-b088-7fa5">
+      <profiles>
+        <profile name="NC-16 Missile Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ed7b-d2e7-d26a-5a5e">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Close Action" id="f1e5-09a8-4ec1-98d9" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Volley-X" id="19ad-d63f-f023-45f9" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+      </infoLinks>
+      <comment>F/S/R 3/3+/2/K CA</comment>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db98-bb44-ec7c-07e3" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="041c-ef68-2a9d-6be4" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="NC-16 Missile Salvo" hidden="false" id="0af2-b9c1-3610-d72b">
       <profiles>
         <profile name="NC-16 Missile Salvo" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="8872-680c-c84e-d38e">
@@ -2709,6 +2998,30 @@
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6e3-ae53-90ea-6004-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6e3-ae53-90ea-6004-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spinal Vent Lance" hidden="false" id="6358-0d50-97f5-b614">
+      <profiles>
+        <profile name="Spinal Vent Lance" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7cba-9c62-8cd9-17b6">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">4</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-2, Overcharge, Reave-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bloom-X" id="7360-da88-159a-eb95" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+        <infoLink name="Overcharge" id="b7b9-ff06-fc32-e6ba" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
+        <infoLink name="Reave-X" id="5872-ed4b-2f30-ec22" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+      </infoLinks>
+      <comment>FN 3/3+/4/E Bl-2 OC Rv-1</comment>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07bd-0239-3349-6eb9" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84cc-6ee6-0f27-2989" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="VX Bomb" hidden="false" id="d54f-9739-06b2-4755">
@@ -2981,6 +3294,28 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea83-a2c0-60e8-4e11-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="01c6-6e77-c1f6-94ef">
+      <profiles>
+        <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="817f-f61e-3bab-c311">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-2, Penetrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>2 L-2 Pen</comment>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Limited-X" id="db07-233a-8fbd-5375" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
+        <infoLink name="Penetrator" id="9673-4cb3-e105-734b" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8555-2d28-39eb-2c3e" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcda-8d3d-b3eb-df95" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="490b-2db4-cd16-af70">
       <profiles>
         <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="9d7f-69d8-aeb9-d695">
@@ -3177,11 +3512,17 @@ Telescope tokens placed by this Ship persist between rounds and are only removed
     <entryLink import="true" name="Coloniser Interstellar Dreadnought" hidden="false" id="2e14-5e5b-41cb-ff70" targetId="b789-b9d6-4b9a-c3d4" type="selectionEntry"/>
     <entryLink import="true" name="Explorer Interstellar Ark" hidden="false" id="aecd-91df-7c7a-0213" targetId="09d3-712e-c465-d337" type="selectionEntry"/>
     <entryLink import="true" name="Pathfinder Interstellar Raft" hidden="false" id="2d3d-1540-85f7-128b" targetId="4222-223d-1a41-c600" type="selectionEntry"/>
+    <entryLink import="true" name="Yamamoto Grand Battleship" hidden="false" id="758a-61a2-2611-4fd2" targetId="e7d8-0482-a0d9-e08f" type="selectionEntry"/>
+    <entryLink import="true" name="Nimitz Grand Battleship" hidden="false" id="a0d4-5b06-2299-d858" targetId="13f8-81d4-97be-01e5" type="selectionEntry"/>
     <entryLink import="true" name="Amazon Grand Battleship" hidden="false" id="fb2e-f2ae-d70e-0029" targetId="e695-487e-0d44-bcc4" type="selectionEntry"/>
     <entryLink import="true" name="Argonaut Grand Battleship" hidden="false" id="ca6c-45e4-f296-9170" targetId="1eac-72f4-a249-fabe" type="selectionEntry"/>
     <entryLink import="true" name="Myrmidon Grand Battleship" hidden="false" id="e3a7-e8db-8ee8-f7bb" targetId="af40-11dc-65fd-24d2" type="selectionEntry"/>
     <entryLink import="true" name="Olympus Grand Battleship" hidden="false" id="9ce5-1647-2e3c-ff1a" targetId="87cd-4b04-faae-5614" type="selectionEntry"/>
     <entryLink import="true" name="Trident Grand Battleship" hidden="false" id="38ac-8a9d-ddf0-8095" targetId="1118-f225-b651-d45b" type="selectionEntry"/>
+    <entryLink import="true" name="Vanguard Old Battleship" hidden="false" id="71ec-70c8-8719-56dd" targetId="4195-626e-c042-2e71" type="selectionEntry"/>
+    <entryLink import="true" name="Iowa Old Battleship" hidden="false" id="881e-6d87-5671-206f" targetId="5e58-3f7b-09c9-a474" type="selectionEntry"/>
+    <entryLink import="true" name="Lexington Old Battleship" hidden="false" id="c088-c156-8acd-942c" targetId="8fc1-a852-071b-af3b" type="selectionEntry"/>
+    <entryLink import="true" name="Musashi Old Battleship" hidden="false" id="d9d3-c430-6a2c-743c" targetId="5ff9-93cf-aff3-8cf4" type="selectionEntry"/>
     <entryLink import="true" name="Tribune Battlecruiser" hidden="false" id="6470-2f0c-b83a-ba27" targetId="248a-acf9-ad6b-4125" type="selectionEntry"/>
     <entryLink import="true" name="Phalanx Battlecruiser" hidden="false" id="f527-3fd0-fa89-ffed" targetId="c45c-ee98-a6d2-870a" type="selectionEntry"/>
     <entryLink import="true" name="Triumvir Repair Cruiser" hidden="false" id="17ee-7d63-827e-5347" targetId="8ba6-c51b-710b-954d" type="selectionEntry"/>
