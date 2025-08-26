@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="13" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="14" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (250822)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (250822)"/>
   </publications>
@@ -187,6 +187,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="decrement" value="20" field="ab32-c9b6-10f3-cbdb"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -462,7 +465,7 @@
             <infoLink name="Reinforced Armour" id="3e34-2d87-139c-9ab8" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
           </infoLinks>
           <modifiers>
-            <modifier type="increment" value="8" field="ab32-c9b6-10f3-cbdb"/>
+            <modifier type="increment" value="2" field="ab32-c9b6-10f3-cbdb"/>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -742,7 +745,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="235"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="215"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9fa4-a2e4-12e3-04ae" includeChildSelections="false"/>
@@ -1527,7 +1530,7 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0b9c-e7a8-3106-9309" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="1c75-cd01-a8da-aecb" type="selectionEntry" targetId="bc73-4289-1429-828f" sortIndex="1"/>
+            <entryLink import="true" name="Fighters" hidden="false" id="1c75-cd01-a8da-aecb" type="selectionEntry" targetId="bc73-4289-1429-828f" sortIndex="1"/>
             <entryLink import="true" name="Bombers" hidden="false" id="3092-86ef-5d0e-8da9" type="selectionEntry" targetId="49cd-6676-c6a4-7574" sortIndex="2"/>
           </entryLinks>
           <infoLinks>
@@ -2034,15 +2037,27 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="N-8 Artillery Cannon Bank" hidden="false" id="4b65-d078-6d11-484c">
-      <comment>[NL/10] B 4/5+/1/K Fus-2 LP Vol-2</comment>
+      <comment>[NL/10] B 6/5+/1/K Fus-2 LP Vol-2</comment>
       <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="8"/>
       </costs>
       <infoLinks>
         <infoLink name="Fusillade-X" id="f733-60cb-a539-1963" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
         <infoLink name="Low Power" id="ef6c-e129-d935-3ab1" hidden="false" type="rule" targetId="2851-2293-e346-839f"/>
         <infoLink name="Volley-X" id="8397-25d4-f8bd-8183" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
+      <profiles>
+        <profile name="N-8 Artillery Cannon Bank" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="48b3-e165-e349-0ce7">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">B</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Low Power, Volley-2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="N-11 Artillery Cannon Turret" hidden="false" id="b256-0978-ce23-7e26">
       <profiles>
@@ -3514,11 +3529,11 @@ Telescope tokens placed by this Ship persist between rounds and are only removed
     <entryLink import="true" name="Pathfinder Interstellar Raft" hidden="false" id="2d3d-1540-85f7-128b" targetId="4222-223d-1a41-c600" type="selectionEntry"/>
     <entryLink import="true" name="Yamamoto Grand Battleship" hidden="false" id="758a-61a2-2611-4fd2" targetId="e7d8-0482-a0d9-e08f" type="selectionEntry"/>
     <entryLink import="true" name="Nimitz Grand Battleship" hidden="false" id="a0d4-5b06-2299-d858" targetId="13f8-81d4-97be-01e5" type="selectionEntry"/>
-    <entryLink import="true" name="Amazon Grand Battleship" hidden="false" id="fb2e-f2ae-d70e-0029" targetId="e695-487e-0d44-bcc4" type="selectionEntry"/>
-    <entryLink import="true" name="Argonaut Grand Battleship" hidden="false" id="ca6c-45e4-f296-9170" targetId="1eac-72f4-a249-fabe" type="selectionEntry"/>
-    <entryLink import="true" name="Myrmidon Grand Battleship" hidden="false" id="e3a7-e8db-8ee8-f7bb" targetId="af40-11dc-65fd-24d2" type="selectionEntry"/>
-    <entryLink import="true" name="Olympus Grand Battleship" hidden="false" id="9ce5-1647-2e3c-ff1a" targetId="87cd-4b04-faae-5614" type="selectionEntry"/>
-    <entryLink import="true" name="Trident Grand Battleship" hidden="false" id="38ac-8a9d-ddf0-8095" targetId="1118-f225-b651-d45b" type="selectionEntry"/>
+    <entryLink import="true" name="Drake Grand Battleship" hidden="false" id="fb2e-f2ae-d70e-0029" targetId="e695-487e-0d44-bcc4" type="selectionEntry"/>
+    <entryLink import="true" name="Farragut Grand Battleship" hidden="false" id="ca6c-45e4-f296-9170" targetId="1eac-72f4-a249-fabe" type="selectionEntry"/>
+    <entryLink import="true" name="Barbarossa Grand Battleship" hidden="false" id="e3a7-e8db-8ee8-f7bb" targetId="af40-11dc-65fd-24d2" type="selectionEntry"/>
+    <entryLink import="true" name="Yi Sun-sin Grand Battleship" hidden="false" id="9ce5-1647-2e3c-ff1a" targetId="87cd-4b04-faae-5614" type="selectionEntry"/>
+    <entryLink import="true" name="Nelson Grand Battleship" hidden="false" id="38ac-8a9d-ddf0-8095" targetId="1118-f225-b651-d45b" type="selectionEntry"/>
     <entryLink import="true" name="Vanguard Old Battleship" hidden="false" id="71ec-70c8-8719-56dd" targetId="4195-626e-c042-2e71" type="selectionEntry"/>
     <entryLink import="true" name="Iowa Old Battleship" hidden="false" id="881e-6d87-5671-206f" targetId="5e58-3f7b-09c9-a474" type="selectionEntry"/>
     <entryLink import="true" name="Lexington Old Battleship" hidden="false" id="c088-c156-8acd-942c" targetId="8fc1-a852-071b-af3b" type="selectionEntry"/>
