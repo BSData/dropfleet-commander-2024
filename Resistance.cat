@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="14" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="15" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (250822)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (250822)"/>
   </publications>
@@ -3746,18 +3746,6 @@ Telescope tokens placed by this Ship persist between rounds and are only removed
                   <costs>
                     <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="8"/>
                   </costs>
-                  <profiles>
-                    <profile name="N-8 Artillery Cannon Bank" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="248f-cdfa-1042-74fa">
-                      <characteristics>
-                        <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">B</characteristic>
-                        <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
-                        <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">5+</characteristic>
-                        <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
-                        <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
-                        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-2, Low Power, Volley-2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
                 </entryLink>
                 <entryLink import="true" name="NC-16 Missile Bank" hidden="false" id="88ab-c9c1-352e-07cb" type="selectionEntry" targetId="c2b2-84f1-345c-c1e6" collective="true">
                   <costs>
