@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="7e9b-b6ba-2178-6eb5" name="Fleet Space Stations" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="4" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="7e9b-b6ba-2178-6eb5" name="Fleet Space Stations" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="5" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Fleet Space Stations (250113)" id="4be7-d555-8518-dd99" hidden="false" shortName="Fleet Space Stations (250113)"/>
   </publications>
@@ -26,18 +26,30 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Upgrades" hidden="false" id="1fd7-eaca-d5ca-cae5" type="selectionEntryGroup" targetId="36e8-0b5d-d2bd-9075" sortIndex="3">
+        <entryLink import="true" name="Upgrades" hidden="false" id="1fd7-eaca-d5ca-cae5" type="selectionEntryGroup" targetId="36e8-0b5d-d2bd-9075" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d791-5ca0-da18-b3d7" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Weapon Systems" hidden="false" id="325f-7290-c0fd-2e46" type="selectionEntryGroup" targetId="ab77-bbd9-74cd-0e9b" sortIndex="1">
+        <entryLink import="true" name="Features" hidden="false" id="b0ce-e443-77f1-adcd" type="selectionEntryGroup" targetId="d798-ad43-7da6-7ad1" sortIndex="3">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c924-fb74-1532-797f" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e80a-b987-ae31-7aa4-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e80a-b987-ae31-7aa4-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Structures" hidden="false" id="c4b6-76c4-9cd9-da93" type="selectionEntryGroup" targetId="6fb3-4607-f12c-3fb0" sortIndex="2"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armaments" id="22dd-4737-bb7a-94e0" hidden="false" flatten="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Weapon Systems" hidden="false" id="325f-7290-c0fd-2e46" type="selectionEntryGroup" targetId="ab77-bbd9-74cd-0e9b" sortIndex="1"/>
+            <entryLink import="true" name="Structures" hidden="false" id="c4b6-76c4-9cd9-da93" type="selectionEntryGroup" targetId="6fb3-4607-f12c-3fb0" sortIndex="2"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c924-fb74-1532-797f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c924-fb74-1532-797f-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Medium Space Station" hidden="false" id="218b-faf8-ffab-2cd5" publicationId="4be7-d555-8518-dd99" page="2">
       <costs>
@@ -61,18 +73,30 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Upgrades" hidden="false" id="4737-6467-6944-f2a3" type="selectionEntryGroup" targetId="36e8-0b5d-d2bd-9075" sortIndex="3">
+        <entryLink import="true" name="Upgrades" hidden="false" id="4737-6467-6944-f2a3" type="selectionEntryGroup" targetId="36e8-0b5d-d2bd-9075" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee83-542f-4683-8b3a" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Weapon Systems" hidden="false" id="084c-d0aa-db4e-2d4a" type="selectionEntryGroup" targetId="ab77-bbd9-74cd-0e9b" sortIndex="1">
+        <entryLink import="true" name="Features" hidden="false" id="ba7b-d6dd-ee25-d92c" type="selectionEntryGroup" targetId="d798-ad43-7da6-7ad1" sortIndex="3">
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b915-653f-d6b1-9d87" includeChildSelections="false"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7f03-2af4-ec82-60a7-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7f03-2af4-ec82-60a7-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Structures" hidden="false" id="3dfd-894a-eaa9-8a4c" type="selectionEntryGroup" targetId="6fb3-4607-f12c-3fb0" sortIndex="2"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armaments" id="d2af-3617-c19a-e952" hidden="false" flatten="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Weapon Systems" hidden="false" id="1365-8657-d380-c989" type="selectionEntryGroup" targetId="ab77-bbd9-74cd-0e9b" sortIndex="1"/>
+            <entryLink import="true" name="Structures" hidden="false" id="554d-8899-6cac-e577" type="selectionEntryGroup" targetId="6fb3-4607-f12c-3fb0" sortIndex="2"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ba44-0c15-d67c-4e44-min" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ba44-0c15-d67c-4e44-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Large Space Station" hidden="false" id="6f26-fe48-4135-7ed3" publicationId="4be7-d555-8518-dd99" page="2">
       <costs>
@@ -96,22 +120,34 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Upgrades" hidden="false" id="60d9-3ca6-820c-9d07" type="selectionEntryGroup" targetId="36e8-0b5d-d2bd-9075" sortIndex="3">
+        <entryLink import="true" name="Upgrades" hidden="false" id="60d9-3ca6-820c-9d07" type="selectionEntryGroup" targetId="36e8-0b5d-d2bd-9075" sortIndex="2">
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9bd7-44db-1b6d-99d5" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Weapon Systems" hidden="false" id="531f-291f-fbb1-4913" type="selectionEntryGroup" targetId="ab77-bbd9-74cd-0e9b" sortIndex="1">
+        <entryLink import="true" name="Features" hidden="false" id="9e82-1429-15af-e978" type="selectionEntryGroup" targetId="d798-ad43-7da6-7ad1" sortIndex="3">
           <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a60c-ba37-4218-db4b" includeChildSelections="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="df27-ceb9-d82c-9a5c-min" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="df27-ceb9-d82c-9a5c-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Structures" hidden="false" id="759d-0a4f-16d5-9de5" type="selectionEntryGroup" targetId="6fb3-4607-f12c-3fb0" sortIndex="2"/>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armaments" id="ba98-8328-4015-7955" hidden="false" flatten="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Weapon Systems" hidden="false" id="255f-1ba2-1f8b-f1b9" type="selectionEntryGroup" targetId="ab77-bbd9-74cd-0e9b" sortIndex="1"/>
+            <entryLink import="true" name="Structures" hidden="false" id="08db-ddd1-070c-b94a" type="selectionEntryGroup" targetId="6fb3-4607-f12c-3fb0" sortIndex="2"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3b60-6fd3-ae88-ffee-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3b60-6fd3-ae88-ffee-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Defence Hangar" hidden="false" id="68e9-14ab-4493-0656">
       <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="80"/>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
       </costs>
       <profiles>
         <profile name="Defence Hangar" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="c6e0-e772-e5c6-7f29" publicationId="4be7-d555-8518-dd99" page="4">
@@ -241,7 +277,7 @@
       <profiles>
         <profile name="Nematocyst" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="ce77-8fda-cd03-8633" publicationId="4be7-d555-8518-dd99" page="5">
           <characteristics>
-            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">6&quot;</characteristic>
+            <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">12&quot;</characteristic>
             <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">4&quot;</characteristic>
             <characteristic name="Hull" typeId="c2b4-8dc9-7506-debb">8</characteristic>
             <characteristic name="ES" typeId="3afd-b020-ec74-2ea2">3+</characteristic>
@@ -418,7 +454,7 @@
         <categoryLink targetId="5ca8-89b2-52c6-d394" id="de90-59de-828b-1296" primary="true" name="Space Stations"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Defence Halo (QSL)" hidden="false" id="4bd7-5d82-80d3-afe1">
+    <selectionEntry type="model" import="true" name="Defence Halo" hidden="false" id="4bd7-5d82-80d3-afe1">
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
       </costs>
@@ -488,12 +524,12 @@
         <categoryLink targetId="5ca8-89b2-52c6-d394" id="a7de-9822-121e-eb0a" primary="true" name="Space Stations"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Defence Halo (NM)" hidden="false" id="432d-69c3-2a23-b3d8">
+    <selectionEntry type="model" import="true" name="Orbital Spire" hidden="false" id="432d-69c3-2a23-b3d8">
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
       </costs>
       <profiles>
-        <profile name="Defence Halo" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="bb35-8ccd-d29c-da14" publicationId="4be7-d555-8518-dd99" page="7">
+        <profile name="Orbital Spire" typeId="a685-1a7d-ba2d-3db8" typeName="Space Station" hidden="false" id="bb35-8ccd-d29c-da14" publicationId="4be7-d555-8518-dd99" page="7">
           <characteristics>
             <characteristic name="Scan" typeId="e1ee-74b3-00a9-8744">8&quot;</characteristic>
             <characteristic name="Sig" typeId="1fb1-6992-a308-b4c8">6&quot;</characteristic>
@@ -687,7 +723,7 @@
             <characteristic name="KS" typeId="595f-3318-8065-9225">4+</characteristic>
             <characteristic name="BS" typeId="750b-9043-034b-c27a">-</characteristic>
             <characteristic name="G" typeId="8b8c-53e9-20d1-9cbc">1</characteristic>
-            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">Shield-4+, Gateship-0</characteristic>
+            <characteristic name="Special" typeId="473b-cbb5-5ba2-c2de">Shield-4+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -696,7 +732,6 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Shield-X" id="64ff-ef46-d542-79eb" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
-        <infoLink name="Gateship-X" id="8218-8c0a-7aab-2776" hidden="false" type="rule" targetId="4572-00d5-81d2-4fcc"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Disintegrator Bank" hidden="false" id="6f9a-3e80-4849-e917">
@@ -1033,6 +1068,34 @@
           <modifiers>
             <modifier type="increment" value="3" field="e1ee-74b3-00a9-8744" scope="parent" affects="profiles.Space Station" join=", "/>
           </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Features" id="d798-ad43-7da6-7ad1" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Launch Control" hidden="false" id="5df2-c9f8-bc14-f277" sortIndex="2">
+          <profiles>
+            <profile name="Launch Control" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="01db-066c-4494-8562">
+              <characteristics>
+                <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">When all Launch Control features are removed from a Station, that station cannot launch Assets.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e90-b831-e9c7-a401" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Weapons Control" hidden="false" id="aba5-849e-903d-8067" sortIndex="1">
+          <profiles>
+            <profile name="Weapons Control" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="437e-a404-f3d1-e4e2">
+              <characteristics>
+                <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">When all Weapons Control features are removed from a Station, that station cannot use its Weapon Systems.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc59-7ad4-3653-f952" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
