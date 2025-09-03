@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="6" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="7" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Pungari Thresher Hive Ship" hidden="false" id="1fd6-31e0-548c-cc1e">
       <categoryLinks>
@@ -32,7 +32,7 @@
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Rare, Subservient Mercenaries</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="append" value="Shield-5+" field="fdf5-89b6-e62e-570f" affects="" join=", ">
+                <modifier type="append" value="Shield-5+" field="fdf5-89b6-e62e-570f" join=", ">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9d0c-9d91-231b-cab6" shared="true"/>
                   </conditions>
@@ -66,7 +66,7 @@
               <profiles>
                 <profile name="Boarding Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="4638-2a5c-c80c-cbb2">
                   <characteristics>
-                    <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">6</characteristic>
+                    <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">4</characteristic>
                     <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
                   </characteristics>
                 </profile>
@@ -329,7 +329,7 @@
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Remnant (Rare)</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="append" value="Rare" field="fdf5-89b6-e62e-570f" affects="" join=", ">
+                <modifier type="append" value="Rare" field="fdf5-89b6-e62e-570f" join=", ">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -426,7 +426,8 @@
       <description>This ship may be used in any fleet regardless of Faction. This ship’s Fighters &amp; Bombers use the stats of its parent fleet (if you included this ship in a Scourge fleet, its Fighters &amp; Bombers would follow the Scourge Fighters &amp; Bombers rules).</description>
     </rule>
     <rule name="Advanced Artillery" id="1cb6-7f70-eb3a-721f" hidden="false">
-      <description>This ship may fire its N-12 Artillery Cannon Turrets while it is on the Max Thrust or Silent Running Orders.</description>
+      <description>While on the Max Thrust or Silent Running Orders, this Ship may attack with its N-12 Artillery Cannon Turrets.
+While on the Weapons Free Order, this Ship counts as having an additional weapon for its Detector rule.</description>
     </rule>
     <rule name="Magellan Lifeboats" id="51f8-52e5-f318-ae4a" hidden="false">
       <description>If this ship is destroyed with an Admiral assigned to it, you may transfer that Admiral to another friendly ship of H or C Tonnage with no Admiral within 18”, losing the benefits of this ship’s Command Ship rule.</description>
