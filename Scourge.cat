@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="15" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="16" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Fleet Thrall" hidden="false" id="7fe9-330a-0598-35d7" publicationId="260d-362c-d403-80ae" page="1">
@@ -192,6 +192,8 @@
           </costs>
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="8d4c-35c5-5d32-6c9b" targetId="9d6f-26b0-7969-496b" primary="true"/>
+            <categoryLink targetId="8d99-053d-ffeb-98c5" id="c2a7-bf00-e0b7-7868" primary="false" name="Heavy Groups"/>
+            <categoryLink targetId="default-category" id="ae8d-d3e6-cc7a-c911" primary="false" name="Group"/>
           </categoryLinks>
           <profiles>
             <profile name="Daemon" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0a67-542e-2f9e-0983" publicationId="260d-362c-d403-80ae" page="38">
@@ -331,6 +333,8 @@
           </costs>
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="a6e5-acfd-da93-1a5e" targetId="53c3-afc0-63ef-413a" primary="true"/>
+            <categoryLink targetId="e555-ff57-c478-18cd" id="6226-d10a-4e3e-6016" primary="false" name="Medium Groups"/>
+            <categoryLink targetId="default-category" id="8b87-0900-3055-fda0" primary="false" name="Group"/>
           </categoryLinks>
           <profiles>
             <profile name="Raiju" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6ef6-2b17-8815-6966" publicationId="260d-362c-d403-80ae" page="31">
