@@ -81,6 +81,107 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lvl 4: Ascendant - Zenith" hidden="false" id="7d5b-b542-d1d5-54e5">
+      <categoryLinks>
+        <categoryLink name="Famous Admirals" hidden="false" id="a393-15be-f80e-4ab6" targetId="daa7-4c13-fe75-9281" primary="true"/>
+        <categoryLink name="Faction/Famous Admirals" hidden="false" id="b813-1cb4-02e6-ce28" targetId="79f7-4244-6fb7-d41a" primary="false"/>
+        <categoryLink name="Admirals" hidden="false" id="3f70-d985-d4a8-4a8a" targetId="fb8b-57b3-d46c-d679" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ascendant" hidden="false" id="fb5b-2553-5e06-ad34" subType="crew" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d955-45fd-a5f7-ffdd" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baa1-f2c5-6dc6-78ac" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ascendant" typeId="92cf-ddd3-4d79-e408" typeName="Admiral" hidden="false" id="eff3-cbe3-2959-fdfc">
+              <characteristics>
+                <characteristic name="Level" typeId="391a-b7ae-831e-4cf0">4</characteristic>
+                <characteristic name="Special" typeId="2a6e-dc3c-846c-d4c2">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Overwatch " typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="3ca7-4193-9ecb-7460">
+              <characteristics>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
+                <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">When you activate this Ship on General Quarters, you may choose to forgo attacking with this Ship. If you do, this Ship goes on Overwatch until the end of the round or until it declares the use of Overwatch. At the end of any enemy Group’s activation, if that Group moved through this Ship’s Front arc and was in weapons range while doing so, you may declare the use of Overwatch against that Group. When you use Overwatch, this Ship immediately makes an Attack as if on General Quarters against the enemy Group, even if it is out of arc and weapon range.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Abilities" hidden="false" id="e80f-8d40-ec2e-a48c" type="selectionEntryGroup" targetId="9fda-37c1-6eaa-b6f5">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="13ba-dafc-4970-7491"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Zenith Dreadnought" hidden="false" id="ce2f-5671-bd7e-51aa">
+          <categoryLinks>
+            <categoryLink name="Group" hidden="false" id="ac32-0d6c-076b-7c2a" targetId="default-category" primary="false"/>
+            <categoryLink name="Colossal Groups" hidden="false" id="4c45-7c10-d1ea-59b3" targetId="52fa-6578-d171-57d6" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Zenith Dreadnought" hidden="false" id="3ab2-62fb-f121-47a6" publicationId="c835-461f-ea00-a841" page="55">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="520"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Colossal Ship" hidden="false" id="0910-ef42-99f7-3236" targetId="6e44-cb75-e25f-8b24" primary="true"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Zenith" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b9ec-d0ed-100c-5092" publicationId="c835-461f-ea00-a841" page="55">
+                  <characteristics>
+                    <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
+                    <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">14&quot;</characteristic>
+                    <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                    <characteristic name="Hull" typeId="5253-be1d-917b-17d9">22</characteristic>
+                    <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                    <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                    <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                    <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                    <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Marines-3, Reinforced Armour, High Velocity Boarding Pods</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Giga Lightvice" hidden="false" id="8f58-b889-ad32-ec2c" type="selectionEntry" targetId="3bd1-6fc0-bfd9-0cc9" sortIndex="1"/>
+                <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="76f8-bcb3-bf06-1e88" type="selectionEntry" targetId="00d8-9dd8-8af4-2de3" sortIndex="2"/>
+                <entryLink import="true" name="Boarding Pods" hidden="false" id="4cd1-7b47-2c4f-bfe5" type="selectionEntry" targetId="0c49-3760-f6a3-3887" sortIndex="3"/>
+                <entryLink import="true" name="Grand Bisector" hidden="false" id="5cac-3119-c997-de01" type="selectionEntry" targetId="c7b2-9005-b66e-042f" sortIndex="1"/>
+                <entryLink import="true" name="Scythes" hidden="false" id="af8f-99cc-33ff-c847" type="selectionEntry" targetId="41e6-babb-2487-3b35" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d23-bbba-af68-cd6e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06ac-b5fa-155f-cab2" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Marines-X" id="860c-9e9d-7e1d-6cc8" hidden="false" type="rule" targetId="93f3-7932-b233-4d38"/>
+                <infoLink name="Reinforced Armour" id="3eb9-76d8-1a22-ed87" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
+                <infoLink name="High Velocity Boarding Pods" id="c1b9-6908-1095-4a9b" hidden="false" type="rule" targetId="bfa9-6e75-a12a-468a"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7729-7128-8443-40e4"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="-1" field="7729-7128-8443-40e4">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lvl 3: Agency - Bastion" hidden="false" id="34da-6dec-d076-e813">
       <categoryLinks>
         <categoryLink name="Famous Admirals" hidden="false" id="58d8-f98a-efcd-6c4c" targetId="daa7-4c13-fe75-9281" primary="true"/>
@@ -3330,6 +3431,21 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>2</comment>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="0c49-3760-f6a3-3887">
+      <profiles>
+        <profile name="Boarding Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="63a5-6577-71e2-3635">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">3</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2db6-bb91-aa21-1dee" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c191-51b6-3177-876e" includeChildSelections="false"/>
+      </constraints>
+      <comment>3</comment>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="dab4-536f-2ff8-1650">
       <profiles>
         <profile name="Boarding Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="cbf4-0f4e-519c-d07a">
@@ -3531,9 +3647,12 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
   <entryLinks>
     <entryLink import="true" name="Lvl 1: Ardent" hidden="false" id="5719-9230-5709-a789" targetId="253f-2124-1abd-87e5" type="selectionEntry"/>
     <entryLink import="true" name="Lvl 3: Accumulator" hidden="false" id="f332-a9eb-0f60-764a" targetId="ee44-fd8d-2aec-361f" type="selectionEntry"/>
+    <entryLink import="true" name="Lvl 4: Ascendant - Zenith" hidden="false" id="1ba5-8350-cb3c-088e" targetId="7d5b-b542-d1d5-54e5" type="selectionEntry"/>
     <entryLink import="true" name="Lvl 3: Agency - Bastion" hidden="false" id="25ce-e8c1-c95a-667b" targetId="34da-6dec-d076-e813" type="selectionEntry"/>
     <entryLink import="true" name="Lvl 2: Atom - Scion" hidden="false" id="ec2c-7c4f-da19-a790" targetId="11f9-e5a6-1b81-6015" type="selectionEntry"/>
     <entryLink import="true" name="Lvl 2: Atlas - Catastrophe" hidden="false" id="68bb-f0bc-e42e-e40d" targetId="df31-ecfa-33ff-265e" type="selectionEntry"/>
+    <entryLink import="true" name="Zenith Dreadnought" hidden="false" id="9370-12ff-6e44-9872" targetId="94a8-4c1e-3ba1-0c0b" type="selectionEntry"/>
+    <entryLink import="true" name="Zodiac Dreadnought" hidden="false" id="f33f-6f12-9ab9-d88f" targetId="43a8-2895-7dfd-97e1" type="selectionEntry"/>
     <entryLink import="true" name="Binder Super Battleship" hidden="false" id="c188-03fb-5ee6-cc00" targetId="e0e7-bd05-12eb-a500" type="selectionEntry"/>
     <entryLink import="true" name="Bishop Super Battleship" hidden="false" id="c4ad-43e2-41a8-dabc" targetId="02d1-1834-1326-0fd6" type="selectionEntry"/>
     <entryLink import="true" name="Blackbird Super Battleship" hidden="false" id="bac1-7e40-1e0d-e3b0" targetId="54ed-865d-5a8d-7b98" type="selectionEntry"/>
@@ -3590,8 +3709,6 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     <entryLink import="true" name="M-Type Barge" hidden="false" id="c239-bd3d-8baa-8824" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
     <entryLink import="true" name="T-Type Tugboat" hidden="false" id="949e-c10a-06c3-9ca0" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
     <entryLink import="true" name="Launch Assets" hidden="false" id="e18f-e6a0-3a5b-0c3e" targetId="9cad-9c67-a317-939d" type="selectionEntry"/>
-    <entryLink import="true" name="Zenith Dreadnought" hidden="false" id="9370-12ff-6e44-9872" targetId="94a8-4c1e-3ba1-0c0b" type="selectionEntry"/>
-    <entryLink import="true" name="Zodiac Dreadnought" hidden="false" id="f33f-6f12-9ab9-d88f" targetId="43a8-2895-7dfd-97e1" type="selectionEntry"/>
   </entryLinks>
   <publications>
     <publication name="Bioficer Combined Fleet Stats (250926)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (250926)"/>
