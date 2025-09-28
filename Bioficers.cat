@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="19" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="20" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Ardent" hidden="false" id="253f-2124-1abd-87e5" publicationId="c835-461f-ea00-a841" page="1">
@@ -291,6 +291,98 @@
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Groups -----" hidden="true" id="f85e-349a-b7ce-3de8"/>
+    <selectionEntry type="unit" import="true" name="Zenith Dreadnought" hidden="false" id="94a8-4c1e-3ba1-0c0b">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="009f-2761-3db5-e5d3" primary="false" name="Group"/>
+        <categoryLink targetId="52fa-6578-d171-57d6" id="159f-707c-ad79-4e5c" primary="true" name="Colossal Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Zenith Dreadnought" hidden="false" id="2985-76a1-b306-6f54" publicationId="c835-461f-ea00-a841" page="55">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="445"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="6e44-cb75-e25f-8b24" id="9a47-e86e-69dd-a94e" primary="true" name="Colossal Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Zenith" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e5fb-9257-7553-643b" publicationId="c835-461f-ea00-a841" page="55">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">14&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">22</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Marines-1, Reinforced Armour, High Velocity Boarding Pods</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Giga Lightvice" hidden="false" id="cccc-7fd0-57a1-f60a" type="selectionEntry" targetId="3bd1-6fc0-bfd9-0cc9" sortIndex="1"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="2a76-fc63-5f6f-7d4e" type="selectionEntry" targetId="00d8-9dd8-8af4-2de3" sortIndex="2"/>
+            <entryLink import="true" name="Boarding Pods" hidden="false" id="e2a3-e178-c898-d04e" type="selectionEntry" targetId="b7be-f842-2ebd-bca6" sortIndex="3"/>
+            <entryLink import="true" name="Dreadnought Systems" hidden="false" id="fb3a-6eb4-d89c-bd06" type="selectionEntryGroup" targetId="1916-f671-7c89-e78e" sortIndex="4"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69b7-3484-ee6a-4b69" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="380d-60cc-497f-2f0c" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Marines-X" id="b579-4e72-35ff-6b57" hidden="false" type="rule" targetId="93f3-7932-b233-4d38"/>
+            <infoLink name="Reinforced Armour" id="185c-9b70-8d94-22db" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
+            <infoLink name="High Velocity Boarding Pods" id="f63f-6ae0-757a-d658" hidden="false" type="rule" targetId="bfa9-6e75-a12a-468a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Zodiac Dreadnought" hidden="false" id="43a8-2895-7dfd-97e1">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="f581-9874-5204-df43" primary="false" name="Group"/>
+        <categoryLink targetId="52fa-6578-d171-57d6" id="2d0c-bd7e-982d-50d8" primary="true" name="Colossal Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Zodiac Dreadnought" hidden="false" id="8ac3-65e5-1df4-74ff" publicationId="c835-461f-ea00-a841" page="54">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="435"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="6e44-cb75-e25f-8b24" id="cfef-d38e-1794-3604" primary="true" name="Colossal Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Zodiac" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="1223-3fa3-6424-185c" publicationId="c835-461f-ea00-a841" page="54">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">14&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">10&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">22</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Marines-1, Reinforced Armour, High Velocity Boarding Pods</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Decon Devastator Pair" hidden="false" id="ee76-e847-07d6-e310" type="selectionEntry" targetId="c02c-d44b-525d-aa38" sortIndex="1"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="9a94-562e-997f-2d1f" type="selectionEntry" targetId="00d8-9dd8-8af4-2de3" sortIndex="2"/>
+            <entryLink import="true" name="Boarding Pods" hidden="false" id="176c-ae13-9ef4-da44" type="selectionEntry" targetId="b7be-f842-2ebd-bca6" sortIndex="3"/>
+            <entryLink import="true" name="Dreadnought Systems" hidden="false" id="5e6b-f342-debe-cb08" type="selectionEntryGroup" targetId="1916-f671-7c89-e78e" sortIndex="4"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82a7-76c4-f267-27f5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb88-4a68-8096-9f92" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Marines-X" id="9caa-23bb-3e4c-2f64" hidden="false" type="rule" targetId="93f3-7932-b233-4d38"/>
+            <infoLink name="Reinforced Armour" id="4803-08b6-239d-14bf" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
+            <infoLink name="High Velocity Boarding Pods" id="5280-4c75-ff48-93a0" hidden="false" type="rule" targetId="bfa9-6e75-a12a-468a"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Binder Super Battleship" hidden="false" id="e0e7-bd05-12eb-a500">
       <categoryLinks>
         <categoryLink targetId="default-category" id="d555-aedb-65dd-f122" primary="false" name="Group"/>
@@ -2353,6 +2445,28 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Reave-X" id="f6e0-addf-d8d9-098c" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grand Bisector" hidden="false" id="b4e9-2055-c538-e9f6">
+      <profiles>
+        <profile name="Bisector" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a026-7aa7-1be9-6e31">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Calibre-H/C, Crippling, Penetrator, Bloom-2, Focused</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Calibre-X" id="c06e-4573-460b-f78e" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
+        <infoLink name="Crippling-X" id="3c60-15b4-1d84-e445" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
+        <infoLink name="Penetrator" id="03ea-e853-b55d-dc19" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+        <infoLink name="Bloom-X" id="beb6-25ad-1829-af9c" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+        <infoLink name="Focused" id="c8b8-97f0-3c92-2ae5" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+      </infoLinks>
+      <comment>[NL] FN 5/3+/3/E Cal-H/C Crip Pen Bl-2 Foc</comment>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grand Bisector" hidden="false" id="c7b2-9005-b66e-042f">
       <profiles>
         <profile name="Bisector" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7652-71b7-6b0a-89f4">
@@ -2483,6 +2597,29 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>FN 3/3+/1/E</comment>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Decon Devastator Pair" hidden="false" id="c02c-d44b-525d-aa38">
+      <profiles>
+        <profile name="Decon Devastator Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="64e2-ed31-4bd3-6e62">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">9</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Reave-2, Volley-2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d947-fea7-2070-ff59" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b30-356b-8f01-dc35" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 9/3+/1/E Rv-2 Vol-2</comment>
+      <infoLinks>
+        <infoLink name="Reave-X" id="bf68-ff4b-a15f-41b4" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+        <infoLink name="Volley-X" id="48ab-1454-6697-a941" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Decon Slayer" hidden="false" id="e47a-d1ac-1256-852f">
       <profiles>
         <profile name="Decon Slayer" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="4137-5c86-986e-87c5">
@@ -2523,6 +2660,36 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f629-aadc-5ae9-f622" includeChildSelections="false"/>
       </constraints>
       <comment>F/S/R 1/4+/1/E</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Giga Lightvice" hidden="false" id="3bd1-6fc0-bfd9-0cc9">
+      <profiles>
+        <profile name="Giga Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c36c-0982-ecd3-f027">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">8</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Close Action, Focused, Scald-2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bloom-X" id="0a1b-8ebd-c80f-e7c3" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+        <infoLink name="Close Action" id="de44-65d3-eb34-2acf" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Focused" id="5006-2134-4633-c6ec" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
+        <infoLink name="Scald-X" id="b801-c946-e3d3-dc64" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ae3-7188-353f-19e4" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aab9-4b9f-c5b6-a2a7" includeChildSelections="false"/>
+      </constraints>
+      <comment>F 8/2+/3/K Bl-1 CA Foc Sc-2</comment>
+      <rules>
+        <rule name="Giga Lightvice" id="1d77-8400-2ffa-f70c" hidden="false">
+          <description>When determining potential targets for this weapon, you may use an unmodifiable Scan of 7” instead of this Ship’s Scan value.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Godray Lightvice" hidden="false" id="a6c7-1d0a-81cc-3f21">
       <profiles>
@@ -2585,7 +2752,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1ad-7d02-61ae-4966" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e136-8d71-8c9a-62ed" includeChildSelections="false"/>
       </constraints>
-      <comment>F 5/2+/3/K Bl-1 CA Foc</comment>
+      <comment>F 5/2+/3/K Bl-1 CA Foc Sc-1</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Lightvice" hidden="false" id="d945-02c0-f69a-78e8">
       <profiles>
@@ -2645,6 +2812,15 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2dd1-a898-374e-509f-max" includeChildSelections="false"/>
       </constraints>
       <comment>[x2] FN 8/4+/1/E AW Fus-3 Rv-1</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="6863-69a2-b237-39c2">
+      <infoLinks>
+        <infoLink name="Anti Wing" id="e154-5d6f-3098-2631" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
+        <infoLink name="Fusillade-X" id="50b8-ef88-fc85-7222" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Scythes" id="f975-75a2-3823-a1eb" hidden="false" type="profile" targetId="afaa-6d9f-302b-4524"/>
+        <infoLink name="Reave-X" id="7767-38a0-bf60-fc22" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+      </infoLinks>
+      <comment>[NL] FN 8/4+/1/E AW Fus-3 Rv-1</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="b420-9dac-d07e-3511">
       <infoLinks>
@@ -2733,6 +2909,26 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Giga Winnower" hidden="false" id="8855-7caf-63c6-c042">
+      <profiles>
+        <profile name="Giga Winnower" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ec4f-cc21-f11e-93b5">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">15</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Fusillade-5, Calibre-L</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Close Action" id="a80a-3a08-6df6-8630" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Fusillade-X" id="f7d2-429a-2347-cab1" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Calibre-X" id="b569-49dc-af18-fa42" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
+      </infoLinks>
+      <comment>[NL] F/S 15/3+/1/E CA Fus-5 Cal-L</comment>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Giga Winnower" hidden="false" id="7670-4c00-fe95-2df6">
       <profiles>
         <profile name="Giga Winnower" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="087f-7e40-ed0d-7026">
@@ -2779,6 +2975,25 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5978-8874-a159-81e8-max" includeChildSelections="false"/>
       </constraints>
       <comment>F/S 5/4+/1/E Cal-L CA</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Thermator" hidden="false" id="a73c-370d-fbb9-8451">
+      <profiles>
+        <profile name="Thermator" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="3cda-b56b-b71f-a018">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Scald-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Overcharge" id="be58-1bc6-2913-9166" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
+        <infoLink name="Scald-X" id="84b0-1090-7c78-09c9" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
+      </infoLinks>
+      <comment>[NL] F 3/4+/2/E OC Scald-1</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Thermator" hidden="false" id="0c95-f250-f157-3f91">
       <profiles>
@@ -2938,6 +3153,25 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d71-bf8c-d3fd-ab6b" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c2b-88d1-9146-ba27" includeChildSelections="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gravitic Hyperlance" hidden="false" id="3fc6-9fce-21bd-ba3e">
+      <profiles>
+        <profile name="Gravitic Hyperlance" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="60db-731e-d987-66ea">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">Fn</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Arrest-2, Bloom-2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>[NL] FN 6/3+/2/C Arr-2 Bl-2</comment>
+      <infoLinks>
+        <infoLink name="Arrest-X" id="df48-5ea2-ef52-1aff" hidden="false" type="rule" targetId="7fa4-03e2-d2a7-de9b"/>
+        <infoLink name="Bloom-X" id="2a4c-d952-8771-0a74" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gravitic Hyperlance" hidden="false" id="e2da-34aa-3c6f-f1b9">
       <profiles>
@@ -3144,6 +3378,20 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Alt-X" id="ab28-75e3-295f-ef89" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="69d5-9e3b-8e0b-f8ab">
+      <profiles>
+        <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="388a-b980-ecc5-b432">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>[NL] 2 L-4</comment>
+      <infoLinks>
+        <infoLink name="Limited-X" id="3c19-1846-209f-6338" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="2a03-3fe4-51e0-5a5a">
       <profiles>
         <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="b19f-168b-962d-dc67">
@@ -3342,9 +3590,11 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     <entryLink import="true" name="M-Type Barge" hidden="false" id="c239-bd3d-8baa-8824" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
     <entryLink import="true" name="T-Type Tugboat" hidden="false" id="949e-c10a-06c3-9ca0" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
     <entryLink import="true" name="Launch Assets" hidden="false" id="e18f-e6a0-3a5b-0c3e" targetId="9cad-9c67-a317-939d" type="selectionEntry"/>
+    <entryLink import="true" name="Zenith Dreadnought" hidden="false" id="9370-12ff-6e44-9872" targetId="94a8-4c1e-3ba1-0c0b" type="selectionEntry"/>
+    <entryLink import="true" name="Zodiac Dreadnought" hidden="false" id="f33f-6f12-9ab9-d88f" targetId="43a8-2895-7dfd-97e1" type="selectionEntry"/>
   </entryLinks>
   <publications>
-    <publication name="Bioficer Combined Fleet Stats (250324)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (250324)"/>
+    <publication name="Bioficer Combined Fleet Stats (250926)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (250926)"/>
   </publications>
   <sharedRules>
     <rule name="Tractor Beamer" id="c9fa-8382-0412-768a" hidden="false">
@@ -3367,6 +3617,9 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     </rule>
     <rule name="Torpedo" id="a845-5a68-5784-e761" hidden="false">
       <description>This asset is automatically removed during the Cleanup step of the End Phase.</description>
+    </rule>
+    <rule name="High Velocity Boarding Pods" id="bfa9-6e75-a12a-468a" hidden="false">
+      <description>This Ship’s Boarding Pods may be used against targets up to 6” away.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -3489,6 +3742,63 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Dreadnought Systems" id="1916-f671-7c89-e78e" hidden="false" flatten="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Secondary Hardpoint" id="e82f-a8d5-5e86-7da1" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Grand Bisector" hidden="false" id="10a3-c5f4-c3e1-a285" type="selectionEntry" targetId="b4e9-2055-c538-e9f6" sortIndex="1" collective="true" defaultAmount="">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Giga Winnower" hidden="false" id="9650-a274-3b07-feb3" type="selectionEntry" targetId="8855-7caf-63c6-c042" sortIndex="2" collective="true" defaultAmount="">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Gravitic Hyperlance" hidden="false" id="7937-0aed-2615-53bb" type="selectionEntry" targetId="3fc6-9fce-21bd-ba3e" sortIndex="3" collective="true" defaultAmount="">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="731f-3cb6-4345-a703-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="731f-3cb6-4345-a703-max"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Tertiary Hardpoint" id="d1f2-8c8c-9c57-0a02" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Thermator" hidden="false" id="51ae-bb07-9828-dc84" type="selectionEntry" targetId="a73c-370d-fbb9-8451" sortIndex="1" collective="true" defaultAmount="">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Scythes" hidden="false" id="d455-aa91-0832-9264" type="selectionEntry" targetId="6863-69a2-b237-39c2" sortIndex="2" collective="true" defaultAmount="">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b5b9-0d71-9bcb-3b49-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b5b9-0d71-9bcb-3b49-max"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Launch Hardpoint" id="fca4-db04-dc62-b2a8" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Torpedo" hidden="false" id="4aae-8bcb-410c-f14b" type="selectionEntry" targetId="69d5-9e3b-8e0b-f8ab" sortIndex="1" collective="true" defaultAmount="">
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="206d-4816-6b16-5a7a"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
