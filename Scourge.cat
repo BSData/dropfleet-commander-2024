@@ -304,7 +304,7 @@
             </profile>
             <profile name="Infernal Maw" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="5996-2832-9d8f-5bcc">
               <characteristics>
-                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">3AP</characteristic>
+                <characteristic name="Cost" typeId="e725-1a05-f360-abc6">2AP</characteristic>
                 <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">After you roll to hit with a Furnace weapon, you may re-roll any of that weapon’s attack dice (both hits and misses).</characteristic>
               </characteristics>
             </profile>
@@ -1747,7 +1747,7 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a3ee-850c-6373-cfe2" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="48"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="f942-8f88-d77b-13c1" id="6e26-099d-0ccb-2659" primary="true" name="Light Ship"/>
