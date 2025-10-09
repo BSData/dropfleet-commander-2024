@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="18" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="19" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (250822)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (250822)"/>
   </publications>
@@ -276,8 +276,8 @@
             <infoLink name="Extensive Reactor Modifications" id="4709-87c1-75be-049f" hidden="false" type="rule" targetId="59dc-a9b1-fa75-fa9a"/>
           </infoLinks>
           <modifiers>
-            <modifier type="set" value="6&quot;" field="d821-4294-3117-e8a6" affects="profiles.Ship"/>
-            <modifier type="set" value="Extensive Reactor Modifications" field="fdf5-89b6-e62e-570f" affects="profiles.Ship" join=", "/>
+            <modifier type="set" value="6&quot;" field="d821-4294-3117-e8a6" affects="self.entries.profiles.Ship"/>
+            <modifier type="set" value="Extensive Reactor Modifications" field="fdf5-89b6-e62e-570f" affects="self.entries.profiles.Ship" join=", "/>
             <modifier type="set" value="330" field="ab32-c9b6-10f3-cbdb"/>
           </modifiers>
         </selectionEntry>

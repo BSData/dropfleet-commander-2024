@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="20" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="21" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -135,7 +135,7 @@
             <infoLink name="Fighter Command" id="97bd-8100-1fa4-ffec" hidden="false" type="rule" targetId="83c4-4e63-ad54-d9c7"/>
           </infoLinks>
           <modifiers>
-            <modifier type="append" value="Fighter Command" field="fdf5-89b6-e62e-570f" affects="recursive.childs.model.profiles.Ship" join=", " scope="parent"/>
+            <modifier type="append" value="Fighter Command" field="fdf5-89b6-e62e-570f" affects="self.entries.profiles.Ship" join=", "/>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="52fa-6578-d171-57d6" id="f74f-fe87-6363-623d" primary="false" name="Colossal Groups"/>
@@ -181,7 +181,7 @@
       <entryLinks>
         <entryLink import="true" name="New York Battleship" hidden="false" id="9f44-0b22-c9d3-819d" type="selectionEntry" targetId="2b00-cb51-ae94-5a7a">
           <modifiers>
-            <modifier type="set" value="Spearhead" field="fdf5-89b6-e62e-570f" affects="recursive.childs.model.profiles.Ship" join=", " scope="parent"/>
+            <modifier type="set" value="Spearhead" field="fdf5-89b6-e62e-570f" affects="self.entries.profiles.Ship" join=", "/>
           </modifiers>
           <infoLinks>
             <infoLink name="Spearhead" id="6f06-1aa1-5eaa-7d31" hidden="false" type="rule" targetId="8612-0822-de10-5e03"/>
@@ -251,7 +251,7 @@
             <infoLink name="Jink" id="c559-efcb-08e1-195e" hidden="false" type="rule" targetId="8008-c897-2756-2472"/>
           </infoLinks>
           <modifiers>
-            <modifier type="set" value="Jink, Vanguard-6&quot;" field="fdf5-89b6-e62e-570f" affects="recursive.childs.model.profiles.Ship" join=", " scope="parent"/>
+            <modifier type="set" value="Jink, Vanguard-6&quot;" field="fdf5-89b6-e62e-570f" affects="self.entries.profiles.Ship" join=", "/>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="default-category" id="6d22-189f-d8eb-4182" primary="false" name="Group"/>
@@ -313,7 +313,7 @@
             <infoLink name="Stressful Manoeuvre" id="89de-031d-9190-b817" hidden="false" type="rule" targetId="ad61-5ace-2bb6-9477"/>
           </infoLinks>
           <modifiers>
-            <modifier type="set" value="Stressful Manoeuvre" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
+            <modifier type="set" value="Stressful Manoeuvre" field="fdf5-89b6-e62e-570f" affects="self.entries.profiles.Ship" join=", "/>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="default-category" id="35e8-c25e-0a2c-70df" primary="false" name="Group"/>

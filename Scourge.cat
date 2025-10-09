@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="16" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="17" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Fleet Thrall" hidden="false" id="7fe9-330a-0598-35d7" publicationId="260d-362c-d403-80ae" page="1">
@@ -117,8 +117,8 @@
             <infoLink name="Winged Bulwark" id="2e8a-3b52-ff15-5ca5" hidden="false" type="rule" targetId="aafc-3f0d-e8a5-6302"/>
           </infoLinks>
           <modifiers>
-            <modifier type="append" value="Winged Bulwark" field="fdf5-89b6-e62e-570f" affects="childs.recursive.model.profiles.Ship" join=", " scope="parent"/>
-            <modifier type="set" value="4+" field="05b6-9825-68e8-4983" scope="parent" affects="childs.recursive.model.profiles.Ship"/>
+            <modifier type="append" value="Winged Bulwark" field="fdf5-89b6-e62e-570f" affects="self.entries.profiles.Ship" join=", "/>
+            <modifier type="set" value="4+" field="05b6-9825-68e8-4983" affects="self.entries.profiles.Ship"/>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="default-category" id="92d6-4671-e33f-94a4" primary="false" name="Group"/>
@@ -274,7 +274,7 @@
             <infoLink name="Vectored" id="3fca-83b6-ff89-cc2e" hidden="false" type="rule" targetId="7a2f-fbe0-b3cd-98c8"/>
           </infoLinks>
           <modifiers>
-            <modifier type="set" value="Vanguard-7&quot;, Savagery" field="fdf5-89b6-e62e-570f" affects="profiles.Ship" join=", "/>
+            <modifier type="set" value="Vanguard-7&quot;, Savagery" field="fdf5-89b6-e62e-570f" affects="self.entries.profiles.Ship" join=", "/>
           </modifiers>
           <categoryLinks>
             <categoryLink targetId="default-category" id="7d94-0ebb-02d3-db71" primary="false" name="Group"/>
