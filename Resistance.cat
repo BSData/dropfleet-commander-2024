@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="19" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="20" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (250822)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (250822)"/>
   </publications>
@@ -269,7 +269,7 @@
           </constraints>
           <entryLinks>
             <entryLink import="true" name="9K Mass Driver Turrets" hidden="false" id="19d8-877e-c0d4-d0c2" type="selectionEntry" sortIndex="1" targetId="bf4b-d556-71b6-4835"/>
-            <entryLink import="true" name="Mega Vent Cannon Half Battery" hidden="false" id="f1b5-f606-53a0-4190" type="selectionEntry" sortIndex="2" targetId="aa03-5e72-aab7-ade1"/>
+            <entryLink import="true" name="Mega Vent Cannon Half Battery" hidden="false" id="f1b5-f606-53a0-4190" type="selectionEntry" sortIndex="2" targetId="7324-2272-cfe7-ff6a"/>
             <entryLink import="true" name="Torpedo" hidden="false" id="a6c7-fe61-b64b-1a00" type="selectionEntry" sortIndex="3" targetId="c923-a4c4-7dac-a3f1"/>
           </entryLinks>
           <infoLinks>
@@ -794,7 +794,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20d0-290e-4972-69d1" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Heavy Vent Cannon Turrets" hidden="false" id="f10a-3926-0e28-44ac" type="selectionEntry" sortIndex="1" targetId="bcaf-bc0c-9232-102d"/>
+            <entryLink import="true" name="Heavy Vent Cannons" hidden="false" id="f10a-3926-0e28-44ac" type="selectionEntry" sortIndex="1" targetId="54b5-4c4f-ed35-b679"/>
             <entryLink import="true" name="NC-16 Missile Battery Turret Quad" hidden="false" id="5727-2df9-2c88-5c80" type="selectionEntry" sortIndex="2" targetId="c93e-c992-b828-ed98"/>
             <entryLink import="true" name="N-12 Artillery Cannon Half Battery" hidden="false" id="3d74-8194-8087-30bd" type="selectionEntry" sortIndex="3" targetId="5ae3-e645-a98c-9cc7"/>
             <entryLink import="true" name="Engine Refit" hidden="false" id="410e-3cd2-30fc-8812" type="selectionEntry" targetId="4a33-ab81-d18d-935f" sortIndex="4"/>
@@ -840,7 +840,7 @@
           </constraints>
           <entryLinks>
             <entryLink import="true" name="9K Mass Driver Turrets" hidden="false" id="5b2f-83bc-b235-7b5e" type="selectionEntry" sortIndex="1" targetId="bf4b-d556-71b6-4835"/>
-            <entryLink import="true" name="Mega Vent Cannon Half Battery" hidden="false" id="86c7-0621-17df-df2c" type="selectionEntry" sortIndex="2" targetId="aa03-5e72-aab7-ade1"/>
+            <entryLink import="true" name="Mega Vent Cannon Half Battery" hidden="false" id="86c7-0621-17df-df2c" type="selectionEntry" sortIndex="2" targetId="7324-2272-cfe7-ff6a"/>
             <entryLink import="true" name="Torpedo" hidden="false" id="cc7b-b4bc-d420-a3e4" type="selectionEntry" sortIndex="3" targetId="c923-a4c4-7dac-a3f1"/>
             <entryLink import="true" name="Engine Refit" hidden="false" id="3b47-8fd5-be30-d3f3" type="selectionEntry" targetId="4a33-ab81-d18d-935f" sortIndex="4"/>
           </entryLinks>
@@ -2558,6 +2558,17 @@
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b97a-475b-6b4d-d064-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="N-12 Artillery Cannon Battery" hidden="false" id="15e5-46d3-e053-9bef">
+      <infoLinks>
+        <infoLink name="Low Power" id="8563-ef34-5ba0-2c47" hidden="false" type="rule" targetId="2851-2293-e346-839f"/>
+        <infoLink name="N-12 Artillery Cannon Battery" id="da4d-afdf-aded-053d" hidden="false" type="profile" targetId="6f4e-2bd8-a683-7a42"/>
+      </infoLinks>
+      <comment>[x2] B 10/4+/1/K LP</comment>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ff26-3e00-1339-f074-min" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ff26-3e00-1339-f074-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy Vent Cannon Turret" hidden="false" id="3c90-e8b8-7b63-cbd7">
       <infoLinks>
         <infoLink name="Fusillade-X" id="ee66-b843-adac-6e74" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
@@ -2581,6 +2592,19 @@
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2425-2cba-cc55-8205-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2425-2cba-cc55-8205-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Vent Cannons" hidden="false" id="54b5-4c4f-ed35-b679">
+      <infoLinks>
+        <infoLink name="Fusillade-X" id="0dfd-2a6e-ac81-e42d" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Heavy Vent Cannons" id="deca-8719-cff3-eb79" hidden="false" type="profile" targetId="56aa-6813-1b51-92a3"/>
+        <infoLink name="Overcharge" id="d99a-bdce-6fbc-9c56" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
+        <infoLink name="Reave-X" id="2afc-bad4-e520-f2eb" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+      </infoLinks>
+      <comment>F 4/3+/2/E Fus-1 OC Rv-1</comment>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9a6-c7ed-dc9b-777b" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="437a-6f37-8fd9-abc7" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="HF-8 Clearance Laser" hidden="false" id="159e-0298-8da7-34e8">
@@ -2636,13 +2660,13 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mega Vent Cannon Half Battery" hidden="false" id="aa03-5e72-aab7-ade1">
-      <comment>[x2] B 2/3+/3/E OC Fus-1 Rv-1 Vol-2</comment>
+      <comment>[x2] B 2/3+/3/E Fus-1 OC Rv-1 Vol-2</comment>
       <costs>
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Overcharge" id="5b9b-4816-0254-d525" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
         <infoLink name="Fusillade-X" id="74c5-e465-5ac9-9570" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Overcharge" id="5b9b-4816-0254-d525" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
         <infoLink name="Reave-X" id="05f5-1ffa-ff41-1fde" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
         <infoLink name="Volley-X" id="7f83-b15b-b831-e65a" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
@@ -2651,14 +2675,42 @@
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="002c-4324-7a0b-b56c" includeChildSelections="false"/>
       </constraints>
       <profiles>
-        <profile name="Mega Vent Cannon Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cdf0-6f1d-cbef-f036">
+        <profile name="Mega Vent Cannon Half Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cdf0-6f1d-cbef-f036">
           <characteristics>
             <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">B</characteristic>
             <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Fusillade-1, Reave-1, Volley-2</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-1, Overcharge, Reave-1, Volley-2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mega Vent Cannon Half Battery" hidden="false" id="7324-2272-cfe7-ff6a">
+      <comment>[x2] B 2/3+/3/E OC Fus-2 Rv-1 Vol-2</comment>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Overcharge" id="6b5a-5bd7-a4d4-efdb" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
+        <infoLink name="Fusillade-X" id="5026-f58f-5a77-0def" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+        <infoLink name="Reave-X" id="ca70-5ffb-c162-edba" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
+        <infoLink name="Volley-X" id="c668-48d8-3598-c410" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8486-5dec-c4fa-dd1d" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e8cc-c29a-8585-0174" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Mega Vent Cannon Half Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="373f-7d7d-c653-38fb">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">B</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Overcharge, Fusillade-2, Reave-1, Volley-2</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2713,17 +2765,6 @@
       <infoLinks>
         <infoLink name="Fusillade-X" id="50a8-1123-5cf7-896d" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
       </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="N-12 Artillery Cannon Battery" hidden="false" id="15e5-46d3-e053-9bef">
-      <infoLinks>
-        <infoLink name="Low Power" id="8563-ef34-5ba0-2c47" hidden="false" type="rule" targetId="2851-2293-e346-839f"/>
-        <infoLink name="N-12 Artillery Cannon Battery" id="da4d-afdf-aded-053d" hidden="false" type="profile" targetId="6f4e-2bd8-a683-7a42"/>
-      </infoLinks>
-      <comment>[x2] B 10/4+/1/K LP</comment>
-      <constraints>
-        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ff26-3e00-1339-f074-min" includeChildSelections="false"/>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ff26-3e00-1339-f074-max" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="N-12 Artillery Cannon Half Battery" hidden="false" id="5ae3-e645-a98c-9cc7">
       <infoLinks>
@@ -4076,7 +4117,7 @@ Telescope tokens placed by this Ship persist between rounds and are only removed
         <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
         <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
         <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-1, Reave-1</characteristic>
+        <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Fusillade-1, Overcharge, Reave-1</characteristic>
       </characteristics>
       <comment>F 4/3+/2/E Fus-1 OC Sc-1</comment>
     </profile>
