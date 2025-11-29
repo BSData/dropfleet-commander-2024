@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="ac5a-4823-5587-d3eb" name="Industrial" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="12" revision="1" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="SLM-9 Resupply Hauler" hidden="false" id="0cf9-dc4e-a21a-3fc1" publicationId="0486-c1f4-77a3-c714">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="SLM-9 Resupply Hauler" hidden="false" id="085f-a5da-64e5-7601" publicationId="0486-c1f4-77a3-c714">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="35"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="f942-8f88-d77b-13c1" id="4733-7027-3378-9d1b" primary="true" name="Light Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="SLM-9 Resupply Hauler" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="db7e-33b6-e5b3-cd57" publicationId="0486-c1f4-77a3-c714">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">9&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">4&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">2&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">5</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">3+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vectored, Resupply and Rearm, Flawed Design</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Resupply and Rearm" id="f9aa-a29e-07e3-ccb6" hidden="false">
+              <description>If this ship ends its movement in base contact with a friendly ship of Medium Tonnage or higher or a Space Station, pick one of the following:
+Resupply: That Ship or Space Station recovers 3 Hull points and remove any Crippling Effect tokens.
+Rearm: Increase the Limited-X value of any of that Ship or Space Station’s Weapons and Launch Assets by 1 until the end of the round.</description>
+            </rule>
+            <rule name="Flawed Design" id="eabd-32c2-f9a9-31bc" hidden="false">
+              <description>This Ship cannot use its Resupply and Rearm rule if it is below half of its starting Hull.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c7d-40bd-4b71-2488-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c7d-40bd-4b71-2488-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="1c04-0d9f-9e28-e32d" primary="false" name="Group"/>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="cbec-7ae8-82b8-8f35" primary="true" name="Light Groups"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="LKS Dredger" hidden="false" id="55f5-22bc-5caf-2e21" publicationId="0486-c1f4-77a3-c714">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="LKS Dredger" hidden="false" id="860b-28b6-1ea7-cf70" publicationId="0486-c1f4-77a3-c714">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="65"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="f942-8f88-d77b-13c1" id="77f4-f041-5d4d-9f2f" primary="true" name="Light Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="LKS Dredger" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="f1f4-4717-e095-09f8" publicationId="0486-c1f4-77a3-c714">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">6</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1-2</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vectored, Industrial Design</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4449-e022-44b2-bff7" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2bf9-2cce-673c-531b" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mining Laser" hidden="false" id="95f0-d93d-cf01-5230">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e56a-34d2-5234-3cde-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e56a-34d2-5234-3cde-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mining Laser" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a8a7-02b6-034f-855e">
+                  <characteristics>
+                    <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+                    <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">3</characteristic>
+                    <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+                    <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                    <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+                    <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Burnthrough-2, Close Action</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Burnthrough-X" id="e63b-fc44-c90c-23a6" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+                <infoLink name="Close Action" id="fc53-5dbc-24aa-43c9" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Industrial Design" id="156b-7100-2dd2-7f0e" hidden="false" type="rule" targetId="e563-4363-c68f-2930"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="cfdc-c8df-152b-9511" primary="false" name="Group"/>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="9fe7-74f4-fff9-1989" primary="true" name="Light Groups"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Type-87 Terminus Harvester" hidden="false" id="d8f6-3b3f-66a7-019a" publicationId="0486-c1f4-77a3-c714">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Type-87 Terminus Harvester" hidden="false" id="f85c-66a7-e20c-45ca" publicationId="0486-c1f4-77a3-c714">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="210"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="14cb-60f0-c1cb-4165" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Type-87 Terminus Harvester" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="d6ed-5c92-74a8-e13e" publicationId="0486-c1f4-77a3-c714">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">18</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Porter F-2, Reinforced Armour, Monitor, Scrap Hauler, Scratch Bodge Job, Industrial Design</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Scrap Hauler" id="83fd-5598-3e97-7fd7" hidden="false">
+              <description>If this Group ends its activation within 1” of a Debris Field, this Group gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Group can have a maximum of 8 scrap tokens at any one time. Any attached Payload ships that have any scrap tokens do not count towards this limit. Whenever another Ship within 6” of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.</description>
+            </rule>
+            <rule name="Scratch Bodge Job" id="7f82-6c9f-9bae-3e18" hidden="false">
+              <description>At the end of this Ship’s activation, you may remove any number of scrap tokens and choose one of the following:
+Scrappy Plating: One friendly Ship within 6” recovers lost Hull points equal to the amount of scrap tokens removed.
+Bodge Repairs: Remove a crippling effect from a friendly Ship within 6” for each scrap token removed.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99ab-d2e4-1ad0-d537-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99ab-d2e4-1ad0-d537-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Colossal Salvage Cutter" hidden="false" id="5b1e-dc30-ff0e-94fa">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="81d1-7aee-0c78-2939-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81d1-7aee-0c78-2939-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Colossal Salvage Cutter" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c1f6-5891-64e7-2827">
+                  <characteristics>
+                    <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+                    <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">5</characteristic>
+                    <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+                    <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">3</characteristic>
+                    <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
+                    <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Bloom-3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Close Action" id="041e-7703-6b47-32c5" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+                <infoLink name="Bloom-X" id="2406-1afb-ffc5-0ed7" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+              </infoLinks>
+              <rules>
+                <rule name="Colossal Salvage Cutter" id="d4db-5d9e-ad01-91d7" hidden="false">
+                  <description>This weapon can only be used against targets in base contact.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Porter S/L-X" id="23ff-6bce-4780-269b" hidden="false" type="rule" targetId="11cb-e973-8a2c-f0f6"/>
+            <infoLink name="Reinforced Armour" id="2c29-d156-12c5-94ee" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
+            <infoLink name="Monitor" id="34cc-117a-74d6-f4a0" hidden="false" type="rule" targetId="cc9f-9be5-cc19-2fc9"/>
+            <infoLink name="Industrial Design" id="e9f5-c479-36b9-ab6f" hidden="false" type="rule" targetId="e563-4363-c68f-2930"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="0c95-8fb8-d76a-99b2" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="8aca-6a9a-e40d-a952" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="VX-22 Flenser" hidden="false" id="1caa-22ad-f152-b011" publicationId="0486-c1f4-77a3-c714">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="VX-22 Flenser" hidden="false" id="160e-d093-52eb-5adb" publicationId="0486-c1f4-77a3-c714">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="50"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="f942-8f88-d77b-13c1" id="5c82-fb65-22b2-1cfc" primary="true" name="Light Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="VX-22 Flenser" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="2912-0a1d-c408-1230" publicationId="0486-c1f4-77a3-c714">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">4&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">4</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">-</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Payload F-1, Vectored, Scrap Collection, Unload</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Scrap Collection" id="6dff-82ef-c102-88b9" hidden="false">
+              <description>If this Ship ends its activation within 1” of a Debris Field, this Ship gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Ship with this rule can have a maximum of 3 scrap tokens at any one time. Whenever another Ship within 6” of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.</description>
+            </rule>
+            <rule name="Unload" id="4386-6f27-42a4-479a" hidden="false">
+              <description>When you attach this Ship to a Porter Ship, you may have the Porter Ship gain all of this Ship’s scrap tokens.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sawblade Prow" hidden="false" id="aef8-a3c1-524c-5a10">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6bf0-4195-38f5-8ed2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bf0-4195-38f5-8ed2-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Sawblade Prow" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="19dd-966e-2739-3867">
+                  <characteristics>
+                    <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F</characteristic>
+                    <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+                    <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+                    <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+                    <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
+                    <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Bloom-1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Close Action" id="d72e-952e-32e0-a095" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+                <infoLink name="Bloom-X" id="8698-3eae-0977-8013" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+              </infoLinks>
+              <rules>
+                <rule name="Sawblade Prow" id="7e36-9270-619a-3fb1" hidden="false">
+                  <description>This weapon can only be used against targets in base contact.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Payload S/L-X" id="1b07-bb3e-77a3-31db" hidden="false" type="rule" targetId="7a4f-55fd-3916-978f"/>
+            <infoLink name="Vectored" id="7779-6233-ddca-2407" hidden="false" type="rule" targetId="7a2f-fbe0-b3cd-98c8"/>
+            <infoLink name="Industrial Design" id="94e2-63c7-3265-94fc" hidden="false" type="rule" targetId="e563-4363-c68f-2930"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="3b1a-1d09-bae5-b3e5" primary="false" name="Group"/>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="d6de-3b44-8dca-2e1c" primary="true" name="Light Groups"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <publications>
+    <publication name="Industrial Ships &amp; Scenarios (251127)" id="0486-c1f4-77a3-c714" hidden="false" shortName="Industrial Ships &amp; Scenarios (251127)"/>
+  </publications>
+  <sharedRules>
+    <rule name="Industrial Design" id="e563-4363-c68f-2930" hidden="false">
+      <description>Improve this Group’s Backup save by 2 when rolling to save hits due to Debris Fields.</description>
+    </rule>
+  </sharedRules>
+</catalogue>

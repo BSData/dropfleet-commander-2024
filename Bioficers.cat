@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="20" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="21" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Ardent" hidden="false" id="253f-2124-1abd-87e5" publicationId="c835-461f-ea00-a841" page="1">
@@ -3708,6 +3708,10 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="d4c6-8b2d-fc48-ae12" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
     <entryLink import="true" name="M-Type Barge" hidden="false" id="c239-bd3d-8baa-8824" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
     <entryLink import="true" name="T-Type Tugboat" hidden="false" id="949e-c10a-06c3-9ca0" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
+    <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="79c4-e1b1-16d4-e113" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
+    <entryLink import="true" name="LKS Dredger" hidden="false" id="7658-a4af-c907-7756" type="selectionEntry" targetId="55f5-22bc-5caf-2e21"/>
+    <entryLink import="true" name="Type-87 Terminus Harvester" hidden="false" id="0105-b262-c0b8-265a" type="selectionEntry" targetId="d8f6-3b3f-66a7-019a"/>
+    <entryLink import="true" name="VX-22 Flenser" hidden="false" id="0a9f-1ff3-a960-8ab5" type="selectionEntry" targetId="1caa-22ad-f152-b011"/>
     <entryLink import="true" name="Launch Assets" hidden="false" id="e18f-e6a0-3a5b-0c3e" targetId="9cad-9c67-a317-939d" type="selectionEntry"/>
   </entryLinks>
   <publications>
@@ -3776,6 +3780,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     <catalogueLink type="catalogue" name="Misc" id="2ccd-d6e9-0a0b-88aa" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="29e2-bbec-0740-e338" targetId="7e9b-b6ba-2178-6eb5"/>
     <catalogueLink type="catalogue" name="Civilian" id="7494-0d8e-178a-7f61" targetId="903e-8fb9-3fe2-4460"/>
+    <catalogueLink type="catalogue" name="Industrial" id="cc4f-b967-5596-a577" targetId="ac5a-4823-5587-d3eb"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Abilities" id="9fda-37c1-6eaa-b6f5" hidden="false">
@@ -3864,17 +3869,17 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       <selectionEntryGroups>
         <selectionEntryGroup name="Secondary Hardpoint" id="e82f-a8d5-5e86-7da1" hidden="false" sortIndex="1">
           <entryLinks>
-            <entryLink import="true" name="Grand Bisector" hidden="false" id="10a3-c5f4-c3e1-a285" type="selectionEntry" targetId="b4e9-2055-c538-e9f6" sortIndex="1" collective="true" defaultAmount="">
+            <entryLink import="true" name="Grand Bisector" hidden="false" id="10a3-c5f4-c3e1-a285" type="selectionEntry" targetId="b4e9-2055-c538-e9f6" sortIndex="1" collective="true">
               <costs>
                 <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Giga Winnower" hidden="false" id="9650-a274-3b07-feb3" type="selectionEntry" targetId="8855-7caf-63c6-c042" sortIndex="2" collective="true" defaultAmount="">
+            <entryLink import="true" name="Giga Winnower" hidden="false" id="9650-a274-3b07-feb3" type="selectionEntry" targetId="8855-7caf-63c6-c042" sortIndex="2" collective="true">
               <costs>
                 <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Gravitic Hyperlance" hidden="false" id="7937-0aed-2615-53bb" type="selectionEntry" targetId="3fc6-9fce-21bd-ba3e" sortIndex="3" collective="true" defaultAmount="">
+            <entryLink import="true" name="Gravitic Hyperlance" hidden="false" id="7937-0aed-2615-53bb" type="selectionEntry" targetId="3fc6-9fce-21bd-ba3e" sortIndex="3" collective="true">
               <costs>
                 <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
               </costs>
@@ -3887,12 +3892,12 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         </selectionEntryGroup>
         <selectionEntryGroup name="Tertiary Hardpoint" id="d1f2-8c8c-9c57-0a02" hidden="false" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Thermator" hidden="false" id="51ae-bb07-9828-dc84" type="selectionEntry" targetId="a73c-370d-fbb9-8451" sortIndex="1" collective="true" defaultAmount="">
+            <entryLink import="true" name="Thermator" hidden="false" id="51ae-bb07-9828-dc84" type="selectionEntry" targetId="a73c-370d-fbb9-8451" sortIndex="1" collective="true">
               <costs>
                 <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Scythes" hidden="false" id="d455-aa91-0832-9264" type="selectionEntry" targetId="6863-69a2-b237-39c2" sortIndex="2" collective="true" defaultAmount="">
+            <entryLink import="true" name="Scythes" hidden="false" id="d455-aa91-0832-9264" type="selectionEntry" targetId="6863-69a2-b237-39c2" sortIndex="2" collective="true">
               <costs>
                 <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
               </costs>
@@ -3905,7 +3910,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         </selectionEntryGroup>
         <selectionEntryGroup name="Launch Hardpoint" id="fca4-db04-dc62-b2a8" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Torpedo" hidden="false" id="4aae-8bcb-410c-f14b" type="selectionEntry" targetId="69d5-9e3b-8e0b-f8ab" sortIndex="1" collective="true" defaultAmount="">
+            <entryLink import="true" name="Torpedo" hidden="false" id="4aae-8bcb-410c-f14b" type="selectionEntry" targetId="69d5-9e3b-8e0b-f8ab" sortIndex="1" collective="true">
               <costs>
                 <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
               </costs>

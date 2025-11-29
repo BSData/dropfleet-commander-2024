@@ -7,6 +7,7 @@
     <catalogueLink type="catalogue" name="Misc" id="f86a-4bed-c096-781e" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="be4c-2910-f23a-8de4" targetId="7e9b-b6ba-2178-6eb5"/>
     <catalogueLink type="catalogue" name="Civilian" id="8790-3181-d8e1-06fb" targetId="903e-8fb9-3fe2-4460" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Industrial" id="0725-bfa8-ab15-f764" targetId="ac5a-4823-5587-d3eb"/>
   </catalogueLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="5c17-bb7c-8a82-0675"/>
@@ -3657,6 +3658,10 @@ Telescope tokens placed by this Ship persist between rounds and are only removed
     <entryLink import="true" name="T-Type Tugboat" hidden="false" id="ccd2-fd0d-58bd-948d" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
     <entryLink import="true" name="Grand Station" hidden="false" id="e677-db48-56bb-faf5" type="selectionEntry" targetId="eedb-96cd-d7a3-6b75"/>
     <entryLink import="true" name="Astrobotanical Outpost" hidden="false" id="8d51-515a-0abd-7efd" type="selectionEntry" targetId="1343-3008-33a4-59aa"/>
+    <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="0690-21c0-3882-48bf" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
+    <entryLink import="true" name="LKS Dredger" hidden="false" id="fe52-e7b3-6fcc-f9cb" type="selectionEntry" targetId="55f5-22bc-5caf-2e21"/>
+    <entryLink import="true" name="Type-87 Terminus Harvester" hidden="false" id="a803-b788-1627-ba0f" type="selectionEntry" targetId="d8f6-3b3f-66a7-019a"/>
+    <entryLink import="true" name="VX-22 Flenser" hidden="false" id="a82e-656a-8bde-1e6a" type="selectionEntry" targetId="1caa-22ad-f152-b011"/>
     <entryLink import="true" name="Launch Assets" hidden="false" id="7187-191c-80f4-cd13" targetId="702c-ed66-e9cc-621e" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
