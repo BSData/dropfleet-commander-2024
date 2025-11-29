@@ -220,6 +220,9 @@ Bodge Repairs: Remove a crippling effect from a friendly Ship within 6” for ea
               <description>When you attach this Ship to a Porter Ship, you may have the Porter Ship gain all of this Ship’s scrap tokens.</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c32-694d-aeca-8fcf" includeChildSelections="false"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Sawblade Prow" hidden="false" id="aef8-a3c1-524c-5a10">
               <constraints>
