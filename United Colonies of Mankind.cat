@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="22" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="23" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -3832,6 +3832,8 @@
     <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="07b0-7286-6d3b-4f33" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
     <entryLink import="true" name="M-Type Barge" hidden="false" id="a6c1-ef68-42b0-93af" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
     <entryLink import="true" name="T-Type Tugboat" hidden="false" id="ee03-5982-f3ca-0362" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
+    <entryLink import="true" name="Jah’tar Startrader" hidden="false" id="ff17-a3bf-0f6b-e55f" type="selectionEntry" targetId="e1ee-f46b-05f3-54b2"/>
+    <entryLink import="true" name="DH-Type Penal Transport" hidden="false" id="61d8-17e4-2d87-faa3" type="selectionEntry" targetId="3c15-10cc-4cf2-7166"/>
     <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="786b-fded-aedd-99e5" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
     <entryLink import="true" name="LKS Dredger" hidden="false" id="4fbe-295c-3156-aa7a" type="selectionEntry" targetId="55f5-22bc-5caf-2e21"/>
     <entryLink import="true" name="Type-87 Terminus Harvester" hidden="false" id="2fb5-1e23-5c4a-eb90" type="selectionEntry" targetId="d8f6-3b3f-66a7-019a"/>

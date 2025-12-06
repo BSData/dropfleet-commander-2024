@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="21" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="22" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (250822)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (250822)"/>
   </publications>
@@ -3656,6 +3656,8 @@ Telescope tokens placed by this Ship persist between rounds and are only removed
     <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="fefe-f3c6-e175-0c70" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
     <entryLink import="true" name="M-Type Barge" hidden="false" id="0274-8158-4c93-0937" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
     <entryLink import="true" name="T-Type Tugboat" hidden="false" id="ccd2-fd0d-58bd-948d" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
+    <entryLink import="true" name="Jah’tar Startrader" hidden="false" id="b110-4851-1f65-5810" type="selectionEntry" targetId="e1ee-f46b-05f3-54b2"/>
+    <entryLink import="true" name="DH-Type Penal Transport" hidden="false" id="b6b8-6b94-6e7e-8d22" type="selectionEntry" targetId="3c15-10cc-4cf2-7166"/>
     <entryLink import="true" name="Grand Station" hidden="false" id="e677-db48-56bb-faf5" type="selectionEntry" targetId="eedb-96cd-d7a3-6b75"/>
     <entryLink import="true" name="Astrobotanical Outpost" hidden="false" id="8d51-515a-0abd-7efd" type="selectionEntry" targetId="1343-3008-33a4-59aa"/>
     <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="0690-21c0-3882-48bf" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
