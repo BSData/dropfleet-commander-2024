@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="18" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="19" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="1c77-28ea-5fb6-dc6f" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="1282-2cce-85a8-ebe4" targetId="7e9b-b6ba-2178-6eb5"/>
@@ -7,7 +7,7 @@
     <catalogueLink type="catalogue" name="Industrial" id="3c27-ab2a-3565-24f1" targetId="ac5a-4823-5587-d3eb"/>
   </catalogueLinks>
   <publications>
-    <publication name="Shaltari Combined Fleet Stats (250324)" id="fbb6-a765-5882-6bcb" hidden="false" shortName="Shaltari Stats (250324)"/>
+    <publication name="Shaltari Combined Fleet Stats (260227)" id="fbb6-a765-5882-6bcb" hidden="false" shortName="Shaltari Stats (260227)"/>
   </publications>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="98cc-5609-e532-4875"/>
@@ -32,7 +32,7 @@
         <profile name="Voidgate Redeployment" typeId="705b-98a3-a21d-7118" typeName="Admiral Ability" hidden="false" id="cc87-9763-1ec6-3c1c">
           <characteristics>
             <characteristic name="Cost" typeId="e725-1a05-f360-abc6">1AP</characteristic>
-            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, before Battalion Combat, select a Dropsite or Feature containing friendly Battalions. If that Dropsite/Feature is within 3” of a friendly Ship with the Gateship special rule, you may move a number of friendly Battalions assigned to the selected Dropsite or Feature to another Dropsite or one of its Features within 3” of another Ship in the same Gateship chain. You cannot move more Battalions than the Gateship-X value of the final Ship or Dropsite used in the Gateship Chain.</characteristic>
+            <characteristic name="Effect" typeId="49ae-26b2-d6ec-81aa">At the start of the Asset Phase, before Battalion Combat, select a Dropsite or Feature containing friendly Battalions. If that Dropsite/Feature is within 3” of a friendly Ship with the Gateship special rule, you may move a number of friendly Battalions assigned to the selected Dropsite or Feature to another Dropsite or one of its Features within 3” of another Ship in the same Gateship chain. You cannot move more Battalions than the Gateship-X value of the final Ship or Dropsite used in the Gateship Chain.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -922,6 +922,182 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Boracite Pocket Battleship" hidden="false" id="093e-1464-2965-35e9">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="838d-1b2b-f496-2e9f" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="d11e-9c6e-2820-4832" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Boracite Pocket Battleship" hidden="false" id="6037-d0c2-4575-90f3" publicationId="fbb6-a765-5882-6bcb" page="">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="c156-7599-8de7-0eb4" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Boracite" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="903d-60f8-96e3-9d4d" publicationId="fbb6-a765-5882-6bcb" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">14</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+, Feature Carrier</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="200"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ce4-2d9b-f010-cf5b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02cf-c1bd-f627-7fd3" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="802d-bab1-47dc-e4d6" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+            <infoLink name="Feature Carrier" id="64c6-beb5-3846-6b4a" hidden="false" type="rule" targetId="03c8-3587-3058-64b4"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Disintegrator Battery Pair" hidden="false" id="e91d-f62d-e520-fcce" type="selectionEntry" sortIndex="1" targetId="8bee-12e8-8c3d-102a"/>
+            <entryLink import="true" name="Thermal Lance Cannon Pair" hidden="false" id="f45b-0d2f-7da5-8ffe" type="selectionEntry" sortIndex="2" targetId="ba78-9b94-e220-39f3"/>
+            <entryLink import="true" name="Deployable Features" hidden="false" id="3167-0688-bab2-11b2" type="selectionEntryGroup" targetId="1fa6-280f-ac35-bd35" sortIndex="3"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Euclase Pocket Battleship" hidden="false" id="cbb7-bb15-fb07-9d71">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="64ec-bcd2-f3a3-76ee" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="e304-3580-2bb1-d711" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Euclase Pocket Battleship" hidden="false" id="b297-a8ca-323a-2dfc" publicationId="fbb6-a765-5882-6bcb" page="">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="03d2-5018-6423-15a8" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Euclase" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="72f3-4c0e-b9a2-f0b6" publicationId="fbb6-a765-5882-6bcb" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">14</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+, Feature Carrier</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="220"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e03a-72ee-c966-5ee1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5ec-2355-731f-252a" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="0ccf-22cc-3d43-30a5" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+            <infoLink name="Feature Carrier" id="40ba-080d-e6e9-bb7d" hidden="false" type="rule" targetId="03c8-3587-3058-64b4"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="a65c-f0fe-fefd-8149" type="selectionEntry" sortIndex="2" targetId="5bce-d727-bfb5-4b50"/>
+            <entryLink import="true" name="Thermal Lance Cannon Pair" hidden="false" id="9199-455d-6bd6-2e18" type="selectionEntry" sortIndex="1" targetId="ba78-9b94-e220-39f3"/>
+            <entryLink import="true" name="Deployable Features" hidden="false" id="9320-426a-32f7-0f89" type="selectionEntryGroup" targetId="1fa6-280f-ac35-bd35" sortIndex="3"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Painite Pocket Battleship" hidden="false" id="b774-5b9e-6672-7cf7">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="7292-d4a7-489e-e69f" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="7355-9743-33fa-60e1" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Painite Pocket Battleship" hidden="false" id="87a3-25ac-683b-9218" publicationId="fbb6-a765-5882-6bcb" page="">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="2124-4bb4-297f-dc5d" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Painite" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b0d0-7f6d-99e0-49b1" publicationId="fbb6-a765-5882-6bcb" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">14</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+, Feature Carrier</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="190"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e30-d123-a98f-5017" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="171a-68f5-6da5-2e11" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="d3cf-5c52-40f2-2d20" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+            <infoLink name="Feature Carrier" id="98ef-f102-696b-1645" hidden="false" type="rule" targetId="03c8-3587-3058-64b4"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Ion Aura &amp; Ion Storm" hidden="false" id="0fb8-944f-a633-6e85" type="selectionEntry" sortIndex="2" targetId="7b23-7095-97b9-ba62"/>
+            <entryLink import="true" name="Disintegrator Battery Pair" hidden="false" id="5e3d-54de-65a9-e3cc" type="selectionEntry" sortIndex="1" targetId="8bee-12e8-8c3d-102a"/>
+            <entryLink import="true" name="Deployable Features" hidden="false" id="553e-d778-310e-6805" type="selectionEntryGroup" targetId="1fa6-280f-ac35-bd35" sortIndex="3"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Spinel Pocket Battleship" hidden="false" id="a34f-77d7-905d-9675">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="172e-4714-55d9-a9ac" targetId="default-category" primary="false"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="1693-704e-e85d-902f" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Spinel Pocket Battleship" hidden="false" id="acb3-cc49-1aa1-a4ef" publicationId="fbb6-a765-5882-6bcb" page="">
+          <categoryLinks>
+            <categoryLink targetId="9d6f-26b0-7969-496b" id="462f-0fb1-ff72-3898" primary="true" name="Heavy Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Spinel" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c738-2d41-93ff-3bce" publicationId="fbb6-a765-5882-6bcb" page="37">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">14</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+, Feature Carrier</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="225"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3998-3ef1-71fb-461a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac56-e4d1-cdee-7377" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="1641-8f11-9aa0-0247" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+            <infoLink name="Feature Carrier" id="d7bb-ea01-a7ff-4b35" hidden="false" type="rule" targetId="03c8-3587-3058-64b4"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Twin Hyperwave Cannon" hidden="false" id="9089-8ad5-eed8-d7a6" type="selectionEntry" sortIndex="2" targetId="5404-e515-4a40-7edf"/>
+            <entryLink import="true" name="Particle Lance Pair" hidden="false" id="09f6-f996-c50e-a9eb" type="selectionEntry" sortIndex="1" targetId="e02d-0e90-975f-cf7c"/>
+            <entryLink import="true" name="Deployable Features" hidden="false" id="b718-b93d-64ff-3ba8" type="selectionEntryGroup" targetId="1fa6-280f-ac35-bd35" sortIndex="3"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Goethite Battlecruiser" hidden="false" id="a00e-a1b6-424c-1d11">
       <categoryLinks>
         <categoryLink name="Group" hidden="false" id="1a9a-dafb-ba99-230c" targetId="default-category" primary="false"/>
@@ -1028,7 +1204,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+, Ion Overload, Vanguard-6&quot;</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+, Vanguard-6&quot;</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1041,7 +1217,6 @@
           </constraints>
           <infoLinks>
             <infoLink name="Shield-X" id="6829-4935-80c3-ac88" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
-            <infoLink name="Ion Overload" id="422d-bd0c-ef77-0b25" hidden="false" type="rule" targetId="0278-c899-4a68-0dac"/>
             <infoLink name="Vanguard-X" id="88e4-c3eb-ae14-a54b" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
           </infoLinks>
           <entryLinks>
@@ -1090,6 +1265,94 @@
           <entryLinks>
             <entryLink import="true" name="Disintegrator Battery Pair" hidden="false" id="cb4e-dd37-3566-c72b" type="selectionEntry" sortIndex="1" targetId="8bee-12e8-8c3d-102a"/>
             <entryLink import="true" name="Particle Lance Pair" hidden="false" id="e69c-1646-0b99-060f" type="selectionEntry" sortIndex="2" targetId="e02d-0e90-975f-cf7c"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Natrolite Supercruiser" hidden="false" id="d11f-ed6b-095a-7454">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="cbde-e43f-a1be-c9fb" targetId="default-category" primary="false"/>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="931b-3199-6a61-3950" primary="true" name="Medium Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Natrolite Supercruiser" hidden="false" id="87eb-9f60-2da7-f5f9" publicationId="fbb6-a765-5882-6bcb" page="">
+          <categoryLinks>
+            <categoryLink targetId="53c3-afc0-63ef-413a" id="54ae-8c8b-8a52-b657" primary="true" name="Medium Ship"/>
+            <categoryLink targetId="fe8e-9939-871d-6e43" id="745a-f93d-56a1-85fb" primary="false" name="Feature Carrier"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Natrolite" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="c36b-3d91-2946-3b53" publicationId="fbb6-a765-5882-6bcb" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">12</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+, Feature Carrier</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="184"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c8b-d6b9-ff10-fa94" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eba1-b210-e890-0a6c" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="de0e-a1c6-3fdb-e449" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+            <infoLink name="Feature Carrier" id="f3df-03af-b62c-43ce" hidden="false" type="rule" targetId="03c8-3587-3058-64b4"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Disintegrator Battery Pair" hidden="false" id="f45f-3931-8280-61d9" type="selectionEntry" targetId="8bee-12e8-8c3d-102a" sortIndex="1"/>
+            <entryLink import="true" name="Deployable Features" hidden="false" id="124c-3c73-83e6-b815" type="selectionEntryGroup" targetId="1fa6-280f-ac35-bd35" sortIndex="2"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mesolite Supercruiser" hidden="false" id="3e44-2131-2e2c-0299">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="dfff-7daf-2405-6952" targetId="default-category" primary="false"/>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="461f-77e0-80bf-3053" primary="true" name="Medium Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Mesolite Supercruiser" hidden="false" id="4441-1ac9-3e41-d212" publicationId="fbb6-a765-5882-6bcb" page="">
+          <categoryLinks>
+            <categoryLink targetId="53c3-afc0-63ef-413a" id="6a45-faa3-5a97-7683" primary="true" name="Medium Ship"/>
+            <categoryLink targetId="fe8e-9939-871d-6e43" id="5b4e-92ce-c359-3552" primary="false" name="Feature Carrier"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Mesolite" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="f6ee-2563-a451-7b01" publicationId="fbb6-a765-5882-6bcb" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">12</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">5+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Shield-4+, Feature Carrier</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="180"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="31b4-d4ef-1164-cbd8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e563-6467-fb51-7359" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shield-X" id="66ae-28d5-f33f-2428" hidden="false" type="rule" targetId="40e4-1c82-9e61-c8c1"/>
+            <infoLink name="Feature Carrier" id="4881-c3f1-2312-8eae" hidden="false" type="rule" targetId="03c8-3587-3058-64b4"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Twin Hyperwave Cannon" hidden="false" id="22f9-a6d3-633c-d006" type="selectionEntry" targetId="5404-e515-4a40-7edf" sortIndex="1"/>
+            <entryLink import="true" name="Deployable Features" hidden="false" id="5963-551b-ae42-d1fd" type="selectionEntryGroup" targetId="1fa6-280f-ac35-bd35" sortIndex="2"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -3125,7 +3388,31 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9bf-67a5-a500-4de4-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9bf-67a5-a500-4de4-max" includeChildSelections="false"/>
       </constraints>
-      <comment>FN 8/2+/1/E BT-1 Bl-1</comment>
+      <comment>FN 8/2+/1/E BT-1 Bl-1 Fus-4</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Thermal Lance Cannon Pair" hidden="false" id="ba78-9b94-e220-39f3">
+      <profiles>
+        <profile name="Thermal Lance Cannon Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="b3d3-c9e0-cfeb-4c20">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">FN</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Bloom-1, Burnthrough-1, Fusillade-2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bloom-X" id="732d-b632-969a-eda1" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
+        <infoLink name="Burnthrough-X" id="eae9-8996-ff29-2df4" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
+        <infoLink name="Fusillade-X" id="231a-abec-2593-f26a" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="543c-e21c-5057-a5f9" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0601-b0bc-3693-6467" includeChildSelections="false"/>
+      </constraints>
+      <comment>FN 4/2+/1/E Bl-1 BT-1 Fus-2</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Thermal Lance Cannon" hidden="false" id="949b-0c36-2755-e7df">
       <profiles>
@@ -3159,7 +3446,7 @@
             <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
             <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
             <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
-            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Crippling-Fire</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Crippling-2xFire</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3193,6 +3480,35 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="290f-1284-1fee-7259-max" includeChildSelections="false"/>
       </constraints>
       <comment>F/S 2/3+/2/C Crit-1</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Electrowave Caster" hidden="false" id="9bd2-4e70-acd2-3507">
+      <profiles>
+        <profile name="Electrowave Caster" typeId="55a1-fca6-5a62-f9f4" typeName="Weapon" hidden="false" id="6345-b273-7161-7a5d">
+          <characteristics>
+            <characteristic name="Scan" typeId="ca0d-8087-d02a-179b">8&quot;</characteristic>
+            <characteristic name="Att" typeId="3cb6-1718-186b-4bce">3</characteristic>
+            <characteristic name="Lock" typeId="4e0c-3aca-e97e-05c8">2+</characteristic>
+            <characteristic name="Dmg" typeId="1314-c0f9-8c3a-21ff">1</characteristic>
+            <characteristic name="Type" typeId="a2f6-d421-0336-1c75">E</characteristic>
+            <characteristic name="Special" typeId="f633-dba6-938c-31f2">Close Action, Escape Velocity, Status</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Close Action" id="2156-459f-ad22-4f74" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Escape Velocity" id="581b-84ec-7b0f-2166" hidden="false" type="rule" targetId="0357-837c-bc00-4ce3"/>
+        <infoLink name="Status" id="9b18-2a5a-3caa-e17e" hidden="false" type="rule" targetId="ea58-a80c-c3de-e165"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4342-f87a-4007-cb08" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e855-1b4f-a10f-5bb1" includeChildSelections="false"/>
+      </constraints>
+      <comment>8&quot; 3/2+/1/E CA EV St</comment>
+      <rules>
+        <rule name="Electrowave Caster" id="584e-5ca6-db56-da88" hidden="false">
+          <description>Effects caused by this weapon’s Status rule are removed at the start of next rounds End Phase instead of this rounds End Phase.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Load -----" hidden="true" id="3a59-181d-838a-47f8"/>
     <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="0139-8bb3-23a4-1510">
@@ -3481,6 +3797,138 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Reference -----" hidden="true" id="9e83-6969-9618-2db7" exportable="false"/>
+    <selectionEntry type="unit" import="true" name="Electrosurge Torus" hidden="false" id="1200-12cb-1f6d-0421">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Electrosurge Torus" hidden="false" id="1725-bbd8-8dbe-c7cd">
+          <profiles>
+            <profile name="Electrosurge Torus" typeId="e69b-d424-94a2-0fe1" typeName="Feature" hidden="false" id="4099-3de7-64f8-e733">
+              <characteristics>
+                <characteristic name="ES" typeId="b3be-7f64-867b-94f7">4+</characteristic>
+                <characteristic name="KS" typeId="4e0b-e781-cee2-504d">4+</characteristic>
+                <characteristic name="Special" typeId="0042-a956-225d-9293">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Electrowave Caster" hidden="false" id="0c45-655f-e24f-b6ae" type="selectionEntry" targetId="9bd2-4e70-acd2-3507"/>
+          </entryLinks>
+          <rules>
+            <rule name="Electrosurge Torus" id="0fea-b63c-4ae1-f2c5" hidden="false">
+              <description>This feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Deployable Features" hidden="false" id="e370-4e90-664c-c0ae" targetId="73f6-cabc-3dad-5334" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2107-b949-ece8-8475-min" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2107-b949-ece8-8475-max" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a3e3-cc94-ce18-9304-min" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a3e3-cc94-ce18-9304-max" automatic="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="11b4-72d7-c64d-25c1" id="d7c7-7b76-4dd4-f744" primary="true" name="Deployable Features"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="1" field="a3e3-cc94-ce18-9304-min">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="29cb-d2b4-b92d-232d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="a3e3-cc94-ce18-9304-max">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="29cb-d2b4-b92d-232d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="a3e3-cc94-ce18-9304-min">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="roster" childId="29cb-d2b4-b92d-232d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="a3e3-cc94-ce18-9304-max">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="roster" childId="29cb-d2b4-b92d-232d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Worldstrider" hidden="false" id="2fd9-6c83-a2ab-7cd5">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Worldstrider" hidden="false" id="4ecb-d686-96ca-f80b">
+          <profiles>
+            <profile name="Worldstrider" typeId="e69b-d424-94a2-0fe1" typeName="Feature" hidden="false" id="f652-b38a-94bc-fbdc">
+              <characteristics>
+                <characteristic name="ES" typeId="b3be-7f64-867b-94f7">4+</characteristic>
+                <characteristic name="KS" typeId="4e0b-e781-cee2-504d">4+</characteristic>
+                <characteristic name="Special" typeId="0042-a956-225d-9293">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Worldstrider" id="0066-4066-78c5-0d47" hidden="false">
+              <description>When you activate this Feature, you may pick another Feature on its Dropsite and roll a dice. On a result of a 3+, remove that Feature and any Battalions deployed on it from this Dropsite. If any Battalions are removed due to this rule, roll a dice. On a result of a 5+, this feature remains in play, otherwise, it is removed.
+This feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Deployable Features" hidden="false" id="55cc-9777-8de1-16e4" targetId="73f6-cabc-3dad-5334" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="14f4-6335-32e2-d99b-min" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14f4-6335-32e2-d99b-max" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58be-f877-ade4-612b"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="11b4-72d7-c64d-25c1" id="2ee6-3a35-ff24-b076" primary="true" name="Deployable Features"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Stellargate" hidden="false" id="fb5d-af80-233a-f528">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Stellargate" hidden="false" id="0928-7f8f-83ce-87f2">
+          <profiles>
+            <profile name="Stellargate" typeId="e69b-d424-94a2-0fe1" typeName="Feature" hidden="false" id="ba77-3328-26c9-3e27">
+              <characteristics>
+                <characteristic name="ES" typeId="b3be-7f64-867b-94f7">4+</characteristic>
+                <characteristic name="KS" typeId="4e0b-e781-cee2-504d">4+</characteristic>
+                <characteristic name="Special" typeId="0042-a956-225d-9293">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="c143-9303-36d0-7b2b" type="selectionEntry" targetId="a206-ec27-49d0-76d2"/>
+          </entryLinks>
+          <rules>
+            <rule name="Stellargate" id="1e0e-f9f7-7fe8-7116" hidden="false">
+              <description>After Battalion combat on this Feature’s Dropsite, if it contains any number of friendly Stellargates, deploy one Battalion to that Dropsite. A Dropsite can only have a single Battalion deployed to it this way each round.
+While you have one or more Stellargates on a Dropsite, that Dropsite counts as a Controlled Dropsite with Gateship-X for the purposes of the Mothership special rule, where X is the total number of friendly Stellargates on that Dropsite. Additionally, the Dropsite forms a part of a Gateship chain with friendly Gateships and Motherships within 18”.
+This feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Deployable Features" hidden="false" id="0d3a-9757-a036-c41f" targetId="73f6-cabc-3dad-5334" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f7e-7eec-8a39-ec65-min" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f7e-7eec-8a39-ec65-max" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4285-4a73-575f-17e8"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="11b4-72d7-c64d-25c1" id="49c3-0834-6ce6-7e62" primary="true" name="Deployable Features"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Radiation Aura" id="9414-fec0-adb3-c786" hidden="false">
@@ -3496,7 +3944,7 @@
       <description>Whenever this Flagship’s Gravity Coils would cause a ship to turn due to the Impel rule, gain 1AP.</description>
     </rule>
     <rule name="Shield Booster" id="f0c0-4983-dfb5-1878" hidden="false">
-      <description>While this Ship’s Group is in coherency, when another friendly Group within 6” of this Ship uses its Shield Save, you may improve that Group’s Shield-X special rule by 1 for that Save, to a maximum of 3+ (so Shield-6+ would become Shield-5+). If you do, this Ship’s Group gains a Spike. Each Shield Save can only be affected by this rule once and Ships with this special rule are unaffected.
+      <description>While this Ship’s Group is in coherency, when another friendly Group within 6” of this Ship uses its Shield Save, you may improve that Group’s Shield-X special rule by 1 for that Save, to a maximum of 3+ (so Shield-6+ would become Shield-5+). If you do, this Ship’s Group gains a Spike. Each Shield Save can only be affected by this rule once and Ships with this special rule are unaffected.
 This rule can only be used while this Ship’s Group has fewer than 4 Spikes.</description>
     </rule>
     <rule name="Void Skip" id="3c13-4dce-2534-ad09" hidden="false">
@@ -3509,6 +3957,9 @@ Crippling Effects, Spikes, and other rules that affect an entire Group only affe
     </rule>
     <rule name="Force Projectors" id="aae7-bb69-749e-ed86" hidden="false">
       <description>This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.</description>
+    </rule>
+    <rule name="Feature Carrier" id="03c8-3587-3058-64b4" hidden="false">
+      <description>At the start of the game, before players deploy, choose two Deployable Features from the Shaltari Deployable Features List (duplicates are allowed). This Ship starts the game carrying those Deployable Features.</description>
     </rule>
   </sharedRules>
   <entryLinks>
@@ -3531,10 +3982,16 @@ Crippling Effects, Spikes, and other rules that affect an entire Group only affe
     <entryLink import="true" name="Gold Supercarrier" hidden="false" id="3105-eb1c-200e-ec4e" targetId="7a31-3efb-7cae-cc4e" type="selectionEntry"/>
     <entryLink import="true" name="Platinum Supercarrier" hidden="false" id="3394-62a7-6ff9-dd9a" targetId="0275-b9ad-ecc6-3962" type="selectionEntry"/>
     <entryLink import="true" name="Diamond Battleship" hidden="false" id="dc81-e5a0-30e8-ac3e" targetId="237e-bf66-fe9d-510f" type="selectionEntry"/>
+    <entryLink import="true" name="Boracite Pocket Battleship" hidden="false" id="c492-27ea-2246-9ec4" targetId="093e-1464-2965-35e9" type="selectionEntry"/>
+    <entryLink import="true" name="Euclase Pocket Battleship" hidden="false" id="7873-3042-3716-1c19" targetId="cbb7-bb15-fb07-9d71" type="selectionEntry"/>
+    <entryLink import="true" name="Painite Pocket Battleship" hidden="false" id="8d70-0b5b-9443-7d8c" targetId="b774-5b9e-6672-7cf7" type="selectionEntry"/>
+    <entryLink import="true" name="Spinel Pocket Battleship" hidden="false" id="3e99-aeda-6f1e-5ee3" targetId="a34f-77d7-905d-9675" type="selectionEntry"/>
     <entryLink import="true" name="Goethite Battlecruiser" hidden="false" id="ee8b-508d-a7ad-c74c" targetId="a00e-a1b6-424c-1d11" type="selectionEntry"/>
     <entryLink import="true" name="Hematite Battlecruiser" hidden="false" id="dbd7-8ad6-cd78-66bd" targetId="dc56-6327-40e3-1c76" type="selectionEntry"/>
     <entryLink import="true" name="Sapphire Battlecruiser" hidden="false" id="9f8c-2f67-075f-59d2" targetId="9760-a922-16fc-b0f2" type="selectionEntry"/>
     <entryLink import="true" name="Ruby Battlecruiser" hidden="false" id="b3fc-293a-4fd4-2f4b" targetId="78d1-3d6e-acab-9dc5" type="selectionEntry"/>
+    <entryLink import="true" name="Natrolite Supercruiser" hidden="false" id="f7c1-5329-36cf-a8f4" targetId="d11f-ed6b-095a-7454" type="selectionEntry"/>
+    <entryLink import="true" name="Mesolite Supercruiser" hidden="false" id="8045-3f13-6b79-31a0" targetId="3e44-2131-2e2c-0299" type="selectionEntry"/>
     <entryLink import="true" name="Scoria Heavy Cruiser" hidden="false" id="e888-207f-6953-fd43" targetId="4b00-327a-9689-554b" type="selectionEntry"/>
     <entryLink import="true" name="Onyx Heavy Cruiser" hidden="false" id="69d0-7a21-bb35-9529" targetId="45b8-ad5e-1dfb-4c5c" type="selectionEntry"/>
     <entryLink import="true" name="Obsidian Heavy Cruiser" hidden="false" id="7d0a-711e-b6de-453e" targetId="b20f-b907-d1c9-8bff" type="selectionEntry"/>
@@ -3574,7 +4031,7 @@ Crippling Effects, Spikes, and other rules that affect an entire Group only affe
     <entryLink import="true" name="Shuriken" hidden="false" id="ab08-a3f5-bc9b-95cd" type="selectionEntry" targetId="8cf6-6559-ba2d-64a2"/>
     <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="d9ee-89e3-0f06-7d6a" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
     <entryLink import="true" name="M-Type Barge" hidden="false" id="0d50-e001-e69d-99fc" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
-    <entryLink import="true" name="T-Type Tugboat" hidden="false" id="f09e-6224-80b5-b8ef" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
+    <entryLink import="true" name="T-Type Tugboats" hidden="false" id="f09e-6224-80b5-b8ef" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
     <entryLink import="true" name="Jah’tar Startrader" hidden="false" id="64fe-2895-67ab-579d" type="selectionEntry" targetId="e1ee-f46b-05f3-54b2"/>
     <entryLink import="true" name="DH-Type Penal Transport" hidden="false" id="02ad-d42e-249e-16dd" type="selectionEntry" targetId="3c15-10cc-4cf2-7166"/>
     <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="0e61-55aa-61c4-6ef1" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
@@ -3706,6 +4163,17 @@ Crippling Effects, Spikes, and other rules that affect an entire Group only affe
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1a2-bca3-06bc-a383" includeChildSelections="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Deployable Features" id="1fa6-280f-ac35-bd35" hidden="false">
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bbf0-61c5-fe27-b45c-min"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bbf0-61c5-fe27-b45c-max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Electrosurge Torus" hidden="false" id="29cb-d2b4-b92d-232d" sortIndex="1"/>
+        <selectionEntry type="upgrade" import="true" name="Stellargate" hidden="false" id="ae86-f0e6-59aa-8a06" sortIndex="2"/>
+        <selectionEntry type="upgrade" import="true" name="Worldstrider" hidden="false" id="5b83-3ffd-07fc-1e44" sortIndex="3"/>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>

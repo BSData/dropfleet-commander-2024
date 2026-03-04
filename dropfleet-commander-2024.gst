@@ -95,6 +95,13 @@
     <categoryEntry name="Medium Ship" id="53c3-afc0-63ef-413a" hidden="false"/>
     <categoryEntry name="Light Ship" id="f942-8f88-d77b-13c1" hidden="false"/>
     <categoryEntry name="Payload" id="3fa9-60d3-d9be-6611" hidden="false"/>
+    <categoryEntry name="Feature Carrier" id="fe8e-9939-871d-6e43" hidden="false"/>
+    <categoryEntry name="Deployable Features" id="11b4-72d7-c64d-25c1" hidden="false">
+      <comment>Unit</comment>
+    </categoryEntry>
+    <categoryEntry name="Deployable Features" id="73f6-cabc-3dad-5334" hidden="false">
+      <comment>Model</comment>
+    </categoryEntry>
     <categoryEntry name="Space Stations" id="5ca8-89b2-52c6-d394" hidden="false"/>
     <categoryEntry name="Game" id="492c-ac66-3724-83bc" hidden="false"/>
     <categoryEntry name="Launch Assets" id="9cef-c723-f3e7-2dd2" hidden="false"/>
@@ -124,6 +131,7 @@
         <categoryLink name="Medium Groups" hidden="false" id="62fc-b5b7-b670-4429" targetId="e555-ff57-c478-18cd"/>
         <categoryLink name="Light Groups" hidden="false" id="27be-f8fa-6328-ee30" targetId="f51b-d892-62c0-3f1e"/>
         <categoryLink name="Payload Groups" hidden="false" id="7362-17e3-5fb1-9a39" targetId="8c2b-ea4d-8bea-c6a2"/>
+        <categoryLink name="Deployable Features" hidden="false" id="f298-9873-bf8a-c30b" targetId="11b4-72d7-c64d-25c1"/>
         <categoryLink name="Space Stations" hidden="false" id="838d-d872-d190-a1d5" targetId="5ca8-89b2-52c6-d394">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d88c-dc9b-1bb3-4c11" includeChildSelections="false"/>
@@ -395,7 +403,7 @@
         <characteristicType name="Special" id="1e8b-4801-6eb9-f278"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Load" id="7ba8-a64f-b5fb-8c3e" hidden="false" sortIndex="7">
+    <profileType name="Load" id="7ba8-a64f-b5fb-8c3e" hidden="false" sortIndex="8">
       <characteristicTypes>
         <characteristicType name="Launch" id="bcc4-f844-acff-aa94"/>
         <characteristicType name="Special" id="d3be-1a27-21ac-fb65"/>
@@ -432,17 +440,17 @@
         <characteristicType name="Special" id="473b-cbb5-5ba2-c2de"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Structure" id="2f84-97db-deff-fa6f" hidden="false" sortIndex="8">
+    <profileType name="Structure" id="2f84-97db-deff-fa6f" hidden="false" sortIndex="9">
       <characteristicTypes>
         <characteristicType name="Effect" id="1f58-541b-60dc-ea2a"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Objective" id="a7a6-a4ed-a906-e919" hidden="false" sortIndex="9">
+    <profileType name="Objective" id="a7a6-a4ed-a906-e919" hidden="false" sortIndex="10">
       <characteristicTypes>
         <characteristicType name="Description" id="f3e2-be91-7cd0-fd3a"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Launch Asset" id="2011-41e1-9c7c-9e25" hidden="false" sortIndex="10">
+    <profileType name="Launch Asset" id="2011-41e1-9c7c-9e25" hidden="false" sortIndex="11">
       <characteristicTypes>
         <characteristicType name="Thrust" id="8c30-992b-18d3-9a9e"/>
         <characteristicType name="Att" id="09f1-844b-5ba1-7b58"/>
@@ -452,10 +460,20 @@
         <characteristicType name="Special" id="9b33-7e68-b136-77db"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Launch Asset" id="3057-ca91-b261-38a8" hidden="false" sortIndex="11">
+    <profileType name="Launch Asset" id="3057-ca91-b261-38a8" hidden="false" sortIndex="12">
       <characteristicTypes>
         <characteristicType name="Thrust" id="ea0d-696a-c5fa-1684"/>
         <characteristicType name="KS Re-roll" id="d1c9-654e-a9f1-a88f"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Weapon" id="55a1-fca6-5a62-f9f4" hidden="false" sortIndex="7">
+      <characteristicTypes>
+        <characteristicType name="Scan" id="ca0d-8087-d02a-179b"/>
+        <characteristicType name="Att" id="3cb6-1718-186b-4bce"/>
+        <characteristicType name="Lock" id="4e0c-3aca-e97e-05c8"/>
+        <characteristicType name="Dmg" id="1314-c0f9-8c3a-21ff"/>
+        <characteristicType name="Type" id="a2f6-d421-0336-1c75"/>
+        <characteristicType name="Special" id="f633-dba6-938c-31f2"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
