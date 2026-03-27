@@ -206,7 +206,7 @@
           <profiles>
             <profile name="Key Site" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="fbaf-56a4-2c11-2115">
               <characteristics>
-                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one Dropsite at least 24” from your Deployment Zone before the game. If you Control it at the end of the game, gain 2VP.</characteristic>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one Dropsite at least 24” from your Deployment Zone before the game. If you Control it at the end of the game, gain 2VP. If this Dropsite is within 6” or inside your opponent’s Deployment Zone, gain 3VP instead.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -218,7 +218,7 @@
           <profiles>
             <profile name="Priority Target" typeId="a7a6-a4ed-a906-e919" typeName="Objective" hidden="false" id="3cf8-58ab-3bdd-2ce1">
               <characteristics>
-                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one Dropsite at least 24” from your Deployment Zone before the game. If you have Levelled it, at the end of the game, gain 2VP.</characteristic>
+                <characteristic name="Description" typeId="f3e2-be91-7cd0-fd3a">Nominate one Medium or Large Dropsite at least 24” from your Deployment Zone before the game. If you have Levelled it, at the end of the game gain 2VP. If this Dropsite is within 6” or inside your opponent’s Deployment zone, gain 3VP instead.</characteristic>
               </characteristics>
             </profile>
           </profiles>
