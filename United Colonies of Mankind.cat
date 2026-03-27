@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="23" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="24" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -914,7 +914,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="155"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="145"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f1f-73f7-58ec-5653" includeChildSelections="false"/>
@@ -956,7 +956,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="180"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="165"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6c6-e70a-f84a-f27e" includeChildSelections="false"/>
@@ -1251,7 +1251,7 @@
           </constraints>
           <entryLinks>
             <entryLink import="true" name="UF-6400 Mass Driver Turrets" hidden="false" id="c9a4-29a7-45f1-ae2f" type="selectionEntry" targetId="24ef-131a-f7ce-85bd" sortIndex="1"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="cd51-cfc1-8b6a-a13c" type="selectionEntry" targetId="ba6a-589a-610d-5df4" sortIndex="2"/>
+            <entryLink import="true" name="Minelayer" hidden="false" id="85f2-9c8b-1821-869a" type="selectionEntryGroup" targetId="839f-9cb7-81f7-20ba" sortIndex="2"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2470,12 +2470,12 @@
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Lysander Stealth Lighter" hidden="false" id="364a-f59e-23ac-37de" publicationId="9813-8e60-542d-9381" page="8">
+        <selectionEntry type="model" import="true" name="Lysander Stealth Lighter" hidden="false" id="364a-f59e-23ac-37de" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="83b0-d47a-e886-febf" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Lysander" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7375-2a59-7de3-b771" publicationId="9813-8e60-542d-9381" page="8">
+            <profile name="Lysander" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="7375-2a59-7de3-b771" publicationId="9813-8e60-542d-9381">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -2485,7 +2485,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">6+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">-</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">2-4</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Descent, Cloak-1, Rare, Stealth Drop, Vanguard-6&quot;</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Descent, Cloak-1, Rare, Vanguard-6&quot;, Stealth Drop</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2516,12 +2516,12 @@
         <categoryLink targetId="default-category" id="7d62-0d46-063b-4084" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Santiago Corvette" hidden="false" id="4c97-1c8e-e3a9-ad0c" publicationId="9813-8e60-542d-9381" page="7">
+        <selectionEntry type="model" import="true" name="Santiago Corvette" hidden="false" id="4c97-1c8e-e3a9-ad0c" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Light Ship" hidden="false" id="04ea-3828-c362-3a3b" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Santiago" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="ce81-292c-9789-5212" publicationId="9813-8e60-542d-9381" page="7">
+            <profile name="Santiago" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="ce81-292c-9789-5212" publicationId="9813-8e60-542d-9381">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">14&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -3255,7 +3255,7 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ec8-627c-4669-e07b" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="980d-d429-35e8-a298" includeChildSelections="false"/>
       </constraints>
-      <comment>F/S/R 4/4+/1/K AtA CA</comment>
+      <comment>F/S/R 4/3+/1/K AtA CA</comment>
       <infoLinks>
         <infoLink name="Air to Air" id="b501-a51a-2b63-70ce" hidden="false" type="rule" targetId="ceee-e18a-c60c-0ef5"/>
         <infoLink name="Close Action" id="d51c-189b-f6a0-d6f0" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
@@ -3324,6 +3324,25 @@
       <infoLinks>
         <infoLink name="Limited-X" id="eac6-cff6-e416-7f0e" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
         <infoLink name="Penetrator" id="c5fd-57f4-b7e7-625c" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="f220-d694-f24c-d00d">
+      <profiles>
+        <profile name="Medium Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="fd07-5715-6253-ad65">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">1</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">Limited-4, Penetrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd29-af8f-d14a-9fae" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed26-1f8e-affc-1a39" includeChildSelections="false"/>
+      </constraints>
+      <comment>1 L-4 Pen</comment>
+      <infoLinks>
+        <infoLink name="Limited-X" id="aa06-8ee5-1902-430e" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
+        <infoLink name="Penetrator" id="2ddb-b3d3-1aca-d614" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="1ac0-a1aa-8566-6c8e">
@@ -3761,6 +3780,113 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Reference -----" hidden="true" id="36a6-09df-a8a1-9bde" exportable="false"/>
+    <selectionEntry type="unit" import="true" name="Aegis Platform" hidden="false" id="8222-a290-f39e-07d3">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Aegis Platform" hidden="false" id="4d8b-35e9-a353-a31e">
+          <profiles>
+            <profile name="Aegis Platform" typeId="e69b-d424-94a2-0fe1" typeName="Feature" hidden="false" id="7218-3576-c6db-14ce">
+              <characteristics>
+                <characteristic name="ES" typeId="b3be-7f64-867b-94f7">6+</characteristic>
+                <characteristic name="KS" typeId="4e0b-e781-cee2-504d">4+</characteristic>
+                <characteristic name="Special" typeId="0042-a956-225d-9293">Aegis-4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Aegis Platform" id="f78b-7947-811e-eba4" hidden="false">
+              <description>Each friendly Aegis Platform counts as a separate friendly Group for the purposes of its Aegis-X special rule. While this feature is deployed to a Dropsite, friendly groups treat the Dropsite as if it were a friendly Ship with Aegis-4 on the same Orbital Layer for the purposes of enemy close action and bomber attacks.
+This Feature’s Aegis special rule affects friendly Ships in Orbit in addition to Atmosphere.
+After enemy assets end their movement within 4”, are placed within 4” of, or are deployed to this Dropsite, roll a dice for each of those assets. For each result of a 5+, remove one of those assets. Enemy Features are only removed on a result of a 6+. Only one Aegis Platform can be used this way for each Asset and any Battalions already on the Dropsite are ignored.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Deployable Features" hidden="false" id="13d4-0837-56ec-4842" targetId="73f6-cabc-3dad-5334" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b4a-0874-9462-c2ae" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e283-e44f-633c-bd38" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b143-a524-b7e4-55ba" automatic="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Deployable Features" hidden="false" id="cb84-358c-4d6d-83e8" targetId="11b4-72d7-c64d-25c1" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Comms Platform" hidden="false" id="e5ac-ee7e-cec2-6eb9">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Comms Platform" hidden="false" id="7f8a-04d3-564a-620e">
+          <profiles>
+            <profile name="Comms Platform" typeId="e69b-d424-94a2-0fe1" typeName="Feature" hidden="false" id="6a53-499f-32f2-5a1a">
+              <characteristics>
+                <characteristic name="ES" typeId="b3be-7f64-867b-94f7">5+</characteristic>
+                <characteristic name="KS" typeId="4e0b-e781-cee2-504d">5+</characteristic>
+                <characteristic name="Special" typeId="0042-a956-225d-9293">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Comms Platform" id="23e3-5f8a-24a9-c276" hidden="false">
+              <description>Friendly Ships with the Command Ship-X ability within 8” of one or more Dropsites with a friendly Comms Platform improve the X value of that rule by 1 when generating AP.
+Friendly Ships within 8” of this Feature’s Dropsite ignore the effects of any Scanners Offline token.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Deployable Features" hidden="false" id="0139-362a-3e71-32bd" targetId="73f6-cabc-3dad-5334" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bfe6-b129-6991-a875" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f96-9bf3-cc41-fc23" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4172-3597-3caf-b550"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Deployable Features" hidden="false" id="d5a5-ad2b-81a2-825e" targetId="11b4-72d7-c64d-25c1" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Torpedo Platform" hidden="false" id="682b-72f9-37cc-f98b">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Torpedo Platform" hidden="false" id="bfe7-83a8-9483-9cf5">
+          <profiles>
+            <profile name="Torpedo Platform" typeId="e69b-d424-94a2-0fe1" typeName="Feature" hidden="false" id="680f-89ca-aff6-90cc">
+              <characteristics>
+                <characteristic name="ES" typeId="b3be-7f64-867b-94f7">5+</characteristic>
+                <characteristic name="KS" typeId="4e0b-e781-cee2-504d">5+</characteristic>
+                <characteristic name="Special" typeId="0042-a956-225d-9293">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Medium Torpedo" hidden="false" id="3ece-ce7c-b0e7-9c06" type="selectionEntry" targetId="f220-d694-f24c-d00d"/>
+          </entryLinks>
+          <rules>
+            <rule name="Torpedo Platform" id="0481-26af-5ac4-c842" hidden="false">
+              <description>When an attacking Group or Asset/s attack would cause this feature to be removed, if it has any remaining Torpedoes, the attacking opponent may remove one additional Feature and any Battalions assigned to it from this Dropsite.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink name="Deployable Features" hidden="false" id="07e9-c0e1-dd6c-930d" targetId="73f6-cabc-3dad-5334" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="180e-5b0d-170e-f603" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="beae-7879-df18-0347" includeChildSelections="false" includeChildForces="false" automatic="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94d4-32d7-fde7-c058"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Deployable Features" hidden="false" id="2bb3-eaa3-802f-5d2d" targetId="11b4-72d7-c64d-25c1" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deployable Feature" hidden="false" id="8e2c-2d1a-212a-09d6"/>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Lvl 1: Captain" hidden="false" id="481d-7863-ffb3-aa4f" targetId="19a9-7d1f-50b2-e998" type="selectionEntry"/>
@@ -3831,7 +3957,7 @@
     <entryLink import="true" name="Centurion Grand Cruisers" hidden="false" id="6f78-5a1b-e2cb-497f" type="selectionEntry" targetId="e131-eb84-312c-6fd2"/>
     <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="07b0-7286-6d3b-4f33" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
     <entryLink import="true" name="M-Type Barge" hidden="false" id="a6c1-ef68-42b0-93af" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
-    <entryLink import="true" name="T-Type Tugboat" hidden="false" id="ee03-5982-f3ca-0362" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
+    <entryLink import="true" name="T-Type Tugboats" hidden="false" id="ee03-5982-f3ca-0362" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
     <entryLink import="true" name="Jah’tar Startrader" hidden="false" id="ff17-a3bf-0f6b-e55f" type="selectionEntry" targetId="e1ee-f46b-05f3-54b2"/>
     <entryLink import="true" name="DH-Type Penal Transport" hidden="false" id="61d8-17e4-2d87-faa3" type="selectionEntry" targetId="3c15-10cc-4cf2-7166"/>
     <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="786b-fded-aedd-99e5" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
@@ -3839,9 +3965,12 @@
     <entryLink import="true" name="Type-87 Terminus Harvester" hidden="false" id="2fb5-1e23-5c4a-eb90" type="selectionEntry" targetId="d8f6-3b3f-66a7-019a"/>
     <entryLink import="true" name="VX-22 Flenser" hidden="false" id="2748-3288-dd06-badc" type="selectionEntry" targetId="1caa-22ad-f152-b011"/>
     <entryLink import="true" name="Launch Assets" hidden="false" id="d611-8ddb-8967-32b1" targetId="76f2-9ded-5c83-da35" type="selectionEntry"/>
+    <entryLink import="true" name="Aegis Platform" hidden="false" id="357c-2c6c-6802-cb56" targetId="8222-a290-f39e-07d3" type="selectionEntry"/>
+    <entryLink import="true" name="Comms Platform" hidden="false" id="ef07-f08a-e2f4-630d" targetId="e5ac-ee7e-cec2-6eb9" type="selectionEntry"/>
+    <entryLink import="true" name="Torpedo Platform" hidden="false" id="26f1-b8cb-e69d-a575" targetId="682b-72f9-37cc-f98b" type="selectionEntry"/>
   </entryLinks>
   <publications>
-    <publication name="UCM Combined Fleet Stats (241024)" id="9813-8e60-542d-9381" hidden="false" shortName="UCM Stats (241024)"/>
+    <publication name="UCM Combined Fleet Stats (260327)" id="9813-8e60-542d-9381" hidden="false" shortName="UCM Stats (260327)"/>
   </publications>
   <sharedProfiles>
     <profile name="UF-9000 Mass Driver Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="8cc9-f479-28a7-d8b3">
@@ -4067,6 +4196,49 @@ Order to Fire (2AP): When you activate another friendly Group in Orbit, pick one
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Minelayer" id="839f-9cb7-81f7-20ba" hidden="false" defaultSelectionEntryId="a7d7-445a-8b57-df38">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69d2-8ebe-7c80-cf3c" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="073a-e688-4394-d03d" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mines" hidden="false" id="e704-f5d3-c214-4c77" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c12e-8e08-6211-4dd4" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2fd-a5b8-1e0e-91dc" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mines" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="944c-8b49-51e8-5c1c">
+              <characteristics>
+                <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+                <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="1aee-cf22-61c2-26ea" type="selectionEntry" targetId="ba6a-589a-610d-5df4" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="0" field="d75c-1191-37b5-819a"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Deployable Features" id="5b97-5439-ff85-2096" hidden="false">
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="66c7-aaec-82e2-40d2"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ef96-2919-9e24-843d"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Aegis Platform" hidden="false" id="2cad-bfaa-05db-9693" sortIndex="1"/>
+        <selectionEntry type="upgrade" import="true" name="Comms Platform" hidden="false" id="0b61-dcce-377d-def1" sortIndex="2"/>
+        <selectionEntry type="upgrade" import="true" name="Torpedo Platform" hidden="false" id="b74b-038e-9ff0-fcf1" sortIndex="3"/>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>

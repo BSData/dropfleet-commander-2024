@@ -96,15 +96,15 @@
     <categoryEntry name="Light Ship" id="f942-8f88-d77b-13c1" hidden="false"/>
     <categoryEntry name="Payload" id="3fa9-60d3-d9be-6611" hidden="false"/>
     <categoryEntry name="Feature Carrier" id="fe8e-9939-871d-6e43" hidden="false"/>
+    <categoryEntry name="Space Stations" id="5ca8-89b2-52c6-d394" hidden="false"/>
     <categoryEntry name="Deployable Features" id="11b4-72d7-c64d-25c1" hidden="false">
       <comment>Unit</comment>
     </categoryEntry>
     <categoryEntry name="Deployable Features" id="73f6-cabc-3dad-5334" hidden="false">
       <comment>Model</comment>
     </categoryEntry>
-    <categoryEntry name="Space Stations" id="5ca8-89b2-52c6-d394" hidden="false"/>
-    <categoryEntry name="Game" id="492c-ac66-3724-83bc" hidden="false"/>
     <categoryEntry name="Launch Assets" id="9cef-c723-f3e7-2dd2" hidden="false"/>
+    <categoryEntry name="Game" id="492c-ac66-3724-83bc" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Fleet" hidden="false" id="fa3c-5c2f-ae78-ba22">
@@ -131,13 +131,13 @@
         <categoryLink name="Medium Groups" hidden="false" id="62fc-b5b7-b670-4429" targetId="e555-ff57-c478-18cd"/>
         <categoryLink name="Light Groups" hidden="false" id="27be-f8fa-6328-ee30" targetId="f51b-d892-62c0-3f1e"/>
         <categoryLink name="Payload Groups" hidden="false" id="7362-17e3-5fb1-9a39" targetId="8c2b-ea4d-8bea-c6a2"/>
-        <categoryLink name="Deployable Features" hidden="false" id="f298-9873-bf8a-c30b" targetId="11b4-72d7-c64d-25c1"/>
         <categoryLink name="Space Stations" hidden="false" id="838d-d872-d190-a1d5" targetId="5ca8-89b2-52c6-d394">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d88c-dc9b-1bb3-4c11" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Launch Assets" hidden="false" id="40cf-76cf-cc5c-6706" targetId="9cef-c723-f3e7-2dd2"/>
+        <categoryLink name="Deployable Features" hidden="false" id="f298-9873-bf8a-c30b" targetId="11b4-72d7-c64d-25c1"/>
         <categoryLink name="Game" hidden="false" id="2618-a0a9-42fb-4431" targetId="492c-ac66-3724-83bc"/>
       </categoryLinks>
       <constraints>
@@ -582,6 +582,8 @@ Hits caused by Boarding Actions cannot be saved by Shield Saves.</description>
     </rule>
     <rule name="Vanguard-X" id="0afa-aca9-640a-973e" hidden="false">
       <description>Groups with this rule may begin the game Directly Deployed, ignoring the normal Scenario Deployment and Approach Types (though still counting towards Groups Directly Deployed). If it does, it may be deployed up to X” away from your Deployment Zone.</description>
+      <alias>Vanguard-4&quot;</alias>
+      <alias>Vanguard-6&quot;</alias>
     </rule>
     <rule name="Vectored" id="7a2f-fbe0-b3cd-98c8" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="37">
       <description>This Ship may make an additional turn at any point during its movement, regardless of the Order its Group has taken.</description>
