@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="24" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="25" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -801,6 +801,225 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Milwaukee Pocket Battleship" hidden="false" id="52bd-24b3-f72b-1631">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="7d6a-e944-dac2-2faa" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="c9fb-62d4-a250-33ec" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Milwaukee Pocket Battleship" hidden="false" id="2b61-5a9f-50d3-3afd" publicationId="9813-8e60-542d-9381" page="">
+          <categoryLinks>
+            <categoryLink name="Heavy Ship" hidden="false" id="e9f4-af76-c27d-de6f" targetId="9d6f-26b0-7969-496b" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Milwaukee" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e1ca-6cd0-19c4-c87a" publicationId="9813-8e60-542d-9381" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">15</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Feature Carrier</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="225"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3503-af3c-1387-cb83" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f261-ae2d-8a98-43c2" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Elapid Laser Turrets" hidden="false" id="b13c-d6a0-fdfc-0cd3" type="selectionEntry" targetId="998c-82ff-95c3-84c5" sortIndex="1"/>
+            <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="50b7-9036-c77c-3171" type="selectionEntry" targetId="e3cc-ed50-4435-2a87" sortIndex="2"/>
+            <entryLink import="true" name="Swordfish Missile Bays" hidden="false" id="1e96-4253-f82f-73a4" type="selectionEntry" targetId="a476-d888-c853-71ed" sortIndex="3"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="d533-8272-2d0f-7d3d" type="selectionEntry" targetId="ba6a-589a-610d-5df4"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Feature Carrier" id="2e33-ffd6-291f-d6f4" hidden="false" type="rule" targetId="c6ab-b077-83e9-ed53"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rotterdam Pocket Battleship" hidden="false" id="f105-50a5-6a6f-5979">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="9457-91db-bb33-c11f" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="069e-4a84-45b0-302d" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Rotterdam Pocket Battleship" hidden="false" id="d0d2-14ee-983a-92a4" publicationId="9813-8e60-542d-9381" page="">
+          <categoryLinks>
+            <categoryLink name="Heavy Ship" hidden="false" id="8ee5-671f-cab5-4166" targetId="9d6f-26b0-7969-496b" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Rotterdam" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9069-4e9f-43dc-ccaf" publicationId="9813-8e60-542d-9381" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">15</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Command Ship-2, Feature Carrier, UCMA Battlenet</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="195"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="520e-7029-7f54-dd64" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="131d-e0bd-6bd8-2c02" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Taipan Laser Turrets" hidden="false" id="a0ce-8e25-7463-a189" type="selectionEntry" targetId="d059-cd94-1cfb-3065" sortIndex="1"/>
+            <entryLink import="true" name="Swordfish Missile Bays" hidden="false" id="2a0e-e532-9097-c26d" type="selectionEntry" targetId="a476-d888-c853-71ed" sortIndex="2"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Command Ship-X" id="cb66-72be-d5dd-179f" hidden="false" type="rule" targetId="af88-13e6-5004-d00a"/>
+            <infoLink name="Feature Carrier" id="d0e3-cc63-f8d6-e438" hidden="false" type="rule" targetId="c6ab-b077-83e9-ed53"/>
+            <infoLink name="UCMA Battlenet" id="c797-92ba-e874-fe4c" hidden="false" type="rule" targetId="c245-6148-bd8a-d5af"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="New Dubai Pocket Battleship" hidden="false" id="2954-a3f8-86db-0f15">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="4ff8-79d8-362f-513a" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="176a-bbc8-78d9-cbec" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="New Dubai Pocket Battleship" hidden="false" id="7881-15b3-942d-be5a" publicationId="9813-8e60-542d-9381" page="">
+          <categoryLinks>
+            <categoryLink name="Heavy Ship" hidden="false" id="716d-7d2b-1fd9-6d8a" targetId="9d6f-26b0-7969-496b" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="New Dubai" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0559-ee7e-58f1-9b36" publicationId="9813-8e60-542d-9381" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">15</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Aegis-6, Feature Carrier</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="215"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b036-4fbd-8a87-1332" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99b3-8d57-ca15-1945" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Arowana Missile Turrets" hidden="false" id="d3fd-dd9e-0a34-a37b" type="selectionEntry" targetId="98fc-dfc7-5027-febe" sortIndex="1"/>
+            <entryLink import="true" name="Swordfish Missile Bays" hidden="false" id="c8f9-64f4-56ab-5321" type="selectionEntry" targetId="a476-d888-c853-71ed" sortIndex="2"/>
+            <entryLink import="true" name="Heavy Torpedo" hidden="false" id="40ef-228a-7545-48b6" type="selectionEntry" targetId="6056-1c28-69c4-ddfd" sortIndex="3"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Feature Carrier" id="05e8-ccff-ad5c-512d" hidden="false" type="rule" targetId="c6ab-b077-83e9-ed53"/>
+            <infoLink name="Aegis-X" id="2078-2986-74ce-2237" hidden="false" type="rule" targetId="9cd1-441e-8ee8-7f13"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hong Kong Pocket Battleship" hidden="false" id="8188-6eb3-950a-2eb7">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="047c-8a6f-3513-7d64" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="ecca-72f4-a992-a959" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Hong Kong Pocket Battleship" hidden="false" id="2a04-e538-e277-3d0a" publicationId="9813-8e60-542d-9381" page="">
+          <categoryLinks>
+            <categoryLink name="Heavy Ship" hidden="false" id="e580-f27c-4bfc-e309" targetId="9d6f-26b0-7969-496b" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Hong Kong" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="de5f-9c18-74c5-641e" publicationId="9813-8e60-542d-9381" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">15</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Feature Carrier</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="185"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2478-d72f-9fe4-43d9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7674-494d-cd2b-c774" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Viper Super Heavy Laser" hidden="false" id="bded-b83b-a912-f34b" type="selectionEntry" targetId="5f7b-3797-3168-219b" sortIndex="1"/>
+            <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="d9be-9e11-c8cc-d36e" type="selectionEntry" targetId="e460-34c5-6c21-c94c" sortIndex="2"/>
+            <entryLink import="true" name="Arowana Missile Turrets" hidden="false" id="d979-479d-0bf2-439f" type="selectionEntry" targetId="1970-7c4f-729c-c6ca" sortIndex="3"/>
+            <entryLink import="true" name="Swordfish Missile Bays" hidden="false" id="cbdf-5e64-a60c-ac57" type="selectionEntry" targetId="a476-d888-c853-71ed" sortIndex="4"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Feature Carrier" id="4a07-d585-19df-5c79" hidden="false" type="rule" targetId="c6ab-b077-83e9-ed53"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Siam Battlecruiser" hidden="false" id="39fe-aacd-8dcc-a0d4">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="79ca-b4f1-3fa4-2e6e" primary="false" name="Group"/>
+        <categoryLink targetId="8d99-053d-ffeb-98c5" id="b928-c8db-88b8-54de" primary="true" name="Heavy Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Siam Battlecruiser" hidden="false" id="30ba-e3c7-c79b-f296" publicationId="9813-8e60-542d-9381" page="">
+          <categoryLinks>
+            <categoryLink name="Heavy Ship" hidden="false" id="e9f8-2bd7-7f93-e536" targetId="9d6f-26b0-7969-496b" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Siam" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="17f1-ad8d-9fb7-25b6" publicationId="9813-8e60-542d-9381" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">14</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Vanguard-4”</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="180"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b0c-4673-1bd4-156e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="407e-ae65-fb1e-2ea1" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Elapid Laser Turret" hidden="false" id="1e4e-9a82-711a-a90f" type="selectionEntry" targetId="8303-3891-824c-2d35" sortIndex="1"/>
+            <entryLink import="true" name="Arowana Missile Turrets" hidden="false" id="c11f-09d2-eeeb-1afe" type="selectionEntry" targetId="1970-7c4f-729c-c6ca" sortIndex="2"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="b1d9-7fe2-3954-fcac" type="selectionEntry" targetId="ba6a-589a-610d-5df4"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Vanguard-X" id="7e70-d755-2a20-4527" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Venice Command Battlecruiser" hidden="false" id="f951-0068-3bfa-bdb6">
       <categoryLinks>
         <categoryLink targetId="default-category" id="a860-dd13-850c-854c" primary="false" name="Group"/>
@@ -969,6 +1188,94 @@
           </entryLinks>
           <infoLinks>
             <infoLink name="Vanguard-X" id="10d8-85de-f98c-82e4" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Busan Supercruiser" hidden="false" id="3480-ea64-5985-f53a">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="1500-73df-b29f-3ea4" primary="false" name="Group"/>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="b2c3-1933-a8fc-0637" primary="true" name="Medium Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Busan Supercruiser" hidden="false" id="f4f3-ea1c-41aa-3705" page="" publicationId="9813-8e60-542d-9381">
+          <categoryLinks>
+            <categoryLink name="Medium Ship" hidden="false" id="7c5f-ca8a-d3e7-8693" targetId="53c3-afc0-63ef-413a" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Busan" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4d0f-c7d4-fb33-7692" publicationId="9813-8e60-542d-9381" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">13</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Feature Carrier</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Elapid Laser Turret" hidden="false" id="b354-c447-cb51-973e" type="selectionEntry" targetId="8303-3891-824c-2d35" sortIndex="1"/>
+            <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="99c3-ea2b-391a-89e4" type="selectionEntry" targetId="e460-34c5-6c21-c94c" sortIndex="2"/>
+            <entryLink import="true" name="Arowana Missile Turrets" hidden="false" id="af44-fae4-2db5-176f" type="selectionEntry" targetId="1970-7c4f-729c-c6ca" sortIndex="3"/>
+            <entryLink import="true" name="Swordfish Missile Bays" hidden="false" id="04d7-0401-0ea0-4198" type="selectionEntry" targetId="a476-d888-c853-71ed" sortIndex="4"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="166"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9491-2f44-e0c3-0baa" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8817-6820-0432-ac5b" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Feature Carrier" id="a946-9486-564c-02c2" hidden="false" type="rule" targetId="c6ab-b077-83e9-ed53"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Yokohama Supercruiser" hidden="false" id="36e8-2fd5-1142-8c24">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="66d7-fbbe-f162-aa6e" primary="false" name="Group"/>
+        <categoryLink targetId="e555-ff57-c478-18cd" id="bb00-9d08-e17b-4207" primary="true" name="Medium Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Yokohama Supercruiser" hidden="false" id="8dec-5eb3-c3b3-fe1f" page="" publicationId="9813-8e60-542d-9381">
+          <categoryLinks>
+            <categoryLink name="Medium Ship" hidden="false" id="5f4c-1be5-ee66-5502" targetId="53c3-afc0-63ef-413a" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Yokohama" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0c0a-2c92-32d6-1bf6" publicationId="9813-8e60-542d-9381" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">6&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">13</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">3+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Feature Carrier</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="UF-6400 Mass Driver Twin Turret" hidden="false" id="fb5d-4953-cd8e-99ec" type="selectionEntry" targetId="8da2-3250-c705-7334" sortIndex="1"/>
+            <entryLink import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="175e-e4a1-df47-ae1a" type="selectionEntry" targetId="e460-34c5-6c21-c94c" sortIndex="2"/>
+            <entryLink import="true" name="Taipan Laser Turrets" hidden="false" id="7f32-3393-d0dc-91a4" type="selectionEntry" targetId="f24c-4fcc-cab4-a25e" sortIndex="3"/>
+            <entryLink import="true" name="Swordfish Missile Bays" hidden="false" id="e11f-fa06-1b27-a048" type="selectionEntry" targetId="a476-d888-c853-71ed" sortIndex="4"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="160"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6555-cfd7-4bb2-1bff" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e393-105a-7517-8b5a" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Feature Carrier" id="4598-46c1-e39b-927c" hidden="false" type="rule" targetId="c6ab-b077-83e9-ed53"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2717,6 +3024,72 @@
       </constraints>
       <comment>FN 3/2+/1/E Scald-2</comment>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Elapid Laser Turrets" hidden="false" id="998c-82ff-95c3-84c5">
+      <profiles>
+        <profile name="Elapid Laser Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cae7-4e98-cb90-95c5">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Penetrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Penetrator" id="a97c-b21a-0880-43df" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79a3-bd89-12f1-d284" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30a8-e522-00ff-f93b" includeChildSelections="false"/>
+      </constraints>
+      <comment>F/S 4/2+/2/E Pen</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Elapid Laser Turret" hidden="false" id="8303-3891-824c-2d35">
+      <profiles>
+        <profile name="Elapid Laser Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="1654-4afb-f690-8537">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">2</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Penetrator</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Penetrator" id="d73b-7b7d-a21d-182a" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9db4-fe9f-4bf2-9342" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a51e-6437-a0eb-7d4c" includeChildSelections="false"/>
+      </constraints>
+      <comment>F/S 2/2+/2/E Pen</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Taipan Laser Turrets" hidden="false" id="d059-cd94-1cfb-3065">
+      <profiles>
+        <profile name="Taipan Laser Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6e63-073a-7ca0-a1d4">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">2</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">2+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">E</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Scald-2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Scald-X" id="c21c-4f7d-d264-4c33" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a311-6468-2d26-4cb3" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cf8b-2a15-0a82-e47a" includeChildSelections="false"/>
+      </constraints>
+      <comment>[x2] F/S 2/2+/1/E Scald-2</comment>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Taipan Laser Turrets" hidden="false" id="f24c-4fcc-cab4-a25e">
       <profiles>
         <profile name="Taipan Laser Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cfe1-53a6-3174-bf1b">
@@ -2903,6 +3276,28 @@
       <infoLinks>
         <infoLink name="Critical-X" id="d169-d80d-7abd-51c0" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
         <infoLink name="Volley-X" id="2802-02b2-a6dd-d155" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Twin Turret" hidden="false" id="8da2-3250-c705-7334">
+      <profiles>
+        <profile name="UF-6400 Mass Driver Twin Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5e54-69c1-207a-0441">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Critical-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c80f-7783-eb69-aa59" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54e1-903a-3fba-f706" includeChildSelections="false"/>
+      </constraints>
+      <comment>F/S 4/3+/1/K Crit-1</comment>
+      <infoLinks>
+        <infoLink name="Critical-X" id="ca05-c28c-be3d-8a2a" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Turret Battery" hidden="false" id="2d6b-6eb8-5254-1a96">
@@ -3148,6 +3543,29 @@
         <infoLink name="Close Action" id="c055-99cc-a062-22d4" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Arowana Missile Turrets" hidden="false" id="98fc-dfc7-5027-febe">
+      <profiles>
+        <profile name="Arowana Missile Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="04a4-034a-e500-5d60">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">6</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action, Scald-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0ec0-a38c-ea11-96be" includeChildSelections="false"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="40d1-cc05-6dc7-d23f" includeChildSelections="false"/>
+      </constraints>
+      <comment>[x2] F/S/R 6/3+/1/K CA Scald-1</comment>
+      <infoLinks>
+        <infoLink name="Close Action" id="b9d3-26ee-8829-8d54" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+        <infoLink name="Scald-X" id="f5d5-ed27-ff28-6f4a" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arowana Missile Turrets" hidden="false" id="1970-7c4f-729c-c6ca">
       <profiles>
         <profile name="Arowana Missile Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="e8d6-ba3a-535f-857d">
@@ -3191,6 +3609,28 @@
       <comment>F/S 6/4+/1/K CA</comment>
       <infoLinks>
         <infoLink name="Close Action" id="a533-e149-1707-8f72" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Swordfish Missile Bays" hidden="false" id="a476-d888-c853-71ed">
+      <profiles>
+        <profile name="Swordfish Missile Bays" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5710-c6cc-316c-0488">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">8</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">4+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18ff-fc2d-d02e-0396" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f8c-b72b-924e-6887" includeChildSelections="false"/>
+      </constraints>
+      <comment>F/S/R 8/4+/1/K CA</comment>
+      <infoLinks>
+        <infoLink name="Close Action" id="644e-cc31-b35c-05fb" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shark Missile Bays" hidden="false" id="a173-a2d7-d2a9-856a">
@@ -3635,9 +4075,12 @@
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deployable Feature" hidden="false" id="8e2c-2d1a-212a-09d6"/>
+    <selectionEntry type="upgrade" import="false" name="----- Reference -----" hidden="true" id="36a6-09df-a8a1-9bde" exportable="false"/>
     <selectionEntry type="upgrade" import="true" name="Launch Assets" hidden="false" id="76f2-9ded-5c83-da35" defaultAmount="1">
       <categoryLinks>
-        <categoryLink name="Launch Assets" hidden="false" id="e45b-93dd-6a32-0ef0" targetId="9cef-c723-f3e7-2dd2" primary="true"/>
+        <categoryLink name="Launch Assets" hidden="false" id="e45b-93dd-6a32-0ef0" targetId="9cef-c723-f3e7-2dd2" primary="false"/>
+        <categoryLink targetId="dbff-12ce-7e10-7001" id="0ac7-35c7-f2d8-6d5d" primary="true" name="Reference"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a42c-e159-ac6e-a287" includeChildSelections="false"/>
@@ -3780,7 +4223,6 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="false" name="----- Reference -----" hidden="true" id="36a6-09df-a8a1-9bde" exportable="false"/>
     <selectionEntry type="unit" import="true" name="Aegis Platform" hidden="false" id="8222-a290-f39e-07d3">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Aegis Platform" hidden="false" id="4d8b-35e9-a353-a31e">
@@ -3813,7 +4255,8 @@ After enemy assets end their movement within 4”, are placed within 4” of, or
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b143-a524-b7e4-55ba" automatic="false"/>
       </constraints>
       <categoryLinks>
-        <categoryLink name="Deployable Features" hidden="false" id="cb84-358c-4d6d-83e8" targetId="11b4-72d7-c64d-25c1" primary="true"/>
+        <categoryLink name="Deployable Features" hidden="false" id="cb84-358c-4d6d-83e8" targetId="11b4-72d7-c64d-25c1" primary="false"/>
+        <categoryLink targetId="dbff-12ce-7e10-7001" id="9c24-d8e2-4706-14ec" primary="true" name="Reference"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Comms Platform" hidden="false" id="e5ac-ee7e-cec2-6eb9">
@@ -3847,7 +4290,8 @@ Friendly Ships within 8” of this Feature’s Dropsite ignore the effects of an
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4172-3597-3caf-b550"/>
       </constraints>
       <categoryLinks>
-        <categoryLink name="Deployable Features" hidden="false" id="d5a5-ad2b-81a2-825e" targetId="11b4-72d7-c64d-25c1" primary="true"/>
+        <categoryLink name="Deployable Features" hidden="false" id="d5a5-ad2b-81a2-825e" targetId="11b4-72d7-c64d-25c1" primary="false"/>
+        <categoryLink targetId="dbff-12ce-7e10-7001" id="f8ac-9565-2fd8-a913" primary="true" name="Reference"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Torpedo Platform" hidden="false" id="682b-72f9-37cc-f98b">
@@ -3883,10 +4327,10 @@ Friendly Ships within 8” of this Feature’s Dropsite ignore the effects of an
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94d4-32d7-fde7-c058"/>
       </constraints>
       <categoryLinks>
-        <categoryLink name="Deployable Features" hidden="false" id="2bb3-eaa3-802f-5d2d" targetId="11b4-72d7-c64d-25c1" primary="true"/>
+        <categoryLink name="Deployable Features" hidden="false" id="2bb3-eaa3-802f-5d2d" targetId="11b4-72d7-c64d-25c1" primary="false"/>
+        <categoryLink targetId="dbff-12ce-7e10-7001" id="a615-d69f-40ca-8c64" primary="true" name="Reference"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Deployable Feature" hidden="false" id="8e2c-2d1a-212a-09d6"/>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Lvl 1: Captain" hidden="false" id="481d-7863-ffb3-aa4f" targetId="19a9-7d1f-50b2-e998" type="selectionEntry"/>
@@ -3906,10 +4350,17 @@ Friendly Ships within 8” of this Feature’s Dropsite ignore the effects of an
     <entryLink import="true" name="Tokyo Battleship" hidden="false" id="4fbf-c205-cd7a-476c" targetId="caa2-0401-d771-d370" type="selectionEntry"/>
     <entryLink import="true" name="New York Battleship" hidden="false" id="7aa2-c823-20be-1370" targetId="ba93-c90f-4571-6768" type="selectionEntry"/>
     <entryLink import="true" name="Beijing Battleship" hidden="false" id="9b42-f0e8-d41e-34df" targetId="a9b3-812c-215e-c8f3" type="selectionEntry"/>
+    <entryLink import="true" name="Milwaukee Pocket Battleship" hidden="false" id="51bb-c75c-9036-8906" targetId="52bd-24b3-f72b-1631" type="selectionEntry"/>
+    <entryLink import="true" name="Rotterdam Pocket Battleship" hidden="false" id="9080-7492-f768-8f69" targetId="f105-50a5-6a6f-5979" type="selectionEntry"/>
+    <entryLink import="true" name="New Dubai Pocket Battleship" hidden="false" id="ecb5-6d6f-9ac5-1bda" targetId="2954-a3f8-86db-0f15" type="selectionEntry"/>
+    <entryLink import="true" name="Hong Kong Pocket Battleship" hidden="false" id="16c2-3a4d-c935-3e91" targetId="8188-6eb3-950a-2eb7" type="selectionEntry"/>
+    <entryLink import="true" name="Siam Battlecruiser" hidden="false" id="0c90-b310-9bd6-77aa" targetId="39fe-aacd-8dcc-a0d4" type="selectionEntry"/>
     <entryLink import="true" name="Venice Command Battlecruiser" hidden="false" id="1f25-3958-abb8-e1ef" targetId="f951-0068-3bfa-bdb6" type="selectionEntry"/>
     <entryLink import="true" name="Rome Battlecruiser" hidden="false" id="b10d-40f1-3a5f-494d" targetId="5fb6-52e2-e152-f318" type="selectionEntry"/>
     <entryLink import="true" name="Perth Battlecruiser" hidden="false" id="cce2-1630-02e4-c570" targetId="8261-4145-5daa-e4d9" type="selectionEntry"/>
     <entryLink import="true" name="Johannesburg Battlecruiser" hidden="false" id="4271-8d30-4a42-a07e" targetId="1d80-1e6b-d26c-6448" type="selectionEntry"/>
+    <entryLink import="true" name="Yokohama Supercruiser" hidden="false" id="943a-6467-cd46-b328" targetId="36e8-2fd5-1142-8c24" type="selectionEntry"/>
+    <entryLink import="true" name="Busan Supercruiser" hidden="false" id="468f-0a77-6e00-b6a3" targetId="3480-ea64-5985-f53a" type="selectionEntry"/>
     <entryLink import="true" name="Las Vegas Command Carrier" hidden="false" id="f26b-0faf-d896-32ab" targetId="ad1a-6916-fdde-bee0" type="selectionEntry"/>
     <entryLink import="true" name="Edmonton Heavy Carrier" hidden="false" id="2caa-7278-530f-9ebe" targetId="8991-2970-96d5-dd21" type="selectionEntry"/>
     <entryLink import="true" name="Vilnius Heavy Cruiser" hidden="false" id="93c8-ee70-a3c6-b1c1" targetId="267a-caf1-ee82-5158" type="selectionEntry"/>
@@ -4040,6 +4491,14 @@ Order to Fire (2AP): When you activate another friendly Group in Orbit, pick one
     </rule>
     <rule name="Stealth Drop" id="be28-1d6e-4272-cb10" hidden="false">
       <description>When this Group launches its Dropships, 2 Dropships are needed to place 1 Battalion. If this Group contains a single ship, each Dropship only places a Battalion on a roll of a 4+.</description>
+    </rule>
+    <rule name="Feature Carrier" id="c6ab-b077-83e9-ed53" hidden="false">
+      <description>At the start of the game, before the first planning phase, choose one Deployable Feature from the UCM Deployable Features List. This Ship starts the game carrying that Deployable Feature.</description>
+    </rule>
+    <rule name="UCMA Battlenet" id="c245-6148-bd8a-d5af" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="45">
+      <description>An admiral assigned to this ship gains the following Command Abilities:
+Double Time Bulk Line (2AP): When you activate another friendly Group in Orbit, until the end of its activation, that Group may launch its Bulk Landers as if the target Dropsite has no enemy Battalions.
+Feet First into Hell (2AP): When you activate another friendly Group in atmosphere, until the end of its activation, that Group can launch its Dropships or Drop Pods with a range of 6”. Drop Pods launched due to this rule ignore the Alt-Launch rule.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>

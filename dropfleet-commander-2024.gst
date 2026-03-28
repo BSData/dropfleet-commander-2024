@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="13" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="14" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
@@ -97,6 +97,7 @@
     <categoryEntry name="Payload" id="3fa9-60d3-d9be-6611" hidden="false"/>
     <categoryEntry name="Feature Carrier" id="fe8e-9939-871d-6e43" hidden="false"/>
     <categoryEntry name="Space Stations" id="5ca8-89b2-52c6-d394" hidden="false"/>
+    <categoryEntry name="Reference" id="dbff-12ce-7e10-7001" hidden="false"/>
     <categoryEntry name="Deployable Features" id="11b4-72d7-c64d-25c1" hidden="false">
       <comment>Unit</comment>
     </categoryEntry>
@@ -136,6 +137,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d88c-dc9b-1bb3-4c11" includeChildSelections="false"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Reference" hidden="false" id="9ebc-c543-12f1-0e52" targetId="dbff-12ce-7e10-7001"/>
         <categoryLink name="Launch Assets" hidden="false" id="40cf-76cf-cc5c-6706" targetId="9cef-c723-f3e7-2dd2"/>
         <categoryLink name="Deployable Features" hidden="false" id="f298-9873-bf8a-c30b" targetId="11b4-72d7-c64d-25c1"/>
         <categoryLink name="Game" hidden="false" id="2618-a0a9-42fb-4431" targetId="492c-ac66-3724-83bc"/>
@@ -482,6 +484,7 @@
       <alias>Aegis-1</alias>
       <alias>Aegis-2</alias>
       <alias>Aegis-4</alias>
+      <alias>Aegis-6</alias>
       <alias>Aegis-8</alias>
       <description>All Ships with this rule in a Group combine their X values into a single value, Y.
 Friendly Groups in coherency within 6” of a Ship with this rule and the same Orbital Layer (including its own Group) gain the benefits of Aegis.
