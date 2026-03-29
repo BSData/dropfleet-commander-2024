@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="25" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="26" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -1010,9 +1010,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="407e-ae65-fb1e-2ea1" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Elapid Laser Turret" hidden="false" id="1e4e-9a82-711a-a90f" type="selectionEntry" targetId="8303-3891-824c-2d35" sortIndex="1"/>
+            <entryLink import="true" name="Elapid Laser Turrets" hidden="false" id="1e4e-9a82-711a-a90f" type="selectionEntry" targetId="998c-82ff-95c3-84c5" sortIndex="1"/>
             <entryLink import="true" name="Arowana Missile Turrets" hidden="false" id="c11f-09d2-eeeb-1afe" type="selectionEntry" targetId="1970-7c4f-729c-c6ca" sortIndex="2"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="b1d9-7fe2-3954-fcac" type="selectionEntry" targetId="ba6a-589a-610d-5df4"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="b1d9-7fe2-3954-fcac" type="selectionEntry" targetId="ba6a-589a-610d-5df4" sortIndex="3"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Vanguard-X" id="7e70-d755-2a20-4527" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
