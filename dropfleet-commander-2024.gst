@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="16" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
@@ -106,6 +106,11 @@
     </categoryEntry>
     <categoryEntry name="Launch Assets" id="9cef-c723-f3e7-2dd2" hidden="false"/>
     <categoryEntry name="Game" id="492c-ac66-3724-83bc" hidden="false"/>
+    <categoryEntry name="Hero" id="3929-5fb7-5f98-37ea" hidden="false">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="09c2-95e9-8f84-d427" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Fleet" hidden="false" id="fa3c-5c2f-ae78-ba22">
@@ -521,6 +526,9 @@ When this Ship goes on the Weapons Free, Max Thrust, or Damage Control orders, i
       <alias>Gateship-1</alias>
       <alias>Gateship-2</alias>
     </rule>
+    <rule name="Hero" id="f945-e19c-c8bb-1c6a" hidden="false" publicationId="45b0-3e3b-e83d-fd70">
+      <description>You can only include two Groups with this special rule in your fleet. You cannot assign an Admiral to this Ship when building your fleet.</description>
+    </rule>
     <rule name="Impetuous" id="6f09-5ccc-4dae-ff72" hidden="false">
       <description>At the start of each round, friendly Groups with this rule improve the Lock of their Weapon Systems by 1 until you activate a friendly Group without this rule.</description>
     </rule>
@@ -745,6 +753,6 @@ Broadside Weapons using Volley must alternate arcs when determining and assignin
     </rule>
   </sharedRules>
   <publications>
-    <publication name="Dropfleet Commander Rulebook (241017)" id="45b0-3e3b-e83d-fd70" hidden="false" shortName="DFC Rulebook (241017)"/>
+    <publication name="Dropfleet Commander Rulebook (v2.3.1)" id="45b0-3e3b-e83d-fd70" hidden="false" shortName="DFC Rulebook (v2.3.1)"/>
   </publications>
 </gameSystem>
