@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="14" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
@@ -528,6 +528,7 @@ When this Ship goes on the Weapons Free, Max Thrust, or Damage Control orders, i
       <description>Remove X enemy Battalions from this Ship at the beginning of the Battalion Combat step.</description>
       <alias>Marines-1</alias>
       <alias>Marines-2</alias>
+      <alias>Marines-3</alias>
       <alias>Marines-2D3</alias>
     </rule>
     <rule name="Monitor" id="cc9f-9be5-cc19-2fc9" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="36">
