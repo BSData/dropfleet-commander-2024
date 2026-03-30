@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="21" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="22" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="1c77-28ea-5fb6-dc6f" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="1282-2cce-85a8-ebe4" targetId="7e9b-b6ba-2178-6eb5"/>
@@ -7,7 +7,7 @@
     <catalogueLink type="catalogue" name="Industrial" id="3c27-ab2a-3565-24f1" targetId="ac5a-4823-5587-d3eb"/>
   </catalogueLinks>
   <publications>
-    <publication name="Shaltari Combined Fleet Stats (260227)" id="fbb6-a765-5882-6bcb" hidden="false" shortName="Shaltari Stats (260227)"/>
+    <publication name="Shaltari Combined Fleet Stats (260327)" id="fbb6-a765-5882-6bcb" hidden="false" shortName="Shaltari Stats (260327)"/>
   </publications>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="98cc-5609-e532-4875"/>
@@ -1612,12 +1612,12 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="a41c-3fdb-f949-5aa0" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Basalt Fleet Carrier" hidden="false" id="110f-d344-4a44-f766" publicationId="fbb6-a765-5882-6bcb" page="27">
+        <selectionEntry type="model" import="true" name="Basalt Fleet Carrier" hidden="false" id="110f-d344-4a44-f766" publicationId="fbb6-a765-5882-6bcb" page="">
           <categoryLinks>
             <categoryLink targetId="53c3-afc0-63ef-413a" id="e2d0-395d-bf6a-ac8a" primary="true" name="Medium Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Basalt" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="61dc-929c-17bf-bf26" publicationId="fbb6-a765-5882-6bcb" page="27">
+            <profile name="Basalt" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="61dc-929c-17bf-bf26" publicationId="fbb6-a765-5882-6bcb" page="">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">10&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">12&quot;</characteristic>
@@ -1643,7 +1643,7 @@
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Disruptor Pair" hidden="false" id="9ecc-ab86-8190-c6e0" type="selectionEntry" sortIndex="1" targetId="a238-c7d3-57d8-42df"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="8870-9f05-bc26-b077" type="selectionEntry" sortIndex="2" targetId="a206-ec27-49d0-76d2"/>
+            <entryLink import="true" name="Minelayer" hidden="false" id="e90f-3057-8027-b069" type="selectionEntryGroup" targetId="9457-4c07-2639-063b" sortIndex="2"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -4154,6 +4154,39 @@ Crippling Effects, Spikes, and other rules that affect an entire Group only affe
         <selectionEntry type="upgrade" import="true" name="Stellargate" hidden="false" id="ae86-f0e6-59aa-8a06" sortIndex="2"/>
         <selectionEntry type="upgrade" import="true" name="Worldstrider" hidden="false" id="5b83-3ffd-07fc-1e44" sortIndex="3"/>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Minelayer" id="9457-4c07-2639-063b" hidden="false" defaultSelectionEntryId="a7d7-445a-8b57-df38">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42d9-99c1-7312-b424" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea9b-0d59-d805-9c1b" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mines" hidden="false" id="56ce-5221-ee03-ee49" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b992-c2c6-253b-c2e7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a19-ef89-cc3a-c139" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mines" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="7b73-cd32-9241-6acb">
+              <characteristics>
+                <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+                <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="a151-34a3-3fdd-e29b" type="selectionEntry" targetId="a206-ec27-49d0-76d2" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="0" field="193b-999c-3546-2346-min"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <comment>2</comment>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>

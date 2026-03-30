@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="24" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="25" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Ardent" hidden="false" id="253f-2124-1abd-87e5" publicationId="c835-461f-ea00-a841" page="1">
@@ -1087,7 +1087,7 @@
         <categoryLink targetId="default-category" id="db6a-dd9b-3d62-eb5c" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Cavern Fleet Carrier" hidden="false" id="bad1-cefb-c4a1-0cf9" publicationId="c835-461f-ea00-a841" page="37">
+        <selectionEntry type="model" import="true" name="Cavern Fleet Carrier" hidden="false" id="bad1-cefb-c4a1-0cf9" publicationId="c835-461f-ea00-a841" page="">
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="125"/>
           </costs>
@@ -1095,7 +1095,7 @@
             <categoryLink name="Medium Ship" hidden="false" id="ce89-dc64-6fef-5180" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Cavern" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="815b-81a3-637c-560d" publicationId="c835-461f-ea00-a841" page="37">
+            <profile name="Cavern" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="815b-81a3-637c-560d" publicationId="c835-461f-ea00-a841" page="">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1111,7 +1111,7 @@
           </profiles>
           <entryLinks>
             <entryLink import="true" name="Scythes" hidden="false" id="0ccc-b153-83cd-2258" type="selectionEntry" targetId="b420-9dac-d07e-3511" sortIndex="1"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="e0fd-3e09-69d8-b973" type="selectionEntry" targetId="65bd-53c9-d2c9-643c" sortIndex="2"/>
+            <entryLink import="true" name="Minelayer" hidden="false" id="9d87-69f4-9b0b-5cc6" type="selectionEntryGroup" targetId="bc48-0cb3-2133-c09f" sortIndex="2"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b21a-280a-c93e-dc7b" includeChildSelections="false"/>
@@ -3715,7 +3715,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     <entryLink import="true" name="Launch Assets" hidden="false" id="e18f-e6a0-3a5b-0c3e" targetId="9cad-9c67-a317-939d" type="selectionEntry"/>
   </entryLinks>
   <publications>
-    <publication name="Bioficer Combined Fleet Stats (250926)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (250926)"/>
+    <publication name="Bioficer Combined Fleet Stats (260327)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (260327)"/>
   </publications>
   <sharedRules>
     <rule name="Tractor Beamer" id="c9fa-8382-0412-768a" hidden="false">
@@ -3921,6 +3921,39 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Minelayer" id="bc48-0cb3-2133-c09f" hidden="false" defaultSelectionEntryId="a7d7-445a-8b57-df38">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51b5-6c13-fa14-59ac" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cc7-f290-3e9e-367d" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mines" hidden="false" id="8870-59c7-f339-2dac" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4cb1-b73f-d6b4-7536" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d326-08d8-519e-2340" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mines" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="bc7c-1a47-7e6a-600d">
+              <characteristics>
+                <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+                <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="723b-d0b9-4090-5feb" type="selectionEntry" targetId="65bd-53c9-d2c9-643c" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="0" field="8f90-2c5c-4b3f-e1f9"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <comment>2</comment>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>

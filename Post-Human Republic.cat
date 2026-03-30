@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="22" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="23" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="66a8-ba07-3fa8-ecf7"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Vizier" hidden="false" id="4d5f-828e-aece-77fe" publicationId="6462-e99b-594c-193a" page="1">
@@ -1337,7 +1337,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="d117-1791-f576-d173" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Ikarus Vanguard Carrier" hidden="false" id="5b54-f428-8119-9250" publicationId="6462-e99b-594c-193a" page="30">
+        <selectionEntry type="model" import="true" name="Ikarus Vanguard Carrier" hidden="false" id="5b54-f428-8119-9250" publicationId="6462-e99b-594c-193a" page="">
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="125"/>
           </costs>
@@ -1345,7 +1345,7 @@
             <categoryLink name="Medium Ship" hidden="false" id="bbb4-ede5-a6ab-fd3e" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Ikarus" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="3151-fe31-1e00-98bb" publicationId="6462-e99b-594c-193a" page="30">
+            <profile name="Ikarus" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="3151-fe31-1e00-98bb" publicationId="6462-e99b-594c-193a" page="">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1366,7 +1366,7 @@
           <entryLinks>
             <entryLink import="true" name="Medium Calibre Broadside" hidden="false" id="2a61-a801-7f9d-0af6" type="selectionEntry" targetId="e2fc-fc8c-e7e4-82a6" sortIndex="1"/>
             <entryLink import="true" name="Medium Calibre Turret" hidden="false" id="62fa-6687-ccdb-7d03" type="selectionEntry" targetId="977b-b42b-23a9-4dd7" sortIndex="2"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="8b9b-5dba-f527-7560" type="selectionEntry" targetId="530d-2e49-faec-6427" sortIndex="3"/>
+            <entryLink import="true" name="Minelayer" hidden="false" id="dc38-61b7-c8f3-e652" type="selectionEntryGroup" targetId="68de-1f95-cdb0-b00a" sortIndex="3"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Vanguard-X" id="32a3-242f-f0ba-4cfc" hidden="false" type="rule" targetId="0afa-aca9-640a-973e"/>
@@ -3579,7 +3579,7 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <publications>
-    <publication name="PHR Combined Fleet Stats (250324)" id="6462-e99b-594c-193a" hidden="false" shortName="PHR Stats (250324)"/>
+    <publication name="PHR Combined Fleet Stats (260327)" id="6462-e99b-594c-193a" hidden="false" shortName="PHR Stats (260327)"/>
   </publications>
   <entryLinks>
     <entryLink import="true" name="Lvl 1: Vizier" hidden="false" id="6150-03c3-3086-46d4" targetId="4d5f-828e-aece-77fe" type="selectionEntry"/>
@@ -3827,6 +3827,39 @@
           </constraints>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Minelayer" id="68de-1f95-cdb0-b00a" hidden="false" defaultSelectionEntryId="a7d7-445a-8b57-df38">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ff6-d8e1-cf91-95c1" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8fc-4f9f-63e8-9219" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Mines" hidden="false" id="a344-0ceb-572a-d1c1" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2e4c-d638-9fd1-f368" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c17d-ab07-3f2f-57ae" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Mines" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="e19e-01d1-ff5e-1f40">
+              <characteristics>
+                <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+                <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="0366-fa4a-4cbc-28ad" type="selectionEntry" targetId="530d-2e49-faec-6427" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="0" field="ce38-dfa0-3609-8db3-min"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <comment>2</comment>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
