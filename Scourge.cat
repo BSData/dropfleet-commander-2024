@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="21" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="22" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Fleet Thrall" hidden="false" id="7fe9-330a-0598-35d7" publicationId="260d-362c-d403-80ae" page="1">
@@ -3466,7 +3466,8 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Launch Assets" hidden="false" id="e840-c9cd-72dc-1ea8" defaultAmount="1">
       <categoryLinks>
-        <categoryLink name="Launch Assets" hidden="false" id="2625-13de-c768-fb91" targetId="9cef-c723-f3e7-2dd2" primary="true"/>
+        <categoryLink name="Launch Assets" hidden="false" id="2625-13de-c768-fb91" targetId="9cef-c723-f3e7-2dd2" primary="false"/>
+        <categoryLink targetId="dbff-12ce-7e10-7001" id="6042-b7df-80dc-0468" primary="true" name="Reference"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83d5-687d-7ccc-0492" includeChildSelections="false"/>

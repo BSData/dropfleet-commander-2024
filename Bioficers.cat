@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="25" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="26" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Ardent" hidden="false" id="253f-2124-1abd-87e5" publicationId="c835-461f-ea00-a841" page="1">
@@ -1087,7 +1087,7 @@
         <categoryLink targetId="default-category" id="db6a-dd9b-3d62-eb5c" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Cavern Fleet Carrier" hidden="false" id="bad1-cefb-c4a1-0cf9" publicationId="c835-461f-ea00-a841" page="">
+        <selectionEntry type="model" import="true" name="Cavern Fleet Carrier" hidden="false" id="bad1-cefb-c4a1-0cf9" publicationId="c835-461f-ea00-a841">
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="125"/>
           </costs>
@@ -1095,7 +1095,7 @@
             <categoryLink name="Medium Ship" hidden="false" id="ce89-dc64-6fef-5180" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Cavern" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="815b-81a3-637c-560d" publicationId="c835-461f-ea00-a841" page="">
+            <profile name="Cavern" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="815b-81a3-637c-560d" publicationId="c835-461f-ea00-a841">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -3562,7 +3562,8 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Launch Assets" hidden="false" id="9cad-9c67-a317-939d" defaultAmount="1">
       <categoryLinks>
-        <categoryLink targetId="9cef-c723-f3e7-2dd2" id="cdf5-3e19-cc3e-da20" primary="true" name="Launch Assets"/>
+        <categoryLink targetId="9cef-c723-f3e7-2dd2" id="cdf5-3e19-cc3e-da20" primary="false" name="Launch Assets"/>
+        <categoryLink targetId="dbff-12ce-7e10-7001" id="ca66-f97d-307a-b204" primary="true" name="Reference"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c509-f98e-8d6d-7714" includeChildSelections="false"/>

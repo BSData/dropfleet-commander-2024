@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="23" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="24" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (250822)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (250822)"/>
   </publications>
@@ -3462,9 +3462,31 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fae6-8909-4256-412a-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Equipment -----" hidden="true" id="1159-4828-54ec-bc32"/>
+    <selectionEntry type="upgrade" import="true" name="Engine Refit" hidden="false" id="4a33-ab81-d18d-935f">
+      <profiles>
+        <profile name="Engine Refit" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="efe7-2d51-0b5f-af44">
+          <characteristics>
+            <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">This Ship increases its Thrust by 2”.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>+2&quot;</comment>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85df-1073-c02c-0bbc" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="2" field="d821-4294-3117-e8a6" scope="parent" affects="profiles.Ship" join=", "/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Reference -----" hidden="true" id="7092-931f-e599-a82a"/>
     <selectionEntry type="upgrade" import="true" name="Launch Assets" hidden="false" id="702c-ed66-e9cc-621e" defaultAmount="1">
       <categoryLinks>
-        <categoryLink name="Launch Assets" hidden="false" id="7cb4-aee7-15df-9e3d" targetId="9cef-c723-f3e7-2dd2" primary="true"/>
+        <categoryLink name="Launch Assets" hidden="false" id="7cb4-aee7-15df-9e3d" targetId="9cef-c723-f3e7-2dd2" primary="false"/>
+        <categoryLink targetId="dbff-12ce-7e10-7001" id="ab70-df5e-42f0-c730" primary="true" name="Reference"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef19-345a-5902-aebc" includeChildSelections="false"/>
@@ -3563,25 +3585,6 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Engine Refit" hidden="false" id="4a33-ab81-d18d-935f">
-      <profiles>
-        <profile name="Engine Refit" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="efe7-2d51-0b5f-af44">
-          <characteristics>
-            <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">This Ship increases its Thrust by 2”.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <comment>+2&quot;</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
-      </costs>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85df-1073-c02c-0bbc" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="2" field="d821-4294-3117-e8a6" scope="parent" affects="profiles.Ship" join=", "/>
-      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
