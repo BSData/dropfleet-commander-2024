@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="24" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
-    <publication name="Resistance Combined Fleet Stats (250822)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (250822)"/>
+    <publication name="Resistance Combined Fleet Stats (260327)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (260327)"/>
   </publications>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="f86a-4bed-c096-781e" targetId="1b65-4911-bd01-73aa"/>
@@ -1373,6 +1373,66 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Guy Fawkes - Parliament Fire Ship" hidden="false" id="1eb5-cd7a-77de-1136">
+      <categoryLinks>
+        <categoryLink name="Group" hidden="false" id="065b-6e2b-c43a-f4ee" targetId="default-category" primary="false"/>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="ebe8-827a-5a9f-fb56" primary="true" name="Light Groups"/>
+        <categoryLink targetId="3929-5fb7-5f98-37ea" id="e4e6-44af-b24d-327f" primary="false" name="Hero"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Guy Fawkes - Parliament Fire Ship" hidden="false" id="dff7-f82c-be8b-8d1e" publicationId="7fb8-995d-767a-783d" page="">
+          <categoryLinks>
+            <categoryLink targetId="f942-8f88-d77b-13c1" id="36f3-73fa-ce70-2b1c" primary="true" name="Light Ship"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Guy Fawkes - Parliament" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b4ae-03be-c20e-2e1b" publicationId="7fb8-995d-767a-783d" page="">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">9&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">4&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">6</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">2+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">2+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Hero, Unique, Set Timers And Run, Skeleton Crew</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="85"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f7d-db45-5718-5a7f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6954-d18f-0d2a-1a26" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Hero" id="d774-0f36-eec0-4bb2" hidden="false" type="rule" targetId="f945-e19c-c8bb-1c6a"/>
+            <infoLink name="Unique" id="5ff2-04bf-ca5a-81b9" hidden="false" type="rule" targetId="3f45-7047-464a-3be4"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Explosive Detonation" hidden="false" id="9aa9-7f6f-aa7f-d45c" type="selectionEntry" targetId="f5af-d5b9-bd29-4e90">
+              <rules>
+                <rule name="Explosive Detonation" id="4f23-0c5b-9872-c00e" hidden="false">
+                  <description>When attacking with this weapon, skip the assign weapons to targets step and proceed to roll to hit instead. When rolling to hit with this weapon, for each result of a 6 (including rolls from this rule), roll an additional dice. After rolling to hit, assign hits as equally as possible to each other Ship and Space Station on the same Orbital Layer within 6” until no hits remain. Then continue the attack sequence as normal.</description>
+                </rule>
+              </rules>
+            </entryLink>
+          </entryLinks>
+          <rules>
+            <rule name="Set Timers And Run" id="8971-5a04-65ba-e107" hidden="false">
+              <description>Once you complete an attack sequence with Explosive Detonation, remove this ship from the game. If there is a friendly Ship within 8” of this Ship, place a Fawkes’ Crew Battalion on that Ship. This ship only counts for Ships killed when Fawkes’ Crew Battalion is removed from the game.</description>
+            </rule>
+            <rule name="Skeleton Crew" id="ea50-069a-5904-c8a7" hidden="false">
+              <description>This Ship can only go on General Quarters</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="944a-2756-7e9f-8a73" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Collins Support Carriers" hidden="false" id="a7d1-a942-d5cd-b42e">
       <categoryLinks>
         <categoryLink name="Group" hidden="false" id="8fba-7e45-d570-074d" targetId="default-category" primary="false"/>
@@ -2309,9 +2369,6 @@
         </profile>
       </profiles>
       <comment>[NL/25] 2</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
-      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="7215-cc99-8264-5944">
       <profiles>
@@ -2323,9 +2380,6 @@
         </profile>
       </profiles>
       <comment>[NL/15] 2</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
-      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="f10e-2e99-413f-017f">
       <profiles>
@@ -2337,9 +2391,6 @@
         </profile>
       </profiles>
       <comment>[NL/40] 2</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
-      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="0743-e2f2-c2ba-5117">
       <profiles>
@@ -2351,12 +2402,20 @@
         </profile>
       </profiles>
       <comment>[NL/25] 1 L-2</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
-      </costs>
       <infoLinks>
         <infoLink name="Limited-X" id="4d26-f86c-53a2-c800" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mines" hidden="false" id="52d4-7801-63c0-6d68">
+      <profiles>
+        <profile name="Mines" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="81b7-8813-0a19-39c1">
+          <characteristics>
+            <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+            <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>[NL/35] 2</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Structures -----" hidden="true" id="2f92-eb50-0d77-8e49"/>
     <selectionEntry type="upgrade" import="true" name="Ablative Armour" hidden="false" id="d2af-e9e9-8f5c-2738">
@@ -3211,6 +3270,31 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Explosive Detonation" hidden="false" id="f5af-d5b9-bd29-4e90">
+      <comment>F/S/R 8/3+/1/C Crit-1</comment>
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Critical-X" id="c028-1dcf-ea3d-5081" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8303-4885-464b-af18" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3306-f8aa-29de-a164" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Explosive Detonation" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="337c-fc80-c738-d00d">
+          <characteristics>
+            <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S/R</characteristic>
+            <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">8</characteristic>
+            <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+            <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+            <characteristic name="Type" typeId="8f83-3218-7832-0818">C</characteristic>
+            <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Critical-1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Load -----" hidden="true" id="ae00-269c-0ff4-a6da"/>
     <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="0510-e295-2ccd-a790">
       <profiles>
@@ -3659,6 +3743,7 @@ Telescope tokens placed by this Ship persist between rounds and are only removed
     <entryLink import="true" name="Heavy Cruiser" hidden="false" id="918a-5120-c8c6-e346" targetId="3f1c-25ba-7000-2026" type="selectionEntry"/>
     <entryLink import="true" name="Cruisers" hidden="false" id="278a-e1e0-598b-b522" targetId="96eb-8021-3758-986f" type="selectionEntry"/>
     <entryLink import="true" name="Light Cruisers" hidden="false" id="e369-af20-f082-8c82" targetId="4410-4db0-f910-90be" type="selectionEntry"/>
+    <entryLink import="true" name="Guy Fawkes - Parliament Fire Ship" hidden="false" id="04fd-4496-32ea-62f1" targetId="1eb5-cd7a-77de-1136" type="selectionEntry"/>
     <entryLink import="true" name="Collins Support Carriers" hidden="false" id="8f69-9752-485b-be9e" targetId="a7d1-a942-d5cd-b42e" type="selectionEntry"/>
     <entryLink import="true" name="Aldrin Colony Ships" hidden="false" id="b0a3-1282-b08d-b945" targetId="b790-3a59-7349-5918" type="selectionEntry"/>
     <entryLink import="true" name="Armstrong Destroyers" hidden="false" id="e062-7771-b964-e5e4" targetId="d0ec-071f-c033-a138" type="selectionEntry"/>
@@ -3855,17 +3940,17 @@ Telescope tokens placed by this Ship persist between rounds and are only removed
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="355b-0893-cb21-c9cc" hidden="false" sortIndex="1" collective="false">
               <entryLinks>
-                <entryLink import="true" name="N-31 Hybrid Gun Bank" hidden="false" id="9c96-88dc-6607-edf7" type="selectionEntry" targetId="8a6f-b3d6-0576-aa06" collective="true">
+                <entryLink import="true" name="N-31 Hybrid Gun Bank" hidden="false" id="9c96-88dc-6607-edf7" type="selectionEntry" targetId="8a6f-b3d6-0576-aa06" collective="true" sortIndex="1">
                   <costs>
                     <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="N-8 Artillery Cannon Bank" hidden="false" id="1662-3e33-0d1f-fb59" type="selectionEntry" targetId="4b65-d078-6d11-484c" collective="true">
+                <entryLink import="true" name="N-8 Artillery Cannon Bank" hidden="false" id="1662-3e33-0d1f-fb59" type="selectionEntry" targetId="4b65-d078-6d11-484c" collective="true" sortIndex="2">
                   <costs>
                     <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="8"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="NC-16 Missile Bank" hidden="false" id="88ab-c9c1-352e-07cb" type="selectionEntry" targetId="c2b2-84f1-345c-c1e6" collective="true">
+                <entryLink import="true" name="NC-16 Missile Bank" hidden="false" id="88ab-c9c1-352e-07cb" type="selectionEntry" targetId="c2b2-84f1-345c-c1e6" collective="true" sortIndex="3">
                   <costs>
                     <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
                   </costs>
@@ -3874,12 +3959,17 @@ Telescope tokens placed by this Ship persist between rounds and are only removed
             </selectionEntryGroup>
             <selectionEntryGroup name="Launch" id="12fa-0b75-aacb-bed1" hidden="false" flatten="false" sortIndex="2" collective="false">
               <entryLinks>
-                <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="dbad-ddbd-0cd9-0a28" type="selectionEntry" targetId="f10e-2e99-413f-017f" collective="true">
+                <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="dbad-ddbd-0cd9-0a28" type="selectionEntry" targetId="f10e-2e99-413f-017f" collective="true" sortIndex="1">
                   <costs>
                     <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="6571-5d90-0442-53c0" type="selectionEntry" targetId="7215-cc99-8264-5944" collective="true">
+                <entryLink import="true" name="Mines" hidden="false" id="c419-8007-a098-1c42" type="selectionEntry" targetId="52d4-7801-63c0-6d68" collective="true" sortIndex="2">
+                  <costs>
+                    <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="35"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="6571-5d90-0442-53c0" type="selectionEntry" targetId="7215-cc99-8264-5944" collective="true" sortIndex="3">
                   <costs>
                     <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="18"/>
                   </costs>
@@ -3914,17 +4004,17 @@ Telescope tokens placed by this Ship persist between rounds and are only removed
         </selectionEntryGroup>
         <selectionEntryGroup name="Structures" id="751f-e67d-26f3-17fe" hidden="false" sortIndex="2" collective="false">
           <entryLinks>
-            <entryLink import="true" name="Scanner Array" hidden="false" id="2418-58f4-2d78-48f8" type="selectionEntry" targetId="1517-78fb-2a15-57eb" collective="true">
+            <entryLink import="true" name="Scanner Array" hidden="false" id="2418-58f4-2d78-48f8" type="selectionEntry" targetId="1517-78fb-2a15-57eb" collective="true" sortIndex="1">
               <costs>
                 <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Ablative Armour" hidden="false" id="307a-bb06-27f8-1acb" type="selectionEntry" targetId="d2af-e9e9-8f5c-2738" collective="true">
+            <entryLink import="true" name="Ablative Armour" hidden="false" id="307a-bb06-27f8-1acb" type="selectionEntry" targetId="d2af-e9e9-8f5c-2738" collective="true" sortIndex="2">
               <costs>
                 <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="12"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Drive Refit" hidden="false" id="0e6b-aebf-8d53-f30f" type="selectionEntry" targetId="9e57-79cc-21a0-72fb" collective="true">
+            <entryLink import="true" name="Drive Refit" hidden="false" id="0e6b-aebf-8d53-f30f" type="selectionEntry" targetId="9e57-79cc-21a0-72fb" collective="true" sortIndex="3">
               <costs>
                 <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
               </costs>
