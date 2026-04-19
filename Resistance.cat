@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="24" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="25" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (260327)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (260327)"/>
   </publications>
@@ -121,14 +121,14 @@
             <entryLink import="true" name="Abilities" hidden="false" id="593b-b24b-14ee-5ac4" type="selectionEntryGroup" targetId="b374-7196-fcc1-9fcb"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Coloniser Interstellar Dreadnought" hidden="false" id="9bed-c61e-b656-5308" publicationId="7fb8-995d-767a-783d" page="36" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Coloniser Interstellar Dreadnought" hidden="false" id="9bed-c61e-b656-5308" publicationId="7fb8-995d-767a-783d" page="" sortIndex="2">
           <categoryLinks>
             <categoryLink name="Colossal Ship" hidden="false" id="f69b-fe0f-2a60-1f07" targetId="6e44-cb75-e25f-8b24" primary="true"/>
             <categoryLink targetId="default-category" id="ddc9-b319-715b-edb4" primary="false" name="Group"/>
             <categoryLink targetId="52fa-6578-d171-57d6" id="fcf2-0041-2048-dcbc" primary="false" name="Colossal Groups"/>
           </categoryLinks>
           <profiles>
-            <profile name="Coloniser" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="8c25-a499-6576-4902" publicationId="7fb8-995d-767a-783d" page="36">
+            <profile name="Coloniser" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="8c25-a499-6576-4902" publicationId="7fb8-995d-767a-783d" page="">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">5&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">10&quot;</characteristic>
@@ -143,7 +143,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="295"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="525"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ed6-8b94-89e5-c538" includeChildSelections="false"/>
@@ -188,9 +188,6 @@
               </constraints>
             </entryLink>
           </entryLinks>
-          <modifiers>
-            <modifier type="decrement" value="20" field="ab32-c9b6-10f3-cbdb"/>
-          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -407,14 +404,14 @@
             <entryLink import="true" name="Abilities" hidden="false" id="655e-d818-fa41-a234" type="selectionEntryGroup" targetId="b374-7196-fcc1-9fcb"/>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Heavy Cruiser" hidden="false" id="9920-ce1c-c576-f0c2" publicationId="7fb8-995d-767a-783d" page="21">
+        <selectionEntry type="model" import="true" name="Heavy Cruiser" hidden="false" id="9920-ce1c-c576-f0c2" publicationId="7fb8-995d-767a-783d" page="">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="aaf9-f7a0-82d3-bd34" targetId="53c3-afc0-63ef-413a" primary="true"/>
             <categoryLink targetId="default-category" id="74ca-2164-d0b8-10db" primary="false" name="Group"/>
             <categoryLink targetId="e555-ff57-c478-18cd" id="8f1e-60be-0aa6-55ca" primary="false" name="Medium Groups"/>
           </categoryLinks>
           <profiles>
-            <profile name="Heavy Cruiser" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="3f10-04e6-0394-be17" publicationId="7fb8-995d-767a-783d" page="21">
+            <profile name="Heavy Cruiser" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="3f10-04e6-0394-be17" publicationId="7fb8-995d-767a-783d" page="">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">5&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -429,7 +426,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="75"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="113"/>
           </costs>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95d0-0aa3-5c3d-a610" includeChildSelections="false"/>
@@ -467,9 +464,6 @@
           <infoLinks>
             <infoLink name="Reinforced Armour" id="3e34-2d87-139c-9ab8" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
           </infoLinks>
-          <modifiers>
-            <modifier type="increment" value="2" field="ab32-c9b6-10f3-cbdb"/>
-          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1380,12 +1374,12 @@
         <categoryLink targetId="3929-5fb7-5f98-37ea" id="e4e6-44af-b24d-327f" primary="false" name="Hero"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Guy Fawkes - Parliament Fire Ship" hidden="false" id="dff7-f82c-be8b-8d1e" publicationId="7fb8-995d-767a-783d" page="">
+        <selectionEntry type="model" import="true" name="Guy Fawkes - Parliament Fire Ship" hidden="false" id="dff7-f82c-be8b-8d1e" publicationId="7fb8-995d-767a-783d">
           <categoryLinks>
             <categoryLink targetId="f942-8f88-d77b-13c1" id="36f3-73fa-ce70-2b1c" primary="true" name="Light Ship"/>
           </categoryLinks>
           <profiles>
-            <profile name="Guy Fawkes - Parliament" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b4ae-03be-c20e-2e1b" publicationId="7fb8-995d-767a-783d" page="">
+            <profile name="Guy Fawkes - Parliament" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="b4ae-03be-c20e-2e1b" publicationId="7fb8-995d-767a-783d">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">9&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -1967,12 +1961,18 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1c6-e617-b7ea-d1fe-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1c6-e617-b7ea-d1fe-max" includeChildSelections="false"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Vent Cannon Turret" hidden="false" id="476c-f896-74ca-b380" type="selectionEntry" targetId="a66a-c4d6-094e-15b8">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c2aa-8067-cd20-829d-min" includeChildSelections="false"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c2aa-8067-cd20-829d-max" includeChildSelections="false"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntry>
@@ -2016,19 +2016,25 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e39-d4b1-d0c8-1b6c-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e39-d4b1-d0c8-1b6c-max" includeChildSelections="false"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="6dc5-ab22-e30c-cc50" type="selectionEntry" targetId="f10e-2e99-413f-017f">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6af2-5a3d-cbc3-258a-min" includeChildSelections="false"/>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6af2-5a3d-cbc3-258a-max" includeChildSelections="false"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="30"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- No Limit Weapons -----" hidden="true" id="5f1c-3a54-43b4-0c38"/>
-    <selectionEntry type="upgrade" import="true" name="10K Mass Driver Turret" hidden="false" id="fa56-f516-23f3-fa9d">
+    <selectionEntry type="upgrade" import="true" name="10K Mass Driver Turret" hidden="false" id="fa56-f516-23f3-fa9d" collective="true">
       <profiles>
         <profile name="10K Mass Driver Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="aa2e-9ad6-d96a-902a">
           <characteristics>
@@ -2041,10 +2047,7 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/20] F/S 2/3+/2/K Cal-H/C Crit-2 Pen Vol-2</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
-      </costs>
+      <comment>[NL] F/S 2/3+/2/K Cal-H/C Crit-2 Pen Vol-2</comment>
       <infoLinks>
         <infoLink name="Calibre-X" id="d6c8-a3fc-78e1-fa7c" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
         <infoLink name="Critical-X" id="af40-eb8e-d128-58e5" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
@@ -2052,7 +2055,7 @@
         <infoLink name="Volley-X" id="54b5-ee59-3fb6-0f03" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Dual Vent Cannon Turret" hidden="false" id="cb41-3833-86dc-21ff">
+    <selectionEntry type="upgrade" import="true" name="Heavy Dual Vent Cannon Turret" hidden="false" id="cb41-3833-86dc-21ff" collective="true">
       <profiles>
         <profile name="Heavy Dual Vent Cannon Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="3fb5-7730-248a-5d1f">
           <characteristics>
@@ -2065,17 +2068,14 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/40] F/S 4/3+/2/E Fus-2 OC Rv-1</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="40"/>
-      </costs>
+      <comment>[NL] F/S 4/3+/2/E Fus-2 OC Rv-1</comment>
       <infoLinks>
         <infoLink name="Overcharge" id="c0b7-c4f5-3584-0f3b" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
         <infoLink name="Fusillade-X" id="396f-7bf9-30e8-9ddf" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
         <infoLink name="Reave-X" id="b30f-94e6-a505-c7c6" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Light Vent Cannon Turret" hidden="false" id="a74c-4498-31f8-9a71">
+    <selectionEntry type="upgrade" import="true" name="Light Vent Cannon Turret" hidden="false" id="a74c-4498-31f8-9a71" collective="true">
       <profiles>
         <profile name="Light Vent Cannon Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="b602-3cdd-d5e0-4ff9">
           <characteristics>
@@ -2088,20 +2088,14 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/5] F/S 2/4+/1/E OC Rv-1</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
-      </costs>
+      <comment>[NL] F/S 2/4+/1/E OC Rv-1</comment>
       <infoLinks>
         <infoLink name="Overcharge" id="5a51-4cf0-a114-db52" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
         <infoLink name="Reave-X" id="c4a8-1ff2-fea5-7987" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="N-8 Artillery Cannon Bank" hidden="false" id="4b65-d078-6d11-484c">
-      <comment>[NL/10] B 6/5+/1/K Fus-2 LP Vol-2</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="8"/>
-      </costs>
+    <selectionEntry type="upgrade" import="true" name="N-8 Artillery Cannon Bank" hidden="false" id="4b65-d078-6d11-484c" collective="true">
+      <comment>[NL] B 6/5+/1/K Fus-2 LP Vol-2</comment>
       <infoLinks>
         <infoLink name="Fusillade-X" id="f733-60cb-a539-1963" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
         <infoLink name="Low Power" id="ef6c-e129-d935-3ab1" hidden="false" type="rule" targetId="2851-2293-e346-839f"/>
@@ -2120,7 +2114,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="N-11 Artillery Cannon Turret" hidden="false" id="b256-0978-ce23-7e26">
+    <selectionEntry type="upgrade" import="true" name="N-11 Artillery Cannon Turret" hidden="false" id="b256-0978-ce23-7e26" collective="true">
       <profiles>
         <profile name="N-11 Artillery Cannon Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="e89b-d61b-e446-5479">
           <characteristics>
@@ -2133,16 +2127,13 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/5] F/S 3/4+/1/K Fus-1 LP</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
-      </costs>
+      <comment>[NL] F/S 3/4+/1/K Fus-1 LP</comment>
       <infoLinks>
         <infoLink name="Fusillade-X" id="6b13-9dfa-933c-3a6c" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
         <infoLink name="Low Power" id="f285-4340-fa25-7cb9" hidden="false" type="rule" targetId="2851-2293-e346-839f"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="N-11 Artillery Cannon Turret" hidden="false" id="c287-26e1-1f58-ae4d">
+    <selectionEntry type="upgrade" import="true" name="N-11 Artillery Cannon Turret" hidden="false" id="c287-26e1-1f58-ae4d" collective="true">
       <profiles>
         <profile name="N-11 Artillery Cannon Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5686-82be-c1c7-b5da">
           <characteristics>
@@ -2155,17 +2146,14 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/5] F/S 3/4+/1/K Fus-1 LP Lnk-1</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
-      </costs>
+      <comment>[NL] F/S 3/4+/1/K Fus-1 LP Lnk-1</comment>
       <infoLinks>
         <infoLink name="Fusillade-X" id="671a-bd11-b663-b6c5" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
         <infoLink name="Low Power" id="d525-8555-4099-fe09" hidden="false" type="rule" targetId="2851-2293-e346-839f"/>
         <infoLink name="Linked-X" id="1c48-dee9-6b3d-b01c" hidden="false" type="rule" targetId="fc9b-53d4-3bb3-3413"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="N-31 Hybrid Gun Bank" hidden="false" id="8a6f-b3d6-0576-aa06">
+    <selectionEntry type="upgrade" import="true" name="N-31 Hybrid Gun Bank" hidden="false" id="8a6f-b3d6-0576-aa06" collective="true">
       <profiles>
         <profile name="N-31 Hybrid Gun Bank" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6aa0-84df-1f02-01e8">
           <characteristics>
@@ -2178,15 +2166,12 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/10] B 3/4+/1/K Vol-2</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
-      </costs>
+      <comment>[NL] B 3/4+/1/K Vol-2</comment>
       <infoLinks>
         <infoLink name="Volley-X" id="88b5-509d-52cd-bc6c" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="NC-31 Hybrid Gun Battery" hidden="false" id="38a3-ace5-9f4c-5621">
+    <selectionEntry type="upgrade" import="true" name="NC-31 Hybrid Gun Battery" hidden="false" id="38a3-ace5-9f4c-5621" collective="true">
       <profiles>
         <profile name="NC-31 Hybrid Gun Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="55f0-fb31-268b-82f6">
           <characteristics>
@@ -2199,15 +2184,12 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/20] B 8/4+/1/K Vol-2</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="20"/>
-      </costs>
+      <comment>[NL] B 8/4+/1/K Vol-2</comment>
       <infoLinks>
         <infoLink name="Volley-X" id="ccfc-40f7-6bbf-b983" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="N-31 Hybrid Gun Turret" hidden="false" id="2456-5194-df61-6a2f">
+    <selectionEntry type="upgrade" import="true" name="N-31 Hybrid Gun Turret" hidden="false" id="2456-5194-df61-6a2f" collective="true">
       <profiles>
         <profile name="N-31 Hybrid Gun Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a5a2-9144-1b1a-2790">
           <characteristics>
@@ -2220,15 +2202,12 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/5] F/S 2/3+/1/K Fus-1</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
-      </costs>
+      <comment>[NL] F/S 2/3+/1/K Fus-1</comment>
       <infoLinks>
         <infoLink name="Fusillade-X" id="0a98-1edb-185e-b247" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="N-109 Bombardment Mortar Turret" hidden="false" id="df14-ecce-1fb3-edd0">
+    <selectionEntry type="upgrade" import="true" name="N-109 Bombardment Mortar Turret" hidden="false" id="df14-ecce-1fb3-edd0" collective="true">
       <profiles>
         <profile name="N-109 Bombardment Mortar Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="25d9-19c7-9365-c7e7">
           <characteristics>
@@ -2241,16 +2220,13 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/10] F/S/R 3/4+/1/K Bomb Sc-1</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
-      </costs>
+      <comment>[NL] F/S/R 3/4+/1/K Bomb Sc-1</comment>
       <infoLinks>
         <infoLink name="Bombardment" id="d0e1-79fa-7315-9ad6" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
         <infoLink name="Scald-X" id="2ddc-156b-adb3-387e" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="NC-16 Missile Bank" hidden="false" id="c2b2-84f1-345c-c1e6">
+    <selectionEntry type="upgrade" import="true" name="NC-16 Missile Bank" hidden="false" id="c2b2-84f1-345c-c1e6" collective="true">
       <profiles>
         <profile name="NC-16 Missile Bank" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a021-a85d-ec37-fc1a">
           <characteristics>
@@ -2263,16 +2239,13 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/5] B 6/3+/1/K CA Vol-2</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
-      </costs>
+      <comment>[NL] B 6/3+/1/K CA Vol-2</comment>
       <infoLinks>
         <infoLink name="Close Action" id="9c49-5590-bb8f-77b8" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Volley-X" id="3a46-8db8-c49c-dea3" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="NC-16 Missile Battery" hidden="false" id="f067-f2f0-6431-583b">
+    <selectionEntry type="upgrade" import="true" name="NC-16 Missile Battery" hidden="false" id="f067-f2f0-6431-583b" collective="true">
       <profiles>
         <profile name="NC-16 Missile Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="bbc6-cec7-d519-3c84">
           <characteristics>
@@ -2285,16 +2258,13 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/35] B 6/3+/2/K CA Vol-2</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="35"/>
-      </costs>
+      <comment>[NL] B 6/3+/2/K CA Vol-2</comment>
       <infoLinks>
         <infoLink name="Close Action" id="4ae2-2d5e-d162-804e" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Volley-X" id="40bb-04a5-7a88-16cc" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="NC-16 Missile Turret" hidden="false" id="a0a8-6b23-43dc-a016">
+    <selectionEntry type="upgrade" import="true" name="NC-16 Missile Turret" hidden="false" id="a0a8-6b23-43dc-a016" collective="true">
       <profiles>
         <profile name="NC-16 Missile Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f613-eb1f-6e61-6ab8">
           <characteristics>
@@ -2307,15 +2277,12 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/5] F/S/R 6/3+/1/K CA</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
-      </costs>
+      <comment>[NL] F/S/R 6/3+/1/K CA</comment>
       <infoLinks>
         <infoLink name="Close Action" id="ba02-062e-b1e8-9094" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Vent Cannon Turret" hidden="false" id="a66a-c4d6-094e-15b8">
+    <selectionEntry type="upgrade" import="true" name="Vent Cannon Turret" hidden="false" id="a66a-c4d6-094e-15b8" collective="true">
       <profiles>
         <profile name="Vent Cannon Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5f5f-adfe-5c3f-e6bd">
           <characteristics>
@@ -2328,16 +2295,13 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/10] F/S 2/3+/1/E OC Fus-1 Rv-1</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
-      </costs>
+      <comment>[NL] F/S 2/3+/1/E OC Fus-1 Rv-1</comment>
       <infoLinks>
         <infoLink name="Overcharge" id="3415-c961-198c-cf51" hidden="false" type="rule" targetId="33e5-a091-cbf5-4765"/>
         <infoLink name="Reave-X" id="be37-e342-ddaa-700e" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="XN-31 Mass Driver Turret" hidden="false" id="d14a-3915-dfc7-1d29">
+    <selectionEntry type="upgrade" import="true" name="XN-31 Mass Driver Turret" hidden="false" id="d14a-3915-dfc7-1d29" collective="true">
       <profiles>
         <profile name="XN-31 Mass Driver Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="aeb0-7843-2250-6a07">
           <characteristics>
@@ -2350,16 +2314,13 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/10] F/S 2/2+/1/K Crit-1</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
-      </costs>
+      <comment>[NL] F/S 2/2+/1/K Crit-1</comment>
       <infoLinks>
         <infoLink name="Critical-X" id="534b-3b16-3016-ac0e" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- No Limit Load -----" hidden="true" id="0ec1-5524-64b7-8ce2"/>
-    <selectionEntry type="upgrade" import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="93ff-7d01-30f3-7dfe">
+    <selectionEntry type="upgrade" import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="93ff-7d01-30f3-7dfe" collective="true">
       <profiles>
         <profile name="Bulk Landers &amp; Fire Ships" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="d1c0-e476-5c9e-6421">
           <characteristics>
@@ -2368,9 +2329,9 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/25] 2</comment>
+      <comment>[NL] 2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="7215-cc99-8264-5944">
+    <selectionEntry type="upgrade" import="true" name="Bulk Landers &amp; Fire Ships" hidden="false" id="7215-cc99-8264-5944" collective="true">
       <profiles>
         <profile name="Bulk Landers &amp; Fire Ships" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="9273-2885-d9d0-4ed6">
           <characteristics>
@@ -2379,9 +2340,9 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/15] 2</comment>
+      <comment>[NL] 2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="f10e-2e99-413f-017f">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="f10e-2e99-413f-017f" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="4334-f4f3-0da7-1638">
           <characteristics>
@@ -2390,9 +2351,9 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/40] 2</comment>
+      <comment>[NL] 2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="0743-e2f2-c2ba-5117">
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="0743-e2f2-c2ba-5117" collective="true">
       <profiles>
         <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="1400-4600-e12a-b758">
           <characteristics>
@@ -2401,12 +2362,12 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/25] 1 L-2</comment>
+      <comment>[NL] 1 L-2</comment>
       <infoLinks>
         <infoLink name="Limited-X" id="4d26-f86c-53a2-c800" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mines" hidden="false" id="52d4-7801-63c0-6d68">
+    <selectionEntry type="upgrade" import="true" name="Mines" hidden="false" id="52d4-7801-63c0-6d68" collective="true">
       <profiles>
         <profile name="Mines" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="81b7-8813-0a19-39c1">
           <characteristics>
@@ -2415,10 +2376,10 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[NL/35] 2</comment>
+      <comment>[NL] 2</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Structures -----" hidden="true" id="2f92-eb50-0d77-8e49"/>
-    <selectionEntry type="upgrade" import="true" name="Ablative Armour" hidden="false" id="d2af-e9e9-8f5c-2738">
+    <selectionEntry type="upgrade" import="true" name="Ablative Armour" hidden="false" id="d2af-e9e9-8f5c-2738" collective="true">
       <profiles>
         <profile name="Ablative Armour" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="3de9-9377-0b27-1773">
           <characteristics>
@@ -2426,10 +2387,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[1/10]</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
-      </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5d4-47cd-11d3-af9d" includeChildSelections="false"/>
       </constraints>
@@ -2442,7 +2399,7 @@
         <infoLink name="Reinforced Armour" id="12f2-3fba-5632-cd96" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Drive Refit" hidden="false" id="9e57-79cc-21a0-72fb">
+    <selectionEntry type="upgrade" import="true" name="Drive Refit" hidden="false" id="9e57-79cc-21a0-72fb" collective="true">
       <profiles>
         <profile name="Drive Refit" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="ae7a-5649-23ee-6484">
           <characteristics>
@@ -2450,10 +2407,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[1/15]</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="15"/>
-      </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e47c-98d0-a49f-a1a4" includeChildSelections="false"/>
       </constraints>
@@ -2461,26 +2414,7 @@
         <modifier type="increment" value="3" field="d821-4294-3117-e8a6" scope="parent" affects="profiles.Ship" join=", "/>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scanner Array" hidden="false" id="cc44-b172-47dd-d840">
-      <profiles>
-        <profile name="Scanner Array" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="f854-fca9-8cbe-367a">
-          <characteristics>
-            <characteristic name="Effect" typeId="1f58-541b-60dc-ea2a">This Ship increases its Scan by 4”.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <comment>[1/10]</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
-      </costs>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f880-8ead-fa86-90fc" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="4" field="960a-5d0e-18c5-4310" scope="parent" affects="profiles.Ship"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scanner Array" hidden="false" id="1517-78fb-2a15-57eb">
+    <selectionEntry type="upgrade" import="true" name="Scanner Array" hidden="false" id="1517-78fb-2a15-57eb" collective="true">
       <profiles>
         <profile name="Scanner Array" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="97ba-eb72-c917-3188">
           <characteristics>
@@ -2488,10 +2422,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[1/5]</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
-      </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3845-7e30-131b-a689" includeChildSelections="false"/>
       </constraints>
@@ -2499,7 +2429,7 @@
         <modifier type="increment" value="4" field="960a-5d0e-18c5-4310" scope="parent" affects="profiles.Ship"/>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sensor Dome" hidden="false" id="9fc6-b78f-77eb-cad2">
+    <selectionEntry type="upgrade" import="true" name="Sensor Dome" hidden="false" id="9fc6-b78f-77eb-cad2" collective="true">
       <profiles>
         <profile name="Sensor Dome" typeId="2f84-97db-deff-fa6f" typeName="Structure" hidden="false" id="5abd-b57e-dad8-3b63">
           <characteristics>
@@ -2507,10 +2437,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <comment>[1/10]</comment>
-      <costs>
-        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
-      </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e845-3c68-0549-7209" includeChildSelections="false"/>
       </constraints>
@@ -3883,12 +3809,12 @@ Telescope tokens placed by this Ship persist between rounds and are only removed
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a2f-3f5c-29db-9875" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Scanner Array" hidden="false" id="6f50-bf7d-d4a1-120c" type="selectionEntry" targetId="cc44-b172-47dd-d840" collective="true">
+            <entryLink import="true" name="Scanner Array" hidden="false" id="6f50-bf7d-d4a1-120c" type="selectionEntry" targetId="1517-78fb-2a15-57eb" collective="true" sortIndex="1">
               <costs>
                 <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Drive Refit" hidden="false" id="e742-dd3e-0fe6-8706" type="selectionEntry" targetId="9e57-79cc-21a0-72fb" collective="true">
+            <entryLink import="true" name="Drive Refit" hidden="false" id="e742-dd3e-0fe6-8706" type="selectionEntry" targetId="9e57-79cc-21a0-72fb" collective="true" sortIndex="2">
               <costs>
                 <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="25"/>
               </costs>
