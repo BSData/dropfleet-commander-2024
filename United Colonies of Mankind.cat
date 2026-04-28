@@ -1323,6 +1323,9 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c721-395f-1295-1ef7" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Edmonton Heavy Carrier" hidden="false" id="8991-2970-96d5-dd21">
       <categoryLinks>
@@ -1605,6 +1608,9 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3141-5e1c-a75f-90ca" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Glasgow Cruisers" hidden="false" id="3b69-2353-1c2b-83ec">
       <categoryLinks>
