@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="ac5a-4823-5587-d3eb" name="Industrial" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="12" revision="1" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="ac5a-4823-5587-d3eb" name="Industrial" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="12" revision="2" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="SLM-9 Resupply Hauler" hidden="false" id="0cf9-dc4e-a21a-3fc1" publicationId="0486-c1f4-77a3-c714">
       <selectionEntries>
@@ -46,7 +46,7 @@ Rearm: Increase the Limited-X value of any of that Ship or Space Station’s Wea
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="cbec-7ae8-82b8-8f35" primary="true" name="Light Groups"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="LKS Dredger" hidden="false" id="55f5-22bc-5caf-2e21" publicationId="0486-c1f4-77a3-c714">
+    <selectionEntry type="unit" import="true" name="LKS Dredgers" hidden="false" id="55f5-22bc-5caf-2e21" publicationId="0486-c1f4-77a3-c714">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="LKS Dredger" hidden="false" id="860b-28b6-1ea7-cf70" publicationId="0486-c1f4-77a3-c714">
           <costs>
@@ -75,7 +75,7 @@ Rearm: Increase the Limited-X value of any of that Ship or Space Station’s Wea
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2bf9-2cce-673c-531b" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Mining Laser" hidden="false" id="95f0-d93d-cf01-5230">
+            <selectionEntry type="upgrade" import="true" name="Mining Laser" hidden="false" id="95f0-d93d-cf01-5230" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e56a-34d2-5234-3cde-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e56a-34d2-5234-3cde-max" includeChildSelections="false"/>
@@ -224,7 +224,7 @@ Bodge Repairs: Remove a crippling effect from a friendly Ship within 6” for ea
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c32-694d-aeca-8fcf" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Sawblade Prow" hidden="false" id="aef8-a3c1-524c-5a10">
+            <selectionEntry type="upgrade" import="true" name="Sawblade Prow" hidden="false" id="aef8-a3c1-524c-5a10" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6bf0-4195-38f5-8ed2-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bf0-4195-38f5-8ed2-max" includeChildSelections="false"/>

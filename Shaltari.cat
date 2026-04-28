@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="23" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9d0c-9d91-231b-cab6" name="Shaltari" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="24" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Misc" id="1c77-28ea-5fb6-dc6f" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="1282-2cce-85a8-ebe4" targetId="7e9b-b6ba-2178-6eb5"/>
@@ -318,7 +318,7 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Amber Cruiser" hidden="false" id="5051-3745-9fe6-a84f" type="selectionEntry" targetId="2e10-c4db-c19a-47ca" sortIndex="2" collective="true">
+        <entryLink import="true" name="Amber Cruiser" hidden="false" id="5051-3745-9fe6-a84f" type="selectionEntry" targetId="2e10-c4db-c19a-47ca" sortIndex="2">
           <modifiers>
             <modifier type="set" value="2" field="32ce-7bbb-1d0f-8c80" affects="profiles.Ship" join=", "/>
             <modifier type="set" value="Shield-4+" field="fdf5-89b6-e62e-570f" affects="profiles.Ship" join=", "/>
@@ -2528,7 +2528,7 @@
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Weapons -----" hidden="true" id="6c27-8d35-5619-d229"/>
-    <selectionEntry type="upgrade" import="true" name="Bio Atomiser Array" hidden="false" id="1ebc-9c86-e605-70b7">
+    <selectionEntry type="upgrade" import="true" name="Bio Atomiser Array" hidden="false" id="1ebc-9c86-e605-70b7" collective="true">
       <profiles>
         <profile name="Bio Atomiser Array" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6706-afad-4b3f-5d16">
           <characteristics>
@@ -2550,7 +2550,7 @@
         <infoLink name="Close Action" id="ad50-1edc-afb6-0fa0" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Charged Air" hidden="false" id="9988-9868-66a1-71b2">
+    <selectionEntry type="upgrade" import="true" name="Charged Air" hidden="false" id="9988-9868-66a1-71b2" collective="true">
       <profiles>
         <profile name="Charged Air" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ca5f-9cd3-d186-60fd">
           <characteristics>
@@ -2573,7 +2573,7 @@
         <infoLink name="Close Action" id="dd0c-2ddd-39d5-1cef" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Defence Array" hidden="false" id="f43f-0c35-6bc3-f314">
+    <selectionEntry type="upgrade" import="true" name="Defence Array" hidden="false" id="f43f-0c35-6bc3-f314" collective="true">
       <profiles>
         <profile name="Defence Array" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ed19-5593-fec0-90cb">
           <characteristics>
@@ -2595,7 +2595,7 @@
         <infoLink name="Escape Velocity" id="925c-61ab-cf26-3204" hidden="false" type="rule" targetId="0357-837c-bc00-4ce3"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Disintegrator Bank" hidden="false" id="bfbf-a00a-aba0-ee4f">
+    <selectionEntry type="upgrade" import="true" name="Disintegrator Bank" hidden="false" id="bfbf-a00a-aba0-ee4f" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3129-c463-43b8-6c85-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3129-c463-43b8-6c85-max" includeChildSelections="false"/>
@@ -2618,7 +2618,7 @@
         <infoLink name="Reave-X" id="2375-4166-8515-9223" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery Pair" hidden="false" id="8bee-12e8-8c3d-102a">
+    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery Pair" hidden="false" id="8bee-12e8-8c3d-102a" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f8a-1e04-00f5-e836-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f8a-1e04-00f5-e836-max" includeChildSelections="false"/>
@@ -2642,7 +2642,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="5934-beb6-e29e-cdb4">
+    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="5934-beb6-e29e-cdb4" collective="true">
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1002-1413-07c6-7c9d-min" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1002-1413-07c6-7c9d-max" includeChildSelections="false"/>
@@ -2654,7 +2654,7 @@
         <infoLink name="Volley-X" id="32a0-e7e3-ca0d-2c73" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="56d2-37ef-ce6f-7457">
+    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="56d2-37ef-ce6f-7457" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ef8-475f-3aba-03ad-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ef8-475f-3aba-03ad-max" includeChildSelections="false"/>
@@ -2666,7 +2666,7 @@
         <infoLink name="Volley-X" id="e676-f12d-b31a-f5ac" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="5b34-0f31-b45b-1f32">
+    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="5b34-0f31-b45b-1f32" collective="true">
       <constraints>
         <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a188-16fe-be01-4f6f-min" includeChildSelections="false"/>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a188-16fe-be01-4f6f-max" includeChildSelections="false"/>
@@ -2677,7 +2677,7 @@
         <infoLink name="Reave-X" id="d0ff-a3fb-dfa8-ce3a" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="e742-5130-c811-5c02">
+    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="e742-5130-c811-5c02" collective="true">
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f244-12a3-6b28-266d-min" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f244-12a3-6b28-266d-max" includeChildSelections="false"/>
@@ -2688,7 +2688,7 @@
         <infoLink name="Reave-X" id="8b8b-7cd4-69c0-66f3" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="c4f9-b751-7e09-adac">
+    <selectionEntry type="upgrade" import="true" name="Disintegrator Battery" hidden="false" id="c4f9-b751-7e09-adac" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2b8-d49a-4ae7-38c6-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2b8-d49a-4ae7-38c6-max" includeChildSelections="false"/>
@@ -2699,7 +2699,7 @@
         <infoLink name="Reave-X" id="7db3-1263-4a05-0b2d" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Disruption Beamers" hidden="false" id="a544-f7cd-6fd8-e8bd">
+    <selectionEntry type="upgrade" import="true" name="Disruption Beamers" hidden="false" id="a544-f7cd-6fd8-e8bd" collective="true">
       <profiles>
         <profile name="Disruption Beamers" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="dd56-864c-1ff1-7a1e">
           <characteristics>
@@ -2721,7 +2721,7 @@
         <infoLink name="Fusillade-X" id="0ef3-7277-1a71-b0cc" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Disruption Beamers" hidden="false" id="53eb-d40b-aeef-8d25">
+    <selectionEntry type="upgrade" import="true" name="Disruption Beamers" hidden="false" id="53eb-d40b-aeef-8d25" collective="true">
       <profiles>
         <profile name="Disruption Beamers" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="0cb9-c4b1-b713-3ba3">
           <characteristics>
@@ -2740,7 +2740,7 @@
       </constraints>
       <comment>F 2/3+/1/E</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Disruptor Pair" hidden="false" id="a238-c7d3-57d8-42df">
+    <selectionEntry type="upgrade" import="true" name="Disruptor Pair" hidden="false" id="a238-c7d3-57d8-42df" collective="true">
       <profiles>
         <profile name="Disruptor Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="0a89-4f9f-948f-32cd">
           <characteristics>
@@ -2759,7 +2759,7 @@
       </constraints>
       <comment>FN 8/4+/1/E</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Distortion Cannons" hidden="false" id="85e0-1bf1-6492-90fe">
+    <selectionEntry type="upgrade" import="true" name="Distortion Cannons" hidden="false" id="85e0-1bf1-6492-90fe" collective="true">
       <profiles>
         <profile name="Distortion Cannons" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="1ced-889a-514e-b8da">
           <characteristics>
@@ -2782,7 +2782,7 @@
         <infoLink name="Penetrator" id="7021-0332-3c6d-4111" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Electrosurge Projectors" hidden="false" id="5f71-aa7e-6a79-eee9">
+    <selectionEntry type="upgrade" import="true" name="Electrosurge Projectors" hidden="false" id="5f71-aa7e-6a79-eee9" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f398-3cd0-867b-d1e1" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bb8-1497-36c7-7599" includeChildSelections="false"/>
@@ -2805,7 +2805,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Force Projectors" hidden="false" id="5d02-7208-15e1-e85d">
+    <selectionEntry type="upgrade" import="true" name="Force Projectors" hidden="false" id="5d02-7208-15e1-e85d" collective="true">
       <profiles>
         <profile name="Force Projectors" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="bc86-81f3-323c-9206">
           <characteristics>
@@ -2828,7 +2828,7 @@
         <infoLink name="Close Action" id="5fa8-2847-5137-ea7a" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gravitic Beamer" hidden="false" id="3078-5bbc-4a92-b46b">
+    <selectionEntry type="upgrade" import="true" name="Gravitic Beamer" hidden="false" id="3078-5bbc-4a92-b46b" collective="true">
       <profiles>
         <profile name="Gravitic Beamer" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="143b-89f7-e396-c168">
           <characteristics>
@@ -2851,7 +2851,7 @@
         <infoLink name="Impel-X" id="3d9c-6375-1951-a9e2" hidden="false" type="rule" targetId="9944-ada1-19c8-2d06"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gravity Coil Pair" hidden="false" id="6024-e98b-9faf-e30e">
+    <selectionEntry type="upgrade" import="true" name="Gravity Coil Pair" hidden="false" id="6024-e98b-9faf-e30e" collective="true">
       <profiles>
         <profile name="Gravity Coil Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="86de-8a3c-52b6-ef87">
           <characteristics>
@@ -2873,7 +2873,7 @@
         <infoLink name="Impel-X" id="90cc-d91e-6242-a5e5" hidden="false" type="rule" targetId="9944-ada1-19c8-2d06"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Harpoon Cascade" hidden="false" id="aa2a-5f7c-aafe-deba">
+    <selectionEntry type="upgrade" import="true" name="Harpoon Cascade" hidden="false" id="aa2a-5f7c-aafe-deba" collective="true">
       <comment>F/S/R 3/4+/1/K CA</comment>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18af-64bb-e259-2660"/>
@@ -2895,7 +2895,7 @@
         <infoLink name="Close Action" id="9c2b-6bf0-365a-b8c8" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Harpoon Deluge" hidden="false" id="f5ba-fd82-3d62-f23e">
+    <selectionEntry type="upgrade" import="true" name="Harpoon Deluge" hidden="false" id="f5ba-fd82-3d62-f23e" collective="true">
       <profiles>
         <profile name="Harpoon Deluge" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="8d95-81ef-2fe1-7ba6">
           <characteristics>
@@ -2917,7 +2917,7 @@
         <infoLink name="Close Action" id="f37c-f617-1d22-e902" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Harpoon Strike" hidden="false" id="4af1-bbc8-c9c8-d61d">
+    <selectionEntry type="upgrade" import="true" name="Harpoon Strike" hidden="false" id="4af1-bbc8-c9c8-d61d" collective="true">
       <profiles>
         <profile name="Harpoon Strike" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="bb0a-aa11-4ce7-baed">
           <characteristics>
@@ -2939,7 +2939,7 @@
         <infoLink name="Close Action" id="faab-afe7-379d-a665" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ion Aura &amp; Ion Storm" hidden="false" id="7b23-7095-97b9-ba62">
+    <selectionEntry type="upgrade" import="true" name="Ion Aura &amp; Ion Storm" hidden="false" id="7b23-7095-97b9-ba62" collective="true">
       <profiles>
         <profile name="Ion Aura" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f895-f431-43bf-1629">
           <characteristics>
@@ -2973,7 +2973,7 @@
         <infoLink name="Scald-X" id="cae8-f4ec-8390-1db2" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ion Cannonade" hidden="false" id="0187-5621-3a7c-549d">
+    <selectionEntry type="upgrade" import="true" name="Ion Cannonade" hidden="false" id="0187-5621-3a7c-549d" collective="true">
       <profiles>
         <profile name="Ion Cannonade" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7948-8f4c-8e88-d089">
           <characteristics>
@@ -2995,7 +2995,7 @@
         <infoLink name="Crippling-X" id="b30c-e8cb-d14e-8d9e" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ion Lance" hidden="false" id="5f70-8e74-d08e-b179">
+    <selectionEntry type="upgrade" import="true" name="Ion Lance" hidden="false" id="5f70-8e74-d08e-b179" collective="true">
       <profiles>
         <profile name="Ion Lance" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f3ee-64b8-d1f7-33df">
           <characteristics>
@@ -3018,7 +3018,7 @@
       </constraints>
       <comment>F 5/4+/1/E AtA CA</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Kinetic Lance" hidden="false" id="03ae-6758-e130-7b7b">
+    <selectionEntry type="upgrade" import="true" name="Kinetic Lance" hidden="false" id="03ae-6758-e130-7b7b" collective="true">
       <profiles>
         <profile name="Kinetic Lance" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="8113-f532-3d48-0640">
           <characteristics>
@@ -3040,7 +3040,7 @@
         <infoLink name="Status" id="6779-4d12-3c64-478a" hidden="false" type="rule" targetId="ea58-a80c-c3de-e165"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Light Disruptor" hidden="false" id="7297-f8d5-cbf0-acd1">
+    <selectionEntry type="upgrade" import="true" name="Light Disruptor" hidden="false" id="7297-f8d5-cbf0-acd1" collective="true">
       <profiles>
         <profile name="Light Disruptor" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cf4c-f61e-bcdd-4927">
           <characteristics>
@@ -3062,7 +3062,7 @@
         <infoLink name="Calibre-X" id="d39c-8c49-9ddb-8919" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mega Thermal Lance Cannon" hidden="false" id="67e3-014c-4c6e-f7be">
+    <selectionEntry type="upgrade" import="true" name="Mega Thermal Lance Cannon" hidden="false" id="67e3-014c-4c6e-f7be" collective="true">
       <profiles>
         <profile name="Mega Thermal Lance Cannon" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5de8-6470-4a5f-bb69">
           <characteristics>
@@ -3081,7 +3081,7 @@
       </constraints>
       <comment>FN 5/2+/2/E BT-1 Bl-2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Microwave Array Bank" hidden="false" id="8baa-59ac-c429-b93f">
+    <selectionEntry type="upgrade" import="true" name="Microwave Array Bank" hidden="false" id="8baa-59ac-c429-b93f" collective="true">
       <profiles>
         <profile name="Microwave Array Bank" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="0a9a-9073-e497-e2df">
           <characteristics>
@@ -3105,7 +3105,7 @@
         <infoLink name="Scald-X" id="d858-7b58-da38-e802" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Microwave Array Turret" hidden="false" id="d33d-8a29-834e-5b3d">
+    <selectionEntry type="upgrade" import="true" name="Microwave Array Turret" hidden="false" id="d33d-8a29-834e-5b3d" collective="true">
       <profiles>
         <profile name="Microwave Array Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="0309-d7e3-113e-9582">
           <characteristics>
@@ -3124,7 +3124,7 @@
       </constraints>
       <comment>F/S 5/3+/1/C</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Microwave Array" hidden="false" id="3c69-a4b5-c113-b1f2">
+    <selectionEntry type="upgrade" import="true" name="Microwave Array" hidden="false" id="3c69-a4b5-c113-b1f2" collective="true">
       <profiles>
         <profile name="Microwave Array" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="167a-fc8c-6ee7-641e">
           <characteristics>
@@ -3147,7 +3147,7 @@
         <infoLink name="Scald-X" id="f1f0-da15-ae65-ecba" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Obliterator Cannon" hidden="false" id="e81a-1f26-662d-b42a">
+    <selectionEntry type="upgrade" import="true" name="Obliterator Cannon" hidden="false" id="e81a-1f26-662d-b42a" collective="true">
       <profiles>
         <profile name="Obliterator Cannon" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c41f-10dd-0777-422a">
           <characteristics>
@@ -3171,7 +3171,7 @@
         <infoLink name="Focused" id="6e76-07d6-8fe9-23f2" hidden="false" type="rule" targetId="464a-0e99-0229-5190"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Particle Lance Pair" hidden="false" id="e02d-0e90-975f-cf7c">
+    <selectionEntry type="upgrade" import="true" name="Particle Lance Pair" hidden="false" id="e02d-0e90-975f-cf7c" collective="true">
       <profiles>
         <profile name="Particle Lance Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="aa10-0421-811b-1997">
           <characteristics>
@@ -3193,7 +3193,7 @@
       </constraints>
       <comment>FN 2/3+/2/C Crit-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Particle Lance Triad" hidden="false" id="26be-572f-6722-b237">
+    <selectionEntry type="upgrade" import="true" name="Particle Lance Triad" hidden="false" id="26be-572f-6722-b237" collective="true">
       <profiles>
         <profile name="Particle Lance Triad" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6098-9315-6db9-19cc">
           <characteristics>
@@ -3215,7 +3215,7 @@
       </constraints>
       <comment>FN 3/3+/2/C Crit-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Particle Lance" hidden="false" id="97a4-cfff-839b-b3ff">
+    <selectionEntry type="upgrade" import="true" name="Particle Lance" hidden="false" id="97a4-cfff-839b-b3ff" collective="true">
       <infoLinks>
         <infoLink name="Critical-X" id="da0e-2623-cbaf-25ea" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
         <infoLink name="Particle Lance" id="dca8-da51-435f-999f" hidden="false" type="profile" targetId="0598-f794-1de5-2c4f"/>
@@ -3226,7 +3226,7 @@
       </constraints>
       <comment>[x3] FN 1/3+/2/C Crit-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Particle Lance" hidden="false" id="0909-6293-e86f-5910">
+    <selectionEntry type="upgrade" import="true" name="Particle Lance" hidden="false" id="0909-6293-e86f-5910" collective="true">
       <infoLinks>
         <infoLink name="Critical-X" id="2ebe-2739-b9dd-acea" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
         <infoLink name="Particle Lance" id="43a3-19f9-bec7-01e0" hidden="false" type="profile" targetId="0598-f794-1de5-2c4f"/>
@@ -3237,7 +3237,7 @@
       </constraints>
       <comment>[x2] FN 1/3+/2/C Crit-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Particle Lance" hidden="false" id="7eba-bd1b-f052-380e">
+    <selectionEntry type="upgrade" import="true" name="Particle Lance" hidden="false" id="7eba-bd1b-f052-380e" collective="true">
       <profiles>
         <profile name="Particle Lance" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="648c-de7c-d27d-86c8">
           <characteristics>
@@ -3256,7 +3256,7 @@
       </constraints>
       <comment>FN 1/3+/2/C</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pulse Blaster" hidden="false" id="0cdf-8ae7-4235-8f42">
+    <selectionEntry type="upgrade" import="true" name="Pulse Blaster" hidden="false" id="0cdf-8ae7-4235-8f42" collective="true">
       <profiles>
         <profile name="Pulse Blaster" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c2a7-911f-b293-4d51">
           <characteristics>
@@ -3279,7 +3279,7 @@
       </constraints>
       <comment>F/S 1/3+/2/E CA Pen</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pulse Ioniser Bank" hidden="false" id="be49-8d47-9756-a215">
+    <selectionEntry type="upgrade" import="true" name="Pulse Ioniser Bank" hidden="false" id="be49-8d47-9756-a215" collective="true">
       <profiles>
         <profile name="Pulse Ioniser Bank" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="129c-8c49-ab95-e5fc">
           <characteristics>
@@ -3304,7 +3304,7 @@
       </constraints>
       <comment>F 4/*/1/E BT-2 CA Maul Cal-H/C</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pulse Ioniser Battery" hidden="false" id="0990-3903-15ed-efc1">
+    <selectionEntry type="upgrade" import="true" name="Pulse Ioniser Battery" hidden="false" id="0990-3903-15ed-efc1" collective="true">
       <profiles>
         <profile name="Pulse Ioniser Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="9414-a64c-ebf5-703f">
           <characteristics>
@@ -3329,7 +3329,7 @@
       </constraints>
       <comment>F 12/*/1/E BT-2 CA Maul Cal-M/H/C</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Quad Ion Cannon" hidden="false" id="08d7-24ba-6226-101e">
+    <selectionEntry type="upgrade" import="true" name="Quad Ion Cannon" hidden="false" id="08d7-24ba-6226-101e" collective="true">
       <profiles>
         <profile name="Quad Ion Cannon" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="376b-0c88-0ead-3e20">
           <characteristics>
@@ -3351,7 +3351,7 @@
         <infoLink name="Crippling-X" id="f7da-6273-f893-6725" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Quad Thermal Lance Cannon" hidden="false" id="f156-fabe-419a-2f53">
+    <selectionEntry type="upgrade" import="true" name="Quad Thermal Lance Cannon" hidden="false" id="f156-fabe-419a-2f53" collective="true">
       <profiles>
         <profile name="Quad Thermal Lance Cannon" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="882a-5f61-0c36-829b">
           <characteristics>
@@ -3375,7 +3375,7 @@
       </constraints>
       <comment>FN 8/2+/1/E BT-1 Bl-1 Fus-4</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Thermal Lance Cannon Pair" hidden="false" id="ba78-9b94-e220-39f3">
+    <selectionEntry type="upgrade" import="true" name="Thermal Lance Cannon Pair" hidden="false" id="ba78-9b94-e220-39f3" collective="true">
       <profiles>
         <profile name="Thermal Lance Cannon Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="b3d3-c9e0-cfeb-4c20">
           <characteristics>
@@ -3399,7 +3399,7 @@
       </constraints>
       <comment>FN 4/2+/1/E Bl-1 BT-1 Fus-2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Thermal Lance Cannon" hidden="false" id="949b-0c36-2755-e7df">
+    <selectionEntry type="upgrade" import="true" name="Thermal Lance Cannon" hidden="false" id="949b-0c36-2755-e7df" collective="true">
       <profiles>
         <profile name="Thermal Lance Cannon" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7b8b-5a11-150c-07ea">
           <characteristics>
@@ -3422,7 +3422,7 @@
       </constraints>
       <comment>FN 2/2+/1/E BT-1 Fus-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twin Hyperwave Cannon" hidden="false" id="5404-e515-4a40-7edf">
+    <selectionEntry type="upgrade" import="true" name="Twin Hyperwave Cannon" hidden="false" id="5404-e515-4a40-7edf" collective="true">
       <profiles>
         <profile name="Twin Hyperwave Cannon" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c787-6ad0-8563-5172">
           <characteristics>
@@ -3444,7 +3444,7 @@
       </constraints>
       <comment>F 4/3+/2/E Crip-Fire</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Twin Particle Lance Turret" hidden="false" id="7bc0-2d28-7172-e5f7">
+    <selectionEntry type="upgrade" import="true" name="Twin Particle Lance Turret" hidden="false" id="7bc0-2d28-7172-e5f7" collective="true">
       <profiles>
         <profile name="Twin Particle Lance Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="0d09-fb5e-152b-6871">
           <characteristics>
@@ -3466,7 +3466,7 @@
       </constraints>
       <comment>F/S 2/3+/2/C Crit-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Electrowave Caster" hidden="false" id="9bd2-4e70-acd2-3507">
+    <selectionEntry type="upgrade" import="true" name="Electrowave Caster" hidden="false" id="9bd2-4e70-acd2-3507" collective="true">
       <profiles>
         <profile name="Electrowave Caster" typeId="55a1-fca6-5a62-f9f4" typeName="Weapon" hidden="false" id="6345-b273-7161-7a5d">
           <characteristics>
@@ -3496,7 +3496,7 @@
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Load -----" hidden="true" id="3a59-181d-838a-47f8"/>
-    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="0139-8bb3-23a4-1510">
+    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="0139-8bb3-23a4-1510" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19e7-fad2-4029-5611-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19e7-fad2-4029-5611-max" includeChildSelections="false"/>
@@ -3511,7 +3511,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="552f-108c-a300-ca26">
+    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="552f-108c-a300-ca26" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca33-fc58-e2e9-1273-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca33-fc58-e2e9-1273-max" includeChildSelections="false"/>
@@ -3526,7 +3526,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="5150-ad0f-67e9-d4a0">
+    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="5150-ad0f-67e9-d4a0" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b92b-8d3b-48a0-6568-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b92b-8d3b-48a0-6568-max" includeChildSelections="false"/>
@@ -3541,7 +3541,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="fb91-877c-9139-7bbe">
+    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="fb91-877c-9139-7bbe" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c26-ed02-3c51-d8fa" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b22-4304-c5b9-9398" includeChildSelections="false"/>
@@ -3556,7 +3556,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="bc21-a66c-a102-d7d3">
+    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="bc21-a66c-a102-d7d3" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d496-4e78-7214-1437-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d496-4e78-7214-1437-max" includeChildSelections="false"/>
@@ -3571,7 +3571,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="6c4f-6b3d-efb8-7319">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="6c4f-6b3d-efb8-7319" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d244-56cf-d267-f439-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d244-56cf-d267-f439-max" includeChildSelections="false"/>
@@ -3586,7 +3586,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="ea44-0637-e863-e4f6">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="ea44-0637-e863-e4f6" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb97-42fb-ed9f-e006-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb97-42fb-ed9f-e006-max" includeChildSelections="false"/>
@@ -3601,7 +3601,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="5bce-d727-bfb5-4b50">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="5bce-d727-bfb5-4b50" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6485-1683-8c84-066e" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8855-1cf8-d5b5-415a" includeChildSelections="false"/>
@@ -3616,7 +3616,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="a206-ec27-49d0-76d2">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="a206-ec27-49d0-76d2" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="193b-999c-3546-2346-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="193b-999c-3546-2346-max" includeChildSelections="false"/>
@@ -3631,7 +3631,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="34d2-2816-e958-ad8b">
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="34d2-2816-e958-ad8b" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06b9-94a1-b836-2858" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47bf-ba88-fb96-45b8" includeChildSelections="false"/>
@@ -3650,7 +3650,7 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Equipment -----" hidden="true" id="8615-7c0d-58f3-72b1"/>
-    <selectionEntry type="upgrade" import="true" name="Drive Augmentation" hidden="false" id="1644-6e6f-2512-45c0">
+    <selectionEntry type="upgrade" import="true" name="Drive Augmentation" hidden="false" id="1644-6e6f-2512-45c0" collective="true">
       <modifiers>
         <modifier type="increment" value="3" field="d821-4294-3117-e8a6" affects="profiles.Ship" scope="parent" join=", "/>
       </modifiers>

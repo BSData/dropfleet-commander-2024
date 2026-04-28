@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp">
+<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp">
   <publications>
     <publication name="Civilian Ship Scenarios (251128)" id="1322-3c59-0db2-ee7c" hidden="false" shortName="Civilian Ship Scenarios (251128)"/>
   </publications>
@@ -13,7 +13,7 @@
         <categoryLink targetId="default-category" id="a706-e868-f48d-1609" primary="false" name="Group"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hyperyacht Somniferum" hidden="false" id="76f0-c80d-6cb8-bbba" publicationId="1322-3c59-0db2-ee7c" page="">
+        <selectionEntry type="model" import="true" name="Hyperyacht Somniferum" hidden="false" id="76f0-c80d-6cb8-bbba" publicationId="1322-3c59-0db2-ee7c">
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="80"/>
           </costs>
@@ -25,7 +25,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53d4-a5a8-ea94-37ca-max" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Hyperyacht Somniferum" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4151-b1d8-2ae8-e294" publicationId="1322-3c59-0db2-ee7c" page="">
+            <profile name="Hyperyacht Somniferum" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4151-b1d8-2ae8-e294" publicationId="1322-3c59-0db2-ee7c">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">9&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -81,7 +81,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="5949-8f35-6c92-cd4d" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="M-Type Barge" hidden="false" id="7cf1-c157-dd5e-69bb" publicationId="1322-3c59-0db2-ee7c" page="">
+        <selectionEntry type="model" import="true" name="M-Type Barge" hidden="false" id="7cf1-c157-dd5e-69bb" publicationId="1322-3c59-0db2-ee7c">
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="95"/>
           </costs>
@@ -93,7 +93,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac7e-5372-48c6-6ea5-max" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="M-Type Barge" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6ddc-e65b-a9ec-3ecd" publicationId="1322-3c59-0db2-ee7c" page="">
+            <profile name="M-Type Barge" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6ddc-e65b-a9ec-3ecd" publicationId="1322-3c59-0db2-ee7c">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">9&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -163,7 +163,7 @@
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="a656-07ce-8e33-297a" primary="true" name="Light Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="T-Type Tugboat" hidden="false" id="95e8-1f22-7b49-b402" publicationId="1322-3c59-0db2-ee7c" page="">
+        <selectionEntry type="model" import="true" name="T-Type Tugboat" hidden="false" id="95e8-1f22-7b49-b402" publicationId="1322-3c59-0db2-ee7c">
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="60"/>
           </costs>
@@ -175,7 +175,7 @@
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="96ec-5788-9adb-74af" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="T-Type Tugboat" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5876-24f1-37f4-77e8" publicationId="1322-3c59-0db2-ee7c" page="">
+            <profile name="T-Type Tugboat" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="5876-24f1-37f4-77e8" publicationId="1322-3c59-0db2-ee7c">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">4&quot;</characteristic>
@@ -190,7 +190,7 @@
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Deterrence Missiles" hidden="false" id="98dc-263e-dc8a-9154" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Deterrence Missiles" hidden="false" id="98dc-263e-dc8a-9154" sortIndex="1" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b885-3be2-4dd8-fcd3-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b885-3be2-4dd8-fcd3-max" includeChildSelections="false"/>
@@ -211,7 +211,7 @@
                 <infoLink name="Close Action" id="904d-6f39-dfb4-499b" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Drag to Hell" hidden="false" id="9724-11b5-979a-f99d" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Drag to Hell" hidden="false" id="9724-11b5-979a-f99d" sortIndex="2" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1341-592a-7092-26d2-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1341-592a-7092-26d2-max" includeChildSelections="false"/>
@@ -253,7 +253,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="def4-6c9c-4b61-d473" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Jah’tar Startrader" hidden="false" id="9676-e1a1-b7c8-6bda" publicationId="1322-3c59-0db2-ee7c" page="">
+        <selectionEntry type="model" import="true" name="Jah’tar Startrader" hidden="false" id="9676-e1a1-b7c8-6bda" publicationId="1322-3c59-0db2-ee7c">
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="113"/>
           </costs>
@@ -265,7 +265,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efab-8256-05c6-6ff8" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Jah’tar Startrader" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6aa5-9f08-2821-cbfe" publicationId="1322-3c59-0db2-ee7c" page="">
+            <profile name="Jah’tar Startrader" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="6aa5-9f08-2821-cbfe" publicationId="1322-3c59-0db2-ee7c">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">12&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">6&quot;</characteristic>
@@ -316,7 +316,7 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="edf3-0fcb-71e6-21cf" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="DH-Type Penal Transport" hidden="false" id="b3dc-5086-e7a5-be36" publicationId="1322-3c59-0db2-ee7c" page="">
+        <selectionEntry type="model" import="true" name="DH-Type Penal Transport" hidden="false" id="b3dc-5086-e7a5-be36" publicationId="1322-3c59-0db2-ee7c">
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="123"/>
           </costs>
@@ -328,7 +328,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf13-3a59-9bc2-93a9" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="DH-Type Penal Transport" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="caac-650d-432e-d5e6" publicationId="1322-3c59-0db2-ee7c" page="">
+            <profile name="DH-Type Penal Transport" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="caac-650d-432e-d5e6" publicationId="1322-3c59-0db2-ee7c">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">4&quot;</characteristic>

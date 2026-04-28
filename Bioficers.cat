@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="26" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="27" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Ardent" hidden="false" id="253f-2124-1abd-87e5" publicationId="c835-461f-ea00-a841" page="1">
@@ -2479,7 +2479,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Weapons -----" hidden="true" id="8a08-1923-3d9d-4f19"/>
-    <selectionEntry type="upgrade" import="true" name="Barb Launcher" hidden="false" id="1005-cf24-dc36-a63d">
+    <selectionEntry type="upgrade" import="true" name="Barb Launcher" hidden="false" id="1005-cf24-dc36-a63d" collective="true">
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1cea-020d-eaf0-2d4f" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1dc3-f573-72c4-66f4" includeChildSelections="false"/>
@@ -2490,7 +2490,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Reave-X" id="aecc-000f-49e0-dec1" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Barb Launcher" hidden="false" id="c5fe-cf87-763d-5a5e">
+    <selectionEntry type="upgrade" import="true" name="Barb Launcher" hidden="false" id="c5fe-cf87-763d-5a5e" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fba-adbb-3769-5c04" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6403-47ce-866d-49ff" includeChildSelections="false"/>
@@ -2501,7 +2501,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Reave-X" id="be3d-3b25-b560-cdcf" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Barb Spiker" hidden="false" id="a4ee-58c6-f41d-c3e2">
+    <selectionEntry type="upgrade" import="true" name="Barb Spiker" hidden="false" id="a4ee-58c6-f41d-c3e2" collective="true">
       <profiles>
         <profile name="Barb Spiker" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7621-45f9-6e6d-01a8">
           <characteristics>
@@ -2523,7 +2523,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Reave-X" id="584d-743e-1389-ec78" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Barb Stinger" hidden="false" id="491b-4989-9981-2c90">
+    <selectionEntry type="upgrade" import="true" name="Barb Stinger" hidden="false" id="491b-4989-9981-2c90" collective="true">
       <profiles>
         <profile name="Barb Stinger" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="fb5d-124d-dce5-524b">
           <characteristics>
@@ -2545,7 +2545,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Reave-X" id="f6e0-addf-d8d9-098c" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Grand Bisector" hidden="false" id="b4e9-2055-c538-e9f6">
+    <selectionEntry type="upgrade" import="true" name="Grand Bisector" hidden="false" id="b4e9-2055-c538-e9f6" collective="true">
       <profiles>
         <profile name="Bisector" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a026-7aa7-1be9-6e31">
           <characteristics>
@@ -2567,7 +2567,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </infoLinks>
       <comment>[NL] FN 5/3+/3/E Cal-H/C Crip Pen Bl-2 Foc</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Grand Bisector" hidden="false" id="c7b2-9005-b66e-042f">
+    <selectionEntry type="upgrade" import="true" name="Grand Bisector" hidden="false" id="c7b2-9005-b66e-042f" collective="true">
       <profiles>
         <profile name="Bisector" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7652-71b7-6b0a-89f4">
           <characteristics>
@@ -2593,7 +2593,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>FN 5/3+/3/E Cal-H/C Crip Pen Bl-2 Foc</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bisector" hidden="false" id="fbb0-03e1-e6ea-0f34">
+    <selectionEntry type="upgrade" import="true" name="Bisector" hidden="false" id="fbb0-03e1-e6ea-0f34" collective="true">
       <profiles>
         <profile name="Bisector" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cb7b-ccb0-6224-b855">
           <characteristics>
@@ -2618,7 +2618,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>FN 2/3+/3/E Bl-1 Cal-H/C Pen Foc</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Decon Annihilator" hidden="false" id="a4a4-23e2-4ab4-e239">
+    <selectionEntry type="upgrade" import="true" name="Decon Annihilator" hidden="false" id="a4a4-23e2-4ab4-e239" collective="true">
       <profiles>
         <profile name="Decon Annihilator" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cdf5-f52d-78b3-23c7">
           <characteristics>
@@ -2640,7 +2640,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Reave-X" id="96d9-2fb3-f7fd-9734" hidden="false" type="rule" targetId="4def-e674-d37c-707a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Decon Cannon" hidden="false" id="61be-530f-81e1-90f2">
+    <selectionEntry type="upgrade" import="true" name="Decon Cannon" hidden="false" id="61be-530f-81e1-90f2" collective="true">
       <profiles>
         <profile name="Decon Cannon" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="1716-21d9-bcd4-5bb7">
           <characteristics>
@@ -2659,7 +2659,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>FN 7/3+/1/E</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Decon Blast" hidden="false" id="ff82-4f61-22da-9d39">
+    <selectionEntry type="upgrade" import="true" name="Decon Blast" hidden="false" id="ff82-4f61-22da-9d39" collective="true">
       <profiles>
         <profile name="Decon Blast" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cfed-c755-91f9-4100">
           <characteristics>
@@ -2678,7 +2678,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>F/S/R 4/4+/1/E</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Decon Blaster" hidden="false" id="de4f-a761-d26e-ca57">
+    <selectionEntry type="upgrade" import="true" name="Decon Blaster" hidden="false" id="de4f-a761-d26e-ca57" collective="true">
       <profiles>
         <profile name="Decon Blaster" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="9b98-82f9-949e-abe9">
           <characteristics>
@@ -2697,7 +2697,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>FN 3/3+/1/E</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Decon Devastator Pair" hidden="false" id="c02c-d44b-525d-aa38">
+    <selectionEntry type="upgrade" import="true" name="Decon Devastator Pair" hidden="false" id="c02c-d44b-525d-aa38" collective="true">
       <profiles>
         <profile name="Decon Devastator Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="64e2-ed31-4bd3-6e62">
           <characteristics>
@@ -2720,7 +2720,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Volley-X" id="48ab-1454-6697-a941" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Decon Slayer" hidden="false" id="e47a-d1ac-1256-852f">
+    <selectionEntry type="upgrade" import="true" name="Decon Slayer" hidden="false" id="e47a-d1ac-1256-852f" collective="true">
       <profiles>
         <profile name="Decon Slayer" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="4137-5c86-986e-87c5">
           <characteristics>
@@ -2742,7 +2742,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Air to Air" id="47b0-d7d4-f2d9-db26" hidden="false" type="rule" targetId="ceee-e18a-c60c-0ef5"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Decon Burst" hidden="false" id="9575-1b53-39f8-46d9">
+    <selectionEntry type="upgrade" import="true" name="Decon Burst" hidden="false" id="9575-1b53-39f8-46d9" collective="true">
       <profiles>
         <profile name="Decon Burst" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="8e17-1043-8ee0-1aa3">
           <characteristics>
@@ -2761,7 +2761,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>F/S/R 1/4+/1/E</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Giga Lightvice" hidden="false" id="3bd1-6fc0-bfd9-0cc9">
+    <selectionEntry type="upgrade" import="true" name="Giga Lightvice" hidden="false" id="3bd1-6fc0-bfd9-0cc9" collective="true">
       <profiles>
         <profile name="Giga Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c36c-0982-ecd3-f027">
           <characteristics>
@@ -2791,7 +2791,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Godray Lightvice" hidden="false" id="a6c7-1d0a-81cc-3f21">
+    <selectionEntry type="upgrade" import="true" name="Godray Lightvice" hidden="false" id="a6c7-1d0a-81cc-3f21" collective="true">
       <profiles>
         <profile name="Godray Lightvice (Anti-Ship)" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c65f-bcb1-bf6d-806b">
           <characteristics>
@@ -2829,7 +2829,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>F 5/2+/3/K Alt-1 Bl-1 CA Foc Sc-1 / F 5/4+/3/K Alt-1 Bl-1 Bmb CA Foc Sc-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hyper Lightvice" hidden="false" id="f7df-7ebb-ffb8-301c">
+    <selectionEntry type="upgrade" import="true" name="Hyper Lightvice" hidden="false" id="f7df-7ebb-ffb8-301c" collective="true">
       <profiles>
         <profile name="Hyper Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="542b-6a5e-0b2d-bfcc">
           <characteristics>
@@ -2854,7 +2854,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>F 5/2+/3/K Bl-1 CA Foc Sc-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Lightvice" hidden="false" id="d945-02c0-f69a-78e8">
+    <selectionEntry type="upgrade" import="true" name="Heavy Lightvice" hidden="false" id="d945-02c0-f69a-78e8" collective="true">
       <profiles>
         <profile name="Heavy Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="98e0-27ad-d2be-fe86">
           <characteristics>
@@ -2877,7 +2877,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>F 5/2+/2/K CA Foc</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lightvice" hidden="false" id="8a12-4124-e587-9095">
+    <selectionEntry type="upgrade" import="true" name="Lightvice" hidden="false" id="8a12-4124-e587-9095" collective="true">
       <profiles>
         <profile name="Lightvice" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ee2e-07ab-a4d8-e718">
           <characteristics>
@@ -2900,7 +2900,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>F/S 4/2+/1/K CA</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="41e6-babb-2487-3b35">
+    <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="41e6-babb-2487-3b35" collective="true">
       <infoLinks>
         <infoLink name="Scythes" id="7870-c261-b15e-1a60" hidden="false" type="profile" targetId="afaa-6d9f-302b-4524"/>
         <infoLink name="Anti Wing" id="3c02-04fb-3b26-f2ef" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
@@ -2913,7 +2913,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>[x2] FN 8/4+/1/E AW Fus-3 Rv-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="6863-69a2-b237-39c2">
+    <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="6863-69a2-b237-39c2" collective="true">
       <infoLinks>
         <infoLink name="Anti Wing" id="e154-5d6f-3098-2631" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
         <infoLink name="Fusillade-X" id="50b8-ef88-fc85-7222" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
@@ -2922,7 +2922,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </infoLinks>
       <comment>[NL] FN 8/4+/1/E AW Fus-3 Rv-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="b420-9dac-d07e-3511">
+    <selectionEntry type="upgrade" import="true" name="Scythes" hidden="false" id="b420-9dac-d07e-3511" collective="true">
       <infoLinks>
         <infoLink name="Anti Wing" id="86b6-edfd-98a5-daff" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
         <infoLink name="Fusillade-X" id="4b6d-4703-7495-7221" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
@@ -2935,7 +2935,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>FN 8/4+/1/E AW Fus-3 Rv-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scythe Nodule" hidden="false" id="27d7-86ff-8ab9-5438">
+    <selectionEntry type="upgrade" import="true" name="Scythe Nodule" hidden="false" id="27d7-86ff-8ab9-5438" collective="true">
       <infoLinks>
         <infoLink name="Anti Wing" id="7c7d-22d5-9ebe-c9df" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
         <infoLink name="Fusillade-X" id="46cc-3f5b-8ae9-0376" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
@@ -2960,7 +2960,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scythe Nodule" hidden="false" id="a171-2923-b3ac-bcce">
+    <selectionEntry type="upgrade" import="true" name="Scythe Nodule" hidden="false" id="a171-2923-b3ac-bcce" collective="true">
       <infoLinks>
         <infoLink name="Anti Wing" id="b86a-752a-aa07-305e" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
         <infoLink name="Fusillade-X" id="4a6a-df8e-220c-30aa" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
@@ -2985,7 +2985,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scythe Cluster" hidden="false" id="14d0-202c-3e93-cfee">
+    <selectionEntry type="upgrade" import="true" name="Scythe Cluster" hidden="false" id="14d0-202c-3e93-cfee" collective="true">
       <infoLinks>
         <infoLink name="Anti Wing" id="3af8-ff43-61b8-a59b" hidden="false" type="rule" targetId="d7b1-2768-13e8-009f"/>
         <infoLink name="Fusillade-X" id="82a0-f084-8d6a-e5df" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
@@ -3009,7 +3009,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Giga Winnower" hidden="false" id="8855-7caf-63c6-c042">
+    <selectionEntry type="upgrade" import="true" name="Giga Winnower" hidden="false" id="8855-7caf-63c6-c042" collective="true">
       <profiles>
         <profile name="Giga Winnower" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ec4f-cc21-f11e-93b5">
           <characteristics>
@@ -3029,7 +3029,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </infoLinks>
       <comment>[NL] F/S 15/3+/1/E CA Fus-5 Cal-L</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Giga Winnower" hidden="false" id="7670-4c00-fe95-2df6">
+    <selectionEntry type="upgrade" import="true" name="Giga Winnower" hidden="false" id="7670-4c00-fe95-2df6" collective="true">
       <profiles>
         <profile name="Giga Winnower" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="087f-7e40-ed0d-7026">
           <characteristics>
@@ -3053,7 +3053,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>F/S 15/3+/1/E CA Fus-5 Cal-L</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Winnower" hidden="false" id="d0e9-7919-19c0-b2c8">
+    <selectionEntry type="upgrade" import="true" name="Winnower" hidden="false" id="d0e9-7919-19c0-b2c8" collective="true">
       <profiles>
         <profile name="Winnower" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ea5e-25e1-5535-efd6">
           <characteristics>
@@ -3076,7 +3076,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>F/S 5/4+/1/E Cal-L CA</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Thermator" hidden="false" id="a73c-370d-fbb9-8451">
+    <selectionEntry type="upgrade" import="true" name="Thermator" hidden="false" id="a73c-370d-fbb9-8451" collective="true">
       <profiles>
         <profile name="Thermator" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="3cda-b56b-b71f-a018">
           <characteristics>
@@ -3095,7 +3095,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </infoLinks>
       <comment>[NL] F 3/4+/2/E OC Scald-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Thermator" hidden="false" id="0c95-f250-f157-3f91">
+    <selectionEntry type="upgrade" import="true" name="Thermator" hidden="false" id="0c95-f250-f157-3f91" collective="true">
       <profiles>
         <profile name="Thermator" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="9dc9-7980-a0af-ea91">
           <characteristics>
@@ -3118,7 +3118,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>F 3/4+/2/E OC Scald-1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bombardment" hidden="false" id="e656-5bf9-f4db-a6f3">
+    <selectionEntry type="upgrade" import="true" name="Bombardment" hidden="false" id="e656-5bf9-f4db-a6f3" collective="true">
       <profiles>
         <profile name="Bombardment" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c0be-c565-b33f-0f86">
           <characteristics>
@@ -3141,7 +3141,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="370c-4524-b93d-f280-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Light Bombardment" hidden="false" id="3ae9-2d33-1432-e2c2">
+    <selectionEntry type="upgrade" import="true" name="Light Bombardment" hidden="false" id="3ae9-2d33-1432-e2c2" collective="true">
       <profiles>
         <profile name="Light Bombardment" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="89d9-ede0-200c-1b5b">
           <characteristics>
@@ -3164,7 +3164,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad06-83f2-58b9-bae7-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ghost Orb" hidden="false" id="7b56-3538-f1ca-10fd">
+    <selectionEntry type="upgrade" import="true" name="Ghost Orb" hidden="false" id="7b56-3538-f1ca-10fd" collective="true">
       <profiles>
         <profile name="Ghost Orb" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="ded2-907a-d220-c425">
           <characteristics>
@@ -3187,7 +3187,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce91-7d09-2f48-6d30-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Graviton Lens" hidden="false" id="087e-6d37-cefe-4ce1">
+    <selectionEntry type="upgrade" import="true" name="Graviton Lens" hidden="false" id="087e-6d37-cefe-4ce1" collective="true">
       <profiles>
         <profile name="Graviton Lens" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a1cf-779d-1977-4455">
           <characteristics>
@@ -3209,7 +3209,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6476-d9c2-0cc3-fabe-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gravitic Stave" hidden="false" id="2c47-653f-eb25-5f6a">
+    <selectionEntry type="upgrade" import="true" name="Gravitic Stave" hidden="false" id="2c47-653f-eb25-5f6a" collective="true">
       <profiles>
         <profile name="Gravitic Stave" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f67f-4df6-9274-a7e4">
           <characteristics>
@@ -3231,7 +3231,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a33e-7b57-e102-3c63-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gravitic Hyperspear" hidden="false" id="75d2-47ca-e94a-00b8">
+    <selectionEntry type="upgrade" import="true" name="Gravitic Hyperspear" hidden="false" id="75d2-47ca-e94a-00b8" collective="true">
       <profiles>
         <profile name="Gravitic Hyperspear" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="97a7-8cab-cd0a-a140">
           <characteristics>
@@ -3254,7 +3254,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c2b-88d1-9146-ba27" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gravitic Hyperlance" hidden="false" id="3fc6-9fce-21bd-ba3e">
+    <selectionEntry type="upgrade" import="true" name="Gravitic Hyperlance" hidden="false" id="3fc6-9fce-21bd-ba3e" collective="true">
       <profiles>
         <profile name="Gravitic Hyperlance" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="60db-731e-d987-66ea">
           <characteristics>
@@ -3273,7 +3273,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Bloom-X" id="2a4c-d952-8771-0a74" hidden="false" type="rule" targetId="a944-3ee8-9a6c-6440"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gravitic Hyperlance" hidden="false" id="e2da-34aa-3c6f-f1b9">
+    <selectionEntry type="upgrade" import="true" name="Gravitic Hyperlance" hidden="false" id="e2da-34aa-3c6f-f1b9" collective="true">
       <profiles>
         <profile name="Gravitic Hyperlance" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f8bf-ed30-dd80-872c">
           <characteristics>
@@ -3296,7 +3296,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="090d-832e-1429-5f69" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gravitic Pulveriser" hidden="false" id="6504-3bdd-3d6e-4059">
+    <selectionEntry type="upgrade" import="true" name="Gravitic Pulveriser" hidden="false" id="6504-3bdd-3d6e-4059" collective="true">
       <profiles>
         <profile name="Gravitic Pulveriser (Anti-Ship)" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="d11d-8182-50ea-39da">
           <characteristics>
@@ -3331,7 +3331,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2b1-48cb-e996-ca43-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Concussion Prism" hidden="false" id="8d3d-e2a8-a8ac-82f8">
+    <selectionEntry type="upgrade" import="true" name="Concussion Prism" hidden="false" id="8d3d-e2a8-a8ac-82f8" collective="true">
       <profiles>
         <profile name="Concussion Prism" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7b79-b993-2d53-2351">
           <characteristics>
@@ -3350,7 +3350,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dde2-c376-5112-2306" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Prism" hidden="false" id="1dc8-aee7-bcb1-c5b1">
+    <selectionEntry type="upgrade" import="true" name="Prism" hidden="false" id="1dc8-aee7-bcb1-c5b1" collective="true">
       <profiles>
         <profile name="Prism" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="a50f-825c-e0d1-97f1">
           <characteristics>
@@ -3370,7 +3370,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Load -----" hidden="true" id="fa55-3eba-9997-521f"/>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="00d8-9dd8-8af4-2de3">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="00d8-9dd8-8af4-2de3" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="9609-0474-3485-1073">
           <characteristics>
@@ -3385,7 +3385,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>5</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="9f7a-e289-c37f-ffa8">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="9f7a-e289-c37f-ffa8" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="c7ca-faf6-179f-cdac">
           <characteristics>
@@ -3400,7 +3400,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>3</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="65bd-53c9-d2c9-643c">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="65bd-53c9-d2c9-643c" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="5ce0-026b-37b8-62fc">
           <characteristics>
@@ -3415,7 +3415,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="0089-5f09-3647-73df">
+    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="0089-5f09-3647-73df" collective="true">
       <profiles>
         <profile name="Bulk Landers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="b0e4-1704-bcce-1b4d">
           <characteristics>
@@ -3430,7 +3430,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="0c49-3760-f6a3-3887">
+    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="0c49-3760-f6a3-3887" collective="true">
       <profiles>
         <profile name="Boarding Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="63a5-6577-71e2-3635">
           <characteristics>
@@ -3445,7 +3445,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>3</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="dab4-536f-2ff8-1650">
+    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="dab4-536f-2ff8-1650" collective="true">
       <profiles>
         <profile name="Boarding Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="cbf4-0f4e-519c-d07a">
           <characteristics>
@@ -3460,7 +3460,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="b7be-f842-2ebd-bca6">
+    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="b7be-f842-2ebd-bca6" collective="true">
       <profiles>
         <profile name="Boarding Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="32a4-7f60-3972-3a92">
           <characteristics>
@@ -3475,7 +3475,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       </constraints>
       <comment>1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Drop Pods" hidden="false" id="fa37-7da4-de81-1856">
+    <selectionEntry type="upgrade" import="true" name="Drop Pods" hidden="false" id="fa37-7da4-de81-1856" collective="true">
       <profiles>
         <profile name="Drop Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="105f-e689-353c-6520">
           <characteristics>
@@ -3493,7 +3493,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Alt-X" id="ab28-75e3-295f-ef89" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="69d5-9e3b-8e0b-f8ab">
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="69d5-9e3b-8e0b-f8ab" collective="true">
       <profiles>
         <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="388a-b980-ecc5-b432">
           <characteristics>
@@ -3507,7 +3507,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Limited-X" id="3c19-1846-209f-6338" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="2a03-3fe4-51e0-5a5a">
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="2a03-3fe4-51e0-5a5a" collective="true">
       <profiles>
         <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="b19f-168b-962d-dc67">
           <characteristics>
@@ -3525,7 +3525,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Limited-X" id="4aa9-4311-531b-62d3" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="e90b-9b11-28fe-af2e">
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="e90b-9b11-28fe-af2e" collective="true">
       <profiles>
         <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="944e-deaf-6521-cba0">
           <characteristics>
@@ -3541,7 +3541,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
       <comment>1</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Equipment -----" hidden="true" id="95ec-ed10-26fa-217e"/>
-    <selectionEntry type="upgrade" import="true" name="Torpedo Upgrade" hidden="false" id="189a-9129-d599-806a">
+    <selectionEntry type="upgrade" import="true" name="Torpedo Upgrade" hidden="false" id="189a-9129-d599-806a" collective="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2270-0477-f918-b349" includeChildSelections="false"/>
       </constraints>
@@ -3560,6 +3560,7 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
         <infoLink name="Limited-X" id="3379-4d1a-3e65-b447" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Reference -----" hidden="true" id="135e-b58b-e745-2d30"/>
     <selectionEntry type="upgrade" import="true" name="Launch Assets" hidden="false" id="9cad-9c67-a317-939d" defaultAmount="1">
       <categoryLinks>
         <categoryLink targetId="9cef-c723-f3e7-2dd2" id="cdf5-3e19-cc3e-da20" primary="false" name="Launch Assets"/>

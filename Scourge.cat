@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="22" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="23" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Fleet Thrall" hidden="false" id="7fe9-330a-0598-35d7" publicationId="260d-362c-d403-80ae" page="1">
@@ -1624,10 +1624,10 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Oculus Rays" hidden="false" id="129f-b54d-ae99-c3c5" type="selectionEntry" targetId="b3a5-5f41-e2bd-9de8" sortIndex="1" collective="true"/>
-            <entryLink import="true" name="Plasma Vortex" hidden="false" id="dfbb-76cf-5f5b-026a" type="selectionEntry" targetId="2927-fc54-ed84-1891" sortIndex="2" collective="true"/>
-            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="4acc-f222-939c-d5c8" type="selectionEntry" targetId="2c33-7816-d10d-6bf4" sortIndex="3" collective="true"/>
-            <entryLink import="true" name="Cloaking Crest" hidden="false" id="f6e2-fa34-7630-962a" type="selectionEntry" targetId="826c-a34f-6a51-fea9" collective="true"/>
+            <entryLink import="true" name="Oculus Rays" hidden="false" id="129f-b54d-ae99-c3c5" type="selectionEntry" targetId="b3a5-5f41-e2bd-9de8" sortIndex="1"/>
+            <entryLink import="true" name="Plasma Vortex" hidden="false" id="dfbb-76cf-5f5b-026a" type="selectionEntry" targetId="2927-fc54-ed84-1891" sortIndex="2"/>
+            <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="4acc-f222-939c-d5c8" type="selectionEntry" targetId="2c33-7816-d10d-6bf4" sortIndex="3"/>
+            <entryLink import="true" name="Cloaking Crest" hidden="false" id="f6e2-fa34-7630-962a" type="selectionEntry" targetId="826c-a34f-6a51-fea9"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Cloak-X" id="4a5c-493a-5e85-a930" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
@@ -1669,9 +1669,9 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Oculus Beams" hidden="false" id="f090-9267-2a73-2c69" type="selectionEntry" targetId="61d3-2201-7930-c105" sortIndex="1" collective="true"/>
-            <entryLink import="true" name="Seekers" hidden="false" id="d0af-a6f1-b6ba-09f5" type="selectionEntry" targetId="9861-f774-8b0c-7095" sortIndex="2" collective="true"/>
-            <entryLink import="true" name="Cloaking Crest" hidden="false" id="6f29-f88a-f684-8e92" type="selectionEntry" targetId="826c-a34f-6a51-fea9" collective="true"/>
+            <entryLink import="true" name="Oculus Beams" hidden="false" id="f090-9267-2a73-2c69" type="selectionEntry" targetId="61d3-2201-7930-c105" sortIndex="1"/>
+            <entryLink import="true" name="Seekers" hidden="false" id="d0af-a6f1-b6ba-09f5" type="selectionEntry" targetId="9861-f774-8b0c-7095" sortIndex="2"/>
+            <entryLink import="true" name="Cloaking Crest" hidden="false" id="6f29-f88a-f684-8e92" type="selectionEntry" targetId="826c-a34f-6a51-fea9"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Cloak-X" id="6e5a-f98a-04f0-2c22" hidden="true" type="rule" targetId="69fa-32f1-0a4f-c052"/>
@@ -1713,9 +1713,9 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Oculus Rays" hidden="false" id="024d-6f23-e2da-7cbb" type="selectionEntry" targetId="b3a5-5f41-e2bd-9de8" sortIndex="1" collective="true"/>
-            <entryLink import="true" name="Furnace Blaster" hidden="false" id="fbb6-d19c-31ff-ddb7" type="selectionEntry" targetId="2ecb-d313-83b9-eb80" sortIndex="2" collective="true"/>
-            <entryLink import="true" name="Cloaking Crest" hidden="false" id="c070-3c6f-daec-3c36" type="selectionEntry" targetId="826c-a34f-6a51-fea9" collective="true"/>
+            <entryLink import="true" name="Oculus Rays" hidden="false" id="024d-6f23-e2da-7cbb" type="selectionEntry" targetId="b3a5-5f41-e2bd-9de8" sortIndex="1"/>
+            <entryLink import="true" name="Furnace Blaster" hidden="false" id="fbb6-d19c-31ff-ddb7" type="selectionEntry" targetId="2ecb-d313-83b9-eb80" sortIndex="2"/>
+            <entryLink import="true" name="Cloaking Crest" hidden="false" id="c070-3c6f-daec-3c36" type="selectionEntry" targetId="826c-a34f-6a51-fea9"/>
             <entryLink import="true" name="Plasma Gale" hidden="false" id="f7c0-facf-f2be-3699" type="selectionEntry" targetId="550e-2874-4f38-4989" sortIndex="3"/>
           </entryLinks>
           <infoLinks>
@@ -2307,7 +2307,7 @@
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Weapons -----" hidden="true" id="21c8-ea79-36f0-91b8"/>
-    <selectionEntry type="upgrade" import="true" name="Engine Needle" hidden="false" id="bc37-6699-e96d-02e4">
+    <selectionEntry type="upgrade" import="true" name="Engine Needle" hidden="false" id="bc37-6699-e96d-02e4" collective="true">
       <infoLinks>
         <infoLink name="Crippling-X" id="fc2f-cbee-87c5-c284" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
       </infoLinks>
@@ -2329,7 +2329,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Furnace Blaster" hidden="false" id="2ecb-d313-83b9-eb80">
+    <selectionEntry type="upgrade" import="true" name="Furnace Blaster" hidden="false" id="2ecb-d313-83b9-eb80" collective="true">
       <profiles>
         <profile name="Furnace Blaster" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="e1d5-c498-4e0a-fd70">
           <characteristics>
@@ -2353,7 +2353,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0505-2f90-8bde-6958-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Furnace Cannons" hidden="false" id="16e4-d3b3-ed11-03e8">
+    <selectionEntry type="upgrade" import="true" name="Furnace Cannons" hidden="false" id="16e4-d3b3-ed11-03e8" collective="true">
       <profiles>
         <profile name="Furnace Cannons" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6369-68ea-5baa-e009">
           <characteristics>
@@ -2377,7 +2377,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3754-065a-9eef-c39a-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Furnace Cannons" hidden="false" id="93e9-be87-389d-1c0a">
+    <selectionEntry type="upgrade" import="true" name="Furnace Cannons" hidden="false" id="93e9-be87-389d-1c0a" collective="true">
       <profiles>
         <profile name="Furnace Cannons" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="8f67-f503-2a49-1481">
           <characteristics>
@@ -2401,7 +2401,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb7c-076f-29e1-443d" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Furnace Fangs" hidden="false" id="dfff-6c67-396f-af99">
+    <selectionEntry type="upgrade" import="true" name="Furnace Fangs" hidden="false" id="dfff-6c67-396f-af99" collective="true">
       <infoLinks>
         <infoLink name="Burnthrough-X" id="f059-85b2-196e-2222" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
         <infoLink name="Crippling-X" id="16da-7ef3-4be7-b81e" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
@@ -2414,7 +2414,7 @@
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="75a1-0f1a-acb4-15d8" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Furnace Fangs" hidden="false" id="cc1e-4277-6de6-e142">
+    <selectionEntry type="upgrade" import="true" name="Furnace Fangs" hidden="false" id="cc1e-4277-6de6-e142" collective="true">
       <infoLinks>
         <infoLink name="Burnthrough-X" id="58c1-223e-c7b0-d31e" hidden="false" type="rule" targetId="91ae-f561-0802-3f8e"/>
         <infoLink name="Crippling-X" id="a5ae-e102-91b5-8e21" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
@@ -2427,7 +2427,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c3c-7527-2969-1d0f-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Furnace Triad" hidden="false" id="6e21-95f2-ae92-1f5b">
+    <selectionEntry type="upgrade" import="true" name="Furnace Triad" hidden="false" id="6e21-95f2-ae92-1f5b" collective="true">
       <profiles>
         <profile name="Furnace Triad" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="7244-e61e-4b56-1abf">
           <characteristics>
@@ -2451,7 +2451,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0651-82f4-b01c-6fad-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Plasma Beam Triad" hidden="false" id="6b0e-d2c0-9a71-a05e">
+    <selectionEntry type="upgrade" import="true" name="Heavy Plasma Beam Triad" hidden="false" id="6b0e-d2c0-9a71-a05e" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="7e95-0af3-7167-2376" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Penetrator" id="3108-67d8-cffc-77c5" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
@@ -2474,7 +2474,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Plasma Beam Pair" hidden="false" id="082f-4161-0ad4-397c">
+    <selectionEntry type="upgrade" import="true" name="Heavy Plasma Beam Pair" hidden="false" id="082f-4161-0ad4-397c" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="9145-142e-25ea-3003" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Penetrator" id="ed62-63c7-061c-d47c" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
@@ -2497,7 +2497,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Plasma Beam" hidden="false" id="eba1-f92a-6456-13e1">
+    <selectionEntry type="upgrade" import="true" name="Heavy Plasma Beam" hidden="false" id="eba1-f92a-6456-13e1" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="e9eb-5dff-c4e5-d718" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Penetrator" id="b1df-ed6d-9ae2-bd1e" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
@@ -2520,7 +2520,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Magneton Lash" hidden="false" id="877f-b86b-ad85-6a5a">
+    <selectionEntry type="upgrade" import="true" name="Magneton Lash" hidden="false" id="877f-b86b-ad85-6a5a" collective="true">
       <infoLinks>
         <infoLink name="Calibre-X" id="abc3-a7fb-c8d4-f463" hidden="false" type="rule" targetId="aa1f-b200-394a-dbcf"/>
         <infoLink name="Close Action" id="b2ae-97e9-9e64-162c" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
@@ -2545,7 +2545,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mega Plasma Lance Battery" hidden="false" id="9972-6174-84e1-4f78">
+    <selectionEntry type="upgrade" import="true" name="Mega Plasma Lance Battery" hidden="false" id="9972-6174-84e1-4f78" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="fe08-1297-b037-b977" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
         <infoLink name="Mega Plasma Lance Battery" id="c3f2-6082-1249-8130" hidden="false" type="profile" targetId="1a15-fe90-d9fa-58d1"/>
@@ -2558,7 +2558,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76e1-ea80-afff-0d23" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mega Plasma Lance Battery" hidden="false" id="ae05-6d16-64e3-33c4">
+    <selectionEntry type="upgrade" import="true" name="Mega Plasma Lance Battery" hidden="false" id="ae05-6d16-64e3-33c4" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="1eda-62ce-4a03-1c39" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
         <infoLink name="Mega Plasma Lance Battery" id="99a2-faf2-a1e2-4d81" hidden="false" type="profile" targetId="a286-17ae-128f-321a"/>
@@ -2570,7 +2570,7 @@
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0e01-582f-d6c0-425a-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beam Array" hidden="false" id="3bed-6274-5bd8-5556">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beam Array" hidden="false" id="3bed-6274-5bd8-5556" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="a17f-e562-6d89-b2a4" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
@@ -2592,7 +2592,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beam Array" hidden="false" id="9b54-3d72-7687-8ded">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beam Array" hidden="false" id="9b54-3d72-7687-8ded" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="74ad-cfeb-1cc7-62bf" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
@@ -2614,7 +2614,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beam Array" hidden="false" id="0520-4df6-bb75-2888">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beam Array" hidden="false" id="0520-4df6-bb75-2888" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="367b-558f-9060-fa2f" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
@@ -2636,7 +2636,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beam Array" hidden="false" id="a34f-7717-da6c-e71b">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beam Array" hidden="false" id="a34f-7717-da6c-e71b" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="810b-c8cd-7458-2244" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
@@ -2658,7 +2658,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beam Array" hidden="false" id="c512-d647-65cc-0cba">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beam Array" hidden="false" id="c512-d647-65cc-0cba" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="107b-8122-e2d0-ecde" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
         <infoLink name="Volley-X" id="5581-d2fc-c697-499a" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
@@ -2670,7 +2670,7 @@
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9411-3e12-a9b9-2a46-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beam Crest" hidden="false" id="91ac-5b74-6f3b-c225">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beam Crest" hidden="false" id="91ac-5b74-6f3b-c225" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="4693-9c7a-3328-6881" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
@@ -2692,7 +2692,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beam Crest" hidden="false" id="024b-0c41-1d9e-0c4d">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beam Crest" hidden="false" id="024b-0c41-1d9e-0c4d" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="3077-5050-c9b0-f775" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
@@ -2714,7 +2714,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beam Phalanx" hidden="false" id="2cd7-52c1-070d-c7cd">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beam Phalanx" hidden="false" id="2cd7-52c1-070d-c7cd" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="759b-5e8f-103e-839a" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
         <infoLink name="Volley-X" id="6b20-e852-bf8a-896b" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
@@ -2737,7 +2737,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beam Phalanx" hidden="false" id="d668-50c9-0dfb-8f23">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beam Phalanx" hidden="false" id="d668-50c9-0dfb-8f23" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="6540-6d64-32b1-894f" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
         <infoLink name="Oculus Beam Phalanx" id="8de0-44f7-2320-3b80" hidden="false" type="profile" targetId="71e6-abd4-7f61-15cd"/>
@@ -2748,7 +2748,7 @@
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e8ce-cddd-16aa-411b-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beam Phalanx" hidden="false" id="3058-2389-bedc-ebaf">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beam Phalanx" hidden="false" id="3058-2389-bedc-ebaf" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="a910-7625-4a71-4b48" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
         <infoLink name="Oculus Beam Phalanx" id="fb3c-8e22-ec78-0357" hidden="false" type="profile" targetId="71e6-abd4-7f61-15cd"/>
@@ -2760,7 +2760,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfc2-d04a-1f6f-3c1b" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beam Super Phalanx" hidden="false" id="1caa-2f21-d2ef-4d53">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beam Super Phalanx" hidden="false" id="1caa-2f21-d2ef-4d53" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="b071-e5b7-cd80-bc5f" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
@@ -2782,7 +2782,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beams" hidden="false" id="61d3-2201-7930-c105">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beams" hidden="false" id="61d3-2201-7930-c105" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="5d01-ebdf-0aa6-b80a" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
         <infoLink name="Oculus Beams" id="d6de-498c-012d-06ed" hidden="false" type="profile" targetId="793e-b598-533f-77c9"/>
@@ -2793,7 +2793,7 @@
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fb9a-d795-d6b2-d27e-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beams" hidden="false" id="4c66-64c7-22e4-3649">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beams" hidden="false" id="4c66-64c7-22e4-3649" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="d4e0-0bd4-4c11-3adf" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
         <infoLink name="Oculus Beams" id="273f-6675-e5f3-ad59" hidden="false" type="profile" targetId="a432-a71d-a4d4-42bb"/>
@@ -2804,7 +2804,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91d1-7d0a-9248-d091-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Beams" hidden="false" id="439d-b6b9-f888-75b6">
+    <selectionEntry type="upgrade" import="true" name="Oculus Beams" hidden="false" id="439d-b6b9-f888-75b6" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="14ef-2b7b-1757-397a" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
@@ -2826,7 +2826,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Rays" hidden="false" id="b3a5-5f41-e2bd-9de8">
+    <selectionEntry type="upgrade" import="true" name="Oculus Rays" hidden="false" id="b3a5-5f41-e2bd-9de8" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="7a4e-de89-b681-d973" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
@@ -2848,7 +2848,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Oculus Rays" hidden="false" id="1ba1-b0c8-b113-0659">
+    <selectionEntry type="upgrade" import="true" name="Oculus Rays" hidden="false" id="1ba1-b0c8-b113-0659" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="0acc-b2c8-3627-8a3b" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
@@ -2870,7 +2870,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Bombs" hidden="false" id="dbed-6993-5c42-06dc">
+    <selectionEntry type="upgrade" import="true" name="Plasma Bombs" hidden="false" id="dbed-6993-5c42-06dc" collective="true">
       <infoLinks>
         <infoLink name="Bombardment" id="b707-dc11-25ff-b912" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
         <infoLink name="Scald-X" id="84ad-fa96-9121-301a" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
@@ -2893,7 +2893,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Bombs" hidden="false" id="028d-e347-1a70-76b3">
+    <selectionEntry type="upgrade" import="true" name="Plasma Bombs" hidden="false" id="028d-e347-1a70-76b3" collective="true">
       <infoLinks>
         <infoLink name="Bombardment" id="5c82-c954-ea87-e4dd" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
         <infoLink name="Scald-X" id="e71d-f749-d0d6-e394" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
@@ -2916,7 +2916,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Squall" hidden="false" id="5ac2-5b69-7ddd-2da1">
+    <selectionEntry type="upgrade" import="true" name="Plasma Squall" hidden="false" id="5ac2-5b69-7ddd-2da1" collective="true">
       <infoLinks>
         <infoLink name="Air to Air" id="1bd8-e07a-139a-c321" hidden="false" type="rule" targetId="ceee-e18a-c60c-0ef5"/>
         <infoLink name="Close Action" id="a991-0332-49c6-3489" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
@@ -2940,7 +2940,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Flood" hidden="false" id="b4ef-d866-019f-fc5e">
+    <selectionEntry type="upgrade" import="true" name="Plasma Flood" hidden="false" id="b4ef-d866-019f-fc5e" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="90d9-2bd6-2ca3-bc58" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Scald-X" id="27f1-baf6-ab34-a57a" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
@@ -2963,7 +2963,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Cyclone" hidden="false" id="572d-6b24-cb75-75ba">
+    <selectionEntry type="upgrade" import="true" name="Plasma Cyclone" hidden="false" id="572d-6b24-cb75-75ba" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="3d24-99c9-def0-5a47" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Scald-X" id="5283-5d6e-b5ba-3add" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
@@ -2986,7 +2986,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Gale" hidden="false" id="550e-2874-4f38-4989">
+    <selectionEntry type="upgrade" import="true" name="Plasma Gale" hidden="false" id="550e-2874-4f38-4989" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="32fb-92df-1afc-cef3" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Scald-X" id="84de-0cbc-8218-14ab" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
@@ -3009,7 +3009,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Brand" hidden="false" id="f643-7ab0-c891-6f44">
+    <selectionEntry type="upgrade" import="true" name="Plasma Brand" hidden="false" id="f643-7ab0-c891-6f44" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="1209-ee02-0a7d-4a0b" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Crippling-X" id="f401-8411-0b94-7274" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
@@ -3033,7 +3033,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Storm" hidden="false" id="eb92-daa9-4cce-75e0">
+    <selectionEntry type="upgrade" import="true" name="Plasma Storm" hidden="false" id="eb92-daa9-4cce-75e0" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="1eb5-0aa0-0ef7-6315" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Scald-X" id="b545-d02c-387b-c6a0" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
@@ -3056,7 +3056,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Tempest" hidden="false" id="8231-2291-b406-010c">
+    <selectionEntry type="upgrade" import="true" name="Plasma Tempest" hidden="false" id="8231-2291-b406-010c" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="c44e-75c6-88d7-18c4" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Fusillade-X" id="05bb-e4de-0335-44d5" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
@@ -3080,7 +3080,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Torch" hidden="false" id="37d4-d093-7fa1-447d">
+    <selectionEntry type="upgrade" import="true" name="Plasma Torch" hidden="false" id="37d4-d093-7fa1-447d" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="0474-19ea-d525-dfbd" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Scald-X" id="ceb4-5a20-b6c1-4b1d" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
@@ -3104,7 +3104,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Plasma Vortex" hidden="false" id="2927-fc54-ed84-1891">
+    <selectionEntry type="upgrade" import="true" name="Plasma Vortex" hidden="false" id="2927-fc54-ed84-1891" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="f9ed-5a52-62fb-3a4e" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Scald-X" id="6be9-0664-3759-011d" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
@@ -3127,7 +3127,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reverse Grav Cannon" hidden="false" id="13f8-a5ef-85c4-e1c6">
+    <selectionEntry type="upgrade" import="true" name="Reverse Grav Cannon" hidden="false" id="13f8-a5ef-85c4-e1c6" collective="true">
       <infoLinks>
         <infoLink name="Escape Velocity" id="dddf-985c-155f-48f1" hidden="false" type="rule" targetId="0357-837c-bc00-4ce3"/>
       </infoLinks>
@@ -3149,7 +3149,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Seekers" hidden="false" id="9861-f774-8b0c-7095">
+    <selectionEntry type="upgrade" import="true" name="Seekers" hidden="false" id="9861-f774-8b0c-7095" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="eceb-9119-4929-4fee" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Re-Entry" id="3a8a-bb10-9df7-0a89" hidden="false" type="rule" targetId="3438-1fc6-047d-47ad"/>
@@ -3173,7 +3173,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Siphoned Oculus Rays" hidden="false" id="5909-6b1a-14e6-be58">
+    <selectionEntry type="upgrade" import="true" name="Siphoned Oculus Rays" hidden="false" id="5909-6b1a-14e6-be58" collective="true">
       <infoLinks>
         <infoLink name="Scald-X" id="e214-f2e8-c1b2-eabc" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
@@ -3195,7 +3195,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Anharmonic Resonator" hidden="false" id="34e0-3bfd-927b-c44f">
+    <selectionEntry type="upgrade" import="true" name="Anharmonic Resonator" hidden="false" id="34e0-3bfd-927b-c44f" collective="true">
       <infoLinks>
         <infoLink name="Close Action" id="e2b9-9288-6c2f-1035" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
         <infoLink name="Crippling-X" id="fb45-ce5c-adbc-17a6" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
@@ -3219,7 +3219,7 @@
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Load -----" hidden="true" id="44d8-fe4a-7b60-5a38"/>
-    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="469c-ea6c-428f-e2ae">
+    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="469c-ea6c-428f-e2ae" collective="true">
       <profiles>
         <profile name="Boarding Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="2360-ab06-c2ab-6492">
           <characteristics>
@@ -3234,7 +3234,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d72-5e5e-c4f8-e737-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="edce-30fb-e855-60c6">
+    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="edce-30fb-e855-60c6" collective="true">
       <profiles>
         <profile name="Bulk Landers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="5815-b6f6-ee6f-3db2">
           <characteristics>
@@ -3249,7 +3249,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca8a-7279-c27a-b024-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="8529-9891-a365-79f1">
+    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="8529-9891-a365-79f1" collective="true">
       <profiles>
         <profile name="Bulk Landers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="f7ad-c0d4-5f86-3427">
           <characteristics>
@@ -3264,7 +3264,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d034-9a16-57b0-16cd-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="4751-e43e-faf8-3b38">
+    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="4751-e43e-faf8-3b38" collective="true">
       <profiles>
         <profile name="Dropships" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="cf5e-bf12-2c37-8dfb">
           <characteristics>
@@ -3279,7 +3279,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cc6-5ecb-2913-80af-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="3149-bd18-ff63-1be2">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="3149-bd18-ff63-1be2" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="944a-edb6-3638-3f63">
           <characteristics>
@@ -3301,7 +3301,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d92-5b58-655b-f30a-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="7222-b464-ba97-8347">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="7222-b464-ba97-8347" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="0f4b-0d50-1ed4-6f0e">
           <characteristics>
@@ -3316,7 +3316,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de1b-47e8-6136-1553" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="4967-9e01-1e2d-2641">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="4967-9e01-1e2d-2641" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="c2b5-c879-f940-21e6">
           <characteristics>
@@ -3331,7 +3331,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c783-2ebe-bfaf-a584-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="a0c8-4af1-529a-310d">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="a0c8-4af1-529a-310d" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="17d5-e09c-5132-b0df">
           <characteristics>
@@ -3346,7 +3346,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c02e-86b2-d485-f2e1-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="8d5e-80dc-a360-4c8a">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="8d5e-80dc-a360-4c8a" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="0040-1e9f-ff8d-9c03">
           <characteristics>
@@ -3361,7 +3361,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d78a-a293-74e7-f0c0" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="2c33-7816-d10d-6bf4">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="2c33-7816-d10d-6bf4" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="caa8-095d-83ad-9719">
           <characteristics>
@@ -3376,7 +3376,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="803b-cc00-bbcd-94a2-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="2963-cbdd-60db-a407">
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="2963-cbdd-60db-a407" collective="true">
       <profiles>
         <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="b3dd-cd3e-3274-7d7c">
           <characteristics>
@@ -3394,7 +3394,7 @@
         <infoLink name="Limited-X" id="4ef6-e96d-34f6-b74c" hidden="false" type="rule" targetId="0c02-c41a-e1a2-882e"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="1e68-433d-e139-373e">
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="1e68-433d-e139-373e" collective="true">
       <profiles>
         <profile name="Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="0147-d8c5-7cf2-c8b8">
           <characteristics>
@@ -3413,7 +3413,7 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Equipment -----" hidden="true" id="c05c-5151-80d7-9368"/>
-    <selectionEntry type="upgrade" import="true" name="Cloaking Crest" hidden="false" id="826c-a34f-6a51-fea9">
+    <selectionEntry type="upgrade" import="true" name="Cloaking Crest" hidden="false" id="826c-a34f-6a51-fea9" collective="true">
       <modifiers>
         <modifier type="set" value="Cloak-2, Stealth" field="fdf5-89b6-e62e-570f" affects="profiles.Ship" scope="parent" join=", "/>
         <modifier type="set" value="false" field="hidden" scope="parent" affects="rules"/>
@@ -3425,7 +3425,7 @@
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="5"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cloaking Keel" hidden="false" id="8129-e004-6cb0-724f">
+    <selectionEntry type="upgrade" import="true" name="Cloaking Keel" hidden="false" id="8129-e004-6cb0-724f" collective="true">
       <modifiers>
         <modifier type="set" value="Cloak-2, Stealth" field="fdf5-89b6-e62e-570f" affects="profiles.Ship" scope="parent" join=", "/>
         <modifier type="set" value="false" field="hidden" scope="parent" affects="rules"/>
@@ -3445,7 +3445,7 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Engine Upgrade" hidden="false" id="4fdb-59b7-06e1-c171">
+    <selectionEntry type="upgrade" import="true" name="Engine Upgrade" hidden="false" id="4fdb-59b7-06e1-c171" collective="true">
       <modifiers>
         <modifier type="increment" value="3" field="d821-4294-3117-e8a6" affects="profiles.Ship" scope="parent" join=", "/>
       </modifiers>
@@ -3464,6 +3464,7 @@
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="----- Reference -----" hidden="true" id="faf6-e6a7-6014-2b6f"/>
     <selectionEntry type="upgrade" import="true" name="Launch Assets" hidden="false" id="e840-c9cd-72dc-1ea8" defaultAmount="1">
       <categoryLinks>
         <categoryLink name="Launch Assets" hidden="false" id="2625-13de-c768-fb91" targetId="9cef-c723-f3e7-2dd2" primary="false"/>

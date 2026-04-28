@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="26" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="27" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -807,12 +807,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="c9fb-62d4-a250-33ec" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Milwaukee Pocket Battleship" hidden="false" id="2b61-5a9f-50d3-3afd" publicationId="9813-8e60-542d-9381" page="">
+        <selectionEntry type="model" import="true" name="Milwaukee Pocket Battleship" hidden="false" id="2b61-5a9f-50d3-3afd" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="e9f4-af76-c27d-de6f" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Milwaukee" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e1ca-6cd0-19c4-c87a" publicationId="9813-8e60-542d-9381" page="">
+            <profile name="Milwaukee" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="e1ca-6cd0-19c4-c87a" publicationId="9813-8e60-542d-9381">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -851,12 +851,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="069e-4a84-45b0-302d" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Rotterdam Pocket Battleship" hidden="false" id="d0d2-14ee-983a-92a4" publicationId="9813-8e60-542d-9381" page="">
+        <selectionEntry type="model" import="true" name="Rotterdam Pocket Battleship" hidden="false" id="d0d2-14ee-983a-92a4" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="8ee5-671f-cab5-4166" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Rotterdam" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9069-4e9f-43dc-ccaf" publicationId="9813-8e60-542d-9381" page="">
+            <profile name="Rotterdam" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="9069-4e9f-43dc-ccaf" publicationId="9813-8e60-542d-9381">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -895,12 +895,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="176a-bbc8-78d9-cbec" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="New Dubai Pocket Battleship" hidden="false" id="7881-15b3-942d-be5a" publicationId="9813-8e60-542d-9381" page="">
+        <selectionEntry type="model" import="true" name="New Dubai Pocket Battleship" hidden="false" id="7881-15b3-942d-be5a" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="716d-7d2b-1fd9-6d8a" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="New Dubai" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0559-ee7e-58f1-9b36" publicationId="9813-8e60-542d-9381" page="">
+            <profile name="New Dubai" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0559-ee7e-58f1-9b36" publicationId="9813-8e60-542d-9381">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -939,12 +939,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="ecca-72f4-a992-a959" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hong Kong Pocket Battleship" hidden="false" id="2a04-e538-e277-3d0a" publicationId="9813-8e60-542d-9381" page="">
+        <selectionEntry type="model" import="true" name="Hong Kong Pocket Battleship" hidden="false" id="2a04-e538-e277-3d0a" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="e580-f27c-4bfc-e309" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Hong Kong" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="de5f-9c18-74c5-641e" publicationId="9813-8e60-542d-9381" page="">
+            <profile name="Hong Kong" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="de5f-9c18-74c5-641e" publicationId="9813-8e60-542d-9381">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -983,12 +983,12 @@
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="b928-c8db-88b8-54de" primary="true" name="Heavy Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Siam Battlecruiser" hidden="false" id="30ba-e3c7-c79b-f296" publicationId="9813-8e60-542d-9381" page="">
+        <selectionEntry type="model" import="true" name="Siam Battlecruiser" hidden="false" id="30ba-e3c7-c79b-f296" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="e9f8-2bd7-7f93-e536" targetId="9d6f-26b0-7969-496b" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Siam" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="17f1-ad8d-9fb7-25b6" publicationId="9813-8e60-542d-9381" page="">
+            <profile name="Siam" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="17f1-ad8d-9fb7-25b6" publicationId="9813-8e60-542d-9381">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1198,12 +1198,12 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="b2c3-1933-a8fc-0637" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Busan Supercruiser" hidden="false" id="f4f3-ea1c-41aa-3705" page="" publicationId="9813-8e60-542d-9381">
+        <selectionEntry type="model" import="true" name="Busan Supercruiser" hidden="false" id="f4f3-ea1c-41aa-3705" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="7c5f-ca8a-d3e7-8693" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Busan" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4d0f-c7d4-fb33-7692" publicationId="9813-8e60-542d-9381" page="">
+            <profile name="Busan" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="4d0f-c7d4-fb33-7692" publicationId="9813-8e60-542d-9381">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1242,12 +1242,12 @@
         <categoryLink targetId="e555-ff57-c478-18cd" id="bb00-9d08-e17b-4207" primary="true" name="Medium Groups"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Yokohama Supercruiser" hidden="false" id="8dec-5eb3-c3b3-fe1f" page="" publicationId="9813-8e60-542d-9381">
+        <selectionEntry type="model" import="true" name="Yokohama Supercruiser" hidden="false" id="8dec-5eb3-c3b3-fe1f" publicationId="9813-8e60-542d-9381">
           <categoryLinks>
             <categoryLink name="Medium Ship" hidden="false" id="5f4c-1be5-ee66-5502" targetId="53c3-afc0-63ef-413a" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Yokohama" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0c0a-2c92-32d6-1bf6" publicationId="9813-8e60-542d-9381" page="">
+            <profile name="Yokohama" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="0c0a-2c92-32d6-1bf6" publicationId="9813-8e60-542d-9381">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">7&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -2880,7 +2880,7 @@
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Weapons -----" hidden="true" id="4c33-aaf7-0cde-aa01"/>
-    <selectionEntry type="upgrade" import="true" name="Python Super Heavy Laser" hidden="false" id="d53e-0373-c6d3-d548">
+    <selectionEntry type="upgrade" import="true" name="Python Super Heavy Laser" hidden="false" id="d53e-0373-c6d3-d548" collective="true">
       <profiles>
         <profile name="Python Super Heavy Laser" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="c150-f69d-d596-ace6">
           <characteristics>
@@ -2905,7 +2905,7 @@
       </constraints>
       <comment>FN 5/3+/2/E Bl-2 BT-2 Fl-1 Foc</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Viper Super Heavy Laser" hidden="false" id="5f7b-3797-3168-219b">
+    <selectionEntry type="upgrade" import="true" name="Viper Super Heavy Laser" hidden="false" id="5f7b-3797-3168-219b" collective="true">
       <profiles>
         <profile name="Viper Super Heavy Laser" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5ca8-7481-9551-faaf">
           <characteristics>
@@ -2930,7 +2930,7 @@
       </constraints>
       <comment>FN 8/3+/1/E Bl-1 BT-1 Fl-1 Foc</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cobra Heavy Laser Pair" hidden="false" id="ed83-7a4d-dc31-bbfb">
+    <selectionEntry type="upgrade" import="true" name="Cobra Heavy Laser Pair" hidden="false" id="ed83-7a4d-dc31-bbfb" collective="true">
       <profiles>
         <profile name="Cobra Heavy Laser Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="d5c1-b156-e059-491f">
           <characteristics>
@@ -2954,7 +2954,7 @@
       </constraints>
       <comment>FN 6/3+/1/E BT-2 Fl-2 Foc</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cobra Heavy Laser" hidden="false" id="c47b-b05f-43da-f474">
+    <selectionEntry type="upgrade" import="true" name="Cobra Heavy Laser" hidden="false" id="c47b-b05f-43da-f474" collective="true">
       <profiles>
         <profile name="Cobra Heavy Laser" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="64cb-0c8d-d2ad-8400">
           <characteristics>
@@ -2978,7 +2978,7 @@
       </constraints>
       <comment>FN 4/3+/1/E BT-1 Fl-1 Foc</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Mamba Laser" hidden="false" id="caa6-209d-9f7b-ccbe">
+    <selectionEntry type="upgrade" import="true" name="Mamba Laser" hidden="false" id="caa6-209d-9f7b-ccbe" collective="true">
       <profiles>
         <profile name="Mamba Laser" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="743c-8873-d90e-e00d">
           <characteristics>
@@ -3002,7 +3002,7 @@
       </constraints>
       <comment>FN 3/3+/1/E BT-1 Fl-1 Foc</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Adder Multi Laser" hidden="false" id="aa31-b4e6-b013-4c79">
+    <selectionEntry type="upgrade" import="true" name="Adder Multi Laser" hidden="false" id="aa31-b4e6-b013-4c79" collective="true">
       <profiles>
         <profile name="Adder Multi Laser" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="d1da-a949-95f8-1403">
           <characteristics>
@@ -3024,7 +3024,7 @@
       </constraints>
       <comment>FN 3/2+/1/E Scald-2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Elapid Laser Turrets" hidden="false" id="998c-82ff-95c3-84c5">
+    <selectionEntry type="upgrade" import="true" name="Elapid Laser Turrets" hidden="false" id="998c-82ff-95c3-84c5" collective="true">
       <profiles>
         <profile name="Elapid Laser Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cae7-4e98-cb90-95c5">
           <characteristics>
@@ -3046,7 +3046,7 @@
       </constraints>
       <comment>F/S 4/2+/2/E Pen</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Elapid Laser Turret" hidden="false" id="8303-3891-824c-2d35">
+    <selectionEntry type="upgrade" import="true" name="Elapid Laser Turret" hidden="false" id="8303-3891-824c-2d35" collective="true">
       <profiles>
         <profile name="Elapid Laser Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="1654-4afb-f690-8537">
           <characteristics>
@@ -3068,7 +3068,7 @@
       </constraints>
       <comment>F/S 2/2+/2/E Pen</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Taipan Laser Turrets" hidden="false" id="d059-cd94-1cfb-3065">
+    <selectionEntry type="upgrade" import="true" name="Taipan Laser Turrets" hidden="false" id="d059-cd94-1cfb-3065" collective="true">
       <profiles>
         <profile name="Taipan Laser Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6e63-073a-7ca0-a1d4">
           <characteristics>
@@ -3090,7 +3090,7 @@
       </constraints>
       <comment>[x2] F/S 2/2+/1/E Scald-2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Taipan Laser Turrets" hidden="false" id="f24c-4fcc-cab4-a25e">
+    <selectionEntry type="upgrade" import="true" name="Taipan Laser Turrets" hidden="false" id="f24c-4fcc-cab4-a25e" collective="true">
       <profiles>
         <profile name="Taipan Laser Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cfe1-53a6-3174-bf1b">
           <characteristics>
@@ -3112,7 +3112,7 @@
       </constraints>
       <comment>F/S 2/2+/1/E Scald-2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Haywire Blaster" hidden="false" id="f729-6f5f-3702-3c3b">
+    <selectionEntry type="upgrade" import="true" name="Haywire Blaster" hidden="false" id="f729-6f5f-3702-3c3b" collective="true">
       <profiles>
         <profile name="Haywire Blaster" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="0bde-48dd-bb5e-c063">
           <characteristics>
@@ -3134,7 +3134,7 @@
       </constraints>
       <comment>F 1/4+/0/E Status</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="HB-8800 Bombardment Spikes" hidden="false" id="718e-50f6-a221-c493">
+    <selectionEntry type="upgrade" import="true" name="HB-8800 Bombardment Spikes" hidden="false" id="718e-50f6-a221-c493" collective="true">
       <profiles>
         <profile name="HB-8800 Bombardment Spikes" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="1876-6eb5-d1c9-a90a">
           <characteristics>
@@ -3157,7 +3157,7 @@
         <infoLink name="Scald-X" id="567e-bb22-1196-2e91" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-12000 Twin Mass Driver" hidden="false" id="728d-cebe-832c-6151">
+    <selectionEntry type="upgrade" import="true" name="UF-12000 Twin Mass Driver" hidden="false" id="728d-cebe-832c-6151" collective="true">
       <profiles>
         <profile name="UF-12000 Twin Mass Driver" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="bef9-90e9-b272-1fab">
           <characteristics>
@@ -3179,7 +3179,7 @@
         <infoLink name="Crippling-X" id="a1d4-85f2-a437-cc54" hidden="false" type="rule" targetId="8b64-93ea-39c6-ab29"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-9000-S Twin Mass Driver" hidden="false" id="025f-cd80-4758-9dc6">
+    <selectionEntry type="upgrade" import="true" name="UF-9000-S Twin Mass Driver" hidden="false" id="025f-cd80-4758-9dc6" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5963-092a-2804-7e00" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b88c-cf5d-a1cd-793c" includeChildSelections="false"/>
@@ -3198,7 +3198,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-9000 Twin Mass Driver" hidden="false" id="4cf8-f7f6-ffc0-fe00">
+    <selectionEntry type="upgrade" import="true" name="UF-9000 Twin Mass Driver" hidden="false" id="4cf8-f7f6-ffc0-fe00" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab52-0707-bf97-93e6" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f1a-1653-09e1-c583" includeChildSelections="false"/>
@@ -3221,7 +3221,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-9000 Mass Driver Turret" hidden="false" id="00cb-22ad-7191-43cf">
+    <selectionEntry type="upgrade" import="true" name="UF-9000 Mass Driver Turret" hidden="false" id="00cb-22ad-7191-43cf" collective="true">
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="929e-f530-6cb3-399b" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="891e-20db-7382-cc6f" includeChildSelections="false"/>
@@ -3233,7 +3233,7 @@
         <infoLink name="Penetrator" id="c149-b6fa-c489-e4b9" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Turrets" hidden="false" id="8fba-b109-dbcd-7049">
+    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Turrets" hidden="false" id="8fba-b109-dbcd-7049" collective="true">
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1f0e-1bb4-b4c7-b0e9" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d3ab-f12b-f3c6-8b6a" includeChildSelections="false"/>
@@ -3244,7 +3244,7 @@
         <infoLink name="UF-6400 Mass Driver Turrets" id="5aa3-708b-d83f-ba43" hidden="false" type="profile" targetId="2153-8b40-aaf9-ddcd"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Turrets" hidden="false" id="24ef-131a-f7ce-85bd">
+    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Turrets" hidden="false" id="24ef-131a-f7ce-85bd" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f970-de11-b1e0-b128" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a97-0535-58fd-8a8d" includeChildSelections="false"/>
@@ -3255,7 +3255,7 @@
         <infoLink name="UF-6400 Mass Driver Turrets" id="023d-2142-2023-4f37" hidden="false" type="profile" targetId="2153-8b40-aaf9-ddcd"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Twin Turrets" hidden="false" id="326a-85d1-566a-1767">
+    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Twin Turrets" hidden="false" id="326a-85d1-566a-1767" collective="true">
       <profiles>
         <profile name="UF-6400 Mass Driver Twin Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="3f8f-a515-2bfc-c92b">
           <characteristics>
@@ -3278,7 +3278,7 @@
         <infoLink name="Volley-X" id="2802-02b2-a6dd-d155" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Twin Turret" hidden="false" id="8da2-3250-c705-7334">
+    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Twin Turret" hidden="false" id="8da2-3250-c705-7334" collective="true">
       <profiles>
         <profile name="UF-6400 Mass Driver Twin Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5e54-69c1-207a-0441">
           <characteristics>
@@ -3300,7 +3300,7 @@
         <infoLink name="Critical-X" id="ca05-c28c-be3d-8a2a" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Turret Battery" hidden="false" id="2d6b-6eb8-5254-1a96">
+    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Turret Battery" hidden="false" id="2d6b-6eb8-5254-1a96" collective="true">
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f9b7-d21c-6318-fc17" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dc19-3d89-dcfc-8257" includeChildSelections="false"/>
@@ -3311,7 +3311,7 @@
         <infoLink name="Critical-X" id="3016-99c8-8b9e-8f15" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Turret Triad" hidden="false" id="58c9-a95a-e442-2f10">
+    <selectionEntry type="upgrade" import="true" name="UF-6400 Mass Driver Turret Triad" hidden="false" id="58c9-a95a-e442-2f10" collective="true">
       <profiles>
         <profile name="UF-6400 Mass Driver Turret Triad" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="0f25-5977-ca87-7c16">
           <characteristics>
@@ -3333,7 +3333,7 @@
         <infoLink name="Critical-X" id="f56c-fdd6-e700-e2a5" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turret Core Battery" hidden="false" id="f819-d58c-9c21-4a53">
+    <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turret Core Battery" hidden="false" id="f819-d58c-9c21-4a53" collective="true">
       <profiles>
         <profile name="UF-4200 Mass Driver Turret Core Battery" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="106d-1b45-4b64-fdc9">
           <characteristics>
@@ -3356,7 +3356,7 @@
         <infoLink name="Volley-X" id="a5e5-c816-526a-a1d7" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="bb41-2fcb-66bd-acd5">
+    <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="bb41-2fcb-66bd-acd5" collective="true">
       <profiles>
         <profile name="UF-4200 Mass Driver Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="d5cb-f374-cbc5-db63">
           <characteristics>
@@ -3379,7 +3379,7 @@
         <infoLink name="Volley-X" id="b84a-ed44-d3e6-2113" hidden="false" type="rule" targetId="2313-61f3-8840-3e8b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="e460-34c5-6c21-c94c">
+    <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="e460-34c5-6c21-c94c" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeaf-f8ef-4aea-3914" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f72-9aa6-35ca-f6da" includeChildSelections="false"/>
@@ -3390,7 +3390,7 @@
         <infoLink name="UF-4200 Mass Driver Turrets" id="8d72-fac4-ad3e-7a14" hidden="false" type="profile" targetId="38e5-e410-4c85-d3e4"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="e3cc-ed50-4435-2a87">
+    <selectionEntry type="upgrade" import="true" name="UF-4200 Mass Driver Turrets" hidden="false" id="e3cc-ed50-4435-2a87" collective="true">
       <constraints>
         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4d15-31f4-da26-9d40" includeChildSelections="false"/>
         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="15d5-806e-62e2-eee9" includeChildSelections="false"/>
@@ -3401,7 +3401,7 @@
         <infoLink name="UF-4200 Mass Driver Turrets" id="77b0-8334-69eb-fb3a" hidden="false" type="profile" targetId="38e5-e410-4c85-d3e4"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-2200 Mass Driver Turret Triad" hidden="false" id="040f-02a3-91cf-be69">
+    <selectionEntry type="upgrade" import="true" name="UF-2200 Mass Driver Turret Triad" hidden="false" id="040f-02a3-91cf-be69" collective="true">
       <profiles>
         <profile name="UF-2200 Mass Driver Turret Triad" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6d1a-5ba0-8843-a14c">
           <characteristics>
@@ -3423,7 +3423,7 @@
         <infoLink name="Fusillade-X" id="1a90-777a-ce58-6d6d" hidden="false" type="rule" targetId="4f05-4fdc-fad2-c566"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-2200 Mass Driver Turret" hidden="false" id="47f8-5660-88fd-b329">
+    <selectionEntry type="upgrade" import="true" name="UF-2200 Mass Driver Turret" hidden="false" id="47f8-5660-88fd-b329" collective="true">
       <profiles>
         <profile name="UF-2200 Mass Driver Turret" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="9f0f-afe2-43ab-ed20">
           <characteristics>
@@ -3442,7 +3442,7 @@
       </constraints>
       <comment>F/S 1/4+/1/K</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-B-9000s" hidden="false" id="d8ff-a3b5-c461-1eca">
+    <selectionEntry type="upgrade" import="true" name="UF-B-9000s" hidden="false" id="d8ff-a3b5-c461-1eca" collective="true">
       <profiles>
         <profile name="UF-B-9000s (Anti-Ship)" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6513-0ea0-084e-206c">
           <characteristics>
@@ -3475,7 +3475,7 @@
         <infoLink name="Bombardment" id="4542-2577-f135-b3da" hidden="false" type="rule" targetId="858c-a2ff-ed65-3e47"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-B-8000 Bombardment Turrets" hidden="false" id="a682-7a31-5652-bb18">
+    <selectionEntry type="upgrade" import="true" name="UF-B-8000 Bombardment Turrets" hidden="false" id="a682-7a31-5652-bb18" collective="true">
       <profiles>
         <profile name="UF-B-8000 Bombardment Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="cb7e-c2a4-17ba-94f3">
           <characteristics>
@@ -3498,7 +3498,7 @@
         <infoLink name="Scald-X" id="eb96-2b85-2f73-39ba" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="UF-B-8000 Bombardment Turret Pair" hidden="false" id="ad72-8029-d11e-e5a0">
+    <selectionEntry type="upgrade" import="true" name="UF-B-8000 Bombardment Turret Pair" hidden="false" id="ad72-8029-d11e-e5a0" collective="true">
       <profiles>
         <profile name="UF-B-8000 Bombardment Turret Pair" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="14f1-b105-5ac6-076c">
           <characteristics>
@@ -3521,7 +3521,7 @@
         <infoLink name="Scald-X" id="b2b1-bd1a-141f-39bf" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leviathan Missile Bays" hidden="false" id="0a54-c4e1-6baf-ee55">
+    <selectionEntry type="upgrade" import="true" name="Leviathan Missile Bays" hidden="false" id="0a54-c4e1-6baf-ee55" collective="true">
       <profiles>
         <profile name="Leviathan Missile Bays" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="6190-6540-edc2-f54b">
           <characteristics>
@@ -3543,7 +3543,7 @@
         <infoLink name="Close Action" id="c055-99cc-a062-22d4" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Arowana Missile Turrets" hidden="false" id="98fc-dfc7-5027-febe">
+    <selectionEntry type="upgrade" import="true" name="Arowana Missile Turrets" hidden="false" id="98fc-dfc7-5027-febe" collective="true">
       <profiles>
         <profile name="Arowana Missile Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="04a4-034a-e500-5d60">
           <characteristics>
@@ -3566,7 +3566,7 @@
         <infoLink name="Scald-X" id="f5d5-ed27-ff28-6f4a" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Arowana Missile Turrets" hidden="false" id="1970-7c4f-729c-c6ca">
+    <selectionEntry type="upgrade" import="true" name="Arowana Missile Turrets" hidden="false" id="1970-7c4f-729c-c6ca" collective="true">
       <profiles>
         <profile name="Arowana Missile Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="e8d6-ba3a-535f-857d">
           <characteristics>
@@ -3589,7 +3589,7 @@
         <infoLink name="Scald-X" id="f115-1212-08c4-be76" hidden="false" type="rule" targetId="41b3-55a2-8d71-ee88"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Piranha Missile Turrets" hidden="false" id="2b58-e200-7147-945f">
+    <selectionEntry type="upgrade" import="true" name="Piranha Missile Turrets" hidden="false" id="2b58-e200-7147-945f" collective="true">
       <profiles>
         <profile name="Piranha Missile Turrets" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="0bd1-5240-2667-5b70">
           <characteristics>
@@ -3611,7 +3611,7 @@
         <infoLink name="Close Action" id="a533-e149-1707-8f72" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Swordfish Missile Bays" hidden="false" id="a476-d888-c853-71ed">
+    <selectionEntry type="upgrade" import="true" name="Swordfish Missile Bays" hidden="false" id="a476-d888-c853-71ed" collective="true">
       <profiles>
         <profile name="Swordfish Missile Bays" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="5710-c6cc-316c-0488">
           <characteristics>
@@ -3633,7 +3633,7 @@
         <infoLink name="Close Action" id="644e-cc31-b35c-05fb" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Shark Missile Bays" hidden="false" id="a173-a2d7-d2a9-856a">
+    <selectionEntry type="upgrade" import="true" name="Shark Missile Bays" hidden="false" id="a173-a2d7-d2a9-856a" collective="true">
       <profiles>
         <profile name="Shark Missile Bays" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="75c1-f08f-5006-f632">
           <characteristics>
@@ -3655,7 +3655,7 @@
         <infoLink name="Close Action" id="59d4-fcc3-e2fe-c2ca" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Orca Missile Bays" hidden="false" id="1a8b-96c4-fc9d-12b7">
+    <selectionEntry type="upgrade" import="true" name="Orca Missile Bays" hidden="false" id="1a8b-96c4-fc9d-12b7" collective="true">
       <profiles>
         <profile name="Orca Missile Bays" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="3788-b36a-d479-998b">
           <characteristics>
@@ -3678,7 +3678,7 @@
         <infoLink name="Critical-X" id="a2b5-8a85-df32-e04e" hidden="false" type="rule" targetId="7cc5-6830-9e54-6d11"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Stingray Missile Bays" hidden="false" id="9c88-6deb-94b2-ade8">
+    <selectionEntry type="upgrade" import="true" name="Stingray Missile Bays" hidden="false" id="9c88-6deb-94b2-ade8" collective="true">
       <profiles>
         <profile name="Stingray Missile Bays" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="568a-67e1-ee15-4a60">
           <characteristics>
@@ -3701,7 +3701,7 @@
         <infoLink name="Close Action" id="d51c-189b-f6a0-d6f0" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Barracuda Missile Bays" hidden="false" id="4ac3-af05-7094-b985">
+    <selectionEntry type="upgrade" import="true" name="Barracuda Missile Bays" hidden="false" id="4ac3-af05-7094-b985" collective="true">
       <profiles>
         <profile name="Barracuda Missile Bays" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f685-ceaf-4625-fb48">
           <characteristics>
@@ -3723,7 +3723,7 @@
         <infoLink name="Close Action" id="b6e1-dd5d-c58e-dd91" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Aegis V Array" hidden="false" id="0c21-dd07-2bcb-d2f1">
+    <selectionEntry type="upgrade" import="true" name="Aegis V Array" hidden="false" id="0c21-dd07-2bcb-d2f1" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4a78-0a35-080c-2f1b"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a1e-6863-5374-6246"/>
@@ -3747,7 +3747,7 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Load -----" hidden="true" id="c894-aea1-37c3-2d5f"/>
-    <selectionEntry type="upgrade" import="true" name="Heavy Torpedo" hidden="false" id="6056-1c28-69c4-ddfd">
+    <selectionEntry type="upgrade" import="true" name="Heavy Torpedo" hidden="false" id="6056-1c28-69c4-ddfd" collective="true">
       <profiles>
         <profile name="Heavy Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="f1de-3831-78c6-e5b9">
           <characteristics>
@@ -3766,7 +3766,7 @@
         <infoLink name="Penetrator" id="c5fd-57f4-b7e7-625c" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="f220-d694-f24c-d00d">
+    <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="f220-d694-f24c-d00d" collective="true">
       <profiles>
         <profile name="Medium Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="fd07-5715-6253-ad65">
           <characteristics>
@@ -3785,7 +3785,7 @@
         <infoLink name="Penetrator" id="2ddb-b3d3-1aca-d614" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="1ac0-a1aa-8566-6c8e">
+    <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="1ac0-a1aa-8566-6c8e" collective="true">
       <profiles>
         <profile name="Medium Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="a3a3-9227-9166-2ff0">
           <characteristics>
@@ -3804,7 +3804,7 @@
         <infoLink name="Penetrator" id="25d4-e1a7-db5e-d2e3" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="8c44-d969-a7eb-bc76">
+    <selectionEntry type="upgrade" import="true" name="Medium Torpedo" hidden="false" id="8c44-d969-a7eb-bc76" collective="true">
       <profiles>
         <profile name="Medium Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="a5bc-c5ec-211c-072d">
           <characteristics>
@@ -3823,7 +3823,7 @@
         <infoLink name="Penetrator" id="905f-5e64-a8a7-f886" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Light Torpedo" hidden="false" id="51d6-e7e9-ef28-0396">
+    <selectionEntry type="upgrade" import="true" name="Light Torpedo" hidden="false" id="51d6-e7e9-ef28-0396" collective="true">
       <profiles>
         <profile name="Light Torpedo" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="b0eb-4847-a05c-a87d">
           <characteristics>
@@ -3842,7 +3842,7 @@
         <infoLink name="Penetrator" id="1d74-e7b5-851b-a889" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="9b0d-8d65-cdda-f785">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="9b0d-8d65-cdda-f785" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="3b42-b692-f7b5-40da">
           <characteristics>
@@ -3857,7 +3857,7 @@
       </constraints>
       <comment>6</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="c0db-56ff-db29-5f8a">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="c0db-56ff-db29-5f8a" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="d990-25f2-027f-402d">
           <characteristics>
@@ -3875,7 +3875,7 @@
         <infoLink name="Alt-X" id="8500-fd61-5256-4e90" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="b67c-66bb-bb24-0ffc">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="b67c-66bb-bb24-0ffc" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="a294-c5ce-9416-8d72">
           <characteristics>
@@ -3890,7 +3890,7 @@
       </constraints>
       <comment>4</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="f206-27fd-c5f5-34aa">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="f206-27fd-c5f5-34aa" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="f375-f0d1-18e9-bf83">
           <characteristics>
@@ -3908,7 +3908,7 @@
         <infoLink name="Alt-X" id="81b3-9c52-2497-594d" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="ba6a-589a-610d-5df4">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="ba6a-589a-610d-5df4" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="b8b3-30e1-f491-094d">
           <characteristics>
@@ -3923,7 +3923,7 @@
       </constraints>
       <comment>2</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="a47d-c70b-3c84-e045">
+    <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="a47d-c70b-3c84-e045" collective="true">
       <profiles>
         <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="6d24-fd95-c11f-2528">
           <characteristics>
@@ -3938,7 +3938,7 @@
       </constraints>
       <comment>1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Bombers" hidden="false" id="8b69-b212-604a-7d8e">
+    <selectionEntry type="upgrade" import="true" name="Heavy Bombers" hidden="false" id="8b69-b212-604a-7d8e" collective="true">
       <profiles>
         <profile name="Heavy Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="8090-bed6-fd90-e496">
           <characteristics>
@@ -3956,7 +3956,7 @@
         <infoLink name="Alt-X" id="7923-63fa-ac60-bd9f" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy Bombers" hidden="false" id="6db4-cb9d-ecd7-9762">
+    <selectionEntry type="upgrade" import="true" name="Heavy Bombers" hidden="false" id="6db4-cb9d-ecd7-9762" collective="true">
       <profiles>
         <profile name="Heavy Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="751c-fc8e-6b81-0981">
           <characteristics>
@@ -3974,7 +3974,7 @@
         <infoLink name="Alt-X" id="036d-ff5c-eb1d-a899" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="18b9-de5b-35be-c1d3">
+    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="18b9-de5b-35be-c1d3" collective="true">
       <profiles>
         <profile name="Bulk Landers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="a260-f8b8-91a2-7ad7">
           <characteristics>
@@ -3989,7 +3989,7 @@
       </constraints>
       <comment>8</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="8b68-4228-fe36-41d3">
+    <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="8b68-4228-fe36-41d3" collective="true">
       <profiles>
         <profile name="Bulk Landers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="4ba7-b199-2982-f02c">
           <characteristics>
@@ -4004,7 +4004,7 @@
       </constraints>
       <comment>4</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="75c5-50f1-f12c-2cc8">
+    <selectionEntry type="upgrade" import="true" name="Dropships" hidden="false" id="75c5-50f1-f12c-2cc8" collective="true">
       <profiles>
         <profile name="Dropships" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="dca0-f946-39cf-2a91">
           <characteristics>
@@ -4019,7 +4019,7 @@
       </constraints>
       <comment>1</comment>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Drop Pods" hidden="false" id="f91a-73e2-1d0a-6ff1">
+    <selectionEntry type="upgrade" import="true" name="Drop Pods" hidden="false" id="f91a-73e2-1d0a-6ff1" collective="true">
       <profiles>
         <profile name="Drop Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="81f2-d030-30ad-f108">
           <characteristics>
@@ -4037,7 +4037,7 @@
         <infoLink name="Alt-X" id="606d-ff00-e60e-31e4" hidden="false" type="rule" targetId="f354-1b03-966f-f667"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="1a84-70a6-1f42-aa28">
+    <selectionEntry type="upgrade" import="true" name="Boarding Pods" hidden="false" id="1a84-70a6-1f42-aa28" collective="true">
       <profiles>
         <profile name="Boarding Pods" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="32a3-3769-0ac6-99cc">
           <characteristics>
@@ -4056,7 +4056,7 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Equipment -----" hidden="true" id="cf19-6940-d58e-be37"/>
-    <selectionEntry type="upgrade" import="true" name="Drive Refit" hidden="false" id="282b-d9a0-5864-b290">
+    <selectionEntry type="upgrade" import="true" name="Drive Refit" hidden="false" id="282b-d9a0-5864-b290" collective="true">
       <modifiers>
         <modifier type="increment" value="3" field="d821-4294-3117-e8a6" affects="profiles.Ship" scope="parent" join=", "/>
       </modifiers>
@@ -4067,7 +4067,7 @@
         <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="45"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Laser Refit" hidden="false" id="a773-89c3-bfbd-b367">
+    <selectionEntry type="upgrade" import="true" name="Laser Refit" hidden="false" id="a773-89c3-bfbd-b367" collective="true">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d0c-612e-295e-1765" includeChildSelections="false"/>
       </constraints>

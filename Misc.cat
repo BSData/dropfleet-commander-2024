@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="8" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="9" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Pungari Thresher Hive Ship" hidden="false" id="1fd6-31e0-548c-cc1e">
       <categoryLinks>
@@ -367,7 +367,7 @@
             <infoLink name="Remnant (Rare)" id="12be-6356-423d-e29a" hidden="false" type="rule" targetId="e265-3e7d-a8fe-839f"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="9K Mass Driver Turret" hidden="false" id="bd89-4aa8-e952-47b2">
+            <selectionEntry type="upgrade" import="true" name="9K Mass Driver Turret" hidden="false" id="bd89-4aa8-e952-47b2" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9853-517d-15c7-40f2-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9853-517d-15c7-40f2-max" includeChildSelections="false"/>
@@ -389,7 +389,7 @@
                 <infoLink name="Penetrator" id="62e3-2397-e73d-1d01" hidden="false" type="rule" targetId="fa34-1759-4681-18db"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="N-31 Hybrid Gun Battery" hidden="false" id="706c-61ef-dfcd-b6e2">
+            <selectionEntry type="upgrade" import="true" name="N-31 Hybrid Gun Battery" hidden="false" id="706c-61ef-dfcd-b6e2" collective="true">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02db-8944-101b-7cce-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02db-8944-101b-7cce-max" includeChildSelections="false"/>
