@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="25" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="26" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="66a8-ba07-3fa8-ecf7"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Vizier" hidden="false" id="4d5f-828e-aece-77fe" publicationId="6462-e99b-594c-193a" page="1">
@@ -601,7 +601,7 @@
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Black Nano Drones" hidden="false" id="7ba7-5f30-9c02-dc27" type="selectionEntry" targetId="2a21-e088-bee9-3546" sortIndex="1"/>
-            <entryLink import="true" name="Hornet Drone Cluster" hidden="false" id="06f3-f46a-af03-f1db" type="selectionEntry" targetId="1780-c172-abd0-6d3d" sortIndex="2"/>
+            <entryLink import="true" name="Hornet Drone Locus" hidden="false" id="06f3-f46a-af03-f1db" type="selectionEntry" targetId="1780-c172-abd0-6d3d" sortIndex="2"/>
             <entryLink import="true" name="Fighters &amp; Bombers" hidden="false" id="9c8f-0080-3d44-cff8" type="selectionEntry" targetId="2fe0-cfd4-7c48-0f83" sortIndex="3"/>
           </entryLinks>
           <infoLinks>
@@ -724,7 +724,7 @@
           <entryLinks>
             <entryLink import="true" name="Heavy Calibre Broadside" hidden="false" id="81ad-15e9-70cc-472c" type="selectionEntry" targetId="340b-f569-8189-5108" sortIndex="1"/>
             <entryLink import="true" name="Neutron Missiles" hidden="false" id="1fc4-25e0-3f36-519b" type="selectionEntry" targetId="a485-107a-1180-728a" sortIndex="2"/>
-            <entryLink import="true" name="Hornet Drone Cluster" hidden="false" id="3e94-9e79-cbf1-1a6e" type="selectionEntry" targetId="1780-c172-abd0-6d3d" sortIndex="3"/>
+            <entryLink import="true" name="Hornet Drone Locus" hidden="false" id="3e94-9e79-cbf1-1a6e" type="selectionEntry" targetId="1780-c172-abd0-6d3d" sortIndex="3"/>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -3044,7 +3044,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56d2-599b-7cfc-7cfb-max" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Hornet Drone Cluster" hidden="false" id="1780-c172-abd0-6d3d" collective="true">
+    <selectionEntry type="upgrade" import="true" name="Hornet Drone Locus" hidden="false" id="1780-c172-abd0-6d3d" collective="true">
       <comment>F/S/R 6/3+/2/K CA</comment>
       <profiles>
         <profile name="Hornet Drone Cluster" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="f8c4-c000-b24b-6a4e">
@@ -3656,7 +3656,7 @@
     <entryLink import="true" name="Jah’tar Startrader" hidden="false" id="4fd4-1d27-383a-0d40" type="selectionEntry" targetId="e1ee-f46b-05f3-54b2"/>
     <entryLink import="true" name="DH-Type Penal Transport" hidden="false" id="0c81-fa8d-ee5e-16b3" type="selectionEntry" targetId="3c15-10cc-4cf2-7166"/>
     <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="964b-55f3-9968-f6e7" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
-    <entryLink import="true" name="LKS Dredger" hidden="false" id="8089-105d-44e6-c191" type="selectionEntry" targetId="55f5-22bc-5caf-2e21"/>
+    <entryLink import="true" name="LKS Dredgers" hidden="false" id="8089-105d-44e6-c191" type="selectionEntry" targetId="55f5-22bc-5caf-2e21"/>
     <entryLink import="true" name="Type-87 Terminus Harvester" hidden="false" id="8eca-5614-3146-6766" type="selectionEntry" targetId="d8f6-3b3f-66a7-019a"/>
     <entryLink import="true" name="VX-22 Flenser" hidden="false" id="3614-94c5-1087-2e84" type="selectionEntry" targetId="1caa-22ad-f152-b011"/>
     <entryLink import="true" name="Launch Assets" hidden="false" id="7c92-6895-d024-3a5d" targetId="d178-9648-a5d6-f294" type="selectionEntry"/>
