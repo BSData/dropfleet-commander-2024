@@ -45,6 +45,14 @@ Rearm: Increase the Limited-X value of any of that Ship or Space Station’s Wea
         <categoryLink targetId="default-category" id="1c04-0d9f-9e28-e32d" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="cbec-7ae8-82b8-8f35" primary="true" name="Light Groups"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="LKS Dredgers" hidden="false" id="55f5-22bc-5caf-2e21" publicationId="0486-c1f4-77a3-c714">
       <selectionEntries>
@@ -107,6 +115,14 @@ Rearm: Increase the Limited-X value of any of that Ship or Space Station’s Wea
         <categoryLink targetId="default-category" id="cfdc-c8df-152b-9511" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="9fe7-74f4-fff9-1989" primary="true" name="Light Groups"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Type-87 Terminus Harvester" hidden="false" id="d8f6-3b3f-66a7-019a" publicationId="0486-c1f4-77a3-c714">
       <selectionEntries>
@@ -187,6 +203,14 @@ Bodge Repairs: Remove a crippling effect from a friendly Ship within 6” for ea
         <categoryLink targetId="default-category" id="0c95-8fb8-d76a-99b2" primary="false" name="Group"/>
         <categoryLink targetId="8d99-053d-ffeb-98c5" id="8aca-6a9a-e40d-a952" primary="true" name="Heavy Groups"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="VX-22 Flenser" hidden="false" id="1caa-22ad-f152-b011" publicationId="0486-c1f4-77a3-c714">
       <selectionEntries>
@@ -263,6 +287,14 @@ Bodge Repairs: Remove a crippling effect from a friendly Ship within 6” for ea
         <categoryLink targetId="default-category" id="3b1a-1d09-bae5-b3e5" primary="false" name="Group"/>
         <categoryLink targetId="f51b-d892-62c0-3f1e" id="d6de-3b44-8dca-2e1c" primary="true" name="Light Groups"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <publications>

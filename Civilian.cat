@@ -71,6 +71,14 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="96ae-bf6c-ad34-5e95" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="M-Type Barge" hidden="false" id="a1c6-c54a-4d36-5280">
       <costs>
@@ -153,6 +161,14 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="T-Type Tugboats" hidden="false" id="21c8-a67f-93e1-7b07">
       <costs>
@@ -243,6 +259,14 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Jah’tar Startrader" hidden="false" id="e1ee-f46b-05f3-54b2">
       <costs>
@@ -303,6 +327,12 @@
         <modifier type="set" value="4" field="a751-271e-e49f-52f4">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -431,6 +461,14 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bca0-8536-d1a6-d27b"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>

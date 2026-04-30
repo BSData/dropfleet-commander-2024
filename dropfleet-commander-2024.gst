@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="16" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
+<gameSystem id="sys-5fec-a8da-5dec-0ae6" name="Dropfleet Commander (2024)" battleScribeVersion="2.03" revision="17" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024">
   <categoryEntries>
     <categoryEntry name="Configuration" id="8a9e-8399-ae64-5be9" hidden="false"/>
     <categoryEntry name="Admirals" id="fb8b-57b3-d46c-d679" hidden="false"/>
@@ -317,6 +317,75 @@
       <categoryLinks>
         <categoryLink targetId="8a9e-8399-ae64-5be9" id="4b1f-78ba-b6cc-2dc2" primary="true" name="Configuration"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="71a0-476c-277b-1c28" shared="true" includeChildSelections="false" childName="Game Size"/>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="View Options" hidden="false" id="5b3d-8352-2093-09bc" exportable="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52ec-5dfc-201f-a427-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52ec-5dfc-201f-a427-max" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="8a9e-8399-ae64-5be9" id="d88f-1213-3341-b86d" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Show items unavailable at current game size" id="9d7b-4453-5cfa-94e4" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Admirals" hidden="false" id="2bfb-facb-f285-8141" sortIndex="1" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23bc-03ca-4f30-ba56" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Famous admirals" hidden="false" id="c0e0-0d6b-4ddb-2a64" sortIndex="2" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="454a-1946-4d7b-a83f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Colossal ships" hidden="false" id="2172-995a-95f6-db3d" sortIndex="3" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6566-9d6e-faed-9616" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Show other items" id="b29d-e028-c2e0-202d" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mercenary ships" hidden="false" id="473d-151f-22a2-8892" defaultAmount="1" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="502d-7ac1-20c3-cf81" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Show restricted items" id="cfe0-db61-1111-2e96" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Unique ships already in fleet" hidden="false" id="8eb8-9887-6480-9a59" sortIndex="1" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a07e-4c61-3500-650a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rare ships with max quantity in fleet" hidden="false" id="b7f2-9472-f805-33e4" sortIndex="2" defaultAmount="0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1501-f030-fec3-fe87" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="5b3d-8352-2093-09bc" shared="true" includeChildSelections="false" childName="View Options"/>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lvl 2: Admiral" hidden="false" id="c2e3-744c-214a-624e">
       <costs>
@@ -337,6 +406,13 @@
         <modifier type="set" value="-1" field="4576-1eaa-8baa-f400">
           <conditions>
             <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" childName="Skirmish"/>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="2bfb-facb-f285-8141" shared="true" includeChildSelections="true" childName="Show all admirals"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -362,6 +438,20 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="2bfb-facb-f285-8141" shared="true" includeChildSelections="true" childName="Show all admirals"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="fb8b-57b3-d46c-d679" id="873e-e01f-4fb3-58d5" primary="true" name="Admirals"/>
@@ -377,10 +467,19 @@
       <categoryLinks>
         <categoryLink targetId="492c-ac66-3724-83bc" id="2b6f-70ee-e676-4dc1" primary="true" name="Game"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="6fb6-4519-d945-0495" shared="true" includeChildSelections="true" childName="Secondary Objectives"/>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Game Size" hidden="false" id="bb40-2353-6ff5-0468" targetId="71a0-476c-277b-1c28" type="selectionEntry"/>
+    <entryLink import="true" name="View Options" hidden="false" id="8244-429e-9a87-1bef" targetId="5b3d-8352-2093-09bc" type="selectionEntry"/>
     <entryLink import="true" name="Lvl 2: Admiral" hidden="false" id="7d94-9e0f-7676-288a" targetId="c2e3-744c-214a-624e" type="selectionEntry"/>
     <entryLink import="true" name="Lvl 3: Admiral" hidden="false" id="3bcf-f613-6677-4a35" targetId="6d39-b64d-ed12-d1b4" type="selectionEntry"/>
     <entryLink import="true" name="Lvl 4: Admiral" hidden="false" id="4e39-4406-1f57-84c1" targetId="15ed-22eb-2e08-32e3" type="selectionEntry"/>
