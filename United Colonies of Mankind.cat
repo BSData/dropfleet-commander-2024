@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="28" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9a35-a488-2010-2d63" name="United Colonies of Mankind" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="29" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="8499-440c-c274-7da9"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Captain" hidden="false" id="19a9-7d1f-50b2-e998" publicationId="9813-8e60-542d-9381" page="1">
@@ -4774,14 +4774,16 @@ Friendly Ships within 8” of this Feature’s Dropsite ignore the effects of an
     <entryLink import="true" name="Munitions Platform" hidden="false" id="56ac-8d47-3476-3af6" type="selectionEntry" targetId="6b40-0777-a810-a170"/>
     <entryLink import="true" name="Centurion Grand Cruisers" hidden="false" id="6f78-5a1b-e2cb-497f" type="selectionEntry" targetId="e131-eb84-312c-6fd2"/>
     <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="07b0-7286-6d3b-4f33" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
-    <entryLink import="true" name="M-Type Barge" hidden="false" id="a6c1-ef68-42b0-93af" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
-    <entryLink import="true" name="T-Type Tugboats" hidden="false" id="ee03-5982-f3ca-0362" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
-    <entryLink import="true" name="Jah’tar Startrader" hidden="false" id="ff17-a3bf-0f6b-e55f" type="selectionEntry" targetId="e1ee-f46b-05f3-54b2"/>
-    <entryLink import="true" name="DH-Type Penal Transport" hidden="false" id="61d8-17e4-2d87-faa3" type="selectionEntry" targetId="3c15-10cc-4cf2-7166"/>
-    <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="786b-fded-aedd-99e5" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
     <entryLink import="true" name="LKS Dredgers" hidden="false" id="4fbe-295c-3156-aa7a" type="selectionEntry" targetId="55f5-22bc-5caf-2e21"/>
+    <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="786b-fded-aedd-99e5" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
+    <entryLink import="true" name="T-Type Tugboats" hidden="false" id="ee03-5982-f3ca-0362" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
+    <entryLink import="true" name="DH-Type Penal Transport" hidden="false" id="61d8-17e4-2d87-faa3" type="selectionEntry" targetId="3c15-10cc-4cf2-7166"/>
+    <entryLink import="true" name="Jah’tar Startrader" hidden="false" id="ff17-a3bf-0f6b-e55f" type="selectionEntry" targetId="e1ee-f46b-05f3-54b2"/>
+    <entryLink import="true" name="M-Type Barge" hidden="false" id="a6c1-ef68-42b0-93af" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
+    <entryLink import="true" name="OBV-64 Oblivion Barge" hidden="false" id="d0e2-1453-bcfc-d480" type="selectionEntry" targetId="390b-443d-373d-1637"/>
     <entryLink import="true" name="Type-87 Terminus Harvester" hidden="false" id="2fb5-1e23-5c4a-eb90" type="selectionEntry" targetId="d8f6-3b3f-66a7-019a"/>
     <entryLink import="true" name="VX-22 Flenser" hidden="false" id="2748-3288-dd06-badc" type="selectionEntry" targetId="1caa-22ad-f152-b011"/>
+    <entryLink import="true" name="PRK-91 Provenance Ark" hidden="false" id="1f6d-41da-861e-c920" type="selectionEntry" targetId="6e67-88af-073f-49d5"/>
     <entryLink import="true" name="Launch Assets" hidden="false" id="d611-8ddb-8967-32b1" targetId="76f2-9ded-5c83-da35" type="selectionEntry"/>
     <entryLink import="true" name="Aegis Platform" hidden="false" id="357c-2c6c-6802-cb56" targetId="8222-a290-f39e-07d3" type="selectionEntry"/>
     <entryLink import="true" name="Comms Platform" hidden="false" id="ef07-f08a-e2f4-630d" targetId="e5ac-ee7e-cec2-6eb9" type="selectionEntry"/>
@@ -4872,7 +4874,6 @@ Feet First into Hell (2AP): When you activate another friendly Group in atmosphe
     <catalogueLink type="catalogue" name="Misc" id="b6c4-248a-bdbe-f398" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="cded-8c4c-5653-444c" targetId="7e9b-b6ba-2178-6eb5"/>
     <catalogueLink type="catalogue" name="Civilian" id="565d-d66e-f3ca-265d" targetId="903e-8fb9-3fe2-4460"/>
-    <catalogueLink type="catalogue" name="Industrial" id="21c1-6147-ed18-75d6" targetId="ac5a-4823-5587-d3eb"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Abilities" id="d584-3bb8-45c6-cf81" hidden="false">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="9" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="10" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Pungari Thresher Hive Ship" hidden="false" id="1fd6-31e0-548c-cc1e">
       <categoryLinks>
@@ -165,7 +165,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Marines-2, Stealth, Unique, Mercenary</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Marines-2, Stealth, Unique</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -173,7 +173,6 @@
             <infoLink name="Marines-X" id="f7cf-2b28-8a1c-19f4" hidden="false" type="rule" targetId="93f3-7932-b233-4d38"/>
             <infoLink name="Stealth" id="1657-9dc3-4f86-6254" hidden="false" type="rule" targetId="9306-4cd5-b59e-5898"/>
             <infoLink name="Unique" id="5e7e-4d57-51b6-a03d" hidden="false" type="rule" targetId="3f45-7047-464a-3be4"/>
-            <infoLink name="Mercenary" id="4a20-855b-17c7-8678" hidden="false" type="rule" targetId="001d-50a0-26b6-0242"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="80"/>
@@ -254,7 +253,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">4+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Command Ship-1, Detector, Rare, Advanced Artillery, Magellan Lifeboats, Remnant</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Command Ship-1, Detector, Rare, Advanced Artillery, Magellan Lifeboats</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -274,7 +273,6 @@
             <infoLink name="Rare" id="82b6-d3a9-9d15-2196" hidden="false" type="rule" targetId="f7ad-85f9-39f4-7e10"/>
             <infoLink name="Advanced Artillery" id="2751-fac1-de85-81d8" hidden="false" type="rule" targetId="1cb6-7f70-eb3a-721f"/>
             <infoLink name="Magellan Lifeboats" id="8514-4b64-f3bb-3913" hidden="false" type="rule" targetId="51f8-52e5-f318-ae4a"/>
-            <infoLink name="Remnant" id="df4e-1eb8-7b19-6cca" hidden="false" type="rule" targetId="28e0-87bb-6048-a48a"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="N-12 Artillery Cannons" hidden="false" id="2c6f-0925-9afa-f146">
@@ -346,7 +344,7 @@
                 <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
                 <characteristic name="BS" typeId="05b6-9825-68e8-4983">5+</characteristic>
                 <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
-                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Remnant (Rare)</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
               </characteristics>
               <modifiers>
                 <modifier type="append" value="Rare" field="fdf5-89b6-e62e-570f" join=", ">
@@ -384,7 +382,6 @@
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink name="Remnant (Rare)" id="12be-6356-423d-e29a" hidden="false" type="rule" targetId="e265-3e7d-a8fe-839f"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="9K Mass Driver Turret" hidden="false" id="bd89-4aa8-e952-47b2" collective="true">
@@ -445,14 +442,11 @@
     </selectionEntry>
   </sharedSelectionEntries>
   <publications>
-    <publication name="Misc Combined Fleet Stats (241024)" id="3038-2db1-cc27-8561" hidden="false" shortName="Misc Stats (241024)"/>
+    <publication name="Misc Combined Fleet Stats (250822)" id="3038-2db1-cc27-8561" hidden="false" shortName="Misc Stats (250822)"/>
   </publications>
   <sharedRules>
     <rule name="Subservient Mercenaries" id="2c3a-3695-1a24-815b" hidden="false">
       <description>Pungari Threshers may be used in any fleet but always use Shaltari Fire Ships. When used in a Shaltari fleet, this Ship gains Shield-5+.</description>
-    </rule>
-    <rule name="Mercenary" id="001d-50a0-26b6-0242" hidden="false">
-      <description>This ship may be used in any fleet regardless of Faction. This ship’s Fighters &amp; Bombers use the stats of its parent fleet (if you included this ship in a Scourge fleet, its Fighters &amp; Bombers would follow the Scourge Fighters &amp; Bombers rules).</description>
     </rule>
     <rule name="Advanced Artillery" id="1cb6-7f70-eb3a-721f" hidden="false">
       <description>While on the Max Thrust or Silent Running Orders, this Ship may attack with its N-12 Artillery Cannon Turrets.
@@ -460,14 +454,6 @@ While on the Weapons Free Order, this Ship counts as having an additional weapon
     </rule>
     <rule name="Magellan Lifeboats" id="51f8-52e5-f318-ae4a" hidden="false">
       <description>If this ship is destroyed with an Admiral assigned to it, you may transfer that Admiral to another friendly ship of H or C Tonnage with no Admiral within 18”, losing the benefits of this ship’s Command Ship rule.</description>
-    </rule>
-    <rule name="Remnant" id="28e0-87bb-6048-a48a" hidden="false">
-      <description>This Ship may be used in UCM, PHR, or Resistance fleets.</description>
-      <comment>UCM/PHR/Resistance</comment>
-    </rule>
-    <rule name="Remnant (Rare)" id="e265-3e7d-a8fe-839f" hidden="false">
-      <description>This ship may be used in UCM or PHR fleets in addition to Resistance fleets. In UCM and PHR fleets, they gain the Rare special rule.</description>
-      <comment>UCM/PHR/Resistance + Rare</comment>
     </rule>
   </sharedRules>
 </catalogue>

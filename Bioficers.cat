@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="28" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="29" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Ardent" hidden="false" id="253f-2124-1abd-87e5" publicationId="c835-461f-ea00-a841" page="1">
@@ -3789,17 +3789,19 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     <entryLink import="true" name="Medium Space Station" hidden="false" id="2dd1-b0f8-ae2b-d554" type="selectionEntry" targetId="218b-faf8-ffab-2cd5"/>
     <entryLink import="true" name="Large Space Station" hidden="false" id="e9c7-c210-cd75-f79b" type="selectionEntry" targetId="6f26-fe48-4135-7ed3"/>
     <entryLink import="true" name="Hyperyacht Somniferum" hidden="false" id="d4c6-8b2d-fc48-ae12" type="selectionEntry" targetId="7dbc-56e3-8f6e-8e35"/>
-    <entryLink import="true" name="M-Type Barge" hidden="false" id="c239-bd3d-8baa-8824" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
+    <entryLink import="true" name="LKS Dredgers" hidden="false" id="7658-a4af-c907-7756" type="selectionEntry" targetId="55f5-22bc-5caf-2e21"/>
+    <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="79c4-e1b1-16d4-e113" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
     <entryLink import="true" name="T-Type Tugboats" hidden="false" id="949e-c10a-06c3-9ca0" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
     <entryLink import="true" name="DH-Type Penal Transport" hidden="false" id="302e-301c-e444-d669" type="selectionEntry" targetId="3c15-10cc-4cf2-7166"/>
-    <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="79c4-e1b1-16d4-e113" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
-    <entryLink import="true" name="LKS Dredgers" hidden="false" id="7658-a4af-c907-7756" type="selectionEntry" targetId="55f5-22bc-5caf-2e21"/>
+    <entryLink import="true" name="M-Type Barge" hidden="false" id="c239-bd3d-8baa-8824" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
+    <entryLink import="true" name="OBV-64 Oblivion Barge" hidden="false" id="c239-bd3d-8baa-8824" type="selectionEntry" targetId="390b-443d-373d-1637"/>
     <entryLink import="true" name="Type-87 Terminus Harvester" hidden="false" id="0105-b262-c0b8-265a" type="selectionEntry" targetId="d8f6-3b3f-66a7-019a"/>
     <entryLink import="true" name="VX-22 Flenser" hidden="false" id="0a9f-1ff3-a960-8ab5" type="selectionEntry" targetId="1caa-22ad-f152-b011"/>
+    <entryLink import="true" name="PRK-91 Provenance Ark" hidden="false" id="0a9f-1ff3-a960-8ab5" type="selectionEntry" targetId="6e67-88af-073f-49d5"/>
     <entryLink import="true" name="Launch Assets" hidden="false" id="e18f-e6a0-3a5b-0c3e" targetId="9cad-9c67-a317-939d" type="selectionEntry"/>
   </entryLinks>
   <publications>
-    <publication name="Bioficer Combined Fleet Stats (260327)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (260327)"/>
+    <publication name="Bioficer Combined Fleet Stats (260429)" id="c835-461f-ea00-a841" hidden="false" shortName="Bioficer Stats (260429)"/>
   </publications>
   <sharedRules>
     <rule name="Tractor Beamer" id="c9fa-8382-0412-768a" hidden="false">
@@ -3864,7 +3866,6 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
     <catalogueLink type="catalogue" name="Misc" id="2ccd-d6e9-0a0b-88aa" targetId="1b65-4911-bd01-73aa"/>
     <catalogueLink type="catalogue" name="Fleet Space Stations" id="29e2-bbec-0740-e338" targetId="7e9b-b6ba-2178-6eb5"/>
     <catalogueLink type="catalogue" name="Civilian" id="7494-0d8e-178a-7f61" targetId="903e-8fb9-3fe2-4460"/>
-    <catalogueLink type="catalogue" name="Industrial" id="cc4f-b967-5596-a577" targetId="ac5a-4823-5587-d3eb"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Abilities" id="9fda-37c1-6eaa-b6f5" hidden="false">
