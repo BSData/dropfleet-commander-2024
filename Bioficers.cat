@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="29" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="3407-27f0-fe29-a5b4" name="Bioficers" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="30" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="de2d-0329-2d62-fd0c"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Ardent" hidden="false" id="253f-2124-1abd-87e5" publicationId="c835-461f-ea00-a841" page="1">
@@ -70,6 +70,13 @@
         <modifier type="set" value="-1" field="2a3a-b87f-fc61-ced7">
           <conditions>
             <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" childName="Skirmish"/>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="2bfb-facb-f285-8141" shared="true" includeChildSelections="true" childName="Show all admirals"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -174,6 +181,20 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="c0e0-0d6b-4ddb-2a64" shared="true" includeChildSelections="true" childName="Show all famous admirals"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Lvl 3: Agency - Bastion" hidden="false" id="34da-6dec-d076-e813">
@@ -260,6 +281,13 @@
         <modifier type="set" value="-1" field="73f9-8da4-bd8e-3ee4">
           <conditions>
             <condition type="equalTo" value="0" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" childName="Skirmish"/>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="c0e0-0d6b-4ddb-2a64" shared="true" includeChildSelections="true" childName="Show all famous admirals"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -436,6 +464,15 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" childName="Skirmish"/>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="2172-995a-95f6-db3d" shared="true" includeChildSelections="true" childName="Show all options"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Zodiac Dreadnought" hidden="false" id="43a8-2895-7dfd-97e1">
       <categoryLinks>
@@ -482,6 +519,15 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" childName="Skirmish"/>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="2172-995a-95f6-db3d" shared="true" includeChildSelections="true" childName="Show all options"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Binder Super Battleship" hidden="false" id="e0e7-bd05-12eb-a500">
       <categoryLinks>
@@ -1505,7 +1551,7 @@
         <categoryLink targetId="3929-5fb7-5f98-37ea" id="770f-95ce-a932-df7d" primary="false" name="Hero"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Anode - The Melter Heavy Destroyer" hidden="false" id="23ae-39e9-e1ab-bbc2" publicationId="c835-461f-ea00-a841" page="">
+        <selectionEntry type="model" import="true" name="Anode - The Melter Heavy Destroyer" hidden="false" id="23ae-39e9-e1ab-bbc2" publicationId="c835-461f-ea00-a841">
           <costs>
             <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="93"/>
           </costs>
@@ -1513,7 +1559,7 @@
             <categoryLink name="Light Ship" hidden="false" id="421a-6324-00b5-7083" targetId="f942-8f88-d77b-13c1" primary="true"/>
           </categoryLinks>
           <profiles>
-            <profile name="Anode - The Melter" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="8c9e-e5e3-3600-8f22" publicationId="c835-461f-ea00-a841" page="">
+            <profile name="Anode - The Melter" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="8c9e-e5e3-3600-8f22" publicationId="c835-461f-ea00-a841">
               <characteristics>
                 <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">8&quot;</characteristic>
                 <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">8&quot;</characteristic>
@@ -1543,6 +1589,15 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5922-494f-14d1-1b35" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="a175-f733-cc02-1703" shared="true" includeChildSelections="false" childName="Anode - The Melter Heavy Destroyer"/>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="8eb8-9887-6480-9a59" shared="true" includeChildSelections="true" childName="Unique ships already in fleet"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Disciple Destroyers" hidden="false" id="4031-e78a-91b7-9105">
       <categoryLinks>
@@ -1684,6 +1739,42 @@
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="b7f2-9472-f805-33e4" shared="true" includeChildSelections="true" childName="Rare ships when Rare ship limit reached"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="61e2-8785-7be5-cd94" shared="true" includeChildSelections="false" childName="Tally Cutter"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" childName="Skirmish"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="61e2-8785-7be5-cd94" shared="true" includeChildSelections="false" childName="Tally Cutter"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" childName="Clash"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="3" field="selections" scope="parent" childId="61e2-8785-7be5-cd94" shared="true" includeChildSelections="false" childName="Tally Cutter"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" childName="Battle"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="4" field="selections" scope="parent" childId="61e2-8785-7be5-cd94" shared="true" includeChildSelections="false" childName="Tally Cutter"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" childName="Reconquest"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <selectionEntries>
@@ -1906,6 +1997,42 @@
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="b7f2-9472-f805-33e4" shared="true" includeChildSelections="true" childName="Rare ships when Rare ship limit reached"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2930-1f2a-0ea6-675e" shared="true" includeChildSelections="false" childName="Mantle Monitors"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" childName="Skirmish"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="2930-1f2a-0ea6-675e" shared="true" includeChildSelections="false" childName="Mantle Monitors"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" childName="Clash"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="3" field="selections" scope="parent" childId="2930-1f2a-0ea6-675e" shared="true" includeChildSelections="false" childName="Mantle Monitors"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" childName="Battle"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="4" field="selections" scope="parent" childId="2930-1f2a-0ea6-675e" shared="true" includeChildSelections="false" childName="Mantle Monitors"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" childName="Reconquest"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <selectionEntries>
@@ -2161,6 +2288,42 @@
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="b7f2-9472-f805-33e4" shared="true" includeChildSelections="true" childName="Rare ships when Rare ship limit reached"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6671-3a2e-f0e8-2252" shared="true" includeChildSelections="false" childName="Logic Lighters"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" childName="Skirmish"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="6671-3a2e-f0e8-2252" shared="true" includeChildSelections="false" childName="Logic Lighters"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" childName="Clash"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="3" field="selections" scope="parent" childId="6671-3a2e-f0e8-2252" shared="true" includeChildSelections="false" childName="Logic Lighters"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" childName="Battle"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="4" field="selections" scope="parent" childId="6671-3a2e-f0e8-2252" shared="true" includeChildSelections="false" childName="Logic Lighters"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" childName="Reconquest"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <selectionEntries>
@@ -3724,6 +3887,14 @@ When this Feature is destroyed, it contributes its points to the Kill Points of 
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="9cad-9c67-a317-939d" shared="true" includeChildSelections="false" childName="Launch Assets"/>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>

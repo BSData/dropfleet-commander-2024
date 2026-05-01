@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="10" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="11" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Pungari Thresher Hive Ship" hidden="false" id="1fd6-31e0-548c-cc1e">
       <categoryLinks>
@@ -142,8 +142,51 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
-            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
           </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b7f2-9472-f805-33e4" shared="true" includeChildSelections="true" childName="Rare ships when Rare ship limit reached"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="1fd6-31e0-548c-cc1e" shared="true" includeChildSelections="false" childName="Pungari Thresher Hive Ship"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" childName="Skirmish"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="parent" childId="1fd6-31e0-548c-cc1e" shared="true" includeChildSelections="false" childName="Pungari Thresher Hive Ship"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" childName="Clash"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="3" field="selections" scope="parent" childId="1fd6-31e0-548c-cc1e" shared="true" includeChildSelections="false" childName="Pungari Thresher Hive Ship"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" childName="Battle"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="4" field="selections" scope="parent" childId="1fd6-31e0-548c-cc1e" shared="true" includeChildSelections="false" childName="Pungari Thresher Hive Ship"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" childName="Reconquest"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -230,8 +273,22 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
-            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
           </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="8eb8-9887-6480-9a59" shared="true" includeChildSelections="true" childName="Unique ships already in fleet"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f6dd-dee6-9cfb-43b4" shared="true" childName="Hyperyacht Aurorum"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -318,8 +375,51 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
-            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
           </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b7f2-9472-f805-33e4" shared="true" includeChildSelections="true" childName="Rare ships when Rare ship limit reached"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="39f3-e983-5400-5b03" shared="true" includeChildSelections="false" childName="Palatine Command Barge"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" childName="Skirmish"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="parent" childId="39f3-e983-5400-5b03" shared="true" includeChildSelections="false" childName="Palatine Command Barge"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" childName="Clash"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="3" field="selections" scope="parent" childId="39f3-e983-5400-5b03" shared="true" includeChildSelections="false" childName="Palatine Command Barge"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" childName="Battle"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="4" field="selections" scope="parent" childId="39f3-e983-5400-5b03" shared="true" includeChildSelections="false" childName="Palatine Command Barge"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" childName="Reconquest"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -347,7 +447,7 @@
                 <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">-</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="append" value="Rare" field="fdf5-89b6-e62e-570f" join=", ">
+                <modifier type="set" value="Rare" field="fdf5-89b6-e62e-570f" join=", ">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -434,11 +534,74 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
-            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="7edf-5b75-e318-f4ed" shared="true" includeChildSelections="true" childName="Resistance"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="b7f2-9472-f805-33e4" shared="true" includeChildSelections="true" childName="Rare ships when Rare ship limit reached"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="e131-eb84-312c-6fd2" shared="true" includeChildSelections="false" childName="Centurion Grand Cruisers"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="7895-d441-b903-8bb2" shared="true" includeChildSelections="true" childName="Skirmish"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="2" field="selections" scope="parent" childId="e131-eb84-312c-6fd2" shared="true" includeChildSelections="false" childName="Centurion Grand Cruisers"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" childName="Clash"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="3" field="selections" scope="parent" childId="e131-eb84-312c-6fd2" shared="true" includeChildSelections="false" childName="Centurion Grand Cruisers"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" childName="Battle"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="4" field="selections" scope="parent" childId="e131-eb84-312c-6fd2" shared="true" includeChildSelections="false" childName="Centurion Grand Cruisers"/>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" childName="Reconquest"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="7edf-5b75-e318-f4ed" shared="true" includeChildSelections="true" childName="Resistance"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="2" field="0e5b-f240-31f3-ecc1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="3" field="0e5b-f240-31f3-ecc1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="4" field="0e5b-f240-31f3-ecc1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0e5b-f240-31f3-ecc1"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <publications>
