@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="28" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="40a3-46c5-d9fd-74c7" name="Post-Human Republic" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="29" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="66a8-ba07-3fa8-ecf7"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Vizier" hidden="false" id="4d5f-828e-aece-77fe" publicationId="6462-e99b-594c-193a" page="1">
@@ -1141,7 +1141,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Agamemnon Battlecruiser" hidden="false" id="58a3-a47e-ba97-f8c1" publicationId="6462-e99b-594c-193a" page="38">
           <costs>
-            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="170"/>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="160"/>
           </costs>
           <categoryLinks>
             <categoryLink name="Heavy Ship" hidden="false" id="3d4d-4dba-60e6-c63f" targetId="9d6f-26b0-7969-496b" primary="true"/>
