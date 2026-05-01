@@ -834,6 +834,7 @@ Close Action weapons with this special rule may be used against targets in Atmos
     <rule name="Scald-X" id="41b3-55a2-8d71-ee88" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="39">
       <alias>Scald-1</alias>
       <alias>Scald-2</alias>
+      <alias>Scald-3</alias>
       <description>If this weapon attacks a target within Scan range, reduce the target’s Energy / Kinetic save against this weapon&apos;s hits by X (other attacks and Weapons are unaffected).</description>
     </rule>
     <rule name="Status" id="ea58-a80c-c3de-e165" hidden="false" publicationId="45b0-3e3b-e83d-fd70" page="39">
