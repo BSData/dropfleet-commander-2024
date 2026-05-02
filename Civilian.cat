@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp">
+<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp">
   <publications>
     <publication name="Civilian Ship Scenarios (260501)" id="1322-3c59-0db2-ee7c" hidden="false" shortName="Civilian Ship Scenarios (260501)"/>
   </publications>
@@ -707,8 +707,8 @@ Rearm: Increase the Limited-X value of any of that Ship or Space Station’s Wea
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Expel Hazards" hidden="false" id="3168-ddc5-d7c4-4e89" sortIndex="1">
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6ef6-c4c5-928b-3234" includeChildSelections="false"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="23e2-7acb-27cf-075b" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ef6-c4c5-928b-3234" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23e2-7acb-27cf-075b" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Expel Hazards" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="add3-e9d7-2227-fbd9">
