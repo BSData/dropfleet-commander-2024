@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="11" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="1b65-4911-bd01-73aa" name="Misc" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="3" revision="12" authorName="John Kemp" battleScribeVersion="2.03" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Pungari Thresher Hive Ship" hidden="false" id="1fd6-31e0-548c-cc1e">
       <categoryLinks>
@@ -541,6 +541,7 @@
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="equalTo" value="0" field="selections" scope="force" childId="b7f2-9472-f805-33e4" shared="true" includeChildSelections="true" childName="Rare ships when Rare ship limit reached"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="7edf-5b75-e318-f4ed" shared="true" includeChildSelections="true" childName="Resistance"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -586,16 +587,24 @@
         <modifier type="set" value="2" field="0e5b-f240-31f3-ecc1">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="3fda-65f2-6cc3-ee33" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="7edf-5b75-e318-f4ed" shared="true" includeChildSelections="true" childName="Resistance"/>
           </conditions>
         </modifier>
         <modifier type="set" value="3" field="0e5b-f240-31f3-ecc1">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c6ef-6271-e246-47a8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="7edf-5b75-e318-f4ed" shared="true" includeChildSelections="true" childName="Resistance"/>
           </conditions>
         </modifier>
         <modifier type="set" value="4" field="0e5b-f240-31f3-ecc1">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="d410-4aa8-c469-064b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="7edf-5b75-e318-f4ed" shared="true" includeChildSelections="true" childName="Resistance"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="-1" field="0e5b-f240-31f3-ecc1">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7edf-5b75-e318-f4ed" shared="true" includeChildSelections="true" childName="Resistance"/>
           </conditions>
         </modifier>
       </modifiers>
