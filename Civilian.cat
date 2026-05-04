@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp">
+<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp">
   <publications>
     <publication name="Civilian Ship Scenarios (260501)" id="1322-3c59-0db2-ee7c" hidden="false" shortName="Civilian Ship Scenarios (260501)"/>
   </publications>
@@ -731,6 +731,20 @@ Rearm: Increase the Limited-X value of any of that Ship or Space Station’s Wea
 While this Ship is below its starting Hull Points, for every 2 Hull Points lost from its starting Hull Points, increase the attack of this weapon by 1.</description>
                 </rule>
               </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mines" hidden="false" id="2e4d-9c4c-2901-451e" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d03-5597-b4b8-0291-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d03-5597-b4b8-0291-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mines" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="67db-f89c-3555-5f9f">
+                  <characteristics>
+                    <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">3</characteristic>
+                    <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <infoLinks>
