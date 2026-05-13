@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp">
+<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp">
   <publications>
     <publication name="Civilian Ship Scenarios (260501)" id="1322-3c59-0db2-ee7c" hidden="false" shortName="Civilian Ship Scenarios (260501)"/>
   </publications>
@@ -1105,6 +1105,34 @@ Bodge Repairs: Remove a crippling effect from a friendly Ship within 6” for ea
                   <description>When this weapon successfully inflicts any amount of damage against a City, place a Mutant Fauna token on that Dropsite. Mutant Fauna tokens are not Battalions and cannot control or contest a Dropsite. When any player deploys any number of Battalions to that Dropsite, if that Dropsite has any Mutant Fauna tokens, those Battalions are only placed on a roll of a 5+. If any Battalions are not placed this way, remove a Mutant Fauna token from that Dropsite. If a Dropsite starts a round with a Mutant Fauna token, remove that token at the end of the round.</description>
                 </rule>
               </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fighters &amp; Bombers" hidden="false" id="a8cc-a57d-ce0f-7f8a" sortIndex="4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6446-beae-8e0a-4535-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6446-beae-8e0a-4535-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Fighters &amp; Bombers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="d754-b5b7-6c4a-4393">
+                  <characteristics>
+                    <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">4</characteristic>
+                    <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bulk Landers" hidden="false" id="8dad-b8e4-51c9-0743" sortIndex="5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8208-d466-735a-2926-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8208-d466-735a-2926-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Bulk Landers" typeId="7ba8-a64f-b5fb-8c3e" typeName="Load" hidden="false" id="e59e-502a-7ee9-c5df">
+                  <characteristics>
+                    <characteristic name="Launch" typeId="bcc4-f844-acff-aa94">2</characteristic>
+                    <characteristic name="Special" typeId="d3be-1a27-21ac-fb65">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
