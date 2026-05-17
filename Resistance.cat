@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="28" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7edf-5b75-e318-f4ed" name="Resistance" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="5" revision="29" battleScribeVersion="2.03" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication name="Resistance Combined Fleet Stats (260327)" id="7fb8-995d-767a-783d" hidden="false" shortName="Resistance Stats (260327)"/>
   </publications>
@@ -2612,7 +2612,16 @@
         <infoLink name="Detector" id="e57d-363c-63a8-aa23" hidden="false" type="rule" targetId="ff6a-7b9f-fca1-ef36"/>
       </infoLinks>
       <modifiers>
-        <modifier type="set" value="Detector" field="fdf5-89b6-e62e-570f" scope="parent" affects="profiles.Ship" join=", "/>
+        <modifier type="set" value="Detector" field="fdf5-89b6-e62e-570f" scope="parent" affects="profiles.Ship" join=", ">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="f845-ff32-5219-3ff0" shared="true" childName="Frigate"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="Detector" field="fdf5-89b6-e62e-570f" scope="parent" affects="profiles.Ship" join=", ">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="f845-ff32-5219-3ff0" shared="true" childName="Frigate"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="----- Weapons -----" hidden="true" id="2d3f-36cb-66e7-5204"/>
@@ -3750,7 +3759,7 @@
                 <characteristic name="Lock" typeId="243e-e8ac-7e08-3636">2+</characteristic>
                 <characteristic name="DMG" typeId="1f0f-7a09-a26f-cccf">1</characteristic>
                 <characteristic name="Type" typeId="1dc7-5577-b848-5b24">E</characteristic>
-                <characteristic name="Special" typeId="9b33-7e68-b136-77db">Fire Ships</characteristic>
+                <characteristic name="Special" typeId="9b33-7e68-b136-77db">-</characteristic>
               </characteristics>
             </profile>
           </profiles>
