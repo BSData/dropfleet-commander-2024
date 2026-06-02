@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="25" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="b6b4-d3ea-2917-60c9" name="Scourge" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="1" revision="26" authorName="John Kemp" authorUrl="https://github.com/BSData/dropfleet-commander-2024" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="----- Admirals -----" hidden="true" id="672c-9050-58bc-f610"/>
     <selectionEntry type="unit" import="true" name="Lvl 1: Fleet Thrall" hidden="false" id="7fe9-330a-0598-35d7" publicationId="260d-362c-d403-80ae" page="1">
@@ -3756,6 +3756,7 @@
     <entryLink import="true" name="LKS Dredgers" hidden="false" id="a23f-ea99-ff4f-bdbb" type="selectionEntry" targetId="55f5-22bc-5caf-2e21"/>
     <entryLink import="true" name="SLM-9 Resupply Hauler" hidden="false" id="e727-830a-bcf2-f4ba" type="selectionEntry" targetId="0cf9-dc4e-a21a-3fc1"/>
     <entryLink import="true" name="T-Type Tugboats" hidden="false" id="dd9b-207f-d671-2e7f" type="selectionEntry" targetId="21c8-a67f-93e1-7b07"/>
+    <entryLink import="true" name="EX-7 Packet Runner" hidden="false" id="3d39-e8c9-53c4-3d86" type="selectionEntry" targetId="b6bf-c8ab-1240-e10f"/>
     <entryLink import="true" name="DH-Type Penal Transport" hidden="false" id="93af-1cf1-0280-58a8" type="selectionEntry" targetId="3c15-10cc-4cf2-7166"/>
     <entryLink import="true" name="M-Type Barge" hidden="false" id="6a39-49c6-afcb-ec4c" type="selectionEntry" targetId="a1c6-c54a-4d36-5280"/>
     <entryLink import="true" name="OBV-64 Oblivion Barge" hidden="false" id="05b3-dac7-c860-c6bc" type="selectionEntry" targetId="390b-443d-373d-1637"/>

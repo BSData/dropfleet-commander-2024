@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp">
+<catalogue library="true" id="903e-8fb9-3fe2-4460" name="Civilian" gameSystemId="sys-5fec-a8da-5dec-0ae6" gameSystemRevision="6" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorUrl="https://github.com/BSData/dropfleet-commander-2024" authorName="John Kemp">
   <publications>
     <publication name="Civilian Ship Scenarios (260501)" id="1322-3c59-0db2-ee7c" hidden="false" shortName="Civilian Ship Scenarios (260501)"/>
   </publications>
@@ -305,6 +305,85 @@ Rearm: Increase the Limited-X value of any of that Ship or Space Station’s Wea
             <infoLink name="Vectored" id="4392-44a9-8f50-d480" hidden="false" type="rule" targetId="7a2f-fbe0-b3cd-98c8"/>
             <infoLink name="Tugging Along" id="5cac-49ba-1fc6-e315" hidden="false" type="rule" targetId="22b2-66c6-0038-a8d4"/>
           </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="self" childId="header" shared="true" childName="header"/>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="473d-151f-22a2-8892" shared="true" includeChildSelections="true" childName="Mercenary ships"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="EX-7 Packet Runner" hidden="false" id="b6bf-c8ab-1240-e10f">
+      <costs>
+        <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="d2d3-8f11-4848-f363" primary="false" name="Group"/>
+        <categoryLink targetId="f51b-d892-62c0-3f1e" id="90e8-17da-b2af-ed16" primary="true" name="Light Groups"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="EX-7 Packet Runner" hidden="false" id="4c85-b919-fa02-a819" publicationId="1322-3c59-0db2-ee7c">
+          <costs>
+            <cost name="pts" typeId="ab32-c9b6-10f3-cbdb" value="57"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="f942-8f88-d77b-13c1" id="61f0-f823-7d59-047e" primary="true" name="Light Ship"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f51a-bbe5-8bba-8add" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1ea-3270-340b-a422" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="EX-7 Packet Runner" typeId="8a2d-efd5-4b60-f4fa" typeName="Ship" hidden="false" id="159c-4518-f1c3-8355" publicationId="1322-3c59-0db2-ee7c">
+              <characteristics>
+                <characteristic name="Thrust" typeId="d821-4294-3117-e8a6">6&quot;</characteristic>
+                <characteristic name="Scan" typeId="960a-5d0e-18c5-4310">4&quot;</characteristic>
+                <characteristic name="Sig" typeId="4feb-14c2-b1f1-9fa5">3&quot;</characteristic>
+                <characteristic name="Hull" typeId="5253-be1d-917b-17d9">6</characteristic>
+                <characteristic name="ES" typeId="42ae-03c9-d0ff-61da">4+</characteristic>
+                <characteristic name="KS" typeId="a4d4-4c63-1848-24f8">5+</characteristic>
+                <characteristic name="BS" typeId="05b6-9825-68e8-4983">6+</characteristic>
+                <characteristic name="G" typeId="32ce-7bbb-1d0f-8c80">1</characteristic>
+                <characteristic name="Special" typeId="fdf5-89b6-e62e-570f">Monitor, Reinforced Armour, Feature Carrier (Hanger), Space Trucker</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Deterrence Missiles" hidden="false" id="e645-58f6-d2f1-4790" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a558-450a-c569-466d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cfc-0910-20d0-6c08" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Deterrence Missiles" typeId="02b7-2433-f72f-d510" typeName="Weapon" hidden="false" id="49f0-b75a-223c-28fa">
+                  <characteristics>
+                    <characteristic name="Arc" typeId="7fb7-39ec-1352-3b97">F/S</characteristic>
+                    <characteristic name="Att" typeId="af4e-6eec-3cb5-5aae">4</characteristic>
+                    <characteristic name="Lock" typeId="ddfe-5610-8f1a-650d">3+</characteristic>
+                    <characteristic name="Dmg" typeId="31b1-2e8b-0b99-b1c7">1</characteristic>
+                    <characteristic name="Type" typeId="8f83-3218-7832-0818">K</characteristic>
+                    <characteristic name="Special" typeId="1e8b-4801-6eb9-f278">Close Action</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Close Action" id="687a-8f4f-fd76-fa4f" hidden="false" type="rule" targetId="3bd7-f459-761a-97ee"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Monitor" id="4b25-dc92-bbd2-7ae0" hidden="false" type="rule" targetId="cc9f-9be5-cc19-2fc9"/>
+            <infoLink name="Reinforced Armour" id="f19c-8283-9b3a-9e2e" hidden="false" type="rule" targetId="231e-a3d0-35e6-9a33"/>
+            <infoLink name="Space Trucker" id="ad70-aa5c-9a90-a4f2" hidden="false" type="rule" targetId="612d-c072-617f-de98"/>
+          </infoLinks>
+          <rules>
+            <rule name="Feature Carrier (Hanger)" id="c2bc-fea1-0598-9f68" hidden="false">
+              <description>This ship starts the game carrying a single deployable Hangar Feature (see 7.4.2 Deploying Features and 11.3 Features).</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -1184,6 +1263,9 @@ Guardian Schoal - 1 Token: Friendly Assets within 9” cannot be the target of e
     </rule>
     <rule name="Industrial Design" id="e563-4363-c68f-2930" hidden="false">
       <description>Improve this Group’s Backup save by 2 when rolling to save hits due to Debris Fields.</description>
+    </rule>
+    <rule name="Space Trucker" id="612d-c072-617f-de98" hidden="false">
+      <description>This Ship’s Hangar Deployable Feature can only be deployed to Space Stations (of any type).</description>
     </rule>
   </sharedRules>
 </catalogue>
