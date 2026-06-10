@@ -1,0 +1,4245 @@
+{
+  "catalogue": {
+    "publications": [
+      {
+        "name": "Civilian Ship Scenarios (260501)",
+        "id": "1322-3c59-0db2-ee7c",
+        "hidden": false,
+        "shortName": "Civilian Ship Scenarios (260501)"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "f51b-d892-62c0-3f1e",
+            "id": "3b9e-2153-50c2-df26",
+            "primary": true,
+            "name": "Light Groups"
+          },
+          {
+            "targetId": "default-category",
+            "id": "a706-e868-f48d-1609",
+            "primary": false,
+            "name": "Group"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 80
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "f942-8f88-d77b-13c1",
+                "id": "25b7-edd1-78c8-a0a1",
+                "primary": true,
+                "name": "Light Ship"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "53d4-a5a8-ea94-37ca-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "53d4-a5a8-ea94-37ca-max",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "9\"",
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6"
+                  },
+                  {
+                    "$text": "6\"",
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310"
+                  },
+                  {
+                    "$text": "4\"",
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5"
+                  },
+                  {
+                    "$text": "6",
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9"
+                  },
+                  {
+                    "$text": "4+",
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8"
+                  },
+                  {
+                    "$text": "6+",
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983"
+                  },
+                  {
+                    "$text": "1",
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80"
+                  },
+                  {
+                    "$text": "Unique",
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f"
+                  }
+                ],
+                "name": "Hyperyacht Somniferum",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "4151-b1d8-2ae8-e294",
+                "publicationId": "1322-3c59-0db2-ee7c"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8e5e-8ba8-02d4-bdbe-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8e5e-8ba8-02d4-bdbe-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F/S",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "3",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "4+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "E",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Status",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Party Poppers",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "9314-036b-9eaa-be63"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Status",
+                    "id": "2ea3-31af-19c3-8e8d",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "ea58-a80c-c3de-e165"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Party Poppers",
+                "hidden": false,
+                "id": "5ab6-88a6-a27b-a13f"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Unique",
+                "id": "91a2-01b2-e616-d6cd",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "3f45-7047-464a-3be4"
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "Hyperyacht Somniferum",
+            "hidden": false,
+            "id": "76f0-c80d-6cb8-bbba",
+            "publicationId": "1322-3c59-0db2-ee7c"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "96ae-bf6c-ad34-5e95",
+            "includeChildSelections": false
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "conditions": [
+                  {
+                    "type": "equalTo",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "473d-151f-22a2-8892",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Mercenary ships"
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "8eb8-9887-6480-9a59",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Unique ships already in fleet"
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "7dbc-56e3-8f6e-8e35",
+                        "shared": true,
+                        "childName": "Hyperyacht Somniferum"
+                      }
+                    ],
+                    "type": "and"
+                  }
+                ],
+                "type": "or"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "Hyperyacht Somniferum",
+        "hidden": false,
+        "id": "7dbc-56e3-8f6e-8e35"
+      },
+      {
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 65
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Light Ship",
+                "hidden": false,
+                "id": "77f4-f041-5d4d-9f2f",
+                "targetId": "f942-8f88-d77b-13c1",
+                "primary": true
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "8\"",
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6"
+                  },
+                  {
+                    "$text": "6\"",
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310"
+                  },
+                  {
+                    "$text": "6\"",
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5"
+                  },
+                  {
+                    "$text": "6",
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9"
+                  },
+                  {
+                    "$text": "4+",
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8"
+                  },
+                  {
+                    "$text": "6+",
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983"
+                  },
+                  {
+                    "$text": "1-2",
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80"
+                  },
+                  {
+                    "$text": "Vectored, Industrial Design",
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f"
+                  }
+                ],
+                "name": "LKS Dredger",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "f1f4-4717-e095-09f8",
+                "publicationId": "0486-c1f4-77a3-c714"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4449-e022-44b2-bff7",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2bf9-2cce-673c-531b",
+                "includeChildSelections": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e56a-34d2-5234-3cde-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e56a-34d2-5234-3cde-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "3",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "2+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "E",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Burnthrough-2, Close Action",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Mining Laser",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "a8a7-02b6-034f-855e"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Burnthrough-X",
+                    "id": "e63b-fc44-c90c-23a6",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "91ae-f561-0802-3f8e"
+                  },
+                  {
+                    "name": "Close Action",
+                    "id": "fc53-5dbc-24aa-43c9",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Mining Laser",
+                "hidden": false,
+                "id": "95f0-d93d-cf01-5230",
+                "collective": true
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Industrial Design",
+                "id": "156b-7100-2dd2-7f0e",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e563-4363-c68f-2930"
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "LKS Dredger",
+            "hidden": false,
+            "id": "860b-28b6-1ea7-cf70",
+            "publicationId": "0486-c1f4-77a3-c714"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Group",
+            "hidden": false,
+            "id": "cfdc-c8df-152b-9511",
+            "targetId": "default-category",
+            "primary": false
+          },
+          {
+            "name": "Light Groups",
+            "hidden": false,
+            "id": "9fe7-74f4-fff9-1989",
+            "targetId": "f51b-d892-62c0-3f1e",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "force",
+                "childId": "473d-151f-22a2-8892",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Mercenary ships"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "LKS Dredgers",
+        "hidden": false,
+        "id": "55f5-22bc-5caf-2e21",
+        "publicationId": "0486-c1f4-77a3-c714"
+      },
+      {
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 35
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Light Ship",
+                "hidden": false,
+                "id": "4733-7027-3378-9d1b",
+                "targetId": "f942-8f88-d77b-13c1",
+                "primary": true
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "9\"",
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6"
+                  },
+                  {
+                    "$text": "4\"",
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310"
+                  },
+                  {
+                    "$text": "2\"",
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5"
+                  },
+                  {
+                    "$text": "5",
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9"
+                  },
+                  {
+                    "$text": "3+",
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8"
+                  },
+                  {
+                    "$text": "6+",
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983"
+                  },
+                  {
+                    "$text": "1",
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80"
+                  },
+                  {
+                    "$text": "Vectored, Resupply and Rearm, Flawed Design",
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f"
+                  }
+                ],
+                "name": "SLM-9 Resupply Hauler",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "db7e-33b6-e5b3-cd57",
+                "publicationId": "0486-c1f4-77a3-c714"
+              }
+            ],
+            "rules": [
+              {
+                "description": "If this ship ends its movement in base contact with a friendly ship of Medium Tonnage or higher or a Space Station, pick one of the following:\nResupply: That Ship or Space Station recovers 3 Hull points and remove any Crippling Effect tokens.\nRearm: Increase the Limited-X value of any of that Ship or Space Station’s Weapons and Launch Assets by 1 until the end of the round.",
+                "name": "Resupply and Rearm",
+                "id": "f9aa-a29e-07e3-ccb6",
+                "hidden": false
+              },
+              {
+                "description": "This Ship cannot use its Resupply and Rearm rule if it is below half of its starting Hull.",
+                "name": "Flawed Design",
+                "id": "eabd-32c2-f9a9-31bc",
+                "hidden": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8c7d-40bd-4b71-2488-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8c7d-40bd-4b71-2488-max",
+                "includeChildSelections": false
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Vectored",
+                "id": "28d5-4b6f-9459-cfeb",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "7a2f-fbe0-b3cd-98c8"
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "SLM-9 Resupply Hauler",
+            "hidden": false,
+            "id": "085f-a5da-64e5-7601",
+            "publicationId": "0486-c1f4-77a3-c714"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Group",
+            "hidden": false,
+            "id": "1c04-0d9f-9e28-e32d",
+            "targetId": "default-category",
+            "primary": false
+          },
+          {
+            "name": "Light Groups",
+            "hidden": false,
+            "id": "cbec-7ae8-82b8-8f35",
+            "targetId": "f51b-d892-62c0-3f1e",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "force",
+                "childId": "473d-151f-22a2-8892",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Mercenary ships"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "SLM-9 Resupply Hauler",
+        "hidden": false,
+        "id": "0cf9-dc4e-a21a-3fc1",
+        "publicationId": "0486-c1f4-77a3-c714"
+      },
+      {
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
+            "id": "5ed9-56a2-d48e-b7fa",
+            "primary": false,
+            "name": "Group"
+          },
+          {
+            "targetId": "f51b-d892-62c0-3f1e",
+            "id": "a656-07ce-8e33-297a",
+            "primary": true,
+            "name": "Light Groups"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 60
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "f942-8f88-d77b-13c1",
+                "id": "3b74-90e4-08b8-6b61",
+                "primary": true,
+                "name": "Light Ship"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e8c2-7cd0-ccf8-94a2",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "96ec-5788-9adb-74af",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "6\"",
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6"
+                  },
+                  {
+                    "$text": "4\"",
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310"
+                  },
+                  {
+                    "$text": "3\"",
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5"
+                  },
+                  {
+                    "$text": "5",
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8"
+                  },
+                  {
+                    "$text": "6+",
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983"
+                  },
+                  {
+                    "$text": "1-4",
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80"
+                  },
+                  {
+                    "$text": "Descent, Monitor, Vectored, Tugging Along",
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f"
+                  }
+                ],
+                "name": "T-Type Tugboat",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "5876-24f1-37f4-77e8",
+                "publicationId": "1322-3c59-0db2-ee7c"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b885-3be2-4dd8-fcd3-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b885-3be2-4dd8-fcd3-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F/S",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "4",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "3+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "K",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Close Action",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Deterrence Missiles",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "ba41-2e36-52c1-5c74"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Close Action",
+                    "id": "904d-6f39-dfb4-499b",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Deterrence Missiles",
+                "hidden": false,
+                "id": "98dc-263e-dc8a-9154",
+                "sortIndex": 1,
+                "collective": true
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1341-592a-7092-26d2-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1341-592a-7092-26d2-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "3",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "3+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "C",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Close Action",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Drag to Hell",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "0337-3b23-402a-722b"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Close Action",
+                    "id": "eb36-09e6-7de9-6ceb",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  },
+                  {
+                    "name": "Drag to Hell",
+                    "id": "eafa-dd16-25d7-d4f7",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "6e2d-81d7-9a0e-722f"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Drag to Hell",
+                "hidden": false,
+                "id": "9724-11b5-979a-f99d",
+                "sortIndex": 2,
+                "collective": true
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Descent",
+                "id": "8cad-b48d-67a8-75ba",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "2ae8-7705-ab9a-03c0"
+              },
+              {
+                "name": "Monitor",
+                "id": "14e5-a0bc-97ad-1da0",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "cc9f-9be5-cc19-2fc9"
+              },
+              {
+                "name": "Vectored",
+                "id": "4392-44a9-8f50-d480",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "7a2f-fbe0-b3cd-98c8"
+              },
+              {
+                "name": "Tugging Along",
+                "id": "5cac-49ba-1fc6-e315",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "22b2-66c6-0038-a8d4"
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "T-Type Tugboat",
+            "hidden": false,
+            "id": "95e8-1f22-7b49-b402",
+            "publicationId": "1322-3c59-0db2-ee7c"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "force",
+                "childId": "473d-151f-22a2-8892",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Mercenary ships"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "T-Type Tugboats",
+        "hidden": false,
+        "id": "21c8-a67f-93e1-7b07"
+      },
+      {
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
+            "id": "d2d3-8f11-4848-f363",
+            "primary": false,
+            "name": "Group"
+          },
+          {
+            "targetId": "f51b-d892-62c0-3f1e",
+            "id": "90e8-17da-b2af-ed16",
+            "primary": true,
+            "name": "Light Groups"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 57
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "f942-8f88-d77b-13c1",
+                "id": "61f0-f823-7d59-047e",
+                "primary": true,
+                "name": "Light Ship"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f51a-bbe5-8bba-8add",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b1ea-3270-340b-a422",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "4\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "3\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "6+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Monitor, Reinforced Armour, Feature Carrier (Hanger), Space Trucker"
+                  }
+                ],
+                "name": "EX-7 Packet Runner",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "159c-4518-f1c3-8355",
+                "publicationId": "1322-3c59-0db2-ee7c"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a558-450a-c569-466d",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4cfc-0910-20d0-6c08",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F/S",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "4",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "3+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "K",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Close Action",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Deterrence Missiles",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "49f0-b75a-223c-28fa"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Close Action",
+                    "id": "687a-8f4f-fd76-fa4f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Deterrence Missiles",
+                "hidden": false,
+                "id": "e645-58f6-d2f1-4790",
+                "collective": true
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Monitor",
+                "id": "4b25-dc92-bbd2-7ae0",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "cc9f-9be5-cc19-2fc9"
+              },
+              {
+                "name": "Reinforced Armour",
+                "id": "f19c-8283-9b3a-9e2e",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "231e-a3d0-35e6-9a33"
+              },
+              {
+                "name": "Space Trucker",
+                "id": "ad70-aa5c-9a90-a4f2",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "612d-c072-617f-de98"
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "EX-7 Packet Runner",
+            "hidden": false,
+            "id": "4c85-b919-fa02-a819",
+            "publicationId": "1322-3c59-0db2-ee7c",
+            "rules": [
+              {
+                "name": "Feature Carrier (Hanger)",
+                "id": "c2bc-fea1-0598-9f68",
+                "hidden": false,
+                "description": "This ship starts the game carrying a single deployable Hangar Feature (see 7.4.2 Deploying Features and 11.3 Features)."
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "force",
+                "childId": "473d-151f-22a2-8892",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Mercenary ships"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "EX-7 Packet Runner",
+        "hidden": false,
+        "id": "b6bf-c8ab-1240-e10f"
+      },
+      {
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
+            "id": "d73d-ee14-09a2-6bf6",
+            "primary": false,
+            "name": "Group"
+          },
+          {
+            "targetId": "e555-ff57-c478-18cd",
+            "id": "edf3-0fcb-71e6-21cf",
+            "primary": true,
+            "name": "Medium Groups"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 123
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "53c3-afc0-63ef-413a",
+                "id": "c34e-7524-0b98-ce25",
+                "primary": true,
+                "name": "Medium Ship"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "281d-01b9-9217-7eed",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "cf13-3a59-9bc2-93a9",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "6\"",
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6"
+                  },
+                  {
+                    "$text": "4\"",
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310"
+                  },
+                  {
+                    "$text": "6\"",
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5"
+                  },
+                  {
+                    "$text": "12",
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9"
+                  },
+                  {
+                    "$text": "4+",
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da"
+                  },
+                  {
+                    "$text": "4+",
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8"
+                  },
+                  {
+                    "$text": "6+",
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983"
+                  },
+                  {
+                    "$text": "1",
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80"
+                  },
+                  {
+                    "$text": "Marines-1, Unique, Penal Legions",
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f"
+                  }
+                ],
+                "name": "DH-Type Penal Transport",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "caac-650d-432e-d5e6",
+                "publicationId": "1322-3c59-0db2-ee7c"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ac37-5300-0532-d5a8",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6ddc-0c59-39c0-f61c",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F/S",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "4",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "3+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "K",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Close Action",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Deterrence Missiles",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "2c84-5ebe-fd20-13be"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Close Action",
+                    "id": "2e5f-9dff-c81f-7cc1",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Deterrence Missiles",
+                "hidden": false,
+                "id": "87ff-68ed-f363-fa74",
+                "sortIndex": 1
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "43a3-d642-7cfc-3bf2",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b321-dbf5-c287-68e2",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F/S/R",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "5",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "3+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "0",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "E",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Anti Wing, Close Action",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Anti-Fighter Lasers",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "001e-d79f-8f76-db51"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Anti Wing",
+                    "id": "e1ed-a85f-c280-6c7f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d7b1-2768-13e8-009f"
+                  },
+                  {
+                    "name": "Close Action",
+                    "id": "e42e-f239-aad1-131b",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Anti-Fighter Lasers",
+                "hidden": false,
+                "id": "01d9-2521-77d2-5956",
+                "sortIndex": 2
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b0df-04c2-e2c7-9097",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7766-14fd-971e-7fca",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "2",
+                        "name": "Launch",
+                        "typeId": "bcc4-f844-acff-aa94"
+                      },
+                      {
+                        "$text": "Alt-1",
+                        "name": "Special",
+                        "typeId": "d3be-1a27-21ac-fb65"
+                      }
+                    ],
+                    "name": "Drop Pods",
+                    "typeId": "7ba8-a64f-b5fb-8c3e",
+                    "typeName": "Load",
+                    "hidden": false,
+                    "id": "c7e9-b9d6-5702-bed1"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Alt-X",
+                    "id": "4923-4a40-68b3-5cb0",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "f354-1b03-966f-f667"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Drop Pods",
+                "hidden": false,
+                "id": "aaef-8f37-8650-5ef6",
+                "sortIndex": 3
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5622-81b5-a9aa-4e00",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "022d-7b19-4f86-afac",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "2",
+                        "name": "Launch",
+                        "typeId": "bcc4-f844-acff-aa94"
+                      },
+                      {
+                        "$text": "Alt-1",
+                        "name": "Special",
+                        "typeId": "d3be-1a27-21ac-fb65"
+                      }
+                    ],
+                    "name": "Boarding Pods",
+                    "typeId": "7ba8-a64f-b5fb-8c3e",
+                    "typeName": "Load",
+                    "hidden": false,
+                    "id": "7ee0-f5dc-3133-5ede"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Alt-X",
+                    "id": "cd47-a8de-f2da-b349",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "f354-1b03-966f-f667"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Boarding Pods",
+                "hidden": false,
+                "id": "e4d7-2890-2e97-d809",
+                "sortIndex": 4
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Marines-X",
+                "id": "4629-286e-e361-297b",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "93f3-7932-b233-4d38"
+              },
+              {
+                "name": "Unique",
+                "id": "fa0e-7d17-b3ad-ef23",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "3f45-7047-464a-3be4"
+              },
+              {
+                "name": "Penal Legions",
+                "id": "a7a1-73fe-d6fa-63a6",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "3e9f-cd00-5c21-b396"
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "DH-Type Penal Transport",
+            "hidden": false,
+            "id": "b3dc-5086-e7a5-be36",
+            "publicationId": "1322-3c59-0db2-ee7c"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "bca0-8536-d1a6-d27b"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "conditions": [
+                  {
+                    "type": "equalTo",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "473d-151f-22a2-8892",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Mercenary ships"
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "8eb8-9887-6480-9a59",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Unique ships already in fleet"
+                      },
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "3c15-10cc-4cf2-7166",
+                        "shared": true,
+                        "childName": "DH-Type Penal Transport"
+                      }
+                    ],
+                    "type": "and"
+                  }
+                ],
+                "type": "or"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "DH-Type Penal Transport",
+        "hidden": false,
+        "id": "3c15-10cc-4cf2-7166"
+      },
+      {
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
+            "id": "6e33-7830-d478-7c19",
+            "primary": false,
+            "name": "Group"
+          },
+          {
+            "targetId": "e555-ff57-c478-18cd",
+            "id": "def4-6c9c-4b61-d473",
+            "primary": true,
+            "name": "Medium Groups"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 113
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "53c3-afc0-63ef-413a",
+                "id": "3e7e-f30b-cfb7-f667",
+                "primary": true,
+                "name": "Medium Ship"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d5b6-6cc2-e130-c6bb",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "efab-8256-05c6-6ff8",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "12\"",
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6"
+                  },
+                  {
+                    "$text": "6\"",
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310"
+                  },
+                  {
+                    "$text": "8\"",
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5"
+                  },
+                  {
+                    "$text": "10",
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8"
+                  },
+                  {
+                    "$text": "6+",
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983"
+                  },
+                  {
+                    "$text": "1",
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80"
+                  },
+                  {
+                    "$text": "Aegis-4, Rare, Purchased Power",
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f"
+                  }
+                ],
+                "name": "Jah’tar Startrader",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "6aa5-9f08-2821-cbfe",
+                "publicationId": "1322-3c59-0db2-ee7c"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Aegis-X",
+                "id": "ebc8-567f-c6da-ed33",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "9cd1-441e-8ee8-7f13"
+              },
+              {
+                "name": "Rare",
+                "id": "458a-0b21-4e96-5de1",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f7ad-85f9-39f4-7e10"
+              },
+              {
+                "name": "Purchased Power",
+                "id": "29b5-afac-2e51-5116",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e393-f432-a053-d22e"
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "Jah’tar Startrader",
+            "hidden": false,
+            "id": "9676-e1a1-b7c8-6bda",
+            "publicationId": "1322-3c59-0db2-ee7c"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "a751-271e-e49f-52f4"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "3fda-65f2-6cc3-ee33",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "type": "set",
+            "value": 2,
+            "field": "a751-271e-e49f-52f4"
+          },
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "c6ef-6271-e246-47a8",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "type": "set",
+            "value": 3,
+            "field": "a751-271e-e49f-52f4"
+          },
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "d410-4aa8-c469-064b",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "type": "set",
+            "value": 4,
+            "field": "a751-271e-e49f-52f4"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "b7f2-9472-f805-33e4",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Rare ships when Rare ship limit reached"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "conditionGroups": [
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "e1ee-f46b-05f3-54b2",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "Jah’tar Startrader"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "7895-d441-b903-8bb2",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Skirmish"
+                              }
+                            ],
+                            "type": "and"
+                          },
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "e1ee-f46b-05f3-54b2",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "Jah’tar Startrader"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "3fda-65f2-6cc3-ee33",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Clash"
+                              }
+                            ],
+                            "type": "and"
+                          },
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 3,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "e1ee-f46b-05f3-54b2",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "Jah’tar Startrader"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "c6ef-6271-e246-47a8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Battle"
+                              }
+                            ],
+                            "type": "and"
+                          },
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 4,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "e1ee-f46b-05f3-54b2",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "Jah’tar Startrader"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "d410-4aa8-c469-064b",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Reconquest"
+                              }
+                            ],
+                            "type": "and"
+                          }
+                        ],
+                        "type": "or"
+                      }
+                    ],
+                    "type": "and"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "equalTo",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "473d-151f-22a2-8892",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Mercenary ships"
+                  }
+                ],
+                "type": "or"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "Jah’tar Startrader",
+        "hidden": false,
+        "id": "e1ee-f46b-05f3-54b2"
+      },
+      {
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
+            "id": "0a60-d738-2016-efb8",
+            "primary": false,
+            "name": "Group"
+          },
+          {
+            "targetId": "e555-ff57-c478-18cd",
+            "id": "5949-8f35-6c92-cd4d",
+            "primary": true,
+            "name": "Medium Groups"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 95
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "53c3-afc0-63ef-413a",
+                "id": "b5fa-3c96-8ceb-ab6d",
+                "primary": true,
+                "name": "Medium Ship"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ac7e-5372-48c6-6ea5-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ac7e-5372-48c6-6ea5-max",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "9\"",
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6"
+                  },
+                  {
+                    "$text": "6\"",
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310"
+                  },
+                  {
+                    "$text": "4\"",
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5"
+                  },
+                  {
+                    "$text": "6",
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9"
+                  },
+                  {
+                    "$text": "4+",
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8"
+                  },
+                  {
+                    "$text": "6+",
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983"
+                  },
+                  {
+                    "$text": "1",
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80"
+                  },
+                  {
+                    "$text": "Monitor, Feature Carrier (Outpost)",
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f"
+                  }
+                ],
+                "name": "M-Type Barge",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "6ddc-e65b-a9ec-3ecd",
+                "publicationId": "1322-3c59-0db2-ee7c"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "59eb-0e7b-8e7f-a4ef-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "59eb-0e7b-8e7f-a4ef-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F/S",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "4",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "3+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "K",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Close Action",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Deterrence Missiles",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "a771-0267-a1b5-5067"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Close Action",
+                    "id": "a242-d431-247f-6a84",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Deterrence Missiles",
+                "hidden": false,
+                "id": "9719-b6ca-ecd0-1597",
+                "sortIndex": 1
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f1df-0637-ef03-ef7a-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "f1df-0637-ef03-ef7a-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "1",
+                        "name": "Launch",
+                        "typeId": "bcc4-f844-acff-aa94"
+                      },
+                      {
+                        "$text": "Limited-1",
+                        "name": "Special",
+                        "typeId": "d3be-1a27-21ac-fb65"
+                      }
+                    ],
+                    "name": "Military Outpost",
+                    "typeId": "7ba8-a64f-b5fb-8c3e",
+                    "typeName": "Load",
+                    "hidden": false,
+                    "id": "f9bc-87a6-b86f-9cad"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Limited-X",
+                    "id": "8427-cbc6-0b15-0917",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0c02-c41a-e1a2-882e"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Military Outpost",
+                "hidden": false,
+                "id": "a528-0bbf-1a34-cefd",
+                "sortIndex": 2
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Monitor",
+                "id": "5f45-7f12-e257-e280",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "cc9f-9be5-cc19-2fc9"
+              }
+            ],
+            "rules": [
+              {
+                "description": "This Ship starts the game carrying a Military Outpost as a Deployable Feature.",
+                "name": "Feature Carrier (Outpost)",
+                "id": "4b81-8b74-36f9-4d31",
+                "hidden": false
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "M-Type Barge",
+            "hidden": false,
+            "id": "7cf1-c157-dd5e-69bb",
+            "publicationId": "1322-3c59-0db2-ee7c"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "force",
+                "childId": "473d-151f-22a2-8892",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Mercenary ships"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "M-Type Barge",
+        "hidden": false,
+        "id": "a1c6-c54a-4d36-5280"
+      },
+      {
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
+            "id": "4317-194a-b008-a65d",
+            "primary": false,
+            "name": "Group"
+          },
+          {
+            "targetId": "e555-ff57-c478-18cd",
+            "id": "221f-d01b-ff38-fe9b",
+            "primary": true,
+            "name": "Medium Groups"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 125
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "53c3-afc0-63ef-413a",
+                "id": "b23a-66fe-c52b-39c5",
+                "primary": true,
+                "name": "Medium Ship"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5ddb-7f72-5dee-34eb",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8b02-8e39-bdbe-0f33",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "6\"",
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6"
+                  },
+                  {
+                    "$text": "6\"",
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310"
+                  },
+                  {
+                    "$text": "8\"",
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5"
+                  },
+                  {
+                    "$text": "13",
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9"
+                  },
+                  {
+                    "$text": "4+",
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8"
+                  },
+                  {
+                    "$text": "6+",
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983"
+                  },
+                  {
+                    "$text": "1",
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80"
+                  },
+                  {
+                    "$text": "Rare, Reinforced Armour, Acquired Mines",
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f"
+                  }
+                ],
+                "name": "OBV-64 Oblivion Barge",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "1be2-9314-f021-a25b",
+                "publicationId": "1322-3c59-0db2-ee7c"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6ef6-c4c5-928b-3234",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "23e2-7acb-27cf-075b",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "3+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "C",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Anti Wing",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Expel Hazards",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "add3-e9d7-2227-fbd9"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Anti Wing",
+                    "id": "c050-b9e6-ab91-d867",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d7b1-2768-13e8-009f"
+                  }
+                ],
+                "rules": [
+                  {
+                    "description": "This weapon can only be used against targets within Scan range and on the same Orbital Layer.\nWhile this Ship is below its starting Hull Points, for every 2 Hull Points lost from its starting Hull Points, increase the attack of this weapon by 1.",
+                    "name": "Expel Hazards",
+                    "id": "5c9d-9479-cbac-04fb",
+                    "hidden": false
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Expel Hazards",
+                "hidden": false,
+                "id": "3168-ddc5-d7c4-4e89",
+                "sortIndex": 1
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6d03-5597-b4b8-0291-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6d03-5597-b4b8-0291-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "3",
+                        "name": "Launch",
+                        "typeId": "bcc4-f844-acff-aa94"
+                      },
+                      {
+                        "$text": "-",
+                        "name": "Special",
+                        "typeId": "d3be-1a27-21ac-fb65"
+                      }
+                    ],
+                    "name": "Mines",
+                    "typeId": "7ba8-a64f-b5fb-8c3e",
+                    "typeName": "Load",
+                    "hidden": false,
+                    "id": "67db-f89c-3555-5f9f"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Mines",
+                "hidden": false,
+                "id": "2e4d-9c4c-2901-451e",
+                "sortIndex": 2
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Rare",
+                "id": "fbf7-4b67-aed5-44e6",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f7ad-85f9-39f4-7e10"
+              },
+              {
+                "name": "Reinforced Armour",
+                "id": "2e04-f531-f6fd-7abf",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "231e-a3d0-35e6-9a33"
+              }
+            ],
+            "rules": [
+              {
+                "description": "This Ship’s Mines use the stats of its parent fleet.",
+                "name": "Acquired Mines",
+                "id": "3a05-aeef-6abe-1cd4",
+                "hidden": false
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "OBV-64 Oblivion Barge",
+            "hidden": false,
+            "id": "9201-fd69-7950-e071",
+            "publicationId": "1322-3c59-0db2-ee7c"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "3fda-65f2-6cc3-ee33",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "type": "set",
+            "value": 2,
+            "field": "9ca4-d1dc-fef3-0861"
+          },
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "c6ef-6271-e246-47a8",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "type": "set",
+            "value": 3,
+            "field": "9ca4-d1dc-fef3-0861"
+          },
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "d410-4aa8-c469-064b",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "type": "set",
+            "value": 4,
+            "field": "9ca4-d1dc-fef3-0861"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "b7f2-9472-f805-33e4",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Rare ships when Rare ship limit reached"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "conditionGroups": [
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "390b-443d-373d-1637",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "OBV-64 Oblivion Barge"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "7895-d441-b903-8bb2",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Skirmish"
+                              }
+                            ],
+                            "type": "and"
+                          },
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "390b-443d-373d-1637",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "OBV-64 Oblivion Barge"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "3fda-65f2-6cc3-ee33",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Clash"
+                              }
+                            ],
+                            "type": "and"
+                          },
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 3,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "390b-443d-373d-1637",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "OBV-64 Oblivion Barge"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "c6ef-6271-e246-47a8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Battle"
+                              }
+                            ],
+                            "type": "and"
+                          },
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 4,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "390b-443d-373d-1637",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "OBV-64 Oblivion Barge"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "d410-4aa8-c469-064b",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Reconquest"
+                              }
+                            ],
+                            "type": "and"
+                          }
+                        ],
+                        "type": "or"
+                      }
+                    ],
+                    "type": "and"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "equalTo",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "473d-151f-22a2-8892",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Mercenary ships"
+                  }
+                ],
+                "type": "or"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "9ca4-d1dc-fef3-0861"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "OBV-64 Oblivion Barge",
+        "hidden": false,
+        "id": "390b-443d-373d-1637"
+      },
+      {
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 210
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Heavy Ship",
+                "hidden": false,
+                "id": "14cb-60f0-c1cb-4165",
+                "targetId": "9d6f-26b0-7969-496b",
+                "primary": true
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "6\"",
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6"
+                  },
+                  {
+                    "$text": "6\"",
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310"
+                  },
+                  {
+                    "$text": "6\"",
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5"
+                  },
+                  {
+                    "$text": "18",
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9"
+                  },
+                  {
+                    "$text": "4+",
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da"
+                  },
+                  {
+                    "$text": "3+",
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983"
+                  },
+                  {
+                    "$text": "1",
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80"
+                  },
+                  {
+                    "$text": "Porter F-2, Reinforced Armour, Monitor, Scrap Hauler, Scratch Bodge Job, Industrial Design",
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f"
+                  }
+                ],
+                "name": "Type-87 Terminus Harvester",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "d6ed-5c92-74a8-e13e",
+                "publicationId": "0486-c1f4-77a3-c714"
+              }
+            ],
+            "rules": [
+              {
+                "description": "If this Group ends its activation within 1” of a Debris Field, this Group gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Group can have a maximum of 8 scrap tokens at any one time. Any attached Payload ships that have any scrap tokens do not count towards this limit. Whenever another Ship within 6” of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.",
+                "name": "Scrap Hauler",
+                "id": "83fd-5598-3e97-7fd7",
+                "hidden": false
+              },
+              {
+                "description": "At the end of this Ship’s activation, you may remove any number of scrap tokens and choose one of the following:\nScrappy Plating: One friendly Ship within 6” recovers lost Hull points equal to the amount of scrap tokens removed.\nBodge Repairs: Remove a crippling effect from a friendly Ship within 6” for each scrap token removed.",
+                "name": "Scratch Bodge Job",
+                "id": "7f82-6c9f-9bae-3e18",
+                "hidden": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "99ab-d2e4-1ad0-d537-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "99ab-d2e4-1ad0-d537-max",
+                "includeChildSelections": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "81d1-7aee-0c78-2939-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "81d1-7aee-0c78-2939-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "5",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "2+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "3",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "C",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Close Action, Bloom-3",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Colossal Salvage Cutter",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "c1f6-5891-64e7-2827"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Close Action",
+                    "id": "041e-7703-6b47-32c5",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  },
+                  {
+                    "name": "Bloom-X",
+                    "id": "2406-1afb-ffc5-0ed7",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a944-3ee8-9a6c-6440"
+                  }
+                ],
+                "rules": [
+                  {
+                    "description": "This weapon can only be used against targets in base contact.",
+                    "name": "Colossal Salvage Cutter",
+                    "id": "d4db-5d9e-ad01-91d7",
+                    "hidden": false
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Colossal Salvage Cutter",
+                "hidden": false,
+                "id": "5b1e-dc30-ff0e-94fa"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Porter S/L-X",
+                "id": "23ff-6bce-4780-269b",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "11cb-e973-8a2c-f0f6"
+              },
+              {
+                "name": "Reinforced Armour",
+                "id": "2c29-d156-12c5-94ee",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "231e-a3d0-35e6-9a33"
+              },
+              {
+                "name": "Monitor",
+                "id": "34cc-117a-74d6-f4a0",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "cc9f-9be5-cc19-2fc9"
+              },
+              {
+                "name": "Industrial Design",
+                "id": "e9f5-c479-36b9-ab6f",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e563-4363-c68f-2930"
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "Type-87 Terminus Harvester",
+            "hidden": false,
+            "id": "f85c-66a7-e20c-45ca",
+            "publicationId": "0486-c1f4-77a3-c714"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Group",
+            "hidden": false,
+            "id": "0c95-8fb8-d76a-99b2",
+            "targetId": "default-category",
+            "primary": false
+          },
+          {
+            "name": "Heavy Groups",
+            "hidden": false,
+            "id": "8aca-6a9a-e40d-a952",
+            "targetId": "8d99-053d-ffeb-98c5",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "force",
+                "childId": "473d-151f-22a2-8892",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Mercenary ships"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "Type-87 Terminus Harvester",
+        "hidden": false,
+        "id": "d8f6-3b3f-66a7-019a",
+        "publicationId": "0486-c1f4-77a3-c714"
+      },
+      {
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 50
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Light Ship",
+                "hidden": false,
+                "id": "5c82-fb65-22b2-1cfc",
+                "targetId": "f942-8f88-d77b-13c1",
+                "primary": true
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "6\"",
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6"
+                  },
+                  {
+                    "$text": "4\"",
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310"
+                  },
+                  {
+                    "$text": "3\"",
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5"
+                  },
+                  {
+                    "$text": "4",
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da"
+                  },
+                  {
+                    "$text": "4+",
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8"
+                  },
+                  {
+                    "$text": "6+",
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983"
+                  },
+                  {
+                    "$text": "-",
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80"
+                  },
+                  {
+                    "$text": "Payload F-1, Vectored, Scrap Collection, Unload, Industrial Design",
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f"
+                  }
+                ],
+                "name": "VX-22 Flenser",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "2912-0a1d-c408-1230",
+                "publicationId": "0486-c1f4-77a3-c714"
+              }
+            ],
+            "rules": [
+              {
+                "description": "If this Ship ends its activation within 1” of a Debris Field, this Ship gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Ship with this rule can have a maximum of 3 scrap tokens at any one time. Whenever another Ship within 6” of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.",
+                "name": "Scrap Collection",
+                "id": "6dff-82ef-c102-88b9",
+                "hidden": false
+              },
+              {
+                "description": "When you attach this Ship to a Porter Ship, you may have the Porter Ship gain all of this Ship’s scrap tokens.",
+                "name": "Unload",
+                "id": "4386-6f27-42a4-479a",
+                "hidden": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0c32-694d-aeca-8fcf",
+                "includeChildSelections": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6bf0-4195-38f5-8ed2-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6bf0-4195-38f5-8ed2-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "2+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "C",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Close Action, Bloom-1",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Sawblade Prow",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "19dd-966e-2739-3867"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Close Action",
+                    "id": "d72e-952e-32e0-a095",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  },
+                  {
+                    "name": "Bloom-X",
+                    "id": "8698-3eae-0977-8013",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "a944-3ee8-9a6c-6440"
+                  }
+                ],
+                "rules": [
+                  {
+                    "description": "This weapon can only be used against targets in base contact.",
+                    "name": "Sawblade Prow",
+                    "id": "7e36-9270-619a-3fb1",
+                    "hidden": false
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Sawblade Prow",
+                "hidden": false,
+                "id": "aef8-a3c1-524c-5a10",
+                "collective": true
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Payload S/L-X",
+                "id": "1b07-bb3e-77a3-31db",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "7a4f-55fd-3916-978f"
+              },
+              {
+                "name": "Vectored",
+                "id": "7779-6233-ddca-2407",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "7a2f-fbe0-b3cd-98c8"
+              },
+              {
+                "name": "Industrial Design",
+                "id": "94e2-63c7-3265-94fc",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "e563-4363-c68f-2930"
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "VX-22 Flenser",
+            "hidden": false,
+            "id": "160e-d093-52eb-5adb",
+            "publicationId": "0486-c1f4-77a3-c714"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Group",
+            "hidden": false,
+            "id": "3b1a-1d09-bae5-b3e5",
+            "targetId": "default-category",
+            "primary": false
+          },
+          {
+            "name": "Light Groups",
+            "hidden": false,
+            "id": "d6de-3b44-8dca-2e1c",
+            "targetId": "f51b-d892-62c0-3f1e",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "force",
+                "childId": "473d-151f-22a2-8892",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Mercenary ships"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "VX-22 Flenser",
+        "hidden": false,
+        "id": "1caa-22ad-f152-b011",
+        "publicationId": "0486-c1f4-77a3-c714"
+      },
+      {
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 410
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "6e44-cb75-e25f-8b24",
+                "id": "2b47-4950-a077-7d24",
+                "primary": true,
+                "name": "Colossal Ship"
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "$text": "5\"",
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6"
+                  },
+                  {
+                    "$text": "10\"",
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310"
+                  },
+                  {
+                    "$text": "16\"",
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5"
+                  },
+                  {
+                    "$text": "23",
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9"
+                  },
+                  {
+                    "$text": "4+",
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da"
+                  },
+                  {
+                    "$text": "4+",
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8"
+                  },
+                  {
+                    "$text": "5+",
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983"
+                  },
+                  {
+                    "$text": "1",
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80"
+                  },
+                  {
+                    "$text": "Expansive Radiator Systems",
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f"
+                  }
+                ],
+                "name": "PRK-91 Provenance Ark",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "247f-57ae-68a4-6871",
+                "publicationId": "0486-c1f4-77a3-c714"
+              }
+            ],
+            "rules": [
+              {
+                "description": "At the start of this Ship’s activation, remove two Spikes from it.",
+                "name": "Expansive Radiator Systems",
+                "id": "7d19-eab6-69af-352b",
+                "hidden": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "eff0-a6ef-86ac-669a",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5da0-359f-b6f6-ff0d",
+                "includeChildSelections": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "e37c-1d56-b18b-b64e",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7ef2-17df-3134-175e",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F/S",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "4",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "3+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "E",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Fusillade-1, Overcharge, Reave-1",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Heavy Dual Vent Cannon Turret",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "762c-1aa8-d9d4-f8e4"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Fusillade-X",
+                    "id": "e793-b955-6016-1664",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "4f05-4fdc-fad2-c566"
+                  },
+                  {
+                    "name": "Overcharge",
+                    "id": "ef1f-a07c-cd9b-a20b",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "33e5-a091-cbf5-4765"
+                  },
+                  {
+                    "name": "Reave-X",
+                    "id": "756d-fb8c-10b8-565f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "4def-e674-d37c-707a"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Heavy Dual Vent Cannon Turret",
+                "hidden": false,
+                "id": "8bd3-1154-9758-aaea",
+                "collective": true,
+                "sortIndex": 1
+              },
+              {
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F/S/R",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "6",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "3+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "1",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "K",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Close Action, Volley-2",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "NC-16 Missile Bank",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "7c69-67ad-50b7-ada5"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Close Action",
+                    "id": "08a0-4fa4-ecef-bfaf",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  },
+                  {
+                    "name": "Volley-X",
+                    "id": "4be1-3d66-d05e-4e8a",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "2313-61f3-8840-3e8b"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "95ee-1b91-7448-22c1-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "95ee-1b91-7448-22c1-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "NC-16 Missile Bank",
+                "hidden": false,
+                "id": "0477-875f-37bc-4d28",
+                "sortIndex": 2
+              },
+              {
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "F/S/R",
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97"
+                      },
+                      {
+                        "$text": "3",
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae"
+                      },
+                      {
+                        "$text": "5+",
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d"
+                      },
+                      {
+                        "$text": "2",
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7"
+                      },
+                      {
+                        "$text": "K",
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818"
+                      },
+                      {
+                        "$text": "Bombardment, Penetrator",
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278"
+                      }
+                    ],
+                    "name": "Genesis Spikes",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "3927-d911-b9e6-493e"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Bombardment",
+                    "id": "d9f8-46d0-8049-b6bf",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "858c-a2ff-ed65-3e47"
+                  },
+                  {
+                    "name": "Penetrator",
+                    "id": "7d31-30b0-e96b-d01b",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "fa34-1759-4681-18db"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2b24-e419-3bdb-4a7d-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2b24-e419-3bdb-4a7d-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "rules": [
+                  {
+                    "description": "When this weapon successfully inflicts any amount of damage against a City, place a Mutant Fauna token on that Dropsite. Mutant Fauna tokens are not Battalions and cannot control or contest a Dropsite. When any player deploys any number of Battalions to that Dropsite, if that Dropsite has any Mutant Fauna tokens, those Battalions are only placed on a roll of a 5+. If any Battalions are not placed this way, remove a Mutant Fauna token from that Dropsite. If a Dropsite starts a round with a Mutant Fauna token, remove that token at the end of the round.",
+                    "name": "Genesis Spikes",
+                    "id": "a257-dc1c-f8b0-314c",
+                    "hidden": false
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Genesis Spikes",
+                "hidden": false,
+                "id": "033f-28a4-520d-94d3",
+                "sortIndex": 3
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6446-beae-8e0a-4535-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6446-beae-8e0a-4535-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "4",
+                        "name": "Launch",
+                        "typeId": "bcc4-f844-acff-aa94"
+                      },
+                      {
+                        "$text": "-",
+                        "name": "Special",
+                        "typeId": "d3be-1a27-21ac-fb65"
+                      }
+                    ],
+                    "name": "Fighters & Bombers",
+                    "typeId": "7ba8-a64f-b5fb-8c3e",
+                    "typeName": "Load",
+                    "hidden": false,
+                    "id": "d754-b5b7-6c4a-4393"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Fighters & Bombers",
+                "hidden": false,
+                "id": "a8cc-a57d-ce0f-7f8a",
+                "sortIndex": 4
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8208-d466-735a-2926-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "8208-d466-735a-2926-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "$text": "2",
+                        "name": "Launch",
+                        "typeId": "bcc4-f844-acff-aa94"
+                      },
+                      {
+                        "$text": "-",
+                        "name": "Special",
+                        "typeId": "d3be-1a27-21ac-fb65"
+                      }
+                    ],
+                    "name": "Bulk Landers",
+                    "typeId": "7ba8-a64f-b5fb-8c3e",
+                    "typeName": "Load",
+                    "hidden": false,
+                    "id": "e59e-502a-7ee9-c5df"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Bulk Landers",
+                "hidden": false,
+                "id": "8dad-b8e4-51c9-0743",
+                "sortIndex": 5
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "PRK-91 Provenance Ark",
+            "hidden": false,
+            "id": "9b34-8fdb-36f0-9cde",
+            "publicationId": "0486-c1f4-77a3-c714"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Group",
+            "hidden": false,
+            "id": "9d9a-78c8-5651-401a",
+            "targetId": "default-category",
+            "primary": false
+          },
+          {
+            "targetId": "52fa-6578-d171-57d6",
+            "id": "cf73-9806-ece3-6e1c",
+            "primary": true,
+            "name": "Colossal Groups"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "conditions": [
+                  {
+                    "type": "equalTo",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "473d-151f-22a2-8892",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Mercenary ships"
+                  }
+                ],
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "7895-d441-b903-8bb2",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Skirmish"
+                      },
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "2172-995a-95f6-db3d",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Colossal ships"
+                      }
+                    ],
+                    "type": "and"
+                  }
+                ],
+                "type": "or"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "PRK-91 Provenance Ark",
+        "hidden": false,
+        "id": "6e67-88af-073f-49d5",
+        "publicationId": "0486-c1f4-77a3-c714"
+      }
+    ],
+    "sharedRules": [
+      {
+        "description": "If this Ship is on General Quarters and in base contact with another Ship (friendly or enemy) you may have it Tug that Ship instead of moving normally. If you do, this Ship may turn as normal but only moves up to 3”. The other Ship is then moved the same distance in the same direction, retaining its original facing. Ships can only be tugged this way up to a maximum of 6” each round.",
+        "name": "Tugging Along",
+        "id": "22b2-66c6-0038-a8d4",
+        "hidden": false
+      },
+      {
+        "description": "This weapon can only be used against targets in base contact. After completing an attack with this weapon, remove this Ship from the table. It counts as destroyed at the end of the game.",
+        "name": "Drag to Hell",
+        "id": "6e2d-81d7-9a0e-722f",
+        "hidden": false
+      },
+      {
+        "description": "This Ship starts the game with 5 wares tokens.\nAt the start of each round, if you control this Ship, you may spend a number of wares tokens on one of the following effects until the end of the round:\nDefence Harmonics - 2 Tokens: Friendly Groups within 6” improve their Energy and Kinetic saves by 1, to a maximum of a 3+.\nEnergy Dissipators - 1 Tokens: Friendly Groups within 9” count as having 2 fewer Spikes.\nGuardian Schoal - 1 Token: Friendly Assets within 9” cannot be the target of enemy weapons with the Anti Wing special rule",
+        "name": "Purchased Power",
+        "id": "e393-f432-a053-d22e",
+        "hidden": false
+      },
+      {
+        "description": "When taken as part of your fleet, this Ship starts the game with 2 friendly Battalions on it. When any number of enemy Battalions are removed due to Boarding Actions or Battalion Combat on a Space Station within 6” of this Ship, place a single friendly Battalion on this Ship. This Ship’s Boarding Pods and Drop Pods can only be used while it has friendly Battalions on it and each Boarding Pod or Drop Pod launched causes one friendly Battalion on this Ship to be removed.",
+        "name": "Penal Legions",
+        "id": "3e9f-cd00-5c21-b396",
+        "hidden": false
+      },
+      {
+        "description": "Improve this Group’s Backup save by 2 when rolling to save hits due to Debris Fields.",
+        "name": "Industrial Design",
+        "id": "e563-4363-c68f-2930",
+        "hidden": false
+      },
+      {
+        "name": "Space Trucker",
+        "id": "612d-c072-617f-de98",
+        "hidden": false,
+        "description": "This Ship’s Hangar Deployable Feature can only be deployed to Space Stations (of any type)."
+      }
+    ],
+    "library": true,
+    "id": "903e-8fb9-3fe2-4460",
+    "name": "Civilian",
+    "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
+    "gameSystemRevision": 6,
+    "revision": 12,
+    "battleScribeVersion": 2.03,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
+    "authorName": "John Kemp"
+  }
+}
