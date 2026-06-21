@@ -3696,9 +3696,9 @@
               {
                 "characteristics": [
                   {
-                    "$text": "When this Space Station targets enemy ships, Spikes on those ships have double their normal effect. So a Minor Spike increases the ship’s Signature by 12” and a Major Spike increases it by 24” when targeted by this Space Station.",
                     "name": "Effect",
-                    "typeId": "1f58-541b-60dc-ea2a"
+                    "typeId": "1f58-541b-60dc-ea2a",
+                    "$text": "When this Space Station targets enemy ships, Spikes on those ships have double their normal effect. So a Spike would increase the target’s Signature by 6” instead of 3”."
                   }
                 ],
                 "name": "Deep Space Tracking",
@@ -3905,7 +3905,7 @@
     "name": "Fleet Space Stations",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 5,
-    "revision": 5,
+    "revision": 6,
     "authorName": "John Kemp",
     "battleScribeVersion": 2.03,
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
