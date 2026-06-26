@@ -1276,7 +1276,7 @@
             "comment": "Modified weapon",
             "infoLinks": [
               {
-                "name": "Vanguard-X",
+                "name": "Vanguard-X\"",
                 "id": "f7d8-e8e9-ab5e-7e5a",
                 "hidden": false,
                 "type": "rule",
@@ -3766,7 +3766,7 @@
             ],
             "infoLinks": [
               {
-                "name": "Vanguard-X",
+                "name": "Vanguard-X\"",
                 "id": "5687-3dbc-34c6-d1c3",
                 "hidden": false,
                 "type": "rule",
@@ -3918,7 +3918,7 @@
             ],
             "infoLinks": [
               {
-                "name": "Vanguard-X",
+                "name": "Vanguard-X\"",
                 "id": "5be0-3f81-7b80-59c9",
                 "hidden": false,
                 "type": "rule",
@@ -4073,7 +4073,7 @@
             ],
             "infoLinks": [
               {
-                "name": "Vanguard-X",
+                "name": "Vanguard-X\"",
                 "id": "952b-de40-4d9b-37e5",
                 "hidden": false,
                 "type": "rule",
@@ -4218,7 +4218,7 @@
             ],
             "infoLinks": [
               {
-                "name": "Vanguard-X",
+                "name": "Vanguard-X\"",
                 "id": "e1df-2cc0-0b13-c0e3",
                 "hidden": false,
                 "type": "rule",
@@ -16925,14 +16925,14 @@
               {
                 "characteristics": [
                   {
-                    "$text": "3AP",
                     "name": "Cost",
-                    "typeId": "e725-1a05-f360-abc6"
+                    "typeId": "e725-1a05-f360-abc6",
+                    "$text": "3AP"
                   },
                   {
-                    "$text": "During this round’s Cleanup step of the End Phase, all players retain any unspent AP from this round into the next round. In the next round, only players that have used this Ability this round can generate AP in the Planning Phase.",
                     "name": "Effect",
-                    "typeId": "49ae-26b2-d6ec-81aa"
+                    "typeId": "49ae-26b2-d6ec-81aa",
+                    "$text": "During this round's Cleanup step of the End Phase, all players retain any unspent AP from this round into the next round. In the next round, only players that have used this Ability this round can generate AP from Admirals in the Planning Phase."
                   }
                 ],
                 "name": "Unsportsmanlike Behaviour",
@@ -17253,7 +17253,7 @@
     "name": "Bioficers",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
-    "revision": 36,
+    "revision": 37,
     "battleScribeVersion": 2.03,
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
     "authorName": "John Kemp",
