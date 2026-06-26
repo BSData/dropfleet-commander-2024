@@ -13888,6 +13888,516 @@
         "hidden": false,
         "id": "e840-c9cd-72dc-1ea8",
         "defaultAmount": 1
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Skybane Halo",
+        "hidden": false,
+        "id": "b6dc-1ef8-60d4-e76e",
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Skybane Halo",
+            "hidden": false,
+            "id": "d6a2-96f6-8792-2ace",
+            "profiles": [
+              {
+                "name": "Skybane Halo",
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "hidden": false,
+                "id": "30ea-f6ef-7069-1d4f",
+                "characteristics": [
+                  {
+                    "name": "ES",
+                    "typeId": "b3be-7f64-867b-94f7",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "4e0b-e781-cee2-504d",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "0042-a956-225d-9293",
+                    "$text": "Aegis-2"
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Skybane Halo",
+                "id": "3e3d-26e9-e93b-88a6",
+                "hidden": false,
+                "description": "Each friendly Skybane Halo counts as a separate friendly Group for the purposes of its Aegis-X special rule. While this feature is deployed to a Dropsite, friendly groups treat the Dropsite as if it were a friendly Ship with Aegis-2 on the same Orbital Layer for the purposes of enemy close action and bomber attacks.\nThis Feature’s Aegis special rule affects friendly Ships in Orbit in addition to Atmosphere."
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Deployable Features",
+                "hidden": false,
+                "id": "bc04-dc34-af81-fff4",
+                "targetId": "73f6-cabc-3dad-5334",
+                "primary": true
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "27b7-48e7-63e5-aaf8",
+                "includeChildSelections": false,
+                "includeChildForces": false,
+                "automatic": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b32c-efbe-2779-ffa5",
+                "includeChildSelections": false,
+                "includeChildForces": false,
+                "automatic": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Skybane Oculus Array",
+                "hidden": false,
+                "id": "0454-106c-e888-7906",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "174c-6c7e-458f-4ad4-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "174c-6c7e-458f-4ad4-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Skybane Oculus Array",
+                    "typeId": "55a1-fca6-5a62-f9f4",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "137d-4347-01b7-156f",
+                    "characteristics": [
+                      {
+                        "name": "Scan",
+                        "typeId": "ca0d-8087-d02a-179b",
+                        "$text": "8\""
+                      },
+                      {
+                        "name": "Att",
+                        "typeId": "3cb6-1718-186b-4bce",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "Lock",
+                        "typeId": "4e0c-3aca-e97e-05c8",
+                        "$text": "3+"
+                      },
+                      {
+                        "name": "Dmg",
+                        "typeId": "1314-c0f9-8c3a-21ff",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "a2f6-d421-0336-1c75",
+                        "$text": "E"
+                      },
+                      {
+                        "name": "Special",
+                        "typeId": "f633-dba6-938c-31f2",
+                        "$text": "Anti Wing, Escape Velocity, Scald-2"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Anti Wing",
+                    "id": "9e72-eb4a-44d8-eebc",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "d7b1-2768-13e8-009f"
+                  },
+                  {
+                    "name": "Escape Velocity",
+                    "id": "f127-c1b3-10a4-08f5",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "0357-837c-bc00-4ce3"
+                  },
+                  {
+                    "name": "Scald-X",
+                    "id": "9932-118b-24c8-7200",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "41b3-55a2-8d71-ee88"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "642f-326d-7973-68c0",
+            "automatic": false
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Deployable Features",
+            "hidden": false,
+            "id": "46f9-769f-0279-8496",
+            "targetId": "11b4-72d7-c64d-25c1",
+            "primary": false
+          },
+          {
+            "name": "Reference",
+            "hidden": false,
+            "id": "704c-bd52-50e4-e63e",
+            "targetId": "dbff-12ce-7e10-7001",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "b6dc-1ef8-60d4-e76e",
+                "shared": true,
+                "includeChildSelections": false,
+                "childName": "Aegis Platform",
+                "includeChildForces": false
+              },
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Shrouding Platform",
+        "hidden": false,
+        "id": "af1f-6338-40c5-c235",
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Shrouding Platform",
+            "hidden": false,
+            "id": "26cb-e73d-66dc-40c7",
+            "profiles": [
+              {
+                "name": "Shrouding Platform",
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "hidden": false,
+                "id": "0ca2-9370-4e17-97f8",
+                "characteristics": [
+                  {
+                    "name": "ES",
+                    "typeId": "b3be-7f64-867b-94f7",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "4e0b-e781-cee2-504d",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "0042-a956-225d-9293",
+                    "$text": "-"
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Shrouding Platform",
+                "id": "1d24-eee1-4be8-f6e6",
+                "hidden": false,
+                "description": "This Dropsite has a Signature of 0” and cannot gain Spikes.\nFriendly Groups within 6” of this Dropsite count as having one fewer Spike when an opponent is determining potential targets and assigning Weapons to targets."
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Deployable Features",
+                "hidden": false,
+                "id": "a298-9de6-3dbe-ba9a",
+                "targetId": "73f6-cabc-3dad-5334",
+                "primary": true
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0f61-1a9f-c8fe-a2bc",
+                "includeChildSelections": false,
+                "includeChildForces": false,
+                "automatic": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ba26-d9b7-924c-34a5",
+                "includeChildSelections": false,
+                "includeChildForces": false,
+                "automatic": false
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "f0de-24b1-6a10-009d",
+            "automatic": false
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Deployable Features",
+            "hidden": false,
+            "id": "6375-0946-612f-4e87",
+            "targetId": "11b4-72d7-c64d-25c1",
+            "primary": false
+          },
+          {
+            "name": "Reference",
+            "hidden": false,
+            "id": "a6ee-d845-aceb-8182",
+            "targetId": "dbff-12ce-7e10-7001",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "af1f-6338-40c5-c235",
+                "shared": true,
+                "includeChildSelections": false,
+                "childName": "Aegis Platform",
+                "includeChildForces": false
+              },
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Infestation Bastion",
+        "hidden": false,
+        "id": "1ddc-fb3a-95a4-9990",
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Infestation Bastion",
+            "hidden": false,
+            "id": "b3d3-d106-c077-2ce2",
+            "profiles": [
+              {
+                "name": "Infestation Bastion",
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "hidden": false,
+                "id": "e8b4-0316-1b7f-d85c",
+                "characteristics": [
+                  {
+                    "name": "ES",
+                    "typeId": "b3be-7f64-867b-94f7",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "4e0b-e781-cee2-504d",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "0042-a956-225d-9293",
+                    "$text": "-"
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Infestation Bastion",
+                "id": "d072-a850-1b7d-a762",
+                "hidden": false,
+                "description": "When friendly Bulk Landers are launched to this Dropsite, they ignore enemy Battalions on this Dropsite.\nAfter enemy Battalions are deployed to this Dropsite, roll a dice for each of those Battalions. For each result of a 3+, remove one of those Battalions. Only one Infestation Bastion can be used this way for each Battalion and any Battalions already on the Dropsite are ignored."
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Deployable Features",
+                "hidden": false,
+                "id": "7a0c-fb1d-478d-c6ee",
+                "targetId": "73f6-cabc-3dad-5334",
+                "primary": true
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "703c-9ca9-9167-4811",
+                "includeChildSelections": false,
+                "includeChildForces": false,
+                "automatic": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f441-2dfc-6a5e-a234",
+                "includeChildSelections": false,
+                "includeChildForces": false,
+                "automatic": false
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "ffa2-03c9-fdb5-ad81",
+            "automatic": false
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Deployable Features",
+            "hidden": false,
+            "id": "51f0-f978-0fed-b274",
+            "targetId": "11b4-72d7-c64d-25c1",
+            "primary": false
+          },
+          {
+            "name": "Reference",
+            "hidden": false,
+            "id": "e4b1-ef3f-74ea-9556",
+            "targetId": "dbff-12ce-7e10-7001",
+            "primary": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "1ddc-fb3a-95a4-9990",
+                "shared": true,
+                "includeChildSelections": false,
+                "childName": "Aegis Platform",
+                "includeChildForces": false
+              },
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              }
+            ]
+          }
+        ]
       }
     ],
     "publications": [
@@ -14449,6 +14959,30 @@
         "hidden": false,
         "id": "6aaa-0263-9886-9cfa",
         "targetId": "e840-c9cd-72dc-1ea8",
+        "type": "selectionEntry"
+      },
+      {
+        "import": true,
+        "name": "Skybane Halo ",
+        "hidden": false,
+        "id": "c5dd-52d0-0865-1225",
+        "targetId": "b6dc-1ef8-60d4-e76e",
+        "type": "selectionEntry"
+      },
+      {
+        "import": true,
+        "name": "Shrouding Platform",
+        "hidden": false,
+        "id": "2f55-ea42-b333-c492",
+        "targetId": "af1f-6338-40c5-c235",
+        "type": "selectionEntry"
+      },
+      {
+        "import": true,
+        "name": "Infestation Bastion",
+        "hidden": false,
+        "id": "1e5b-a1c3-1426-d710",
+        "targetId": "1ddc-fb3a-95a4-9990",
         "type": "selectionEntry"
       }
     ],
