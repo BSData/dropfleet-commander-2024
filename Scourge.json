@@ -15734,7 +15734,7 @@
                 "name": "Infestation Bastion",
                 "id": "d072-a850-1b7d-a762",
                 "hidden": false,
-                "description": "When friendly Bulk Landers are launched to this Dropsite, they ignore enemy Battalions on this Dropsite.\nAfter enemy Battalions are deployed to this Dropsite, roll a dice for each of those Battalions. For each result of a 3+, remove one of those Battalions. Only one Infestation Bastion can be used this way for each Battalion and any Battalions already on the Dropsite are ignored."
+                "description": "When friendly Bulk Landers are launched to this Dropsite, they ignore enemy Battalions on this Dropsite.\nAfter enemy Battalions are deployed to this Dropsite, roll a dice for each of those Battalions. For each result of a 5+, remove one of those Battalions. Only one Infestation Bastion can be used this way for each Battalion and any Battalions already on the Dropsite are ignored."
               }
             ],
             "categoryLinks": [
@@ -16001,7 +16001,7 @@
       },
       {
         "import": true,
-        "name": "Melusine Pocket Battleship",
+        "name": "Bannik Pocket Battleship",
         "hidden": false,
         "id": "76d5-6d6b-41a4-fea1",
         "targetId": "359a-1627-c6e8-d62a",
@@ -16057,7 +16057,7 @@
       },
       {
         "import": true,
-        "name": "Nereid Supercruiser",
+        "name": "Nixie Supercruiser",
         "hidden": false,
         "id": "d055-3071-19ae-a4e1",
         "targetId": "1e8b-e94b-43fe-b3d4",
@@ -16065,7 +16065,7 @@
       },
       {
         "import": true,
-        "name": "Nereid Supercruiser",
+        "name": "Rusalka Supercruiser",
         "hidden": false,
         "id": "d40e-e61b-3197-6d18",
         "targetId": "8447-aa59-23ce-38ce",
@@ -16457,7 +16457,7 @@
       },
       {
         "import": true,
-        "name": "Skybane Halo ",
+        "name": "Skybane Halo",
         "hidden": false,
         "id": "c5dd-52d0-0865-1225",
         "targetId": "b6dc-1ef8-60d4-e76e",
@@ -17307,7 +17307,7 @@
     "name": "Scourge",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
-    "revision": 27,
+    "revision": 28,
     "authorName": "John Kemp",
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
     "battleScribeVersion": 2.03,
