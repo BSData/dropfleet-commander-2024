@@ -7146,49 +7146,49 @@
                 "id": "31e5-7453-7332-fc30",
                 "characteristics": [
                   {
-                    "$text": "8\"",
                     "name": "Thrust",
-                    "typeId": "d821-4294-3117-e8a6"
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "12\""
                   },
                   {
-                    "$text": "6\"",
                     "name": "Scan",
-                    "typeId": "960a-5d0e-18c5-4310"
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "8\""
                   },
                   {
-                    "$text": "4\"",
                     "name": "Sig",
-                    "typeId": "4feb-14c2-b1f1-9fa5"
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "2\""
                   },
                   {
-                    "$text": "6",
                     "name": "Hull",
-                    "typeId": "5253-be1d-917b-17d9"
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "8"
                   },
                   {
-                    "$text": "3+",
                     "name": "ES",
-                    "typeId": "42ae-03c9-d0ff-61da"
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "4+"
                   },
                   {
-                    "$text": "4+",
                     "name": "KS",
-                    "typeId": "a4d4-4c63-1848-24f8"
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "5+"
                   },
                   {
-                    "$text": "6+",
                     "name": "BS",
-                    "typeId": "05b6-9825-68e8-4983"
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "6+"
                   },
                   {
-                    "$text": "1",
                     "name": "G",
-                    "typeId": "32ce-7bbb-1d0f-8c80"
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1"
                   },
                   {
-                    "$text": "Hero, Unique",
                     "name": "Special",
-                    "typeId": "fdf5-89b6-e62e-570f"
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Hero, Unique"
                   }
                 ],
                 "publicationId": "c835-461f-ea00-a841"
@@ -17994,7 +17994,7 @@
     "name": "Post-Human Republic",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
-    "revision": 33,
+    "revision": 34,
     "authorName": "John Kemp",
     "battleScribeVersion": 2.03,
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
