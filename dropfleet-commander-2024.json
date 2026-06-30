@@ -531,7 +531,7 @@
             "scope": "roster",
             "shared": true,
             "id": "8431-eb6d-c04d-8f41-min",
-            "includeChildSelections": true
+            "includeChildSelections": false
           },
           {
             "type": "max",
@@ -540,7 +540,7 @@
             "scope": "roster",
             "shared": true,
             "id": "8431-eb6d-c04d-8f41-max",
-            "includeChildSelections": true
+            "includeChildSelections": false
           }
         ],
         "modifierGroups": [
@@ -1340,7 +1340,7 @@
                 "childId": "7895-d441-b903-8bb2",
                 "shared": true,
                 "includeChildSelections": true,
-                "includeChildForces": true
+                "includeChildForces": false
               }
             ],
             "type": "set",
@@ -1429,7 +1429,7 @@
                     "childId": "7895-d441-b903-8bb2",
                     "shared": true,
                     "includeChildSelections": true,
-                    "includeChildForces": true
+                    "includeChildForces": false
                   },
                   {
                     "type": "equalTo",
@@ -1439,7 +1439,7 @@
                     "childId": "3fda-65f2-6cc3-ee33",
                     "shared": true,
                     "includeChildSelections": true,
-                    "includeChildForces": true
+                    "includeChildForces": false
                   }
                 ],
                 "type": "and"
@@ -1482,7 +1482,7 @@
                     "childId": "7895-d441-b903-8bb2",
                     "shared": true,
                     "includeChildSelections": true,
-                    "includeChildForces": true
+                    "includeChildForces": false
                   },
                   {
                     "type": "equalTo",
@@ -1492,7 +1492,7 @@
                     "childId": "3fda-65f2-6cc3-ee33",
                     "shared": true,
                     "includeChildSelections": true,
-                    "includeChildForces": true
+                    "includeChildForces": false
                   }
                 ],
                 "type": "or"
