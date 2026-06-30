@@ -909,9 +909,9 @@
               {
                 "characteristics": [
                   {
-                    "$text": "You are awarded 1VP whenever you survey a Dropsite at least 24\" away from your deployment zone. Any Capital Ship within 6” of the Dropsite and able to fire Weapons may substitute all attacking and launching that round to Survey it. Each Dropsite may be Surveyed once per player per game. A maximum of 2VP may be scored using this Secondary Objective. If the Scenario normally uses Survey, these VP are scored in addition to those in the Scenario.",
                     "name": "Description",
-                    "typeId": "f3e2-be91-7cd0-fd3a"
+                    "typeId": "f3e2-be91-7cd0-fd3a",
+                    "$text": "You are awarded 1VP whenever you survey a Dropsite over 24\" away from your deployment zone. Any Capital Ship within 6\" of the Dropsite and able to fire Weapons may substitute all attacking and launching that round to Survey it. Each Dropsite may be Surveyed once per player per game. A maximum of 2VP may be scored using this Secondary Objective. If the Scenario normally uses Survey, these VP are scored in addition to those in the Scenario."
                   }
                 ],
                 "name": "Gather Intel",
@@ -979,9 +979,9 @@
               {
                 "characteristics": [
                   {
-                    "$text": "Nominate one of your Ships of Tonnage M or higher. You may permanently fly that Ship off the board in any opponent’s Deployment Zone. If you do and that ship is not Crippled, gain 1VP. If that ship was H or C tonnage, gain 2VP instead.",
                     "name": "Description",
-                    "typeId": "f3e2-be91-7cd0-fd3a"
+                    "typeId": "f3e2-be91-7cd0-fd3a",
+                    "$text": "Nominate one of your Ships of Tonnage M or higher. You may permanently fly that Ship off the board in any opponent’s Deployment Zone. If you do and that Ship is not Crippled, gain 1VP. If that ship was H or C tonnage, gain 2VP instead."
                   }
                 ],
                 "name": "Objectives Beyond",
@@ -2036,13 +2036,13 @@
         "page": 36
       },
       {
-        "description": "Shaltari Motherships can only deploy their Dropships via friendly Ships/Dropsites with the Gateship-X special rule (sometimes referred to as Gateships). These Gateships must be within 18” of the Mothership or part of a chain of Gateships with each Gateship in the chain being within 18” of another. Note: though the launch is measured from the Gateship, it is the Mothership that is launching.",
+        "description": "Shaltari Motherships can only deploy their Dropships via friendly Ships/Dropsites with the Gateship-X special rule (sometimes referred to as Gateships).\nThese Gateships must be within 18” of the Mothership or part of a chain of Gateships with each Gateship in the chain being within 18” of another. Note: though the launch is measured from the Gateship, it is the Mothership that is launching.",
         "name": "Mothership",
         "id": "928d-4467-6cc7-1771",
         "hidden": false
       },
       {
-        "description": "When building your fleet, you may choose as many Payload Ships as you like— tonnage limits do not apply to these Ships, and they have no Group size. All Payload S/L Ships must be assigned to a Porter S/L Ship with the same letter. Payload Ships may not activate or be targeted until detached.\nPayload Ships take up X of a Porter Ship’s capacity.\nDuring the Porter Ship’s activation, if it is on an Order that allows it to Launch, you may detach one or more of its Payload Ships and place them within 3” of it. In the round they are detached, these Payloads activate together immediately as part of the Porter Ship’s activation after it has completed its Order. In subsequent rounds, all your Payload Ships count as being part of a single Group. Crippling Effects, Spikes, and other rules that affect an entire Group only affect the targeted Payload Ship.\nPayload Ships always follow General Quarters Orders, even if its Porter is on different Orders. Payload Ships ignore Coherency rules (and do not gain Formation Benefits), have no Lead Ship, are targeted by attacks individually, and these attacks can only damage the targeted Payload Ship.\nIf a Payload Ship is attached to a Porter Ship when that Ship is destroyed, the Payload Ship is destroyed.",
+        "description": "When building your fleet, you may choose as many Payload Ships as you like—tonnage limits do not apply to these Ships, and they have no Group size. All Payload S/L Ships must be assigned to a Porter S/L Ship with the same letter. Payload Ships may not activate or be targeted until detached.\nPayload Ships take up X of a Porter Ship’s capacity.\nDuring the Porter Ship’s activation, if it is on an Order that allows it to Launch, you may detach one or more of its Payload Ships and place them within 3” of it. In the round they are detached, these Payloads activate together immediately as part of the Porter Ship’s activation after it has completed its Order. In subsequent rounds, all your Payload Ships count as being part of a single Group. Crippling Effects, Spikes, and other rules that affect an entire Group only affect the targeted Payload Ship.\nPayload Ships always follow General Quarters Orders, even if its Porter is on different Orders. Payload Ships ignore Coherency rules (and do not gain Formation Benefits), have no Lead Ship, are targeted by attacks individually, and these attacks can only damage the targeted Payload Ship.\nIf a Payload Ship is attached to a Porter Ship when that Ship is destroyed, the Payload Ship is destroyed.",
         "alias": [
           "Payload S-1",
           "Payload L-1",
@@ -2069,7 +2069,7 @@
         "page": 37
       },
       {
-        "description": "This Ship may launch its Assets at any point during its movement",
+        "description": "This Ship may launch its Assets at any point during its movement.",
         "name": "Rapid Drop",
         "id": "8b74-2f05-9de9-8b32",
         "hidden": false,
@@ -2097,7 +2097,7 @@
         "page": 37
       },
       {
-        "description": "Weapons rolling to hit this Ship or its Group increase the result needed to score a critical by 1 (so a weapon that would crit on a 4+ crits on a 5+ instead).",
+        "description": "Weapons rolling to hit this Ship or its Group can only score criticals against it on a result of a 3 higher than its Lock value.",
         "name": "Reinforced Armour",
         "id": "231e-a3d0-35e6-9a33",
         "hidden": false
@@ -2158,7 +2158,7 @@
         "page": 37
       },
       {
-        "description": "Only one Weapon or Load with the same Alt value on the same Ship may be used by that Ship each round.\nAll Alt Weapons with the same number count as the same Weapon when determining how many Weapons a Ship has.",
+        "description": "Only one Weapon or Load with the same Alt value on the same Ship may be used by that Ship each round.\nAll Alt Weapons with the same value count as the same Weapon when determining how many Weapons a Ship has.",
         "alias": [
           "Alt-1"
         ],
@@ -2390,7 +2390,7 @@
         "page": 39
       },
       {
-        "description": "Before assigning Weapons to targets, you may double the Damage value of this Weapon. If you do, this becomes a High Power Weapon for this activation and each attack roll of 6 causes that attacking Ship to lose this Weapon’s unmodified Damage value in hull points. Only one Weapon per Ship may benefit from this rule per activation.",
+        "description": "Before assigning Weapons to targets, you may double the Damage value of this Weapon. If you do, this becomes a High-Power Weapon for this activation and each attack roll of 6 causes that attacking Ship to lose this Weapon’s unmodified Damage value in hull points. Only one Weapon per Ship may benefit from this rule per activation.",
         "name": "Overcharge",
         "id": "33e5-a091-cbf5-4765",
         "hidden": false,
@@ -2429,7 +2429,7 @@
           "Scald-2",
           "Scald-3"
         ],
-        "description": "If this weapon attacks a target within Scan range, reduce the target’s Energy / Kinetic save against this weapon's hits by X (other attacks and Weapons are unaffected).",
+        "description": "If this weapon attacks a target within Scan range, reduce the target’s Energy / Kinetic save against this Weapon's hits by X (other attacks and Weapons are unaffected).",
         "name": "Scald-X",
         "id": "41b3-55a2-8d71-ee88",
         "hidden": false,
@@ -2437,7 +2437,7 @@
         "page": 39
       },
       {
-        "description": "When you hit with this Weapon, pick one of the following tokens; Defence Systems Offline, Scanners Offline, or Navigation Offline. \nAt the end of the Inflict Damage step, choose one of the defending Ships to gain the selected token, regardless of the amount of damage caused by the attack or amount of hits saved. This token is automatically removed at the start of the End Phase, before making repairs.",
+        "description": "When you hit with this Weapon, pick one of the following tokens; Defence Systems Offline, Scanners Offline, or Navigation Offline.\nAt the end of the Inflict Damage step, choose one of the defending Ships to gain the selected token, regardless of the amount of damage caused by the attack or amount of hits saved. This token is automatically removed at the start of the End Phase, before making repairs.",
         "name": "Status",
         "id": "ea58-a80c-c3de-e165",
         "hidden": false,
