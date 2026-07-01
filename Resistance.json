@@ -1461,7 +1461,7 @@
             ],
             "infoLinks": [
               {
-                "name": "Vanguard-X",
+                "name": "Vanguard-X\"",
                 "id": "b00d-ed28-7ea7-f9aa",
                 "hidden": false,
                 "type": "rule",
@@ -4319,7 +4319,7 @@
             ],
             "infoLinks": [
               {
-                "name": "Vanguard-X",
+                "name": "Vanguard-X\"",
                 "id": "60d4-6759-fc6b-c8e6",
                 "hidden": false,
                 "type": "rule",
@@ -4474,7 +4474,7 @@
             ],
             "infoLinks": [
               {
-                "name": "Vanguard-X",
+                "name": "Vanguard-X\"",
                 "id": "2bb1-6e23-1b83-77e2",
                 "hidden": false,
                 "type": "rule",
@@ -4640,7 +4640,7 @@
                 "targetId": "6042-7b1a-9cc8-2cc6"
               },
               {
-                "name": "Vanguard-X",
+                "name": "Vanguard-X\"",
                 "id": "ca34-7e0e-d9af-6cec",
                 "hidden": false,
                 "type": "rule",
@@ -4937,7 +4937,7 @@
                 "targetId": "74c2-9532-b423-0407"
               },
               {
-                "name": "Vanguard-X",
+                "name": "Vanguard-X\"",
                 "id": "babb-93f5-d06a-1888",
                 "hidden": false,
                 "type": "rule",
@@ -7054,7 +7054,7 @@
                 "targetId": "cc9f-9be5-cc19-2fc9"
               },
               {
-                "name": "Vanguard-X",
+                "name": "Vanguard-X\"",
                 "id": "e15e-a8de-72c5-e7f6",
                 "hidden": false,
                 "type": "rule",
@@ -14443,6 +14443,14 @@
       },
       {
         "import": true,
+        "name": "Argonaut",
+        "hidden": false,
+        "id": "d82a-099e-3419-7192",
+        "type": "selectionEntry",
+        "targetId": "1d35-3bb4-449a-62d4"
+      },
+      {
+        "import": true,
         "name": "Type-87 Terminus Harvester",
         "hidden": false,
         "id": "a803-b788-1627-ba0f",
@@ -15940,7 +15948,7 @@
     "name": "Resistance",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 5,
-    "revision": 31,
+    "revision": 32,
     "battleScribeVersion": 2.03,
     "authorName": "John Kemp",
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",

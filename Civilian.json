@@ -3055,6 +3055,566 @@
         "id": "390b-443d-373d-1637"
       },
       {
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
+            "id": "baa4-c9c4-971a-1de6",
+            "primary": false,
+            "name": "Group"
+          },
+          {
+            "targetId": "e555-ff57-c478-18cd",
+            "id": "578e-eb9a-215d-3756",
+            "primary": true,
+            "name": "Medium Groups"
+          },
+          {
+            "targetId": "d720-1c66-5090-ab19",
+            "id": "fa4d-8d88-08fa-b838",
+            "primary": false,
+            "name": "Medium Group Spend Exempt"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 112
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "53c3-afc0-63ef-413a",
+                "id": "15c4-b247-24d3-80fd",
+                "primary": true,
+                "name": "Medium Ship"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bbdc-eeab-25e2-4ee2",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3dfe-9f85-1a9d-0353",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "10\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "4\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "2\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "11"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "6+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1-2"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Impetuous, Rare, Mind of its Own"
+                  }
+                ],
+                "name": "Argonaut",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "f2f9-2119-afde-4cdb",
+                "publicationId": "1322-3c59-0db2-ee7c"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3587-6d73-210c-86a0",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "c4d2-b30d-5a0c-9441",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97",
+                        "$text": "F/S/R"
+                      },
+                      {
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d",
+                        "$text": "3+"
+                      },
+                      {
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818",
+                        "$text": "E"
+                      },
+                      {
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278",
+                        "$text": "Scald-2, Sustained Fire"
+                      }
+                    ],
+                    "name": "Thermal Lash",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "2bef-6631-df1f-1e7b"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Scald-X",
+                    "id": "db0b-32bf-dbea-b160",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "41b3-55a2-8d71-ee88"
+                  },
+                  {
+                    "name": "Sustained Fire",
+                    "id": "1ee7-7830-fa84-5a6e",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "52ba-6610-b0f0-92d3"
+                  }
+                ],
+                "rules": [
+                  {
+                    "description": "This weapon can only be used against targets in base contact.\nWhen you inflict damage with this weapon, you may remove a Spike from this Group, if you do, the defending Group gains a Spike.",
+                    "name": "Thermal Lash",
+                    "id": "2280-dd36-7845-0bf8",
+                    "hidden": false
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Thermal Lash",
+                "hidden": false,
+                "id": "6e47-e152-71af-ef9f",
+                "sortIndex": 1
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "270b-34a3-b54a-2799",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "94d5-1406-9d65-e686",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97",
+                        "$text": "F/S"
+                      },
+                      {
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d",
+                        "$text": "3+"
+                      },
+                      {
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818",
+                        "$text": "K"
+                      },
+                      {
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278",
+                        "$text": "Arrest-2, Impel-2"
+                      }
+                    ],
+                    "name": "Force Wave",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "0775-1e80-f409-94c1"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Arrest-X",
+                    "id": "e356-2718-e8ea-9986",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "7fa4-03e2-d2a7-de9b"
+                  },
+                  {
+                    "name": "Impel-X",
+                    "id": "9e9f-4575-6002-cbf3",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "9944-ada1-19c8-2d06"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Force Wave",
+                "hidden": false,
+                "id": "cf88-52cb-45c4-3c06",
+                "sortIndex": 2
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Impetuous",
+                "id": "55fb-ba14-08fb-3ab5",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "6f09-5ccc-4dae-ff72"
+              },
+              {
+                "name": "Rare",
+                "id": "20a3-14eb-3f02-25dd",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f7ad-85f9-39f4-7e10"
+              }
+            ],
+            "rules": [
+              {
+                "description": "This Ship can be used in any fleet, regardless of faction but does not count towards point spent on M Tonnage Ships when building your fleet. This Ship cannot have an Admiral assigned to it for any reason.\nInstead of picking an Order for this Group when it activates, it may in any order; turn in any direction, move up to its Thrust, attack with any number of its weapons gaining a Spike for each additional Weapon System assigned after the first. Each option can only be chosen once per activation.\nAt the end of this Group's activation, if it did not gain any Spikes, remove a Spike from it.",
+                "name": "Mind of its Own",
+                "id": "a6ae-b412-fa55-4905",
+                "hidden": false
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "Argonaut",
+            "hidden": false,
+            "id": "dcd5-c335-15e7-78e4",
+            "publicationId": "1322-3c59-0db2-ee7c"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "3fda-65f2-6cc3-ee33",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "type": "set",
+            "value": 2,
+            "field": "4943-f0c0-b4ef-ec30"
+          },
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "c6ef-6271-e246-47a8",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "type": "set",
+            "value": 3,
+            "field": "4943-f0c0-b4ef-ec30"
+          },
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "d410-4aa8-c469-064b",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "type": "set",
+            "value": 4,
+            "field": "4943-f0c0-b4ef-ec30"
+          },
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "conditionGroups": [
+                  {
+                    "conditions": [
+                      {
+                        "type": "equalTo",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "b7f2-9472-f805-33e4",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Rare ships when Rare ship limit reached"
+                      }
+                    ],
+                    "conditionGroups": [
+                      {
+                        "conditionGroups": [
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "1d35-3bb4-449a-62d4",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "OBV-64 Oblivion Barge"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "7895-d441-b903-8bb2",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Skirmish"
+                              }
+                            ],
+                            "type": "and"
+                          },
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "1d35-3bb4-449a-62d4",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "OBV-64 Oblivion Barge"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "3fda-65f2-6cc3-ee33",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Clash"
+                              }
+                            ],
+                            "type": "and"
+                          },
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 3,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "1d35-3bb4-449a-62d4",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "OBV-64 Oblivion Barge"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "c6ef-6271-e246-47a8",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Battle"
+                              }
+                            ],
+                            "type": "and"
+                          },
+                          {
+                            "conditions": [
+                              {
+                                "type": "atLeast",
+                                "value": 4,
+                                "field": "selections",
+                                "scope": "parent",
+                                "childId": "1d35-3bb4-449a-62d4",
+                                "shared": true,
+                                "includeChildSelections": false,
+                                "childName": "OBV-64 Oblivion Barge"
+                              },
+                              {
+                                "type": "equalTo",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "d410-4aa8-c469-064b",
+                                "shared": true,
+                                "includeChildSelections": true,
+                                "childName": "Reconquest"
+                              }
+                            ],
+                            "type": "and"
+                          }
+                        ],
+                        "type": "or"
+                      }
+                    ],
+                    "type": "and"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "equalTo",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "473d-151f-22a2-8892",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "childName": "Mercenary ships"
+                  }
+                ],
+                "type": "or"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "4943-f0c0-b4ef-ec30"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "Argonaut",
+        "hidden": false,
+        "id": "1d35-3bb4-449a-62d4"
+      },
+      {
         "selectionEntries": [
           {
             "costs": [
@@ -4235,7 +4795,7 @@
     "name": "Civilian",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 6,
-    "revision": 12,
+    "revision": 13,
     "battleScribeVersion": 2.03,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",

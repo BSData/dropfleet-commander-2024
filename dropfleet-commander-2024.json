@@ -220,6 +220,23 @@
             "type": "increment",
             "value": 1,
             "field": "5ff3-d823-7c8b-68ad"
+          },
+          {
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "ab32-c9b6-10f3-cbdb",
+                "scope": "force",
+                "childId": "d720-1c66-5090-ab19",
+                "shared": true,
+                "roundUp": false,
+                "childName": "Medium Group Spend Exempt"
+              }
+            ],
+            "type": "decrement",
+            "value": 1,
+            "field": "5ff3-d823-7c8b-68ad"
           }
         ],
         "name": "Heavy Groups",
@@ -356,6 +373,11 @@
         ],
         "name": "Hero",
         "id": "3929-5fb7-5f98-37ea",
+        "hidden": false
+      },
+      {
+        "name": "Medium Group Spend Exempt",
+        "id": "d720-1c66-5090-ab19",
         "hidden": false
       }
     ],
@@ -2343,7 +2365,8 @@
       {
         "description": "If an attacking Group scores at least X critical hits with this Weapon System against a Group, choose one of the following for each affected Group:\n• Turn all Ships in that Group 45 degrees in the same direction. If the Group scored at least twice X, turn all Ships in that Group 90 degrees in the same direction instead.\n• Move all Ships in that Group up to twice X in inches directly forward (measuring from the affected Ships). Ships moved this way cannot be moved into Large Objects or off of the table.\nA Group can only be affected by each effect once per Weapon System per attack sequence.",
         "alias": [
-          "Impel-1"
+          "Impel-1",
+          "Impel-2"
         ],
         "name": "Impel-X",
         "id": "9944-ada1-19c8-2d06",
