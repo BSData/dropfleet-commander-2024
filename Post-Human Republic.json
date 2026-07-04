@@ -460,9 +460,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "1580-1a6b-429f-64cb"
+            "id": "1580-1a6b-429f-64cb",
+            "includeChildSelections": false
           }
         ],
         "modifiers": [
@@ -495,7 +496,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "1580-1a6b-429f-64cb"
           },
           {
@@ -723,9 +724,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "d375-1336-6507-d1d5"
+            "id": "d375-1336-6507-d1d5",
+            "includeChildSelections": false
           }
         ],
         "modifiers": [
@@ -758,7 +760,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "d375-1336-6507-d1d5"
           },
           {
@@ -1088,7 +1090,18 @@
         "hidden": false,
         "id": "3498-03f8-e547-1c37",
         "page": 3,
-        "publicationId": "6462-e99b-594c-193a"
+        "publicationId": "6462-e99b-594c-193a",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "a225-ab02-f544-a8fd",
+            "includeChildSelections": false
+          }
+        ]
       },
       {
         "categoryLinks": [
@@ -1275,9 +1288,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "5881-ca82-de92-ecd1"
+            "id": "5881-ca82-de92-ecd1",
+            "includeChildSelections": false
           }
         ],
         "modifiers": [
@@ -1295,7 +1309,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "5881-ca82-de92-ecd1"
           },
           {
@@ -18002,7 +18016,7 @@
     "name": "Post-Human Republic",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
-    "revision": 35,
+    "revision": 36,
     "authorName": "John Kemp",
     "battleScribeVersion": 2.03,
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",

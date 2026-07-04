@@ -452,9 +452,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "9586-7bd9-4eeb-ffe7"
+            "id": "9586-7bd9-4eeb-ffe7",
+            "includeChildSelections": false
           }
         ],
         "modifiers": [
@@ -487,7 +488,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "9586-7bd9-4eeb-ffe7"
           },
           {
@@ -850,7 +851,18 @@
         "hidden": false,
         "id": "6aad-bbb7-c1bf-9583",
         "page": 5,
-        "publicationId": "260d-362c-d403-80ae"
+        "publicationId": "260d-362c-d403-80ae",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "3d73-76ba-f25f-5dae",
+            "includeChildSelections": false
+          }
+        ]
       },
       {
         "categoryLinks": [
@@ -973,9 +985,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "4d1c-2340-714f-407a"
+            "id": "4d1c-2340-714f-407a",
+            "includeChildSelections": false
           }
         ],
         "modifiers": [
@@ -993,7 +1006,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "4d1c-2340-714f-407a"
           },
           {
@@ -1395,7 +1408,18 @@
         "hidden": false,
         "id": "b472-ebd8-dca8-b337",
         "page": 3,
-        "publicationId": "260d-362c-d403-80ae"
+        "publicationId": "260d-362c-d403-80ae",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "4bd9-c753-a8af-6fd6",
+            "includeChildSelections": false
+          }
+        ]
       },
       {
         "type": "upgrade",
@@ -17315,7 +17339,7 @@
     "name": "Scourge",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
-    "revision": 29,
+    "revision": 30,
     "authorName": "John Kemp",
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
     "battleScribeVersion": 2.03,

@@ -417,7 +417,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "6f16-586b-f538-9c6c"
           },
           {
@@ -479,9 +479,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "6f16-586b-f538-9c6c"
+            "id": "6f16-586b-f538-9c6c",
+            "includeChildSelections": false
           }
         ],
         "entryLinks": [
@@ -714,7 +715,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "3cfe-d4e9-16f6-7bff"
           },
           {
@@ -776,9 +777,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "3cfe-d4e9-16f6-7bff"
+            "id": "3cfe-d4e9-16f6-7bff",
+            "includeChildSelections": false
           }
         ],
         "type": "unit",
@@ -953,9 +955,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "106e-1113-d1f5-f4a7"
+            "id": "106e-1113-d1f5-f4a7",
+            "includeChildSelections": false
           }
         ],
         "modifiers": [
@@ -973,7 +976,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "106e-1113-d1f5-f4a7"
           },
           {
@@ -1184,7 +1187,18 @@
         "import": true,
         "name": "Lvl 2: Tayne - Warsaw",
         "hidden": false,
-        "id": "6d3f-389f-1a9c-cdba"
+        "id": "6d3f-389f-1a9c-cdba",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "eab8-d85e-67bc-e0f4",
+            "includeChildSelections": false
+          }
+        ]
       },
       {
         "type": "upgrade",
@@ -19211,11 +19225,18 @@
     "name": "United Colonies of Mankind",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
-    "revision": 33,
+    "revision": 34,
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
     "authorName": "John Kemp",
     "battleScribeVersion": 2.03,
     "type": "catalogue",
-    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema"
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "costTypes": [
+      {
+        "name": "New Cost Type",
+        "id": "bc3f-2793-e4a4-c955",
+        "defaultCostLimit": -1
+      }
+    ]
   }
 }

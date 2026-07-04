@@ -595,9 +595,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "7729-7128-8443-40e4"
+            "id": "7729-7128-8443-40e4",
+            "includeChildSelections": false
           }
         ],
         "modifiers": [
@@ -630,7 +631,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "7729-7128-8443-40e4"
           },
           {
@@ -976,9 +977,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "73f9-8da4-bd8e-3ee4"
+            "id": "73f9-8da4-bd8e-3ee4",
+            "includeChildSelections": false
           }
         ],
         "modifiers": [
@@ -996,7 +998,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "73f9-8da4-bd8e-3ee4"
           },
           {
@@ -1298,7 +1300,18 @@
         "hidden": false,
         "id": "11f9-e5a6-1b81-6015",
         "page": 4,
-        "publicationId": "c835-461f-ea00-a841"
+        "publicationId": "c835-461f-ea00-a841",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "0d1b-1c0c-a3a6-653b",
+            "includeChildSelections": false
+          }
+        ]
       },
       {
         "categoryLinks": [
@@ -1460,7 +1473,18 @@
         "hidden": false,
         "id": "df31-ecfa-33ff-265e",
         "page": 3,
-        "publicationId": "c835-461f-ea00-a841"
+        "publicationId": "c835-461f-ea00-a841",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "3830-2bb3-dd3f-ddfd",
+            "includeChildSelections": false
+          }
+        ]
       },
       {
         "type": "upgrade",
@@ -17261,7 +17285,7 @@
     "name": "Bioficers",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
-    "revision": 38,
+    "revision": 39,
     "battleScribeVersion": 2.03,
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
     "authorName": "John Kemp",

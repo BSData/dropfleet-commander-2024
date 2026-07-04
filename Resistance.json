@@ -721,9 +721,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "c02e-76c1-639e-ec5a"
+            "id": "c02e-76c1-639e-ec5a",
+            "includeChildSelections": false
           }
         ],
         "modifiers": [
@@ -741,7 +742,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "c02e-76c1-639e-ec5a"
           },
           {
@@ -1112,7 +1113,7 @@
               }
             ],
             "type": "set",
-            "value": -1,
+            "value": 1,
             "field": "a54a-9e94-51ba-27b0"
           },
           {
@@ -1174,9 +1175,10 @@
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "a54a-9e94-51ba-27b0"
+            "id": "a54a-9e94-51ba-27b0",
+            "includeChildSelections": false
           }
         ],
         "type": "unit",
@@ -1482,7 +1484,18 @@
         "import": true,
         "name": "Lvl 2: Hagen - Tribune",
         "hidden": false,
-        "id": "cee5-c500-357a-d910"
+        "id": "cee5-c500-357a-d910",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "e70b-738e-ceaa-0ecf",
+            "includeChildSelections": false
+          }
+        ]
       },
       {
         "categoryLinks": [
@@ -1851,7 +1864,18 @@
         "import": true,
         "name": "Lvl 2: Typhoon Vasquez - Heavy Cruiser",
         "hidden": false,
-        "id": "6839-7d0a-57fd-5ad9"
+        "id": "6839-7d0a-57fd-5ad9",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "9890-ee7d-c0f9-ed94",
+            "includeChildSelections": false
+          }
+        ]
       },
       {
         "type": "upgrade",
@@ -15948,7 +15972,7 @@
     "name": "Resistance",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 5,
-    "revision": 32,
+    "revision": 33,
     "battleScribeVersion": 2.03,
     "authorName": "John Kemp",
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
