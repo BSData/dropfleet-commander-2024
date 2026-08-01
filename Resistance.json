@@ -2,10 +2,10 @@
   "catalogue": {
     "publications": [
       {
-        "name": "Resistance Combined Fleet Stats (260327)",
+        "name": "Resistance Combined Fleet Stats (260731)",
         "id": "7fb8-995d-767a-783d",
         "hidden": false,
-        "shortName": "Resistance Stats (260327)"
+        "shortName": "Resistance Stats (260731)"
       }
     ],
     "catalogueLinks": [
@@ -1382,7 +1382,7 @@
               {
                 "name": "pts",
                 "typeId": "ab32-c9b6-10f3-cbdb",
-                "value": 210
+                "value": 205
               }
             ],
             "constraints": [
@@ -4271,7 +4271,7 @@
               {
                 "name": "pts",
                 "typeId": "ab32-c9b6-10f3-cbdb",
-                "value": 210
+                "value": 205
               }
             ],
             "constraints": [
@@ -4453,7 +4453,7 @@
               {
                 "name": "pts",
                 "typeId": "ab32-c9b6-10f3-cbdb",
-                "value": 165
+                "value": 185
               }
             ],
             "constraints": [
@@ -4488,12 +4488,21 @@
               },
               {
                 "import": true,
-                "name": "N-31 Hybrid Gun Long Battery",
+                "name": "N-31 Hybrid Gun Half Battery",
                 "hidden": false,
                 "id": "772d-b869-a648-a235",
                 "type": "selectionEntry",
                 "sortIndex": 2,
-                "targetId": "cb9d-deec-4a42-b6e6"
+                "targetId": "43de-79b0-8a1b-9516"
+              },
+              {
+                "import": true,
+                "name": "N-31 Hybrid Gun Full Battery",
+                "hidden": false,
+                "id": "6ba6-c310-1eae-1b73",
+                "type": "selectionEntry",
+                "sortIndex": 3,
+                "targetId": "34b7-ccf3-5557-02b1"
               }
             ],
             "infoLinks": [
@@ -4909,7 +4918,7 @@
               {
                 "name": "pts",
                 "typeId": "ab32-c9b6-10f3-cbdb",
-                "value": 145
+                "value": 155
               }
             ],
             "constraints": [
@@ -4948,8 +4957,17 @@
                 "hidden": false,
                 "id": "d888-9e87-2bdf-218b",
                 "type": "selectionEntry",
+                "sortIndex": 3,
+                "targetId": "1c60-50ed-72d1-4aa0"
+              },
+              {
+                "import": true,
+                "name": "NC-16 Missile Battery Turret Pair",
+                "hidden": false,
+                "id": "86c4-31a4-c80e-2043",
+                "type": "selectionEntry",
                 "sortIndex": 2,
-                "targetId": "0af2-b9c1-3610-d72b"
+                "targetId": "f70e-df51-4d85-29f9"
               }
             ],
             "infoLinks": [
@@ -5112,6 +5130,15 @@
                 "type": "selectionEntry",
                 "sortIndex": 2,
                 "targetId": "7c6e-925f-def1-fedb"
+              },
+              {
+                "import": true,
+                "name": "Drive Refit",
+                "hidden": false,
+                "id": "e703-e5a1-1287-45f6",
+                "type": "selectionEntry",
+                "targetId": "016a-6f64-4039-8a99",
+                "sortIndex": 3
               }
             ],
             "type": "model",
@@ -5125,7 +5152,7 @@
         ],
         "type": "unit",
         "import": true,
-        "name": "Gladiator Grand Cruisers",
+        "name": "Gladiator Grand Cruiser",
         "hidden": false,
         "id": "cffa-ac54-5f76-722c"
       },
@@ -11188,6 +11215,206 @@
         "collective": true
       },
       {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "B"
+              },
+              {
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "6"
+              },
+              {
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "4+"
+              },
+              {
+                "name": "Dmg",
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "K"
+              },
+              {
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Critical-1, Fusillade-2, Volley-2"
+              }
+            ],
+            "name": "N-31 Hybrid Gun Full Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "0d28-a3a1-2eb9-b584"
+          }
+        ],
+        "comment": "B 6/4+/1/K Crit-1 Fus-2 Vol-2",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Critical-X",
+            "id": "6ab4-e068-1fbd-f388",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7cc5-6830-9e54-6d11"
+          },
+          {
+            "name": "Fusillade-X",
+            "id": "56c3-6a15-279d-4c4a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4f05-4fdc-fad2-c566"
+          },
+          {
+            "name": "Volley-X",
+            "id": "7f78-ffd5-999d-e06d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2313-61f3-8840-3e8b"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "096d-d578-a2c4-85c9",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "e82b-e855-205c-bdf6",
+            "includeChildSelections": false
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "N-31 Hybrid Gun Full Battery",
+        "hidden": false,
+        "id": "34b7-ccf3-5557-02b1",
+        "collective": true
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "B"
+              },
+              {
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "3"
+              },
+              {
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "4+"
+              },
+              {
+                "name": "Dmg",
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "K"
+              },
+              {
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Critical-1, Fusillade-1, Volley-2"
+              }
+            ],
+            "name": "N-31 Hybrid Gun Half Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "6e67-5582-c06d-3002"
+          }
+        ],
+        "comment": "B 3/4+/1/K Crit-1 Fus-1 Vol-2",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Critical-X",
+            "id": "0a84-db84-101b-e4ed",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7cc5-6830-9e54-6d11"
+          },
+          {
+            "name": "Fusillade-X",
+            "id": "b6d0-33b4-46a4-7e90",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4f05-4fdc-fad2-c566"
+          },
+          {
+            "name": "Volley-X",
+            "id": "ea04-a0bf-db93-a641",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2313-61f3-8840-3e8b"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "ee2f-d051-92e7-9c09",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "69b8-eae0-8a82-a0f9",
+            "includeChildSelections": false
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "N-31 Hybrid Gun Half Battery",
+        "hidden": false,
+        "id": "43de-79b0-8a1b-9516",
+        "collective": true
+      },
+      {
         "infoLinks": [
           {
             "name": "Close Action",
@@ -11567,6 +11794,92 @@
           {
             "characteristics": [
               {
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "F/S/R"
+              },
+              {
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "5"
+              },
+              {
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "3+"
+              },
+              {
+                "name": "Dmg",
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "K"
+              },
+              {
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Close Action, Volley-2"
+              }
+            ],
+            "name": "NC-16 Missile Battery Turret Pair",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "537f-72c4-6708-9eba"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Close Action",
+            "id": "4dd2-0e14-2c74-d887",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3bd7-f459-761a-97ee"
+          },
+          {
+            "name": "Volley-X",
+            "id": "86a5-b658-ce60-e0b4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2313-61f3-8840-3e8b"
+          }
+        ],
+        "comment": "F/S/R 5/3+/1/K CA Vol-2",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "aa86-9bce-e8ae-912d",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "3d55-07da-7f19-7964",
+            "includeChildSelections": false
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "NC-16 Missile Battery Turret Pair",
+        "hidden": false,
+        "id": "f70e-df51-4d85-29f9",
+        "collective": true
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
                 "$text": "F/S/R",
                 "name": "Arc",
                 "typeId": "7fb7-39ec-1352-3b97"
@@ -11890,6 +12203,92 @@
         "name": "NC-16 Missile Salvo",
         "hidden": false,
         "id": "0af2-b9c1-3610-d72b",
+        "collective": true
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "F/S/R"
+              },
+              {
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "4"
+              },
+              {
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "3+"
+              },
+              {
+                "name": "Dmg",
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "K"
+              },
+              {
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Close Action, Volley-2"
+              }
+            ],
+            "name": "NC-16 Missile Salvo",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "1732-426d-660a-fe53"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Close Action",
+            "id": "5f02-7cd1-20ed-f452",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3bd7-f459-761a-97ee"
+          },
+          {
+            "name": "Volley-X",
+            "id": "4f3d-b6ef-6f39-13c4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2313-61f3-8840-3e8b"
+          }
+        ],
+        "comment": "F/S/R 4/3+/1/K CA Vol-2",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "73ab-9d7a-ed72-b157",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "7a1c-f6e8-27b7-b9bd",
+            "includeChildSelections": false
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "NC-16 Missile Salvo",
+        "hidden": false,
+        "id": "1c60-50ed-72d1-4aa0",
         "collective": true
       },
       {
@@ -13416,22 +13815,6 @@
         "id": "1159-4828-54ec-bc32"
       },
       {
-        "profiles": [
-          {
-            "characteristics": [
-              {
-                "$text": "This Ship increases its Thrust by 2”.",
-                "name": "Effect",
-                "typeId": "1f58-541b-60dc-ea2a"
-              }
-            ],
-            "name": "Engine Refit",
-            "typeId": "2f84-97db-deff-fa6f",
-            "typeName": "Structure",
-            "hidden": false,
-            "id": "efe7-2d51-0b5f-af44"
-          }
-        ],
         "comment": "+2\"",
         "costs": [
           {
@@ -13466,6 +13849,43 @@
         "name": "Engine Refit",
         "hidden": false,
         "id": "4a33-ab81-d18d-935f",
+        "collective": true
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Drive Refit",
+        "hidden": false,
+        "id": "016a-6f64-4039-8a99",
+        "comment": "+3\"",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 25
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "a660-2398-c739-dbe5",
+            "includeChildSelections": false
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 3,
+            "field": "d821-4294-3117-e8a6",
+            "scope": "parent",
+            "affects": "profiles.Ship",
+            "join": ", "
+          }
+        ],
         "collective": true
       },
       {
@@ -13916,20 +14336,20 @@
         "hidden": false
       },
       {
-        "description": "At the end of this ship’s activation, pick one friendly ship within 6” in line of sight (including this one). Place a Box Of Scraps token next to that ship. The next time that Ship would be destroyed due to damage, it isn’t. Instead, before continuing to inflict damage, remove the Box of Scraps token and that ship remains in play with D3 Hull Points remaining, then continue inflicting damage as normal. Box Of Scraps tokens persist through rounds but a ship may only have 1 Box Of Scraps token.",
-        "name": "Box of Scraps",
+        "description": "At the end of this ship’s activation, pick one friendly ship within 6” in line of sight (including this one). Place a Box Of Scraps token next to that ship. The next time that Ship would be destroyed, it isn’t. Instead, before continuing to inflict damage, remove the Box of Scraps token and that ship remains in play with D3 Hull Points remaining, then continue inflicting damage as normal. Box Of Scraps tokens persist through rounds but a ship may only have 1 Box Of Scraps token.",
+        "name": "Box Of Scraps",
         "id": "6042-7b1a-9cc8-2cc6",
         "hidden": false
       },
       {
-        "description": "This weapon gains the Scald-2 special rule when targeting Cities. If this weapon does damage to a Dropsite, remove all Battalions (friendly and enemy) from that Dropsite and its Features.",
+        "description": "This weapon gains the Scald-2 special rule when targeting Cities. If this weapon does damage to a City, remove all Battalions (friendly and enemy) from that City and any Features (including deployed Features) in the same City.",
         "name": "VX Bomb",
         "id": "4bf8-0d06-02c2-f60b",
         "hidden": false
       },
       {
-        "description": "Enemy Ships within 12” of this ship may be targeted by friendly Ships firing Close Action weapons using the firing Ship’s normal Weapon Range (Scan + Sig).",
-        "name": "Swacs",
+        "description": "Enemy ships within 12\" of this ship may be targeted by friendly ships firing Close Action weapons using the firing ship's normal Weapon Range (Scan + Sig).",
+        "name": "SWACS",
         "id": "74c2-9532-b423-0407",
         "hidden": false
       },

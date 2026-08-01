@@ -1722,37 +1722,37 @@
                   {
                     "characteristics": [
                       {
-                        "$text": "B",
                         "name": "Arc",
-                        "typeId": "7fb7-39ec-1352-3b97"
+                        "typeId": "7fb7-39ec-1352-3b97",
+                        "$text": "B"
                       },
                       {
-                        "$text": "8",
                         "name": "Att",
-                        "typeId": "af4e-6eec-3cb5-5aae"
+                        "typeId": "af4e-6eec-3cb5-5aae",
+                        "$text": "6"
                       },
                       {
-                        "$text": "4+",
                         "name": "Lock",
-                        "typeId": "ddfe-5610-8f1a-650d"
+                        "typeId": "ddfe-5610-8f1a-650d",
+                        "$text": "4+"
                       },
                       {
-                        "$text": "1",
                         "name": "Dmg",
-                        "typeId": "31b1-2e8b-0b99-b1c7"
+                        "typeId": "31b1-2e8b-0b99-b1c7",
+                        "$text": "1"
                       },
                       {
-                        "$text": "K",
                         "name": "Type",
-                        "typeId": "8f83-3218-7832-0818"
+                        "typeId": "8f83-3218-7832-0818",
+                        "$text": "K"
                       },
                       {
-                        "$text": "Volley-2",
                         "name": "Special",
-                        "typeId": "1e8b-4801-6eb9-f278"
+                        "typeId": "1e8b-4801-6eb9-f278",
+                        "$text": "Critical-1, Fusillade-2, Volley-2"
                       }
                     ],
-                    "name": "N-31 Hybrid Gun Battery",
+                    "name": "N-31 Hybrid Gun Full Battery",
                     "typeId": "02b7-2433-f72f-d510",
                     "typeName": "Weapon",
                     "hidden": false,
@@ -1761,8 +1761,22 @@
                 ],
                 "infoLinks": [
                   {
-                    "name": "Volley-X",
+                    "name": "Critical-X",
                     "id": "4557-630e-2315-0b57",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "7cc5-6830-9e54-6d11"
+                  },
+                  {
+                    "name": "Fusillade-X",
+                    "id": "928c-d32b-1b0e-fca6",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "4f05-4fdc-fad2-c566"
+                  },
+                  {
+                    "name": "Volley-X",
+                    "id": "992d-65a2-b084-9a17",
                     "hidden": false,
                     "type": "rule",
                     "targetId": "2313-61f3-8840-3e8b"
@@ -1770,9 +1784,46 @@
                 ],
                 "type": "upgrade",
                 "import": true,
-                "name": "N-31 Hybrid Gun Battery",
+                "name": "N-31 Hybrid Gun Full Battery",
                 "hidden": false,
                 "id": "706c-61ef-dfcd-b6e2",
+                "collective": true
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Drive Refit",
+                "hidden": false,
+                "id": "22f7-9040-874a-d8d8",
+                "comment": "+3\"",
+                "costs": [
+                  {
+                    "name": "pts",
+                    "typeId": "ab32-c9b6-10f3-cbdb",
+                    "value": 25
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a601-7aa9-9b9c-def1",
+                    "includeChildSelections": false
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "increment",
+                    "value": 3,
+                    "field": "d821-4294-3117-e8a6",
+                    "scope": "parent",
+                    "affects": "profiles.Ship",
+                    "join": ", "
+                  }
+                ],
                 "collective": true
               }
             ],
@@ -2077,7 +2128,7 @@
         ],
         "type": "unit",
         "import": true,
-        "name": "Centurion Grand Cruisers",
+        "name": "Centurion Grand Cruiser",
         "hidden": false,
         "id": "e131-eb84-312c-6fd2"
       }
@@ -2115,7 +2166,7 @@
     "name": "Misc",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 3,
-    "revision": 12,
+    "revision": 13,
     "authorName": "John Kemp",
     "battleScribeVersion": 2.03,
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
