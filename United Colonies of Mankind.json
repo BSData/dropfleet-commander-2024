@@ -11118,7 +11118,7 @@
               },
               {
                 "import": true,
-                "name": "Aegis V Array",
+                "name": "Aegis-V Array",
                 "hidden": false,
                 "id": "65eb-e2d3-004d-00fa",
                 "type": "selectionEntry",
@@ -12166,34 +12166,34 @@
           {
             "characteristics": [
               {
-                "$text": "FN",
                 "name": "Arc",
-                "typeId": "7fb7-39ec-1352-3b97"
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "FN"
               },
               {
-                "$text": "5",
                 "name": "Att",
-                "typeId": "af4e-6eec-3cb5-5aae"
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "5"
               },
               {
-                "$text": "3+",
                 "name": "Lock",
-                "typeId": "ddfe-5610-8f1a-650d"
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "3+"
               },
               {
-                "$text": "2",
                 "name": "Dmg",
-                "typeId": "31b1-2e8b-0b99-b1c7"
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "2"
               },
               {
-                "$text": "E",
                 "name": "Type",
-                "typeId": "8f83-3218-7832-0818"
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "E"
               },
               {
-                "$text": "Bloom-2 Burnthrough-2, Flash-1, Focused",
                 "name": "Special",
-                "typeId": "1e8b-4801-6eb9-f278"
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Bloom-2, Burnthrough-2, Flash-1, Focused"
               }
             ],
             "name": "Python Super Heavy Laser",
@@ -12266,34 +12266,34 @@
           {
             "characteristics": [
               {
-                "$text": "FN",
                 "name": "Arc",
-                "typeId": "7fb7-39ec-1352-3b97"
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "FN"
               },
               {
-                "$text": "8",
                 "name": "Att",
-                "typeId": "af4e-6eec-3cb5-5aae"
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "8"
               },
               {
-                "$text": "3+",
                 "name": "Lock",
-                "typeId": "ddfe-5610-8f1a-650d"
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "3+"
               },
               {
-                "$text": "1",
                 "name": "Dmg",
-                "typeId": "31b1-2e8b-0b99-b1c7"
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "1"
               },
               {
-                "$text": "E",
                 "name": "Type",
-                "typeId": "8f83-3218-7832-0818"
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "E"
               },
               {
-                "$text": "Bloom-1 Burnthrough-1, Flash-1, Focused",
                 "name": "Special",
-                "typeId": "1e8b-4801-6eb9-f278"
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Bloom-1, Burnthrough-1, Flash-1, Focused"
               }
             ],
             "name": "Viper Super Heavy Laser",
@@ -13305,33 +13305,34 @@
           {
             "characteristics": [
               {
-                "$text": "FN",
                 "name": "Arc",
-                "typeId": "7fb7-39ec-1352-3b97"
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "FN"
               },
               {
-                "$text": "2",
                 "name": "Att",
-                "typeId": "af4e-6eec-3cb5-5aae"
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "2"
               },
               {
-                "$text": "3+",
                 "name": "Lock",
-                "typeId": "ddfe-5610-8f1a-650d"
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "3+"
               },
               {
-                "$text": "2",
                 "name": "Dmg",
-                "typeId": "31b1-2e8b-0b99-b1c7"
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "2"
               },
               {
-                "$text": "K",
                 "name": "Type",
-                "typeId": "8f83-3218-7832-0818"
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "K"
               },
               {
                 "name": "Special",
-                "typeId": "1e8b-4801-6eb9-f278"
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "-"
               }
             ],
             "name": "UF-9000-S Twin Mass Driver",
@@ -13458,13 +13459,6 @@
         "comment": "[x2] F/S 2/2+/2/K Crit-1 Pen",
         "infoLinks": [
           {
-            "name": "UF-9000 Mass Driver Turret",
-            "id": "3db5-879e-2a1c-104c",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "8cc9-f479-28a7-d8b3"
-          },
-          {
             "name": "Critical-X",
             "id": "cc3d-dc7a-2c79-792e",
             "hidden": false,
@@ -13484,7 +13478,48 @@
         "name": "UF-9000 Mass Driver Turret",
         "hidden": false,
         "id": "00cb-22ad-7191-43cf",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "UF-9000 Mass Driver Turret",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "8cc9-f479-28a7-d8b3",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "2",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "2+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "Dmg",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Critical-1, Penetrator",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "constraints": [
@@ -13515,13 +13550,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "7cc5-6830-9e54-6d11"
-          },
-          {
-            "name": "UF-6400 Mass Driver Turrets",
-            "id": "5aa3-708b-d83f-ba43",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "2153-8b40-aaf9-ddcd"
           }
         ],
         "type": "upgrade",
@@ -13529,7 +13557,48 @@
         "name": "UF-6400 Mass Driver Turrets",
         "hidden": false,
         "id": "8fba-b109-dbcd-7049",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "UF-6400 Mass Driver Turrets",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "2153-8b40-aaf9-ddcd",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "4",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "Dmg",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Critical-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "constraints": [
@@ -13560,13 +13629,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "7cc5-6830-9e54-6d11"
-          },
-          {
-            "name": "UF-6400 Mass Driver Turrets",
-            "id": "023d-2142-2023-4f37",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "2153-8b40-aaf9-ddcd"
           }
         ],
         "type": "upgrade",
@@ -13574,7 +13636,48 @@
         "name": "UF-6400 Mass Driver Turrets",
         "hidden": false,
         "id": "24ef-131a-f7ce-85bd",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "UF-6400 Mass Driver Turrets",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "c19d-d5ab-43f2-273c",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "4",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "Dmg",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Critical-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "profiles": [
@@ -13765,13 +13868,6 @@
         "comment": "[x2] F/S 8/3+/1/K Crit-1",
         "infoLinks": [
           {
-            "name": "UF-6400 Mass Driver Turret Battery",
-            "id": "6940-5ef5-f859-69d0",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "f0a9-10be-85e0-e434"
-          },
-          {
             "name": "Critical-X",
             "id": "3016-99c8-8b9e-8f15",
             "hidden": false,
@@ -13784,7 +13880,48 @@
         "name": "UF-6400 Mass Driver Turret Battery",
         "hidden": false,
         "id": "2d6b-6eb8-5254-1a96",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "UF-6400 Mass Driver Turret Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "f0a9-10be-85e0-e434",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "8",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "Dmg",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Critical-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "profiles": [
@@ -14066,13 +14203,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "4f05-4fdc-fad2-c566"
-          },
-          {
-            "name": "UF-4200 Mass Driver Turrets",
-            "id": "8d72-fac4-ad3e-7a14",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "38e5-e410-4c85-d3e4"
           }
         ],
         "type": "upgrade",
@@ -14080,7 +14210,48 @@
         "name": "UF-4200 Mass Driver Turrets",
         "hidden": false,
         "id": "e460-34c5-6c21-c94c",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "UF-4200 Mass Driver Turrets",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "38e5-e410-4c85-d3e4",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "4",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "4+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "Dmg",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Fusillade-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "constraints": [
@@ -14111,13 +14282,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "4f05-4fdc-fad2-c566"
-          },
-          {
-            "name": "UF-4200 Mass Driver Turrets",
-            "id": "77b0-8334-69eb-fb3a",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "38e5-e410-4c85-d3e4"
           }
         ],
         "type": "upgrade",
@@ -14125,7 +14289,48 @@
         "name": "UF-4200 Mass Driver Turrets",
         "hidden": false,
         "id": "e3cc-ed50-4435-2a87",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "UF-4200 Mass Driver Turrets",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "5402-1149-b7e1-32be",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "4",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "4+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "Dmg",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Fusillade-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "profiles": [
@@ -15365,7 +15570,7 @@
                 "typeId": "1e8b-4801-6eb9-f278"
               }
             ],
-            "name": "Aegis V Array",
+            "name": "Aegis-V Array",
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "hidden": false,
@@ -15397,10 +15602,11 @@
         ],
         "type": "upgrade",
         "import": true,
-        "name": "Aegis V Array",
+        "name": "Aegis-V Array",
         "hidden": false,
         "id": "0c21-dd07-2bcb-d2f1",
-        "collective": true
+        "collective": true,
+        "comment": "F/S/R 4/3+/0/E AW CA Fus-2"
       },
       {
         "profiles": [
@@ -18361,168 +18567,6 @@
         "shortName": "UCM Stats (260327)"
       }
     ],
-    "sharedProfiles": [
-      {
-        "characteristics": [
-          {
-            "$text": "F/S",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "2",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "2+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "2",
-            "name": "Dmg",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "K",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Critical-1, Penetrator",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "F/S 2/2+/2/K Crit-1 Pen",
-        "name": "UF-9000 Mass Driver Turret",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "8cc9-f479-28a7-d8b3"
-      },
-      {
-        "characteristics": [
-          {
-            "$text": "F/S",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "8",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "3+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "1",
-            "name": "Dmg",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "K",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Critical-1",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "F/S 8/3+/1/K Crit-1",
-        "name": "UF-6400 Mass Driver Turret Battery",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "f0a9-10be-85e0-e434"
-      },
-      {
-        "characteristics": [
-          {
-            "$text": "F/S",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "4",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "4+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "1",
-            "name": "Dmg",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "K",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Fusillade-2",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "F/S 4/4+/1/K Fus-2",
-        "name": "UF-4200 Mass Driver Turrets",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "38e5-e410-4c85-d3e4"
-      },
-      {
-        "characteristics": [
-          {
-            "$text": "F/S",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "4",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "3+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "1",
-            "name": "Dmg",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "K",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Critical-1",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "F/S 4/3+/1/K Crit-1",
-        "name": "UF-6400 Mass Driver Turrets",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "2153-8b40-aaf9-ddcd"
-      }
-    ],
     "sharedRules": [
       {
         "description": "When firing its Cobra Heavy Laser Pair, this Admiral’s Flagship may suffer 1 point of damage to change the Arc of its Cobra Heavy Laser Pair to F.",
@@ -19225,7 +19269,7 @@
     "name": "United Colonies of Mankind",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
-    "revision": 34,
+    "revision": 35,
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
     "authorName": "John Kemp",
     "battleScribeVersion": 2.03,
