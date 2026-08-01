@@ -201,7 +201,8 @@
                 "import": true,
                 "name": "Party Poppers",
                 "hidden": false,
-                "id": "5ab6-88a6-a27b-a13f"
+                "id": "5ab6-88a6-a27b-a13f",
+                "collective": true
               }
             ],
             "infoLinks": [
@@ -1545,7 +1546,8 @@
                 "name": "Deterrence Missiles",
                 "hidden": false,
                 "id": "87ff-68ed-f363-fa74",
-                "sortIndex": 1
+                "sortIndex": 1,
+                "collective": true
               },
               {
                 "constraints": [
@@ -1630,7 +1632,8 @@
                 "name": "Anti-Fighter Lasers",
                 "hidden": false,
                 "id": "01d9-2521-77d2-5956",
-                "sortIndex": 2
+                "sortIndex": 2,
+                "collective": true
               },
               {
                 "constraints": [
@@ -1688,7 +1691,8 @@
                 "name": "Drop Pods",
                 "hidden": false,
                 "id": "aaef-8f37-8650-5ef6",
-                "sortIndex": 3
+                "sortIndex": 3,
+                "collective": true
               },
               {
                 "constraints": [
@@ -1746,7 +1750,8 @@
                 "name": "Boarding Pods",
                 "hidden": false,
                 "id": "e4d7-2890-2e97-d809",
-                "sortIndex": 4
+                "sortIndex": 4,
+                "collective": true
               }
             ],
             "infoLinks": [
@@ -2423,7 +2428,8 @@
                 "name": "Deterrence Missiles",
                 "hidden": false,
                 "id": "9719-b6ca-ecd0-1597",
-                "sortIndex": 1
+                "sortIndex": 1,
+                "collective": true
               },
               {
                 "constraints": [
@@ -2481,7 +2487,8 @@
                 "name": "Military Outpost",
                 "hidden": false,
                 "id": "a528-0bbf-1a34-cefd",
-                "sortIndex": 2
+                "sortIndex": 2,
+                "collective": true
               }
             ],
             "infoLinks": [
@@ -2744,7 +2751,8 @@
                 "name": "Expel Hazards",
                 "hidden": false,
                 "id": "3168-ddc5-d7c4-4e89",
-                "sortIndex": 1
+                "sortIndex": 1,
+                "collective": true
               },
               {
                 "constraints": [
@@ -2793,7 +2801,8 @@
                 "name": "Mines",
                 "hidden": false,
                 "id": "2e4d-9c4c-2901-451e",
-                "sortIndex": 2
+                "sortIndex": 2,
+                "collective": true
               }
             ],
             "infoLinks": [
@@ -3268,7 +3277,8 @@
                 "name": "Thermal Lash",
                 "hidden": false,
                 "id": "6e47-e152-71af-ef9f",
-                "sortIndex": 1
+                "sortIndex": 1,
+                "collective": true
               },
               {
                 "constraints": [
@@ -3353,7 +3363,8 @@
                 "name": "Force Wave",
                 "hidden": false,
                 "id": "cf88-52cb-45c4-3c06",
-                "sortIndex": 2
+                "sortIndex": 2,
+                "collective": true
               }
             ],
             "infoLinks": [
@@ -3815,7 +3826,8 @@
                 "import": true,
                 "name": "Colossal Salvage Cutter",
                 "hidden": false,
-                "id": "5b1e-dc30-ff0e-94fa"
+                "id": "5b1e-dc30-ff0e-94fa",
+                "collective": true
               }
             ],
             "infoLinks": [
@@ -4465,7 +4477,8 @@
                 "name": "NC-16 Missile Bank",
                 "hidden": false,
                 "id": "0477-875f-37bc-4d28",
-                "sortIndex": 2
+                "sortIndex": 2,
+                "collective": true
               },
               {
                 "profiles": [
@@ -4558,7 +4571,8 @@
                 "name": "Genesis Spikes",
                 "hidden": false,
                 "id": "033f-28a4-520d-94d3",
-                "sortIndex": 3
+                "sortIndex": 3,
+                "collective": true
               },
               {
                 "constraints": [
@@ -4607,7 +4621,8 @@
                 "name": "Fighters & Bombers",
                 "hidden": false,
                 "id": "a8cc-a57d-ce0f-7f8a",
-                "sortIndex": 4
+                "sortIndex": 4,
+                "collective": true
               },
               {
                 "constraints": [
@@ -4656,7 +4671,8 @@
                 "name": "Bulk Landers",
                 "hidden": false,
                 "id": "8dad-b8e4-51c9-0743",
-                "sortIndex": 5
+                "sortIndex": 5,
+                "collective": true
               }
             ],
             "type": "model",
@@ -4750,6 +4766,363 @@
         "hidden": false,
         "id": "6e67-88af-073f-49d5",
         "publicationId": "0486-c1f4-77a3-c714"
+      },
+      {
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
+            "id": "2823-e0c2-28ad-cc06",
+            "primary": false,
+            "name": "Group"
+          },
+          {
+            "targetId": "f51b-d892-62c0-3f1e",
+            "id": "757c-3c5e-c303-5ee5",
+            "primary": true,
+            "name": "Light Groups"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 55
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "f942-8f88-d77b-13c1",
+                "id": "a2be-ac08-6307-85d3",
+                "primary": true,
+                "name": "Light Ship"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1698-e1aa-99a2-509f",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0325-323e-351f-d259",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "9\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "4\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "6+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1-2"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Vectored, Fuel Transporter"
+                  }
+                ],
+                "name": "M.A.B. 67 Fuel Transport",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "2154-c84f-b0fd-3395",
+                "publicationId": "1322-3c59-0db2-ee7c"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "183c-ed7d-b463-66ff",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3c07-6926-579b-e4ed",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97",
+                        "$text": "F/S"
+                      },
+                      {
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d",
+                        "$text": "3+"
+                      },
+                      {
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818",
+                        "$text": "K"
+                      },
+                      {
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278",
+                        "$text": "Alt-1, Close Action"
+                      }
+                    ],
+                    "name": "Deterrence Missiles",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "0a31-e3da-5b64-58ae"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Alt-X",
+                    "id": "2523-0a5c-3ec9-a636",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "f354-1b03-966f-f667"
+                  },
+                  {
+                    "name": "Close Action",
+                    "id": "861f-0bc5-3fa8-8a4f",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Deterrence Missiles",
+                "hidden": false,
+                "id": "2bb4-f8bc-2877-fb4e",
+                "sortIndex": 1,
+                "collective": true
+              },
+              {
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "db1f-dedc-c0b5-0b41",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "edf5-c7fa-c367-deaa",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "characteristics": [
+                      {
+                        "name": "Arc",
+                        "typeId": "7fb7-39ec-1352-3b97",
+                        "$text": "F/S/R"
+                      },
+                      {
+                        "name": "Att",
+                        "typeId": "af4e-6eec-3cb5-5aae",
+                        "$text": "0"
+                      },
+                      {
+                        "name": "Lock",
+                        "typeId": "ddfe-5610-8f1a-650d",
+                        "$text": "2+"
+                      },
+                      {
+                        "name": "Dmg",
+                        "typeId": "31b1-2e8b-0b99-b1c7",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Type",
+                        "typeId": "8f83-3218-7832-0818",
+                        "$text": "E"
+                      },
+                      {
+                        "name": "Special",
+                        "typeId": "1e8b-4801-6eb9-f278",
+                        "$text": "Alt-1, Close Action, Fusillade-2"
+                      }
+                    ],
+                    "name": "Ignite Reserves",
+                    "typeId": "02b7-2433-f72f-d510",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "d90f-4576-5ae7-6335"
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Alt-X",
+                    "id": "c412-d229-238c-0f77",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "f354-1b03-966f-f667"
+                  },
+                  {
+                    "name": "Close Action",
+                    "id": "04eb-c8dd-e386-7176",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3bd7-f459-761a-97ee"
+                  }
+                ],
+                "type": "upgrade",
+                "import": true,
+                "name": "Ignite Reserves",
+                "hidden": false,
+                "id": "2e5d-fb67-455a-6847",
+                "sortIndex": 2,
+                "rules": [
+                  {
+                    "name": "Ignite Reserves",
+                    "id": "6438-480f-672b-b5f3",
+                    "hidden": false,
+                    "description": "After completing an attack with this Weapon, this Ship is destroyed (a weapon with 0 Attack value does not roll to hit, does not cause any saves to be made, and does not inflict damage due to hits).\nWhen this Ship is destroyed (for any reason), it explodes with a Fuel Detonation effect and a range of 3\". Ships damaged by this explosion also gain a Fire token."
+                  }
+                ],
+                "collective": true
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Vectored",
+                "id": "4d85-fc60-acb5-8ae1",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "7a2f-fbe0-b3cd-98c8"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Fuel Transporter",
+                "id": "76ff-66ad-69a3-3101",
+                "hidden": false,
+                "description": "While a Ship with this rule is on the table, you have access to the following Ability:\nFully Fuelled (2AP): At the start of a friendly Group's activation, if that Group is within 3\" and on the same Orbital Layer as a Ship with the Fuel Transporter rule, the friendly Group increases its total movement (after Orders) by 3\" this round. If that Group is on the Max Thrust order, it increases its total movement (after Orders) by 6\" this round instead. If the friendly Group is C Tonnage, that Group must be within 3\" and on the same Orbital Layer as two Ships with the Fuel Transporter rule instead. Ships with the Fuel Transporter rule are unaffected by this Ability."
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "M.A.B. 67 Fuel Transport",
+            "hidden": false,
+            "id": "d806-c446-f7b0-24c6",
+            "publicationId": "1322-3c59-0db2-ee7c"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "force",
+                "childId": "473d-151f-22a2-8892",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Mercenary ships"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "M.A.B. 67 Fuel Transport",
+        "hidden": false,
+        "id": "cd28-c520-fc64-367f"
       }
     ],
     "sharedRules": [
@@ -4795,7 +5168,7 @@
     "name": "Civilian",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 6,
-    "revision": 14,
+    "revision": 15,
     "battleScribeVersion": 2.03,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
