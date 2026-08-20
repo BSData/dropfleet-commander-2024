@@ -1398,7 +1398,7 @@
                 "childId": "2bfb-facb-f285-8141",
                 "shared": true,
                 "includeChildSelections": true,
-                "childName": "Show all admirals"
+                "childName": "Admirals"
               }
             ],
             "type": "set",
@@ -1490,7 +1490,7 @@
                 "childId": "2bfb-facb-f285-8141",
                 "shared": true,
                 "includeChildSelections": true,
-                "childName": "Show all admirals"
+                "childName": "Admirals"
               }
             ],
             "conditionGroups": [
@@ -1714,7 +1714,7 @@
             "id": "ddfe-5610-8f1a-650d"
           },
           {
-            "name": "Dmg",
+            "name": "DMG",
             "id": "31b1-2e8b-0b99-b1c7"
           },
           {
@@ -1926,7 +1926,7 @@
             "id": "4e0c-3aca-e97e-05c8"
           },
           {
-            "name": "Dmg",
+            "name": "DMG",
             "id": "1314-c0f9-8c3a-21ff"
           },
           {
@@ -2395,7 +2395,10 @@
         "id": "fc9b-53d4-3bb3-3413",
         "hidden": false,
         "publicationId": "45b0-3e3b-e83d-fd70",
-        "page": 39
+        "page": 39,
+        "alias": [
+          "Linked-1"
+        ]
       },
       {
         "description": "If a Ship’s Orders allow it to fire Close Action Weapons, it may attack with one Low Power Weapon in addition to any other Weapons allowed by its Order.",
@@ -2501,7 +2504,7 @@
     "id": "sys-5fec-a8da-5dec-0ae6",
     "name": "Dropfleet Commander (2024)",
     "battleScribeVersion": 2.03,
-    "revision": 20,
+    "revision": 21,
     "type": "gameSystem",
     "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
     "authorName": "John Kemp",
