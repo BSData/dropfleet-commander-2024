@@ -385,6 +385,200 @@
             "id": "99c9-35db-a980-0b16",
             "subType": "crew",
             "sortIndex": 1
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Washington Supercarrier",
+            "hidden": false,
+            "id": "68bc-0ee1-f938-288f",
+            "categoryLinks": [
+              {
+                "targetId": "default-category",
+                "id": "ed7e-59ea-3e9c-5d5b",
+                "primary": false,
+                "name": "Group"
+              },
+              {
+                "targetId": "52fa-6578-d171-57d6",
+                "id": "bc32-b0c4-7436-b406",
+                "primary": false,
+                "name": "Colossal Groups"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Washington",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "7512-670c-d0cb-48a5",
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "12\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "14\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "24"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "3+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "3+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Aegis-6, Command Ship-2, Reinforced Armour, Fighter Command"
+                  }
+                ],
+                "publicationId": "9813-8e60-542d-9381",
+                "page": 57
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 530
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b187-8e43-7aee-21a1",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e840-ed3a-f6b8-34db",
+                "includeChildSelections": false
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Aegis-X",
+                "id": "c2df-fb73-f6ba-8434",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "9cd1-441e-8ee8-7f13"
+              },
+              {
+                "name": "Command Ship-X",
+                "id": "7af9-042c-e149-f030",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "af88-13e6-5004-d00a"
+              },
+              {
+                "name": "Reinforced Armour",
+                "id": "fac2-99d0-3fe0-e89b",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "231e-a3d0-35e6-9a33"
+              },
+              {
+                "name": "Fighter Command",
+                "id": "65f0-d94f-bf1b-14a1",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "83c4-4e63-ad54-d9c7"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "UF-9000 Mass Driver Turret",
+                "hidden": false,
+                "id": "62d2-5f64-f668-bcdd",
+                "type": "selectionEntry",
+                "targetId": "00cb-22ad-7191-43cf",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "UF-4200 Mass Driver Turret Core Battery",
+                "hidden": false,
+                "id": "664f-c9ff-dc24-d457",
+                "type": "selectionEntry",
+                "targetId": "f819-d58c-9c21-4a53",
+                "sortIndex": 2
+              },
+              {
+                "import": true,
+                "name": "UF-4200 Mass Driver Turrets",
+                "hidden": false,
+                "id": "71d5-e63f-c90f-0401",
+                "type": "selectionEntry",
+                "targetId": "bb41-2fcb-66bd-acd5",
+                "sortIndex": 3
+              },
+              {
+                "import": true,
+                "name": "Leviathan Missile Bays",
+                "hidden": false,
+                "id": "bbc4-c478-b653-936f",
+                "type": "selectionEntry",
+                "targetId": "0a54-c4e1-6baf-ee55",
+                "sortIndex": 4
+              },
+              {
+                "import": true,
+                "name": "Fighters & Bombers",
+                "hidden": false,
+                "id": "d9f2-8cdf-7469-3f85",
+                "type": "selectionEntry",
+                "targetId": "c0db-56ff-db29-5f8a",
+                "sortIndex": 5
+              },
+              {
+                "import": true,
+                "name": "Heavy Bombers",
+                "hidden": false,
+                "id": "afde-f8d8-35a3-b801",
+                "type": "selectionEntry",
+                "targetId": "8b69-b212-604a-7d8e",
+                "sortIndex": 6
+              }
+            ],
+            "publicationId": "9813-8e60-542d-9381",
+            "page": 57
           }
         ],
         "modifiers": [
@@ -483,49 +677,6 @@
             "shared": true,
             "id": "6f16-586b-f538-9c6c",
             "includeChildSelections": false
-          }
-        ],
-        "entryLinks": [
-          {
-            "infoLinks": [
-              {
-                "name": "Fighter Command",
-                "id": "97bd-8100-1fa4-ffec",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "83c4-4e63-ad54-d9c7"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "Fighter Command",
-                "field": "fdf5-89b6-e62e-570f",
-                "affects": "self.entries.profiles.Ship",
-                "join": ", "
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "52fa-6578-d171-57d6",
-                "id": "f74f-fe87-6363-623d",
-                "primary": false,
-                "name": "Colossal Groups"
-              },
-              {
-                "targetId": "default-category",
-                "id": "c58a-f23c-a9f8-65d0",
-                "primary": false,
-                "name": "Group"
-              }
-            ],
-            "import": true,
-            "name": "Washington Supercarrier",
-            "hidden": false,
-            "id": "7dfa-dec0-9013-3225",
-            "type": "selectionEntry",
-            "targetId": "e965-1de9-4353-d144",
-            "sortIndex": 2
           }
         ],
         "type": "unit",
@@ -641,19 +792,151 @@
             "id": "e476-6012-f0a8-7deb",
             "sortIndex": 1,
             "subType": "crew"
-          }
-        ],
-        "entryLinks": [
+          },
           {
-            "modifiers": [
+            "type": "model",
+            "import": true,
+            "name": "New York Battleship",
+            "hidden": false,
+            "id": "ffcd-8143-2f50-a4e5",
+            "categoryLinks": [
               {
-                "type": "set",
-                "value": "Spearhead",
-                "field": "fdf5-89b6-e62e-570f",
-                "affects": "self.entries.profiles.Ship",
-                "join": ", "
+                "targetId": "8d99-053d-ffeb-98c5",
+                "id": "f364-0ee1-6f8f-acb5",
+                "primary": false,
+                "name": "Heavy Groups"
+              },
+              {
+                "targetId": "default-category",
+                "id": "132e-aba3-047a-def5",
+                "primary": false,
+                "name": "Group"
               }
             ],
+            "profiles": [
+              {
+                "name": "New York",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "9fd9-bcbf-f5c7-6320",
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "10\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "10\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "20"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "3+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Spearhead"
+                  }
+                ],
+                "publicationId": "9813-8e60-542d-9381",
+                "page": 46
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 245
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "eb20-4f6f-9a8b-2cd4",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6dcb-f140-c9ae-bda4",
+                "includeChildSelections": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Laser Refit",
+                "hidden": false,
+                "id": "35c0-a05a-12de-d6b5",
+                "type": "selectionEntryGroup",
+                "targetId": "1cae-3b48-d446-10f7",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Medium Torpedo",
+                "hidden": false,
+                "id": "d091-06e0-75c2-a44c",
+                "type": "selectionEntry",
+                "targetId": "1ac0-a1aa-8566-6c8e",
+                "sortIndex": 2
+              },
+              {
+                "import": true,
+                "name": "Fighters & Bombers",
+                "hidden": false,
+                "id": "db77-9076-da5b-9370",
+                "type": "selectionEntry",
+                "targetId": "b67c-66bb-bb24-0ffc",
+                "sortIndex": 3
+              },
+              {
+                "import": true,
+                "name": "Drive Refit",
+                "hidden": false,
+                "id": "9fc9-b555-9abb-3c1e",
+                "type": "selectionEntry",
+                "targetId": "282b-d9a0-5864-b290"
+              }
+            ],
+            "publicationId": "9813-8e60-542d-9381",
+            "page": 46,
             "infoLinks": [
               {
                 "name": "Spearhead",
@@ -662,27 +945,7 @@
                 "type": "rule",
                 "targetId": "8612-0822-de10-5e03"
               }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "default-category",
-                "id": "d1fd-00ba-06f9-6cdc",
-                "primary": false,
-                "name": "Group"
-              },
-              {
-                "targetId": "8d99-053d-ffeb-98c5",
-                "id": "bafc-e3b4-d0a1-faa1",
-                "primary": false,
-                "name": "Heavy Groups"
-              }
-            ],
-            "import": true,
-            "name": "New York Battleship",
-            "hidden": false,
-            "id": "9f44-0b22-c9d3-819d",
-            "type": "selectionEntry",
-            "targetId": "2b00-cb51-ae94-5a7a"
+            ]
           }
         ],
         "modifiers": [
@@ -905,49 +1168,150 @@
             "id": "5bfd-f3f3-3675-97a8",
             "subType": "crew",
             "sortIndex": 1
-          }
-        ],
-        "entryLinks": [
+          },
           {
-            "infoLinks": [
-              {
-                "name": "Jink",
-                "id": "c559-efcb-08e1-195e",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "8008-c897-2756-2472"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Jink, Vanguard-6\"",
-                "field": "fdf5-89b6-e62e-570f",
-                "affects": "self.entries.profiles.Ship",
-                "join": ", "
-              }
-            ],
+            "type": "model",
+            "import": true,
+            "name": "Perth Battlecruiser",
+            "hidden": false,
+            "id": "e8e9-ec35-25f3-239c",
             "categoryLinks": [
               {
                 "targetId": "default-category",
-                "id": "6d22-189f-d8eb-4182",
+                "id": "270a-b509-fe41-214c",
                 "primary": false,
                 "name": "Group"
               },
               {
                 "targetId": "8d99-053d-ffeb-98c5",
-                "id": "7807-5a31-6666-dcca",
+                "id": "789f-2d18-866c-faa9",
                 "primary": false,
                 "name": "Heavy Groups"
               }
             ],
-            "import": true,
-            "name": "Perth Battlecruiser",
-            "hidden": false,
-            "id": "94d5-ae4d-4bf4-a2d3",
-            "type": "selectionEntry",
-            "targetId": "b468-8c8f-5d76-c8d2",
-            "sortIndex": 2
+            "profiles": [
+              {
+                "name": "Perth",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "bb0b-44a5-be30-cf6c",
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "8\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "8\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "14"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "3+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "6+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Vanguard-6\", Jink"
+                  }
+                ],
+                "publicationId": "9813-8e60-542d-9381",
+                "page": 44
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 145
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d3ff-f1c1-a9f0-f3ec",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4ca2-ed30-2e44-4ee4",
+                "includeChildSelections": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Viper Super Heavy Laser",
+                "hidden": false,
+                "id": "7346-5e60-82cf-6865",
+                "type": "selectionEntry",
+                "targetId": "5f7b-3797-3168-219b",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "UF-4200 Mass Driver Turrets",
+                "hidden": false,
+                "id": "937c-3df5-206d-26cc",
+                "type": "selectionEntry",
+                "targetId": "e3cc-ed50-4435-2a87",
+                "sortIndex": 2
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Vanguard-X\"",
+                "id": "db08-4d1c-97b3-20cf",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "0afa-aca9-640a-973e"
+              },
+              {
+                "name": "Jink",
+                "id": "be93-7ad9-bbd9-b026",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "8008-c897-2756-2472"
+              }
+            ],
+            "publicationId": "9813-8e60-542d-9381",
+            "page": 44
           }
         ],
         "constraints": [
@@ -1138,48 +1502,143 @@
             "id": "606c-8037-170b-b2b8",
             "subType": "crew",
             "sortIndex": 1
-          }
-        ],
-        "entryLinks": [
+          },
           {
-            "infoLinks": [
-              {
-                "name": "Stressful Manoeuvre",
-                "id": "89de-031d-9190-b817",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "ad61-5ace-2bb6-9477"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": "Stressful Manoeuvre",
-                "field": "fdf5-89b6-e62e-570f",
-                "affects": "self.entries.profiles.Ship",
-                "join": ", "
-              }
-            ],
+            "type": "model",
+            "import": true,
+            "name": "Warsaw Heavy Cruiser",
+            "hidden": false,
+            "id": "a151-3ace-52f3-fff8",
             "categoryLinks": [
               {
                 "targetId": "default-category",
-                "id": "35e8-c25e-0a2c-70df",
+                "id": "8713-f4e5-8842-99d9",
                 "primary": false,
                 "name": "Group"
               },
               {
                 "targetId": "e555-ff57-c478-18cd",
-                "id": "beb1-6db6-8ca9-360c",
+                "id": "30da-9a16-cb8d-8f51",
                 "primary": false,
                 "name": "Medium Groups"
               }
             ],
-            "import": true,
-            "name": "Warsaw Heavy Cruiser",
-            "hidden": false,
-            "id": "1342-8680-ecc1-2a10",
-            "type": "selectionEntry",
-            "targetId": "ad08-ca42-0895-17bb",
+            "profiles": [
+              {
+                "name": "Warsaw",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "2012-c891-56f5-8c04",
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "7\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "12"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "3+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "6+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Stressful Manoeuvre"
+                  }
+                ],
+                "publicationId": "9813-8e60-542d-9381",
+                "page": 39
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Cobra Heavy Laser Pair",
+                "hidden": false,
+                "id": "a9e9-5e97-77d8-6bec",
+                "type": "selectionEntry",
+                "targetId": "ed83-7a4d-dc31-bbfb",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "UF-4200 Mass Driver Turrets",
+                "hidden": false,
+                "id": "c8b7-bc55-a968-4f46",
+                "type": "selectionEntry",
+                "targetId": "e460-34c5-6c21-c94c",
+                "sortIndex": 2
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 110
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ebff-5417-e8b9-9cf4",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "928a-d188-8697-ce42",
+                "includeChildSelections": false
+              }
+            ],
+            "publicationId": "9813-8e60-542d-9381",
+            "page": 39,
+            "infoLinks": [
+              {
+                "name": "Stressful Manoeuvre",
+                "id": "353e-70b5-af61-d8d8",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "ad61-5ace-2bb6-9477"
+              }
+            ],
             "sortIndex": 2
           }
         ],
@@ -15713,14 +16172,14 @@
           {
             "characteristics": [
               {
-                "$text": "2",
                 "name": "Launch",
-                "typeId": "bcc4-f844-acff-aa94"
+                "typeId": "bcc4-f844-acff-aa94",
+                "$text": "2"
               },
               {
-                "$text": "Limited-2, Penetrator",
                 "name": "Special",
-                "typeId": "d3be-1a27-21ac-fb65"
+                "typeId": "d3be-1a27-21ac-fb65",
+                "$text": "Limited-2"
               }
             ],
             "name": "Heavy Torpedo",
@@ -15750,7 +16209,7 @@
             "includeChildSelections": false
           }
         ],
-        "comment": "2 L-2 Pen",
+        "comment": "2 L-2",
         "infoLinks": [
           {
             "name": "Limited-X",
@@ -15758,13 +16217,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "0c02-c41a-e1a2-882e"
-          },
-          {
-            "name": "Penetrator",
-            "id": "c5fd-57f4-b7e7-625c",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fa34-1759-4681-18db"
           }
         ],
         "type": "upgrade",
@@ -15779,14 +16231,14 @@
           {
             "characteristics": [
               {
-                "$text": "1",
                 "name": "Launch",
-                "typeId": "bcc4-f844-acff-aa94"
+                "typeId": "bcc4-f844-acff-aa94",
+                "$text": "1"
               },
               {
-                "$text": "Limited-4, Penetrator",
                 "name": "Special",
-                "typeId": "d3be-1a27-21ac-fb65"
+                "typeId": "d3be-1a27-21ac-fb65",
+                "$text": "Limited-4"
               }
             ],
             "name": "Medium Torpedo",
@@ -15816,7 +16268,7 @@
             "includeChildSelections": false
           }
         ],
-        "comment": "1 L-4 Pen",
+        "comment": "1 L-4",
         "infoLinks": [
           {
             "name": "Limited-X",
@@ -15824,13 +16276,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "0c02-c41a-e1a2-882e"
-          },
-          {
-            "name": "Penetrator",
-            "id": "2ddb-b3d3-1aca-d614",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fa34-1759-4681-18db"
           }
         ],
         "type": "upgrade",
@@ -15845,14 +16290,14 @@
           {
             "characteristics": [
               {
-                "$text": "1",
                 "name": "Launch",
-                "typeId": "bcc4-f844-acff-aa94"
+                "typeId": "bcc4-f844-acff-aa94",
+                "$text": "1"
               },
               {
-                "$text": "Limited-2, Penetrator",
                 "name": "Special",
-                "typeId": "d3be-1a27-21ac-fb65"
+                "typeId": "d3be-1a27-21ac-fb65",
+                "$text": "Limited-2"
               }
             ],
             "name": "Medium Torpedo",
@@ -15882,7 +16327,7 @@
             "includeChildSelections": false
           }
         ],
-        "comment": "1 L-2 Pen",
+        "comment": "1 L-2",
         "infoLinks": [
           {
             "name": "Limited-X",
@@ -15890,13 +16335,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "0c02-c41a-e1a2-882e"
-          },
-          {
-            "name": "Penetrator",
-            "id": "25d4-e1a7-db5e-d2e3",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fa34-1759-4681-18db"
           }
         ],
         "type": "upgrade",
@@ -15911,14 +16349,14 @@
           {
             "characteristics": [
               {
-                "$text": "1",
                 "name": "Launch",
-                "typeId": "bcc4-f844-acff-aa94"
+                "typeId": "bcc4-f844-acff-aa94",
+                "$text": "1"
               },
               {
-                "$text": "Limited-1, Penetrator",
                 "name": "Special",
-                "typeId": "d3be-1a27-21ac-fb65"
+                "typeId": "d3be-1a27-21ac-fb65",
+                "$text": "Limited-1"
               }
             ],
             "name": "Medium Torpedo",
@@ -15948,7 +16386,7 @@
             "includeChildSelections": false
           }
         ],
-        "comment": "1 L-1 Pen",
+        "comment": "1 L-1",
         "infoLinks": [
           {
             "name": "Limited-X",
@@ -15956,13 +16394,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "0c02-c41a-e1a2-882e"
-          },
-          {
-            "name": "Penetrator",
-            "id": "905f-5e64-a8a7-f886",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fa34-1759-4681-18db"
           }
         ],
         "type": "upgrade",
@@ -15977,14 +16408,14 @@
           {
             "characteristics": [
               {
-                "$text": "1",
                 "name": "Launch",
-                "typeId": "bcc4-f844-acff-aa94"
+                "typeId": "bcc4-f844-acff-aa94",
+                "$text": "1"
               },
               {
-                "$text": "Limited-2, Penetrator",
                 "name": "Special",
-                "typeId": "d3be-1a27-21ac-fb65"
+                "typeId": "d3be-1a27-21ac-fb65",
+                "$text": "Limited-2"
               }
             ],
             "name": "Light Torpedo",
@@ -16014,7 +16445,7 @@
             "includeChildSelections": false
           }
         ],
-        "comment": "1 L-2 Pen",
+        "comment": "1 L-2",
         "infoLinks": [
           {
             "name": "Limited-X",
@@ -16022,13 +16453,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "0c02-c41a-e1a2-882e"
-          },
-          {
-            "name": "Penetrator",
-            "id": "1d74-e7b5-851b-a889",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fa34-1759-4681-18db"
           }
         ],
         "type": "upgrade",
@@ -16741,6 +17165,55 @@
         "hidden": false,
         "id": "1a84-70a6-1f42-aa28",
         "collective": true
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Mines",
+        "hidden": false,
+        "id": "f667-fa6a-c65b-123b",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "bb76-124e-2f68-bba1",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "6b48-2cf3-cf99-4a2b",
+            "includeChildSelections": false
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Mines",
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "hidden": false,
+            "id": "b835-3eed-934d-6fe6",
+            "characteristics": [
+              {
+                "$text": "2",
+                "name": "Launch",
+                "typeId": "bcc4-f844-acff-aa94"
+              },
+              {
+                "$text": "-",
+                "name": "Special",
+                "typeId": "d3be-1a27-21ac-fb65"
+              }
+            ]
+          }
+        ],
+        "comment": "2"
       },
       {
         "type": "upgrade",
@@ -18416,7 +18889,7 @@
       },
       {
         "import": true,
-        "name": "Centurion Grand Cruisers",
+        "name": "Centurion Grand Cruiser",
         "hidden": false,
         "id": "6f78-5a1b-e2cb-497f",
         "type": "selectionEntry",
@@ -19141,64 +19614,6 @@
             "includeChildSelections": false
           }
         ],
-        "selectionEntries": [
-          {
-            "constraints": [
-              {
-                "type": "min",
-                "value": 0,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "c12e-8e08-6211-4dd4",
-                "includeChildSelections": false
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "b2fd-a5b8-1e0e-91dc",
-                "includeChildSelections": false
-              }
-            ],
-            "profiles": [
-              {
-                "characteristics": [
-                  {
-                    "$text": "2",
-                    "name": "Launch",
-                    "typeId": "bcc4-f844-acff-aa94"
-                  },
-                  {
-                    "$text": "-",
-                    "name": "Special",
-                    "typeId": "d3be-1a27-21ac-fb65"
-                  }
-                ],
-                "name": "Mines",
-                "typeId": "7ba8-a64f-b5fb-8c3e",
-                "typeName": "Load",
-                "hidden": false,
-                "id": "944c-8b49-51e8-5c1c"
-              }
-            ],
-            "costs": [
-              {
-                "name": "pts",
-                "typeId": "ab32-c9b6-10f3-cbdb",
-                "value": 10
-              }
-            ],
-            "type": "upgrade",
-            "import": true,
-            "name": "Mines",
-            "hidden": false,
-            "id": "e704-f5d3-c214-4c77",
-            "sortIndex": 2
-          }
-        ],
         "entryLinks": [
           {
             "modifiers": [
@@ -19215,6 +19630,29 @@
             "type": "selectionEntry",
             "targetId": "ba6a-589a-610d-5df4",
             "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Mines",
+            "hidden": false,
+            "id": "e6bb-f9e9-5220-757e",
+            "type": "selectionEntry",
+            "targetId": "f667-fa6a-c65b-123b",
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 10
+              }
+            ],
+            "sortIndex": 2,
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 0,
+                "field": "bb76-124e-2f68-bba1"
+              }
+            ]
           }
         ],
         "name": "Minelayer",
@@ -19282,13 +19720,6 @@
     "authorName": "John Kemp",
     "battleScribeVersion": 2.03,
     "type": "catalogue",
-    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
-    "costTypes": [
-      {
-        "name": "New Cost Type",
-        "id": "bc3f-2793-e4a4-c955",
-        "defaultCostLimit": -1
-      }
-    ]
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema"
   }
 }
