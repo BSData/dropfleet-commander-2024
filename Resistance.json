@@ -3549,12 +3549,12 @@
               },
               {
                 "import": true,
-                "name": "N-12 Artillery Cannon Half Battery",
+                "name": "N-12 Artillery Cannon Battery",
                 "hidden": false,
                 "id": "1ffc-9d13-0411-e979",
                 "type": "selectionEntry",
                 "sortIndex": 2,
-                "targetId": "5ae3-e645-a98c-9cc7"
+                "targetId": "1c9a-fafb-1ddd-2015"
               },
               {
                 "import": true,
@@ -4685,7 +4685,203 @@
         "import": true,
         "name": "Cyrus Battlecruiser",
         "hidden": false,
-        "id": "b0ad-8997-ba82-ff5a"
+        "id": "b0ad-8997-ba82-ff5a",
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "force",
+                "childId": "b7f2-9472-f805-33e4",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Rare ships when Rare ship limit reached"
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "b0ad-8997-ba82-ff5a",
+                        "shared": true,
+                        "includeChildSelections": false,
+                        "childName": "Cyrus Battlecruiser"
+                      },
+                      {
+                        "type": "equalTo",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "7895-d441-b903-8bb2",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Skirmish"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "b0ad-8997-ba82-ff5a",
+                        "shared": true,
+                        "includeChildSelections": false,
+                        "childName": "Cyrus Battlecruiser"
+                      },
+                      {
+                        "type": "equalTo",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "3fda-65f2-6cc3-ee33",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Clash"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 3,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "b0ad-8997-ba82-ff5a",
+                        "shared": true,
+                        "includeChildSelections": false,
+                        "childName": "Cyrus Battlecruiser"
+                      },
+                      {
+                        "type": "equalTo",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "c6ef-6271-e246-47a8",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Battle"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 4,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "b0ad-8997-ba82-ff5a",
+                        "shared": true,
+                        "includeChildSelections": false,
+                        "childName": "Cyrus Battlecruiser"
+                      },
+                      {
+                        "type": "equalTo",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "childId": "d410-4aa8-c469-064b",
+                        "shared": true,
+                        "includeChildSelections": true,
+                        "childName": "Reconquest"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 2,
+            "field": "963c-abae-28d2-704b",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "3fda-65f2-6cc3-ee33",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 3,
+            "field": "963c-abae-28d2-704b",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "c6ef-6271-e246-47a8",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 4,
+            "field": "963c-abae-28d2-704b",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "d410-4aa8-c469-064b",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "963c-abae-28d2-704b"
+          }
+        ]
       },
       {
         "categoryLinks": [
@@ -5670,13 +5866,74 @@
             "type": "set",
             "value": true,
             "field": "hidden"
+          },
+          {
+            "type": "set",
+            "value": 2,
+            "field": "dbdd-2192-ddcb-67cb",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "3fda-65f2-6cc3-ee33",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 3,
+            "field": "dbdd-2192-ddcb-67cb",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "c6ef-6271-e246-47a8",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 4,
+            "field": "dbdd-2192-ddcb-67cb",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "d410-4aa8-c469-064b",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
           }
         ],
         "type": "unit",
         "import": true,
         "name": "Triumvir Repair Cruiser",
         "hidden": false,
-        "id": "8ba6-c51b-710b-954d"
+        "id": "8ba6-c51b-710b-954d",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "dbdd-2192-ddcb-67cb"
+          }
+        ]
       },
       {
         "categoryLinks": [
@@ -8420,13 +8677,74 @@
             "type": "set",
             "value": true,
             "field": "hidden"
+          },
+          {
+            "type": "set",
+            "value": 2,
+            "field": "be2f-5db1-9309-e8a7",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "3fda-65f2-6cc3-ee33",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 3,
+            "field": "be2f-5db1-9309-e8a7",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "c6ef-6271-e246-47a8",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 4,
+            "field": "be2f-5db1-9309-e8a7",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "d410-4aa8-c469-064b",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
           }
         ],
         "type": "unit",
         "import": true,
         "name": "Armstrong Destroyers",
         "hidden": false,
-        "id": "d0ec-071f-c033-a138"
+        "id": "d0ec-071f-c033-a138",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "be2f-5db1-9309-e8a7"
+          }
+        ]
       },
       {
         "categoryLinks": [
@@ -9018,13 +9336,74 @@
             "type": "set",
             "value": true,
             "field": "hidden"
+          },
+          {
+            "type": "set",
+            "value": 2,
+            "field": "c3c3-d173-961b-45ff",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "3fda-65f2-6cc3-ee33",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 3,
+            "field": "c3c3-d173-961b-45ff",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "c6ef-6271-e246-47a8",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 4,
+            "field": "c3c3-d173-961b-45ff",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "d410-4aa8-c469-064b",
+                "shared": true,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
           }
         ],
         "type": "unit",
         "import": true,
         "name": "Galileo Orbital Telescopes",
         "hidden": false,
-        "id": "4322-d35f-643e-190b"
+        "id": "4322-d35f-643e-190b",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "c3c3-d173-961b-45ff"
+          }
+        ]
       },
       {
         "categoryLinks": [
@@ -12829,6 +13208,92 @@
         "collective": true
       },
       {
+        "infoLinks": [
+          {
+            "name": "Low Power",
+            "id": "4f49-b7fa-1287-eeab",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2851-2293-e346-839f"
+          },
+          {
+            "name": "Volley-X",
+            "id": "cea3-a3bf-fa33-9c67",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2313-61f3-8840-3e8b"
+          }
+        ],
+        "comment": "[x2] B 5/4+/1/K LP Vol-2",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "5ee8-2260-4c32-c51c",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "130e-f1ed-c5d6-e872",
+            "includeChildSelections": false
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "B",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "5",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "4+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Low Power, Volley-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ],
+            "name": "N-12 Artillery Cannon Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "5379-c4f5-d325-0e11"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "N-12 Artillery Cannon Battery",
+        "hidden": false,
+        "id": "1c9a-fafb-1ddd-2015",
+        "collective": true
+      },
+      {
         "profiles": [
           {
             "characteristics": [
@@ -13531,7 +13996,7 @@
                 "$text": "Close Action, Volley-2"
               }
             ],
-            "name": "NC-16 Missile Battery Turret Pair",
+            "name": "NC-16 Missile Turret Pair",
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "hidden": false,
@@ -13577,7 +14042,7 @@
         ],
         "type": "upgrade",
         "import": true,
-        "name": "NC-16 Missile Battery Turret Pair",
+        "name": "NC-16 Missile Turret Pair",
         "hidden": false,
         "id": "f70e-df51-4d85-29f9",
         "collective": true
@@ -14274,7 +14739,7 @@
               {
                 "name": "Special",
                 "typeId": "1e8b-4801-6eb9-f278",
-                "$text": "Flash-2 Focused, Fusillade-2, Reave-1"
+                "$text": "Flash-2, Focused, Fusillade-2, Reave-1"
               }
             ],
             "name": "NL-9 Laser Turret Pair",
@@ -14381,7 +14846,7 @@
               {
                 "name": "Special",
                 "typeId": "1e8b-4801-6eb9-f278",
-                "$text": "Flash-1 Focused, Fusillade-1, Reave-1"
+                "$text": "Flash-1, Focused, Fusillade-1, Reave-1"
               }
             ],
             "name": "NL-9 Laser Turret",
