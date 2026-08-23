@@ -11512,7 +11512,7 @@
                 "typeId": "1e8b-4801-6eb9-f278"
               }
             ],
-            "name": "Heavy Plasma Beam",
+            "name": "Heavy Plasma Beam Triad",
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "hidden": false,
@@ -11629,18 +11629,11 @@
       {
         "infoLinks": [
           {
-            "name": "Scald-X",
+            "name": "Calibre-X",
             "id": "fe08-1297-b037-b977",
             "hidden": false,
             "type": "rule",
-            "targetId": "41b3-55a2-8d71-ee88"
-          },
-          {
-            "name": "Mega Plasma Lance Battery",
-            "id": "c3f2-6082-1249-8130",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "1a15-fe90-d9fa-58d1"
+            "targetId": "aa1f-b200-394a-dbcf"
           },
           {
             "name": "Reave-X",
@@ -11683,23 +11676,57 @@
         "name": "Mega Plasma Lance Battery",
         "hidden": false,
         "id": "9972-6174-84e1-4f78",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "Mega Plasma Lance Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "a5ce-0fd7-5c79-98d5",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "3",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "E",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Calibre-H/C, Reave-2, Volley-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "infoLinks": [
           {
-            "name": "Scald-X",
+            "name": "Calibre-X",
             "id": "1eda-62ce-4a03-1c39",
             "hidden": false,
             "type": "rule",
-            "targetId": "41b3-55a2-8d71-ee88"
-          },
-          {
-            "name": "Mega Plasma Lance Battery",
-            "id": "99a2-faf2-a1e2-4d81",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "a286-17ae-128f-321a"
+            "targetId": "aa1f-b200-394a-dbcf"
           },
           {
             "name": "Reave-X",
@@ -11735,7 +11762,48 @@
         "name": "Mega Plasma Lance Battery",
         "hidden": false,
         "id": "ae05-6d16-64e3-33c4",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "Mega Plasma Lance Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "3e31-1fec-a3ff-f27a",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "3",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "E",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Calibre-H/C, Reave-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "infoLinks": [
