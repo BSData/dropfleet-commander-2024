@@ -550,7 +550,7 @@
                 "hidden": false,
                 "id": "cd93-cc98-f3e3-2564",
                 "type": "selectionEntry",
-                "targetId": "3149-bd18-ff63-1be2",
+                "targetId": "dc8b-4388-c63d-1c4e",
                 "sortIndex": 4
               },
               {
@@ -14999,6 +14999,56 @@
           {
             "characteristics": [
               {
+                "name": "Launch",
+                "typeId": "bcc4-f844-acff-aa94",
+                "$text": "8"
+              },
+              {
+                "name": "Special",
+                "typeId": "d3be-1a27-21ac-fb65",
+                "$text": "-"
+              }
+            ],
+            "name": "Fighters & Bombers",
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "hidden": false,
+            "id": "0199-7dc8-e785-1bc0"
+          }
+        ],
+        "comment": "8",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "2c63-e4dd-1fe2-3ddd",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "193f-397f-e0e2-8e97",
+            "includeChildSelections": false
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Fighters & Bombers",
+        "hidden": false,
+        "id": "dc8b-4388-c63d-1c4e",
+        "collective": true
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
                 "$text": "6",
                 "name": "Launch",
                 "typeId": "bcc4-f844-acff-aa94"
@@ -15009,23 +15059,6 @@
                 "typeId": "d3be-1a27-21ac-fb65"
               }
             ],
-            "modifiers": [
-              {
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "ancestor",
-                    "childId": "b54f-f8e4-8dea-d620",
-                    "shared": true
-                  }
-                ],
-                "type": "set",
-                "value": 8,
-                "field": "bcc4-f844-acff-aa94"
-              }
-            ],
             "name": "Fighters & Bombers",
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
@@ -15033,7 +15066,7 @@
             "id": "944a-edb6-3638-3f63"
           }
         ],
-        "comment": "6 (8 for OoF-Nos)",
+        "comment": "6",
         "constraints": [
           {
             "type": "min",
