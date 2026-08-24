@@ -411,6 +411,184 @@
             "id": "8237-2da4-1e5d-6bcc",
             "subType": "crew",
             "sortIndex": 1
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Uranium Dreadnought",
+            "hidden": false,
+            "id": "31c3-a6e4-c987-40ed",
+            "categoryLinks": [
+              {
+                "targetId": "default-category",
+                "id": "4355-9154-27a1-9c58",
+                "primary": false,
+                "name": "Group"
+              },
+              {
+                "targetId": "52fa-6578-d171-57d6",
+                "id": "cb61-0fce-3158-61ee",
+                "primary": false,
+                "name": "Colossal Groups"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Uranium",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "8ec4-4611-7d76-e590",
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "8\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "14\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "12\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "22"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "3+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Mothership, Shield-3+, Radiation Aura"
+                  }
+                ],
+                "publicationId": "fbb6-a765-5882-6bcb",
+                "page": 51
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 410
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e37b-a20f-b28b-58f8",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f5fc-65c5-b553-4ed1",
+                "includeChildSelections": false
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Mothership",
+                "id": "473a-52d4-633a-1a4e",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "928d-4467-6cc7-1771"
+              },
+              {
+                "name": "Shield-X",
+                "id": "e98f-aa70-c7b2-5bf3",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "40e4-1c82-9e61-c8c1"
+              },
+              {
+                "name": "Radiation Aura",
+                "id": "c4b8-bcf0-1bce-6b24",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "9414-fec0-adb3-c786"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Pulse Ioniser Battery",
+                "hidden": false,
+                "id": "6196-0cb3-535f-c9a2",
+                "type": "selectionEntry",
+                "sortIndex": 1,
+                "targetId": "0990-3903-15ed-efc1"
+              },
+              {
+                "import": true,
+                "name": "Microwave Array Turret",
+                "hidden": false,
+                "id": "27b2-56b0-1f79-0be9",
+                "type": "selectionEntry",
+                "sortIndex": 2,
+                "targetId": "d33d-8a29-834e-5b3d"
+              },
+              {
+                "import": true,
+                "name": "Disintegrator Battery",
+                "hidden": false,
+                "id": "8b4f-2b17-ad13-005e",
+                "type": "selectionEntry",
+                "sortIndex": 3,
+                "targetId": "5934-beb6-e29e-cdb4"
+              },
+              {
+                "import": true,
+                "name": "Dropships",
+                "hidden": false,
+                "id": "a245-1590-984e-ef9e",
+                "type": "selectionEntry",
+                "sortIndex": 5,
+                "targetId": "552f-108c-a300-ca26"
+              },
+              {
+                "import": true,
+                "name": "Harpoon Deluge",
+                "hidden": false,
+                "id": "8cc5-cf85-ab25-0daf",
+                "type": "selectionEntry",
+                "targetId": "f5ba-fd82-3d62-f23e",
+                "sortIndex": 4
+              }
+            ],
+            "publicationId": "fbb6-a765-5882-6bcb",
+            "page": 51
           }
         ],
         "modifiers": [
@@ -508,49 +686,6 @@
             "scope": "force",
             "shared": true,
             "id": "fdf8-c769-aca6-41de"
-          }
-        ],
-        "entryLinks": [
-          {
-            "infoLinks": [
-              {
-                "name": "Radiation Aura",
-                "id": "d998-2e43-9d60-9885",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "9414-fec0-adb3-c786"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "Radiation Aura",
-                "field": "fdf5-89b6-e62e-570f",
-                "scope": "parent",
-                "affects": "self.entries.profiles.Ship",
-                "join": ", "
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "default-category",
-                "id": "c27c-9762-5224-473d",
-                "primary": false,
-                "name": "Group"
-              },
-              {
-                "targetId": "52fa-6578-d171-57d6",
-                "id": "26b0-3401-3d92-0f10",
-                "primary": false,
-                "name": "Colossal Groups"
-              }
-            ],
-            "import": true,
-            "name": "Uranium Dreadnought",
-            "hidden": false,
-            "id": "77f6-f023-5643-7b0b",
-            "type": "selectionEntry",
-            "targetId": "4953-08a4-562a-93a9"
           }
         ],
         "type": "unit",
@@ -680,48 +815,174 @@
             "id": "77e4-d7e8-400b-6853",
             "subType": "crew",
             "sortIndex": 1
-          }
-        ],
-        "entryLinks": [
+          },
           {
-            "infoLinks": [
-              {
-                "name": "True Disintegration",
-                "id": "29f7-9b77-ac60-f83b",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "26e6-abd4-740e-1ba1"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "True Disintegration",
-                "field": "fdf5-89b6-e62e-570f",
-                "affects": "self.entries.profiles.Ship",
-                "join": ", "
-              }
-            ],
+            "type": "model",
+            "import": true,
+            "name": "Diamond Battleship",
+            "hidden": false,
+            "id": "d106-6dac-16ab-7b7b",
             "categoryLinks": [
               {
                 "targetId": "default-category",
-                "id": "b3d8-2cef-3a1a-dbf9",
+                "id": "1c9a-6baf-9379-63e8",
                 "primary": false,
                 "name": "Group"
               },
               {
                 "targetId": "8d99-053d-ffeb-98c5",
-                "id": "2bb9-24fd-0c45-8d01",
+                "id": "2b31-d2fe-2ce5-d28e",
                 "primary": false,
                 "name": "Heavy Groups"
               }
             ],
-            "import": true,
-            "name": "Diamond Battleship",
-            "hidden": false,
-            "id": "3411-6ac6-7dfd-0305",
-            "type": "selectionEntry",
-            "targetId": "e571-bb36-a6a7-feb4",
+            "profiles": [
+              {
+                "name": "Diamond",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "6071-c5f3-80c4-d675",
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "8\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "12\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "8\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "18"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "3+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Mothership, Shield-4+, True Disintegration"
+                  }
+                ],
+                "publicationId": "fbb6-a765-5882-6bcb",
+                "page": 38
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 230
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d0de-3c61-cbd7-0856",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "896f-f94e-14f1-ae9a",
+                "includeChildSelections": false
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Mothership",
+                "id": "6de2-513f-96f1-c6fc",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "928d-4467-6cc7-1771"
+              },
+              {
+                "name": "Shield-X",
+                "id": "2427-12b7-1372-d2e5",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "40e4-1c82-9e61-c8c1"
+              },
+              {
+                "name": "True Disintegration",
+                "id": "2436-61f0-06d8-2ac7",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "26e6-abd4-740e-1ba1"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Disintegrator Battery",
+                "hidden": false,
+                "id": "27e1-f6f2-2450-27ed",
+                "type": "selectionEntry",
+                "sortIndex": 1,
+                "targetId": "56d2-37ef-ce6f-7457"
+              },
+              {
+                "import": true,
+                "name": "Particle Lance Triad",
+                "hidden": false,
+                "id": "0139-1aec-4c0d-ce49",
+                "type": "selectionEntry",
+                "sortIndex": 2,
+                "targetId": "26be-572f-6722-b237"
+              },
+              {
+                "import": true,
+                "name": "Dropships",
+                "hidden": false,
+                "id": "d076-6b7a-94d8-e6a7",
+                "type": "selectionEntry",
+                "sortIndex": 3,
+                "targetId": "bc21-a66c-a102-d7d3"
+              },
+              {
+                "import": true,
+                "name": "Drive Augmentation",
+                "hidden": false,
+                "id": "4b48-3855-b1be-c4d9",
+                "type": "selectionEntry",
+                "targetId": "1644-6e6f-2512-45c0"
+              }
+            ],
+            "publicationId": "fbb6-a765-5882-6bcb",
+            "page": 38,
             "sortIndex": 2
           }
         ],
@@ -943,48 +1204,166 @@
             "id": "c498-20f9-a90e-fa3f",
             "subType": "crew",
             "sortIndex": 1
-          }
-        ],
-        "entryLinks": [
+          },
           {
-            "infoLinks": [
-              {
-                "name": "Gravitational Draw",
-                "id": "429b-d4c5-6e8d-cbeb",
-                "hidden": false,
-                "type": "rule",
-                "targetId": "c143-3e3f-e516-3fe5"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "append",
-                "value": "Gravitational Draw",
-                "field": "fdf5-89b6-e62e-570f",
-                "affects": "self.entries.profiles.Ship",
-                "join": ", "
-              }
-            ],
+            "type": "model",
+            "import": true,
+            "name": "Sapphire Battlecruiser",
+            "hidden": false,
+            "id": "980a-e9ff-3534-14b0",
             "categoryLinks": [
               {
                 "targetId": "default-category",
-                "id": "1d3d-60a5-d11b-4fea",
+                "id": "7f6e-2291-705d-71f6",
                 "primary": false,
                 "name": "Group"
               },
               {
                 "targetId": "8d99-053d-ffeb-98c5",
-                "id": "1991-ebeb-7296-2335",
+                "id": "03b0-4cf9-b70e-34f3",
                 "primary": false,
                 "name": "Heavy Groups"
               }
             ],
-            "import": true,
-            "name": "Sapphire Battlecruiser",
-            "hidden": false,
-            "id": "1cc6-f7d0-e4b5-0f49",
-            "type": "selectionEntry",
-            "targetId": "cd7d-bfb0-8b9a-76e9",
+            "profiles": [
+              {
+                "name": "Sapphire",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "2338-d079-1d9d-9a3f",
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "10\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "12\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "13"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "6+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Shield-4+, Vanguard-6\", Gravitational Draw"
+                  }
+                ],
+                "publicationId": "fbb6-a765-5882-6bcb",
+                "page": 35
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 150
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f46e-c514-2c6a-4333",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0840-976b-ef22-85b1",
+                "includeChildSelections": false
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Shield-X",
+                "id": "6127-6cac-a4ec-fad9",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "40e4-1c82-9e61-c8c1"
+              },
+              {
+                "name": "Vanguard-X\"",
+                "id": "02ff-0aea-d49c-75aa",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "0afa-aca9-640a-973e"
+              },
+              {
+                "name": "Gravitational Draw",
+                "id": "d38f-7f85-e2a2-c469",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "c143-3e3f-e516-3fe5"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Ion Aura & Ion Storm",
+                "hidden": false,
+                "id": "6812-db11-f64c-a111",
+                "type": "selectionEntry",
+                "sortIndex": 1,
+                "targetId": "7b23-7095-97b9-ba62"
+              },
+              {
+                "import": true,
+                "name": "Gravity Coil Pair",
+                "hidden": false,
+                "id": "bf0d-8411-ff20-4ec0",
+                "type": "selectionEntry",
+                "sortIndex": 3,
+                "targetId": "6024-e98b-9faf-e30e"
+              },
+              {
+                "import": true,
+                "name": "Ion Storm",
+                "hidden": false,
+                "id": "fac1-b5a1-5447-7890",
+                "type": "selectionEntry",
+                "targetId": "80b3-10f5-b932-ae19",
+                "sortIndex": 2
+              }
+            ],
+            "publicationId": "fbb6-a765-5882-6bcb",
+            "page": 35,
             "sortIndex": 2
           }
         ],
@@ -1131,51 +1510,133 @@
             "id": "bd54-2409-329d-56e5",
             "sortIndex": 1,
             "subType": "crew"
-          }
-        ],
-        "entryLinks": [
+          },
           {
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 2,
-                "field": "32ce-7bbb-1d0f-8c80",
-                "affects": "profiles.Ship",
-                "join": ", "
-              },
-              {
-                "type": "set",
-                "value": "Shield-4+",
-                "field": "fdf5-89b6-e62e-570f",
-                "affects": "profiles.Ship",
-                "join": ", "
-              },
-              {
-                "type": "set",
-                "value": 2,
-                "field": "ba56-2435-cad0-fc07"
-              }
-            ],
+            "type": "model",
+            "import": true,
+            "name": "Amber Cruiser",
+            "hidden": false,
+            "id": "6251-07b3-b0fd-8f4d",
             "categoryLinks": [
               {
                 "targetId": "default-category",
-                "id": "d962-1abf-75e3-91fc",
+                "id": "e450-2ca9-6c9a-e3e3",
                 "primary": false,
                 "name": "Group"
               },
               {
                 "targetId": "e555-ff57-c478-18cd",
-                "id": "97df-eff4-40e7-df4c",
+                "id": "d1cf-8c63-d659-6491",
                 "primary": false,
                 "name": "Medium Groups"
               }
             ],
-            "import": true,
-            "name": "Amber Cruiser",
-            "hidden": false,
-            "id": "5051-3745-9fe6-a84f",
-            "type": "selectionEntry",
-            "targetId": "2e10-c4db-c19a-47ca",
+            "profiles": [
+              {
+                "name": "Amber",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "9917-9dc8-4b44-b989",
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "10\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "12\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "5+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Shield-4+"
+                  }
+                ],
+                "publicationId": "fbb6-a765-5882-6bcb",
+                "page": 24
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 100
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "48bf-61d0-5c2a-99db",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9374-c24d-3e7a-848b",
+                "includeChildSelections": false
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Shield-X",
+                "id": "a14f-f0e3-40e9-5550",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "40e4-1c82-9e61-c8c1"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Disintegrator Battery",
+                "hidden": false,
+                "id": "fc36-6f60-1e00-f495",
+                "type": "selectionEntry",
+                "targetId": "e742-5130-c811-5c02"
+              }
+            ],
+            "publicationId": "fbb6-a765-5882-6bcb",
+            "page": 24,
             "sortIndex": 2
           }
         ],
@@ -4036,6 +4497,15 @@
                 "type": "selectionEntry",
                 "sortIndex": 1,
                 "targetId": "8bee-12e8-8c3d-102a"
+              },
+              {
+                "import": true,
+                "name": "Ion Storm",
+                "hidden": false,
+                "id": "003b-9d15-340c-1ea8",
+                "type": "selectionEntry",
+                "targetId": "80b3-10f5-b932-ae19",
+                "sortIndex": 3
               }
             ],
             "type": "model",
@@ -4670,8 +5140,17 @@
                 "hidden": false,
                 "id": "ba3a-31d2-551c-0b48",
                 "type": "selectionEntry",
-                "sortIndex": 2,
+                "sortIndex": 3,
                 "targetId": "6024-e98b-9faf-e30e"
+              },
+              {
+                "import": true,
+                "name": "Ion Storm",
+                "hidden": false,
+                "id": "5e20-2265-c4bf-8f29",
+                "type": "selectionEntry",
+                "targetId": "80b3-10f5-b932-ae19",
+                "sortIndex": 2
               }
             ],
             "type": "model",
@@ -5755,8 +6234,17 @@
                 "hidden": false,
                 "id": "4451-aee2-dd39-1aea",
                 "type": "selectionEntry",
-                "sortIndex": 2,
+                "sortIndex": 3,
                 "targetId": "c4f9-b751-7e09-adac"
+              },
+              {
+                "import": true,
+                "name": "Ion Storm",
+                "hidden": false,
+                "id": "bdd3-3f59-0101-3d9f",
+                "type": "selectionEntry",
+                "targetId": "80b3-10f5-b932-ae19",
+                "sortIndex": 2
               }
             ],
             "type": "model",
@@ -6378,7 +6866,17 @@
                 "hidden": false,
                 "id": "a74c-a52a-3fca-0c3d",
                 "type": "selectionEntry",
-                "targetId": "7b23-7095-97b9-ba62"
+                "targetId": "7b23-7095-97b9-ba62",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Ion Storm",
+                "hidden": false,
+                "id": "2ea1-efc9-3e43-4992",
+                "type": "selectionEntry",
+                "targetId": "80b3-10f5-b932-ae19",
+                "sortIndex": 2
               }
             ],
             "type": "model",
@@ -10115,52 +10613,52 @@
         "comment": "F/S 5/3+/1/E Rv-1 Vol-2",
         "infoLinks": [
           {
-            "name": "Reave-X",
-            "id": "5098-89b6-3e39-2fc6",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "4def-e674-d37c-707a"
-          },
-          {
             "name": "Volley-X",
             "id": "a585-ef76-5e6c-459c",
             "hidden": false,
             "type": "rule",
             "targetId": "2313-61f3-8840-3e8b"
+          },
+          {
+            "name": "Reave-X",
+            "id": "5098-89b6-3e39-2fc6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4def-e674-d37c-707a"
           }
         ],
         "profiles": [
           {
             "characteristics": [
               {
-                "$text": "F/S",
                 "name": "Arc",
-                "typeId": "7fb7-39ec-1352-3b97"
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "F/S"
               },
               {
-                "$text": "5",
                 "name": "Att",
-                "typeId": "af4e-6eec-3cb5-5aae"
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "5"
               },
               {
-                "$text": "3+",
                 "name": "Lock",
-                "typeId": "ddfe-5610-8f1a-650d"
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "3+"
               },
               {
-                "$text": "1",
                 "name": "DMG",
-                "typeId": "31b1-2e8b-0b99-b1c7"
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "1"
               },
               {
-                "$text": "E",
                 "name": "Type",
-                "typeId": "8f83-3218-7832-0818"
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "E"
               },
               {
-                "$text": "Reave-1, Volley-2",
                 "name": "Special",
-                "typeId": "1e8b-4801-6eb9-f278"
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Volley-2, Reave-1"
               }
             ],
             "comment": "F/S 4/3+/1/E Vol-2",
@@ -10202,13 +10700,6 @@
         "comment": "[x2] F/S 5/3+/1/E Rv-1 Vol-2",
         "infoLinks": [
           {
-            "name": "Disintegrator Battery",
-            "id": "531f-27aa-eeb2-0f8e",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "4cb0-3c95-f8d1-9459"
-          },
-          {
             "name": "Reave-X",
             "id": "2209-1d30-b0c7-91bf",
             "hidden": false,
@@ -10228,7 +10719,48 @@
         "name": "Disintegrator Battery",
         "hidden": false,
         "id": "5934-beb6-e29e-cdb4",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "Disintegrator Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "1223-bd74-897d-11e8",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "5",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "E",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Reave-1, Volley-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "constraints": [
@@ -10254,13 +10786,6 @@
         "comment": "F/S 5/3+/1/E Rv-1 Vol-2",
         "infoLinks": [
           {
-            "name": "Disintegrator Battery",
-            "id": "4bd1-4a24-e625-9ace",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "4cb0-3c95-f8d1-9459"
-          },
-          {
             "name": "Reave-X",
             "id": "9e55-6067-90b3-10c1",
             "hidden": false,
@@ -10280,7 +10805,48 @@
         "name": "Disintegrator Battery",
         "hidden": false,
         "id": "56d2-37ef-ce6f-7457",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "Disintegrator Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "2669-8a71-347a-95d9",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "5",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "E",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Reave-1, Volley-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "constraints": [
@@ -10306,13 +10872,6 @@
         "comment": "[x3] F/S 5/3+/1/E Rv-1",
         "infoLinks": [
           {
-            "name": "Disintegrator Battery",
-            "id": "4fc8-0b5e-0b0f-e4c8",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "db9b-4876-0799-4ee3"
-          },
-          {
             "name": "Reave-X",
             "id": "d0ff-a3fb-dfa8-ce3a",
             "hidden": false,
@@ -10325,7 +10884,48 @@
         "name": "Disintegrator Battery",
         "hidden": false,
         "id": "5b34-0f31-b45b-1f32",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "Disintegrator Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "a6aa-2f5e-f293-9a28",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "5",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "E",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Reave-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "constraints": [
@@ -10351,13 +10951,6 @@
         "comment": "[x2] F/S 5/3+/1/E Rv-1",
         "infoLinks": [
           {
-            "name": "Disintegrator Battery",
-            "id": "af6d-067d-f374-ce53",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "db9b-4876-0799-4ee3"
-          },
-          {
             "name": "Reave-X",
             "id": "8b8b-7cd4-69c0-66f3",
             "hidden": false,
@@ -10370,7 +10963,48 @@
         "name": "Disintegrator Battery",
         "hidden": false,
         "id": "e742-5130-c811-5c02",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "Disintegrator Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "963d-0ca3-3966-f14e",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "5",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "E",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Reave-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "constraints": [
@@ -10396,13 +11030,6 @@
         "comment": "F/S 5/3+/1/E Rv-1",
         "infoLinks": [
           {
-            "name": "Disintegrator Battery",
-            "id": "de20-4f1c-ea24-ef94",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "db9b-4876-0799-4ee3"
-          },
-          {
             "name": "Reave-X",
             "id": "7db3-1263-4a05-0b2d",
             "hidden": false,
@@ -10415,7 +11042,48 @@
         "name": "Disintegrator Battery",
         "hidden": false,
         "id": "c4f9-b751-7e09-adac",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "Disintegrator Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "59ba-bc72-92fe-6b62",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "5",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "E",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Reave-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "profiles": [
@@ -10899,34 +11567,34 @@
           {
             "characteristics": [
               {
-                "$text": "F/S",
                 "name": "Arc",
-                "typeId": "7fb7-39ec-1352-3b97"
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "F/S"
               },
               {
-                "$text": "5",
                 "name": "Att",
-                "typeId": "af4e-6eec-3cb5-5aae"
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "5"
               },
               {
-                "$text": "4+",
                 "name": "Lock",
-                "typeId": "ddfe-5610-8f1a-650d"
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "4+"
               },
               {
-                "$text": "1",
                 "name": "DMG",
-                "typeId": "31b1-2e8b-0b99-b1c7"
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "1"
               },
               {
-                "$text": "E",
                 "name": "Type",
-                "typeId": "8f83-3218-7832-0818"
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "E"
               },
               {
-                "$text": "Re-Entry, Impel-1",
                 "name": "Special",
-                "typeId": "1e8b-4801-6eb9-f278"
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Impel-1, Re-Entry"
               }
             ],
             "name": "Gravitic Beamer",
@@ -10959,18 +11627,18 @@
         "comment": "F/S 5/4+/1/E ReEnt Imp-1",
         "infoLinks": [
           {
-            "name": "Re-Entry",
-            "id": "f819-2960-73fb-4566",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "3438-1fc6-047d-47ad"
-          },
-          {
             "name": "Impel-X",
             "id": "3d9c-6375-1951-a9e2",
             "hidden": false,
             "type": "rule",
             "targetId": "9944-ada1-19c8-2d06"
+          },
+          {
+            "name": "Re-Entry",
+            "id": "f819-2960-73fb-4566",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3438-1fc6-047d-47ad"
           }
         ],
         "type": "upgrade",
@@ -11334,7 +12002,54 @@
             "typeName": "Weapon",
             "hidden": false,
             "id": "f895-f431-43bf-1629"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "b716-9a3c-d760-ddce-min",
+            "includeChildSelections": false
           },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "b716-9a3c-d760-ddce-max",
+            "includeChildSelections": false
+          }
+        ],
+        "comment": "F/S/R 6/3+/1/E CA Sc-1",
+        "infoLinks": [
+          {
+            "name": "Close Action",
+            "id": "1b7b-e13e-2f33-76e6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3bd7-f459-761a-97ee"
+          },
+          {
+            "name": "Scald-X",
+            "id": "cae8-f4ec-8390-1db2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "41b3-55a2-8d71-ee88"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Ion Aura",
+        "hidden": false,
+        "id": "7b23-7095-97b9-ba62",
+        "collective": true
+      },
+      {
+        "profiles": [
           {
             "characteristics": [
               {
@@ -11372,7 +12087,7 @@
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "hidden": false,
-            "id": "0f67-0cde-58f7-c7ac"
+            "id": "a54f-dae0-5ad8-2dd2"
           }
         ],
         "constraints": [
@@ -11382,7 +12097,7 @@
             "field": "selections",
             "scope": "parent",
             "shared": true,
-            "id": "b716-9a3c-d760-ddce-min",
+            "id": "c91b-fb9a-4404-096f",
             "includeChildSelections": false
           },
           {
@@ -11391,29 +12106,22 @@
             "field": "selections",
             "scope": "parent",
             "shared": true,
-            "id": "b716-9a3c-d760-ddce-max",
+            "id": "86d8-fbd8-d74c-73bf",
             "includeChildSelections": false
           }
         ],
-        "comment": "F/S/R 6/3+/1/E CA Sc-1 || F/S/R 6/4+/1/E Bmb Sc-1",
+        "comment": "F/S/R 6/4+/1/E Bmb Sc-1",
         "infoLinks": [
           {
-            "name": "Close Action",
-            "id": "1b7b-e13e-2f33-76e6",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "3bd7-f459-761a-97ee"
-          },
-          {
             "name": "Bombardment",
-            "id": "1a33-d5ea-f9cf-ab3f",
+            "id": "8395-7050-f8cf-4af4",
             "hidden": false,
             "type": "rule",
             "targetId": "858c-a2ff-ed65-3e47"
           },
           {
             "name": "Scald-X",
-            "id": "cae8-f4ec-8390-1db2",
+            "id": "b601-f5b4-b649-fd81",
             "hidden": false,
             "type": "rule",
             "targetId": "41b3-55a2-8d71-ee88"
@@ -11421,9 +12129,9 @@
         ],
         "type": "upgrade",
         "import": true,
-        "name": "Ion Aura & Ion Storm",
+        "name": "Ion Storm",
         "hidden": false,
-        "id": "7b23-7095-97b9-ba62",
+        "id": "80b3-10f5-b932-ae19",
         "collective": true
       },
       {
@@ -11817,41 +12525,57 @@
         "name": "Mega Thermal Lance Cannon",
         "hidden": false,
         "id": "67e3-014c-4c6e-f7be",
-        "collective": true
+        "collective": true,
+        "infoLinks": [
+          {
+            "name": "Burnthrough-X",
+            "id": "13f4-488a-2070-93a6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "91ae-f561-0802-3f8e"
+          },
+          {
+            "name": "Bloom-X",
+            "id": "d177-9705-08a3-a1c6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a944-3ee8-9a6c-6440"
+          }
+        ]
       },
       {
         "profiles": [
           {
             "characteristics": [
               {
-                "$text": "S",
                 "name": "Arc",
-                "typeId": "7fb7-39ec-1352-3b97"
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "S"
               },
               {
-                "$text": "4",
                 "name": "Att",
-                "typeId": "af4e-6eec-3cb5-5aae"
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "4"
               },
               {
-                "$text": "3+",
                 "name": "Lock",
-                "typeId": "ddfe-5610-8f1a-650d"
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "3+"
               },
               {
-                "$text": "1",
                 "name": "DMG",
-                "typeId": "31b1-2e8b-0b99-b1c7"
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "1"
               },
               {
-                "$text": "E",
                 "name": "Type",
-                "typeId": "8f83-3218-7832-0818"
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "E"
               },
               {
-                "$text": "Close Action, Volley-2, Scald-1",
                 "name": "Special",
-                "typeId": "1e8b-4801-6eb9-f278"
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Close Action, Scald-1, Volley-2"
               }
             ],
             "name": "Microwave Array Bank",
@@ -11891,18 +12615,18 @@
             "targetId": "3bd7-f459-761a-97ee"
           },
           {
-            "name": "Volley-X",
-            "id": "04bb-f74d-6759-1909",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "2313-61f3-8840-3e8b"
-          },
-          {
             "name": "Scald-X",
             "id": "d858-7b58-da38-e802",
             "hidden": false,
             "type": "rule",
             "targetId": "41b3-55a2-8d71-ee88"
+          },
+          {
+            "name": "Volley-X",
+            "id": "04bb-f74d-6759-1909",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2313-61f3-8840-3e8b"
           }
         ],
         "type": "upgrade",
@@ -12327,13 +13051,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "7cc5-6830-9e54-6d11"
-          },
-          {
-            "name": "Particle Lance",
-            "id": "dca8-da51-435f-999f",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "0598-f794-1de5-2c4f"
           }
         ],
         "constraints": [
@@ -12362,7 +13079,48 @@
         "name": "Particle Lance",
         "hidden": false,
         "id": "97a4-cfff-839b-b3ff",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "Particle Lance",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "3ff0-253e-260d-07c2",
+            "characteristics": [
+              {
+                "$text": "FN",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "1",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "C",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Critical-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "infoLinks": [
@@ -12372,13 +13130,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "7cc5-6830-9e54-6d11"
-          },
-          {
-            "name": "Particle Lance",
-            "id": "43a3-19f9-bec7-01e0",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "0598-f794-1de5-2c4f"
           }
         ],
         "constraints": [
@@ -12407,7 +13158,48 @@
         "name": "Particle Lance",
         "hidden": false,
         "id": "0909-6293-e86f-5910",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "Particle Lance",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "56e9-5958-d6ec-067c",
+            "characteristics": [
+              {
+                "$text": "FN",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "1",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "C",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Critical-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "profiles": [
@@ -12570,34 +13362,34 @@
           {
             "characteristics": [
               {
-                "$text": "F",
                 "name": "Arc",
-                "typeId": "7fb7-39ec-1352-3b97"
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "F"
               },
               {
-                "$text": "4",
                 "name": "Att",
-                "typeId": "af4e-6eec-3cb5-5aae"
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "4"
               },
               {
-                "$text": "*",
                 "name": "Lock",
-                "typeId": "ddfe-5610-8f1a-650d"
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "*"
               },
               {
-                "$text": "1",
                 "name": "DMG",
-                "typeId": "31b1-2e8b-0b99-b1c7"
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "1"
               },
               {
-                "$text": "E",
                 "name": "Type",
-                "typeId": "8f83-3218-7832-0818"
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "E"
               },
               {
-                "$text": "Burnthrough-2, Close Action, Mauler, Calibre-H/C",
                 "name": "Special",
-                "typeId": "1e8b-4801-6eb9-f278"
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Burnthrough-2, Calibre-H/C, Close Action, Mauler"
               }
             ],
             "name": "Pulse Ioniser Bank",
@@ -12616,6 +13408,13 @@
             "targetId": "91ae-f561-0802-3f8e"
           },
           {
+            "name": "Calibre-X",
+            "id": "87a5-8e27-f083-d279",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "aa1f-b200-394a-dbcf"
+          },
+          {
             "name": "Close Action",
             "id": "8992-0f81-b88e-23ba",
             "hidden": false,
@@ -12628,13 +13427,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "c093-8c13-6119-8d37"
-          },
-          {
-            "name": "Calibre-X",
-            "id": "87a5-8e27-f083-d279",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "aa1f-b200-394a-dbcf"
           }
         ],
         "constraints": [
@@ -12670,34 +13462,34 @@
           {
             "characteristics": [
               {
-                "$text": "F",
                 "name": "Arc",
-                "typeId": "7fb7-39ec-1352-3b97"
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "F"
               },
               {
-                "$text": "12",
                 "name": "Att",
-                "typeId": "af4e-6eec-3cb5-5aae"
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "12"
               },
               {
-                "$text": "*",
                 "name": "Lock",
-                "typeId": "ddfe-5610-8f1a-650d"
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "*"
               },
               {
-                "$text": "1",
                 "name": "DMG",
-                "typeId": "31b1-2e8b-0b99-b1c7"
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "1"
               },
               {
-                "$text": "E",
                 "name": "Type",
-                "typeId": "8f83-3218-7832-0818"
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "E"
               },
               {
-                "$text": "Burnthrough-2, Close Action, Mauler, Calibre-M/H/C",
                 "name": "Special",
-                "typeId": "1e8b-4801-6eb9-f278"
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Burnthrough-2, Calibre-M/H/C, Close Action, Mauler"
               }
             ],
             "name": "Pulse Ioniser Battery",
@@ -12716,6 +13508,13 @@
             "targetId": "91ae-f561-0802-3f8e"
           },
           {
+            "name": "Calibre-X",
+            "id": "0e3c-26bd-bff0-f88d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "aa1f-b200-394a-dbcf"
+          },
+          {
             "name": "Close Action",
             "id": "f146-41c1-9b36-8cd5",
             "hidden": false,
@@ -12728,13 +13527,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "c093-8c13-6119-8d37"
-          },
-          {
-            "name": "Calibre-X",
-            "id": "0e3c-26bd-bff0-f88d",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "aa1f-b200-394a-dbcf"
           }
         ],
         "constraints": [
@@ -13407,7 +14199,7 @@
               {
                 "name": "Special",
                 "typeId": "1e8b-4801-6eb9-f278",
-                "$text": "Crippling-2xFire, Sustained Fire"
+                "$text": "Crippling-2xFire, Sustained Fire"
               }
             ],
             "name": "Microwave Crescent",
@@ -13976,6 +14768,54 @@
         "hidden": false,
         "id": "34d2-2816-e958-ad8b",
         "collective": true
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Mines",
+        "hidden": false,
+        "id": "56ce-5221-ee03-ee49",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "6b0d-9af7-396c-16c9",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "ad8a-a41e-81e8-01cb",
+            "includeChildSelections": false
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Mines",
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "hidden": false,
+            "id": "5528-91f6-d268-1fd8",
+            "characteristics": [
+              {
+                "$text": "2",
+                "name": "Launch",
+                "typeId": "bcc4-f844-acff-aa94"
+              },
+              {
+                "$text": "-",
+                "name": "Special",
+                "typeId": "d3be-1a27-21ac-fb65"
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "upgrade",
@@ -15692,128 +16532,6 @@
         "type": "selectionEntry"
       }
     ],
-    "sharedProfiles": [
-      {
-        "characteristics": [
-          {
-            "$text": "F/S",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "5",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "3+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "1",
-            "name": "DMG",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "E",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Reave-1, Volley-2",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "F/S 4/3+/1/E Vol-2",
-        "name": "Disintegrator Battery",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "4cb0-3c95-f8d1-9459"
-      },
-      {
-        "characteristics": [
-          {
-            "$text": "FN",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "1",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "3+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "2",
-            "name": "DMG",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "C",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Critical-1",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "FN 1/3+/2/C Crit-1",
-        "name": "Particle Lance",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "0598-f794-1de5-2c4f"
-      },
-      {
-        "characteristics": [
-          {
-            "$text": "F/S",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "5",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "3+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "1",
-            "name": "DMG",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "E",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Reave-1",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "F/S 5/3+/1/E Rv-1",
-        "name": "Disintegrator Battery",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "db9b-4876-0799-4ee3"
-      }
-    ],
     "sharedSelectionEntryGroups": [
       {
         "selectionEntries": [
@@ -16146,64 +16864,6 @@
             "includeChildSelections": false
           }
         ],
-        "selectionEntries": [
-          {
-            "constraints": [
-              {
-                "type": "min",
-                "value": 0,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "b992-c2c6-253b-c2e7",
-                "includeChildSelections": false
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "9a19-ef89-cc3a-c139",
-                "includeChildSelections": false
-              }
-            ],
-            "profiles": [
-              {
-                "characteristics": [
-                  {
-                    "$text": "2",
-                    "name": "Launch",
-                    "typeId": "bcc4-f844-acff-aa94"
-                  },
-                  {
-                    "$text": "-",
-                    "name": "Special",
-                    "typeId": "d3be-1a27-21ac-fb65"
-                  }
-                ],
-                "name": "Mines",
-                "typeId": "7ba8-a64f-b5fb-8c3e",
-                "typeName": "Load",
-                "hidden": false,
-                "id": "7b73-cd32-9241-6acb"
-              }
-            ],
-            "costs": [
-              {
-                "name": "pts",
-                "typeId": "ab32-c9b6-10f3-cbdb",
-                "value": 10
-              }
-            ],
-            "type": "upgrade",
-            "import": true,
-            "name": "Mines",
-            "hidden": false,
-            "id": "56ce-5221-ee03-ee49",
-            "sortIndex": 2
-          }
-        ],
         "entryLinks": [
           {
             "modifiers": [
@@ -16220,6 +16880,28 @@
             "type": "selectionEntry",
             "targetId": "a206-ec27-49d0-76d2",
             "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Mines",
+            "hidden": false,
+            "id": "a112-e34b-98e1-8842",
+            "type": "selectionEntry",
+            "targetId": "56ce-5221-ee03-ee49",
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 10
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 0,
+                "field": "6b0d-9af7-396c-16c9"
+              }
+            ]
           }
         ],
         "comment": "2",
