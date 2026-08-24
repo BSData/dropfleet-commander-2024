@@ -550,122 +550,42 @@
                 "sortIndex": 3
               },
               {
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "0398-692a-2a6a-23fb-min",
-                    "includeChildSelections": false
-                  },
-                  {
-                    "type": "max",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "0398-692a-2a6a-23fb-max",
-                    "includeChildSelections": false
-                  }
-                ],
                 "import": true,
                 "name": "10K Mass Driver Turret",
                 "hidden": false,
                 "id": "2622-be8c-4e9b-1dac",
                 "type": "selectionEntry",
-                "targetId": "fa56-f516-23f3-fa9d",
+                "targetId": "2e38-0e3e-9bc8-a35f",
                 "collective": true,
                 "sortIndex": 1
               },
               {
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "c0c3-7f4a-64fc-b46b-min",
-                    "includeChildSelections": false
-                  },
-                  {
-                    "type": "max",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "c0c3-7f4a-64fc-b46b-max",
-                    "includeChildSelections": false
-                  }
-                ],
                 "import": true,
                 "name": "Heavy Dual Vent Cannon Turret",
                 "hidden": false,
                 "id": "20da-ab5c-d417-d99f",
                 "type": "selectionEntry",
-                "targetId": "cb41-3833-86dc-21ff",
+                "targetId": "edc7-b2eb-8595-f92f",
                 "collective": true,
                 "sortIndex": 2
               },
               {
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "9cfa-8e50-ab33-9cec-min",
-                    "includeChildSelections": false
-                  },
-                  {
-                    "type": "max",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "9cfa-8e50-ab33-9cec-max",
-                    "includeChildSelections": false
-                  }
-                ],
                 "import": true,
                 "name": "Fighters & Bombers",
                 "hidden": false,
                 "id": "23a6-1bcb-4e02-0956",
                 "type": "selectionEntry",
-                "targetId": "f10e-2e99-413f-017f",
+                "targetId": "39f8-a1dd-2c1a-7283",
                 "collective": true,
                 "sortIndex": 4
               },
               {
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "fca7-8185-4830-96b5-min",
-                    "includeChildSelections": false
-                  },
-                  {
-                    "type": "max",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "fca7-8185-4830-96b5-max",
-                    "includeChildSelections": false
-                  }
-                ],
                 "import": true,
                 "name": "Bulk Landers & Fire Ships",
                 "hidden": false,
                 "id": "deb4-7da3-f08c-caf7",
                 "type": "selectionEntry",
-                "targetId": "93ff-7d01-30f3-7dfe",
+                "targetId": "73ce-c4dd-104b-18c7",
                 "collective": true,
                 "sortIndex": 5
               },
@@ -1741,7 +1661,7 @@
                 "hidden": false,
                 "id": "ccfd-225e-cfd2-7c40",
                 "type": "selectionEntry",
-                "targetId": "c287-26e1-1f58-ae4d",
+                "targetId": "3479-5edb-3aaf-0f3b",
                 "collective": true,
                 "sortIndex": 1
               },
@@ -1771,7 +1691,7 @@
                 "hidden": false,
                 "id": "da63-f4c1-8e30-fd14",
                 "type": "selectionEntry",
-                "targetId": "4b65-d078-6d11-484c",
+                "targetId": "b7c3-bc36-c128-ff09",
                 "collective": true,
                 "sortIndex": 2
               },
@@ -5024,7 +4944,7 @@
               },
               {
                 "import": true,
-                "name": "NC-16 Missile Battery Turret Pair",
+                "name": "NC-16 Missile Turret Pair",
                 "hidden": false,
                 "id": "b39b-2126-a222-f5da",
                 "type": "selectionEntry",
@@ -6067,7 +5987,7 @@
               },
               {
                 "import": true,
-                "name": "NC-16 Missile Battery Turret Pair",
+                "name": "NC-16 Missile Turret Pair",
                 "hidden": false,
                 "id": "86c4-31a4-c80e-2043",
                 "type": "selectionEntry",
@@ -6521,7 +6441,7 @@
             "entryLinks": [
               {
                 "import": true,
-                "name": "NC-16 Missile Battery Turret Pair",
+                "name": "NC-16 Missile Turret Pair",
                 "hidden": false,
                 "id": "8082-9de7-a28b-3046",
                 "type": "selectionEntry",
@@ -8004,6 +7924,20 @@
                 "hidden": false,
                 "type": "rule",
                 "targetId": "3f45-7047-464a-3be4"
+              },
+              {
+                "name": "Set Timers And Run",
+                "id": "bb34-69b6-9be2-8512",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "8971-5a04-65ba-e107"
+              },
+              {
+                "name": "Skeleton Crew",
+                "id": "a4a2-f624-2dec-2f4c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "ea50-069a-5904-c8a7"
               }
             ],
             "entryLinks": [
@@ -8022,20 +7956,6 @@
                 "id": "9aa9-7f6f-aa7f-d45c",
                 "type": "selectionEntry",
                 "targetId": "f5af-d5b9-bd29-4e90"
-              }
-            ],
-            "rules": [
-              {
-                "description": "Once you complete an attack sequence with Explosive Detonation, remove this ship from the game. If there is a friendly Ship within 8” of this Ship, place a Fawkes’ Crew Battalion on that Ship. This ship only counts for Ships killed when Fawkes’ Crew Battalion is removed from the game.",
-                "name": "Set Timers And Run",
-                "id": "8971-5a04-65ba-e107",
-                "hidden": false
-              },
-              {
-                "description": "This Ship can only go on General Quarters",
-                "name": "Skeleton Crew",
-                "id": "ea50-069a-5904-c8a7",
-                "hidden": false
               }
             ],
             "type": "model",
@@ -9519,11 +9439,21 @@
             "entryLinks": [
               {
                 "import": true,
-                "name": "XN-40 “Godray” Mass Driver",
+                "name": "XN-40 \"Godray\" Mass Driver",
                 "hidden": false,
                 "id": "016a-ab85-df11-5f83",
                 "type": "selectionEntry",
-                "targetId": "af21-562c-911f-edeb"
+                "targetId": "af21-562c-911f-edeb",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "XN-40 \"Godray\" Bombardment Mass Driver",
+                "hidden": false,
+                "id": "6ec1-bc02-d72d-afb1",
+                "type": "selectionEntry",
+                "targetId": "134f-2db3-5153-ac54",
+                "sortIndex": 2
               }
             ],
             "infoLinks": [
@@ -11671,6 +11601,106 @@
         "id": "2d3f-36cb-66e7-5204"
       },
       {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "2",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Calibre-H/C, Critical-2, Penetrator, Volley-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ],
+            "name": "10K Mass Driver Turret",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "3047-1adf-d145-fc0c"
+          }
+        ],
+        "comment": "[x2] F/S 2/3+/2/K Cal-H/C Crit-2 Pen Vol-2",
+        "infoLinks": [
+          {
+            "name": "Calibre-X",
+            "id": "07bf-b085-113f-2158",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "aa1f-b200-394a-dbcf"
+          },
+          {
+            "name": "Critical-X",
+            "id": "ea0f-3995-f9f9-c200",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "7cc5-6830-9e54-6d11"
+          },
+          {
+            "name": "Penetrator",
+            "id": "e3df-3926-586f-7108",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fa34-1759-4681-18db"
+          },
+          {
+            "name": "Volley-X",
+            "id": "0e0f-f60e-6372-0c5b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2313-61f3-8840-3e8b"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "10K Mass Driver Turret",
+        "hidden": false,
+        "id": "2e38-0e3e-9bc8-a35f",
+        "collective": true,
+        "constraints": [
+          {
+            "type": "min",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "aedc-2f4c-5605-17d9",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "b8a3-78f8-18a7-761a",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
         "comment": "F/S 2/2+/2/K Crit-1 Pen",
         "costs": [
           {
@@ -11793,13 +11823,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "2313-61f3-8840-3e8b"
-          },
-          {
-            "name": "9K Mass Driver Turrets",
-            "id": "1949-e9a8-64f9-cabb",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "51e1-1b16-2080-03ef"
           }
         ],
         "constraints": [
@@ -11827,7 +11850,48 @@
         "name": "9K Mass Driver Turrets",
         "hidden": false,
         "id": "bf4b-d556-71b6-4835",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "9K Mass Driver Turrets",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "62c8-a152-dcdf-47b4",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "2",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "2+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Critical-1, Penetrator, Volley-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "comment": "F/S 2/2+/2/K Crit-1 Pen Vol-2",
@@ -11852,13 +11916,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "fa34-1759-4681-18db"
-          },
-          {
-            "name": "9K Mass Driver Turrets",
-            "id": "f26e-ef24-6ecd-1901",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "51e1-1b16-2080-03ef"
           },
           {
             "name": "Volley-X",
@@ -11893,7 +11950,141 @@
         "name": "9K Mass Driver Turrets",
         "hidden": false,
         "id": "fb8a-9de0-eb36-e2dc",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "9K Mass Driver Turrets",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "afac-8e79-60bc-b464",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "2",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "2+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Critical-1, Penetrator, Volley-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "4",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "E",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Fusillade-2, Overcharge, Reave-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ],
+            "name": "Heavy Dual Vent Cannon Turret",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "4dcd-ed8b-d204-6f41"
+          }
+        ],
+        "comment": "[x2] F/S 4/3+/2/E Fus-2 OC Rv-1",
+        "infoLinks": [
+          {
+            "name": "Overcharge",
+            "id": "4adf-bc45-d40e-7153",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "33e5-a091-cbf5-4765"
+          },
+          {
+            "name": "Fusillade-X",
+            "id": "b5ef-f67d-88c1-6f95",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4f05-4fdc-fad2-c566"
+          },
+          {
+            "name": "Reave-X",
+            "id": "7fdd-6625-dcdd-a56f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4def-e674-d37c-707a"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Heavy Dual Vent Cannon Turret",
+        "hidden": false,
+        "id": "edc7-b2eb-8595-f92f",
+        "collective": true,
+        "constraints": [
+          {
+            "type": "min",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "fe39-f739-f555-d73b",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "e3e5-b597-dde6-34fc",
+            "includeChildSelections": false
+          }
+        ]
       },
       {
         "infoLinks": [
@@ -12103,13 +12294,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "4def-e674-d37c-707a"
-          },
-          {
-            "name": "Heavy Vent Cannon Turret",
-            "id": "f5cb-1f02-ee36-252b",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "ab94-e594-6ea1-1f0e"
           }
         ],
         "comment": "[x2] F/S 2/3+/2/E Fus-1 OC Rv-1",
@@ -12138,52 +12322,48 @@
         "name": "Heavy Vent Cannon Turret",
         "hidden": false,
         "id": "039a-34de-4bd2-25bb",
-        "collective": true
-      },
-      {
-        "infoLinks": [
+        "collective": true,
+        "profiles": [
           {
-            "name": "Low Power",
-            "id": "8563-ef34-5ba0-2c47",
+            "name": "Heavy Vent Cannon Turret",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
             "hidden": false,
-            "type": "rule",
-            "targetId": "2851-2293-e346-839f"
-          },
-          {
-            "name": "N-12 Artillery Cannon Battery",
-            "id": "da4d-afdf-aded-053d",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "6f4e-2bd8-a683-7a42"
+            "id": "bee4-873f-4740-772d",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "2",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "E",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Fusillade-1, Overcharge, Reave-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
           }
-        ],
-        "comment": "[x2] B 10/4+/1/K LP",
-        "constraints": [
-          {
-            "type": "min",
-            "value": 2,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "ff26-3e00-1339-f074-min",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 2,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "ff26-3e00-1339-f074-max",
-            "includeChildSelections": false
-          }
-        ],
-        "type": "upgrade",
-        "import": true,
-        "name": "N-12 Artillery Cannon Battery",
-        "hidden": false,
-        "id": "15e5-46d3-e053-9bef",
-        "collective": true
+        ]
       },
       {
         "infoLinks": [
@@ -12207,13 +12387,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "4def-e674-d37c-707a"
-          },
-          {
-            "name": "Heavy Vent Cannon Turret",
-            "id": "5f57-94e9-85d4-768d",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "ab94-e594-6ea1-1f0e"
           }
         ],
         "comment": "F/S 2/3+/2/E Fus-1 OC Rv-1",
@@ -12242,7 +12415,48 @@
         "name": "Heavy Vent Cannon Turret",
         "hidden": false,
         "id": "3c90-e8b8-7b63-cbd7",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "Heavy Vent Cannon Turret",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "7cbd-8469-811b-1d03",
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "2",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "E",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Fusillade-1, Overcharge, Reave-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "infoLinks": [
@@ -12599,13 +12813,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "41b3-55a2-8d71-ee88"
-          },
-          {
-            "name": "Mega Vent Cannon Battery",
-            "id": "c4ff-b56a-4441-9812",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "1e9c-7b49-67a0-ad00"
           }
         ],
         "constraints": [
@@ -12633,7 +12840,48 @@
         "name": "Mega Vent Cannon Battery",
         "hidden": false,
         "id": "5430-e4ec-7f15-364b",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "Mega Vent Cannon Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "93c2-349b-9f2b-c36f",
+            "characteristics": [
+              {
+                "$text": "B",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "4",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "3",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "E",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Overcharge, Fusillade-2, Scald-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "comment": "[x2] B 2/3+/3/E Fus-1 OC Rv-1 Vol-2",
@@ -12850,6 +13098,99 @@
         "collective": true
       },
       {
+        "comment": "[x2] B 6/5+/1/K Fus-2 LP Vol-2",
+        "infoLinks": [
+          {
+            "name": "Fusillade-X",
+            "id": "3d02-25eb-5735-d695",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4f05-4fdc-fad2-c566"
+          },
+          {
+            "name": "Low Power",
+            "id": "5569-1ab8-38da-8dfb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2851-2293-e346-839f"
+          },
+          {
+            "name": "Volley-X",
+            "id": "aa5f-236a-9fa1-8f9e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2313-61f3-8840-3e8b"
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "B"
+              },
+              {
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "6"
+              },
+              {
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "5+"
+              },
+              {
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "1"
+              },
+              {
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "K"
+              },
+              {
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Fusillade-2, Low Power, Volley-2"
+              }
+            ],
+            "name": "N-8 Artillery Cannon Bank",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "e3e7-2801-8e07-1e97"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "N-8 Artillery Cannon Bank",
+        "hidden": false,
+        "id": "b7c3-bc36-c128-ff09",
+        "collective": true,
+        "constraints": [
+          {
+            "type": "min",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "4bdd-d3ff-b9d8-80f6",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "f047-9e32-16d6-9e96",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
         "profiles": [
           {
             "characteristics": [
@@ -12941,6 +13282,99 @@
         "hidden": false,
         "id": "e3ba-b6ec-3697-5014",
         "collective": true
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "F/S",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "3",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "4+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Fusillade-1, Low Power, Linked-1",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ],
+            "name": "N-11 Artillery Cannon Turret",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "f536-cd79-de69-991a"
+          }
+        ],
+        "comment": "[x2] F/S 3/4+/1/K Fus-1 LP Lnk-1",
+        "infoLinks": [
+          {
+            "name": "Fusillade-X",
+            "id": "a73d-54f0-de72-c188",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "4f05-4fdc-fad2-c566"
+          },
+          {
+            "name": "Low Power",
+            "id": "78d2-7e45-8af0-bc19",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2851-2293-e346-839f"
+          },
+          {
+            "name": "Linked-X",
+            "id": "c077-99ea-fa98-be22",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fc9b-53d4-3bb3-3413"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "N-11 Artillery Cannon Turret",
+        "hidden": false,
+        "id": "3479-5edb-3aaf-0f3b",
+        "collective": true,
+        "constraints": [
+          {
+            "type": "min",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "439a-001f-399b-260e",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "990b-19f7-e495-9144",
+            "includeChildSelections": false
+          }
+        ]
       },
       {
         "profiles": [
@@ -13206,6 +13640,85 @@
         "hidden": false,
         "id": "5ae3-e645-a98c-9cc7",
         "collective": true
+      },
+      {
+        "infoLinks": [
+          {
+            "name": "Low Power",
+            "id": "8563-ef34-5ba0-2c47",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2851-2293-e346-839f"
+          }
+        ],
+        "comment": "[x2] B 10/4+/1/K LP",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "ff26-3e00-1339-f074-min",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "ff26-3e00-1339-f074-max",
+            "includeChildSelections": false
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "N-12 Artillery Cannon Battery",
+        "hidden": false,
+        "id": "15e5-46d3-e053-9bef",
+        "collective": true,
+        "profiles": [
+          {
+            "name": "N-12 Artillery Cannon Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "2c49-206b-cc7b-8c11",
+            "characteristics": [
+              {
+                "$text": "B",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "10",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "4+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Low Power",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "infoLinks": [
@@ -13680,13 +14193,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "3bd7-f459-761a-97ee"
-          },
-          {
-            "name": "NC-16 Missile Bank",
-            "id": "7b8b-549a-4729-bb46",
-            "hidden": false,
-            "type": "profile",
-            "targetId": "1df8-a2a0-cda6-dbd2"
           }
         ],
         "comment": "[x2] F/S/R 3/3+/1/K CA",
@@ -13715,7 +14221,48 @@
         "name": "NC-16 Missile Bank",
         "hidden": false,
         "id": "5dac-4ad8-15cd-a963",
-        "collective": true
+        "collective": true,
+        "profiles": [
+          {
+            "name": "NC-16 Missile Bank",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "307e-62f7-029d-6abc",
+            "characteristics": [
+              {
+                "$text": "F/S/R",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "3",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "1",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Close Action",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ]
+          }
+        ]
       },
       {
         "profiles": [
@@ -13801,6 +14348,92 @@
         "name": "NC-16 Missile Battery Turret Quad",
         "hidden": false,
         "id": "c93e-c992-b828-ed98",
+        "collective": true
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "$text": "F/S/R",
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97"
+              },
+              {
+                "$text": "6",
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae"
+              },
+              {
+                "$text": "3+",
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d"
+              },
+              {
+                "$text": "2",
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7"
+              },
+              {
+                "$text": "K",
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818"
+              },
+              {
+                "$text": "Close Action, Volley-2",
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278"
+              }
+            ],
+            "name": "NC-16 Missile Battery",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "7b01-8b86-e9f1-c52f"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Close Action",
+            "id": "ed2d-3f8b-ac52-10f1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3bd7-f459-761a-97ee"
+          },
+          {
+            "name": "Volley-X",
+            "id": "b65d-61cf-b878-1dd0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2313-61f3-8840-3e8b"
+          }
+        ],
+        "comment": "F/S/R 6/3+/2/K CA Vol-2",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "1b93-e645-fa51-3f3e",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "c130-afa1-4f2f-5b61",
+            "includeChildSelections": false
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "NC-16 Missile Battery",
+        "hidden": false,
+        "id": "5695-0889-1178-c933",
         "collective": true
       },
       {
@@ -15229,7 +15862,7 @@
         "collective": true
       },
       {
-        "comment": "F 1/3+/3/C Alt-1 Cal-H/C // F 1/4+/3/E Alt-1 Bomb Pen",
+        "comment": "F 1/3+/3/C Alt-1 Cal-H/C",
         "costs": [
           {
             "name": "pts",
@@ -15244,20 +15877,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "f354-1b03-966f-f667"
-          },
-          {
-            "name": "Bombardment",
-            "id": "0c90-2f0c-45f1-8bca",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "858c-a2ff-ed65-3e47"
-          },
-          {
-            "name": "Penetrator",
-            "id": "a020-8163-06fd-8622",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fa34-1759-4681-18db"
           },
           {
             "name": "Calibre-X",
@@ -15321,12 +15940,73 @@
                 "typeId": "1e8b-4801-6eb9-f278"
               }
             ],
-            "name": "XN-40 “Godray” Orbital Mass Driver",
+            "name": "XN-40 \"Godray\" Orbital Mass Driver",
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "hidden": false,
             "id": "6530-50e1-5e15-2358"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "XN-40 \"Godray\" Orbital Mass Driver",
+        "hidden": false,
+        "id": "af21-562c-911f-edeb",
+        "collective": true
+      },
+      {
+        "comment": "F 1/4+/3/E Alt-1 Bomb Pen",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Alt-X",
+            "id": "030f-e114-b3e9-3615",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "f354-1b03-966f-f667"
           },
+          {
+            "name": "Bombardment",
+            "id": "97f3-0610-6af1-3228",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "858c-a2ff-ed65-3e47"
+          },
+          {
+            "name": "Penetrator",
+            "id": "ac97-0898-692f-bc82",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "fa34-1759-4681-18db"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "53a4-5eb3-9a53-6f09",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "c2fe-b04c-3f22-9faa",
+            "includeChildSelections": false
+          }
+        ],
+        "profiles": [
           {
             "characteristics": [
               {
@@ -15360,18 +16040,18 @@
                 "typeId": "1e8b-4801-6eb9-f278"
               }
             ],
-            "name": "XN-40 “Godray” Bombardment Mass Driver",
+            "name": "XN-40 \"Godray\" Bombardment Mass Driver",
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "hidden": false,
-            "id": "a2ce-2c04-aef8-c5e1"
+            "id": "15f5-46d0-c292-143e"
           }
         ],
         "type": "upgrade",
         "import": true,
-        "name": "XN-40 “Godray” Mass Driver",
+        "name": "XN-40 \"Godray\" Bombardment Mass Driver",
         "hidden": false,
-        "id": "af21-562c-911f-edeb",
+        "id": "134f-2db3-5153-ac54",
         "collective": true
       },
       {
@@ -15522,6 +16202,63 @@
         "name": "Bulk Landers",
         "hidden": false,
         "id": "0510-e295-2ccd-a790",
+        "collective": true
+      },
+      {
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Launch",
+                "typeId": "bcc4-f844-acff-aa94",
+                "$text": "4"
+              },
+              {
+                "name": "Special",
+                "typeId": "d3be-1a27-21ac-fb65",
+                "$text": "-"
+              }
+            ],
+            "name": "Bulk Landers & Fire Ships",
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "hidden": false,
+            "id": "1120-a25b-9a55-23c5"
+          }
+        ],
+        "comment": "4",
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "ab32-c9b6-10f3-cbdb",
+            "value": 0
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "4d03-6fd2-f63c-79ba",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "886a-d040-0bc8-7ec1",
+            "includeChildSelections": false
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Bulk Landers & Fire Ships",
+        "hidden": false,
+        "id": "73ce-c4dd-104b-18c7",
         "collective": true
       },
       {
@@ -15864,7 +16601,16 @@
         "name": "Fighters",
         "hidden": false,
         "id": "bc73-4289-1429-828f",
-        "collective": true
+        "collective": true,
+        "infoLinks": [
+          {
+            "name": "Alt-X",
+            "id": "4178-b74c-e781-c4a8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "f354-1b03-966f-f667"
+          }
+        ]
       },
       {
         "profiles": [
@@ -15921,7 +16667,16 @@
         "name": "Bombers",
         "hidden": false,
         "id": "49cd-6676-c6a4-7574",
-        "collective": true
+        "collective": true,
+        "infoLinks": [
+          {
+            "name": "Alt-X",
+            "id": "589d-5087-b7bb-7df2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "f354-1b03-966f-f667"
+          }
+        ]
       },
       {
         "profiles": [
@@ -15985,14 +16740,14 @@
           {
             "characteristics": [
               {
-                "$text": "3",
                 "name": "Launch",
-                "typeId": "bcc4-f844-acff-aa94"
+                "typeId": "bcc4-f844-acff-aa94",
+                "$text": "3"
               },
               {
-                "$text": "Limited-6, Penetrator",
                 "name": "Special",
-                "typeId": "d3be-1a27-21ac-fb65"
+                "typeId": "d3be-1a27-21ac-fb65",
+                "$text": "Limited-6"
               }
             ],
             "name": "Torpedo",
@@ -16002,7 +16757,7 @@
             "id": "87f3-0d50-b744-3c33"
           }
         ],
-        "comment": "3 L-6 Pen",
+        "comment": "3 L-6",
         "costs": [
           {
             "name": "pts",
@@ -16017,13 +16772,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "0c02-c41a-e1a2-882e"
-          },
-          {
-            "name": "Penetrator",
-            "id": "97b7-bf5e-816e-e6b5",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fa34-1759-4681-18db"
           }
         ],
         "constraints": [
@@ -16058,14 +16806,14 @@
           {
             "characteristics": [
               {
-                "$text": "1",
                 "name": "Launch",
-                "typeId": "bcc4-f844-acff-aa94"
+                "typeId": "bcc4-f844-acff-aa94",
+                "$text": "1"
               },
               {
-                "$text": "Limited-4, Penetrator",
                 "name": "Special",
-                "typeId": "d3be-1a27-21ac-fb65"
+                "typeId": "d3be-1a27-21ac-fb65",
+                "$text": "Limited-4"
               }
             ],
             "name": "Torpedo",
@@ -16075,7 +16823,7 @@
             "id": "6580-adc9-e2c7-e8d7"
           }
         ],
-        "comment": "1 L-4 Pen",
+        "comment": "1 L-4",
         "costs": [
           {
             "name": "pts",
@@ -16090,13 +16838,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "0c02-c41a-e1a2-882e"
-          },
-          {
-            "name": "Penetrator",
-            "id": "3462-ee24-ebba-7387",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fa34-1759-4681-18db"
           }
         ],
         "constraints": [
@@ -16131,14 +16872,14 @@
           {
             "characteristics": [
               {
-                "$text": "2",
                 "name": "Launch",
-                "typeId": "bcc4-f844-acff-aa94"
+                "typeId": "bcc4-f844-acff-aa94",
+                "$text": "2"
               },
               {
-                "$text": "Limited-2, Penetrator",
                 "name": "Special",
-                "typeId": "d3be-1a27-21ac-fb65"
+                "typeId": "d3be-1a27-21ac-fb65",
+                "$text": "Limited-2"
               }
             ],
             "name": "Torpedo",
@@ -16148,7 +16889,7 @@
             "id": "817f-f61e-3bab-c311"
           }
         ],
-        "comment": "2 L-2 Pen",
+        "comment": "2 L-2",
         "costs": [
           {
             "name": "pts",
@@ -16163,13 +16904,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "0c02-c41a-e1a2-882e"
-          },
-          {
-            "name": "Penetrator",
-            "id": "9673-4cb3-e105-734b",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fa34-1759-4681-18db"
           }
         ],
         "constraints": [
@@ -16204,14 +16938,14 @@
           {
             "characteristics": [
               {
-                "$text": "1",
                 "name": "Launch",
-                "typeId": "bcc4-f844-acff-aa94"
+                "typeId": "bcc4-f844-acff-aa94",
+                "$text": "1"
               },
               {
-                "$text": "Limited-2, Penetrator",
                 "name": "Special",
-                "typeId": "d3be-1a27-21ac-fb65"
+                "typeId": "d3be-1a27-21ac-fb65",
+                "$text": "Limited-2"
               }
             ],
             "name": "Torpedo",
@@ -16221,7 +16955,7 @@
             "id": "9d7f-69d8-aeb9-d695"
           }
         ],
-        "comment": "1 L-2 Pen",
+        "comment": "1 L-2",
         "costs": [
           {
             "name": "pts",
@@ -16236,13 +16970,6 @@
             "hidden": false,
             "type": "rule",
             "targetId": "0c02-c41a-e1a2-882e"
-          },
-          {
-            "name": "Penetrator",
-            "id": "b924-7ace-bca7-81a4",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "fa34-1759-4681-18db"
           }
         ],
         "constraints": [
@@ -17448,6 +18175,18 @@
         "id": "59cd-63ef-44ed-72aa",
         "hidden": false,
         "description": "At the start of the game, before players deploy, choose one Deployable Feature from the Resistance Deployable Features List. This Ship starts the game carrying that Deployable Feature."
+      },
+      {
+        "name": "Set Timers And Run",
+        "id": "8971-5a04-65ba-e107",
+        "hidden": false,
+        "description": "Once you complete an attack sequence with Explosive Detonation, remove this ship from the game. If there is a friendly Ship within 8” of this Ship, place a Fawkes’ Crew Battalion on that Ship. This ship only counts for Ships killed when Fawkes’ Crew Battalion is removed from the game."
+      },
+      {
+        "name": "Skeleton Crew",
+        "id": "ea50-069a-5904-c8a7",
+        "hidden": false,
+        "description": "This Ship can only go on General Quarters"
       }
     ],
     "entryLinks": [
@@ -19310,247 +20049,6 @@
         "name": "Abilities",
         "id": "b374-7196-fcc1-9fcb",
         "hidden": false
-      }
-    ],
-    "sharedProfiles": [
-      {
-        "characteristics": [
-          {
-            "$text": "F/S",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "2",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "3+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "2",
-            "name": "DMG",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "E",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Fusillade-1, Overcharge, Reave-1",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "F/S 2/3+/2/E Fus-1 OC Sc-1",
-        "name": "Heavy Vent Cannon Turret",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "ab94-e594-6ea1-1f0e"
-      },
-      {
-        "characteristics": [
-          {
-            "$text": "B",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "10",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "4+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "1",
-            "name": "DMG",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "K",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Low Power",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "B 10/4+/1/K LP",
-        "name": "N-12 Artillery Cannon Battery",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "6f4e-2bd8-a683-7a42"
-      },
-      {
-        "characteristics": [
-          {
-            "$text": "F/S",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "2",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "2+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "2",
-            "name": "DMG",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "K",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Critical-1, Penetrator, Volley-2",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "F/S 2/2+/2/K Crit-1 Vol-2",
-        "name": "9K Mass Driver Turrets",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "51e1-1b16-2080-03ef"
-      },
-      {
-        "characteristics": [
-          {
-            "$text": "B",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "4",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "3+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "3",
-            "name": "DMG",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "E",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Overcharge, Fusillade-2, Scald-2",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "B 4/3+/3/E OC Fus-2 Sc-2",
-        "name": "Mega Vent Cannon Battery",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "1e9c-7b49-67a0-ad00"
-      },
-      {
-        "characteristics": [
-          {
-            "$text": "F/S/R",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "3",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "3+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "1",
-            "name": "DMG",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "K",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Close Action",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "comment": "F/S/R 3/3+/1/K CA",
-        "name": "NC-16 Missile Bank",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "1df8-a2a0-cda6-dbd2"
-      },
-      {
-        "characteristics": [
-          {
-            "$text": "B",
-            "name": "Arc",
-            "typeId": "7fb7-39ec-1352-3b97"
-          },
-          {
-            "$text": "6",
-            "name": "Att",
-            "typeId": "af4e-6eec-3cb5-5aae"
-          },
-          {
-            "$text": "5+",
-            "name": "Lock",
-            "typeId": "ddfe-5610-8f1a-650d"
-          },
-          {
-            "$text": "1",
-            "name": "DMG",
-            "typeId": "31b1-2e8b-0b99-b1c7"
-          },
-          {
-            "$text": "K",
-            "name": "Type",
-            "typeId": "8f83-3218-7832-0818"
-          },
-          {
-            "$text": "Fusillade-2, Low Power, Volley-2",
-            "name": "Special",
-            "typeId": "1e8b-4801-6eb9-f278"
-          }
-        ],
-        "name": "N-8 Artillery Cannon Bank",
-        "typeId": "02b7-2433-f72f-d510",
-        "typeName": "Weapon",
-        "hidden": false,
-        "id": "d6b9-d4bb-e387-1c57"
       }
     ],
     "library": false,
