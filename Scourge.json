@@ -4036,7 +4036,7 @@
                 "hidden": false,
                 "id": "6724-c91b-779c-9ac3",
                 "type": "selectionEntry",
-                "targetId": "9b54-3d72-7687-8ded",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "sortIndex": 1
               },
               {
@@ -4213,7 +4213,7 @@
                 "hidden": false,
                 "id": "9838-ab41-9c56-e74c",
                 "type": "selectionEntry",
-                "targetId": "9b54-3d72-7687-8ded",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "sortIndex": 1
               },
               {
@@ -4385,7 +4385,7 @@
                 "hidden": false,
                 "id": "b493-d0be-1d4e-876c",
                 "type": "selectionEntry",
-                "targetId": "9b54-3d72-7687-8ded",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "sortIndex": 1
               },
               {
@@ -4564,7 +4564,7 @@
                 "hidden": false,
                 "id": "8404-a7f5-4f3d-0c25",
                 "type": "selectionEntry",
-                "targetId": "9b54-3d72-7687-8ded",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "sortIndex": 1
               },
               {
@@ -4741,7 +4741,7 @@
                 "hidden": false,
                 "id": "3f4d-63b3-978a-8e9e",
                 "type": "selectionEntry",
-                "targetId": "9b54-3d72-7687-8ded",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "sortIndex": 1
               },
               {
@@ -4909,7 +4909,7 @@
                 "hidden": false,
                 "id": "75a4-5c43-f9e6-0220",
                 "type": "selectionEntry",
-                "targetId": "a34f-7717-da6c-e71b",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "sortIndex": 1
               },
               {
@@ -5079,7 +5079,7 @@
                 "hidden": false,
                 "id": "3b4c-636f-5a15-f980",
                 "type": "selectionEntry",
-                "targetId": "a34f-7717-da6c-e71b",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "sortIndex": 1
               },
               {
@@ -5251,7 +5251,7 @@
                 "hidden": false,
                 "id": "1b4f-f4a4-abb7-cd4c",
                 "type": "selectionEntry",
-                "targetId": "a34f-7717-da6c-e71b",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "sortIndex": 1
               },
               {
@@ -5428,7 +5428,7 @@
                 "hidden": false,
                 "id": "7a57-25ca-5409-5456",
                 "type": "selectionEntry",
-                "targetId": "a34f-7717-da6c-e71b",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "sortIndex": 1
               },
               {
@@ -5596,7 +5596,7 @@
                 "hidden": false,
                 "id": "47a5-0b6e-ab90-138b",
                 "type": "selectionEntry",
-                "targetId": "9b54-3d72-7687-8ded"
+                "targetId": "0bce-3c22-02f5-0fdf"
               }
             ],
             "infoLinks": [
@@ -5754,7 +5754,7 @@
                 "hidden": false,
                 "id": "acfc-ff85-ce39-dec7",
                 "type": "selectionEntry",
-                "targetId": "9b54-3d72-7687-8ded",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "sortIndex": 1
               },
               {
@@ -5899,7 +5899,7 @@
                 "hidden": false,
                 "id": "c9e4-b5af-75a1-76ac",
                 "type": "selectionEntry",
-                "targetId": "9b54-3d72-7687-8ded",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "sortIndex": 1
               },
               {
@@ -12391,7 +12391,7 @@
               {
                 "name": "Att",
                 "typeId": "af4e-6eec-3cb5-5aae",
-                "$text": "3"
+                "$text": "2"
               },
               {
                 "name": "Lock",
@@ -12513,6 +12513,85 @@
             ]
           }
         ]
+      },
+      {
+        "infoLinks": [
+          {
+            "name": "Scald-X",
+            "id": "006e-02de-c18f-6431",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "41b3-55a2-8d71-ee88"
+          }
+        ],
+        "comment": "F 3/3+/2/E Sc-1",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "cc9e-eb10-b1c6-6d59",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "a0ce-cfa1-e9fe-3754",
+            "includeChildSelections": false
+          }
+        ],
+        "profiles": [
+          {
+            "characteristics": [
+              {
+                "name": "Arc",
+                "typeId": "7fb7-39ec-1352-3b97",
+                "$text": "F"
+              },
+              {
+                "name": "Att",
+                "typeId": "af4e-6eec-3cb5-5aae",
+                "$text": "3"
+              },
+              {
+                "name": "Lock",
+                "typeId": "ddfe-5610-8f1a-650d",
+                "$text": "3+"
+              },
+              {
+                "name": "DMG",
+                "typeId": "31b1-2e8b-0b99-b1c7",
+                "$text": "2"
+              },
+              {
+                "name": "Type",
+                "typeId": "8f83-3218-7832-0818",
+                "$text": "E"
+              },
+              {
+                "name": "Special",
+                "typeId": "1e8b-4801-6eb9-f278",
+                "$text": "Scald-1"
+              }
+            ],
+            "name": "Oculus Beam Array",
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "7acf-834a-15d5-ae95"
+          }
+        ],
+        "type": "upgrade",
+        "import": true,
+        "name": "Oculus Beam Array",
+        "hidden": false,
+        "id": "0bce-3c22-02f5-0fdf",
+        "collective": true
       },
       {
         "infoLinks": [
