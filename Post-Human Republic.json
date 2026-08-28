@@ -5390,6 +5390,237 @@
         "categoryLinks": [
           {
             "targetId": "default-category",
+            "id": "a4dd-ec63-5e8b-cac9",
+            "primary": false,
+            "name": "Group"
+          },
+          {
+            "targetId": "e555-ff57-c478-18cd",
+            "id": "d626-d377-7b95-488c",
+            "primary": true,
+            "name": "Medium Groups"
+          },
+          {
+            "targetId": "3929-5fb7-5f98-37ea",
+            "id": "f0d0-0d5b-78ac-6de6",
+            "primary": false,
+            "name": "Hero"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 146
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Medium Ship",
+                "hidden": false,
+                "id": "c40e-e519-89a1-c6c3",
+                "targetId": "53c3-afc0-63ef-413a",
+                "primary": true
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "9\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "8\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "13"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "3+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "6+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Hero, Regenerate-3, Unique, Repair Nanomachines"
+                  }
+                ],
+                "name": "Camilla Felix - Nanomatrix",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "0b74-73e8-858a-8894",
+                "publicationId": "6462-e99b-594c-193a",
+                "page": 35
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "cb68-1bda-2caa-101f",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "305e-f531-3e9a-e71e",
+                "includeChildSelections": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Glaive Lance",
+                "hidden": false,
+                "id": "4673-1a9f-7361-0106",
+                "type": "selectionEntry",
+                "targetId": "0e3c-ee13-6182-9614",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Black Nano Drones",
+                "hidden": false,
+                "id": "0c5b-0d06-8ad9-38af",
+                "type": "selectionEntry",
+                "targetId": "2a21-e088-bee9-3546",
+                "sortIndex": 2
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "Camilla Felix - Nanomatrix Heavy Cruiser",
+            "hidden": false,
+            "id": "fa35-9819-4ec5-019b",
+            "publicationId": "6462-e99b-594c-193a",
+            "page": 35,
+            "infoLinks": [
+              {
+                "name": "Hero",
+                "id": "283f-01c8-5c02-0e40",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f945-e19c-c8bb-1c6a"
+              },
+              {
+                "name": "Regenerate-X",
+                "id": "ce99-650d-977c-f94c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "df32-1b16-f0f9-7b85"
+              },
+              {
+                "name": "Unique",
+                "id": "7467-8c0d-2843-8b43",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "3f45-7047-464a-3be4"
+              },
+              {
+                "name": "Repair Nanomachines",
+                "id": "ab8e-3134-193c-f1a4",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "2ec8-ec63-0799-6ea4"
+              }
+            ]
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "Camilla Felix - Nanomatrix Heavy Cruiser",
+        "hidden": false,
+        "id": "b384-31b7-d530-b853",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "52e2-3225-89f2-97fe",
+            "includeChildSelections": false
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "b384-31b7-d530-b853",
+                "shared": true,
+                "includeChildSelections": false,
+                "childName": "Camilla Felix - Nanomatrix Heavy Cruiser"
+              },
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "force",
+                "childId": "8eb8-9887-6480-9a59",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Unique ships already in fleet"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
             "id": "11e0-a07d-c570-19d9",
             "primary": false,
             "name": "Group"
@@ -17748,6 +17979,14 @@
       },
       {
         "import": true,
+        "name": "Camilla Felix - Nanomatrix Heavy Cruiser",
+        "hidden": false,
+        "id": "53d4-810b-3e77-b402",
+        "targetId": "b384-31b7-d530-b853",
+        "type": "selectionEntry"
+      },
+      {
+        "import": true,
         "name": "Ganymede Assault Troopship",
         "hidden": false,
         "id": "0373-4089-2efd-5d08",
@@ -18298,6 +18537,12 @@
         "description": "At the start of the game, before players deploy, choose one Deployable Feature from the PHR Deployable Features List. This Ship starts the game carrying that Deployable Feature.",
         "name": "Feature Carrier",
         "id": "bdfa-0705-3daf-6ac8",
+        "hidden": false
+      },
+      {
+        "description": "Friendly Ships within 6\" of this Ship that roll to repair Crippling Effects during the Repair step of the End Phase improve the results of those rolls by 2. Other friendly Ships that end their activation within 6\" of this Ship on the same Orbital Layer recover 2 lost Hull Points",
+        "name": "Repair Nanomachines",
+        "id": "2ec8-ec63-0799-6ea4",
         "hidden": false
       }
     ],
