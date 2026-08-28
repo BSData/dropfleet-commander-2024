@@ -5536,6 +5536,230 @@
         "categoryLinks": [
           {
             "targetId": "default-category",
+            "id": "fe40-8878-9431-33d7",
+            "primary": false,
+            "name": "Group"
+          },
+          {
+            "targetId": "e555-ff57-c478-18cd",
+            "id": "7ebb-d4ae-a5f5-c117",
+            "primary": true,
+            "name": "Medium Groups"
+          },
+          {
+            "targetId": "3929-5fb7-5f98-37ea",
+            "id": "7086-46cd-417e-3f1a",
+            "primary": false,
+            "name": "Hero"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "categoryLinks": [
+              {
+                "name": "Medium Ship",
+                "hidden": false,
+                "id": "50a6-2e18-f947-06e5",
+                "targetId": "53c3-afc0-63ef-413a",
+                "primary": true
+              }
+            ],
+            "profiles": [
+              {
+                "characteristics": [
+                  {
+                    "name": "Thrust",
+                    "typeId": "d821-4294-3117-e8a6",
+                    "$text": "10\""
+                  },
+                  {
+                    "name": "Scan",
+                    "typeId": "960a-5d0e-18c5-4310",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Sig",
+                    "typeId": "4feb-14c2-b1f1-9fa5",
+                    "$text": "6\""
+                  },
+                  {
+                    "name": "Hull",
+                    "typeId": "5253-be1d-917b-17d9",
+                    "$text": "12"
+                  },
+                  {
+                    "name": "ES",
+                    "typeId": "42ae-03c9-d0ff-61da",
+                    "$text": "4+"
+                  },
+                  {
+                    "name": "KS",
+                    "typeId": "a4d4-4c63-1848-24f8",
+                    "$text": "3+"
+                  },
+                  {
+                    "name": "BS",
+                    "typeId": "05b6-9825-68e8-4983",
+                    "$text": "6+"
+                  },
+                  {
+                    "name": "G",
+                    "typeId": "32ce-7bbb-1d0f-8c80",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Special",
+                    "typeId": "fdf5-89b6-e62e-570f",
+                    "$text": "Hero, Vectored, Unique"
+                  }
+                ],
+                "name": "Frances Mendoza - Flying Dutchman",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "hidden": false,
+                "id": "d61b-e761-3562-1a32",
+                "publicationId": "9813-8e60-542d-9381",
+                "page": 42
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Cobra Heavy Laser Pair",
+                "hidden": false,
+                "id": "b1ed-6f7c-c993-6506",
+                "type": "selectionEntry",
+                "targetId": "ed83-7a4d-dc31-bbfb",
+                "sortIndex": 1
+              },
+              {
+                "import": true,
+                "name": "Arowana Missile Turrets",
+                "hidden": false,
+                "id": "efb5-577c-8d01-24a7",
+                "type": "selectionEntry",
+                "targetId": "98fc-dfc7-5027-febe",
+                "sortIndex": 2
+              }
+            ],
+            "costs": [
+              {
+                "name": "pts",
+                "typeId": "ab32-c9b6-10f3-cbdb",
+                "value": 136
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b34f-bd0f-44ef-5e43",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3cbf-b40f-a2b8-8766",
+                "includeChildSelections": false
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Hero",
+                "id": "571d-244c-bff1-cf93",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "f945-e19c-c8bb-1c6a"
+              },
+              {
+                "name": "Vectored",
+                "id": "b077-91d5-848f-608c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "7a2f-fbe0-b3cd-98c8"
+              },
+              {
+                "name": "Unique",
+                "id": "2aff-7d9a-a82c-ae71",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "3f45-7047-464a-3be4"
+              }
+            ],
+            "type": "model",
+            "import": true,
+            "name": "Frances Mendoza - Flying Dutchman Heavy Cruiser",
+            "hidden": false,
+            "id": "400e-808d-622f-19d9",
+            "page": 42,
+            "publicationId": "9813-8e60-542d-9381"
+          }
+        ],
+        "modifiers": [
+          {
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "5074-7dd4-e180-ad9c",
+                "shared": true,
+                "includeChildSelections": false,
+                "childName": "Las Vegas Command Carrier"
+              },
+              {
+                "type": "instanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "self",
+                "childId": "header",
+                "shared": true,
+                "childName": "header"
+              },
+              {
+                "type": "equalTo",
+                "value": 0,
+                "field": "selections",
+                "scope": "force",
+                "childId": "8eb8-9887-6480-9a59",
+                "shared": true,
+                "includeChildSelections": true,
+                "childName": "Unique ships already in fleet"
+              }
+            ],
+            "type": "set",
+            "value": true,
+            "field": "hidden"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "59eb-18dc-99c7-0e88",
+            "includeChildSelections": false
+          }
+        ],
+        "type": "unit",
+        "import": true,
+        "name": "Frances Mendoza - Flying Dutchman Heavy Cruiser",
+        "hidden": false,
+        "id": "5074-7dd4-e180-ad9c"
+      },
+      {
+        "categoryLinks": [
+          {
+            "targetId": "default-category",
             "id": "bb36-aa3b-0a0c-cb1c",
             "primary": false,
             "name": "Group"
@@ -18513,6 +18737,14 @@
       },
       {
         "import": true,
+        "name": "Busan Supercruiser",
+        "hidden": false,
+        "id": "468f-0a77-6e00-b6a3",
+        "targetId": "3480-ea64-5985-f53a",
+        "type": "selectionEntry"
+      },
+      {
+        "import": true,
         "name": "Yokohama Supercruiser",
         "hidden": false,
         "id": "943a-6467-cd46-b328",
@@ -18521,10 +18753,10 @@
       },
       {
         "import": true,
-        "name": "Busan Supercruiser",
+        "name": "Frances Mendoza - Flying Dutchman Heavy Cruiser",
         "hidden": false,
-        "id": "468f-0a77-6e00-b6a3",
-        "targetId": "3480-ea64-5985-f53a",
+        "id": "4067-9608-f9ed-ac69",
+        "targetId": "5074-7dd4-e180-ad9c",
         "type": "selectionEntry"
       },
       {
