@@ -9,7 +9,56 @@
       {
         "name": "Admirals",
         "id": "fb8b-57b3-d46c-d679",
-        "hidden": false
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "5981-16e9-e835-06d1"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "5981-16e9-e835-06d1",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "53c3-afc0-63ef-413a",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true
+              },
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "9d6f-26b0-7969-496b",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true
+              },
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "6e44-cb75-e25f-8b24",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       },
       {
         "constraints": [
@@ -329,7 +378,18 @@
       {
         "name": "Space Stations",
         "id": "5ca8-89b2-52c6-d394",
-        "hidden": false
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "d88c-dc9b-1bb3-4c11",
+            "includeChildSelections": false
+          }
+        ]
       },
       {
         "name": "Reference",
@@ -397,55 +457,6 @@
             "targetId": "8a9e-8399-ae64-5be9"
           },
           {
-            "constraints": [
-              {
-                "type": "max",
-                "value": 0,
-                "field": "selections",
-                "scope": "force",
-                "shared": true,
-                "id": "5981-16e9-e835-06d1"
-              }
-            ],
-            "modifiers": [
-              {
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "roster",
-                    "childId": "53c3-afc0-63ef-413a",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true
-                  },
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "roster",
-                    "childId": "9d6f-26b0-7969-496b",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true
-                  },
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "roster",
-                    "childId": "6e44-cb75-e25f-8b24",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true
-                  }
-                ],
-                "type": "increment",
-                "value": 1,
-                "field": "5981-16e9-e835-06d1"
-              }
-            ],
             "name": "Admirals",
             "hidden": false,
             "id": "01e1-b327-59c7-0a0b",
@@ -488,17 +499,6 @@
             "targetId": "8c2b-ea4d-8bea-c6a2"
           },
           {
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "d88c-dc9b-1bb3-4c11",
-                "includeChildSelections": false
-              }
-            ],
             "name": "Space Stations",
             "hidden": false,
             "id": "838d-d872-d190-a1d5",
