@@ -103,7 +103,7 @@
                 "childId": "3fda-65f2-6cc3-ee33",
                 "shared": true,
                 "includeChildSelections": true,
-                "includeChildForces": true
+                "includeChildForces": false
               }
             ],
             "type": "set",
@@ -120,7 +120,7 @@
                 "childId": "c6ef-6271-e246-47a8",
                 "shared": true,
                 "includeChildSelections": true,
-                "includeChildForces": true
+                "includeChildForces": false
               }
             ],
             "type": "set",
@@ -137,6 +137,9 @@
                 "field": "944d-d5c8-c46e-76c6"
               },
               {
+                "type": "increment",
+                "value": 4,
+                "field": "944d-d5c8-c46e-76c6",
                 "repeats": [
                   {
                     "value": 1000,
@@ -148,10 +151,7 @@
                     "roundUp": true,
                     "percentValue": false
                   }
-                ],
-                "type": "increment",
-                "value": 4,
-                "field": "944d-d5c8-c46e-76c6"
+                ]
               }
             ],
             "conditions": [
@@ -163,7 +163,7 @@
                 "childId": "d410-4aa8-c469-064b",
                 "shared": true,
                 "includeChildSelections": true,
-                "includeChildForces": true
+                "includeChildForces": false
               }
             ],
             "type": "and"
@@ -184,7 +184,7 @@
                 "childId": "3fda-65f2-6cc3-ee33",
                 "shared": true,
                 "includeChildSelections": true,
-                "includeChildForces": true
+                "includeChildForces": false
               }
             ],
             "type": "set",
@@ -201,7 +201,7 @@
                 "childId": "c6ef-6271-e246-47a8",
                 "shared": true,
                 "includeChildSelections": true,
-                "includeChildForces": true
+                "includeChildForces": false
               }
             ],
             "type": "set",
@@ -218,7 +218,7 @@
                 "childId": "d410-4aa8-c469-064b",
                 "shared": true,
                 "includeChildSelections": true,
-                "includeChildForces": true
+                "includeChildForces": false
               }
             ],
             "type": "set",
@@ -428,7 +428,7 @@
             "shared": true,
             "id": "09c2-95e9-8f84-d427",
             "includeChildSelections": true,
-            "includeChildForces": true
+            "includeChildForces": false
           }
         ],
         "name": "Hero",
