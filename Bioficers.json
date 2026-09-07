@@ -9,7 +9,7 @@
     "gameSystemRevision": 1,
     "library": false,
     "page": "",
-    "revision": 44,
+    "revision": 46,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -159,18 +159,6 @@
         "name": "Gravitational Lensing",
         "id": "2fcc-32b0-e2ea-3d0d",
         "description": "Once per round, when determining targets for a friendly ship within 8” of this ship, you may treat one of its weapons as having an Arc of F/S instead of its normal Arcs for that attack.",
-        "hidden": false
-      },
-      {
-        "name": "Scythes",
-        "id": "da6d-9de5-99cb-d405",
-        "description": "This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.",
-        "hidden": false
-      },
-      {
-        "name": "Godray Lightvice",
-        "id": "8590-da53-d799-e5d8",
-        "description": "This weapon's Bombardment profile may target Dropsites within scan range as if it did not have the Close Action special rule. If either of this weapon's profiles target a Dropsite containing a friendly Bioficer Deployable Feature, friendly Battalions assigned to that Feature ignore Collateral Damage due to this weapon.",
         "hidden": false
       },
       {
@@ -527,7 +515,7 @@
                 "id": "76f8-bcb3-bf06-1e88",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 2,
+                "sortIndex": 4,
                 "targetId": "00d8-9dd8-8af4-2de3",
                 "type": "selectionEntry"
               },
@@ -536,7 +524,7 @@
                 "id": "4cd1-7b47-2c4f-bfe5",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 5,
                 "targetId": "0c49-3760-f6a3-3887",
                 "type": "selectionEntry"
               },
@@ -545,11 +533,11 @@
                 "id": "5cac-3119-c997-de01",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
+                "sortIndex": 2,
                 "targetId": "c7b2-9005-b66e-042f",
                 "type": "selectionEntry"
               },
-              {"name": "Scythes", "id": "af8f-99cc-33ff-c847", "hidden": false, "import": true, "sortIndex": 1, "targetId": "41e6-babb-2487-3b35", "type": "selectionEntry"}
+              {"name": "Scythes", "id": "af8f-99cc-33ff-c847", "hidden": false, "import": true, "sortIndex": 3, "targetId": "41e6-babb-2487-3b35", "type": "selectionEntry"}
             ],
             "infoLinks": [
               {"name": "Marines-X", "id": "860c-9e9d-7e1d-6cc8", "hidden": false, "targetId": "93f3-7932-b233-4d38", "type": "rule"},
@@ -2204,8 +2192,16 @@
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 152}],
             "entryLinks": [
-              {"name": "Hyper Lightvice", "id": "466f-8562-0213-ebe6", "hidden": false, "import": true, "targetId": "f7df-7ebb-ffb8-301c", "type": "selectionEntry"},
-              {"name": "Torpedo", "id": "c7da-9204-3b13-3e7c", "hidden": false, "import": true, "targetId": "2a03-3fe4-51e0-5a5a", "type": "selectionEntry"}
+              {
+                "name": "Hyper Lightvice",
+                "id": "466f-8562-0213-ebe6",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "f7df-7ebb-ffb8-301c",
+                "type": "selectionEntry"
+              },
+              {"name": "Torpedo", "id": "c7da-9204-3b13-3e7c", "hidden": false, "import": true, "sortIndex": 2, "targetId": "2a03-3fe4-51e0-5a5a", "type": "selectionEntry"}
             ],
             "infoLinks": [{"name": "Feature Carrier", "id": "7914-37df-a6e1-4a63", "hidden": false, "targetId": "272a-ad08-2463-55fb", "type": "rule"}],
             "profiles": [
@@ -5528,8 +5524,7 @@
           {"name": "Bombardment", "id": "9b33-fcc6-d73a-8b50", "hidden": false, "targetId": "858c-a2ff-ed65-3e47", "type": "rule"},
           {"name": "Close Action", "id": "2ccb-1089-db0f-154a", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
           {"name": "Focused", "id": "102a-e3f7-afc7-49d5", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
-          {"name": "Scald-X", "id": "432b-a3bd-0b81-d7ba", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"},
-          {"name": "Godray Lightvice", "id": "64ad-b8b2-1ea0-3531", "hidden": false, "targetId": "8590-da53-d799-e5d8", "type": "rule"}
+          {"name": "Scald-X", "id": "432b-a3bd-0b81-d7ba", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}
         ],
         "profiles": [
           {
@@ -5561,6 +5556,14 @@
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Alt-1, Bloom-1, Bombardment, Close Action, Focused, Scald-1", "typeId": "1e8b-4801-6eb9-f278"}
             ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Godray Lightvice",
+            "id": "d32e-2024-1c69-15e4",
+            "description": "This weapon's Bombardment profile may target Dropsites within scan range as if it did not have the Close Action special rule. If either of this weapon's profiles target a Dropsite containing a friendly Bioficer Deployable Feature, friendly Battalions assigned to that Feature ignore Collateral Damage due to this weapon.",
+            "hidden": false
           }
         ]
       },

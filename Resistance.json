@@ -9,13 +9,13 @@
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 5,
     "library": false,
-    "revision": 36,
+    "revision": 37,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
       {"name": "Misc", "id": "f86a-4bed-c096-781e", "targetId": "1b65-4911-bd01-73aa", "type": "catalogue"},
       {"name": "Fleet Space Stations", "id": "be4c-2910-f23a-8de4", "targetId": "7e9b-b6ba-2178-6eb5", "type": "catalogue"},
-      {"name": "Civilian", "id": "8790-3181-d8e1-06fb", "importRootEntries": false, "targetId": "903e-8fb9-3fe2-4460", "type": "catalogue"}
+      {"name": "Civilian", "id": "8790-3181-d8e1-06fb", "targetId": "903e-8fb9-3fe2-4460", "type": "catalogue"}
     ],
     "entryLinks": [
       {"name": "Lvl 1: Engineer", "id": "273c-1dc2-0683-3a07", "hidden": false, "import": true, "targetId": "99a8-0b20-997d-f628", "type": "selectionEntry"},
@@ -211,12 +211,6 @@
         "hidden": false
       },
       {
-        "name": "VX Bomb",
-        "id": "4bf8-0d06-02c2-f60b",
-        "description": "This weapon gains the Scald-2 special rule when targeting Cities. If this weapon does damage to a City, remove all Battalions (friendly and enemy) from that City and any Features (including deployed Features) in the same City.",
-        "hidden": false
-      },
-      {
         "name": "SWACS",
         "id": "74c2-9532-b423-0407",
         "description": "Enemy ships within 12\" of this ship may be targeted by friendly ships firing Close Action weapons using the firing ship's normal Weapon Range (Scan + Sig).",
@@ -250,12 +244,6 @@
         "name": "Explosive",
         "id": "0208-e00f-13ea-f5b3",
         "description": "When this ship is destroyed, it explodes with a range of 3” and rolls 1D3 on the Explosion Effect table.",
-        "hidden": false
-      },
-      {
-        "name": "Spinal Mass Annihilator",
-        "id": "1a44-54c0-a125-435a",
-        "description": "If damage from this weapon or any Crippling Effect it would cause would destroy a ship, remove that ship from the game without rolling for Explosion.",
         "hidden": false
       },
       {
@@ -4167,24 +4155,7 @@
               {"id": "6954-d18f-0d2a-1a26", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 85}],
-            "entryLinks": [
-              {
-                "name": "Explosive Detonation",
-                "id": "9aa9-7f6f-aa7f-d45c",
-                "hidden": false,
-                "import": true,
-                "targetId": "f5af-d5b9-bd29-4e90",
-                "type": "selectionEntry",
-                "rules": [
-                  {
-                    "name": "Explosive Detonation",
-                    "id": "4f23-0c5b-9872-c00e",
-                    "description": "When attacking with this weapon, skip the assign weapons to targets step and proceed to roll to hit instead. When rolling to hit with this weapon, for each result of a 6 (including rolls from this rule), roll an additional dice. After rolling to hit, assign hits as equally as possible to each other Ship and Space Station on the same Orbital Layer within 6” until no hits remain. Then continue the attack sequence as normal.",
-                    "hidden": false
-                  }
-                ]
-              }
-            ],
+            "entryLinks": [{"name": "Explosive Detonation", "id": "9aa9-7f6f-aa7f-d45c", "hidden": false, "import": true, "targetId": "f5af-d5b9-bd29-4e90", "type": "selectionEntry"}],
             "infoLinks": [
               {"name": "Hero", "id": "d774-0f36-eec0-4bb2", "hidden": false, "targetId": "f945-e19c-c8bb-1c6a", "type": "rule"},
               {"name": "Unique", "id": "5ff2-04bf-ca5a-81b9", "hidden": false, "targetId": "3f45-7047-464a-3be4", "type": "rule"},
@@ -7400,8 +7371,7 @@
           {"name": "Crippling-X", "id": "53e2-da76-6aea-5763", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"},
           {"name": "Critical-X", "id": "692e-9b55-6387-e32e", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
           {"name": "Focused", "id": "0e36-26c7-5dcd-e8a4", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
-          {"name": "High Power", "id": "7614-c1d0-00d0-39b4", "hidden": false, "targetId": "4a8c-aae4-c959-2437", "type": "rule"},
-          {"name": "Spinal Mass Annihilator", "id": "6322-3be0-ad53-4af6", "hidden": false, "targetId": "1a44-54c0-a125-435a", "type": "rule"}
+          {"name": "High Power", "id": "7614-c1d0-00d0-39b4", "hidden": false, "targetId": "4a8c-aae4-c959-2437", "type": "rule"}
         ],
         "profiles": [
           {
@@ -7418,6 +7388,14 @@
               {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Bloom-1, Crippling, Critical-2, Focused, High Power", "typeId": "1e8b-4801-6eb9-f278"}
             ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Spinal Mass Annihilator",
+            "id": "e2e9-e39b-5ae7-b746",
+            "description": "If damage from this weapon or any Crippling Effect it would cause would destroy a ship, remove that ship from the game without rolling for Explosion.",
+            "hidden": false
           }
         ]
       },
@@ -7471,7 +7449,6 @@
         "infoLinks": [
           {"name": "Bombardment", "id": "2693-294f-ff87-d524", "hidden": false, "targetId": "858c-a2ff-ed65-3e47", "type": "rule"},
           {"name": "Limited-X", "id": "4f32-bbbc-e738-074c", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"},
-          {"name": "VX Bomb", "id": "7428-5af6-eebd-0d76", "hidden": false, "targetId": "4bf8-0d06-02c2-f60b", "type": "rule"},
           {"name": "Scald-X", "id": "0991-557c-d4e1-36db", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}
         ],
         "profiles": [
@@ -7489,6 +7466,14 @@
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Bombardment, Limited-3", "typeId": "1e8b-4801-6eb9-f278"}
             ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "VX Bomb",
+            "id": "99b5-a889-38b8-5f97",
+            "description": "This weapon gains the Scald-2 special rule when targeting Cities. If this weapon does damage to a City, remove all Battalions (friendly and enemy) from that City and any Features (including deployed Features) in the same City.",
+            "hidden": false
           }
         ]
       },
@@ -7592,6 +7577,14 @@
               {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Critical-1", "typeId": "1e8b-4801-6eb9-f278"}
             ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Explosive Detonation",
+            "id": "4f23-0c5b-9872-c00e",
+            "description": "When attacking with this weapon, skip the assign weapons to targets step and proceed to roll to hit instead. When rolling to hit with this weapon, for each result of a 6 (including rolls from this rule), roll an additional dice. After rolling to hit, assign hits as equally as possible to each other Ship and Space Station on the same Orbital Layer within 6” until no hits remain. Then continue the attack sequence as normal.",
+            "hidden": false
           }
         ]
       },
