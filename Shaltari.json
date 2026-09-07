@@ -803,10 +803,7 @@
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 45}],
             "entryLinks": [{"name": "Abilities", "id": "d6ec-e405-4cfc-bc75", "hidden": false, "import": true, "targetId": "120f-5b56-e0cb-e3f9", "type": "selectionEntryGroup"}],
-            "infoLinks": [
-              {"name": "Impel-X", "id": "f23a-bddd-cfac-e61c", "hidden": false, "targetId": "9944-ada1-19c8-2d06", "type": "rule"},
-              {"name": "Vectored", "id": "e079-6cfd-74a7-a999", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"}
-            ],
+            "infoLinks": [{"name": "Vectored", "id": "e079-6cfd-74a7-a999", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"}],
             "profiles": [
               {
                 "name": "Seth",
@@ -948,6 +945,7 @@
                 "modifiers": [{"field": "b1a2-bca3-06bc-a383", "type": "set", "value": 2}]
               }
             ],
+            "infoLinks": [{"name": "Vectored", "id": "0e89-c700-6598-9f0b", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"}],
             "profiles": [
               {
                 "name": "Twins of Aaru",

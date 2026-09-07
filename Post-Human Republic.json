@@ -8681,15 +8681,16 @@
             ]
           },
           {
-            "name": "Ship of the Line",
+            "name": "Ship Of The Line",
             "id": "90b6-2f28-b038-77af",
             "hidden": false,
             "import": true,
             "type": "upgrade",
             "constraints": [{"id": "d7fe-12e2-ffc7-70fd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "infoLinks": [{"name": "Fusillade-X", "id": "01da-21d9-7af4-c5e0", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"}],
             "profiles": [
               {
-                "name": "Ship of the Line",
+                "name": "Ship Of The Line",
                 "id": "cf96-2a5c-d012-409f",
                 "hidden": false,
                 "typeId": "705b-98a3-a21d-7118",
