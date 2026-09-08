@@ -9,7 +9,7 @@
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 38,
+    "revision": 39,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -221,36 +221,12 @@
     "publications": [{"name": "UCM Combined Fleet Stats (260828)", "id": "9813-8e60-542d-9381", "hidden": false, "shortName": "UCM Stats (260828)"}],
     "sharedRules": [
       {
-        "name": "Stressful Manoeuvre",
-        "id": "ad61-5ace-2bb6-9477",
-        "description": "When firing its Cobra Heavy Laser Pair, this Admiral’s Flagship may suffer 1 point of damage to change the Arc of its Cobra Heavy Laser Pair to F.",
-        "hidden": false
-      },
-      {
         "name": "UCMF Battlenet",
         "id": "6f5b-bd82-2aa9-c900",
         "description": "An admiral assigned to this ship gains the following Command Abilities:\nTelemetry Link (2AP): When you activate another friendly Group in Orbit, that Group increases its total movement (after orders) by 4” this round.\nOrder to Fire (2AP): When you activate another friendly Group in Orbit, pick one of the following options:\n• While that Group is on the General Quarters, Course Change, or Damage Control orders, each Ship may attack with an additional weapon.\n• While that Group is on the General Quarters or Weapons Free orders, you may attack with a single allowed Weapon System before turning and moving any Ships in that Group. That Weapon System cannot be used for the rest of the Group’s activation.",
         "hidden": false,
         "page": 45,
         "publicationId": "45b0-3e3b-e83d-fd70"
-      },
-      {
-        "name": "Jink",
-        "id": "8008-c897-2756-2472",
-        "description": "At the start or end of this Flagship’s movement, you may place it up to 2” away on a line drawn directly through the centre of both side arcs. If this Flagship is on the Max Thrust Special Order, you may place it 4” along that line instead.",
-        "hidden": false
-      },
-      {
-        "name": "Spearhead",
-        "id": "8612-0822-de10-5e03",
-        "description": "While this Flagship is within 12” of your opponent’s deployment zone, you may re-roll its failed Backup saves.",
-        "hidden": false
-      },
-      {
-        "name": "Fighter Command",
-        "id": "83c4-4e63-ad54-d9c7",
-        "description": "Fighters, Bombers, & Heavy Bombers launched from this ship may be placed up to 8” away instead of 6”.",
-        "hidden": false
       },
       {
         "name": "Stealth Drop",
@@ -543,7 +519,7 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "5", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "5", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Fighter Command", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Master Tactician",
@@ -560,6 +536,14 @@
                   }
                 ]
               }
+            ],
+            "rules": [
+              {
+                "name": "Fighter Command",
+                "id": "83c4-4e63-ad54-d9c7",
+                "description": "Fighters, Bombers, & Heavy Bombers launched from this ship may be placed up to 8” away instead of 6”.",
+                "hidden": false
+              }
             ]
           },
           {
@@ -569,6 +553,7 @@
             "import": true,
             "page": 57,
             "publicationId": "9813-8e60-542d-9381",
+            "sortIndex": 2,
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "ed7e-59ea-3e9c-5d5b", "primary": false, "targetId": "default-category"},
@@ -638,8 +623,7 @@
             "infoLinks": [
               {"name": "Aegis-X", "id": "c2df-fb73-f6ba-8434", "hidden": false, "targetId": "9cd1-441e-8ee8-7f13", "type": "rule"},
               {"name": "Command Ship-X", "id": "7af9-042c-e149-f030", "hidden": false, "targetId": "af88-13e6-5004-d00a", "type": "rule"},
-              {"name": "Reinforced Armour", "id": "fac2-99d0-3fe0-e89b", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"},
-              {"name": "Fighter Command", "id": "65f0-d94f-bf1b-14a1", "hidden": false, "targetId": "83c4-4e63-ad54-d9c7", "type": "rule"}
+              {"name": "Reinforced Armour", "id": "fac2-99d0-3fe0-e89b", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"}
             ],
             "profiles": [
               {
@@ -659,7 +643,7 @@
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Aegis-6, Command Ship-2, Reinforced Armour, Fighter Command", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Aegis-6, Command Ship-2, Reinforced Armour", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -779,7 +763,7 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "4", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "4", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Spearhead", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Ballistic Prediction",
@@ -796,6 +780,14 @@
                   }
                 ]
               }
+            ],
+            "rules": [
+              {
+                "name": "Spearhead",
+                "id": "8612-0822-de10-5e03",
+                "description": "While this Flagship is within 12” of your opponent’s deployment zone, you may re-roll its failed Backup saves.",
+                "hidden": false
+              }
             ]
           },
           {
@@ -805,6 +797,7 @@
             "import": true,
             "page": 46,
             "publicationId": "9813-8e60-542d-9381",
+            "sortIndex": 2,
             "type": "model",
             "categoryLinks": [
               {"name": "Heavy Groups", "id": "f364-0ee1-6f8f-acb5", "primary": false, "targetId": "8d99-053d-ffeb-98c5"},
@@ -843,9 +836,16 @@
                 "targetId": "b67c-66bb-bb24-0ffc",
                 "type": "selectionEntry"
               },
-              {"name": "Drive Refit", "id": "9fc9-b555-9abb-3c1e", "hidden": false, "import": true, "targetId": "282b-d9a0-5864-b290", "type": "selectionEntry"}
+              {
+                "name": "Drive Refit",
+                "id": "9fc9-b555-9abb-3c1e",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "282b-d9a0-5864-b290",
+                "type": "selectionEntry"
+              }
             ],
-            "infoLinks": [{"name": "Spearhead", "id": "6f06-1aa1-5eaa-7d31", "hidden": false, "targetId": "8612-0822-de10-5e03", "type": "rule"}],
             "profiles": [
               {
                 "name": "New York",
@@ -864,7 +864,7 @@
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Spearhead", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "-", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -953,7 +953,7 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "3", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "3", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Jink", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Laser Bombardment",
@@ -970,6 +970,14 @@
                   }
                 ]
               }
+            ],
+            "rules": [
+              {
+                "name": "Jink",
+                "id": "8008-c897-2756-2472",
+                "description": "At the start or end of this Flagship’s movement, you may place it up to 2” away on a line drawn directly through the centre of both side arcs. If this Flagship is on the Max Thrust Special Order, you may place it 4” along that line instead.",
+                "hidden": false
+              }
             ]
           },
           {
@@ -979,6 +987,7 @@
             "import": true,
             "page": 44,
             "publicationId": "9813-8e60-542d-9381",
+            "sortIndex": 2,
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "270a-b509-fe41-214c", "primary": false, "targetId": "default-category"},
@@ -1009,10 +1018,7 @@
                 "type": "selectionEntry"
               }
             ],
-            "infoLinks": [
-              {"name": "Vanguard-X\"", "id": "db08-4d1c-97b3-20cf", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"},
-              {"name": "Jink", "id": "be93-7ad9-bbd9-b026", "hidden": false, "targetId": "8008-c897-2756-2472", "type": "rule"}
-            ],
+            "infoLinks": [{"name": "Vanguard-X\"", "id": "db08-4d1c-97b3-20cf", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"}],
             "profiles": [
               {
                 "name": "Perth",
@@ -1031,7 +1037,7 @@
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Vanguard-6\", Jink", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -1073,7 +1079,7 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "2", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "2", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Stressful Manoeuvre", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Close Quarter Battle",
@@ -1089,6 +1095,14 @@
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Stressful Manoeuvre",
+                "id": "ad61-5ace-2bb6-9477",
+                "description": "When firing its Cobra Heavy Laser Pair, this Admiral’s Flagship may suffer 1 point of damage to change the Arc of its Cobra Heavy Laser Pair to F.",
+                "hidden": false
               }
             ]
           },
@@ -1130,7 +1144,6 @@
                 "type": "selectionEntry"
               }
             ],
-            "infoLinks": [{"name": "Stressful Manoeuvre", "id": "353e-70b5-af61-d8d8", "hidden": false, "targetId": "ad61-5ace-2bb6-9477", "type": "rule"}],
             "profiles": [
               {
                 "name": "Warsaw",
@@ -1149,7 +1162,7 @@
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Stressful Manoeuvre", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "-", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]

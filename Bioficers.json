@@ -190,12 +190,6 @@
         "id": "272a-ad08-2463-55fb",
         "description": "At the start of the game, before players deploy, choose from the Gravitational Lens or Ghost Orb Tower Deployable Feature. This Ship starts the game carrying the chosen Deployable Feature.",
         "hidden": false
-      },
-      {
-        "name": "One Upsmanship",
-        "id": "2a11-dd04-cc14-708b",
-        "description": "If this Admiral is your highest level Admiral, whenever your opponent uses an Ability, roll a dice. On a 4+, you gain 1AP.",
-        "hidden": false
       }
     ],
     "sharedSelectionEntries": [
@@ -489,6 +483,7 @@
             "import": true,
             "page": 55,
             "publicationId": "c835-461f-ea00-a841",
+            "sortIndex": 2,
             "type": "model",
             "categoryLinks": [
               {"name": "Colossal Ship", "id": "0910-ef42-99f7-3236", "hidden": false, "primary": true, "targetId": "6e44-cb75-e25f-8b24"},
@@ -789,6 +784,7 @@
             "import": true,
             "page": 39,
             "publicationId": "c835-461f-ea00-a841",
+            "sortIndex": 2,
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "1014-3611-42b3-f040", "primary": false, "targetId": "default-category"},
@@ -879,6 +875,14 @@
                   }
                 ]
               }
+            ],
+            "rules": [
+              {
+                "name": "One Upsmanship",
+                "id": "2a11-dd04-cc14-708b",
+                "description": "If this Admiral is your highest level Admiral, whenever your opponent uses an Ability, roll a dice. On a 4+, you gain 1AP.",
+                "hidden": false
+              }
             ]
           },
           {
@@ -911,10 +915,7 @@
               },
               {"name": "Thermator", "id": "8be8-3ded-42e1-e207", "hidden": false, "import": true, "sortIndex": 2, "targetId": "0c95-f250-f157-3f91", "type": "selectionEntry"}
             ],
-            "infoLinks": [
-              {"name": "Porter S/L-X", "id": "55bf-87ec-cb2a-7672", "hidden": false, "targetId": "11cb-e973-8a2c-f0f6", "type": "rule"},
-              {"name": "One Upsmanship", "id": "fe56-8b90-f8ea-c658", "hidden": false, "targetId": "2a11-dd04-cc14-708b", "type": "rule"}
-            ],
+            "infoLinks": [{"name": "Porter S/L-X", "id": "55bf-87ec-cb2a-7672", "hidden": false, "targetId": "11cb-e973-8a2c-f0f6", "type": "rule"}],
             "profiles": [
               {
                 "name": "Catastrophe",

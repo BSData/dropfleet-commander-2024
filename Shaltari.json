@@ -9,7 +9,7 @@
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 3,
     "library": false,
-    "revision": 32,
+    "revision": 33,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -171,27 +171,9 @@
     "publications": [{"name": "Shaltari Combined Fleet Stats (260327)", "id": "fbb6-a765-5882-6bcb", "hidden": false, "shortName": "Shaltari Stats (260327)"}],
     "sharedRules": [
       {
-        "name": "Radiation Aura",
-        "id": "9414-fec0-adb3-c786",
-        "description": "At the end of this Ship’s activation, each enemy Group within 4” suffers D3 Core hits.",
-        "hidden": false
-      },
-      {
-        "name": "True Disintegration",
-        "id": "26e6-abd4-740e-1ba1",
-        "description": "When damage from this Flagship’s Disintegrator Battery is part of an attack that causes a Ship to be destroyed, instead of rolling for explosion, all Ships in explosion range suffer 1 damage.",
-        "hidden": false
-      },
-      {
         "name": "Ion Overload",
         "id": "0278-c899-4a68-0dac",
         "description": "While this ship is on Weapons Free, it may use its Ion Aura and Ion Storm as if it did not have the Alt-1 special rule.",
-        "hidden": false
-      },
-      {
-        "name": "Gravitational Draw",
-        "id": "c143-3e3f-e516-3fe5",
-        "description": "Whenever this Flagship’s Gravity Coils would cause a ship to turn due to the Impel rule, gain 1AP.",
         "hidden": false
       },
       {
@@ -496,7 +478,7 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "4", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "4", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Radiation Aura", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Radioactivity",
@@ -513,6 +495,14 @@
                   }
                 ]
               }
+            ],
+            "rules": [
+              {
+                "name": "Radiation Aura",
+                "id": "9414-fec0-adb3-c786",
+                "description": "At the end of this Ship’s activation, each enemy Group within 4” suffers D3 Core hits.",
+                "hidden": false
+              }
             ]
           },
           {
@@ -522,6 +512,7 @@
             "import": true,
             "page": 51,
             "publicationId": "fbb6-a765-5882-6bcb",
+            "sortIndex": 2,
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "4355-9154-27a1-9c58", "primary": false, "targetId": "default-category"},
@@ -573,8 +564,7 @@
             ],
             "infoLinks": [
               {"name": "Mothership", "id": "473a-52d4-633a-1a4e", "hidden": false, "targetId": "928d-4467-6cc7-1771", "type": "rule"},
-              {"name": "Shield-X", "id": "e98f-aa70-c7b2-5bf3", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
-              {"name": "Radiation Aura", "id": "c4b8-bcf0-1bce-6b24", "hidden": false, "targetId": "9414-fec0-adb3-c786", "type": "rule"}
+              {"name": "Shield-X", "id": "e98f-aa70-c7b2-5bf3", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"}
             ],
             "profiles": [
               {
@@ -594,7 +584,7 @@
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Mothership, Shield-3+, Radiation Aura", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Mothership, Shield-3+", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -685,7 +675,7 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "3", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "3", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "True Disintegration", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Ancient Teleportation Node",
@@ -701,6 +691,14 @@
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "True Disintegration",
+                "id": "26e6-abd4-740e-1ba1",
+                "description": "When damage from this Flagship’s Disintegrator Battery is part of an attack that causes a Ship to be destroyed, instead of rolling for explosion, all Ships in explosion range suffer 1 damage.",
+                "hidden": false
               }
             ]
           },
@@ -746,8 +744,7 @@
             ],
             "infoLinks": [
               {"name": "Mothership", "id": "6de2-513f-96f1-c6fc", "hidden": false, "targetId": "928d-4467-6cc7-1771", "type": "rule"},
-              {"name": "Shield-X", "id": "2427-12b7-1372-d2e5", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
-              {"name": "True Disintegration", "id": "2436-61f0-06d8-2ac7", "hidden": false, "targetId": "26e6-abd4-740e-1ba1", "type": "rule"}
+              {"name": "Shield-X", "id": "2427-12b7-1372-d2e5", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"}
             ],
             "profiles": [
               {
@@ -767,7 +764,7 @@
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Mothership, Shield-4+, True Disintegration", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Mothership, Shield-4+", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -811,7 +808,7 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "2", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "2", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Gravitational Draw", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Master of Gravity",
@@ -842,6 +839,14 @@
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Gravitational Draw",
+                "id": "c143-3e3f-e516-3fe5",
+                "description": "Whenever this Flagship’s Gravity Coils would cause a ship to turn due to the Impel rule, gain 1AP.",
+                "hidden": false
               }
             ]
           },
@@ -878,8 +883,7 @@
             ],
             "infoLinks": [
               {"name": "Shield-X", "id": "6127-6cac-a4ec-fad9", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
-              {"name": "Vanguard-X\"", "id": "02ff-0aea-d49c-75aa", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"},
-              {"name": "Gravitational Draw", "id": "d38f-7f85-e2a2-c469", "hidden": false, "targetId": "c143-3e3f-e516-3fe5", "type": "rule"}
+              {"name": "Vanguard-X\"", "id": "02ff-0aea-d49c-75aa", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"}
             ],
             "profiles": [
               {
@@ -899,7 +903,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Shield-4+, Vanguard-6\", Gravitational Draw", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Shield-4+, Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]

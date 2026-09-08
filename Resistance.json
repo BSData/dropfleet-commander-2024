@@ -187,12 +187,6 @@
     "publications": [{"name": "Resistance Combined Fleet Stats (260731)", "id": "7fb8-995d-767a-783d", "hidden": false, "shortName": "Resistance Stats (260731)"}],
     "sharedRules": [
       {
-        "name": "Extensive Reactor Modifications",
-        "id": "59dc-a9b1-fa75-fa9a",
-        "description": "If Hull points lost due to its Vent Cannon Batteries’ Overcharge rule would cause this Ship to be destroyed, it rolls 3D3 for its explosion and that explosion also affects Ships in other Orbital Layers.",
-        "hidden": false
-      },
-      {
         "name": "Scanning Systems",
         "id": "0a7f-cfc9-e2e8-18e4",
         "description": "When this Ship uses its Detector special rule, you may place an additional two Spikes on a different enemy Group in line of sight.",
@@ -734,7 +728,10 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "4", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [
+                  {"name": "Level", "$text": "4", "typeId": "391a-b7ae-831e-4cf0"},
+                  {"name": "Special", "$text": "Extensive Reactor Modifications", "typeId": "2a6e-dc3c-846c-d4c2"}
+                ]
               },
               {
                 "name": "Vent Cannon Mastery",
@@ -750,6 +747,14 @@
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Extensive Reactor Modifications",
+                "id": "59dc-a9b1-fa75-fa9a",
+                "description": "If Hull points lost due to its Vent Cannon Batteries’ Overcharge rule would cause this Ship to be destroyed, it rolls 3D3 for its explosion and that explosion also affects Ships in other Orbital Layers.",
+                "hidden": false
               }
             ]
           },
@@ -793,7 +798,6 @@
               },
               {"name": "Torpedo", "id": "a6c7-fe61-b64b-1a00", "hidden": false, "import": true, "sortIndex": 3, "targetId": "c923-a4c4-7dac-a3f1", "type": "selectionEntry"}
             ],
-            "infoLinks": [{"name": "Extensive Reactor Modifications", "id": "4709-87c1-75be-049f", "hidden": false, "targetId": "59dc-a9b1-fa75-fa9a", "type": "rule"}],
             "modifiers": [
               {"affects": "self.entries.profiles.Ship", "field": "d821-4294-3117-e8a6", "type": "set", "value": "6\""},
               {"affects": "self.entries.profiles.Ship", "field": "fdf5-89b6-e62e-570f", "join": ", ", "type": "set", "value": "Extensive Reactor Modifications"},
@@ -1029,6 +1033,7 @@
             "hidden": false,
             "import": true,
             "publicationId": "7fb8-995d-767a-783d",
+            "sortIndex": 2,
             "type": "model",
             "categoryLinks": [
               {"name": "Medium Ship", "id": "aaf9-f7a0-82d3-bd34", "hidden": false, "primary": true, "targetId": "53c3-afc0-63ef-413a"},

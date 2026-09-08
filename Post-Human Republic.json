@@ -9,7 +9,7 @@
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 40,
+    "revision": 41,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -191,27 +191,9 @@
         "hidden": false
       },
       {
-        "name": "Cutting Power",
-        "id": "4307-771a-1d85-2af8",
-        "description": "If you attack with and do not Overcharge any of this Flagship’s Energy Glaive Batteries, they gain Reave-2 for their attacks this activation.",
-        "hidden": false
-      },
-      {
-        "name": "Self Repairing Armour Systems",
-        "id": "9a6b-935a-9e3f-1c05",
-        "description": "This Flagship cannot have its Energy Save reduced below a 5+.",
-        "hidden": false
-      },
-      {
         "name": "Advanced ECM Suite",
         "id": "309d-c322-d206-2dac",
         "description": "When a friendly Group (including this Ship’s Group) within 4\" of this Ship is attacked, you may have this Ship use its Advanced ECM Suite. If you do, after all weapons have been assigned, reduce the Lock of weapons belonging to one of the attacking Ships by 1 for the rest of the round. The attacking group must be on the same orbital layer as this ship. A Ship can be affected multiple times each round by this rule but each Ship with this rule can only use it once per round.",
-        "hidden": false
-      },
-      {
-        "name": "Cull the Weak",
-        "id": "cf3e-0b69-d6ca-7598",
-        "description": "Heavy Quad Battery (Flak) may only be used to attack Ships of L Tonnage.",
         "hidden": false
       },
       {
@@ -497,6 +479,7 @@
                 "modifiers": [{"field": "c6b3-9955-b0da-8cd3", "type": "set", "value": 2}]
               }
             ],
+            "infoLinks": [{"name": "Reave-X", "id": "47cd-46aa-89dc-cb27", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}],
             "profiles": [
               {
                 "name": "Gaius Chau",
@@ -504,7 +487,7 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "5", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "5", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Cutting Power", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Backup Systems Engaged",
@@ -520,6 +503,14 @@
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Cutting Power",
+                "id": "4307-771a-1d85-2af8",
+                "description": "If you attack with and do not Overcharge any of this Flagship’s Energy Glaive Batteries, they gain Reave-2 for their attacks this activation.",
+                "hidden": false
               }
             ]
           },
@@ -561,11 +552,7 @@
                 "type": "selectionEntry"
               }
             ],
-            "infoLinks": [
-              {"name": "Reinforced Armour", "id": "791e-8a9e-938d-e629", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"},
-              {"name": "Cutting Power", "id": "9c2c-3afd-1512-7a5e", "hidden": false, "targetId": "4307-771a-1d85-2af8", "type": "rule"},
-              {"name": "Reave-X", "id": "47cd-46aa-89dc-cb27", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
-            ],
+            "infoLinks": [{"name": "Reinforced Armour", "id": "791e-8a9e-938d-e629", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"}],
             "profiles": [
               {
                 "name": "Romulus",
@@ -584,7 +571,7 @@
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Reinforced Armour, Cutting Power", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Reinforced Armour", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -839,7 +826,7 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "2", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "2", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Cull the Weak", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Experimental Munitions",
@@ -855,6 +842,14 @@
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Cull the Weak",
+                "id": "cf3e-0b69-d6ca-7598",
+                "description": "Heavy Quad Battery (Flak) may only be used to attack Ships of L Tonnage.",
+                "hidden": false
               }
             ]
           },
@@ -879,10 +874,7 @@
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 140}],
             "entryLinks": [{"name": "Heavy Quad Battery", "id": "e140-727d-da60-6cea", "hidden": false, "import": true, "targetId": "7276-4155-59af-c39a", "type": "selectionEntry"}],
-            "infoLinks": [
-              {"name": "Vanguard-X\"", "id": "9559-3afd-ab5b-2607", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"},
-              {"name": "Cull the Weak", "id": "ea1d-0879-022f-2251", "hidden": false, "targetId": "cf3e-0b69-d6ca-7598", "type": "rule"}
-            ],
+            "infoLinks": [{"name": "Vanguard-X\"", "id": "9559-3afd-ab5b-2607", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"}],
             "profiles": [
               {
                 "name": "Pompeius",
@@ -901,7 +893,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Vanguard-4\", Cull the Weak", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Vanguard-4\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -991,7 +983,10 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "3", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [
+                  {"name": "Level", "$text": "3", "typeId": "391a-b7ae-831e-4cf0"},
+                  {"name": "Special", "$text": "Self Repairing Armour Systems", "typeId": "2a6e-dc3c-846c-d4c2"}
+                ]
               },
               {
                 "name": "Heavy Sniper",
@@ -1007,6 +1002,14 @@
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Self Repairing Armour Systems",
+                "id": "9a6b-935a-9e3f-1c05",
+                "description": "This Flagship cannot have its Energy Save reduced below a 5+.",
+                "hidden": false
               }
             ]
           },
@@ -1042,8 +1045,7 @@
             ],
             "infoLinks": [
               {"name": "Regenerate-X", "id": "58c3-ca07-6212-ca02", "hidden": false, "targetId": "df32-1b16-f0f9-7b85", "type": "rule"},
-              {"name": "Reinforced Armour", "id": "6702-6c99-82c6-f4a1", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"},
-              {"name": "Self Repairing Armour Systems", "id": "0717-4124-8b19-8eb7", "hidden": false, "targetId": "9a6b-935a-9e3f-1c05", "type": "rule"}
+              {"name": "Reinforced Armour", "id": "6702-6c99-82c6-f4a1", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"}
             ],
             "profiles": [
               {
@@ -1063,7 +1065,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Regenerate-2, Reinforced Armour, Self Repairing Armour Systems", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Regenerate-2, Reinforced Armour", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]

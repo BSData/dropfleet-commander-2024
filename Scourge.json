@@ -9,7 +9,7 @@
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
     "library": false,
-    "revision": 34,
+    "revision": 35,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
@@ -160,25 +160,6 @@
     ],
     "publications": [{"name": "Scourge Combined Fleet Stats (260626)", "id": "260d-362c-d403-80ae", "hidden": false, "shortName": "Scourge Stats (260626)"}],
     "sharedRules": [
-      {
-        "name": "Winged Bulwark",
-        "id": "aafc-3f0d-e8a5-6302",
-        "description": "Friendly Wings that activate within 14” of this Flagship may not move further than 14” away from this Flagship.\nThis Ship may launch Assets regardless of its order, keeping its Signature of 0” on Silent Running and additional turn on Course Change.",
-        "hidden": false
-      },
-      {"name": "Death Mistress", "id": "da80-c120-515a-4d23", "description": "Whenever an enemy group is destroyed, roll a dice. On a 4+ gain 1AP.", "hidden": false},
-      {
-        "name": "Savagery",
-        "id": "f477-7836-26bf-88d0",
-        "description": "When this Flagship becomes Crippled, it gains the Impetuous and Vectored special rules.",
-        "hidden": false
-      },
-      {
-        "name": "Doomed",
-        "id": "9480-f97c-1712-5fd2",
-        "description": "Whenever you capture an enemy Ship or an enemy Ship is destroyed due to the Fire Crippling Effect, gain 2AP.",
-        "hidden": false
-      },
       {
         "name": "Oculus Booster",
         "id": "1b05-5002-dd72-fef6",
@@ -480,7 +461,7 @@
                 "publicationId": "260d-362c-d403-80ae",
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "4", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "4", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Winged Bulwark", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Limitless Pestilence",
@@ -496,6 +477,14 @@
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Winged Bulwark",
+                "id": "aafc-3f0d-e8a5-6302",
+                "description": "Friendly Wings that activate within 14” of this Flagship may not move further than 14” away from this Flagship.\nThis Ship may launch Assets regardless of its order, keeping its Signature of 0” on Silent Running and additional turn on Course Change.",
+                "hidden": false
               }
             ]
           },
@@ -557,8 +546,7 @@
             ],
             "infoLinks": [
               {"name": "Cloak-X", "id": "f7e8-633d-e24f-2130", "hidden": false, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
-              {"name": "Stealth", "id": "076b-ac76-d12b-ee51", "hidden": false, "targetId": "9306-4cd5-b59e-5898", "type": "rule"},
-              {"name": "Winged Bulwark", "id": "2e8a-3b52-ff15-5ca5", "hidden": false, "targetId": "aafc-3f0d-e8a5-6302", "type": "rule"}
+              {"name": "Stealth", "id": "076b-ac76-d12b-ee51", "hidden": false, "targetId": "9306-4cd5-b59e-5898", "type": "rule"}
             ],
             "profiles": [
               {
@@ -578,7 +566,7 @@
                   {"name": "KS", "$text": "2+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "4+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Cloak-1, Stealth, Winged Bulwark", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Cloak-1, Stealth", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -652,6 +640,9 @@
                   }
                 ]
               }
+            ],
+            "rules": [
+              {"name": "Death Mistress", "id": "da80-c120-515a-4d23", "description": "Whenever an enemy group is destroyed, roll a dice. On a 4+ gain 1AP.", "hidden": false}
             ]
           },
           {
@@ -661,6 +652,7 @@
             "import": true,
             "page": 38,
             "publicationId": "260d-362c-d403-80ae",
+            "sortIndex": 2,
             "type": "model",
             "categoryLinks": [
               {"name": "Heavy Ship", "id": "8d4c-35c5-5d32-6c9b", "hidden": false, "primary": true, "targetId": "9d6f-26b0-7969-496b"},
@@ -703,8 +695,7 @@
             ],
             "infoLinks": [
               {"name": "Cloak-X", "id": "8339-6638-7544-2212", "hidden": true, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
-              {"name": "Stealth", "id": "5ca6-9d5d-4aeb-d164", "hidden": true, "targetId": "9306-4cd5-b59e-5898", "type": "rule"},
-              {"name": "Death Mistress", "id": "6761-9b61-3dad-3a5c", "hidden": false, "targetId": "da80-c120-515a-4d23", "type": "rule"}
+              {"name": "Stealth", "id": "5ca6-9d5d-4aeb-d164", "hidden": true, "targetId": "9306-4cd5-b59e-5898", "type": "rule"}
             ],
             "profiles": [
               {
@@ -809,6 +800,10 @@
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
             "entryLinks": [{"name": "Abilities", "id": "0250-aff8-ba3e-fe80", "hidden": false, "import": true, "targetId": "148a-48ec-a0d4-5554", "type": "selectionEntryGroup"}],
+            "infoLinks": [
+              {"name": "Impetuous", "id": "6551-ffd0-9e5b-27b2", "hidden": false, "targetId": "6f09-5ccc-4dae-ff72", "type": "rule"},
+              {"name": "Vectored", "id": "3fca-83b6-ff89-cc2e", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"}
+            ],
             "profiles": [
               {
                 "name": "Flayer",
@@ -818,7 +813,7 @@
                 "publicationId": "260d-362c-d403-80ae",
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "3", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "3", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Savagery", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Close in and Personal",
@@ -834,6 +829,14 @@
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Savagery",
+                "id": "f477-7836-26bf-88d0",
+                "description": "When this Flagship becomes Crippled, it gains the Impetuous and Vectored special rules.",
+                "hidden": false
               }
             ]
           },
@@ -893,12 +896,7 @@
                 "type": "selectionEntry"
               }
             ],
-            "infoLinks": [
-              {"name": "Vanguard-X\"", "id": "3697-04dc-6d29-a80e", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"},
-              {"name": "Savagery", "id": "b74f-6840-fca8-bb2f", "hidden": false, "targetId": "f477-7836-26bf-88d0", "type": "rule"},
-              {"name": "Impetuous", "id": "6551-ffd0-9e5b-27b2", "hidden": false, "targetId": "6f09-5ccc-4dae-ff72", "type": "rule"},
-              {"name": "Vectored", "id": "3fca-83b6-ff89-cc2e", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"}
-            ],
+            "infoLinks": [{"name": "Vanguard-X\"", "id": "3697-04dc-6d29-a80e", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"}],
             "profiles": [
               {
                 "name": "Shadow",
@@ -917,7 +915,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Vanguard-7\", Savagery", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Vanguard-7\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -991,6 +989,14 @@
                   }
                 ]
               }
+            ],
+            "rules": [
+              {
+                "name": "Doomed",
+                "id": "9480-f97c-1712-5fd2",
+                "description": "Whenever you capture an enemy Ship or an enemy Ship is destroyed due to the Fire Crippling Effect, gain 2AP.",
+                "hidden": false
+              }
             ]
           },
           {
@@ -1043,8 +1049,7 @@
             ],
             "infoLinks": [
               {"name": "Cloak-X", "id": "62ad-a2ea-22a7-0379", "hidden": false, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
-              {"name": "Stealth", "id": "4475-1473-f0d9-c013", "hidden": false, "targetId": "9306-4cd5-b59e-5898", "type": "rule"},
-              {"name": "Doomed", "id": "95a3-a657-9b37-dea1", "hidden": false, "targetId": "9480-f97c-1712-5fd2", "type": "rule"}
+              {"name": "Stealth", "id": "4475-1473-f0d9-c013", "hidden": false, "targetId": "9306-4cd5-b59e-5898", "type": "rule"}
             ],
             "profiles": [
               {
