@@ -26,17 +26,17 @@
         "description": "When you attack with this weapon, roll once and apply the roll to all enemy Groups within range.",
         "hidden": false
       },
-      {"name": "Gate Node", "id": "9641-6e30-3c8e-a9ab", "description": "This Gatestation’s Dropships may only be used while you control it.", "hidden": false},
+      {"name": "Gate Node", "id": "9641-6e30-3c8e-a9ab", "description": "This Gatestation's Dropships may only be used while you control it.", "hidden": false},
       {
         "name": "Gravity Manipulator",
         "id": "1377-0988-f6d3-4a38",
-        "description": "Friendly Ships that start their movement within this station’s Scan range measure their movement from any point at the edge of this space station’s Scan range, retaining their facing. Enemy Ships that start their movement within this station’s Scan range measure their movement from this station (distances are measured from the flight stem), retaining their facing.\nThis special rule ceases to function while you do not control this station.",
+        "description": "Friendly Ships that start their movement within this station's Scan range measure their movement from any point at the edge of this space station's Scan range, retaining their facing. Enemy Ships that start their movement within this station's Scan range measure their movement from this station (distances are measured from the flight stem), retaining their facing.\nThis special rule ceases to function while you do not control this station.",
         "hidden": false
       },
       {
         "name": "Voidspace Anchor",
         "id": "9b37-61fe-6eac-8888",
-        "description": "When an enemy Group within 6” of this Space Station activates, that Group may only move up to half of its Thrust this activation regardless of selected Order",
+        "description": "When an enemy Group within 6\" of this Space Station activates, that Group may only move up to half of its Thrust this activation regardless of selected Order",
         "hidden": false
       },
       {
@@ -48,7 +48,7 @@
       {
         "name": "Signature Bloom",
         "id": "53c7-8bbb-2618-15b2",
-        "description": "Friendly Ships within 6” of this Space Station are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship’s Group ignore a Spike for each Hidden Ship in that Group.\nThis rule has no effect while this Space Station is controlled by an enemy player.",
+        "description": "Friendly Ships within 6\" of this Space Station are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship's Group ignore a Spike for each Hidden Ship in that Group.\nThis rule has no effect while this Space Station is controlled by an enemy player.",
         "hidden": false
       }
     ],
@@ -1243,7 +1243,7 @@
               {
                 "name": "Heavy Vent Cannon Turret",
                 "id": "547e-379e-e417-0009",
-                "description": "When you assign targets to this weapon, you may have this Space Station gain 2 Spikes, if you do, it counts as going on Weapons Free Orders for the purposes of its Special rules.",
+                "description": "When you assign targets to this weapon, you may have this Space Station gain 2 Spikes, if you do, it counts as going on Weapons Free Orders for the purposes of its Special rules.",
                 "hidden": false
               }
             ]
@@ -1349,7 +1349,7 @@
               {
                 "name": "Heavy Vent Cannon Turret",
                 "id": "0706-d927-4892-6afe",
-                "description": "When you assign targets to this weapon, you may have this Space Station gain 2 Spikes, if you do, it counts as going on Weapons Free Orders for the purposes of its Special rules.",
+                "description": "When you assign targets to this weapon, you may have this Space Station gain 2 Spikes, if you do, it counts as going on Weapons Free Orders for the purposes of its Special rules.",
                 "hidden": false
               }
             ]
@@ -1733,7 +1733,7 @@
                 "characteristics": [
                   {
                     "name": "Effect",
-                    "$text": "When this Space Station targets enemy ships, Spikes on those ships have double their normal effect. So a Spike would increase the target’s Signature by 6” instead of 3”.",
+                    "$text": "When this Space Station targets enemy ships, Spikes on those ships have double their normal effect. So a Spike would increase the target's Signature by 6\" instead of 3\".",
                     "typeId": "1f58-541b-60dc-ea2a"
                   }
                 ]
@@ -1763,7 +1763,7 @@
                 "characteristics": [
                   {
                     "name": "Effect",
-                    "$text": "This Space Station’s Scan range is increased by 3”. In addition, friendly ships within 3” of one or more Space Stations with this special rule increase their Scan range by 3”. This special rule ceases to function while this Space Station is controlled by an enemy player.",
+                    "$text": "This Space Station's Scan range is increased by 3\". In addition, friendly ships within 3\" of one or more Space Stations with this special rule increase their Scan range by 3\". This special rule ceases to function while this Space Station is controlled by an enemy player.",
                     "typeId": "1f58-541b-60dc-ea2a"
                   }
                 ]
@@ -1816,7 +1816,7 @@
                 "characteristics": [
                   {
                     "name": "Effect",
-                    "$text": "When all Weapons Control features are removed from a Station, that station cannot use its Weapon Systems.",
+                    "$text": "When all Weapons Control features are removed from a Station, that station cannot use its Weapon Systems.",
                     "typeId": "1f58-541b-60dc-ea2a"
                   }
                 ]

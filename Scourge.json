@@ -169,13 +169,13 @@
       {
         "name": "Energy Siphon",
         "id": "37fb-a24b-24a0-e201",
-        "description": "Before or after this Group completes any step in its activation, you may have it siphon energy. If you do, pick one other Group within 3” without the Energy Siphon special rule. That Group loses all Spikes and this Group gains those Spikes.\nAfter siphoning at least one Spike from another Group, increase the Attack of this Group’s Siphoned Oculus Rays by 1 until the end of the round. If this Group has 3 or more Spikes after siphoning, increase the Attack of this Group’s Siphoned Oculus Rays by 2 until the end of the round instead.\nWhen this Group is on the General Quarters or Silent Running Orders, it gains Regenerate-X, where X is the amount of Spikes it removes at the start of its activation.",
+        "description": "Before or after this Group completes any step in its activation, you may have it siphon energy. If you do, pick one other Group within 3\" without the Energy Siphon special rule. That Group loses all Spikes and this Group gains those Spikes.\nAfter siphoning at least one Spike from another Group, increase the Attack of this Group's Siphoned Oculus Rays by 1 until the end of the round. If this Group has 3 or more Spikes after siphoning, increase the Attack of this Group's Siphoned Oculus Rays by 2 until the end of the round instead.\nWhen this Group is on the General Quarters or Silent Running Orders, it gains Regenerate-X, where X is the amount of Spikes it removes at the start of its activation.",
         "hidden": false
       },
       {
         "name": "Bombers",
         "id": "cce9-530e-4cc7-817e",
-        "description": "Attacks containing 7 or more Bombers cause Crippling-Fire to place a second Fire token on the target.",
+        "description": "Attacks containing 7 or more Bombers cause Crippling-Fire to place a second Fire token on the target.",
         "hidden": false
       },
       {
@@ -222,7 +222,7 @@
               {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "When you assign a Group’s weapons to a target, pick one of the attacking Group’s Weapon Systems with “Oculus” in its name. That Weapon System replaces its Scald-X rule with Reave-X (of the same value) for that attack. If the attacking Group has 2 or more Ships, this Ability costs 2AP.",
+                "$text": "When you assign a Group's weapons to a target, pick one of the attacking Group's Weapon Systems with \"Oculus\" in its name. That Weapon System replaces its Scald-X rule with Reave-X (of the same value) for that attack. If the attacking Group has 2 or more Ships, this Ability costs 2AP.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -310,7 +310,7 @@
               {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "At the end of any Group’s activation, target a friendly Group. Remove a Spike from the friendly Group.",
+                "$text": "At the end of any Group's activation, target a friendly Group. Remove a Spike from the friendly Group.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -325,7 +325,7 @@
               {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "When a friendly Group is given the Silent Running Order, that Group may use Launch Assets this round in addition to reducing its Signature to 0” until the start of its next activation.",
+                "$text": "When a friendly Group is given the Silent Running Order, that Group may use Launch Assets this round in addition to reducing its Signature to 0\" until the start of its next activation.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -473,7 +473,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When a friendly Fighter or Bomber Wing is completely removed due to an opponent’s Fighters, you may immediately launch a single Fighter or Bomber from this Admiral’s ship.",
+                    "$text": "When a friendly Fighter or Bomber Wing is completely removed due to an opponent's Fighters, you may immediately launch a single Fighter or Bomber from this Admiral's ship.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -483,7 +483,7 @@
               {
                 "name": "Winged Bulwark",
                 "id": "aafc-3f0d-e8a5-6302",
-                "description": "Friendly Wings that activate within 14” of this Flagship may not move further than 14” away from this Flagship.\nThis Ship may launch Assets regardless of its order, keeping its Signature of 0” on Silent Running and additional turn on Course Change.",
+                "description": "Friendly Wings that activate within 14\" of this Flagship may not move further than 14\" away from this Flagship.\nThis Ship may launch Assets regardless of its order, keeping its Signature of 0\" on Silent Running and additional turn on Course Change.",
                 "hidden": false
               }
             ]
@@ -835,7 +835,7 @@
               {
                 "name": "Savagery",
                 "id": "f477-7836-26bf-88d0",
-                "description": "When this Flagship becomes Crippled, it gains the Impetuous and Vectored special rules.",
+                "description": "When this Flagship becomes Crippled, it gains the Impetuous and Vectored special rules.",
                 "hidden": false
               }
             ]
@@ -984,7 +984,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "After you roll to hit with a Furnace weapon, you may re-roll any of that weapon’s attack dice (both hits and misses).",
+                    "$text": "After you roll to hit with a Furnace weapon, you may re-roll any of that weapon's attack dice (both hits and misses).",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -994,7 +994,7 @@
               {
                 "name": "Doomed",
                 "id": "9480-f97c-1712-5fd2",
-                "description": "Whenever you capture an enemy Ship or an enemy Ship is destroyed due to the Fire Crippling Effect, gain 2AP.",
+                "description": "Whenever you capture an enemy Ship or an enemy Ship is destroyed due to the Fire Crippling Effect, gain 2AP.",
                 "hidden": false
               }
             ]
@@ -2671,7 +2671,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Vanguard-6”, Oculus Booster", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Vanguard-6\", Oculus Booster", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -2836,7 +2836,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Cloak-1, Stealth, Vanguard-6”", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Cloak-1, Stealth, Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -2911,7 +2911,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Cloak-1, Stealth, Vanguard-6”", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Cloak-1, Stealth, Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -3823,7 +3823,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "2-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Vanguard-6”", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -3894,7 +3894,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "2-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Vanguard-6”", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -3965,7 +3965,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "2-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Vanguard-6”", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -5419,7 +5419,7 @@
                   {"name": "KS", "$text": "6+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Impetuous, Rare, Vanguard-7”", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Impetuous, Rare, Vanguard-7\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -5493,7 +5493,7 @@
                   {"name": "KS", "$text": "6+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Impetuous, Vanguard-7”", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Impetuous, Vanguard-7\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -7751,7 +7751,7 @@
               {
                 "name": "Skybane Halo",
                 "id": "3e3d-26e9-e93b-88a6",
-                "description": "Each friendly Skybane Halo counts as a separate friendly Group for the purposes of its Aegis-X special rule. While this feature is deployed to a Dropsite, friendly groups treat the Dropsite as if it were a friendly Ship with Aegis-2 on the same Orbital Layer for the purposes of enemy close action and bomber attacks.\nThis Feature’s Aegis special rule affects friendly Ships in Orbit in addition to Atmosphere.",
+                "description": "Each friendly Skybane Halo counts as a separate friendly Group for the purposes of its Aegis-X special rule. While this feature is deployed to a Dropsite, friendly groups treat the Dropsite as if it were a friendly Ship with Aegis-2 on the same Orbital Layer for the purposes of enemy close action and bomber attacks.\nThis Feature's Aegis special rule affects friendly Ships in Orbit in addition to Atmosphere.",
                 "hidden": false
               }
             ],
@@ -7784,7 +7784,7 @@
                       {"name": "Lock", "$text": "3+", "typeId": "4e0c-3aca-e97e-05c8"},
                       {"name": "DMG", "$text": "1", "typeId": "1314-c0f9-8c3a-21ff"},
                       {"name": "Type", "$text": "E", "typeId": "a2f6-d421-0336-1c75"},
-                      {"name": "Special", "$text": "Anti Wing, Escape Velocity, Scald-2", "typeId": "f633-dba6-938c-31f2"}
+                      {"name": "Special", "$text": "Anti Wing, Escape Velocity, Scald-2", "typeId": "f633-dba6-938c-31f2"}
                     ]
                   }
                 ]
@@ -7875,7 +7875,7 @@
               {
                 "name": "Shrouding Platform",
                 "id": "1d24-eee1-4be8-f6e6",
-                "description": "This Dropsite has a Signature of 0” and cannot gain Spikes.\nFriendly Groups within 6” of this Dropsite count as having one fewer Spike when an opponent is determining potential targets and assigning Weapons to targets.",
+                "description": "This Dropsite has a Signature of 0\" and cannot gain Spikes.\nFriendly Groups within 6\" of this Dropsite count as having one fewer Spike when an opponent is determining potential targets and assigning Weapons to targets.",
                 "hidden": false
               }
             ]
@@ -7964,7 +7964,7 @@
               {
                 "name": "Infestation Bastion",
                 "id": "d072-a850-1b7d-a762",
-                "description": "When friendly Bulk Landers are launched to this Dropsite, they ignore enemy Battalions on this Dropsite.\nAfter enemy Battalions are deployed to this Dropsite, roll a dice for each of those Battalions. For each result of a 5+, remove one of those Battalions. Only one Infestation Bastion can be used this way for each Battalion and any Battalions already on the Dropsite are ignored.",
+                "description": "When friendly Bulk Landers are launched to this Dropsite, they ignore enemy Battalions on this Dropsite.\nAfter enemy Battalions are deployed to this Dropsite, roll a dice for each of those Battalions. For each result of a 5+, remove one of those Battalions. Only one Infestation Bastion can be used this way for each Battalion and any Battalions already on the Dropsite are ignored.",
                 "hidden": false
               }
             ]
@@ -7997,7 +7997,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the end of a friendly Groups’ activation, pick a Crippled Ship in that Group and target an enemy Ship within 3” of it on the same Orbital Layer. Roll a dice for each of the friendly Ship’s remaining Hull Points. The target Ship is inflicted 1 Damage for each result of a 3+. The friendly Ship is destroyed and does not roll for explosion.",
+                    "$text": "At the end of a friendly Groups' activation, pick a Crippled Ship in that Group and target an enemy Ship within 3\" of it on the same Orbital Layer. Roll a dice for each of the friendly Ship's remaining Hull Points. The target Ship is inflicted 1 Damage for each result of a 3+. The friendly Ship is destroyed and does not roll for explosion.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -8022,7 +8022,7 @@
                   {"name": "Cost", "$text": "3AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of a friendly Carrier’s activation, if that Carrier has 2 or more Bulk Landers, it replaces all its Bulk Landers with a single deployable Orbital Defence Gun Feature (see 7.4.2 Deploying Features and 11.3 Features) until the end of the round. This Ability can only be used once each round.",
+                    "$text": "At the start of a friendly Carrier's activation, if that Carrier has 2 or more Bulk Landers, it replaces all its Bulk Landers with a single deployable Orbital Defence Gun Feature (see 7.4.2 Deploying Features and 11.3 Features) until the end of the round. This Ability can only be used once each round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -8045,7 +8045,7 @@
                 "typeName": "Admiral Ability",
                 "characteristics": [
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
-                  {"name": "Effect", "$text": "At the end of the Planning Phase, target an opponent. That opponent discards D3 Ability Points.", "typeId": "49ae-26b2-d6ec-81aa"}
+                  {"name": "Effect", "$text": "At the end of the Planning Phase, target an opponent. That opponent discards D3 Ability Points.", "typeId": "49ae-26b2-d6ec-81aa"}
                 ]
               }
             ]
@@ -8068,7 +8068,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of the Battalion Combat step of the Asset Phase, pick a City with friendly Battalions on it. Deploy D3 Assimilated Battalions to that City. At the end of the Battalion Combat step, remove any remaining Assimilated Battalions from the Dropsite.",
+                    "$text": "At the start of the Battalion Combat step of the Asset Phase, pick a City with friendly Battalions on it. Deploy D3 Assimilated Battalions to that City. At the end of the Battalion Combat step, remove any remaining Assimilated Battalions from the Dropsite.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -8094,7 +8094,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the end of the Planning Phase, pick a friendly Group. That Group gains Rapid Drop and may launch Assets at the end of its activation while on the Max Thrust order until the end of the round.",
+                    "$text": "At the end of the Planning Phase, pick a friendly Group. That Group gains Rapid Drop and may launch Assets at the end of its activation while on the Max Thrust order until the end of the round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -8120,7 +8120,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of the Asset Phase, pick a friendly Group. That Group gains Marines-2D3 until the end of the round.",
+                    "$text": "At the start of the Asset Phase, pick a friendly Group. That Group gains Marines-2D3 until the end of the round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]

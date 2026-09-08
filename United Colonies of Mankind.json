@@ -21,7 +21,7 @@
       {"name": "Lvl 1: Captain", "id": "481d-7863-ffb3-aa4f", "hidden": false, "import": true, "targetId": "19a9-7d1f-50b2-e998", "type": "selectionEntry"},
       {"name": "Lvl 3: Rear Admiral", "id": "967d-15d6-55c9-501c", "hidden": false, "import": true, "targetId": "a461-4e5d-ff05-31f0", "type": "selectionEntry"},
       {
-        "name": "Lvl 5: “Granite” Halsey - Washington",
+        "name": "Lvl 5: \"Granite\" Halsey - Washington",
         "id": "b5f9-7931-9faf-d4f6",
         "hidden": false,
         "import": true,
@@ -197,7 +197,7 @@
       {"name": "T-Type Tugboats", "id": "ee03-5982-f3ca-0362", "hidden": false, "import": true, "targetId": "21c8-a67f-93e1-7b07", "type": "selectionEntry"},
       {"name": "EX-7 Packet Runner", "id": "4ea5-7ed4-ad34-a108", "hidden": false, "import": true, "targetId": "b6bf-c8ab-1240-e10f", "type": "selectionEntry"},
       {"name": "DH-Type Penal Transport", "id": "61d8-17e4-2d87-faa3", "hidden": false, "import": true, "targetId": "3c15-10cc-4cf2-7166", "type": "selectionEntry"},
-      {"name": "Jah’tar Startrader", "id": "ff17-a3bf-0f6b-e55f", "hidden": false, "import": true, "targetId": "e1ee-f46b-05f3-54b2", "type": "selectionEntry"},
+      {"name": "Jah'tar Startrader", "id": "ff17-a3bf-0f6b-e55f", "hidden": false, "import": true, "targetId": "e1ee-f46b-05f3-54b2", "type": "selectionEntry"},
       {"name": "M-Type Barge", "id": "a6c1-ef68-42b0-93af", "hidden": false, "import": true, "targetId": "a1c6-c54a-4d36-5280", "type": "selectionEntry"},
       {"name": "OBV-64 Oblivion Barge", "id": "d0e2-1453-bcfc-d480", "hidden": false, "import": true, "targetId": "390b-443d-373d-1637", "type": "selectionEntry"},
       {"name": "Argonaut", "id": "df1a-09fa-81b4-859c", "hidden": false, "import": true, "targetId": "1d35-3bb4-449a-62d4", "type": "selectionEntry"},
@@ -223,7 +223,7 @@
       {
         "name": "UCMF Battlenet",
         "id": "6f5b-bd82-2aa9-c900",
-        "description": "An admiral assigned to this ship gains the following Command Abilities:\nTelemetry Link (2AP): When you activate another friendly Group in Orbit, that Group increases its total movement (after orders) by 4” this round.\nOrder to Fire (2AP): When you activate another friendly Group in Orbit, pick one of the following options:\n• While that Group is on the General Quarters, Course Change, or Damage Control orders, each Ship may attack with an additional weapon.\n• While that Group is on the General Quarters or Weapons Free orders, you may attack with a single allowed Weapon System before turning and moving any Ships in that Group. That Weapon System cannot be used for the rest of the Group’s activation.",
+        "description": "An admiral assigned to this ship gains the following Command Abilities:\nTelemetry Link (2AP): When you activate another friendly Group in Orbit, that Group increases its total movement (after orders) by 4\" this round.\nOrder to Fire (2AP): When you activate another friendly Group in Orbit, pick one of the following options:\n• While that Group is on the General Quarters, Course Change, or Damage Control orders, each Ship may attack with an additional weapon.\n• While that Group is on the General Quarters or Weapons Free orders, you may attack with a single allowed Weapon System before turning and moving any Ships in that Group. That Weapon System cannot be used for the rest of the Group's activation.",
         "hidden": false,
         "page": 45,
         "publicationId": "45b0-3e3b-e83d-fd70"
@@ -231,19 +231,19 @@
       {
         "name": "Stealth Drop",
         "id": "be28-1d6e-4272-cb10",
-        "description": "When this Group launches its Dropships, 2 Dropships are needed to place 1 Battalion. If this Group contains a single ship, each Dropship only places a Battalion on a roll of a 4+.",
+        "description": "When this Group launches its Dropships, 2 Dropships are needed to place 1 Battalion. If this Group contains a single ship, each Dropship only places a Battalion on a roll of a 4+.",
         "hidden": false
       },
       {
         "name": "Feature Carrier",
         "id": "c6ab-b077-83e9-ed53",
-        "description": "At the start of the game, before players deploy, choose one Deployable Feature from the UCM Deployable Features List. This Ship starts the game carrying that Deployable Feature.",
+        "description": "At the start of the game, before players deploy, choose one Deployable Feature from the UCM Deployable Features List. This Ship starts the game carrying that Deployable Feature.",
         "hidden": false
       },
       {
         "name": "UCMA Battlenet",
         "id": "c245-6148-bd8a-d5af",
-        "description": "An admiral assigned to this ship gains the following Command Abilities:\nDouble Time Bulk Line (2AP): When you activate another friendly Group in Orbit, until the end of its activation, that Group may launch its Bulk Landers as if the target Dropsite has no enemy Battalions.\nFeet First into Hell (2AP): When you activate another friendly Group in atmosphere, until the end of its activation, that Group can launch its Dropships or Drop Pods with a range of 6”. Drop Pods launched due to this rule ignore the Alt-Launch rule.",
+        "description": "An admiral assigned to this ship gains the following Command Abilities:\nDouble Time Bulk Line (2AP): When you activate another friendly Group in Orbit, until the end of its activation, that Group may launch its Bulk Landers as if the target Dropsite has no enemy Battalions.\nFeet First into Hell (2AP): When you activate another friendly Group in atmosphere, until the end of its activation, that Group can launch its Dropships or Drop Pods with a range of 6\". Drop Pods launched due to this rule ignore the Alt-Launch rule.",
         "hidden": false,
         "page": 45,
         "publicationId": "45b0-3e3b-e83d-fd70"
@@ -285,7 +285,7 @@
               {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "When you activate a Group of a single Ship, that Ship may Survey a Dropsite and attack with a single weapon this round (but still cannot launch Assets).",
+                "$text": "When you activate a Group of a single Ship, that Ship may Survey a Dropsite and attack with a single weapon this round (but still cannot launch Assets).",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -374,7 +374,7 @@
               {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "At the start of a friendly Group’s activation, each Ship in it suffers 1 Damage and improves its Thrust by 2” until the end of its activation.",
+                "$text": "At the start of a friendly Group's activation, each Ship in it suffers 1 Damage and improves its Thrust by 2\" until the end of its activation.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -389,7 +389,7 @@
               {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "When you assign a Group’s weapons to a target, pick one of the attacking Group’s Weapon Systems with “Laser” in its name. That Weapon System gains Fusillade-2 for that attack sequence.",
+                "$text": "When you assign a Group's weapons to a target, pick one of the attacking Group's Weapon Systems with \"Laser\" in its name. That Weapon System gains Fusillade-2 for that attack sequence.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -397,7 +397,7 @@
         ]
       },
       {
-        "name": "Lvl 5: “Granite” Halsey - Washington",
+        "name": "Lvl 5: \"Granite\" Halsey - Washington",
         "id": "0df1-8a69-e48b-af52",
         "hidden": false,
         "import": true,
@@ -489,7 +489,7 @@
         ],
         "selectionEntries": [
           {
-            "name": "“Granite” Halsey",
+            "name": "\"Granite\" Halsey",
             "id": "99c9-35db-a980-0b16",
             "hidden": false,
             "import": true,
@@ -514,7 +514,7 @@
             ],
             "profiles": [
               {
-                "name": "“Granite” Halsey",
+                "name": "\"Granite\" Halsey",
                 "id": "219f-919b-8465-d54c",
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
@@ -531,7 +531,7 @@
                   {"name": "Cost", "$text": "4AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the end of this Group’s activation, discard a Pass Token and target another friendly Group of L or M Tonnage. If you do, that Group may turn up to 45 degrees, then move up to a quarter of its Thrust, and then each Ship in it may attack with a single weapon.",
+                    "$text": "At the end of this Group's activation, discard a Pass Token and target another friendly Group of L or M Tonnage. If you do, that Group may turn up to 45 degrees, then move up to a quarter of its Thrust, and then each Ship in it may attack with a single weapon.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -541,7 +541,7 @@
               {
                 "name": "Fighter Command",
                 "id": "83c4-4e63-ad54-d9c7",
-                "description": "Fighters, Bombers, & Heavy Bombers launched from this ship may be placed up to 8” away instead of 6”.",
+                "description": "Fighters, Bombers, & Heavy Bombers launched from this ship may be placed up to 8\" away instead of 6\".",
                 "hidden": false
               }
             ]
@@ -775,7 +775,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you assign a Group’s weapons to a target, pick one of the attacking Group’s Weapon Systems with “Mass Driver” in its name. That Weapon System improves its Lock by 1 for that attack sequence.",
+                    "$text": "When you assign a Group's weapons to a target, pick one of the attacking Group's Weapon Systems with \"Mass Driver\" in its name. That Weapon System improves its Lock by 1 for that attack sequence.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -785,7 +785,7 @@
               {
                 "name": "Spearhead",
                 "id": "8612-0822-de10-5e03",
-                "description": "While this Flagship is within 12” of your opponent’s deployment zone, you may re-roll its failed Backup saves.",
+                "description": "While this Flagship is within 12\" of your opponent's deployment zone, you may re-roll its failed Backup saves.",
                 "hidden": false
               }
             ]
@@ -965,7 +965,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you assign targets to a weapon with “Laser” in its name and an Arc of FN, that weapon gains Bombardment for that attack.",
+                    "$text": "When you assign targets to a weapon with \"Laser\" in its name and an Arc of FN, that weapon gains Bombardment for that attack.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -975,7 +975,7 @@
               {
                 "name": "Jink",
                 "id": "8008-c897-2756-2472",
-                "description": "At the start or end of this Flagship’s movement, you may place it up to 2” away on a line drawn directly through the centre of both side arcs. If this Flagship is on the Max Thrust Special Order, you may place it 4” along that line instead.",
+                "description": "At the start or end of this Flagship's movement, you may place it up to 2\" away on a line drawn directly through the centre of both side arcs. If this Flagship is on the Max Thrust Special Order, you may place it 4\" along that line instead.",
                 "hidden": false
               }
             ]
@@ -1101,7 +1101,7 @@
               {
                 "name": "Stressful Manoeuvre",
                 "id": "ad61-5ace-2bb6-9477",
-                "description": "When firing its Cobra Heavy Laser Pair, this Admiral’s Flagship may suffer 1 point of damage to change the Arc of its Cobra Heavy Laser Pair to F.",
+                "description": "When firing its Cobra Heavy Laser Pair, this Admiral's Flagship may suffer 1 point of damage to change the Arc of its Cobra Heavy Laser Pair to F.",
                 "hidden": false
               }
             ]
@@ -2644,7 +2644,7 @@
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Vanguard-4”", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Vanguard-4\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -9303,7 +9303,7 @@
               {
                 "name": "Aegis Platform",
                 "id": "f78b-7947-811e-eba4",
-                "description": "Each friendly Aegis Platform counts as a separate friendly Group for the purposes of its Aegis-X special rule. While this feature is deployed to a Dropsite, friendly groups treat the Dropsite as if it were a friendly Ship with Aegis-4 on the same Orbital Layer for the purposes of enemy close action and bomber attacks.\nThis Feature’s Aegis special rule affects friendly Ships in Orbit in addition to Atmosphere.\nAfter enemy assets end their movement within 4”, are placed within 4” of, or are deployed to this Dropsite, roll a dice for each of those assets. For each result of a 5+, remove one of those assets. Enemy Features are only removed on a result of a 6+. Only one Aegis Platform can be used this way for each Asset and any Battalions already on the Dropsite are ignored.",
+                "description": "Each friendly Aegis Platform counts as a separate friendly Group for the purposes of its Aegis-X special rule. While this feature is deployed to a Dropsite, friendly groups treat the Dropsite as if it were a friendly Ship with Aegis-4 on the same Orbital Layer for the purposes of enemy close action and bomber attacks.\nThis Feature's Aegis special rule affects friendly Ships in Orbit in addition to Atmosphere.\nAfter enemy assets end their movement within 4\", are placed within 4\" of, or are deployed to this Dropsite, roll a dice for each of those assets. For each result of a 5+, remove one of those assets. Enemy Features are only removed on a result of a 6+. Only one Aegis Platform can be used this way for each Asset and any Battalions already on the Dropsite are ignored.",
                 "hidden": false
               }
             ]
@@ -9391,7 +9391,7 @@
               {
                 "name": "Comms Platform",
                 "id": "23e3-5f8a-24a9-c276",
-                "description": "Friendly Ships with the Command Ship-X ability within 8” of one or more Dropsites with a friendly Comms Platform improve the X value of that rule by 1 when generating AP.\nFriendly Ships within 8” of this Feature’s Dropsite ignore the effects of any Scanners Offline token.",
+                "description": "Friendly Ships with the Command Ship-X ability within 8\" of one or more Dropsites with a friendly Comms Platform improve the X value of that rule by 1 when generating AP.\nFriendly Ships within 8\" of this Feature's Dropsite ignore the effects of any Scanners Offline token.",
                 "hidden": false
               }
             ]
@@ -9513,7 +9513,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "After the Battalion Combat step of the Asset Phase, target a Dropsite or Feature. If any enemy Battalions completely removed any friendly Battalions from that Dropsite or Feature, place 1 Battalion on that Dropsite or Feature.",
+                    "$text": "After the Battalion Combat step of the Asset Phase, target a Dropsite or Feature. If any enemy Battalions completely removed any friendly Battalions from that Dropsite or Feature, place 1 Battalion on that Dropsite or Feature.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9539,7 +9539,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the end of the Planning Phase, pick one friendly Group. All Ships in that Group improve their Aegis-X value by 2 or gain Aegis-1 if they do not have the Aegis-X special rule.",
+                    "$text": "At the end of the Planning Phase, pick one friendly Group. All Ships in that Group improve their Aegis-X value by 2 or gain Aegis-1 if they do not have the Aegis-X special rule.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9564,7 +9564,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the end of the Planning Phase, pick one Dropsite within 6” of a friendly Group. That Dropsite takes D3+1 Core hits.",
+                    "$text": "At the end of the Planning Phase, pick one Dropsite within 6\" of a friendly Group. That Dropsite takes D3+1 Core hits.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9589,7 +9589,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you assign a Group’s weapons to a target, each of the attacking Group’s Weapon Systems with “Mass Driver” in their name improve their Lock by 1 for that attack sequence.",
+                    "$text": "When you assign a Group's weapons to a target, each of the attacking Group's Weapon Systems with \"Mass Driver\" in their name improve their Lock by 1 for that attack sequence.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9615,7 +9615,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of the Asset Phase, target one friendly Wing of Bombers. That Wing gains the Bombardment special rule until the end of the round.",
+                    "$text": "At the start of the Asset Phase, target one friendly Wing of Bombers. That Wing gains the Bombardment special rule until the end of the round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9640,7 +9640,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the end of the Planning Phase, target one friendly Group. That Group may re-roll failed Energy Saves until the end of the round.",
+                    "$text": "At the end of the Planning Phase, target one friendly Group. That Group may re-roll failed Energy Saves until the end of the round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]

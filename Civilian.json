@@ -9,7 +9,7 @@
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 6,
     "library": true,
-    "revision": 17,
+    "revision": 18,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "publications": [{"name": "Civilian Ship Scenarios (260901)", "id": "1322-3c59-0db2-ee7c", "hidden": false, "shortName": "Civilian Ship Scenarios (260901)"}],
@@ -17,7 +17,7 @@
       {
         "name": "Tugging Along",
         "id": "22b2-66c6-0038-a8d4",
-        "description": "If this Ship is on General Quarters and in base contact with another Ship (friendly or enemy) you may have it Tug that Ship instead of moving normally. If you do, this Ship may turn as normal but only moves up to 3”. The other Ship is then moved the same distance in the same direction, retaining its original facing. Ships can only be tugged this way up to a maximum of 6” each round.",
+        "description": "If this Ship is on General Quarters and in base contact with another Ship (friendly or enemy) you may have it Tug that Ship instead of moving normally. If you do, this Ship may turn as normal but only moves up to 3\". The other Ship is then moved the same distance in the same direction, retaining its original facing. Ships can only be tugged this way up to a maximum of 6\" each round.",
         "hidden": false
       },
       {
@@ -29,25 +29,25 @@
       {
         "name": "Purchased Power",
         "id": "e393-f432-a053-d22e",
-        "description": "This Ship starts the game with 5 wares tokens.\nAt the start of each round, if you control this Ship, you may spend a number of wares tokens on one of the following effects until the end of the round:\nDefence Harmonics - 2 Tokens: Friendly Groups within 6” improve their Energy and Kinetic saves by 1, to a maximum of a 3+.\nEnergy Dissipators - 1 Tokens: Friendly Groups within 9” count as having 2 fewer Spikes.\nGuardian Schoal - 1 Token: Friendly Assets within 9” cannot be the target of enemy weapons with the Anti Wing special rule",
+        "description": "This Ship starts the game with 5 wares tokens.\nAt the start of each round, if you control this Ship, you may spend a number of wares tokens on one of the following effects until the end of the round:\nDefence Harmonics - 2 Tokens: Friendly Groups within 6\" improve their Energy and Kinetic saves by 1, to a maximum of a 3+.\nEnergy Dissipators - 1 Tokens: Friendly Groups within 9\" count as having 2 fewer Spikes.\nGuardian Schoal - 1 Token: Friendly Assets within 9\" cannot be the target of enemy weapons with the Anti Wing special rule",
         "hidden": false
       },
       {
         "name": "Penal Legions",
         "id": "3e9f-cd00-5c21-b396",
-        "description": "When taken as part of your fleet, this Ship starts the game with 2 friendly Battalions on it. When any number of enemy Battalions are removed due to Boarding Actions or Battalion Combat on a Space Station within 6” of this Ship, place a single friendly Battalion on this Ship. This Ship’s Boarding Pods and Drop Pods can only be used while it has friendly Battalions on it and each Boarding Pod or Drop Pod launched causes one friendly Battalion on this Ship to be removed.",
+        "description": "When taken as part of your fleet, this Ship starts the game with 2 friendly Battalions on it. When any number of enemy Battalions are removed due to Boarding Actions or Battalion Combat on a Space Station within 6\" of this Ship, place a single friendly Battalion on this Ship. This Ship's Boarding Pods and Drop Pods can only be used while it has friendly Battalions on it and each Boarding Pod or Drop Pod launched causes one friendly Battalion on this Ship to be removed.",
         "hidden": false
       },
       {
         "name": "Industrial Design",
         "id": "e563-4363-c68f-2930",
-        "description": "Improve this Group’s Backup save by 2 when rolling to save hits due to Debris Fields.",
+        "description": "Improve this Group's Backup save by 2 when rolling to save hits due to Debris Fields.",
         "hidden": false
       },
       {
         "name": "Space Trucker",
         "id": "612d-c072-617f-de98",
-        "description": "This Ship’s Hangar Deployable Feature can only be deployed to Space Stations (of any type).",
+        "description": "This Ship's Hangar Deployable Feature can only be deployed to Space Stations (of any type).",
         "hidden": false
       }
     ],
@@ -362,7 +362,7 @@
               {
                 "name": "Resupply and Rearm",
                 "id": "f9aa-a29e-07e3-ccb6",
-                "description": "If this ship ends its movement in base contact with a friendly ship of Medium Tonnage or higher or a Space Station, pick one of the following:\nResupply: That Ship or Space Station recovers 3 Hull points and remove any Crippling Effect tokens.\nRearm: Increase the Limited-X value of any of that Ship or Space Station’s Weapons and Launch Assets by 1 until the end of the round.",
+                "description": "If this ship ends its movement in base contact with a friendly ship of Medium Tonnage or higher or a Space Station, pick one of the following:\nResupply: That Ship or Space Station recovers 3 Hull points and remove any Crippling Effect tokens.\nRearm: Increase the Limited-X value of any of that Ship or Space Station's Weapons and Launch Assets by 1 until the end of the round.",
                 "hidden": false
               },
               {
@@ -592,7 +592,7 @@
               {
                 "name": "Feature Carrier (Hangar)",
                 "id": "c2bc-fea1-0598-9f68",
-                "description": "This ship starts the game carrying a single deployable Hangar Feature (see 7.4.2 Deploying Features and 11.3 Features).",
+                "description": "This ship starts the game carrying a single deployable Hangar Feature (see 7.4.2 Deploying Features and 11.3 Features).",
                 "hidden": false
               }
             ],
@@ -853,7 +853,7 @@
         ]
       },
       {
-        "name": "Jah’tar Startrader",
+        "name": "Jah'tar Startrader",
         "id": "e1ee-f46b-05f3-54b2",
         "hidden": false,
         "import": true,
@@ -935,7 +935,7 @@
                             "conditions": [
                               {
                                 "childId": "e1ee-f46b-05f3-54b2",
-                                "childName": "Jah’tar Startrader",
+                                "childName": "Jah'tar Startrader",
                                 "field": "selections",
                                 "includeChildSelections": false,
                                 "scope": "parent",
@@ -960,7 +960,7 @@
                             "conditions": [
                               {
                                 "childId": "e1ee-f46b-05f3-54b2",
-                                "childName": "Jah’tar Startrader",
+                                "childName": "Jah'tar Startrader",
                                 "field": "selections",
                                 "includeChildSelections": false,
                                 "scope": "parent",
@@ -985,7 +985,7 @@
                             "conditions": [
                               {
                                 "childId": "e1ee-f46b-05f3-54b2",
-                                "childName": "Jah’tar Startrader",
+                                "childName": "Jah'tar Startrader",
                                 "field": "selections",
                                 "includeChildSelections": false,
                                 "scope": "parent",
@@ -1010,7 +1010,7 @@
                             "conditions": [
                               {
                                 "childId": "e1ee-f46b-05f3-54b2",
-                                "childName": "Jah’tar Startrader",
+                                "childName": "Jah'tar Startrader",
                                 "field": "selections",
                                 "includeChildSelections": false,
                                 "scope": "parent",
@@ -1066,7 +1066,7 @@
         ],
         "selectionEntries": [
           {
-            "name": "Jah’tar Startrader",
+            "name": "Jah'tar Startrader",
             "id": "9676-e1a1-b7c8-6bda",
             "hidden": false,
             "import": true,
@@ -1085,7 +1085,7 @@
             ],
             "profiles": [
               {
-                "name": "Jah’tar Startrader",
+                "name": "Jah'tar Startrader",
                 "id": "6aa5-9f08-2821-cbfe",
                 "hidden": false,
                 "publicationId": "1322-3c59-0db2-ee7c",
@@ -1493,7 +1493,7 @@
                 ]
               }
             ],
-            "rules": [{"name": "Acquired Mines", "id": "3a05-aeef-6abe-1cd4", "description": "This Ship’s Mines use the stats of its parent fleet.", "hidden": false}],
+            "rules": [{"name": "Acquired Mines", "id": "3a05-aeef-6abe-1cd4", "description": "This Ship's Mines use the stats of its parent fleet.", "hidden": false}],
             "selectionEntries": [
               {
                 "name": "Expel Hazards",
@@ -1529,7 +1529,7 @@
                   {
                     "name": "Expel Hazards",
                     "id": "5c9d-9479-cbac-04fb",
-                    "description": "This weapon can only be used against targets within Scan range and on the same Orbital Layer.\nWhile this Ship is below its starting Hull Points, for every 2 Hull Points lost from its starting Hull Points, increase the attack of this weapon by 1.",
+                    "description": "This weapon can only be used against targets within Scan range and on the same Orbital Layer.\nWhile this Ship is below its starting Hull Points, for every 2 Hull Points lost from its starting Hull Points, increase the attack of this weapon by 1.",
                     "hidden": false
                   }
                 ]
@@ -1978,13 +1978,13 @@
               {
                 "name": "Scrap Hauler",
                 "id": "83fd-5598-3e97-7fd7",
-                "description": "If this Group ends its activation within 1” of a Debris Field, this Group gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Group can have a maximum of 8 scrap tokens at any one time. Any attached Payload ships that have any scrap tokens do not count towards this limit. Whenever another Ship within 6” of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.",
+                "description": "If this Group ends its activation within 1\" of a Debris Field, this Group gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Group can have a maximum of 8 scrap tokens at any one time. Any attached Payload ships that have any scrap tokens do not count towards this limit. Whenever another Ship within 6\" of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.",
                 "hidden": false
               },
               {
                 "name": "Scratch Bodge Job",
                 "id": "7f82-6c9f-9bae-3e18",
-                "description": "At the end of this Ship’s activation, you may remove any number of scrap tokens and choose one of the following:\nScrappy Plating: One friendly Ship within 6” recovers lost Hull points equal to the amount of scrap tokens removed.\nBodge Repairs: Remove a crippling effect from a friendly Ship within 6” for each scrap token removed.",
+                "description": "At the end of this Ship's activation, you may remove any number of scrap tokens and choose one of the following:\nScrappy Plating: One friendly Ship within 6\" recovers lost Hull points equal to the amount of scrap tokens removed.\nBodge Repairs: Remove a crippling effect from a friendly Ship within 6\" for each scrap token removed.",
                 "hidden": false
               }
             ],
@@ -2106,13 +2106,13 @@
               {
                 "name": "Scrap Collection",
                 "id": "6dff-82ef-c102-88b9",
-                "description": "If this Ship ends its activation within 1” of a Debris Field, this Ship gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Ship with this rule can have a maximum of 3 scrap tokens at any one time. Whenever another Ship within 6” of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.",
+                "description": "If this Ship ends its activation within 1\" of a Debris Field, this Ship gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Ship with this rule can have a maximum of 3 scrap tokens at any one time. Whenever another Ship within 6\" of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.",
                 "hidden": false
               },
               {
                 "name": "Unload",
                 "id": "4386-6f27-42a4-479a",
-                "description": "When you attach this Ship to a Porter Ship, you may have the Porter Ship gain all of this Ship’s scrap tokens.",
+                "description": "When you attach this Ship to a Porter Ship, you may have the Porter Ship gain all of this Ship's scrap tokens.",
                 "hidden": false
               }
             ],
@@ -2257,7 +2257,7 @@
               {
                 "name": "Expansive Radiator Systems",
                 "id": "7d19-eab6-69af-352b",
-                "description": "At the start of this Ship’s activation, remove two Spikes from it.",
+                "description": "At the start of this Ship's activation, remove two Spikes from it.",
                 "hidden": false
               }
             ],
@@ -2368,7 +2368,7 @@
                   {
                     "name": "Genesis Spikes",
                     "id": "a257-dc1c-f8b0-314c",
-                    "description": "When this weapon successfully inflicts any amount of damage against a City, place a Mutant Fauna token on that Dropsite. Mutant Fauna tokens are not Battalions and cannot control or contest a Dropsite. When any player deploys any number of Battalions to that Dropsite, if that Dropsite has any Mutant Fauna tokens, those Battalions are only placed on a roll of a 5+. If any Battalions are not placed this way, remove a Mutant Fauna token from that Dropsite. If a Dropsite starts a round with a Mutant Fauna token, remove that token at the end of the round.",
+                    "description": "When this weapon successfully inflicts any amount of damage against a City, place a Mutant Fauna token on that Dropsite. Mutant Fauna tokens are not Battalions and cannot control or contest a Dropsite. When any player deploys any number of Battalions to that Dropsite, if that Dropsite has any Mutant Fauna tokens, those Battalions are only placed on a roll of a 5+. If any Battalions are not placed this way, remove a Mutant Fauna token from that Dropsite. If a Dropsite starts a round with a Mutant Fauna token, remove that token at the end of the round.",
                     "hidden": false
                   }
                 ]

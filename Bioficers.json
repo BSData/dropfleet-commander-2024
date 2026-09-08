@@ -152,43 +152,43 @@
       {
         "name": "Tractor Beamer",
         "id": "c9fa-8382-0412-768a",
-        "description": "At the end of this Ship’s activation, you may pick a single friendly Ship with the Payload special rule within 6”. Move that ship up to 4” in any direction.",
+        "description": "At the end of this Ship's activation, you may pick a single friendly Ship with the Payload special rule within 6\". Move that ship up to 4\" in any direction.",
         "hidden": false
       },
       {
         "name": "Gravitational Lensing",
         "id": "2fcc-32b0-e2ea-3d0d",
-        "description": "Once per round, when determining targets for a friendly ship within 8” of this ship, you may treat one of its weapons as having an Arc of F/S instead of its normal Arcs for that attack.",
+        "description": "Once per round, when determining targets for a friendly ship within 8\" of this ship, you may treat one of its weapons as having an Arc of F/S instead of its normal Arcs for that attack.",
         "hidden": false
       },
       {
         "name": "Limited Aegis Bandwidth",
         "id": "8d89-0b9b-38c0-d33c",
-        "description": "Friendly Ships with this rule may combine their Aegis values as if they were the same Group. When these Ships combine their Aegis value, only those within 6” of the Group using the benefits of Aegis are counted. A Ship with this rule cannot gain the benefit of Aegis from another Ship with this rule.",
+        "description": "Friendly Ships with this rule may combine their Aegis values as if they were the same Group. When these Ships combine their Aegis value, only those within 6\" of the Group using the benefits of Aegis are counted. A Ship with this rule cannot gain the benefit of Aegis from another Ship with this rule.",
         "hidden": false
       },
       {
         "name": "Summoning Cell",
         "id": "d985-9763-6332-5798",
-        "description": "When you activate a Wing within 4” of this Ship, instead of moving them normally, you may remove them from the table, then place them anywhere within 18” of this Ship. Wings placed this way suffer the effects of any scenery they are placed on but ignore intervening scenery. Wings placed this way may form and divide into Wings as if they had moved normally.",
+        "description": "When you activate a Wing within 4\" of this Ship, instead of moving them normally, you may remove them from the table, then place them anywhere within 18\" of this Ship. Wings placed this way suffer the effects of any scenery they are placed on but ignore intervening scenery. Wings placed this way may form and divide into Wings as if they had moved normally.",
         "hidden": false
       },
       {
         "name": "Torpedo",
         "id": "a845-5a68-5784-e761",
-        "description": "This asset is automatically removed during the Cleanup step of the End Phase.",
+        "description": "This asset is automatically removed during the Cleanup step of the End Phase.",
         "hidden": false
       },
       {
         "name": "High Velocity Boarding Pods",
         "id": "bfa9-6e75-a12a-468a",
-        "description": "This Ship’s Boarding Pods may be used against targets up to 6” away.",
+        "description": "This Ship's Boarding Pods may be used against targets up to 6\" away.",
         "hidden": false
       },
       {
         "name": "Feature Carrier",
         "id": "272a-ad08-2463-55fb",
-        "description": "At the start of the game, before players deploy, choose from the Gravitational Lens or Ghost Orb Tower Deployable Feature. This Ship starts the game carrying the chosen Deployable Feature.",
+        "description": "At the start of the game, before players deploy, choose from the Gravitational Lens or Ghost Orb Tower Deployable Feature. This Ship starts the game carrying the chosen Deployable Feature.",
         "hidden": false
       }
     ],
@@ -228,7 +228,7 @@
               {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "At the start of a friendly Group’s activation, pick any friendly Group. You may move each Ship in that Group up to 3” directly backwards.",
+                "$text": "At the start of a friendly Group's activation, pick any friendly Group. You may move each Ship in that Group up to 3\" directly backwards.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -327,7 +327,7 @@
               {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "When a friendly Group makes an attack with any number of weapons with “Decon” in its name, those weapons change their Type to Kinetic until the end of its activation.",
+                "$text": "When a friendly Group makes an attack with any number of weapons with \"Decon\" in its name, those weapons change their Type to Kinetic until the end of its activation.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -469,7 +469,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you activate this Ship on General Quarters, you may choose to forgo attacking with this Ship. If you do, this Ship goes on Overwatch until the end of the round or until it declares the use of Overwatch. At the end of any enemy Group’s activation, if that Group moved through this Ship’s Front arc and was in weapons range while doing so, you may declare the use of Overwatch against that Group. When you use Overwatch, this Ship immediately makes an Attack as if on General Quarters against the enemy Group, even if it is out of arc and weapon range.",
+                    "$text": "When you activate this Ship on General Quarters, you may choose to forgo attacking with this Ship. If you do, this Ship goes on Overwatch until the end of the round or until it declares the use of Overwatch. At the end of any enemy Group's activation, if that Group moved through this Ship's Front arc and was in weapons range while doing so, you may declare the use of Overwatch against that Group. When you use Overwatch, this Ship immediately makes an Attack as if on General Quarters against the enemy Group, even if it is out of arc and weapon range.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -657,7 +657,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you inflict damage to an enemy Ship with a weapon with the Arrest-X special rule, each Ship in the damaged Group is affected by the Arrest rule and increases its X value by 2 for that attack.",
+                    "$text": "When you inflict damage to an enemy Ship with a weapon with the Arrest-X special rule, each Ship in the damaged Group is affected by the Arrest rule and increases its X value by 2 for that attack.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -769,7 +769,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you assign targets to a weapon with “Lightvice” in its name, that weapon ignores its Focused rule for that attack.",
+                    "$text": "When you assign targets to a weapon with \"Lightvice\" in its name, that weapon ignores its Focused rule for that attack.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -870,7 +870,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When an enemy would destroy one of your Payload Ships, it is not destroyed and is instead reattached to a valid Porter Ship within 6”.",
+                    "$text": "When an enemy would destroy one of your Payload Ships, it is not destroyed and is instead reattached to a valid Porter Ship within 6\".",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -880,7 +880,7 @@
               {
                 "name": "One Upsmanship",
                 "id": "2a11-dd04-cc14-708b",
-                "description": "If this Admiral is your highest level Admiral, whenever your opponent uses an Ability, roll a dice. On a 4+, you gain 1AP.",
+                "description": "If this Admiral is your highest level Admiral, whenever your opponent uses an Ability, roll a dice. On a 4+, you gain 1AP.",
                 "hidden": false
               }
             ]
@@ -5502,7 +5502,7 @@
           {
             "name": "Giga Lightvice",
             "id": "1d77-8400-2ffa-f70c",
-            "description": "When determining potential targets for this weapon, you may use an unmodifiable Scan of 7” instead of this Ship’s Scan value.",
+            "description": "When determining potential targets for this weapon, you may use an unmodifiable Scan of 7\" instead of this Ship's Scan value.",
             "hidden": false
           }
         ]
@@ -7265,7 +7265,7 @@
                       {"name": "Lock", "$text": "3+", "typeId": "4e0c-3aca-e97e-05c8"},
                       {"name": "DMG", "$text": "2", "typeId": "1314-c0f9-8c3a-21ff"},
                       {"name": "Type", "$text": "E", "typeId": "a2f6-d421-0336-1c75"},
-                      {"name": "Special", "$text": "Close Action, Escape Velocity, Status", "typeId": "f633-dba6-938c-31f2"}
+                      {"name": "Special", "$text": "Close Action, Escape Velocity, Status", "typeId": "f633-dba6-938c-31f2"}
                     ]
                   }
                 ],
@@ -7308,7 +7308,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "If a friendly Group’s attack would cause an enemy Group to be completely removed from the table, the friendly Group may immediately turn up to 45 degrees.",
+                    "$text": "If a friendly Group's attack would cause an enemy Group to be completely removed from the table, the friendly Group may immediately turn up to 45 degrees.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7333,7 +7333,7 @@
                   {"name": "Cost", "$text": "3AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of the Activation Phase, pick an opponent. That opponent’s Abilities cost 1 additional AP to use until the end of the round.",
+                    "$text": "At the start of the Activation Phase, pick an opponent. That opponent's Abilities cost 1 additional AP to use until the end of the round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7358,7 +7358,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of the Activation Phase, pick a Dropsite you contest. Add a friendly Battalion to each Feature on that Dropsite. At the beginning of the Cleanup step of the End Phase, remove a friendly Battalion from each Feature on that Dropsite.",
+                    "$text": "At the start of the Activation Phase, pick a Dropsite you contest. Add a friendly Battalion to each Feature on that Dropsite. At the beginning of the Cleanup step of the End Phase, remove a friendly Battalion from each Feature on that Dropsite.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7383,7 +7383,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you assign a Group’s weapons to targets, pick one of the attacking Group’s Weapon Systems. Improve the Lock of that Weapon System by 1 for this attack sequence.",
+                    "$text": "When you assign a Group's weapons to targets, pick one of the attacking Group's Weapon Systems. Improve the Lock of that Weapon System by 1 for this attack sequence.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7408,7 +7408,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the end of the Planning Phase, you may swap the attached Payloads of two Porter Ships with the same Porter value.",
+                    "$text": "At the end of the Planning Phase, you may swap the attached Payloads of two Porter Ships with the same Porter value.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]

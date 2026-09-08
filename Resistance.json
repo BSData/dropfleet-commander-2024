@@ -163,7 +163,7 @@
       {"name": "T-Type Tugboats", "id": "ccd2-fd0d-58bd-948d", "hidden": false, "import": true, "targetId": "21c8-a67f-93e1-7b07", "type": "selectionEntry"},
       {"name": "EX-7 Packet Runner", "id": "924b-84c2-4192-7651", "hidden": false, "import": true, "targetId": "b6bf-c8ab-1240-e10f", "type": "selectionEntry"},
       {"name": "DH-Type Penal Transport", "id": "b6b8-6b94-6e7e-8d22", "hidden": false, "import": true, "targetId": "3c15-10cc-4cf2-7166", "type": "selectionEntry"},
-      {"name": "Jah’tar Startrader", "id": "b110-4851-1f65-5810", "hidden": false, "import": true, "targetId": "e1ee-f46b-05f3-54b2", "type": "selectionEntry"},
+      {"name": "Jah'tar Startrader", "id": "b110-4851-1f65-5810", "hidden": false, "import": true, "targetId": "e1ee-f46b-05f3-54b2", "type": "selectionEntry"},
       {"name": "M-Type Barge", "id": "0274-8158-4c93-0937", "hidden": false, "import": true, "targetId": "a1c6-c54a-4d36-5280", "type": "selectionEntry"},
       {"name": "OBV-64 Oblivion Barge", "id": "cced-95c2-08cf-658f", "hidden": false, "import": true, "targetId": "390b-443d-373d-1637", "type": "selectionEntry"},
       {"name": "Argonaut", "id": "d82a-099e-3419-7192", "hidden": false, "import": true, "targetId": "1d35-3bb4-449a-62d4", "type": "selectionEntry"},
@@ -195,13 +195,13 @@
       {
         "name": "Repair Bay",
         "id": "2fc9-d1f9-059b-c3c1",
-        "description": "Friendly Ships within 6” of this Ship that roll to repair Crippling Effects during the Repair step of the End Phase repair those effects on a roll of a 2+ instead of a 4+. Friendly Ships that end their activation within 6” of this Ship on the same Orbital Layer recover 2 lost Hull Points.",
+        "description": "Friendly Ships within 6\" of this Ship that roll to repair Crippling Effects during the Repair step of the End Phase repair those effects on a roll of a 2+ instead of a 4+. Friendly Ships that end their activation within 6\" of this Ship on the same Orbital Layer recover 2 lost Hull Points.",
         "hidden": false
       },
       {
         "name": "Box Of Scraps",
         "id": "6042-7b1a-9cc8-2cc6",
-        "description": "At the end of this ship’s activation, pick one friendly ship within 6” in line of sight (including this one). Place a Box Of Scraps token next to that ship. The next time that Ship would be destroyed, it isn’t. Instead, before continuing to inflict damage, remove the Box of Scraps token and that ship remains in play with D3 Hull Points remaining, then continue inflicting damage as normal. Box Of Scraps tokens persist through rounds but a ship may only have 1 Box Of Scraps token.",
+        "description": "At the end of this ship's activation, pick one friendly ship within 6\" in line of sight (including this one). Place a Box Of Scraps token next to that ship. The next time that Ship would be destroyed, it isn't. Instead, before continuing to inflict damage, remove the Box of Scraps token and that ship remains in play with D3 Hull Points remaining, then continue inflicting damage as normal. Box Of Scraps tokens persist through rounds but a ship may only have 1 Box Of Scraps token.",
         "hidden": false
       },
       {
@@ -213,13 +213,13 @@
       {
         "name": "Wing Support",
         "id": "a315-6216-8cd2-6a19",
-        "description": "Friendly Fighters within 6” of this Ship can be used for Close Protection against any Kinetic weapons (in addition to Close Action and Bomber attacks). When friendly Fighters within 6” of this Ship are used to remove enemy Bombers, each Fighter removes 2 Bombers instead of 1. When friendly Bombers (of any type) within 6” of a Ship with this rule attack, they Saturation Fire when there are 5 or more Bombers in the attack instead of 6.",
+        "description": "Friendly Fighters within 6\" of this Ship can be used for Close Protection against any Kinetic weapons (in addition to Close Action and Bomber attacks). When friendly Fighters within 6\" of this Ship are used to remove enemy Bombers, each Fighter removes 2 Bombers instead of 1. When friendly Bombers (of any type) within 6\" of a Ship with this rule attack, they Saturation Fire when there are 5 or more Bombers in the attack instead of 6.",
         "hidden": false
       },
       {
         "name": "Debris Clearance",
         "id": "01ec-39c9-8ad8-2b37",
-        "description": "Once per game, this Ship may forgo any attacks it may make. If it does, instead of attacking, this Ship may replace a piece of Debris Field within 6” (measuring to the edge of that Debris Field) with a Micrometeor Cloud of approximately the same size in the same location, or remove a piece of Micrometeor Cloud within 6” from the table.",
+        "description": "Once per game, this Ship may forgo any attacks it may make. If it does, instead of attacking, this Ship may replace a piece of Debris Field within 6\" (measuring to the edge of that Debris Field) with a Micrometeor Cloud of approximately the same size in the same location, or remove a piece of Micrometeor Cloud within 6\" from the table.",
         "hidden": false
       },
       {
@@ -231,19 +231,19 @@
       {
         "name": "Telescope Token",
         "id": "5e41-e47d-2eee-9f6d",
-        "description": "When you assign weapons to a Group that has a Telescope token, you may remove the token. If you do, one of the Group's Weapon Systems lowers the result required to score a critical against that Group by 1 for that attack (so a weapon that would crit on a 5+ crits on a 4+ instead).\nTelescope tokens placed by this Ship persist between rounds and are only removed when this Ship would place another Telescope token or when a Ship with a Telescope token goes on the Silent Running order.",
+        "description": "When you assign weapons to a Group that has a Telescope token, you may remove the token. If you do, one of the Group's Weapon Systems lowers the result required to score a critical against that Group by 1 for that attack (so a weapon that would crit on a 5+ crits on a 4+ instead).\nTelescope tokens placed by this Ship persist between rounds and are only removed when this Ship would place another Telescope token or when a Ship with a Telescope token goes on the Silent Running order.",
         "hidden": false
       },
       {
         "name": "Explosive",
         "id": "0208-e00f-13ea-f5b3",
-        "description": "When this ship is destroyed, it explodes with a range of 3” and rolls 1D3 on the Explosion Effect table.",
+        "description": "When this ship is destroyed, it explodes with a range of 3\" and rolls 1D3 on the Explosion Effect table.",
         "hidden": false
       },
       {
         "name": "Fire Ships",
         "id": "db5c-8c10-3051-a262",
-        "description": "When this Load is shared with Bulk Landers, 2 Launch are needed to place 1 Fire Ship.",
+        "description": "When this Load is shared with Bulk Landers, 2 Launch are needed to place 1 Fire Ship.",
         "hidden": false
       },
       {
@@ -261,7 +261,7 @@
       {
         "name": "Set Timers And Run",
         "id": "8971-5a04-65ba-e107",
-        "description": "Once you complete an attack sequence with Explosive Detonation, remove this ship from the game. If there is a friendly Ship within 8” of this Ship, place a Fawkes’ Crew Battalion on that Ship. This ship only counts for Ships killed when Fawkes’ Crew Battalion is removed from the game.",
+        "description": "Once you complete an attack sequence with Explosive Detonation, remove this ship from the game. If there is a friendly Ship within 8\" of this Ship, place a Fawkes' Crew Battalion on that Ship. This ship only counts for Ships killed when Fawkes' Crew Battalion is removed from the game.",
         "hidden": false
       },
       {"name": "Skeleton Crew", "id": "ea50-069a-5904-c8a7", "description": "This Ship can only go on General Quarters", "hidden": false}
@@ -303,7 +303,7 @@
               {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "Before you attack with a Group of M tonnage, pick two of its weapon systems with the same name without the Linked-X special rule. Those weapons gain Linked-SSN for that attack.",
+                "$text": "Before you attack with a Group of M tonnage, pick two of its weapon systems with the same name without the Linked-X special rule. Those weapons gain Linked-SSN for that attack.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -499,7 +499,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you launch Bulk Landers from this Ship or a Ship within 6” of it, you may have that Ship launch an additional 2 or 4 Bulk Landers. Any Ship that does takes that much damage (causing Crippling Effects and Explosions where applicable).",
+                    "$text": "When you launch Bulk Landers from this Ship or a Ship within 6\" of it, you may have that Ship launch an additional 2 or 4 Bulk Landers. Any Ship that does takes that much damage (causing Crippling Effects and Explosions where applicable).",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -743,7 +743,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you Overcharge a Group’s weapon with “Vent” in its name, each Ship in the firing Group may Overcharge a second weapon this activation.",
+                    "$text": "When you Overcharge a Group's weapon with \"Vent\" in its name, each Ship in the firing Group may Overcharge a second weapon this activation.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -753,7 +753,7 @@
               {
                 "name": "Extensive Reactor Modifications",
                 "id": "59dc-a9b1-fa75-fa9a",
-                "description": "If Hull points lost due to its Vent Cannon Batteries’ Overcharge rule would cause this Ship to be destroyed, it rolls 3D3 for its explosion and that explosion also affects Ships in other Orbital Layers.",
+                "description": "If Hull points lost due to its Vent Cannon Batteries' Overcharge rule would cause this Ship to be destroyed, it rolls 3D3 for its explosion and that explosion also affects Ships in other Orbital Layers.",
                 "hidden": false
               }
             ]
@@ -1020,7 +1020,7 @@
                   {"name": "Cost", "$text": "2AP*", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you assign targets to a Weapon System with “Artillery” in its name, that Weapon System’s damage type becomes Core for those attacks. If that Weapon System is on a H or C tonnage Ship this Ability costs 3AP.",
+                    "$text": "When you assign targets to a Weapon System with \"Artillery\" in its name, that Weapon System's damage type becomes Core for those attacks. If that Weapon System is on a H or C tonnage Ship this Ability costs 3AP.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -5332,7 +5332,7 @@
               {"name": "Lock", "$text": "5+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Fusillade-2, Low Power, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Fusillade-2, Low Power, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -5761,9 +5761,9 @@
         "constraints": [{"id": "f5d4-47cd-11d3-af9d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "infoLinks": [{"name": "Reinforced Armour", "id": "12f2-3fba-5632-cd96", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"}],
         "modifiers": [
-          {"affects": "profiles.Ship", "field": "42ae-03c9-d0ff-61da", "join": ", ", "scope": "parent", "type": "decrement", "value": 1},
-          {"affects": "profiles.Ship", "field": "a4d4-4c63-1848-24f8", "join": ", ", "scope": "parent", "type": "decrement", "value": 1},
-          {"affects": "profiles.Ship", "field": "fdf5-89b6-e62e-570f", "join": ", ", "scope": "parent", "type": "set", "value": "Reinforced Armour"}
+          {"affects": "profiles.Ship", "field": "42ae-03c9-d0ff-61da", "scope": "parent", "type": "decrement", "value": 1},
+          {"affects": "profiles.Ship", "field": "a4d4-4c63-1848-24f8", "scope": "parent", "type": "decrement", "value": 1},
+          {"affects": "profiles.Ship", "field": "fdf5-89b6-e62e-570f", "scope": "parent", "type": "set", "value": "Reinforced Armour"}
         ],
         "profiles": [
           {
@@ -5775,7 +5775,7 @@
             "characteristics": [
               {
                 "name": "Effect",
-                "$text": "This Ship gains the Reinforced Armour special rule and improves its Kinetic and Energy save by 1.",
+                "$text": "This Ship gains the Reinforced Armour special rule and improves its Kinetic and Energy save by 1.",
                 "typeId": "1f58-541b-60dc-ea2a"
               }
             ]
@@ -5798,7 +5798,7 @@
             "hidden": false,
             "typeId": "2f84-97db-deff-fa6f",
             "typeName": "Structure",
-            "characteristics": [{"name": "Effect", "$text": "This Ship increases its Thrust by 3”.", "typeId": "1f58-541b-60dc-ea2a"}]
+            "characteristics": [{"name": "Effect", "$text": "This Ship increases its Thrust by 3\".", "typeId": "1f58-541b-60dc-ea2a"}]
           }
         ]
       },
@@ -5818,7 +5818,7 @@
             "hidden": false,
             "typeId": "2f84-97db-deff-fa6f",
             "typeName": "Structure",
-            "characteristics": [{"name": "Effect", "$text": "This Ship increases its Scan by 4”.", "typeId": "1f58-541b-60dc-ea2a"}]
+            "characteristics": [{"name": "Effect", "$text": "This Ship increases its Scan by 4\".", "typeId": "1f58-541b-60dc-ea2a"}]
           }
         ]
       },
@@ -5835,7 +5835,7 @@
           {
             "affects": "profiles.Ship",
             "field": "fdf5-89b6-e62e-570f",
-            "join": ", ",
+            "join": ", ",
             "scope": "parent",
             "type": "set",
             "value": "Detector",
@@ -5844,7 +5844,7 @@
           {
             "affects": "profiles.Ship",
             "field": "fdf5-89b6-e62e-570f",
-            "join": ", ",
+            "join": ", ",
             "scope": "parent",
             "type": "append",
             "value": "Detector",
@@ -7588,7 +7588,7 @@
           {
             "name": "Explosive Detonation",
             "id": "4f23-0c5b-9872-c00e",
-            "description": "When attacking with this weapon, skip the assign weapons to targets step and proceed to roll to hit instead. When rolling to hit with this weapon, for each result of a 6 (including rolls from this rule), roll an additional dice. After rolling to hit, assign hits as equally as possible to each other Ship and Space Station on the same Orbital Layer within 6” until no hits remain. Then continue the attack sequence as normal.",
+            "description": "When attacking with this weapon, skip the assign weapons to targets step and proceed to roll to hit instead. When rolling to hit with this weapon, for each result of a 6 (including rolls from this rule), roll an additional dice. After rolling to hit, assign hits as equally as possible to each other Ship and Space Station on the same Orbital Layer within 6\" until no hits remain. Then continue the attack sequence as normal.",
             "hidden": false
           }
         ]
@@ -9103,7 +9103,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.",
+                    "$text": "At the start of the Repair step of the End Phase, remove all Crippling effects from a friendly Group.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9128,7 +9128,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When a friendly Ship of M, H, or C tonnage is destroyed by damage from an opponent's attack (including any Crippling or Explosion Effects), it remains in play until the start of the End Phase. At the start of the End Phase, roll for explosion and remove that Ship from play. That Ship counts as destroyed.",
+                    "$text": "When a friendly Ship of M, H, or C tonnage is destroyed by damage from an opponent's attack (including any Crippling or Explosion Effects), it remains in play until the start of the End Phase. At the start of the End Phase, roll for explosion and remove that Ship from play. That Ship counts as destroyed.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9153,7 +9153,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you would Roll for Crippling Effects for a friendly Ship (for any reason), roll 1D6 instead of 2D6 for that Ship’s Crippling Effect. Count a result of a 1 as a result of a 2.",
+                    "$text": "When you would Roll for Crippling Effects for a friendly Ship (for any reason), roll 1D6 instead of 2D6 for that Ship's Crippling Effect. Count a result of a 1 as a result of a 2.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9177,7 +9177,7 @@
                 "typeName": "Admiral Ability",
                 "characteristics": [
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
-                  {"name": "Effect", "$text": "When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.", "typeId": "49ae-26b2-d6ec-81aa"}
+                  {"name": "Effect", "$text": "When you attack with Fire Ships, one of those attacking Wings gains Corruptor-2 for that attack.", "typeId": "49ae-26b2-d6ec-81aa"}
                 ]
               }
             ]
@@ -9200,7 +9200,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you move a Group through Scenery or move/place a Wing of Assets through Scenery, that Group/Wing ignores the effects of that Scenery piece until the end of the movement.",
+                    "$text": "When you move a Group through Scenery or move/place a Wing of Assets through Scenery, that Group/Wing ignores the effects of that Scenery piece until the end of the movement.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9225,7 +9225,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player within 6” of a friendly Group. That Dropsite takes D3+1 Core Hits. After rolling, you may spend an additional 1AP to re-roll the D3 and treat this ability as an attack for the purposes of removing a feature.",
+                    "$text": "At the end of the Activation Phase, before activating Dropsites, pick one Dropsite controlled by an enemy player within 6\" of a friendly Group. That Dropsite takes D3+1 Core Hits. After rolling, you may spend an additional 1AP to re-roll the D3 and treat this ability as an attack for the purposes of removing a feature.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]

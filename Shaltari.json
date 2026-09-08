@@ -147,7 +147,7 @@
       {"name": "T-Type Tugboats", "id": "f09e-6224-80b5-b8ef", "hidden": false, "import": true, "targetId": "21c8-a67f-93e1-7b07", "type": "selectionEntry"},
       {"name": "EX-7 Packet Runner", "id": "4669-3409-ca3f-bf0e", "hidden": false, "import": true, "targetId": "b6bf-c8ab-1240-e10f", "type": "selectionEntry"},
       {"name": "DH-Type Penal Transport", "id": "02ad-d42e-249e-16dd", "hidden": false, "import": true, "targetId": "3c15-10cc-4cf2-7166", "type": "selectionEntry"},
-      {"name": "Jah’tar Startrader", "id": "64fe-2895-67ab-579d", "hidden": false, "import": true, "targetId": "e1ee-f46b-05f3-54b2", "type": "selectionEntry"},
+      {"name": "Jah'tar Startrader", "id": "64fe-2895-67ab-579d", "hidden": false, "import": true, "targetId": "e1ee-f46b-05f3-54b2", "type": "selectionEntry"},
       {"name": "M-Type Barge", "id": "0d50-e001-e69d-99fc", "hidden": false, "import": true, "targetId": "a1c6-c54a-4d36-5280", "type": "selectionEntry"},
       {"name": "OBV-64 Oblivion Barge", "id": "5694-df33-016d-d773", "hidden": false, "import": true, "targetId": "390b-443d-373d-1637", "type": "selectionEntry"},
       {"name": "Argonaut", "id": "eaa4-ca7e-14fe-0c2c", "hidden": false, "import": true, "targetId": "1d35-3bb4-449a-62d4", "type": "selectionEntry"},
@@ -179,31 +179,31 @@
       {
         "name": "Shield Booster",
         "id": "f0c0-4983-dfb5-1878",
-        "description": "While this Ship’s Group is in coherency, when another friendly Group within 6” of this Ship uses its Shield Save, you may improve that Group’s Shield-X special rule by 1 for that Save, to a maximum of 3+ (so Shield-6+ would become Shield-5+). If you do, this Ship’s Group gains a Spike. Each Shield Save can only be affected by this rule once and Ships with this special rule are unaffected.\nThis rule can only be used while this Ship’s Group has fewer than 4 Spikes.",
+        "description": "While this Ship's Group is in coherency, when another friendly Group within 6\" of this Ship uses its Shield Save, you may improve that Group's Shield-X special rule by 1 for that Save, to a maximum of 3+ (so Shield-6+ would become Shield-5+). If you do, this Ship's Group gains a Spike. Each Shield Save can only be affected by this rule once and Ships with this special rule are unaffected.\nThis rule can only be used while this Ship's Group has fewer than 4 Spikes.",
         "hidden": false
       },
       {
         "name": "Void Skip",
         "id": "3c13-4dce-2534-ad09",
-        "description": "If this ship goes on General Quarters when within 6” of a Ship with the Gateship special rule, rather than making a normal move, you may place it within 6” of any other Gateship in that Gateship’s chain (within 18” of each other as normal), facing any direction. If it does, it gains a Spike. It may be put in either Orbit or Atmosphere, regardless of the Voidgate it is placed by. When doing this, the whole group must move together.",
+        "description": "If this ship goes on General Quarters when within 6\" of a Ship with the Gateship special rule, rather than making a normal move, you may place it within 6\" of any other Gateship in that Gateship's chain (within 18\" of each other as normal), facing any direction. If it does, it gains a Spike. It may be put in either Orbit or Atmosphere, regardless of the Voidgate it is placed by. When doing this, the whole group must move together.",
         "hidden": false
       },
       {
         "name": "Open Network",
         "id": "6d98-dd49-c44e-7af7",
-        "description": "In a round this Group is deployed, it activates following the normal activation, group, and deployment rules. In subsequent rounds all of your Open Network Ships count as being part of a single Group. Ships in this single Group choose their orders individually when it activates. From the second round onwards, all friendly Open Network Groups count as a single Group when generating Pass Tokens.\nOpen Network Ships ignore Coherency rules (and do not gain Formation Benefits), have no Lead Ship, are targeted by attacks individually, and these attacks can only damage and affect the targeted Open Network Ship. \nCrippling Effects, Spikes, and other rules that affect an entire Group only affect the targeted Open Network Ship.",
+        "description": "In a round this Group is deployed, it activates following the normal activation, group, and deployment rules. In subsequent rounds all of your Open Network Ships count as being part of a single Group. Ships in this single Group choose their orders individually when it activates. From the second round onwards, all friendly Open Network Groups count as a single Group when generating Pass Tokens.\nOpen Network Ships ignore Coherency rules (and do not gain Formation Benefits), have no Lead Ship, are targeted by attacks individually, and these attacks can only damage and affect the targeted Open Network Ship. \nCrippling Effects, Spikes, and other rules that affect an entire Group only affect the targeted Open Network Ship.",
         "hidden": false
       },
       {
         "name": "Force Projectors",
         "id": "aae7-bb69-749e-ed86",
-        "description": "This weapon may target Wings as if they were Ships (with a Sig of 0”) but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.",
+        "description": "This weapon may target Wings as if they were Ships (with a Sig of 0\") but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.",
         "hidden": false
       },
       {
         "name": "Feature Carrier",
         "id": "03c8-3587-3058-64b4",
-        "description": "At the start of the game, before players deploy, choose two Deployable Features from the Shaltari Deployable Features List (duplicates are allowed). This Ship starts the game carrying those Deployable Features.",
+        "description": "At the start of the game, before players deploy, choose two Deployable Features from the Shaltari Deployable Features List (duplicates are allowed). This Ship starts the game carrying those Deployable Features.",
         "hidden": false
       }
     ],
@@ -243,7 +243,7 @@
               {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "At the start of the Asset Phase, before Battalion Combat, select a Dropsite or Feature containing friendly Battalions. If that Dropsite/Feature is within 3” of a friendly Ship with the Gateship special rule, you may move a number of friendly Battalions assigned to the selected Dropsite or Feature to another Dropsite or one of its Features within 3” of another Ship in the same Gateship chain. You cannot move more Battalions than the Gateship-X value of the final Ship or Dropsite used in the Gateship Chain.",
+                "$text": "At the start of the Asset Phase, before Battalion Combat, select a Dropsite or Feature containing friendly Battalions. If that Dropsite/Feature is within 3\" of a friendly Ship with the Gateship special rule, you may move a number of friendly Battalions assigned to the selected Dropsite or Feature to another Dropsite or one of its Features within 3\" of another Ship in the same Gateship chain. You cannot move more Battalions than the Gateship-X value of the final Ship or Dropsite used in the Gateship Chain.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -490,7 +490,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "Before any player rolls for Explosion (friendly or enemy), make the final result of that roll a 5",
+                    "$text": "Before any player rolls for Explosion (friendly or enemy), make the final result of that roll a 5",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -500,7 +500,7 @@
               {
                 "name": "Radiation Aura",
                 "id": "9414-fec0-adb3-c786",
-                "description": "At the end of this Ship’s activation, each enemy Group within 4” suffers D3 Core hits.",
+                "description": "At the end of this Ship's activation, each enemy Group within 4\" suffers D3 Core hits.",
                 "hidden": false
               }
             ]
@@ -697,7 +697,7 @@
               {
                 "name": "True Disintegration",
                 "id": "26e6-abd4-740e-1ba1",
-                "description": "When damage from this Flagship’s Disintegrator Battery is part of an attack that causes a Ship to be destroyed, instead of rolling for explosion, all Ships in explosion range suffer 1 damage.",
+                "description": "When damage from this Flagship's Disintegrator Battery is part of an attack that causes a Ship to be destroyed, instead of rolling for explosion, all Ships in explosion range suffer 1 damage.",
                 "hidden": false
               }
             ]
@@ -820,7 +820,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of an enemy Group’s activation, pick another enemy Group that has not activated this round. Turn all Ships in that Group up to 90 degrees in the same direction.",
+                    "$text": "At the start of an enemy Group's activation, pick another enemy Group that has not activated this round. Turn all Ships in that Group up to 90 degrees in the same direction.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -835,7 +835,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of a friendly Group’s activation, turn all Ships in that Group up to 45 degrees in the same direction. Ships in that Group gain Vectored until the end of the round.",
+                    "$text": "At the start of a friendly Group's activation, turn all Ships in that Group up to 45 degrees in the same direction. Ships in that Group gain Vectored until the end of the round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -845,7 +845,7 @@
               {
                 "name": "Gravitational Draw",
                 "id": "c143-3e3f-e516-3fe5",
-                "description": "Whenever this Flagship’s Gravity Coils would cause a ship to turn due to the Impel rule, gain 1AP.",
+                "description": "Whenever this Flagship's Gravity Coils would cause a ship to turn due to the Impel rule, gain 1AP.",
                 "hidden": false
               }
             ]
@@ -3694,7 +3694,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Cloak-2, Hero, Shield-5+, Stealth, Unique", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Cloak-2, Hero, Shield-5+, Stealth, Unique", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -6192,7 +6192,7 @@
               {"name": "Lock", "$text": "2+", "typeId": "4e0c-3aca-e97e-05c8"},
               {"name": "DMG", "$text": "1", "typeId": "1314-c0f9-8c3a-21ff"},
               {"name": "Type", "$text": "E", "typeId": "a2f6-d421-0336-1c75"},
-              {"name": "Special", "$text": "Close Action, Escape Velocity, Status", "typeId": "f633-dba6-938c-31f2"}
+              {"name": "Special", "$text": "Close Action, Escape Velocity, Status", "typeId": "f633-dba6-938c-31f2"}
             ]
           }
         ],
@@ -6200,7 +6200,7 @@
           {
             "name": "Electrowave Caster",
             "id": "584e-5ca6-db56-da88",
-            "description": "Effects caused by this weapon’s Status rule are removed at the start of next rounds End Phase instead of this rounds End Phase.",
+            "description": "Effects caused by this weapon's Status rule are removed at the start of next rounds End Phase instead of this rounds End Phase.",
             "hidden": false
           }
         ]
@@ -6890,7 +6890,7 @@
               {
                 "name": "Electrosurge Torus",
                 "id": "0fea-b63c-4ae1-f2c5",
-                "description": "This feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.",
+                "description": "This feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.",
                 "hidden": false
               }
             ]
@@ -6978,7 +6978,7 @@
               {
                 "name": "Worldstrider",
                 "id": "0066-4066-78c5-0d47",
-                "description": "When you activate this Feature, you may pick another Feature on its Dropsite and roll a dice. On a result of a 3+, remove that Feature and any Battalions deployed on it from this Dropsite. If any Battalions are removed due to this rule, roll a dice. On a result of a 5+, this feature remains in play, otherwise, it is removed.\nThis feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.",
+                "description": "When you activate this Feature, you may pick another Feature on its Dropsite and roll a dice. On a result of a 3+, remove that Feature and any Battalions deployed on it from this Dropsite. If any Battalions are removed due to this rule, roll a dice. On a result of a 5+, this feature remains in play, otherwise, it is removed.\nThis feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.",
                 "hidden": false
               }
             ]
@@ -7067,7 +7067,7 @@
               {
                 "name": "Stellargate",
                 "id": "1e0e-f9f7-7fe8-7116",
-                "description": "After Battalion combat on this Feature’s Dropsite, if it contains any number of friendly Stellargates, deploy one Battalion to that Dropsite. A Dropsite can only have a single Battalion deployed to it this way each round.\nWhile you have one or more Stellargates on a Dropsite, that Dropsite counts as a Controlled Dropsite with Gateship-X for the purposes of the Mothership special rule, where X is the total number of friendly Stellargates on that Dropsite. Additionally, the Dropsite forms a part of a Gateship chain with friendly Gateships and Motherships within 18”.\nThis feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.",
+                "description": "After Battalion combat on this Feature's Dropsite, if it contains any number of friendly Stellargates, deploy one Battalion to that Dropsite. A Dropsite can only have a single Battalion deployed to it this way each round.\nWhile you have one or more Stellargates on a Dropsite, that Dropsite counts as a Controlled Dropsite with Gateship-X for the purposes of the Mothership special rule, where X is the total number of friendly Stellargates on that Dropsite. Additionally, the Dropsite forms a part of a Gateship chain with friendly Gateships and Motherships within 18\".\nThis feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.",
                 "hidden": false
               }
             ]
@@ -7100,7 +7100,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When a friendly Carrier with H or C Tonnage launches assets, it may launch a single Impel Mine in addition to its normal Assets this round.",
+                    "$text": "When a friendly Carrier with H or C Tonnage launches assets, it may launch a single Impel Mine in addition to its normal Assets this round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7126,7 +7126,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you use a Group’s Shield-X special rule, roll a dice. On a 4+ do not gain a Spike from that use of the Shield-X special rule (other uses are unaffected).",
+                    "$text": "When you use a Group's Shield-X special rule, roll a dice. On a 4+ do not gain a Spike from that use of the Shield-X special rule (other uses are unaffected).",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7151,7 +7151,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of the Asset Phase, pick a Dropsite. You may redistribute the allocation of all friendly Assets in that Dropsite and its Features.",
+                    "$text": "At the start of the Asset Phase, pick a Dropsite. You may redistribute the allocation of all friendly Assets in that Dropsite and its Features.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7176,7 +7176,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of a friendly Group’s activation, that Group increases its Thrust by D3” until the end of its activation.",
+                    "$text": "At the start of a friendly Group's activation, that Group increases its Thrust by D3\" until the end of its activation.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7201,7 +7201,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of a friendly Group’s activation that Group may fire any number of its Weapons on General Quarters but may not use Shield Saves until the end of the round.",
+                    "$text": "At the start of a friendly Group's activation that Group may fire any number of its Weapons on General Quarters but may not use Shield Saves until the end of the round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7226,7 +7226,7 @@
                   {"name": "Cost", "$text": "*AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of each round, pick one Ability from any other Admiral on the table. This Ability becomes a copy of that Ability until the end of the round.",
+                    "$text": "At the start of each round, pick one Ability from any other Admiral on the table. This Ability becomes a copy of that Ability until the end of the round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
