@@ -243,7 +243,7 @@
       {
         "name": "UCMA Battlenet",
         "id": "c245-6148-bd8a-d5af",
-        "description": "An admiral assigned to this ship gains the following Command Abilities:\nDouble Time Bulk Line (2AP): When you activate another friendly Group in Orbit, until the end of its activation, that Group may launch its Bulk Landers as if the target Dropsite has no enemy Battalions.\nFeet First into Hell (2AP): When you activate another friendly Group in atmosphere, until the end of its activation, that Group can launch its Dropships or Drop Pods with a range of 6\". Drop Pods launched due to this rule ignore the Alt-Launch rule.",
+        "description": "An Admiral assigned to this ship gains the following Command Abilities:\nDouble Time Bulk Line (2AP): When you activate another friendly Group in Orbit, until the end of its activation, that Group may launch its Bulk Landers as if the target Dropsite has no enemy Battalions.\nFeet First into Hell (2AP): When you activate another friendly Group in atmosphere, until the end of its activation, that Group can launch its Dropships or Drop Pods with a range of 6\". Drop Pods launched due to this rule ignore the Alt-Launch rule.",
         "hidden": false,
         "page": 45,
         "publicationId": "45b0-3e3b-e83d-fd70"
@@ -312,12 +312,12 @@
           {
             "field": "9e10-bb7e-f3e8-a76b",
             "type": "set",
-            "value": -1,
+            "value": 1,
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -333,7 +333,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -344,7 +344,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "2bfb-facb-f285-8141",
-                "childName": "Show all admirals",
+                "childName": "Admirals",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -407,7 +407,7 @@
           {"name": "Admirals", "id": "e57b-c51d-c748-4ccd", "primary": false, "targetId": "fb8b-57b3-d46c-d679"},
           {"name": "Faction/Famous Admirals", "id": "e88e-204d-800b-113b", "primary": false, "targetId": "79f7-4244-6fb7-d41a"}
         ],
-        "constraints": [{"id": "6f16-586b-f538-9c6c", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "constraints": [{"id": "6f16-586b-f538-9c6c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "modifiers": [
           {
             "field": "6f16-586b-f538-9c6c",
@@ -420,7 +420,7 @@
                   {
                     "childId": "7895-d441-b903-8bb2",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -430,7 +430,7 @@
                   {
                     "childId": "3fda-65f2-6cc3-ee33",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -452,7 +452,7 @@
                   {
                     "childId": "7895-d441-b903-8bb2",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -462,7 +462,7 @@
                   {
                     "childId": "3fda-65f2-6cc3-ee33",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -476,7 +476,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "c0e0-0d6b-4ddb-2a64",
-                "childName": "Show all famous admirals",
+                "childName": "Famous admirals",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -661,7 +661,7 @@
           {"name": "Admirals", "id": "6de9-c5e9-d720-8c4d", "primary": false, "targetId": "fb8b-57b3-d46c-d679"},
           {"name": "Faction/Famous Admirals", "id": "eb2e-6855-c2a9-9777", "primary": false, "targetId": "79f7-4244-6fb7-d41a"}
         ],
-        "constraints": [{"id": "3cfe-d4e9-16f6-7bff", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "constraints": [{"id": "3cfe-d4e9-16f6-7bff", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "modifiers": [
           {
             "field": "3cfe-d4e9-16f6-7bff",
@@ -674,7 +674,7 @@
                   {
                     "childId": "7895-d441-b903-8bb2",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -684,7 +684,7 @@
                   {
                     "childId": "3fda-65f2-6cc3-ee33",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -706,7 +706,7 @@
                   {
                     "childId": "7895-d441-b903-8bb2",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -716,7 +716,7 @@
                   {
                     "childId": "3fda-65f2-6cc3-ee33",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -730,7 +730,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "c0e0-0d6b-4ddb-2a64",
-                "childName": "Show all famous admirals",
+                "childName": "Famous admirals",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -882,7 +882,7 @@
           {"name": "Faction/Famous Admirals", "id": "985d-6ccc-3cc5-b785", "primary": false, "targetId": "79f7-4244-6fb7-d41a"},
           {"name": "Admirals", "id": "ded6-b1ad-0ccd-f44f", "primary": false, "targetId": "fb8b-57b3-d46c-d679"}
         ],
-        "constraints": [{"id": "106e-1113-d1f5-f4a7", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "constraints": [{"id": "106e-1113-d1f5-f4a7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "modifiers": [
           {
             "field": "106e-1113-d1f5-f4a7",
@@ -892,7 +892,7 @@
               {
                 "childId": "7895-d441-b903-8bb2",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -908,7 +908,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -919,7 +919,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "c0e0-0d6b-4ddb-2a64",
-                "childName": "Show all famous admirals",
+                "childName": "Famous admirals",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -1055,7 +1055,7 @@
           {"name": "Faction/Famous Admirals", "id": "4c4c-f82d-badd-2be6", "primary": false, "targetId": "79f7-4244-6fb7-d41a"},
           {"name": "Admirals", "id": "0bbd-381f-c38c-cdd2", "primary": false, "targetId": "fb8b-57b3-d46c-d679"}
         ],
-        "constraints": [{"id": "eab8-d85e-67bc-e0f4", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "constraints": [{"id": "eab8-d85e-67bc-e0f4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "selectionEntries": [
           {
             "name": "Tayne",
@@ -1188,7 +1188,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -1199,7 +1199,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "2172-995a-95f6-db3d",
-                "childName": "Show all options",
+                "childName": "Colossal ships",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -1329,7 +1329,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -1340,7 +1340,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "2172-995a-95f6-db3d",
-                "childName": "Show all options",
+                "childName": "Colossal ships",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -1785,7 +1785,7 @@
                 "id": "98de-2311-997b-3dd7",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 2,
+                "sortIndex": 3,
                 "targetId": "1cae-3b48-d446-10f7",
                 "type": "selectionEntryGroup"
               },
@@ -1794,7 +1794,7 @@
                 "id": "87ae-3cb0-c6d9-dcdb",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 5,
                 "targetId": "6db4-cb9d-ecd7-9762",
                 "type": "selectionEntry"
               },
@@ -1803,7 +1803,7 @@
                 "id": "ef7d-e6ab-9f61-e2f0",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 4,
                 "targetId": "f206-27fd-c5f5-34aa",
                 "type": "selectionEntry"
               },
@@ -1812,7 +1812,7 @@
                 "id": "aad4-2570-9ba1-bb58",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 5,
+                "sortIndex": 6,
                 "targetId": "1ac0-a1aa-8566-6c8e",
                 "type": "selectionEntry"
               },
@@ -1821,7 +1821,7 @@
                 "id": "55b0-1596-6be7-4b5e",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
+                "sortIndex": 2,
                 "targetId": "58c9-a95a-e442-2f10",
                 "type": "selectionEntry"
               }
@@ -2305,7 +2305,15 @@
                 "targetId": "a476-d888-c853-71ed",
                 "type": "selectionEntry"
               },
-              {"name": "Fighters & Bombers", "id": "d533-8272-2d0f-7d3d", "hidden": false, "import": true, "targetId": "ba6a-589a-610d-5df4", "type": "selectionEntry"}
+              {
+                "name": "Fighters & Bombers",
+                "id": "d533-8272-2d0f-7d3d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "ba6a-589a-610d-5df4",
+                "type": "selectionEntry"
+              }
             ],
             "infoLinks": [{"name": "Feature Carrier", "id": "2e33-ffd6-291f-d6f4", "hidden": false, "targetId": "c6ab-b077-83e9-ed53", "type": "rule"}],
             "profiles": [
@@ -2710,7 +2718,7 @@
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Command Ship-2, Marines-1, UCMF Battlenet, Vanguard-4\"", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Command Ship-2, Marines-1, Vanguard-4\", UCMF Battlenet", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -3136,7 +3144,7 @@
             "conditions": [
               {
                 "childId": "5074-7dd4-e180-ad9c",
-                "childName": "Las Vegas Command Carrier",
+                "childName": "Frances Mendoza - Flying Dutchman Heavy Cruiser",
                 "field": "selections",
                 "includeChildSelections": false,
                 "scope": "parent",
@@ -3954,11 +3962,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -3971,11 +3979,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -3988,11 +3996,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -4020,7 +4028,7 @@
                       },
                       {
                         "childId": "7895-d441-b903-8bb2",
-                        "childName": "Skirmish",
+                        "childName": "Skirmish: 501 - 1000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4045,7 +4053,7 @@
                       },
                       {
                         "childId": "3fda-65f2-6cc3-ee33",
-                        "childName": "Clash",
+                        "childName": "Clash: 1001 - 2000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4070,7 +4078,7 @@
                       },
                       {
                         "childId": "c6ef-6271-e246-47a8",
-                        "childName": "Battle",
+                        "childName": "Battle: 2001 - 3000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4095,7 +4103,7 @@
                       },
                       {
                         "childId": "d410-4aa8-c469-064b",
-                        "childName": "Reconquest",
+                        "childName": "Reconquest: 3001+ points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4112,7 +4120,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "b7f2-9472-f805-33e4",
-                "childName": "Rare ships when Rare ship limit reached",
+                "childName": "Rare ships with max quantity in fleet",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -4213,11 +4221,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -4230,11 +4238,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -4247,11 +4255,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -4279,7 +4287,7 @@
                       },
                       {
                         "childId": "7895-d441-b903-8bb2",
-                        "childName": "Skirmish",
+                        "childName": "Skirmish: 501 - 1000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4304,7 +4312,7 @@
                       },
                       {
                         "childId": "3fda-65f2-6cc3-ee33",
-                        "childName": "Clash",
+                        "childName": "Clash: 1001 - 2000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4329,7 +4337,7 @@
                       },
                       {
                         "childId": "c6ef-6271-e246-47a8",
-                        "childName": "Battle",
+                        "childName": "Battle: 2001 - 3000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4354,7 +4362,7 @@
                       },
                       {
                         "childId": "d410-4aa8-c469-064b",
-                        "childName": "Reconquest",
+                        "childName": "Reconquest: 3001+ points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4371,7 +4379,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "b7f2-9472-f805-33e4",
-                "childName": "Rare ships when Rare ship limit reached",
+                "childName": "Rare ships with max quantity in fleet",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -4933,7 +4941,7 @@
             "conditions": [
               {
                 "childId": "dd7d-dba1-8c59-9d0b",
-                "childName": "Anode - The Melter Heavy Destroyer",
+                "childName": "Rhiannon Major - Leaden Triad Heavy Destroyer",
                 "field": "selections",
                 "includeChildSelections": false,
                 "scope": "parent",
@@ -5212,11 +5220,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -5229,11 +5237,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -5246,11 +5254,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -5278,7 +5286,7 @@
                       },
                       {
                         "childId": "7895-d441-b903-8bb2",
-                        "childName": "Skirmish",
+                        "childName": "Skirmish: 501 - 1000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5303,7 +5311,7 @@
                       },
                       {
                         "childId": "3fda-65f2-6cc3-ee33",
-                        "childName": "Clash",
+                        "childName": "Clash: 1001 - 2000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5328,7 +5336,7 @@
                       },
                       {
                         "childId": "c6ef-6271-e246-47a8",
-                        "childName": "Battle",
+                        "childName": "Battle: 2001 - 3000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5353,7 +5361,7 @@
                       },
                       {
                         "childId": "d410-4aa8-c469-064b",
-                        "childName": "Reconquest",
+                        "childName": "Reconquest: 3001+ points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5370,7 +5378,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "b7f2-9472-f805-33e4",
-                "childName": "Rare ships when Rare ship limit reached",
+                "childName": "Rare ships with max quantity in fleet",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -5514,11 +5522,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -5531,11 +5539,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -5548,11 +5556,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -5580,7 +5588,7 @@
                       },
                       {
                         "childId": "7895-d441-b903-8bb2",
-                        "childName": "Skirmish",
+                        "childName": "Skirmish: 501 - 1000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5605,7 +5613,7 @@
                       },
                       {
                         "childId": "3fda-65f2-6cc3-ee33",
-                        "childName": "Clash",
+                        "childName": "Clash: 1001 - 2000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5630,7 +5638,7 @@
                       },
                       {
                         "childId": "c6ef-6271-e246-47a8",
-                        "childName": "Battle",
+                        "childName": "Battle: 2001 - 3000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5655,7 +5663,7 @@
                       },
                       {
                         "childId": "d410-4aa8-c469-064b",
-                        "childName": "Reconquest",
+                        "childName": "Reconquest: 3001+ points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5672,7 +5680,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "b7f2-9472-f805-33e4",
-                "childName": "Rare ships when Rare ship limit reached",
+                "childName": "Rare ships with max quantity in fleet",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -6119,11 +6127,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -6136,11 +6144,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -6153,11 +6161,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -6185,7 +6193,7 @@
                       },
                       {
                         "childId": "7895-d441-b903-8bb2",
-                        "childName": "Skirmish",
+                        "childName": "Skirmish: 501 - 1000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6210,7 +6218,7 @@
                       },
                       {
                         "childId": "3fda-65f2-6cc3-ee33",
-                        "childName": "Clash",
+                        "childName": "Clash: 1001 - 2000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6235,7 +6243,7 @@
                       },
                       {
                         "childId": "c6ef-6271-e246-47a8",
-                        "childName": "Battle",
+                        "childName": "Battle: 2001 - 3000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6260,7 +6268,7 @@
                       },
                       {
                         "childId": "d410-4aa8-c469-064b",
-                        "childName": "Reconquest",
+                        "childName": "Reconquest: 3001+ points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6277,7 +6285,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "b7f2-9472-f805-33e4",
-                "childName": "Rare ships when Rare ship limit reached",
+                "childName": "Rare ships with max quantity in fleet",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -6373,10 +6381,19 @@
                 "id": "5abc-c8b9-9377-6d24",
                 "hidden": false,
                 "import": true,
+                "sortIndex": 1,
                 "targetId": "47f8-5660-88fd-b329",
                 "type": "selectionEntry"
               },
-              {"name": "Aegis-V Array", "id": "65eb-e2d3-004d-00fa", "hidden": false, "import": true, "targetId": "0c21-dd07-2bcb-d2f1", "type": "selectionEntry"}
+              {
+                "name": "Aegis-V Array",
+                "id": "65eb-e2d3-004d-00fa",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "0c21-dd07-2bcb-d2f1",
+                "type": "selectionEntry"
+              }
             ],
             "infoLinks": [{"name": "Aegis-X", "id": "1b6b-1c6a-5e68-ece0", "hidden": false, "targetId": "9cd1-441e-8ee8-7f13", "type": "rule"}],
             "profiles": [
@@ -6554,11 +6571,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -6571,11 +6588,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -6588,11 +6605,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -6620,7 +6637,7 @@
                       },
                       {
                         "childId": "7895-d441-b903-8bb2",
-                        "childName": "Skirmish",
+                        "childName": "Skirmish: 501 - 1000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6645,7 +6662,7 @@
                       },
                       {
                         "childId": "3fda-65f2-6cc3-ee33",
-                        "childName": "Clash",
+                        "childName": "Clash: 1001 - 2000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6670,7 +6687,7 @@
                       },
                       {
                         "childId": "c6ef-6271-e246-47a8",
-                        "childName": "Battle",
+                        "childName": "Battle: 2001 - 3000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6695,7 +6712,7 @@
                       },
                       {
                         "childId": "d410-4aa8-c469-064b",
-                        "childName": "Reconquest",
+                        "childName": "Reconquest: 3001+ points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6712,7 +6729,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "b7f2-9472-f805-33e4",
-                "childName": "Rare ships when Rare ship limit reached",
+                "childName": "Rare ships with max quantity in fleet",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -6800,11 +6817,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -6817,11 +6834,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -6834,11 +6851,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -6866,7 +6883,7 @@
                       },
                       {
                         "childId": "7895-d441-b903-8bb2",
-                        "childName": "Skirmish",
+                        "childName": "Skirmish: 501 - 1000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6891,7 +6908,7 @@
                       },
                       {
                         "childId": "3fda-65f2-6cc3-ee33",
-                        "childName": "Clash",
+                        "childName": "Clash: 1001 - 2000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6916,7 +6933,7 @@
                       },
                       {
                         "childId": "c6ef-6271-e246-47a8",
-                        "childName": "Battle",
+                        "childName": "Battle: 2001 - 3000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6941,7 +6958,7 @@
                       },
                       {
                         "childId": "d410-4aa8-c469-064b",
-                        "childName": "Reconquest",
+                        "childName": "Reconquest: 3001+ points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -6958,7 +6975,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "b7f2-9472-f805-33e4",
-                "childName": "Rare ships when Rare ship limit reached",
+                "childName": "Rare ships with max quantity in fleet",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -7194,7 +7211,7 @@
         "name": "Adder Multi Laser",
         "id": "aa31-b4e6-b013-4c79",
         "collective": true,
-        "comment": "FN 3/2+/1/E Scald-2",
+        "comment": "FN 3/2+/1/E Sc-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7287,7 +7304,7 @@
         "name": "Taipan Laser Turrets",
         "id": "d059-cd94-1cfb-3065",
         "collective": true,
-        "comment": "[x2] F/S 2/2+/1/E Scald-2",
+        "comment": "[x2] F/S 2/2+/1/E Sc-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7318,7 +7335,7 @@
         "name": "Taipan Laser Turrets",
         "id": "f24c-4fcc-cab4-a25e",
         "collective": true,
-        "comment": "F/S 2/2+/1/E Scald-2",
+        "comment": "F/S 2/2+/1/E Sc-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7862,7 +7879,7 @@
         "name": "UF-2200 Mass Driver Turret Triad",
         "id": "040f-02a3-91cf-be69",
         "collective": true,
-        "comment": "F/S 3/4+/1/K",
+        "comment": "F/S 3/4+/1/K Fus-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7923,7 +7940,7 @@
         "name": "UF-B-9000s",
         "id": "d8ff-a3b5-c461-1eca",
         "collective": true,
-        "comment": "FN 3/3+/2/K || F 2/4+/2/K Bmb",
+        "comment": "FN 3/3+/2/K Alt-1 || F 2/4+/2/K Alt-1 Bmb",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -8006,7 +8023,7 @@
         "name": "UF-B-8000 Bombardment Turret Pair",
         "id": "ad72-8029-d11e-e5a0",
         "collective": true,
-        "comment": "F/S/R 6/4+/1/K Bmb Sc-1",
+        "comment": "F/S/R 8/4+/1/K Bmb Sc-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -8071,7 +8088,7 @@
         "name": "Arowana Missile Turrets",
         "id": "98fc-dfc7-5027-febe",
         "collective": true,
-        "comment": "[x2] F/S/R 6/3+/1/K CA Scald-1",
+        "comment": "[x2] F/S/R 6/3+/1/K CA Sc-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -8105,7 +8122,7 @@
         "name": "Arowana Missile Turrets",
         "id": "1970-7c4f-729c-c6ca",
         "collective": true,
-        "comment": "F/S/R 6/3+/1/K CA Scald-1",
+        "comment": "F/S/R 6/3+/1/K CA Sc-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -8232,7 +8249,7 @@
         "name": "Orca Missile Bays",
         "id": "1a8b-96c4-fc9d-12b7",
         "collective": true,
-        "comment": "F/S/R 4/4+/1/K CA Crit-2",
+        "comment": "F/S/R 7/4+/1/K CA Crit-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -8826,6 +8843,7 @@
       {
         "name": "Mines",
         "id": "f667-fa6a-c65b-123b",
+        "collective": true,
         "comment": "2",
         "hidden": false,
         "import": true,
@@ -8867,7 +8885,7 @@
         "constraints": [{"id": "5d0c-612e-295e-1765", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
       },
-      {"name": "----- Reference -----", "id": "36a6-09df-a8a1-9bde", "exportable": false, "hidden": true, "import": false, "type": "upgrade"},
+      {"name": "----- Reference -----", "id": "36a6-09df-a8a1-9bde", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Launch Assets",
         "id": "76f2-9ded-5c83-da35",
@@ -8904,7 +8922,6 @@
           {
             "name": "Light Torpedo",
             "id": "f674-0de3-eab7-9a33",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 1,
@@ -8953,7 +8970,6 @@
           {
             "name": "Bombers",
             "id": "ac18-a118-905d-3622",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 4,
@@ -9001,7 +9017,6 @@
           {
             "name": "Mine",
             "id": "b9b6-51fe-63ac-1565",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 6,
@@ -9049,7 +9064,6 @@
           {
             "name": "Fighters",
             "id": "b5c2-7967-721a-2fe8",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 7,
@@ -9072,7 +9086,6 @@
           {
             "name": "Medium Torpedo",
             "id": "c568-eaa2-be35-9960",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 2,
@@ -9121,7 +9134,6 @@
           {
             "name": "Heavy Torpedo",
             "id": "ddf4-16a1-6472-e029",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 3,
@@ -9170,7 +9182,6 @@
           {
             "name": "Heavy Bombers",
             "id": "8f49-8731-e480-3f5c",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 5,
