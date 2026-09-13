@@ -5,7 +5,6 @@
     "authorName": "John Kemp",
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
     "battleScribeVersion": 2.03,
-    "comment": "\n",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 3,
     "library": false,
@@ -168,14 +167,8 @@
       {"name": "Worldstrider", "id": "c89c-f05d-d50a-b9fc", "hidden": false, "import": true, "targetId": "2fd9-6c83-a2ab-7cd5", "type": "selectionEntry"},
       {"name": "Stellargate", "id": "f47a-0ebc-c473-bbf8", "hidden": false, "import": true, "targetId": "fb5d-af80-233a-f528", "type": "selectionEntry"}
     ],
-    "publications": [{"name": "Shaltari Combined Fleet Stats (260327)", "id": "fbb6-a765-5882-6bcb", "hidden": false, "shortName": "Shaltari Stats (260327)"}],
+    "publications": [{"name": "Shaltari Combined Fleet Stats (260731)", "id": "fbb6-a765-5882-6bcb", "hidden": false, "shortName": "Shaltari Stats (260731)"}],
     "sharedRules": [
-      {
-        "name": "Ion Overload",
-        "id": "0278-c899-4a68-0dac",
-        "description": "While this ship is on Weapons Free, it may use its Ion Aura and Ion Storm as if it did not have the Alt-1 special rule.",
-        "hidden": false
-      },
       {
         "name": "Shield Booster",
         "id": "f0c0-4983-dfb5-1878",
@@ -191,13 +184,7 @@
       {
         "name": "Open Network",
         "id": "6d98-dd49-c44e-7af7",
-        "description": "In a round this Group is deployed, it activates following the normal activation, group, and deployment rules. In subsequent rounds all of your Open Network Ships count as being part of a single Group. Ships in this single Group choose their orders individually when it activates. From the second round onwards, all friendly Open Network Groups count as a single Group when generating Pass Tokens.\nOpen Network Ships ignore Coherency rules (and do not gain Formation Benefits), have no Lead Ship, are targeted by attacks individually, and these attacks can only damage and affect the targeted Open Network Ship. \nCrippling Effects, Spikes, and other rules that affect an entire Group only affect the targeted Open Network Ship.",
-        "hidden": false
-      },
-      {
-        "name": "Force Projectors",
-        "id": "aae7-bb69-749e-ed86",
-        "description": "This weapon may target Wings as if they were Ships (with a Sig of 0\") but reduces its Lock value by 1 for that attack. If it does, each of its hits removes 1 Fighter or 1 Bomber from that Wing.",
+        "description": "In a round this Group is deployed, it activates following the normal activation, group, and deployment rules. In subsequent rounds all of your Open Network Ships count as being part of a single Group. Ships in this single Group choose their orders individually when it activates. From the second round onwards, all friendly Open Network Groups count as a single Group when generating Pass Tokens.\nOpen Network Ships ignore Coherency rules (and do not gain Formation Benefits), have no Lead Ship, are targeted by attacks individually, and these attacks can only damage and affect the targeted Open Network Ship.\nCrippling Effects, Spikes, and other rules that affect an entire Group only affect the targeted Open Network Ship.",
         "hidden": false
       },
       {
@@ -221,7 +208,7 @@
           {"name": "Admirals", "id": "f31a-c49c-7d4f-91d0", "hidden": false, "primary": true, "targetId": "fb8b-57b3-d46c-d679"},
           {"name": "Faction/Famous Admirals", "id": "b430-81cc-70e4-80d7", "hidden": false, "primary": false, "targetId": "79f7-4244-6fb7-d41a"}
         ],
-        "constraints": [{"id": "1d9d-603f-74e7-c7a7", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "constraints": [{"id": "1d9d-603f-74e7-c7a7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 25}],
         "entryLinks": [{"name": "Abilities", "id": "c466-8e10-ab01-5a67", "hidden": false, "import": true, "targetId": "120f-5b56-e0cb-e3f9", "type": "selectionEntryGroup"}],
         "profiles": [
@@ -262,7 +249,7 @@
           {"name": "Admirals", "id": "faa1-4ef9-c82c-20ea", "hidden": false, "primary": true, "targetId": "fb8b-57b3-d46c-d679"},
           {"name": "Faction/Famous Admirals", "id": "0057-3db4-e658-34ee", "hidden": false, "primary": false, "targetId": "79f7-4244-6fb7-d41a"}
         ],
-        "constraints": [{"id": "3fc1-6ace-612b-074f", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "constraints": [{"id": "3fc1-6ace-612b-074f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
         "entryLinks": [{"name": "Abilities", "id": "8f60-74b5-3513-88a1", "hidden": false, "import": true, "targetId": "120f-5b56-e0cb-e3f9", "type": "selectionEntryGroup"}],
         "modifiers": [
@@ -274,7 +261,7 @@
               {
                 "childId": "7895-d441-b903-8bb2",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -290,7 +277,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -301,7 +288,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "2bfb-facb-f285-8141",
-                "childName": "Show all admirals",
+                "childName": "Admirals",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -346,7 +333,7 @@
               {"name": "Cost", "$text": "3AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "When an opponent uses an Ability, negate that use of that Ability (AP is still spent as usual and subsequent uses are unaffected).",
+                "$text": "When an opponent declares the use of an Ability, negate that use of that Ability (AP is still spent as usual and subsequent uses are unaffected).",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -366,7 +353,7 @@
           {"name": "Admirals", "id": "bc2b-fc74-2cdd-4f47", "hidden": false, "primary": false, "targetId": "fb8b-57b3-d46c-d679"},
           {"name": "Faction/Famous Admirals", "id": "9846-36bd-ed47-5530", "hidden": false, "primary": false, "targetId": "79f7-4244-6fb7-d41a"}
         ],
-        "constraints": [{"id": "fdf8-c769-aca6-41de", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "constraints": [{"id": "fdf8-c769-aca6-41de", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "modifiers": [
           {
             "field": "fdf8-c769-aca6-41de",
@@ -379,7 +366,7 @@
                   {
                     "childId": "7895-d441-b903-8bb2",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -389,7 +376,7 @@
                   {
                     "childId": "3fda-65f2-6cc3-ee33",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -411,7 +398,7 @@
                   {
                     "childId": "7895-d441-b903-8bb2",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -421,7 +408,7 @@
                   {
                     "childId": "3fda-65f2-6cc3-ee33",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -435,7 +422,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "c0e0-0d6b-4ddb-2a64",
-                "childName": "Show all famous admirals",
+                "childName": "Famous admirals",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -490,7 +477,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "Before any player rolls for Explosion (friendly or enemy), make the final result of that roll a 5",
+                    "$text": "Before any player rolls for Explosion (friendly or enemy), make the final result of that roll a 5.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -604,7 +591,7 @@
           {"name": "Faction/Famous Admirals", "id": "56eb-496f-079e-d9f7", "hidden": false, "primary": false, "targetId": "79f7-4244-6fb7-d41a"},
           {"name": "Admirals", "id": "b4eb-b0f5-554b-278f", "hidden": false, "primary": false, "targetId": "fb8b-57b3-d46c-d679"}
         ],
-        "constraints": [{"id": "080a-d914-f2ed-86e9", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "constraints": [{"id": "080a-d914-f2ed-86e9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "modifiers": [
           {
             "field": "080a-d914-f2ed-86e9",
@@ -614,7 +601,7 @@
               {
                 "childId": "7895-d441-b903-8bb2",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -630,7 +617,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -641,7 +628,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "c0e0-0d6b-4ddb-2a64",
-                "childName": "Show all famous admirals",
+                "childName": "Famous admirals",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -784,7 +771,7 @@
           {"name": "Faction/Famous Admirals", "id": "55b3-36a5-66c5-24e5", "hidden": false, "primary": false, "targetId": "79f7-4244-6fb7-d41a"},
           {"name": "Admirals", "id": "2b76-577a-8054-45fe", "hidden": false, "primary": false, "targetId": "fb8b-57b3-d46c-d679"}
         ],
-        "constraints": [{"id": "85ea-f2f3-7eb7-db30", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "constraints": [{"id": "85ea-f2f3-7eb7-db30", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "selectionEntries": [
           {
             "name": "Seth",
@@ -923,7 +910,7 @@
           {"name": "Admirals", "id": "4fe1-b0d7-1db7-7444", "hidden": false, "primary": false, "targetId": "fb8b-57b3-d46c-d679"},
           {"name": "Faction/Famous Admirals", "id": "a0d3-49b0-a597-b4d4", "hidden": false, "primary": false, "targetId": "79f7-4244-6fb7-d41a"}
         ],
-        "constraints": [{"id": "2f0a-c366-5540-fc31", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "constraints": [{"id": "2f0a-c366-5540-fc31", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "selectionEntries": [
           {
             "name": "Twins of Aaru",
@@ -1044,7 +1031,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -1055,7 +1042,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "2172-995a-95f6-db3d",
-                "childName": "Show all options",
+                "childName": "Colossal ships",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -1167,7 +1154,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -1178,7 +1165,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "2172-995a-95f6-db3d",
-                "childName": "Show all options",
+                "childName": "Colossal ships",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -2756,7 +2743,6 @@
                 "id": "f45f-3931-8280-61d9",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
                 "targetId": "8bee-12e8-8c3d-102a",
                 "type": "selectionEntry"
               }
@@ -2816,17 +2802,7 @@
               {"id": "e563-6467-fb51-7359", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 180}],
-            "entryLinks": [
-              {
-                "name": "Twin Hyperwave Cannon",
-                "id": "22f9-a6d3-633c-d006",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "targetId": "5404-e515-4a40-7edf",
-                "type": "selectionEntry"
-              }
-            ],
+            "entryLinks": [{"name": "Twin Hyperwave Cannon", "id": "22f9-a6d3-633c-d006", "hidden": false, "import": true, "targetId": "5404-e515-4a40-7edf", "type": "selectionEntry"}],
             "infoLinks": [
               {"name": "Shield-X", "id": "66ae-28d5-f33f-2428", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
               {"name": "Feature Carrier", "id": "4881-c3f1-2312-8eae", "hidden": false, "targetId": "03c8-3587-3058-64b4", "type": "rule"}
@@ -3531,7 +3507,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "2-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Shield-5+, Vectored, Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Shield-5+, Vanguard-6\", Vectored", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -3606,7 +3582,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "2-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Shield-5+, Vectored, Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Shield-5+, Vanguard-6\", Vectored", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -3633,7 +3609,7 @@
             "conditions": [
               {
                 "childId": "b78e-1ac3-11b8-2132",
-                "childName": "Anode - The Melter Heavy Destroyer",
+                "childName": "Nefertem of the Dawn - Invisible Light Heavy Destroyer",
                 "field": "selections",
                 "includeChildSelections": false,
                 "scope": "parent",
@@ -4029,7 +4005,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Shield-5+, Vectored, Vanguard-4\"", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Shield-5+, Vanguard-4\", Vectored", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -4085,7 +4061,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Shield-5+, Vectored, Vanguard-4\"", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Shield-5+, Vanguard-4\", Vectored", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -4381,7 +4357,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-2", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Shield-5+, Shield Booster, Vanguard-4\"", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Shield-5+, Vanguard-4\", Shield Booster", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -4780,7 +4756,6 @@
           {
             "name": "Disintegrator Bank",
             "id": "e992-fada-c695-c0ed",
-            "comment": "F/S 4/3+/1/E Vol-2",
             "hidden": false,
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
@@ -4799,7 +4774,7 @@
         "name": "Disintegrator Battery Pair",
         "id": "8bee-12e8-8c3d-102a",
         "collective": true,
-        "comment": "F/S 5/3+/1/E Rv-1 Vol-2",
+        "comment": "F/S 5/3+/1/E Vol-2 Rv-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -4815,7 +4790,6 @@
           {
             "name": "Disintegrator Battery Pair",
             "id": "7cb3-668a-007f-4e3f",
-            "comment": "F/S 4/3+/1/E Vol-2",
             "hidden": false,
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
@@ -5023,36 +4997,6 @@
         ]
       },
       {
-        "name": "Disruption Beamers",
-        "id": "53eb-d40b-aeef-8d25",
-        "collective": true,
-        "comment": "F 2/3+/1/E",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "56ab-394e-64bd-a96f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "aca2-4bbb-582a-a06c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Disruption Beamers",
-            "id": "0cb9-c4b1-b713-3ba3",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "-", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Disruptor Pair",
         "id": "a238-c7d3-57d8-42df",
         "collective": true,
@@ -5120,7 +5064,7 @@
         "name": "Electrosurge Projectors",
         "id": "5f71-aa7e-6a79-eee9",
         "collective": true,
-        "comment": "B 3/4+/1/E St Vol-2",
+        "comment": "B 3/4+/1/E Status Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5188,7 +5132,7 @@
         "name": "Gravitic Beamer",
         "id": "3078-5bbc-4a92-b46b",
         "collective": true,
-        "comment": "F/S 5/4+/1/E ReEnt Imp-1",
+        "comment": "F/S 5/4+/1/E Imp-1 ReEnt",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5575,7 +5519,7 @@
         "name": "Microwave Array Bank",
         "id": "8baa-59ac-c429-b93f",
         "collective": true,
-        "comment": "S 4/3+/1/E CA Vol-2 Sc-1",
+        "comment": "S 4/3+/1/E CA Sc-1 Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5897,7 +5841,7 @@
         "name": "Pulse Ioniser Bank",
         "id": "be49-8d47-9756-a215",
         "collective": true,
-        "comment": "F 4/*/1/E BT-2 CA Maul Cal-H/C",
+        "comment": "F 4/*/1/E BT-2 Cal-H/C CA Maul",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5933,7 +5877,7 @@
         "name": "Pulse Ioniser Battery",
         "id": "0990-3903-15ed-efc1",
         "collective": true,
-        "comment": "F 12/*/1/E BT-2 CA Maul Cal-M/H/C",
+        "comment": "F 12/*/1/E BT-2 Cal-M/H/C CA Maul",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6104,7 +6048,7 @@
         "name": "Twin Hyperwave Cannon",
         "id": "5404-e515-4a40-7edf",
         "collective": true,
-        "comment": "F 4/3+/2/E Crip-Fire",
+        "comment": "F 4/3+/2/E Crip-2xFire",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6474,6 +6418,8 @@
       {
         "name": "Mines",
         "id": "56ce-5221-ee03-ee49",
+        "collective": true,
+        "comment": "2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6504,7 +6450,7 @@
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 35}],
         "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "join": ", ", "scope": "parent", "type": "increment", "value": 3}]
       },
-      {"name": "----- Reference -----", "id": "9e83-6969-9618-2db7", "exportable": false, "hidden": true, "import": false, "type": "upgrade"},
+      {"name": "----- Reference -----", "id": "9e83-6969-9618-2db7", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Launch Assets",
         "id": "cc1b-9d8b-db2d-9d32",
@@ -6541,7 +6487,6 @@
           {
             "name": "Torpedo",
             "id": "5c90-ad99-d9f2-b629",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 1,
@@ -6590,7 +6535,6 @@
           {
             "name": "Bombers",
             "id": "c5db-9670-0e64-1873",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 2,
@@ -6638,7 +6582,6 @@
           {
             "name": "Mines",
             "id": "bd8b-3147-8def-ff8a",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 4,
@@ -6686,7 +6629,6 @@
           {
             "name": "Fighters",
             "id": "76b4-ad01-a64f-d243",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 6,
@@ -6709,7 +6651,6 @@
           {
             "name": "Fire Ships",
             "id": "5387-d551-c2f8-3cb9",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 3,
@@ -6757,7 +6698,6 @@
           {
             "name": "Impel Mines",
             "id": "1a3e-8cac-c907-e1aa",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 5,

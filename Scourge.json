@@ -5,7 +5,6 @@
     "authorName": "John Kemp",
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
     "battleScribeVersion": 2.03,
-    "comment": "\n",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 1,
     "library": false,
@@ -248,12 +247,12 @@
           {
             "field": "6a9b-77c2-9c44-3001",
             "type": "set",
-            "value": -1,
+            "value": 1,
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -269,7 +268,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -280,7 +279,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "2bfb-facb-f285-8141",
-                "childName": "Show all admirals",
+                "childName": "Admirals",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -345,7 +344,7 @@
           {"name": "Faction/Famous Admirals", "id": "e3b7-53b6-cf4a-ce9a", "hidden": false, "primary": false, "targetId": "79f7-4244-6fb7-d41a"},
           {"name": "Admirals", "id": "1a0a-c65b-43b6-717b", "hidden": false, "primary": false, "targetId": "fb8b-57b3-d46c-d679"}
         ],
-        "constraints": [{"id": "9586-7bd9-4eeb-ffe7", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "constraints": [{"id": "9586-7bd9-4eeb-ffe7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "modifiers": [
           {
             "field": "9586-7bd9-4eeb-ffe7",
@@ -358,7 +357,7 @@
                   {
                     "childId": "7895-d441-b903-8bb2",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -368,7 +367,7 @@
                   {
                     "childId": "3fda-65f2-6cc3-ee33",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -390,7 +389,7 @@
                   {
                     "childId": "7895-d441-b903-8bb2",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -400,7 +399,7 @@
                   {
                     "childId": "3fda-65f2-6cc3-ee33",
                     "field": "selections",
-                    "includeChildForces": true,
+                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -414,7 +413,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "c0e0-0d6b-4ddb-2a64",
-                "childName": "Show all famous admirals",
+                "childName": "Famous admirals",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -586,7 +585,7 @@
           {"name": "Faction/Famous Admirals", "id": "f75f-32b9-6fea-214e", "hidden": false, "primary": false, "targetId": "79f7-4244-6fb7-d41a"},
           {"name": "Admirals", "id": "905e-7ca0-4543-b571", "hidden": false, "primary": false, "targetId": "fb8b-57b3-d46c-d679"}
         ],
-        "constraints": [{"id": "3d73-76ba-f25f-5dae", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "constraints": [{"id": "3d73-76ba-f25f-5dae", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "selectionEntries": [
           {
             "name": "Baba Yaga",
@@ -655,7 +654,6 @@
             "sortIndex": 2,
             "type": "model",
             "categoryLinks": [
-              {"name": "Heavy Ship", "id": "8d4c-35c5-5d32-6c9b", "hidden": false, "primary": true, "targetId": "9d6f-26b0-7969-496b"},
               {"name": "Heavy Groups", "id": "c2a7-bf00-e0b7-7868", "primary": false, "targetId": "8d99-053d-ffeb-98c5"},
               {"name": "Group", "id": "ae8d-d3e6-cc7a-c911", "primary": false, "targetId": "default-category"}
             ],
@@ -692,10 +690,6 @@
                 "targetId": "cc1e-4277-6de6-e142",
                 "type": "selectionEntry"
               }
-            ],
-            "infoLinks": [
-              {"name": "Cloak-X", "id": "8339-6638-7544-2212", "hidden": true, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
-              {"name": "Stealth", "id": "5ca6-9d5d-4aeb-d164", "hidden": true, "targetId": "9306-4cd5-b59e-5898", "type": "rule"}
             ],
             "profiles": [
               {
@@ -735,7 +729,7 @@
           {"name": "Faction/Famous Admirals", "id": "6635-97e0-ebe9-e001", "hidden": false, "primary": false, "targetId": "79f7-4244-6fb7-d41a"},
           {"name": "Admirals", "id": "4ab3-f38b-abd5-1b13", "hidden": false, "primary": false, "targetId": "fb8b-57b3-d46c-d679"}
         ],
-        "constraints": [{"id": "4d1c-2340-714f-407a", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "constraints": [{"id": "4d1c-2340-714f-407a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 0}],
         "modifiers": [
           {
             "field": "4d1c-2340-714f-407a",
@@ -745,7 +739,7 @@
               {
                 "childId": "7895-d441-b903-8bb2",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -761,7 +755,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -772,7 +766,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "c0e0-0d6b-4ddb-2a64",
-                "childName": "Show all famous admirals",
+                "childName": "Famous admirals",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -935,7 +929,7 @@
           {"name": "Faction/Famous Admirals", "id": "c1b7-7a18-fd6b-c2fb", "hidden": false, "primary": false, "targetId": "79f7-4244-6fb7-d41a"},
           {"name": "Admirals", "id": "10d7-d52f-6104-9758", "hidden": false, "primary": false, "targetId": "fb8b-57b3-d46c-d679"}
         ],
-        "constraints": [{"id": "4bd9-c753-a8af-6fd6", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "constraints": [{"id": "4bd9-c753-a8af-6fd6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "selectionEntries": [
           {
             "name": "Enslaver",
@@ -1009,7 +1003,6 @@
             "sortIndex": 2,
             "type": "model",
             "categoryLinks": [
-              {"name": "Medium Ship", "id": "a6e5-acfd-da93-1a5e", "hidden": false, "primary": true, "targetId": "53c3-afc0-63ef-413a"},
               {"name": "Medium Groups", "id": "6226-d10a-4e3e-6016", "primary": false, "targetId": "e555-ff57-c478-18cd"},
               {"name": "Group", "id": "8b87-0900-3055-fda0", "primary": false, "targetId": "default-category"}
             ],
@@ -1095,7 +1088,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -1106,7 +1099,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "2172-995a-95f6-db3d",
-                "childName": "Show all options",
+                "childName": "Colossal ships",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -1217,7 +1210,7 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -1228,7 +1221,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "2172-995a-95f6-db3d",
-                "childName": "Show all options",
+                "childName": "Colossal ships",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -3483,7 +3476,7 @@
                 "id": "309f-559c-d510-0148",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 2,
+                "sortIndex": 3,
                 "targetId": "edce-30fb-e855-60c6",
                 "type": "selectionEntry"
               },
@@ -3492,7 +3485,7 @@
                 "id": "6de2-2e0d-7a38-6afd",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 2,
                 "targetId": "550e-2874-4f38-4989",
                 "type": "selectionEntry"
               }
@@ -4032,7 +4025,6 @@
               {
                 "name": "Oculus Rays",
                 "id": "39a6-edbb-f662-ad4a",
-                "collective": true,
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
@@ -4042,7 +4034,6 @@
               {
                 "name": "Anharmonic Resonator",
                 "id": "4f33-3d6b-6624-e667",
-                "collective": true,
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
@@ -4052,7 +4043,6 @@
               {
                 "name": "Plasma Gale",
                 "id": "6d6b-1488-2fbf-60e6",
-                "collective": true,
                 "hidden": false,
                 "import": true,
                 "sortIndex": 3,
@@ -4061,10 +4051,10 @@
               }
             ],
             "infoLinks": [
-              {"name": "Cloak-X", "id": "7a8b-0d7c-b17c-547c", "hidden": true, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
-              {"name": "Hero", "id": "97c5-e7ff-ba4d-79b8", "hidden": true, "targetId": "f945-e19c-c8bb-1c6a", "type": "rule"},
-              {"name": "Stealth", "id": "6fe4-2fd8-ca95-0fa4", "hidden": true, "targetId": "9306-4cd5-b59e-5898", "type": "rule"},
-              {"name": "Unique", "id": "97b4-a85c-3010-2771", "hidden": true, "targetId": "3f45-7047-464a-3be4", "type": "rule"}
+              {"name": "Cloak-X", "id": "7a8b-0d7c-b17c-547c", "hidden": false, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
+              {"name": "Hero", "id": "97c5-e7ff-ba4d-79b8", "hidden": false, "targetId": "f945-e19c-c8bb-1c6a", "type": "rule"},
+              {"name": "Stealth", "id": "6fe4-2fd8-ca95-0fa4", "hidden": false, "targetId": "9306-4cd5-b59e-5898", "type": "rule"},
+              {"name": "Unique", "id": "97b4-a85c-3010-2771", "hidden": false, "targetId": "3f45-7047-464a-3be4", "type": "rule"}
             ],
             "profiles": [
               {
@@ -4345,11 +4335,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -4362,11 +4352,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -4379,11 +4369,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -4411,7 +4401,7 @@
                       },
                       {
                         "childId": "7895-d441-b903-8bb2",
-                        "childName": "Skirmish",
+                        "childName": "Skirmish: 501 - 1000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4436,7 +4426,7 @@
                       },
                       {
                         "childId": "3fda-65f2-6cc3-ee33",
-                        "childName": "Clash",
+                        "childName": "Clash: 1001 - 2000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4461,7 +4451,7 @@
                       },
                       {
                         "childId": "c6ef-6271-e246-47a8",
-                        "childName": "Battle",
+                        "childName": "Battle: 2001 - 3000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4486,7 +4476,7 @@
                       },
                       {
                         "childId": "d410-4aa8-c469-064b",
-                        "childName": "Reconquest",
+                        "childName": "Reconquest: 3001+ points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -4503,7 +4493,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "b7f2-9472-f805-33e4",
-                "childName": "Rare ships when Rare ship limit reached",
+                "childName": "Rare ships with max quantity in fleet",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -5192,11 +5182,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -5209,11 +5199,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -5226,11 +5216,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -5258,7 +5248,7 @@
                       },
                       {
                         "childId": "7895-d441-b903-8bb2",
-                        "childName": "Skirmish",
+                        "childName": "Skirmish: 501 - 1000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5283,7 +5273,7 @@
                       },
                       {
                         "childId": "3fda-65f2-6cc3-ee33",
-                        "childName": "Clash",
+                        "childName": "Clash: 1001 - 2000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5308,7 +5298,7 @@
                       },
                       {
                         "childId": "c6ef-6271-e246-47a8",
-                        "childName": "Battle",
+                        "childName": "Battle: 2001 - 3000 points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5333,7 +5323,7 @@
                       },
                       {
                         "childId": "d410-4aa8-c469-064b",
-                        "childName": "Reconquest",
+                        "childName": "Reconquest: 3001+ points",
                         "field": "selections",
                         "includeChildSelections": true,
                         "scope": "force",
@@ -5350,7 +5340,7 @@
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "b7f2-9472-f805-33e4",
-                "childName": "Rare ships when Rare ship limit reached",
+                "childName": "Rare ships with max quantity in fleet",
                 "field": "selections",
                 "includeChildSelections": true,
                 "scope": "force",
@@ -5971,7 +5961,7 @@
         "name": "Mega Plasma Lance Battery",
         "id": "9972-6174-84e1-4f78",
         "collective": true,
-        "comment": "F/S 3/3+/2/E Cal-HC Rv-2 Vol-2",
+        "comment": "F/S 3/3+/2/E Cal-H/C Rv-2 Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5998,40 +5988,6 @@
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Calibre-H/C, Reave-2, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Mega Plasma Lance Battery",
-        "id": "ae05-6d16-64e3-33c4",
-        "collective": true,
-        "comment": "[x2] F/S 3/3+/2/E Cal-HC Rv-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "0e01-582f-d6c0-425a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-          {"id": "0e01-582f-d6c0-425a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-        ],
-        "infoLinks": [
-          {"name": "Calibre-X", "id": "1eda-62ce-4a03-1c39", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
-          {"name": "Reave-X", "id": "279b-08df-8459-f6ba", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Mega Plasma Lance Battery",
-            "id": "3e31-1fec-a3ff-f27a",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Calibre-H/C, Reave-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6090,37 +6046,6 @@
             "characteristics": [
               {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Scald-1", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Oculus Beam Array",
-        "id": "0520-4df6-bb75-2888",
-        "collective": true,
-        "comment": "F/S 2/3+/2/E Sc-1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "f241-6334-d43e-790c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "f241-6334-d43e-790c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "infoLinks": [{"name": "Scald-X", "id": "367b-558f-9060-fa2f", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "Oculus Beam Array",
-            "id": "bdc1-e617-95f5-f124",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
@@ -6313,37 +6238,6 @@
             "characteristics": [
               {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Scald-1, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Oculus Beam Phalanx",
-        "id": "d668-50c9-0dfb-8f23",
-        "collective": true,
-        "comment": "[x2] F/S 4/3+/2/E Sc-1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "e8ce-cddd-16aa-411b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-          {"id": "e8ce-cddd-16aa-411b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-        ],
-        "infoLinks": [{"name": "Scald-X", "id": "6540-6d64-32b1-894f", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "Oculus Beam Phalanx",
-            "id": "6527-2c4e-3a6b-55c0",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
@@ -7386,6 +7280,7 @@
       {
         "name": "Mines",
         "id": "91fe-5bf6-232b-d439",
+        "collective": true,
         "comment": "3",
         "hidden": false,
         "import": true,
@@ -7494,7 +7389,6 @@
           {
             "name": "Torpedo",
             "id": "b4af-0535-d552-942d",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 1,
@@ -7546,7 +7440,6 @@
           {
             "name": "Bombers",
             "id": "9813-ddf0-ca33-2673",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 2,
@@ -7598,7 +7491,6 @@
           {
             "name": "Mines",
             "id": "5109-7587-888b-701a",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 3,
@@ -7647,7 +7539,6 @@
           {
             "name": "Fighters",
             "id": "a165-5923-289a-c757",
-            "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 4,
