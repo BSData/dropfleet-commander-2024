@@ -7192,8 +7192,7 @@
       {
         "name": "Minelayer",
         "id": "9457-4c07-2639-063b",
-        "comment": "2",
-        "defaultSelectionEntryId": "a7d7-445a-8b57-df38",
+        "defaultSelectionEntryId": "a151-34a3-3fdd-e29b",
         "hidden": false,
         "constraints": [
           {"id": "42d9-99c1-7312-b424", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -7215,6 +7214,7 @@
             "id": "a112-e34b-98e1-8842",
             "hidden": false,
             "import": true,
+            "sortIndex": 2,
             "targetId": "56ce-5221-ee03-ee49",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}],
