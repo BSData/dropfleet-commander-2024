@@ -3409,7 +3409,15 @@
                 "targetId": "550e-2874-4f38-4989",
                 "type": "selectionEntry"
               },
-              {"name": "Minelayer", "id": "185a-772d-493e-4a37", "hidden": false, "import": true, "targetId": "ed7d-ca84-0084-57e2", "type": "selectionEntryGroup"}
+              {
+                "name": "Minelayer",
+                "id": "185a-772d-493e-4a37",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "ed7d-ca84-0084-57e2",
+                "type": "selectionEntryGroup"
+              }
             ],
             "profiles": [
               {
@@ -4133,7 +4141,15 @@
                 "targetId": "2c33-7816-d10d-6bf4",
                 "type": "selectionEntry"
               },
-              {"name": "Cloaking Crest", "id": "f6e2-fa34-7630-962a", "hidden": false, "import": true, "targetId": "826c-a34f-6a51-fea9", "type": "selectionEntry"}
+              {
+                "name": "Cloaking Crest",
+                "id": "f6e2-fa34-7630-962a",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "826c-a34f-6a51-fea9",
+                "type": "selectionEntry"
+              }
             ],
             "infoLinks": [
               {"name": "Cloak-X", "id": "4a5c-493a-5e85-a930", "hidden": true, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
@@ -4200,7 +4216,15 @@
                 "type": "selectionEntry"
               },
               {"name": "Seekers", "id": "d0af-a6f1-b6ba-09f5", "hidden": false, "import": true, "sortIndex": 2, "targetId": "9861-f774-8b0c-7095", "type": "selectionEntry"},
-              {"name": "Cloaking Crest", "id": "6f29-f88a-f684-8e92", "hidden": false, "import": true, "targetId": "826c-a34f-6a51-fea9", "type": "selectionEntry"}
+              {
+                "name": "Cloaking Crest",
+                "id": "6f29-f88a-f684-8e92",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "826c-a34f-6a51-fea9",
+                "type": "selectionEntry"
+              }
             ],
             "infoLinks": [
               {"name": "Cloak-X", "id": "6e5a-f98a-04f0-2c22", "hidden": true, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
@@ -4275,7 +4299,15 @@
                 "targetId": "2ecb-d313-83b9-eb80",
                 "type": "selectionEntry"
               },
-              {"name": "Cloaking Crest", "id": "c070-3c6f-daec-3c36", "hidden": false, "import": true, "targetId": "826c-a34f-6a51-fea9", "type": "selectionEntry"},
+              {
+                "name": "Cloaking Crest",
+                "id": "c070-3c6f-daec-3c36",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "826c-a34f-6a51-fea9",
+                "type": "selectionEntry"
+              },
               {
                 "name": "Plasma Gale",
                 "id": "f7c0-facf-f2be-3699",
@@ -8031,6 +8063,7 @@
             "id": "352d-c169-f1cb-5919",
             "hidden": false,
             "import": true,
+            "sortIndex": 1,
             "targetId": "8129-e004-6cb0-724f",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 15}]
@@ -8040,6 +8073,7 @@
             "id": "1ea3-e9de-9759-6755",
             "hidden": false,
             "import": true,
+            "sortIndex": 2,
             "targetId": "4fdb-59b7-06e1-c171",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 25}]
@@ -8055,12 +8089,21 @@
           {"id": "d9c5-2584-4711-3310", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "entryLinks": [
-          {"name": "Cloaking Keel", "id": "af3d-f6d7-f460-ca45", "hidden": false, "import": true, "targetId": "8129-e004-6cb0-724f", "type": "selectionEntry"},
+          {
+            "name": "Cloaking Keel",
+            "id": "af3d-f6d7-f460-ca45",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "8129-e004-6cb0-724f",
+            "type": "selectionEntry"
+          },
           {
             "name": "Engine Upgrade",
             "id": "9172-857a-64ae-642f",
             "hidden": false,
             "import": true,
+            "sortIndex": 2,
             "targetId": "4fdb-59b7-06e1-c171",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}]

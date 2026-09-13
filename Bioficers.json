@@ -1232,7 +1232,15 @@
                 "targetId": "b7be-f842-2ebd-bca6",
                 "type": "selectionEntry"
               },
-              {"name": "Torpedo Upgrade", "id": "0257-c657-c9db-eb7b", "hidden": false, "import": true, "targetId": "189a-9129-d599-806a", "type": "selectionEntry"}
+              {
+                "name": "Torpedo Upgrade",
+                "id": "0257-c657-c9db-eb7b",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "189a-9129-d599-806a",
+                "type": "selectionEntry"
+              }
             ],
             "infoLinks": [
               {"name": "Marines-X", "id": "6f49-06b1-f23f-50e2", "hidden": false, "targetId": "93f3-7932-b233-4d38", "type": "rule"},
@@ -1309,7 +1317,15 @@
                 "targetId": "b7be-f842-2ebd-bca6",
                 "type": "selectionEntry"
               },
-              {"name": "Torpedo Upgrade", "id": "014e-84c9-0e4d-e1eb", "hidden": false, "import": true, "targetId": "189a-9129-d599-806a", "type": "selectionEntry"}
+              {
+                "name": "Torpedo Upgrade",
+                "id": "014e-84c9-0e4d-e1eb",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "189a-9129-d599-806a",
+                "type": "selectionEntry"
+              }
             ],
             "infoLinks": [
               {"name": "Marines-X", "id": "80fd-bbf5-7603-9e28", "hidden": false, "targetId": "93f3-7932-b233-4d38", "type": "rule"},
@@ -1386,7 +1402,15 @@
                 "targetId": "b7be-f842-2ebd-bca6",
                 "type": "selectionEntry"
               },
-              {"name": "Torpedo Upgrade", "id": "f158-0229-c128-04b2", "hidden": false, "import": true, "targetId": "189a-9129-d599-806a", "type": "selectionEntry"}
+              {
+                "name": "Torpedo Upgrade",
+                "id": "f158-0229-c128-04b2",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "189a-9129-d599-806a",
+                "type": "selectionEntry"
+              }
             ],
             "infoLinks": [
               {"name": "Marines-X", "id": "59c1-efe4-79a0-40ca", "hidden": false, "targetId": "93f3-7932-b233-4d38", "type": "rule"},
@@ -1453,7 +1477,15 @@
                 "type": "selectionEntry"
               },
               {"name": "Thermator", "id": "082d-5224-4156-8fc2", "hidden": false, "import": true, "sortIndex": 2, "targetId": "0c95-f250-f157-3f91", "type": "selectionEntry"},
-              {"name": "Torpedo Upgrade", "id": "d728-7fca-29b6-241f", "hidden": false, "import": true, "targetId": "189a-9129-d599-806a", "type": "selectionEntry"}
+              {
+                "name": "Torpedo Upgrade",
+                "id": "d728-7fca-29b6-241f",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "189a-9129-d599-806a",
+                "type": "selectionEntry"
+              }
             ],
             "infoLinks": [{"name": "Porter S/L-X", "id": "77e0-92d4-4c55-ec9c", "hidden": false, "targetId": "11cb-e973-8a2c-f0f6", "type": "rule"}],
             "profiles": [
@@ -1525,7 +1557,15 @@
                 "targetId": "a171-2923-b3ac-bcce",
                 "type": "selectionEntry"
               },
-              {"name": "Torpedo Upgrade", "id": "bcba-2fd3-8023-e3f3", "hidden": false, "import": true, "targetId": "189a-9129-d599-806a", "type": "selectionEntry"}
+              {
+                "name": "Torpedo Upgrade",
+                "id": "bcba-2fd3-8023-e3f3",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "189a-9129-d599-806a",
+                "type": "selectionEntry"
+              }
             ],
             "infoLinks": [{"name": "Porter S/L-X", "id": "c108-63e1-d2d9-8791", "hidden": false, "targetId": "11cb-e973-8a2c-f0f6", "type": "rule"}],
             "profiles": [
@@ -1597,7 +1637,15 @@
                 "targetId": "a171-2923-b3ac-bcce",
                 "type": "selectionEntry"
               },
-              {"name": "Torpedo Upgrade", "id": "145c-4a80-37ed-bfb1", "hidden": false, "import": true, "targetId": "189a-9129-d599-806a", "type": "selectionEntry"}
+              {
+                "name": "Torpedo Upgrade",
+                "id": "145c-4a80-37ed-bfb1",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "189a-9129-d599-806a",
+                "type": "selectionEntry"
+              }
             ],
             "infoLinks": [{"name": "Porter S/L-X", "id": "6161-5c88-7eae-aa5d", "hidden": false, "targetId": "11cb-e973-8a2c-f0f6", "type": "rule"}],
             "profiles": [
@@ -6771,20 +6819,11 @@
         "collective": true,
         "hidden": false,
         "import": true,
+        "flatten": true,
         "type": "upgrade",
         "constraints": [{"id": "2270-0477-f918-b349", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 20}],
-        "infoLinks": [{"name": "Limited-X", "id": "3379-4d1a-3e65-b447", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "Torpedo",
-            "id": "7357-d4f4-ca80-9267",
-            "hidden": false,
-            "typeId": "7ba8-a64f-b5fb-8c3e",
-            "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-4", "typeId": "d3be-1a27-21ac-fb65"}]
-          }
-        ]
+        "entryLinks": [{"name": "Torpedo", "id": "5d91-3e36-90a5-6738", "hidden": false, "import": true, "targetId": "2a03-3fe4-51e0-5a5a", "type": "selectionEntry"}]
       },
       {"name": "----- Reference -----", "id": "135e-b58b-e745-2d30", "hidden": true, "import": false, "type": "upgrade"},
       {

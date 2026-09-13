@@ -1914,7 +1914,15 @@
                 "targetId": "1a84-70a6-1f42-aa28",
                 "type": "selectionEntry"
               },
-              {"name": "Drive Refit", "id": "a270-ae1d-b251-b0e9", "hidden": false, "import": true, "targetId": "282b-d9a0-5864-b290", "type": "selectionEntry"}
+              {
+                "name": "Drive Refit",
+                "id": "a270-ae1d-b251-b0e9",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 6,
+                "targetId": "282b-d9a0-5864-b290",
+                "type": "selectionEntry"
+              }
             ],
             "infoLinks": [{"name": "Marines-X", "id": "e242-89d7-574c-834b", "hidden": false, "targetId": "93f3-7932-b233-4d38", "type": "rule"}],
             "profiles": [
@@ -1986,7 +1994,15 @@
                 "targetId": "1cae-3b48-d446-10f7",
                 "type": "selectionEntryGroup"
               },
-              {"name": "Drive Refit", "id": "2aa4-e315-ca66-25af", "hidden": false, "import": true, "targetId": "282b-d9a0-5864-b290", "type": "selectionEntry"}
+              {
+                "name": "Drive Refit",
+                "id": "2aa4-e315-ca66-25af",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "282b-d9a0-5864-b290",
+                "type": "selectionEntry"
+              }
             ],
             "profiles": [
               {
@@ -2066,7 +2082,15 @@
                 "targetId": "1cae-3b48-d446-10f7",
                 "type": "selectionEntryGroup"
               },
-              {"name": "Drive Refit", "id": "c619-9bc3-1a28-dee5", "hidden": false, "import": true, "targetId": "282b-d9a0-5864-b290", "type": "selectionEntry"}
+              {
+                "name": "Drive Refit",
+                "id": "c619-9bc3-1a28-dee5",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "282b-d9a0-5864-b290",
+                "type": "selectionEntry"
+              }
             ],
             "profiles": [
               {
@@ -2146,7 +2170,15 @@
                 "targetId": "b67c-66bb-bb24-0ffc",
                 "type": "selectionEntry"
               },
-              {"name": "Drive Refit", "id": "c108-a5b3-343c-d440", "hidden": false, "import": true, "targetId": "282b-d9a0-5864-b290", "type": "selectionEntry"}
+              {
+                "name": "Drive Refit",
+                "id": "c108-a5b3-343c-d440",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "282b-d9a0-5864-b290",
+                "type": "selectionEntry"
+              }
             ],
             "profiles": [
               {
@@ -2226,7 +2258,15 @@
                 "targetId": "1cae-3b48-d446-10f7",
                 "type": "selectionEntryGroup"
               },
-              {"name": "Drive Refit", "id": "a99b-6554-a398-1997", "hidden": false, "import": true, "targetId": "282b-d9a0-5864-b290", "type": "selectionEntry"}
+              {
+                "name": "Drive Refit",
+                "id": "a99b-6554-a398-1997",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "282b-d9a0-5864-b290",
+                "type": "selectionEntry"
+              }
             ],
             "profiles": [
               {
@@ -8852,16 +8892,6 @@
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 45}],
         "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "join": ", ", "scope": "parent", "type": "increment", "value": 3}]
       },
-      {
-        "name": "Laser Refit",
-        "id": "a773-89c3-bfbd-b367",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "5d0c-612e-295e-1765", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
-      },
       {"name": "----- Reference -----", "id": "36a6-09df-a8a1-9bde", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Launch Assets",
@@ -9641,7 +9671,6 @@
         "name": "Laser Refit",
         "id": "1cae-3b48-d446-10f7",
         "defaultSelectionEntryId": "a7d7-445a-8b57-df38",
-        "flatten": true,
         "hidden": false,
         "constraints": [
           {"id": "d077-0b34-b1e4-236f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},

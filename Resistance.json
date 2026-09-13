@@ -1154,8 +1154,24 @@
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 265}],
             "entryLinks": [
-              {"name": "NC-16 Missiles", "id": "abe6-7300-fafc-dc22", "hidden": false, "import": true, "targetId": "d400-5faf-9f12-f1b8", "type": "selectionEntry"},
-              {"name": "Dreadnought Systems", "id": "3666-7087-6e40-12aa", "hidden": false, "import": true, "targetId": "1beb-f1d1-0251-ca15", "type": "selectionEntryGroup"}
+              {
+                "name": "NC-16 Missiles",
+                "id": "abe6-7300-fafc-dc22",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "d400-5faf-9f12-f1b8",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Dreadnought Systems",
+                "id": "3666-7087-6e40-12aa",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "1beb-f1d1-0251-ca15",
+                "type": "selectionEntryGroup"
+              }
             ],
             "infoLinks": [{"name": "Command Ship-X", "id": "d3d0-2d16-73ac-f95f", "hidden": false, "targetId": "af88-13e6-5004-d00a", "type": "rule"}],
             "profiles": [
@@ -1239,8 +1255,24 @@
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 210}],
             "entryLinks": [
-              {"name": "NC-16 Missiles", "id": "8c08-29e8-0c16-9bb8", "hidden": false, "import": true, "targetId": "d400-5faf-9f12-f1b8", "type": "selectionEntry"},
-              {"name": "Dreadnought Systems", "id": "b4a9-6cc4-ce73-82e2", "hidden": false, "import": true, "targetId": "1beb-f1d1-0251-ca15", "type": "selectionEntryGroup"}
+              {
+                "name": "NC-16 Missiles",
+                "id": "8c08-29e8-0c16-9bb8",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "d400-5faf-9f12-f1b8",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Dreadnought Systems",
+                "id": "b4a9-6cc4-ce73-82e2",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "1beb-f1d1-0251-ca15",
+                "type": "selectionEntryGroup"
+              }
             ],
             "infoLinks": [{"name": "Command Ship-X", "id": "f265-6010-3da1-a5f6", "hidden": false, "targetId": "af88-13e6-5004-d00a", "type": "rule"}],
             "profiles": [
@@ -1294,8 +1326,24 @@
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 190}],
             "entryLinks": [
-              {"name": "NC-16 Missiles", "id": "9573-ff39-c56b-975d", "hidden": false, "import": true, "targetId": "d400-5faf-9f12-f1b8", "type": "selectionEntry"},
-              {"name": "Dreadnought Systems", "id": "bacb-b1de-02a1-c443", "hidden": false, "import": true, "targetId": "1beb-f1d1-0251-ca15", "type": "selectionEntryGroup"}
+              {
+                "name": "NC-16 Missiles",
+                "id": "9573-ff39-c56b-975d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "d400-5faf-9f12-f1b8",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Dreadnought Systems",
+                "id": "bacb-b1de-02a1-c443",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "1beb-f1d1-0251-ca15",
+                "type": "selectionEntryGroup"
+              }
             ],
             "profiles": [
               {
@@ -4008,7 +4056,7 @@
                 "collective": true,
                 "hidden": false,
                 "import": true,
-                "sortIndex": 2,
+                "sortIndex": 1,
                 "targetId": "03d1-f9cd-4d9d-f991",
                 "type": "selectionEntry"
               },
@@ -4017,7 +4065,7 @@
                 "id": "73fc-3307-cc30-4b1e",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
+                "sortIndex": 2,
                 "targetId": "c6cf-5821-f6b2-1ffd",
                 "type": "selectionEntryGroup"
               }
