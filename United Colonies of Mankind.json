@@ -9693,16 +9693,13 @@
           {
             "name": "UF-4200 Mass Driver Turrets",
             "id": "a7d7-445a-8b57-df38",
-            "defaultAmount": 1,
+            "defaultAmount": "1",
             "flatten": true,
             "hidden": false,
             "import": true,
             "sortIndex": 1,
             "type": "upgrade",
-            "constraints": [
-              {"id": "3779-db8e-d03b-3846", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0},
-              {"id": "5737-1145-f508-13a6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
+            "constraints": [{"id": "5737-1145-f508-13a6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "entryLinks": [
               {
                 "name": "UF-4200 Mass Driver Turrets",

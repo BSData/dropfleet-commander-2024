@@ -6816,10 +6816,9 @@
       {
         "name": "Torpedo Upgrade",
         "id": "189a-9129-d599-806a",
-        "collective": true,
+        "flatten": true,
         "hidden": false,
         "import": true,
-        "flatten": true,
         "type": "upgrade",
         "constraints": [{"id": "2270-0477-f918-b349", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 20}],
