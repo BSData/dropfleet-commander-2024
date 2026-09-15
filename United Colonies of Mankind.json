@@ -8893,6 +8893,273 @@
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 45}],
         "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "join": ", ", "scope": "parent", "type": "increment", "value": 3}]
       },
+      {"name": "----- Deployable Features -----", "id": "43a3-9dc3-482c-c8a5", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Aegis Platform",
+        "id": "8222-a290-f39e-07d3",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "cb84-358c-4d6d-83e8", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "9c24-d8e2-4706-14ec", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "b143-a524-b7e4-55ba", "automatic": false, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "8222-a290-f39e-07d3",
+                "childName": "Aegis Platform",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Aegis Platform",
+            "id": "4d8b-35e9-a353-a31e",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "13d4-0837-56ec-4842", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {
+                "id": "0b4a-0874-9462-c2ae",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "e283-e44f-633c-bd38",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Aegis Platform",
+                "id": "7218-3576-c6db-14ce",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "6+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Special", "$text": "Aegis-4", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Aegis Platform",
+                "id": "f78b-7947-811e-eba4",
+                "description": "Each friendly Aegis Platform counts as a separate friendly Group for the purposes of its Aegis-X special rule. While this feature is deployed to a Dropsite, friendly groups treat the Dropsite as if it were a friendly Ship with Aegis-4 on the same Orbital Layer for the purposes of enemy close action and bomber attacks.\nThis Feature's Aegis special rule affects friendly Ships in Orbit in addition to Atmosphere.\nAfter enemy assets end their movement within 4\", are placed within 4\" of, or are deployed to this Dropsite, roll a dice for each of those assets. For each result of a 5+, remove one of those assets. Enemy Features are only removed on a result of a 6+. Only one Aegis Platform can be used this way for each Asset and any Battalions already on the Dropsite are ignored.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Comms Platform",
+        "id": "e5ac-ee7e-cec2-6eb9",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "d5a5-ad2b-81a2-825e", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "f8ac-9565-2fd8-a913", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "4172-3597-3caf-b550", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "e5ac-ee7e-cec2-6eb9",
+                "childName": "Comms Platform",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Comms Platform",
+            "id": "7f8a-04d3-564a-620e",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "0139-362a-3e71-32bd", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {
+                "id": "bfe6-b129-6991-a875",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "0f96-9bf3-cc41-fc23",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Comms Platform",
+                "id": "6a53-499f-32f2-5a1a",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Comms Platform",
+                "id": "23e3-5f8a-24a9-c276",
+                "description": "Friendly Ships with the Command Ship-X ability within 8\" of one or more Dropsites with a friendly Comms Platform improve the X value of that rule by 1 when generating AP.\nFriendly Ships within 8\" of this Feature's Dropsite ignore the effects of any Scanners Offline token.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Torpedo Platform",
+        "id": "682b-72f9-37cc-f98b",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "2bb3-eaa3-802f-5d2d", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "a615-d69f-40ca-8c64", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "94d4-32d7-fde7-c058", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "682b-72f9-37cc-f98b",
+                "childName": "Torpedo Platform",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Torpedo Platform",
+            "id": "bfe7-83a8-9483-9cf5",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "07e9-c0e1-dd6c-930d", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {
+                "id": "180e-5b0d-170e-f603",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "beae-7879-df18-0347",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [{"name": "Medium Torpedo", "id": "3ece-ce7c-b0e7-9c06", "hidden": false, "import": true, "targetId": "f220-d694-f24c-d00d", "type": "selectionEntry"}],
+            "profiles": [
+              {
+                "name": "Torpedo Platform",
+                "id": "680f-89ca-aff6-90cc",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Torpedo Platform",
+                "id": "0481-26af-5ac4-c842",
+                "description": "When an attacking Group or Asset/s attack would cause this feature to be removed, if it has any remaining Torpedoes, the attacking opponent may remove one additional Feature and any Battalions assigned to it from this Dropsite.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
       {"name": "----- Reference -----", "id": "36a6-09df-a8a1-9bde", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Launch Assets",
@@ -9235,272 +9502,6 @@
                   {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
                   {"name": "Special", "$text": "Calibre-H/C, Penetrator", "typeId": "9b33-7e68-b136-77db"}
                 ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Aegis Platform",
-        "id": "8222-a290-f39e-07d3",
-        "hidden": false,
-        "import": true,
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Deployable Features", "id": "cb84-358c-4d6d-83e8", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
-          {"name": "Reference", "id": "9c24-d8e2-4706-14ec", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
-        ],
-        "constraints": [{"id": "b143-a524-b7e4-55ba", "automatic": false, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "8222-a290-f39e-07d3",
-                "childName": "Aegis Platform",
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Aegis Platform",
-            "id": "4d8b-35e9-a353-a31e",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "categoryLinks": [{"name": "Deployable Features", "id": "13d4-0837-56ec-4842", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
-            "constraints": [
-              {
-                "id": "0b4a-0874-9462-c2ae",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "e283-e44f-633c-bd38",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Aegis Platform",
-                "id": "7218-3576-c6db-14ce",
-                "hidden": false,
-                "typeId": "e69b-d424-94a2-0fe1",
-                "typeName": "Feature",
-                "characteristics": [
-                  {"name": "ES", "$text": "6+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
-                  {"name": "Special", "$text": "Aegis-4", "typeId": "0042-a956-225d-9293"}
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Aegis Platform",
-                "id": "f78b-7947-811e-eba4",
-                "description": "Each friendly Aegis Platform counts as a separate friendly Group for the purposes of its Aegis-X special rule. While this feature is deployed to a Dropsite, friendly groups treat the Dropsite as if it were a friendly Ship with Aegis-4 on the same Orbital Layer for the purposes of enemy close action and bomber attacks.\nThis Feature's Aegis special rule affects friendly Ships in Orbit in addition to Atmosphere.\nAfter enemy assets end their movement within 4\", are placed within 4\" of, or are deployed to this Dropsite, roll a dice for each of those assets. For each result of a 5+, remove one of those assets. Enemy Features are only removed on a result of a 6+. Only one Aegis Platform can be used this way for each Asset and any Battalions already on the Dropsite are ignored.",
-                "hidden": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Comms Platform",
-        "id": "e5ac-ee7e-cec2-6eb9",
-        "hidden": false,
-        "import": true,
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Deployable Features", "id": "d5a5-ad2b-81a2-825e", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
-          {"name": "Reference", "id": "f8ac-9565-2fd8-a913", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
-        ],
-        "constraints": [{"id": "4172-3597-3caf-b550", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "e5ac-ee7e-cec2-6eb9",
-                "childName": "Comms Platform",
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Comms Platform",
-            "id": "7f8a-04d3-564a-620e",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "categoryLinks": [{"name": "Deployable Features", "id": "0139-362a-3e71-32bd", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
-            "constraints": [
-              {
-                "id": "bfe6-b129-6991-a875",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "0f96-9bf3-cc41-fc23",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Comms Platform",
-                "id": "6a53-499f-32f2-5a1a",
-                "hidden": false,
-                "typeId": "e69b-d424-94a2-0fe1",
-                "typeName": "Feature",
-                "characteristics": [
-                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
-                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Comms Platform",
-                "id": "23e3-5f8a-24a9-c276",
-                "description": "Friendly Ships with the Command Ship-X ability within 8\" of one or more Dropsites with a friendly Comms Platform improve the X value of that rule by 1 when generating AP.\nFriendly Ships within 8\" of this Feature's Dropsite ignore the effects of any Scanners Offline token.",
-                "hidden": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Torpedo Platform",
-        "id": "682b-72f9-37cc-f98b",
-        "hidden": false,
-        "import": true,
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Deployable Features", "id": "2bb3-eaa3-802f-5d2d", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
-          {"name": "Reference", "id": "a615-d69f-40ca-8c64", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
-        ],
-        "constraints": [{"id": "94d4-32d7-fde7-c058", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "682b-72f9-37cc-f98b",
-                "childName": "Torpedo Platform",
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Torpedo Platform",
-            "id": "bfe7-83a8-9483-9cf5",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "categoryLinks": [{"name": "Deployable Features", "id": "07e9-c0e1-dd6c-930d", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
-            "constraints": [
-              {
-                "id": "180e-5b0d-170e-f603",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "beae-7879-df18-0347",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "entryLinks": [{"name": "Medium Torpedo", "id": "3ece-ce7c-b0e7-9c06", "hidden": false, "import": true, "targetId": "f220-d694-f24c-d00d", "type": "selectionEntry"}],
-            "profiles": [
-              {
-                "name": "Torpedo Platform",
-                "id": "680f-89ca-aff6-90cc",
-                "hidden": false,
-                "typeId": "e69b-d424-94a2-0fe1",
-                "typeName": "Feature",
-                "characteristics": [
-                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
-                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Torpedo Platform",
-                "id": "0481-26af-5ac4-c842",
-                "description": "When an attacking Group or Asset/s attack would cause this feature to be removed, if it has any remaining Torpedoes, the attacking opponent may remove one additional Feature and any Battalions assigned to it from this Dropsite.",
-                "hidden": false
               }
             ]
           }

@@ -7448,214 +7448,7 @@
         ],
         "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "join": ", ", "scope": "parent", "type": "increment", "value": 3}]
       },
-      {"name": "----- Reference -----", "id": "faf6-e6a7-6014-2b6f", "hidden": true, "import": false, "type": "upgrade"},
-      {
-        "name": "Launch Assets",
-        "id": "e840-c9cd-72dc-1ea8",
-        "defaultAmount": 1,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [
-          {"name": "Launch Assets", "id": "2625-13de-c768-fb91", "hidden": false, "primary": false, "targetId": "9cef-c723-f3e7-2dd2"},
-          {"name": "Reference", "id": "6042-b7df-80dc-0468", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
-        ],
-        "constraints": [{"id": "83d5-687d-7ccc-0492", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "e840-c9cd-72dc-1ea8",
-                "childName": "Launch Assets",
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Torpedo",
-            "id": "b4af-0535-d552-942d",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "type": "upgrade",
-            "constraints": [
-              {
-                "id": "c784-0ae0-b5d4-a284-min",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "c784-0ae0-b5d4-a284-max",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "infoLinks": [
-              {"name": "Corruptor-X", "id": "ad66-1cc0-d010-ad24", "hidden": false, "targetId": "b495-5934-9bf1-d595", "type": "rule"},
-              {"name": "Crippling-X", "id": "a0b0-c758-1ac2-1232", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Torpedo",
-                "id": "6d87-d8b9-0bf5-28d4",
-                "hidden": false,
-                "typeId": "2011-41e1-9c7c-9e25",
-                "typeName": "Launch Asset",
-                "characteristics": [
-                  {"name": "Thrust", "$text": "8\"", "typeId": "8c30-992b-18d3-9a9e"},
-                  {"name": "Att", "$text": "6", "typeId": "09f1-844b-5ba1-7b58"},
-                  {"name": "Lock", "$text": "4+", "typeId": "243e-e8ac-7e08-3636"},
-                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
-                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
-                  {"name": "Special", "$text": "Corruptor-2, Crippling-Fire", "typeId": "9b33-7e68-b136-77db"}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Bombers",
-            "id": "9813-ddf0-ca33-2673",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "type": "upgrade",
-            "constraints": [
-              {
-                "id": "38fe-bf8e-04ef-0ab5-min",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "38fe-bf8e-04ef-0ab5-max",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "infoLinks": [
-              {"name": "Crippling-X", "id": "4623-dfd3-c738-c2c0", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"},
-              {"name": "Bombers", "id": "1581-4df8-90db-5f7a", "hidden": false, "targetId": "cce9-530e-4cc7-817e", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Bombers",
-                "id": "8a1d-31fd-3342-536e",
-                "hidden": false,
-                "typeId": "2011-41e1-9c7c-9e25",
-                "typeName": "Launch Asset",
-                "characteristics": [
-                  {"name": "Thrust", "$text": "12\"", "typeId": "8c30-992b-18d3-9a9e"},
-                  {"name": "Att", "$text": "2", "typeId": "09f1-844b-5ba1-7b58"},
-                  {"name": "Lock", "$text": "3+", "typeId": "243e-e8ac-7e08-3636"},
-                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
-                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
-                  {"name": "Special", "$text": "Crippling-Fire, Bombers", "typeId": "9b33-7e68-b136-77db"}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Mines",
-            "id": "5109-7587-888b-701a",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "type": "upgrade",
-            "constraints": [
-              {
-                "id": "9643-da84-b46d-eecb-min",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "9643-da84-b46d-eecb-max",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "infoLinks": [{"name": "Corruptor-X", "id": "4fdf-bd70-7af1-999f", "hidden": false, "targetId": "b495-5934-9bf1-d595", "type": "rule"}],
-            "profiles": [
-              {
-                "name": "Mines",
-                "id": "7339-0615-f765-7ac6",
-                "hidden": false,
-                "typeId": "2011-41e1-9c7c-9e25",
-                "typeName": "Launch Asset",
-                "characteristics": [
-                  {"name": "Thrust", "$text": "6\"", "typeId": "8c30-992b-18d3-9a9e"},
-                  {"name": "Att", "$text": "3", "typeId": "09f1-844b-5ba1-7b58"},
-                  {"name": "Lock", "$text": "4+", "typeId": "243e-e8ac-7e08-3636"},
-                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
-                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
-                  {"name": "Special", "$text": "Corruptor-1", "typeId": "9b33-7e68-b136-77db"}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Fighters",
-            "id": "a165-5923-289a-c757",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 4,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "17ab-db8a-ac4d-b503-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "17ab-db8a-ac4d-b503-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "profiles": [
-              {
-                "name": "Fighters",
-                "id": "299b-7f15-0be6-acb5",
-                "hidden": false,
-                "typeId": "3057-ca91-b261-38a8",
-                "typeName": "Launch Asset",
-                "characteristics": [{"name": "Thrust", "$text": "14\"", "typeId": "ea0d-696a-c5fa-1684"}, {"name": "KS Re-roll", "$text": "2", "typeId": "d1c9-654e-a9f1-a88f"}]
-              }
-            ]
-          }
-        ]
-      },
+      {"name": "----- Deployable Features -----", "id": "27aa-0348-9d86-2346", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Skybane Halo",
         "id": "b6dc-1ef8-60d4-e76e",
@@ -7953,6 +7746,214 @@
                 "id": "d072-a850-1b7d-a762",
                 "description": "When friendly Bulk Landers are launched to this Dropsite, they ignore enemy Battalions on this Dropsite.\nAfter enemy Battalions are deployed to this Dropsite, roll a dice for each of those Battalions. For each result of a 5+, remove one of those Battalions. Only one Infestation Bastion can be used this way for each Battalion and any Battalions already on the Dropsite are ignored.",
                 "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {"name": "----- Reference -----", "id": "faf6-e6a7-6014-2b6f", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Launch Assets",
+        "id": "e840-c9cd-72dc-1ea8",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Launch Assets", "id": "2625-13de-c768-fb91", "hidden": false, "primary": false, "targetId": "9cef-c723-f3e7-2dd2"},
+          {"name": "Reference", "id": "6042-b7df-80dc-0468", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "83d5-687d-7ccc-0492", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "e840-c9cd-72dc-1ea8",
+                "childName": "Launch Assets",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Torpedo",
+            "id": "b4af-0535-d552-942d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "c784-0ae0-b5d4-a284-min",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "c784-0ae0-b5d4-a284-max",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "infoLinks": [
+              {"name": "Corruptor-X", "id": "ad66-1cc0-d010-ad24", "hidden": false, "targetId": "b495-5934-9bf1-d595", "type": "rule"},
+              {"name": "Crippling-X", "id": "a0b0-c758-1ac2-1232", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Torpedo",
+                "id": "6d87-d8b9-0bf5-28d4",
+                "hidden": false,
+                "typeId": "2011-41e1-9c7c-9e25",
+                "typeName": "Launch Asset",
+                "characteristics": [
+                  {"name": "Thrust", "$text": "8\"", "typeId": "8c30-992b-18d3-9a9e"},
+                  {"name": "Att", "$text": "6", "typeId": "09f1-844b-5ba1-7b58"},
+                  {"name": "Lock", "$text": "4+", "typeId": "243e-e8ac-7e08-3636"},
+                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
+                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
+                  {"name": "Special", "$text": "Corruptor-2, Crippling-Fire", "typeId": "9b33-7e68-b136-77db"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bombers",
+            "id": "9813-ddf0-ca33-2673",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "38fe-bf8e-04ef-0ab5-min",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "38fe-bf8e-04ef-0ab5-max",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "infoLinks": [
+              {"name": "Crippling-X", "id": "4623-dfd3-c738-c2c0", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"},
+              {"name": "Bombers", "id": "1581-4df8-90db-5f7a", "hidden": false, "targetId": "cce9-530e-4cc7-817e", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Bombers",
+                "id": "8a1d-31fd-3342-536e",
+                "hidden": false,
+                "typeId": "2011-41e1-9c7c-9e25",
+                "typeName": "Launch Asset",
+                "characteristics": [
+                  {"name": "Thrust", "$text": "12\"", "typeId": "8c30-992b-18d3-9a9e"},
+                  {"name": "Att", "$text": "2", "typeId": "09f1-844b-5ba1-7b58"},
+                  {"name": "Lock", "$text": "3+", "typeId": "243e-e8ac-7e08-3636"},
+                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
+                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
+                  {"name": "Special", "$text": "Crippling-Fire, Bombers", "typeId": "9b33-7e68-b136-77db"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mines",
+            "id": "5109-7587-888b-701a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "9643-da84-b46d-eecb-min",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "9643-da84-b46d-eecb-max",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "infoLinks": [{"name": "Corruptor-X", "id": "4fdf-bd70-7af1-999f", "hidden": false, "targetId": "b495-5934-9bf1-d595", "type": "rule"}],
+            "profiles": [
+              {
+                "name": "Mines",
+                "id": "7339-0615-f765-7ac6",
+                "hidden": false,
+                "typeId": "2011-41e1-9c7c-9e25",
+                "typeName": "Launch Asset",
+                "characteristics": [
+                  {"name": "Thrust", "$text": "6\"", "typeId": "8c30-992b-18d3-9a9e"},
+                  {"name": "Att", "$text": "3", "typeId": "09f1-844b-5ba1-7b58"},
+                  {"name": "Lock", "$text": "4+", "typeId": "243e-e8ac-7e08-3636"},
+                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
+                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
+                  {"name": "Special", "$text": "Corruptor-1", "typeId": "9b33-7e68-b136-77db"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fighters",
+            "id": "a165-5923-289a-c757",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "17ab-db8a-ac4d-b503-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "17ab-db8a-ac4d-b503-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "Fighters",
+                "id": "299b-7f15-0be6-acb5",
+                "hidden": false,
+                "typeId": "3057-ca91-b261-38a8",
+                "typeName": "Launch Asset",
+                "characteristics": [{"name": "Thrust", "$text": "14\"", "typeId": "ea0d-696a-c5fa-1684"}, {"name": "KS Re-roll", "$text": "2", "typeId": "d1c9-654e-a9f1-a88f"}]
               }
             ]
           }

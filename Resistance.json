@@ -7718,6 +7718,273 @@
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 25}],
         "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "join": ", ", "scope": "parent", "type": "increment", "value": 3}]
       },
+      {"name": "----- Deployable Features -----", "id": "ddc4-225d-322a-5a82", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "ICBM Silo",
+        "id": "a6ab-fb7c-a9da-ec07",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "cae9-e3ab-ac56-38f1", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "df1e-e831-6b61-3d28", "hidden": false, "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "91d3-83ce-ef08-864e", "automatic": false, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "a6ab-fb7c-a9da-ec07",
+                "childName": "Aegis Platform",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "ICBM Silo",
+            "id": "c204-ccd8-7394-6b0b",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "80c7-936a-2e91-50b4", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {
+                "id": "de8b-b3c3-0f05-3759",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "fcec-96f5-0998-c478",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [{"name": "Bombardment Torpedo", "id": "3b82-3be4-cbf7-f894", "hidden": false, "import": true, "targetId": "67a8-bc91-c15a-66bc", "type": "selectionEntry"}],
+            "profiles": [
+              {
+                "name": "ICBM Silo",
+                "id": "3dff-0fb2-f7d5-a44e",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "ICBM Silo",
+                "id": "b2a5-9b17-0eef-d159",
+                "description": "Bombardment Torpedoes launched from this Feature can only attack Cities and cannot attack the Dropsite the launching Feature is deployed to.\nBombardment Torpedoes launched from this Feature become damage Type C when used against Cities at least 6\" away from enemy Ships.\nWhen an attacking Group or Asset/s attack would cause this feature to be removed, if it has any remaining Torpedoes, the attacking opponent may remove an additional Feature and any Battalions assigned to it from this Dropsite.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ark Lander",
+        "id": "756d-24d3-53ce-ee32",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "6ca6-193c-64c4-07ad", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "e82c-a296-6dd8-05c5", "hidden": false, "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "642b-7c26-efb8-b76c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "756d-24d3-53ce-ee32",
+                "childName": "Comms Platform",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Ark Lander",
+            "id": "b070-b98c-4a3f-5c96",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "2edf-cd6f-1456-95d2", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {
+                "id": "bb47-18ff-538b-ae2d",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "36b2-df25-4a09-9506",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Ark Lander",
+                "id": "5f44-9337-09c2-24d5",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "4+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Ark Lander",
+                "id": "937e-7de7-41a5-95a2",
+                "description": "When this feature is deployed to a Dropsite, 4 friendly Battalions are automatically deployed to that Dropsite.\nWhile Activating Dropsites (during 7.5 Activating Dropsites), if you have more Battalions on this feature than any opponent, you count as controlling the Dropsite this Feature is deployed to. If multiple players count as controlling the same Dropsite this way, this effect is ignored.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Scanner Dome",
+        "id": "73c9-4e11-b5ff-139c",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "74fc-d953-3cdd-1dac", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "34e1-17fa-4853-2fd8", "hidden": false, "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "3fe8-7cbe-d21a-9fa3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "73c9-4e11-b5ff-139c",
+                "childName": "Torpedo Platform",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Scanner Dome",
+            "id": "b5d0-0a43-2f03-b735",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "0b26-8f8b-f73d-e3a5", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {
+                "id": "24f0-0cbb-9c74-21c7",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "1bc3-798a-b67d-f550",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Scanner Dome",
+                "id": "f3e4-7db0-2fd1-9536",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Scanner Dome",
+                "id": "3b10-2401-e757-fee6",
+                "description": "When you assign any weapons to an enemy Ship/Group within 6\" of this Dropsite, improve the Lock of those weapons by 1.\nWhen you attack an enemy Descent Ship in Atmosphere within 6\" of this Dropsite, instead of the usual penalties for attacking a City or a Descent Ship in Atmosphere (see paragraph 4 of 3.1.2 Atmosphere) that attack always hits on a 5+ and can never cause a critical (instead of a 6+).",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
       {"name": "----- Reference -----", "id": "7092-931f-e599-a82a", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Launch Assets",
@@ -8009,272 +8276,6 @@
                   {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
                   {"name": "Special", "$text": "Bombardment", "typeId": "9b33-7e68-b136-77db"}
                 ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "ICBM Silo",
-        "id": "a6ab-fb7c-a9da-ec07",
-        "hidden": false,
-        "import": true,
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Deployable Features", "id": "cae9-e3ab-ac56-38f1", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
-          {"name": "Reference", "id": "df1e-e831-6b61-3d28", "hidden": false, "primary": true, "targetId": "dbff-12ce-7e10-7001"}
-        ],
-        "constraints": [{"id": "91d3-83ce-ef08-864e", "automatic": false, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "a6ab-fb7c-a9da-ec07",
-                "childName": "Aegis Platform",
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "ICBM Silo",
-            "id": "c204-ccd8-7394-6b0b",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "categoryLinks": [{"name": "Deployable Features", "id": "80c7-936a-2e91-50b4", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
-            "constraints": [
-              {
-                "id": "de8b-b3c3-0f05-3759",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "fcec-96f5-0998-c478",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "entryLinks": [{"name": "Bombardment Torpedo", "id": "3b82-3be4-cbf7-f894", "hidden": false, "import": true, "targetId": "67a8-bc91-c15a-66bc", "type": "selectionEntry"}],
-            "profiles": [
-              {
-                "name": "ICBM Silo",
-                "id": "3dff-0fb2-f7d5-a44e",
-                "hidden": false,
-                "typeId": "e69b-d424-94a2-0fe1",
-                "typeName": "Feature",
-                "characteristics": [
-                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
-                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "ICBM Silo",
-                "id": "b2a5-9b17-0eef-d159",
-                "description": "Bombardment Torpedoes launched from this Feature can only attack Cities and cannot attack the Dropsite the launching Feature is deployed to.\nBombardment Torpedoes launched from this Feature become damage Type C when used against Cities at least 6\" away from enemy Ships.\nWhen an attacking Group or Asset/s attack would cause this feature to be removed, if it has any remaining Torpedoes, the attacking opponent may remove an additional Feature and any Battalions assigned to it from this Dropsite.",
-                "hidden": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Ark Lander",
-        "id": "756d-24d3-53ce-ee32",
-        "hidden": false,
-        "import": true,
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Deployable Features", "id": "6ca6-193c-64c4-07ad", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
-          {"name": "Reference", "id": "e82c-a296-6dd8-05c5", "hidden": false, "primary": true, "targetId": "dbff-12ce-7e10-7001"}
-        ],
-        "constraints": [{"id": "642b-7c26-efb8-b76c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "756d-24d3-53ce-ee32",
-                "childName": "Comms Platform",
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Ark Lander",
-            "id": "b070-b98c-4a3f-5c96",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "categoryLinks": [{"name": "Deployable Features", "id": "2edf-cd6f-1456-95d2", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
-            "constraints": [
-              {
-                "id": "bb47-18ff-538b-ae2d",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "36b2-df25-4a09-9506",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Ark Lander",
-                "id": "5f44-9337-09c2-24d5",
-                "hidden": false,
-                "typeId": "e69b-d424-94a2-0fe1",
-                "typeName": "Feature",
-                "characteristics": [
-                  {"name": "ES", "$text": "4+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
-                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Ark Lander",
-                "id": "937e-7de7-41a5-95a2",
-                "description": "When this feature is deployed to a Dropsite, 4 friendly Battalions are automatically deployed to that Dropsite.\nWhile Activating Dropsites (during 7.5 Activating Dropsites), if you have more Battalions on this feature than any opponent, you count as controlling the Dropsite this Feature is deployed to. If multiple players count as controlling the same Dropsite this way, this effect is ignored.",
-                "hidden": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Scanner Dome",
-        "id": "73c9-4e11-b5ff-139c",
-        "hidden": false,
-        "import": true,
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Deployable Features", "id": "74fc-d953-3cdd-1dac", "hidden": false, "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
-          {"name": "Reference", "id": "34e1-17fa-4853-2fd8", "hidden": false, "primary": true, "targetId": "dbff-12ce-7e10-7001"}
-        ],
-        "constraints": [{"id": "3fe8-7cbe-d21a-9fa3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "73c9-4e11-b5ff-139c",
-                "childName": "Torpedo Platform",
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Scanner Dome",
-            "id": "b5d0-0a43-2f03-b735",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "categoryLinks": [{"name": "Deployable Features", "id": "0b26-8f8b-f73d-e3a5", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
-            "constraints": [
-              {
-                "id": "24f0-0cbb-9c74-21c7",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "1bc3-798a-b67d-f550",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Scanner Dome",
-                "id": "f3e4-7db0-2fd1-9536",
-                "hidden": false,
-                "typeId": "e69b-d424-94a2-0fe1",
-                "typeName": "Feature",
-                "characteristics": [
-                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
-                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Scanner Dome",
-                "id": "3b10-2401-e757-fee6",
-                "description": "When you assign any weapons to an enemy Ship/Group within 6\" of this Dropsite, improve the Lock of those weapons by 1.\nWhen you attack an enemy Descent Ship in Atmosphere within 6\" of this Dropsite, instead of the usual penalties for attacking a City or a Descent Ship in Atmosphere (see paragraph 4 of 3.1.2 Atmosphere) that attack always hits on a 5+ and can never cause a critical (instead of a 6+).",
-                "hidden": false
               }
             ]
           }

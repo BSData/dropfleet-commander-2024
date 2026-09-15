@@ -6824,209 +6824,7 @@
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 20}],
         "entryLinks": [{"name": "Torpedo", "id": "5d91-3e36-90a5-6738", "hidden": false, "import": true, "targetId": "2a03-3fe4-51e0-5a5a", "type": "selectionEntry"}]
       },
-      {"name": "----- Reference -----", "id": "135e-b58b-e745-2d30", "hidden": true, "import": false, "type": "upgrade"},
-      {
-        "name": "Launch Assets",
-        "id": "9cad-9c67-a317-939d",
-        "defaultAmount": 1,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "categoryLinks": [
-          {"name": "Launch Assets", "id": "cdf5-3e19-cc3e-da20", "primary": false, "targetId": "9cef-c723-f3e7-2dd2"},
-          {"name": "Reference", "id": "ca66-f97d-307a-b204", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
-        ],
-        "constraints": [{"id": "c509-f98e-8d6d-7714", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "9cad-9c67-a317-939d",
-                "childName": "Launch Assets",
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Torpedo",
-            "id": "8f14-23fc-4b70-4021",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "type": "upgrade",
-            "constraints": [
-              {
-                "id": "13f5-b21a-5840-3495-min",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "13f5-b21a-5840-3495-max",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "infoLinks": [
-              {"name": "Corruptor-X", "id": "e652-4046-7c34-3295", "hidden": false, "targetId": "b495-5934-9bf1-d595", "type": "rule"},
-              {"name": "Torpedo", "id": "91df-279b-4d63-1f23", "hidden": false, "targetId": "a845-5a68-5784-e761", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Torpedo",
-                "id": "acda-7ba0-06e1-08f1",
-                "hidden": false,
-                "typeId": "2011-41e1-9c7c-9e25",
-                "typeName": "Launch Asset",
-                "characteristics": [
-                  {"name": "Thrust", "$text": "12\"", "typeId": "8c30-992b-18d3-9a9e"},
-                  {"name": "Att", "$text": "3", "typeId": "09f1-844b-5ba1-7b58"},
-                  {"name": "Lock", "$text": "2+", "typeId": "243e-e8ac-7e08-3636"},
-                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
-                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
-                  {"name": "Special", "$text": "Corruptor-2", "typeId": "9b33-7e68-b136-77db"}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Bombers",
-            "id": "6e71-ca91-e7b0-f278",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "type": "upgrade",
-            "constraints": [
-              {
-                "id": "0f7b-1625-3b41-5ad0-min",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "0f7b-1625-3b41-5ad0-max",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Bombers",
-                "id": "0a8a-bd3f-31f5-6f00",
-                "hidden": false,
-                "typeId": "2011-41e1-9c7c-9e25",
-                "typeName": "Launch Asset",
-                "characteristics": [
-                  {"name": "Thrust", "$text": "13\"", "typeId": "8c30-992b-18d3-9a9e"},
-                  {"name": "Att", "$text": "3", "typeId": "09f1-844b-5ba1-7b58"},
-                  {"name": "Lock", "$text": "4+", "typeId": "243e-e8ac-7e08-3636"},
-                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
-                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
-                  {"name": "Special", "$text": "-", "typeId": "9b33-7e68-b136-77db"}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Mines",
-            "id": "c716-82f0-6270-a01d",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "type": "upgrade",
-            "constraints": [
-              {
-                "id": "ebcc-10a7-c33f-2dae-min",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "ebcc-10a7-c33f-2dae-max",
-                "automatic": false,
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Mines",
-                "id": "d03b-3e31-043d-8f0f",
-                "hidden": false,
-                "typeId": "2011-41e1-9c7c-9e25",
-                "typeName": "Launch Asset",
-                "characteristics": [
-                  {"name": "Thrust", "$text": "5\"", "typeId": "8c30-992b-18d3-9a9e"},
-                  {"name": "Att", "$text": "4", "typeId": "09f1-844b-5ba1-7b58"},
-                  {"name": "Lock", "$text": "3+", "typeId": "243e-e8ac-7e08-3636"},
-                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
-                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
-                  {"name": "Special", "$text": "-", "typeId": "9b33-7e68-b136-77db"}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Fighters",
-            "id": "91d2-601f-26e2-cd83",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 4,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "0fbd-8c46-924d-6aae-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "0fbd-8c46-924d-6aae-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "profiles": [
-              {
-                "name": "Fighters",
-                "id": "2817-4275-954a-c690",
-                "hidden": false,
-                "typeId": "3057-ca91-b261-38a8",
-                "typeName": "Launch Asset",
-                "characteristics": [{"name": "Thrust", "$text": "16\"", "typeId": "ea0d-696a-c5fa-1684"}, {"name": "KS Re-roll", "$text": "1", "typeId": "d1c9-654e-a9f1-a88f"}]
-              }
-            ]
-          }
-        ]
-      },
+      {"name": "----- Deployable Features -----", "id": "2474-a548-624c-4325", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Gravitational Arc",
         "id": "76ae-ad48-c39d-9c87",
@@ -7243,6 +7041,209 @@
                     "hidden": false
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      },
+      {"name": "----- Reference -----", "id": "135e-b58b-e745-2d30", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Launch Assets",
+        "id": "9cad-9c67-a317-939d",
+        "defaultAmount": 1,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Launch Assets", "id": "cdf5-3e19-cc3e-da20", "primary": false, "targetId": "9cef-c723-f3e7-2dd2"},
+          {"name": "Reference", "id": "ca66-f97d-307a-b204", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "c509-f98e-8d6d-7714", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "9cad-9c67-a317-939d",
+                "childName": "Launch Assets",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Torpedo",
+            "id": "8f14-23fc-4b70-4021",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "13f5-b21a-5840-3495-min",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "13f5-b21a-5840-3495-max",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "infoLinks": [
+              {"name": "Corruptor-X", "id": "e652-4046-7c34-3295", "hidden": false, "targetId": "b495-5934-9bf1-d595", "type": "rule"},
+              {"name": "Torpedo", "id": "91df-279b-4d63-1f23", "hidden": false, "targetId": "a845-5a68-5784-e761", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Torpedo",
+                "id": "acda-7ba0-06e1-08f1",
+                "hidden": false,
+                "typeId": "2011-41e1-9c7c-9e25",
+                "typeName": "Launch Asset",
+                "characteristics": [
+                  {"name": "Thrust", "$text": "12\"", "typeId": "8c30-992b-18d3-9a9e"},
+                  {"name": "Att", "$text": "3", "typeId": "09f1-844b-5ba1-7b58"},
+                  {"name": "Lock", "$text": "2+", "typeId": "243e-e8ac-7e08-3636"},
+                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
+                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
+                  {"name": "Special", "$text": "Corruptor-2", "typeId": "9b33-7e68-b136-77db"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bombers",
+            "id": "6e71-ca91-e7b0-f278",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "0f7b-1625-3b41-5ad0-min",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "0f7b-1625-3b41-5ad0-max",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Bombers",
+                "id": "0a8a-bd3f-31f5-6f00",
+                "hidden": false,
+                "typeId": "2011-41e1-9c7c-9e25",
+                "typeName": "Launch Asset",
+                "characteristics": [
+                  {"name": "Thrust", "$text": "13\"", "typeId": "8c30-992b-18d3-9a9e"},
+                  {"name": "Att", "$text": "3", "typeId": "09f1-844b-5ba1-7b58"},
+                  {"name": "Lock", "$text": "4+", "typeId": "243e-e8ac-7e08-3636"},
+                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
+                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
+                  {"name": "Special", "$text": "-", "typeId": "9b33-7e68-b136-77db"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mines",
+            "id": "c716-82f0-6270-a01d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "ebcc-10a7-c33f-2dae-min",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "ebcc-10a7-c33f-2dae-max",
+                "automatic": false,
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Mines",
+                "id": "d03b-3e31-043d-8f0f",
+                "hidden": false,
+                "typeId": "2011-41e1-9c7c-9e25",
+                "typeName": "Launch Asset",
+                "characteristics": [
+                  {"name": "Thrust", "$text": "5\"", "typeId": "8c30-992b-18d3-9a9e"},
+                  {"name": "Att", "$text": "4", "typeId": "09f1-844b-5ba1-7b58"},
+                  {"name": "Lock", "$text": "3+", "typeId": "243e-e8ac-7e08-3636"},
+                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
+                  {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
+                  {"name": "Special", "$text": "-", "typeId": "9b33-7e68-b136-77db"}
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Fighters",
+            "id": "91d2-601f-26e2-cd83",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "0fbd-8c46-924d-6aae-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0fbd-8c46-924d-6aae-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "Fighters",
+                "id": "2817-4275-954a-c690",
+                "hidden": false,
+                "typeId": "3057-ca91-b261-38a8",
+                "typeName": "Launch Asset",
+                "characteristics": [{"name": "Thrust", "$text": "16\"", "typeId": "ea0d-696a-c5fa-1684"}, {"name": "KS Re-roll", "$text": "1", "typeId": "d1c9-654e-a9f1-a88f"}]
               }
             ]
           }
