@@ -6253,29 +6253,6 @@
       },
       {
         "name": "Dropships",
-        "id": "5150-ad0f-67e9-d4a0",
-        "collective": true,
-        "comment": "3",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "b92b-8d3b-48a0-6568-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "b92b-8d3b-48a0-6568-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Dropships",
-            "id": "5e2e-08f7-2bc5-8caa",
-            "hidden": false,
-            "typeId": "7ba8-a64f-b5fb-8c3e",
-            "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "3", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
-          }
-        ]
-      },
-      {
-        "name": "Dropships",
         "id": "fb91-877c-9139-7bbe",
         "collective": true,
         "comment": "2",
