@@ -171,10 +171,10 @@
       {"name": "PRK-91 Provenance Ark", "id": "4f81-f674-ae71-03e1", "hidden": false, "import": true, "targetId": "6e67-88af-073f-49d5", "type": "selectionEntry"},
       {"name": "M.A.B. 67 Fuel Transport", "id": "7dc4-b606-202a-f9a9", "hidden": false, "import": true, "targetId": "cd28-c520-fc64-367f", "type": "selectionEntry"},
       {"name": "MK Mass Transporter", "id": "f27d-f6ae-0b73-6e86", "hidden": false, "import": true, "targetId": "5b1c-066a-62fc-a376", "type": "selectionEntry"},
-      {"name": "Launch Assets", "id": "7c92-6895-d024-3a5d", "hidden": false, "import": true, "targetId": "d178-9648-a5d6-f294", "type": "selectionEntry"},
       {"name": "Heavy Calibre Orbital Gun", "id": "1e56-5ebe-a4c4-838e", "hidden": false, "import": true, "targetId": "7758-0507-51fd-7d00", "type": "selectionEntry"},
       {"name": "Shield Platform", "id": "0d4f-9d73-5245-be04", "hidden": false, "import": true, "targetId": "4f98-9baa-dae8-329f", "type": "selectionEntry"},
-      {"name": "Scanner Tower", "id": "7abd-c654-f60c-f096", "hidden": false, "import": true, "targetId": "b2e4-e44e-7f3f-4020", "type": "selectionEntry"}
+      {"name": "Scanner Tower", "id": "7abd-c654-f60c-f096", "hidden": false, "import": true, "targetId": "b2e4-e44e-7f3f-4020", "type": "selectionEntry"},
+      {"name": "Launch Assets", "id": "7c92-6895-d024-3a5d", "hidden": false, "import": true, "targetId": "d178-9648-a5d6-f294", "type": "selectionEntry"}
     ],
     "publications": [{"name": "PHR Combined Fleet Stats (260828)", "id": "6462-e99b-594c-193a", "hidden": false, "shortName": "PHR Stats (260828)"}],
     "sharedRules": [
@@ -8154,25 +8154,6 @@
             "conditions": [
               {
                 "childId": "7758-0507-51fd-7d00",
-                "childName": "Aegis Platform",
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          },
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "7758-0507-51fd-7d00",
                 "childName": "Heavy Calibre Orbital Gun",
                 "field": "selections",
                 "includeChildSelections": false,
@@ -8217,11 +8198,6 @@
                 "value": 1
               }
             ],
-            "infoLinks": [
-              {"name": "Calibre-X", "id": "c085-c1da-988d-2e07", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
-              {"name": "Critical-X", "id": "ff0a-bf32-8b9c-a9d1", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
-              {"name": "Escape Velocity", "id": "4881-4476-b531-5b06", "hidden": false, "targetId": "0357-837c-bc00-4ce3", "type": "rule"}
-            ],
             "profiles": [
               {
                 "name": "Heavy Calibre Orbital Gun",
@@ -8234,36 +8210,6 @@
                   {"name": "KS", "$text": "3+", "typeId": "4e0b-e781-cee2-504d"},
                   {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
                 ]
-              },
-              {
-                "name": "Heavy Calibre Orbital Gun (Mounted)",
-                "id": "11c3-7211-0d4c-8c55",
-                "hidden": false,
-                "typeId": "55a1-fca6-5a62-f9f4",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Scan", "$text": "-", "typeId": "ca0d-8087-d02a-179b"},
-                  {"name": "Att", "$text": "2", "typeId": "3cb6-1718-186b-4bce"},
-                  {"name": "Lock", "$text": "3+", "typeId": "4e0c-3aca-e97e-05c8"},
-                  {"name": "DMG", "$text": "2", "typeId": "1314-c0f9-8c3a-21ff"},
-                  {"name": "Type", "$text": "K", "typeId": "a2f6-d421-0336-1c75"},
-                  {"name": "Special", "$text": "Calibre-H/C", "typeId": "f633-dba6-938c-31f2"}
-                ]
-              },
-              {
-                "name": "Heavy Calibre Orbital Gun (Deployed)",
-                "id": "5a10-1b66-0907-5f11",
-                "hidden": false,
-                "typeId": "55a1-fca6-5a62-f9f4",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Scan", "$text": "8\"", "typeId": "ca0d-8087-d02a-179b"},
-                  {"name": "Att", "$text": "2", "typeId": "3cb6-1718-186b-4bce"},
-                  {"name": "Lock", "$text": "3+", "typeId": "4e0c-3aca-e97e-05c8"},
-                  {"name": "DMG", "$text": "2", "typeId": "1314-c0f9-8c3a-21ff"},
-                  {"name": "Type", "$text": "K", "typeId": "a2f6-d421-0336-1c75"},
-                  {"name": "Special", "$text": "Calibre-H/C, Critical-2, Escape Velocity", "typeId": "f633-dba6-938c-31f2"}
-                ]
               }
             ],
             "rules": [
@@ -8272,6 +8218,56 @@
                 "id": "ca68-03ac-377d-6aef",
                 "description": "While a Ship is carrying this feature, it has the Heavy Calibre Orbital Gun (Mounted) Weapon System in addition to its normal Weapon Systems, using the carrying Ship's Scan with an Arc of FN.\nThis feature cannot use the Heavy Calibre Orbital Gun (Mounted) weapon profile.",
                 "hidden": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Heavy Calibre Orbital Gun",
+                "id": "bb15-9ea1-cecb-1254",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "6e6e-9d2c-511f-2c44", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "08be-2e4a-2249-e4ee", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "infoLinks": [
+                  {"name": "Calibre-X", "id": "c085-c1da-988d-2e07", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
+                  {"name": "Critical-X", "id": "ff0a-bf32-8b9c-a9d1", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+                  {"name": "Escape Velocity", "id": "4881-4476-b531-5b06", "hidden": false, "targetId": "0357-837c-bc00-4ce3", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Heavy Calibre Orbital Gun (Mounted)",
+                    "id": "11c3-7211-0d4c-8c55",
+                    "hidden": false,
+                    "typeId": "55a1-fca6-5a62-f9f4",
+                    "typeName": "Weapon",
+                    "characteristics": [
+                      {"name": "Scan", "$text": "-", "typeId": "ca0d-8087-d02a-179b"},
+                      {"name": "Att", "$text": "2", "typeId": "3cb6-1718-186b-4bce"},
+                      {"name": "Lock", "$text": "3+", "typeId": "4e0c-3aca-e97e-05c8"},
+                      {"name": "DMG", "$text": "2", "typeId": "1314-c0f9-8c3a-21ff"},
+                      {"name": "Type", "$text": "K", "typeId": "a2f6-d421-0336-1c75"},
+                      {"name": "Special", "$text": "Calibre-H/C", "typeId": "f633-dba6-938c-31f2"}
+                    ]
+                  },
+                  {
+                    "name": "Heavy Calibre Orbital Gun (Deployed)",
+                    "id": "5a10-1b66-0907-5f11",
+                    "hidden": false,
+                    "typeId": "55a1-fca6-5a62-f9f4",
+                    "typeName": "Weapon",
+                    "characteristics": [
+                      {"name": "Scan", "$text": "8\"", "typeId": "ca0d-8087-d02a-179b"},
+                      {"name": "Att", "$text": "2", "typeId": "3cb6-1718-186b-4bce"},
+                      {"name": "Lock", "$text": "3+", "typeId": "4e0c-3aca-e97e-05c8"},
+                      {"name": "DMG", "$text": "2", "typeId": "1314-c0f9-8c3a-21ff"},
+                      {"name": "Type", "$text": "K", "typeId": "a2f6-d421-0336-1c75"},
+                      {"name": "Special", "$text": "Calibre-H/C, Critical-2, Escape Velocity", "typeId": "f633-dba6-938c-31f2"}
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -8289,25 +8285,6 @@
         ],
         "constraints": [{"id": "ab1c-c68f-2e11-aa4e", "automatic": false, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "4f98-9baa-dae8-329f",
-                "childName": "Aegis Platform",
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          },
           {
             "field": "hidden",
             "type": "set",
@@ -8396,25 +8373,6 @@
         ],
         "constraints": [{"id": "5828-4f0c-2bc8-9668", "automatic": false, "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "b2e4-e44e-7f3f-4020",
-                "childName": "Aegis Platform",
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          },
           {
             "field": "hidden",
             "type": "set",

@@ -180,10 +180,10 @@
       {"name": "PRK-91 Provenance Ark", "id": "6ecc-e96e-a578-9c82", "hidden": false, "import": true, "targetId": "6e67-88af-073f-49d5", "type": "selectionEntry"},
       {"name": "M.A.B. 67 Fuel Transport", "id": "be85-c5ea-c252-264c", "hidden": false, "import": true, "targetId": "cd28-c520-fc64-367f", "type": "selectionEntry"},
       {"name": "MK Mass Transporter", "id": "a190-0237-e00f-8066", "hidden": false, "import": true, "targetId": "5b1c-066a-62fc-a376", "type": "selectionEntry"},
-      {"name": "Launch Assets", "id": "7187-191c-80f4-cd13", "hidden": false, "import": true, "targetId": "702c-ed66-e9cc-621e", "type": "selectionEntry"},
       {"name": "ICBM Silo", "id": "cbd1-3a8b-1fe3-3814", "hidden": false, "import": true, "targetId": "a6ab-fb7c-a9da-ec07", "type": "selectionEntry"},
       {"name": "Ark Lander", "id": "a521-af74-cd13-b6dd", "hidden": false, "import": true, "targetId": "756d-24d3-53ce-ee32", "type": "selectionEntry"},
-      {"name": "Scanner Dome", "id": "64b9-e303-1d86-44d0", "hidden": false, "import": true, "targetId": "73c9-4e11-b5ff-139c", "type": "selectionEntry"}
+      {"name": "Scanner Dome", "id": "64b9-e303-1d86-44d0", "hidden": false, "import": true, "targetId": "73c9-4e11-b5ff-139c", "type": "selectionEntry"},
+      {"name": "Launch Assets", "id": "7187-191c-80f4-cd13", "hidden": false, "import": true, "targetId": "702c-ed66-e9cc-621e", "type": "selectionEntry"}
     ],
     "publications": [{"name": "Resistance Combined Fleet Stats (260731)", "id": "7fb8-995d-767a-783d", "hidden": false, "shortName": "Resistance Stats (260731)"}],
     "sharedRules": [
@@ -7669,7 +7669,7 @@
         "name": "Bombardment Torpedo",
         "id": "67a8-bc91-c15a-66bc",
         "collective": true,
-        "comment": "2 L-6 Bomb",
+        "comment": "2 L-6",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7678,10 +7678,7 @@
           {"id": "ada7-9ce6-848b-0938", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
-        "infoLinks": [
-          {"name": "Limited-X", "id": "918e-24d7-b438-f294", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"},
-          {"name": "Bombardment", "id": "9ecf-16bf-f2ab-f88d", "hidden": false, "targetId": "858c-a2ff-ed65-3e47", "type": "rule"}
-        ],
+        "infoLinks": [{"name": "Limited-X", "id": "918e-24d7-b438-f294", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
         "profiles": [
           {
             "name": "Bombardment Torpedo",
@@ -7689,7 +7686,7 @@
             "hidden": false,
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-6, Bombardment", "typeId": "d3be-1a27-21ac-fb65"}]
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-6", "typeId": "d3be-1a27-21ac-fb65"}]
           }
         ]
       },
@@ -7738,7 +7735,7 @@
             "conditions": [
               {
                 "childId": "a6ab-fb7c-a9da-ec07",
-                "childName": "Aegis Platform",
+                "childName": "ICBM Silo",
                 "field": "selections",
                 "includeChildForces": false,
                 "includeChildSelections": false,
@@ -7828,7 +7825,7 @@
             "conditions": [
               {
                 "childId": "756d-24d3-53ce-ee32",
-                "childName": "Comms Platform",
+                "childName": "Ark Lander",
                 "field": "selections",
                 "includeChildSelections": false,
                 "scope": "parent",
@@ -7916,7 +7913,7 @@
             "conditions": [
               {
                 "childId": "73c9-4e11-b5ff-139c",
-                "childName": "Torpedo Platform",
+                "childName": "Scanner Dome",
                 "field": "selections",
                 "includeChildSelections": false,
                 "scope": "parent",

@@ -143,9 +143,9 @@
       {"name": "PRK-91 Provenance Ark", "id": "0a9f-1ff3-a960-8ab5", "hidden": false, "import": true, "targetId": "6e67-88af-073f-49d5", "type": "selectionEntry"},
       {"name": "M.A.B. 67 Fuel Transport", "id": "5019-b85b-14e8-9bd6", "hidden": false, "import": true, "targetId": "cd28-c520-fc64-367f", "type": "selectionEntry"},
       {"name": "MK Mass Transporter", "id": "835c-e01e-e1dd-1b85", "hidden": false, "import": true, "targetId": "5b1c-066a-62fc-a376", "type": "selectionEntry"},
-      {"name": "Launch Assets", "id": "e18f-e6a0-3a5b-0c3e", "hidden": false, "import": true, "targetId": "9cad-9c67-a317-939d", "type": "selectionEntry"},
       {"name": "Gravitational Arc", "id": "f5ca-124d-149f-1f35", "hidden": false, "import": true, "targetId": "76ae-ad48-c39d-9c87", "type": "selectionEntry"},
-      {"name": "Ghost Orb Tower", "id": "6a83-075b-e636-0c23", "hidden": false, "import": true, "targetId": "1ac8-694b-c327-8d64", "type": "selectionEntry"}
+      {"name": "Ghost Orb Tower", "id": "6a83-075b-e636-0c23", "hidden": false, "import": true, "targetId": "1ac8-694b-c327-8d64", "type": "selectionEntry"},
+      {"name": "Launch Assets", "id": "e18f-e6a0-3a5b-0c3e", "hidden": false, "import": true, "targetId": "9cad-9c67-a317-939d", "type": "selectionEntry"}
     ],
     "publications": [{"name": "Bioficer Combined Fleet Stats (260529)", "id": "c835-461f-ea00-a841", "hidden": false, "shortName": "Bioficer Stats (260529)"}],
     "sharedRules": [
@@ -6844,7 +6844,7 @@
             "conditions": [
               {
                 "childId": "76ae-ad48-c39d-9c87",
-                "childName": "Aegis Platform",
+                "childName": "Gravitational Arc",
                 "field": "selections",
                 "includeChildForces": false,
                 "includeChildSelections": false,
@@ -6907,7 +6907,7 @@
               {
                 "name": "Gravitational Arc",
                 "id": "638f-1bda-8937-5fff",
-                "description": "When an enemy Group ends its move within 6\\\" of this Feature's dropsite and in atmosphere, that Group's player rolls a dice. On a 1-3, the Group is moved into Orbit and cannot move into Atmosphere again this round. It suffers the effects of moving through any scenery it is placed in. This takes place before that Group attacks or launches assets. If all Ships in the Group have Orbital Decay tokens, they are not affected.\nThis feature requires 5 or more Battalions to be removed during Battalion Combat and 5 damage to remove due to attacks.",
+                "description": "When an enemy Group ends its move within 6\" of this Feature's dropsite and in atmosphere, that Group's player rolls a dice. On a 1-3, the Group is moved into Orbit and cannot move into Atmosphere again this round. It suffers the effects of moving through any scenery it is placed in. This takes place before that Group attacks or launches assets. If all Ships in the Group have Orbital Decay tokens, they are not affected.\nThis feature requires 5 or more Battalions to be removed during Battalion Combat and 5 damage to remove due to attacks.",
                 "hidden": false
               }
             ]
@@ -6933,7 +6933,7 @@
             "conditions": [
               {
                 "childId": "1ac8-694b-c327-8d64",
-                "childName": "Aegis Platform",
+                "childName": "Ghost Orb Tower",
                 "field": "selections",
                 "includeChildForces": false,
                 "includeChildSelections": false,

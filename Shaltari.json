@@ -162,10 +162,10 @@
       {"name": "PRK-91 Provenance Ark", "id": "c65d-f201-597c-6161", "hidden": false, "import": true, "targetId": "6e67-88af-073f-49d5", "type": "selectionEntry"},
       {"name": "M.A.B. 67 Fuel Transport", "id": "5ec9-efd2-cea5-1ab2", "hidden": false, "import": true, "targetId": "cd28-c520-fc64-367f", "type": "selectionEntry"},
       {"name": "MK Mass Transporter", "id": "e156-799b-d0fb-8578", "hidden": false, "import": true, "targetId": "5b1c-066a-62fc-a376", "type": "selectionEntry"},
-      {"name": "Launch Assets", "id": "cbd6-11ce-4156-d0c4", "hidden": false, "import": true, "targetId": "cc1b-9d8b-db2d-9d32", "type": "selectionEntry"},
+      {"name": "Stellargate", "id": "f47a-0ebc-c473-bbf8", "hidden": false, "import": true, "targetId": "fb5d-af80-233a-f528", "type": "selectionEntry"},
       {"name": "Electrosurge Torus", "id": "59f3-4f07-3117-bbed", "hidden": false, "import": true, "targetId": "1200-12cb-1f6d-0421", "type": "selectionEntry"},
       {"name": "Worldstrider", "id": "c89c-f05d-d50a-b9fc", "hidden": false, "import": true, "targetId": "2fd9-6c83-a2ab-7cd5", "type": "selectionEntry"},
-      {"name": "Stellargate", "id": "f47a-0ebc-c473-bbf8", "hidden": false, "import": true, "targetId": "fb5d-af80-233a-f528", "type": "selectionEntry"}
+      {"name": "Launch Assets", "id": "cbd6-11ce-4156-d0c4", "hidden": false, "import": true, "targetId": "cc1b-9d8b-db2d-9d32", "type": "selectionEntry"}
     ],
     "publications": [{"name": "Shaltari Combined Fleet Stats (260731)", "id": "fbb6-a765-5882-6bcb", "hidden": false, "shortName": "Shaltari Stats (260731)"}],
     "sharedRules": [
@@ -6171,49 +6171,6 @@
         ]
       },
       {
-        "name": "Electrowave Caster",
-        "id": "9bd2-4e70-acd2-3507",
-        "collective": true,
-        "comment": "8\" 3/2+/1/E CA EV St",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "4342-f87a-4007-cb08", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "e855-1b4f-a10f-5bb1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "infoLinks": [
-          {"name": "Close Action", "id": "2156-459f-ad22-4f74", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-          {"name": "Escape Velocity", "id": "581b-84ec-7b0f-2166", "hidden": false, "targetId": "0357-837c-bc00-4ce3", "type": "rule"},
-          {"name": "Status", "id": "9b18-2a5a-3caa-e17e", "hidden": false, "targetId": "ea58-a80c-c3de-e165", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Electrowave Caster",
-            "id": "6345-b273-7161-7a5d",
-            "hidden": false,
-            "typeId": "55a1-fca6-5a62-f9f4",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Scan", "$text": "8\"", "typeId": "ca0d-8087-d02a-179b"},
-              {"name": "Att", "$text": "3", "typeId": "3cb6-1718-186b-4bce"},
-              {"name": "Lock", "$text": "2+", "typeId": "4e0c-3aca-e97e-05c8"},
-              {"name": "DMG", "$text": "1", "typeId": "1314-c0f9-8c3a-21ff"},
-              {"name": "Type", "$text": "E", "typeId": "a2f6-d421-0336-1c75"},
-              {"name": "Special", "$text": "Close Action, Escape Velocity, Status", "typeId": "f633-dba6-938c-31f2"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Electrowave Caster",
-            "id": "584e-5ca6-db56-da88",
-            "description": "Effects caused by this weapon's Status rule are removed at the start of next rounds End Phase instead of this rounds End Phase.",
-            "hidden": false
-          }
-        ]
-      },
-      {
         "name": "Microwave Crescent",
         "id": "79ff-dc27-66bb-4bb9",
         "collective": true,
@@ -6516,6 +6473,95 @@
       },
       {"name": "----- Deployable Features -----", "id": "4214-b45d-1435-2f9d", "hidden": true, "import": false, "type": "upgrade"},
       {
+        "name": "Stellargate",
+        "id": "fb5d-af80-233a-f528",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "49c3-0834-6ce6-7e62", "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "7228-fcd8-0bf9-7100", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "4285-4a73-575f-17e8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "fb5d-af80-233a-f528",
+                "childName": "Stellargate",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Stellargate",
+            "id": "0928-7f8f-83ce-87f2",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "0d3a-9757-a036-c41f", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {
+                "id": "2f7e-7eec-8a39-ec65-min",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "2f7e-7eec-8a39-ec65-max",
+                "automatic": false,
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [{"name": "Fighters & Bombers", "id": "c143-9303-36d0-7b2b", "hidden": false, "import": true, "targetId": "a206-ec27-49d0-76d2", "type": "selectionEntry"}],
+            "profiles": [
+              {
+                "name": "Stellargate",
+                "id": "ba77-3328-26c9-3e27",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "4+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Stellargate",
+                "id": "1e0e-f9f7-7fe8-7116",
+                "description": "After Battalion combat on this Feature's Dropsite, if it contains any number of friendly Stellargates, deploy one Battalion to that Dropsite. A Dropsite can only have a single Battalion deployed to it this way each round.\nWhile you have one or more Stellargates on a Dropsite, that Dropsite counts as a Controlled Dropsite with Gateship-X for the purposes of the Mothership special rule, where X is the total number of friendly Stellargates on that Dropsite. Additionally, the Dropsite forms a part of a Gateship chain with friendly Gateships and Motherships within 18\".\nThis feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "Electrosurge Torus",
         "id": "1200-12cb-1f6d-0421",
         "hidden": false,
@@ -6578,7 +6624,6 @@
                 "value": 1
               }
             ],
-            "entryLinks": [{"name": "Electrowave Caster", "id": "0c45-655f-e24f-b6ae", "hidden": false, "import": true, "targetId": "9bd2-4e70-acd2-3507", "type": "selectionEntry"}],
             "profiles": [
               {
                 "name": "Electrosurge Torus",
@@ -6599,6 +6644,49 @@
                 "id": "0fea-b63c-4ae1-f2c5",
                 "description": "This feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.",
                 "hidden": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Electrowave Caster",
+                "id": "9bd2-4e70-acd2-3507",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "4342-f87a-4007-cb08", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "e855-1b4f-a10f-5bb1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "infoLinks": [
+                  {"name": "Close Action", "id": "2156-459f-ad22-4f74", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+                  {"name": "Escape Velocity", "id": "581b-84ec-7b0f-2166", "hidden": false, "targetId": "0357-837c-bc00-4ce3", "type": "rule"},
+                  {"name": "Status", "id": "9b18-2a5a-3caa-e17e", "hidden": false, "targetId": "ea58-a80c-c3de-e165", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Electrowave Caster",
+                    "id": "6345-b273-7161-7a5d",
+                    "hidden": false,
+                    "typeId": "55a1-fca6-5a62-f9f4",
+                    "typeName": "Weapon",
+                    "characteristics": [
+                      {"name": "Scan", "$text": "8\"", "typeId": "ca0d-8087-d02a-179b"},
+                      {"name": "Att", "$text": "3", "typeId": "3cb6-1718-186b-4bce"},
+                      {"name": "Lock", "$text": "2+", "typeId": "4e0c-3aca-e97e-05c8"},
+                      {"name": "DMG", "$text": "1", "typeId": "1314-c0f9-8c3a-21ff"},
+                      {"name": "Type", "$text": "E", "typeId": "a2f6-d421-0336-1c75"},
+                      {"name": "Special", "$text": "Close Action, Escape Velocity, Status", "typeId": "f633-dba6-938c-31f2"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Electrowave Caster",
+                    "id": "584e-5ca6-db56-da88",
+                    "description": "Effects caused by this weapon's Status rule are removed at the start of next rounds End Phase instead of this rounds End Phase.",
+                    "hidden": false
+                  }
+                ]
               }
             ]
           }
@@ -6686,95 +6774,6 @@
                 "name": "Worldstrider",
                 "id": "0066-4066-78c5-0d47",
                 "description": "When you activate this Feature, you may pick another Feature on its Dropsite and roll a dice. On a result of a 3+, remove that Feature and any Battalions deployed on it from this Dropsite. If any Battalions are removed due to this rule, roll a dice. On a result of a 5+, this feature remains in play, otherwise, it is removed.\nThis feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.",
-                "hidden": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Stellargate",
-        "id": "fb5d-af80-233a-f528",
-        "hidden": false,
-        "import": true,
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Deployable Features", "id": "49c3-0834-6ce6-7e62", "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
-          {"name": "Reference", "id": "7228-fcd8-0bf9-7100", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
-        ],
-        "constraints": [{"id": "4285-4a73-575f-17e8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {
-                "childId": "fb5d-af80-233a-f528",
-                "childName": "Stellargate",
-                "field": "selections",
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Stellargate",
-            "id": "0928-7f8f-83ce-87f2",
-            "hidden": false,
-            "import": true,
-            "type": "model",
-            "categoryLinks": [{"name": "Deployable Features", "id": "0d3a-9757-a036-c41f", "hidden": false, "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
-            "constraints": [
-              {
-                "id": "2f7e-7eec-8a39-ec65-min",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "min",
-                "value": 1
-              },
-              {
-                "id": "2f7e-7eec-8a39-ec65-max",
-                "automatic": false,
-                "field": "selections",
-                "includeChildForces": false,
-                "includeChildSelections": false,
-                "scope": "parent",
-                "shared": true,
-                "type": "max",
-                "value": 1
-              }
-            ],
-            "entryLinks": [{"name": "Fighters & Bombers", "id": "c143-9303-36d0-7b2b", "hidden": false, "import": true, "targetId": "a206-ec27-49d0-76d2", "type": "selectionEntry"}],
-            "profiles": [
-              {
-                "name": "Stellargate",
-                "id": "ba77-3328-26c9-3e27",
-                "hidden": false,
-                "typeId": "e69b-d424-94a2-0fe1",
-                "typeName": "Feature",
-                "characteristics": [
-                  {"name": "ES", "$text": "4+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
-                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Stellargate",
-                "id": "1e0e-f9f7-7fe8-7116",
-                "description": "After Battalion combat on this Feature's Dropsite, if it contains any number of friendly Stellargates, deploy one Battalion to that Dropsite. A Dropsite can only have a single Battalion deployed to it this way each round.\nWhile you have one or more Stellargates on a Dropsite, that Dropsite counts as a Controlled Dropsite with Gateship-X for the purposes of the Mothership special rule, where X is the total number of friendly Stellargates on that Dropsite. Additionally, the Dropsite forms a part of a Gateship chain with friendly Gateships and Motherships within 18\".\nThis feature only requires 3 or more Battalions to be removed during Battalion Combat and 3 damage to remove due to attacks.",
                 "hidden": false
               }
             ]
@@ -7238,20 +7237,6 @@
               }
             ]
           }
-        ]
-      },
-      {
-        "name": "Deployable Features",
-        "id": "1fa6-280f-ac35-bd35",
-        "hidden": false,
-        "constraints": [
-          {"id": "bbf0-61c5-fe27-b45c-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-          {"id": "bbf0-61c5-fe27-b45c-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
-        ],
-        "selectionEntries": [
-          {"name": "Electrosurge Torus", "id": "29cb-d2b4-b92d-232d", "hidden": false, "import": true, "sortIndex": 1, "type": "upgrade"},
-          {"name": "Stellargate", "id": "ae86-f0e6-59aa-8a06", "hidden": false, "import": true, "sortIndex": 2, "type": "upgrade"},
-          {"name": "Worldstrider", "id": "5b83-3ffd-07fc-1e44", "hidden": false, "import": true, "sortIndex": 3, "type": "upgrade"}
         ]
       },
       {
