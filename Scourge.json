@@ -7385,15 +7385,8 @@
         "import": true,
         "type": "upgrade",
         "constraints": [{"id": "318a-1701-4872-de21", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "conditions": [{"childId": "6aad-bbb7-c1bf-9583", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}],
-            "modifiers": [{"field": "318a-1701-4872-de21", "type": "set", "value": 0}, {"field": "hidden", "type": "set", "value": true}]
-          }
-        ],
         "modifiers": [
-          {"affects": "profiles.Ship", "field": "fdf5-89b6-e62e-570f", "join": ", ", "scope": "parent", "type": "set", "value": "Cloak-2, Stealth"},
+          {"affects": "profiles.Ship", "field": "fdf5-89b6-e62e-570f", "join": ", ", "scope": "parent", "type": "set", "value": "Stealth, Cloak-2"},
           {"affects": "rules", "field": "hidden", "scope": "parent", "type": "set", "value": false}
         ]
       },
@@ -7405,13 +7398,6 @@
         "import": true,
         "type": "upgrade",
         "constraints": [{"id": "f199-5056-c5ef-96a1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifierGroups": [
-          {
-            "type": "and",
-            "conditions": [{"childId": "6aad-bbb7-c1bf-9583", "field": "selections", "scope": "ancestor", "shared": true, "type": "instanceOf", "value": 1}],
-            "modifiers": [{"field": "f199-5056-c5ef-96a1", "type": "set", "value": 0}, {"field": "hidden", "type": "set", "value": true}]
-          }
-        ],
         "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "join": ", ", "scope": "parent", "type": "increment", "value": 3}]
       },
       {"name": "----- Deployable Features -----", "id": "27aa-0348-9d86-2346", "hidden": true, "import": false, "type": "upgrade"},
