@@ -8891,7 +8891,7 @@
         "type": "upgrade",
         "constraints": [{"id": "ff72-ce7e-94fd-2ca7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 45}],
-        "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "join": ", ", "scope": "parent", "type": "increment", "value": 3}]
+        "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "scope": "parent", "type": "increment", "value": 3}]
       },
       {"name": "----- Deployable Features -----", "id": "43a3-9dc3-482c-c8a5", "hidden": true, "import": false, "type": "upgrade"},
       {

@@ -7373,7 +7373,7 @@
         "constraints": [{"id": "d4e2-5500-2522-2800", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}],
         "modifiers": [
-          {"affects": "profiles.Ship", "field": "fdf5-89b6-e62e-570f", "join": ", ", "scope": "parent", "type": "set", "value": "Cloak-2, Stealth"},
+          {"affects": "profiles.Ship", "field": "fdf5-89b6-e62e-570f", "scope": "parent", "type": "set", "value": "Cloak-2, Stealth"},
           {"affects": "rules", "field": "hidden", "scope": "parent", "type": "set", "value": false}
         ]
       },
@@ -7386,7 +7386,7 @@
         "type": "upgrade",
         "constraints": [{"id": "318a-1701-4872-de21", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "modifiers": [
-          {"affects": "profiles.Ship", "field": "fdf5-89b6-e62e-570f", "join": ", ", "scope": "parent", "type": "set", "value": "Stealth, Cloak-2"},
+          {"affects": "profiles.Ship", "field": "fdf5-89b6-e62e-570f", "scope": "parent", "type": "set", "value": "Stealth, Cloak-2"},
           {"affects": "rules", "field": "hidden", "scope": "parent", "type": "set", "value": false}
         ]
       },
@@ -7398,7 +7398,7 @@
         "import": true,
         "type": "upgrade",
         "constraints": [{"id": "f199-5056-c5ef-96a1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "join": ", ", "scope": "parent", "type": "increment", "value": 3}]
+        "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "scope": "parent", "type": "increment", "value": 3}]
       },
       {"name": "----- Deployable Features -----", "id": "27aa-0348-9d86-2346", "hidden": true, "import": false, "type": "upgrade"},
       {
@@ -8114,7 +8114,8 @@
             "import": true,
             "sortIndex": 1,
             "targetId": "8129-e004-6cb0-724f",
-            "type": "selectionEntry"
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}]
           },
           {
             "name": "Engine Upgrade",

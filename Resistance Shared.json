@@ -600,13 +600,12 @@
         "name": "Drive Refit",
         "id": "22f7-9040-874a-d8d8",
         "collective": true,
-        "comment": "+3\"",
         "hidden": false,
         "import": true,
         "type": "upgrade",
         "constraints": [{"id": "a601-7aa9-9b9c-def1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 25}],
-        "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "join": ", ", "scope": "parent", "type": "increment", "value": 3}]
+        "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "scope": "parent", "type": "increment", "value": 3}]
       }
     ]
   }

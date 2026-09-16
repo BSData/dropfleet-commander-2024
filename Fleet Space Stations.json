@@ -1498,7 +1498,7 @@
             "type": "upgrade",
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 30}],
             "infoLinks": [{"name": "Signature Bloom", "id": "160e-d48a-1e86-ace1", "hidden": false, "targetId": "53c7-8bbb-2618-15b2", "type": "rule"}],
-            "modifiers": [{"affects": "profiles.Space Station", "field": "473b-cbb5-5ba2-c2de", "join": ", ", "scope": "parent", "type": "set", "value": "Signature Bloom"}]
+            "modifiers": [{"affects": "profiles.Space Station", "field": "473b-cbb5-5ba2-c2de", "scope": "parent", "type": "set", "value": "Signature Bloom"}]
           },
           {
             "name": "Defence Grid",
@@ -1749,7 +1749,7 @@
             "type": "upgrade",
             "constraints": [{"id": "4cc1-3956-4397-de53", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 15}],
-            "modifiers": [{"affects": "profiles.Space Station", "field": "e1ee-74b3-00a9-8744", "join": ", ", "scope": "parent", "type": "increment", "value": 3}],
+            "modifiers": [{"affects": "profiles.Space Station", "field": "e1ee-74b3-00a9-8744", "scope": "parent", "type": "increment", "value": 3}],
             "profiles": [
               {
                 "name": "Scanner Uplink",
