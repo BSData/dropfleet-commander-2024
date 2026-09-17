@@ -5422,7 +5422,7 @@
         ]
       },
       {
-        "name": "NC-31 Hybrid Gun Battery",
+        "name": "N-31 Hybrid Gun Battery",
         "id": "38a3-ace5-9f4c-5621",
         "collective": true,
         "comment": "[NL] B 8/4+/1/K Vol-2",
@@ -5662,25 +5662,6 @@
           {
             "name": "Bulk Landers & Fire Ships",
             "id": "d1c0-e476-5c9e-6421",
-            "hidden": false,
-            "typeId": "7ba8-a64f-b5fb-8c3e",
-            "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
-          }
-        ]
-      },
-      {
-        "name": "Bulk Landers & Fire Ships",
-        "id": "7215-cc99-8264-5944",
-        "collective": true,
-        "comment": "[NL] 2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Bulk Landers & Fire Ships",
-            "id": "9273-2885-d9d0-4ed6",
             "hidden": false,
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
@@ -8301,7 +8282,7 @@
         ],
         "selectionEntryGroups": [
           {
-            "name": "Broadside Hardpoints",
+            "name": "Broadside Hardpoint",
             "id": "814d-a010-b55b-5380",
             "hidden": false,
             "sortIndex": 1,
@@ -8348,7 +8329,7 @@
             ]
           },
           {
-            "name": "Turret Hardpoints",
+            "name": "Turret Hardpoint",
             "id": "b537-c393-11d1-eb15",
             "hidden": false,
             "sortIndex": 2,
@@ -8395,7 +8376,7 @@
             ]
           },
           {
-            "name": "Launch Hardpoints",
+            "name": "Launch Hardpoint",
             "id": "2262-56eb-3951-5244",
             "hidden": false,
             "sortIndex": 3,
@@ -8519,7 +8500,7 @@
         ],
         "selectionEntryGroups": [
           {
-            "name": "Broadside Hardpoints",
+            "name": "Broadside Hardpoint",
             "id": "5a7a-e0a1-3bf6-3bac",
             "collective": false,
             "hidden": false,
@@ -8605,7 +8586,7 @@
                     "hidden": false,
                     "import": true,
                     "sortIndex": 3,
-                    "targetId": "7215-cc99-8264-5944",
+                    "targetId": "93ff-7d01-30f3-7dfe",
                     "type": "selectionEntry",
                     "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 18}]
                   }
@@ -8614,7 +8595,7 @@
             ]
           },
           {
-            "name": "Turrets",
+            "name": "Turret Hardpoint",
             "id": "9eb7-5c2f-e064-0eec",
             "collective": false,
             "hidden": false,
@@ -8736,7 +8717,7 @@
         ],
         "selectionEntryGroups": [
           {
-            "name": "Turrets",
+            "name": "Weapons",
             "id": "d2e8-8883-bdd3-da39",
             "hidden": false,
             "sortIndex": 1,
