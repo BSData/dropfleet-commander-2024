@@ -8232,8 +8232,8 @@
         "flatten": false,
         "hidden": false,
         "constraints": [
-          {"id": "3b0c-651a-aa3c-9668", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 8},
-          {"id": "3ca0-916b-a700-6055", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 8}
+          {"id": "3b0c-651a-aa3c-9668", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
+          {"id": "3ca0-916b-a700-6055", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
         ],
         "modifierGroups": [
           {
@@ -8243,10 +8243,20 @@
             "modifiers": [{"field": "3b0c-651a-aa3c-9668", "type": "set", "value": 6}, {"field": "3ca0-916b-a700-6055", "type": "set", "value": 6}]
           },
           {
-            "comment": "Pathfinder",
+            "comment": "Coloniser",
             "type": "and",
-            "conditions": [{"childId": "34a3-4980-1cbd-1061", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}],
-            "modifiers": [{"field": "3b0c-651a-aa3c-9668", "type": "set", "value": 4}, {"field": "3ca0-916b-a700-6055", "type": "set", "value": 4}]
+            "conditions": [
+              {
+                "childId": "ce84-9b07-6e00-6fae",
+                "childName": "Coloniser Interstellar Dreadnought",
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "3b0c-651a-aa3c-9668", "type": "set", "value": 8}, {"field": "3ca0-916b-a700-6055", "type": "set", "value": 8}]
           }
         ],
         "selectionEntryGroups": [
@@ -8255,7 +8265,7 @@
             "id": "814d-a010-b55b-5380",
             "hidden": false,
             "sortIndex": 1,
-            "constraints": [{"id": "4280-14e7-e1cc-ab3d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}],
+            "constraints": [{"id": "4280-14e7-e1cc-ab3d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
             "entryLinks": [
               {
                 "name": "N-31 Hybrid Gun Battery",
@@ -8289,11 +8299,21 @@
                 "conditions": [{"childId": "b118-3721-4c27-180b", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
               },
               {
-                "comment": "Pathfinder",
+                "comment": "Coloniser",
                 "field": "4280-14e7-e1cc-ab3d",
                 "type": "set",
-                "value": 2,
-                "conditions": [{"childId": "34a3-4980-1cbd-1061", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
+                "value": 4,
+                "conditions": [
+                  {
+                    "childId": "ce84-9b07-6e00-6fae",
+                    "childName": "Coloniser Interstellar Dreadnought",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
               }
             ]
           },
@@ -8302,7 +8322,7 @@
             "id": "b537-c393-11d1-eb15",
             "hidden": false,
             "sortIndex": 2,
-            "constraints": [{"id": "adc8-0f88-cb26-6223", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}],
+            "constraints": [{"id": "adc8-0f88-cb26-6223", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
             "entryLinks": [
               {
                 "name": "10K Mass Driver Turret",
@@ -8329,18 +8349,28 @@
             ],
             "modifiers": [
               {
-                "comment": "Pathfinder",
-                "field": "adc8-0f88-cb26-6223",
-                "type": "set",
-                "value": 2,
-                "conditions": [{"childId": "34a3-4980-1cbd-1061", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
-              },
-              {
                 "comment": "Explorer",
                 "field": "adc8-0f88-cb26-6223",
                 "type": "set",
                 "value": 3,
                 "conditions": [{"childId": "b118-3721-4c27-180b", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
+              },
+              {
+                "comment": "Pathfinder",
+                "field": "adc8-0f88-cb26-6223",
+                "type": "set",
+                "value": 4,
+                "conditions": [
+                  {
+                    "childId": "ce84-9b07-6e00-6fae",
+                    "childName": "Coloniser Interstellar Dreadnought",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
               }
             ]
           },
@@ -8349,7 +8379,7 @@
             "id": "2262-56eb-3951-5244",
             "hidden": false,
             "sortIndex": 3,
-            "constraints": [{"id": "9800-c103-e614-7a5c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}],
+            "constraints": [{"id": "9800-c103-e614-7a5c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
             "entryLinks": [
               {
                 "name": "Fighters & Bombers",
@@ -8394,11 +8424,21 @@
                 "conditions": [{"childId": "b118-3721-4c27-180b", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
               },
               {
-                "comment": "Pathfinder",
+                "comment": "Coloniser",
                 "field": "9800-c103-e614-7a5c",
                 "type": "set",
-                "value": 2,
-                "conditions": [{"childId": "34a3-4980-1cbd-1061", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
+                "value": 4,
+                "conditions": [
+                  {
+                    "childId": "ce84-9b07-6e00-6fae",
+                    "childName": "Coloniser Interstellar Dreadnought",
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
               }
             ]
           },
@@ -8450,8 +8490,8 @@
         "flatten": false,
         "hidden": false,
         "constraints": [
-          {"id": "8999-6cee-3c18-95e2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 5},
-          {"id": "b940-b26d-383d-128f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 5}
+          {"id": "8999-6cee-3c18-95e2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 3},
+          {"id": "b940-b26d-383d-128f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
         ],
         "modifierGroups": [
           {
@@ -8461,10 +8501,10 @@
             "modifiers": [{"field": "8999-6cee-3c18-95e2", "type": "set", "value": 4}, {"field": "b940-b26d-383d-128f", "type": "set", "value": 4}]
           },
           {
-            "comment": "Light Cruiser",
+            "comment": "Heavy Cruiser",
             "type": "and",
-            "conditions": [{"childId": "711a-1f54-090f-63d0", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}],
-            "modifiers": [{"field": "8999-6cee-3c18-95e2", "type": "set", "value": 3}, {"field": "b940-b26d-383d-128f", "type": "set", "value": 3}]
+            "conditions": [{"childId": "3559-15e0-5d53-0b3e", "childName": "Heavy Cruiser", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}],
+            "modifiers": [{"field": "8999-6cee-3c18-95e2", "type": "set", "value": 5}, {"field": "b940-b26d-383d-128f", "type": "set", "value": 5}]
           }
         ],
         "selectionEntryGroups": [
@@ -8667,21 +8707,21 @@
         "flatten": false,
         "hidden": false,
         "constraints": [
-          {"id": "d025-051f-9f83-fbe4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "d025-051f-9f83-fbe4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0},
           {"id": "36e1-ee0e-6358-ac8a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "modifierGroups": [
+          {
+            "comment": "Frigate",
+            "type": "and",
+            "conditions": [{"childId": "f845-ff32-5219-3ff0", "childName": "Frigate", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}],
+            "modifiers": [{"field": "d025-051f-9f83-fbe4", "type": "set", "value": 1}, {"field": "36e1-ee0e-6358-ac8a", "type": "set", "value": 1}]
+          },
           {
             "comment": "Heavy Frigate",
             "type": "and",
             "conditions": [{"childId": "2a99-74a8-0ee0-fd72", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}],
             "modifiers": [{"field": "d025-051f-9f83-fbe4", "type": "set", "value": 2}, {"field": "36e1-ee0e-6358-ac8a", "type": "set", "value": 2}]
-          },
-          {
-            "comment": "Strike Carrier",
-            "type": "and",
-            "conditions": [{"childId": "3405-d159-2d3b-4cff", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}],
-            "modifiers": [{"field": "d025-051f-9f83-fbe4", "type": "set", "value": 0}, {"field": "36e1-ee0e-6358-ac8a", "type": "set", "value": 1}]
           }
         ],
         "selectionEntryGroups": [
