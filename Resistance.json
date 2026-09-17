@@ -5208,642 +5208,6 @@
           }
         ]
       },
-      {"name": "----- No Limit Weapons -----", "id": "5f1c-3a54-43b4-0c38", "hidden": true, "import": false, "type": "upgrade"},
-      {
-        "name": "10K Mass Driver Turret",
-        "id": "fa56-f516-23f3-fa9d",
-        "collective": true,
-        "comment": "[NL] F/S 2/3+/2/K Cal-H/C Crit-2 Pen Vol-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Calibre-X", "id": "d6c8-a3fc-78e1-fa7c", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
-          {"name": "Critical-X", "id": "af40-eb8e-d128-58e5", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
-          {"name": "Penetrator", "id": "a935-3ca3-0707-25f7", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
-          {"name": "Volley-X", "id": "54b5-ee59-3fb6-0f03", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "10K Mass Driver Turret",
-            "id": "aa2e-9ad6-d96a-902a",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Calibre-H/C, Critical-2, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Heavy Dual Vent Cannon Turret",
-        "id": "cb41-3833-86dc-21ff",
-        "collective": true,
-        "comment": "[NL] F/S 4/3+/2/E Fus-2 OC Rv-1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Overcharge", "id": "c0b7-c4f5-3584-0f3b", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
-          {"name": "Fusillade-X", "id": "396f-7bf9-30e8-9ddf", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
-          {"name": "Reave-X", "id": "b30f-94e6-a505-c7c6", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Heavy Dual Vent Cannon Turret",
-            "id": "3fb5-7730-248a-5d1f",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Fusillade-2, Overcharge, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Light Vent Cannon Turret",
-        "id": "a74c-4498-31f8-9a71",
-        "collective": true,
-        "comment": "[NL] F/S 2/4+/1/E OC Rv-1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Overcharge", "id": "5a51-4cf0-a114-db52", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
-          {"name": "Reave-X", "id": "c4a8-1ff2-fea5-7987", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Light Vent Cannon Turret",
-            "id": "b602-3cdd-d5e0-4ff9",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Overcharge, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "N-8 Artillery Cannon Bank",
-        "id": "4b65-d078-6d11-484c",
-        "collective": true,
-        "comment": "[NL] B 6/5+/1/K Fus-2 LP Vol-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Fusillade-X", "id": "f733-60cb-a539-1963", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
-          {"name": "Low Power", "id": "ef6c-e129-d935-3ab1", "hidden": false, "targetId": "2851-2293-e346-839f", "type": "rule"},
-          {"name": "Volley-X", "id": "8397-25d4-f8bd-8183", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "N-8 Artillery Cannon Bank",
-            "id": "48b3-e165-e349-0ce7",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "5+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Fusillade-2, Low Power, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "N-11 Artillery Cannon Turret",
-        "id": "b256-0978-ce23-7e26",
-        "collective": true,
-        "comment": "[NL] F/S 3/4+/1/K Fus-1 LP",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Fusillade-X", "id": "6b13-9dfa-933c-3a6c", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
-          {"name": "Low Power", "id": "f285-4340-fa25-7cb9", "hidden": false, "targetId": "2851-2293-e346-839f", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "N-11 Artillery Cannon Turret",
-            "id": "e89b-d61b-e446-5479",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Fusillade-1, Low Power", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "N-11 Artillery Cannon Turret",
-        "id": "c287-26e1-1f58-ae4d",
-        "collective": true,
-        "comment": "[NL] F/S 3/4+/1/K Fus-1 LP Lnk-1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Fusillade-X", "id": "671a-bd11-b663-b6c5", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
-          {"name": "Low Power", "id": "d525-8555-4099-fe09", "hidden": false, "targetId": "2851-2293-e346-839f", "type": "rule"},
-          {"name": "Linked-X", "id": "1c48-dee9-6b3d-b01c", "hidden": false, "targetId": "fc9b-53d4-3bb3-3413", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "N-11 Artillery Cannon Turret",
-            "id": "5686-82be-c1c7-b5da",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Fusillade-1, Low Power, Linked-1", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "N-31 Hybrid Gun Bank",
-        "id": "8a6f-b3d6-0576-aa06",
-        "collective": true,
-        "comment": "[NL] B 3/4+/1/K Vol-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Volley-X", "id": "88b5-509d-52cd-bc6c", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "N-31 Hybrid Gun Bank",
-            "id": "6aa0-84df-1f02-01e8",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "N-31 Hybrid Gun Battery",
-        "id": "38a3-ace5-9f4c-5621",
-        "collective": true,
-        "comment": "[NL] B 8/4+/1/K Vol-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Volley-X", "id": "ccfc-40f7-6bbf-b983", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "NC-31 Hybrid Gun Battery",
-            "id": "55f0-fb31-268b-82f6",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "8", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "N-31 Hybrid Gun Turret",
-        "id": "2456-5194-df61-6a2f",
-        "collective": true,
-        "comment": "[NL] F/S 2/3+/1/K Fus-1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Fusillade-X", "id": "0a98-1edb-185e-b247", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "N-31 Hybrid Gun Turret",
-            "id": "a5a2-9144-1b1a-2790",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Fusillade-1", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "N-109 Bombardment Mortar Turret",
-        "id": "df14-ecce-1fb3-edd0",
-        "collective": true,
-        "comment": "[NL] F/S/R 3/4+/1/K Bomb Sc-1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Bombardment", "id": "d0e1-79fa-7315-9ad6", "hidden": false, "targetId": "858c-a2ff-ed65-3e47", "type": "rule"},
-          {"name": "Scald-X", "id": "2ddc-156b-adb3-387e", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "N-109 Bombardment Mortar Turret",
-            "id": "25d9-19c7-9365-c7e7",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Bombardment, Scald-1", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "NC-16 Missile Bank",
-        "id": "c2b2-84f1-345c-c1e6",
-        "collective": true,
-        "comment": "[NL] B 6/3+/1/K CA Vol-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Close Action", "id": "9c49-5590-bb8f-77b8", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-          {"name": "Volley-X", "id": "3a46-8db8-c49c-dea3", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "NC-16 Missile Bank",
-            "id": "a021-a85d-ec37-fc1a",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Close Action, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "NC-16 Missile Battery",
-        "id": "f067-f2f0-6431-583b",
-        "collective": true,
-        "comment": "[NL] B 6/3+/2/K CA Vol-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Close Action", "id": "4ae2-2d5e-d162-804e", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-          {"name": "Volley-X", "id": "40bb-04a5-7a88-16cc", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "NC-16 Missile Battery",
-            "id": "bbc6-cec7-d519-3c84",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Close Action, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "NC-16 Missile Turret",
-        "id": "a0a8-6b23-43dc-a016",
-        "collective": true,
-        "comment": "[NL] F/S/R 6/3+/1/K CA",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Close Action", "id": "ba02-062e-b1e8-9094", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "NC-16 Missile Turret",
-            "id": "f613-eb1f-6e61-6ab8",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Vent Cannon Turret",
-        "id": "a66a-c4d6-094e-15b8",
-        "collective": true,
-        "comment": "[NL] F/S 2/3+/1/E OC Fus-1 Rv-1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [
-          {"name": "Overcharge", "id": "3415-c961-198c-cf51", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
-          {"name": "Reave-X", "id": "be37-e342-ddaa-700e", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Vent Cannon Turret",
-            "id": "5f5f-adfe-5c3f-e6bd",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Overcharge, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "XN-31 Mass Driver Turret",
-        "id": "d14a-3915-dfc7-1d29",
-        "collective": true,
-        "comment": "[NL] F/S 2/2+/1/K Crit-1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Critical-X", "id": "534b-3b16-3016-ac0e", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "XN-31 Mass Driver Turret",
-            "id": "aeb0-7843-2250-6a07",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Critical-1", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {"name": "----- No Limit Load -----", "id": "0ec1-5524-64b7-8ce2", "hidden": true, "import": false, "type": "upgrade"},
-      {
-        "name": "Bulk Landers & Fire Ships",
-        "id": "93ff-7d01-30f3-7dfe",
-        "collective": true,
-        "comment": "[NL] 2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Bulk Landers & Fire Ships",
-            "id": "d1c0-e476-5c9e-6421",
-            "hidden": false,
-            "typeId": "7ba8-a64f-b5fb-8c3e",
-            "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
-          }
-        ]
-      },
-      {
-        "name": "Fighters & Bombers",
-        "id": "f10e-2e99-413f-017f",
-        "collective": true,
-        "comment": "[NL] 2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Fighters & Bombers",
-            "id": "4334-f4f3-0da7-1638",
-            "hidden": false,
-            "typeId": "7ba8-a64f-b5fb-8c3e",
-            "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
-          }
-        ]
-      },
-      {
-        "name": "Torpedo",
-        "id": "0743-e2f2-c2ba-5117",
-        "collective": true,
-        "comment": "[NL] 1 L-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "infoLinks": [{"name": "Limited-X", "id": "4d26-f86c-53a2-c800", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "Torpedo",
-            "id": "1400-4600-e12a-b758",
-            "hidden": false,
-            "typeId": "7ba8-a64f-b5fb-8c3e",
-            "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-2", "typeId": "d3be-1a27-21ac-fb65"}]
-          }
-        ]
-      },
-      {
-        "name": "Mines",
-        "id": "52d4-7801-63c0-6d68",
-        "collective": true,
-        "comment": "[NL] 2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "profiles": [
-          {
-            "name": "Mines",
-            "id": "81b7-8813-0a19-39c1",
-            "hidden": false,
-            "typeId": "7ba8-a64f-b5fb-8c3e",
-            "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
-          }
-        ]
-      },
-      {"name": "----- Structures -----", "id": "2f92-eb50-0d77-8e49", "hidden": true, "import": false, "type": "upgrade"},
-      {
-        "name": "Ablative Armour",
-        "id": "d2af-e9e9-8f5c-2738",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "f5d4-47cd-11d3-af9d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "infoLinks": [{"name": "Reinforced Armour", "id": "12f2-3fba-5632-cd96", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"}],
-        "modifiers": [
-          {"affects": "profiles.Ship", "field": "42ae-03c9-d0ff-61da", "scope": "parent", "type": "decrement", "value": 1},
-          {"affects": "profiles.Ship", "field": "a4d4-4c63-1848-24f8", "scope": "parent", "type": "decrement", "value": 1},
-          {"affects": "profiles.Ship", "field": "fdf5-89b6-e62e-570f", "scope": "parent", "type": "set", "value": "Reinforced Armour"}
-        ],
-        "profiles": [
-          {
-            "name": "Ablative Armour",
-            "id": "3de9-9377-0b27-1773",
-            "hidden": false,
-            "typeId": "2f84-97db-deff-fa6f",
-            "typeName": "Structure",
-            "characteristics": [
-              {
-                "name": "Effect",
-                "$text": "This Ship gains the Reinforced Armour special rule and improves its Kinetic and Energy save by 1.",
-                "typeId": "1f58-541b-60dc-ea2a"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Drive Refit",
-        "id": "9e57-79cc-21a0-72fb",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "e47c-98d0-a49f-a1a4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "scope": "parent", "type": "increment", "value": 3}],
-        "profiles": [
-          {
-            "name": "Drive Refit",
-            "id": "ae7a-5649-23ee-6484",
-            "hidden": false,
-            "typeId": "2f84-97db-deff-fa6f",
-            "typeName": "Structure",
-            "characteristics": [{"name": "Effect", "$text": "This Ship increases its Thrust by 3\".", "typeId": "1f58-541b-60dc-ea2a"}]
-          }
-        ]
-      },
-      {
-        "name": "Scanner Array",
-        "id": "1517-78fb-2a15-57eb",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "3845-7e30-131b-a689", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "modifiers": [{"affects": "profiles.Ship", "field": "960a-5d0e-18c5-4310", "scope": "parent", "type": "increment", "value": 4}],
-        "profiles": [
-          {
-            "name": "Scanner Array",
-            "id": "97ba-eb72-c917-3188",
-            "hidden": false,
-            "typeId": "2f84-97db-deff-fa6f",
-            "typeName": "Structure",
-            "characteristics": [{"name": "Effect", "$text": "This Ship increases its Scan by 4\".", "typeId": "1f58-541b-60dc-ea2a"}]
-          }
-        ]
-      },
-      {
-        "name": "Sensor Dome",
-        "id": "9fc6-b78f-77eb-cad2",
-        "collective": true,
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [{"id": "e845-3c68-0549-7209", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
-        "infoLinks": [{"name": "Detector", "id": "e57d-363c-63a8-aa23", "hidden": false, "targetId": "ff6a-7b9f-fca1-ef36", "type": "rule"}],
-        "modifiers": [
-          {
-            "affects": "profiles.Ship",
-            "field": "fdf5-89b6-e62e-570f",
-            "scope": "parent",
-            "type": "set",
-            "value": "Detector",
-            "conditions": [{"childId": "f845-ff32-5219-3ff0", "childName": "Frigate", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
-          },
-          {
-            "affects": "profiles.Ship",
-            "field": "fdf5-89b6-e62e-570f",
-            "join": ", ",
-            "scope": "parent",
-            "type": "append",
-            "value": "Detector",
-            "conditions": [{"childId": "f845-ff32-5219-3ff0", "childName": "Frigate", "field": "selections", "scope": "parent", "shared": true, "type": "notInstanceOf", "value": 1}]
-          }
-        ],
-        "profiles": [
-          {
-            "name": "Sensor Dome",
-            "id": "5abd-b57e-dad8-3b63",
-            "hidden": false,
-            "typeId": "2f84-97db-deff-fa6f",
-            "typeName": "Structure",
-            "characteristics": [
-              {
-                "name": "Effect",
-                "$text": "This Ship gains the Detector special rule. This ship counts as having an additional weapon for its Detector rule.",
-                "typeId": "1f58-541b-60dc-ea2a"
-              }
-            ]
-          }
-        ]
-      },
       {"name": "----- Weapons -----", "id": "2d3f-36cb-66e7-5204", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "10K Mass Driver Turret",
@@ -7301,6 +6665,447 @@
           }
         ]
       },
+      {"name": "----- No Limit Weapons -----", "id": "5f1c-3a54-43b4-0c38", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "10K Mass Driver Turret",
+        "id": "fa56-f516-23f3-fa9d",
+        "collective": true,
+        "comment": "[NL] F/S 2/3+/2/K Cal-H/C Crit-2 Pen Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Calibre-X", "id": "d6c8-a3fc-78e1-fa7c", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
+          {"name": "Critical-X", "id": "af40-eb8e-d128-58e5", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+          {"name": "Penetrator", "id": "a935-3ca3-0707-25f7", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
+          {"name": "Volley-X", "id": "54b5-ee59-3fb6-0f03", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "10K Mass Driver Turret",
+            "id": "aa2e-9ad6-d96a-902a",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Calibre-H/C, Critical-2, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Dual Vent Cannon Turret",
+        "id": "cb41-3833-86dc-21ff",
+        "collective": true,
+        "comment": "[NL] F/S 4/3+/2/E Fus-2 OC Rv-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Overcharge", "id": "c0b7-c4f5-3584-0f3b", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
+          {"name": "Fusillade-X", "id": "396f-7bf9-30e8-9ddf", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
+          {"name": "Reave-X", "id": "b30f-94e6-a505-c7c6", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Heavy Dual Vent Cannon Turret",
+            "id": "3fb5-7730-248a-5d1f",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Fusillade-2, Overcharge, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Light Vent Cannon Turret",
+        "id": "a74c-4498-31f8-9a71",
+        "collective": true,
+        "comment": "[NL] F/S 2/4+/1/E OC Rv-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Overcharge", "id": "5a51-4cf0-a114-db52", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
+          {"name": "Reave-X", "id": "c4a8-1ff2-fea5-7987", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Light Vent Cannon Turret",
+            "id": "b602-3cdd-d5e0-4ff9",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Overcharge, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "N-8 Artillery Cannon Bank",
+        "id": "4b65-d078-6d11-484c",
+        "collective": true,
+        "comment": "[NL] B 6/5+/1/K Fus-2 LP Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Fusillade-X", "id": "f733-60cb-a539-1963", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
+          {"name": "Low Power", "id": "ef6c-e129-d935-3ab1", "hidden": false, "targetId": "2851-2293-e346-839f", "type": "rule"},
+          {"name": "Volley-X", "id": "8397-25d4-f8bd-8183", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "N-8 Artillery Cannon Bank",
+            "id": "48b3-e165-e349-0ce7",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "5+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Fusillade-2, Low Power, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "N-11 Artillery Cannon Turret",
+        "id": "b256-0978-ce23-7e26",
+        "collective": true,
+        "comment": "[NL] F/S 3/4+/1/K Fus-1 LP",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Fusillade-X", "id": "6b13-9dfa-933c-3a6c", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
+          {"name": "Low Power", "id": "f285-4340-fa25-7cb9", "hidden": false, "targetId": "2851-2293-e346-839f", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "N-11 Artillery Cannon Turret",
+            "id": "e89b-d61b-e446-5479",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Fusillade-1, Low Power", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "N-11 Artillery Cannon Turret",
+        "id": "c287-26e1-1f58-ae4d",
+        "collective": true,
+        "comment": "[NL] F/S 3/4+/1/K Fus-1 LP Lnk-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Fusillade-X", "id": "671a-bd11-b663-b6c5", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
+          {"name": "Low Power", "id": "d525-8555-4099-fe09", "hidden": false, "targetId": "2851-2293-e346-839f", "type": "rule"},
+          {"name": "Linked-X", "id": "1c48-dee9-6b3d-b01c", "hidden": false, "targetId": "fc9b-53d4-3bb3-3413", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "N-11 Artillery Cannon Turret",
+            "id": "5686-82be-c1c7-b5da",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Fusillade-1, Low Power, Linked-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "N-31 Hybrid Gun Bank",
+        "id": "8a6f-b3d6-0576-aa06",
+        "collective": true,
+        "comment": "[NL] B 3/4+/1/K Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Volley-X", "id": "88b5-509d-52cd-bc6c", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "N-31 Hybrid Gun Bank",
+            "id": "6aa0-84df-1f02-01e8",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "N-31 Hybrid Gun Battery",
+        "id": "38a3-ace5-9f4c-5621",
+        "collective": true,
+        "comment": "[NL] B 8/4+/1/K Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Volley-X", "id": "ccfc-40f7-6bbf-b983", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "NC-31 Hybrid Gun Battery",
+            "id": "55f0-fb31-268b-82f6",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "8", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "N-31 Hybrid Gun Turret",
+        "id": "2456-5194-df61-6a2f",
+        "collective": true,
+        "comment": "[NL] F/S 2/3+/1/K Fus-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Fusillade-X", "id": "0a98-1edb-185e-b247", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "N-31 Hybrid Gun Turret",
+            "id": "a5a2-9144-1b1a-2790",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Fusillade-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "N-109 Bombardment Mortar Turret",
+        "id": "df14-ecce-1fb3-edd0",
+        "collective": true,
+        "comment": "[NL] F/S/R 3/4+/1/K Bomb Sc-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Bombardment", "id": "d0e1-79fa-7315-9ad6", "hidden": false, "targetId": "858c-a2ff-ed65-3e47", "type": "rule"},
+          {"name": "Scald-X", "id": "2ddc-156b-adb3-387e", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "N-109 Bombardment Mortar Turret",
+            "id": "25d9-19c7-9365-c7e7",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Bombardment, Scald-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NC-16 Missile Bank",
+        "id": "c2b2-84f1-345c-c1e6",
+        "collective": true,
+        "comment": "[NL] B 6/3+/1/K CA Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Close Action", "id": "9c49-5590-bb8f-77b8", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Volley-X", "id": "3a46-8db8-c49c-dea3", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "NC-16 Missile Bank",
+            "id": "a021-a85d-ec37-fc1a",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NC-16 Missile Battery",
+        "id": "f067-f2f0-6431-583b",
+        "collective": true,
+        "comment": "[NL] B 6/3+/2/K CA Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Close Action", "id": "4ae2-2d5e-d162-804e", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Volley-X", "id": "40bb-04a5-7a88-16cc", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "NC-16 Missile Battery",
+            "id": "bbc6-cec7-d519-3c84",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NC-16 Missile Turret",
+        "id": "a0a8-6b23-43dc-a016",
+        "collective": true,
+        "comment": "[NL] F/S/R 6/3+/1/K CA",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Close Action", "id": "ba02-062e-b1e8-9094", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "NC-16 Missile Turret",
+            "id": "f613-eb1f-6e61-6ab8",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vent Cannon Turret",
+        "id": "a66a-c4d6-094e-15b8",
+        "collective": true,
+        "comment": "[NL] F/S 2/3+/1/E OC Fus-1 Rv-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [
+          {"name": "Overcharge", "id": "3415-c961-198c-cf51", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
+          {"name": "Reave-X", "id": "be37-e342-ddaa-700e", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Vent Cannon Turret",
+            "id": "5f5f-adfe-5c3f-e6bd",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Overcharge, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "XN-31 Mass Driver Turret",
+        "id": "d14a-3915-dfc7-1d29",
+        "collective": true,
+        "comment": "[NL] F/S 2/2+/1/K Crit-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Critical-X", "id": "534b-3b16-3016-ac0e", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "XN-31 Mass Driver Turret",
+            "id": "aeb0-7843-2250-6a07",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Critical-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
       {"name": "----- Load -----", "id": "ae00-269c-0ff4-a6da", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Bulk Landers",
@@ -7666,6 +7471,201 @@
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
             "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-6", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {"name": "----- No Limit Load -----", "id": "0ec1-5524-64b7-8ce2", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Bulk Landers & Fire Ships",
+        "id": "93ff-7d01-30f3-7dfe",
+        "collective": true,
+        "comment": "[NL] 2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Bulk Landers & Fire Ships",
+            "id": "d1c0-e476-5c9e-6421",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Fighters & Bombers",
+        "id": "f10e-2e99-413f-017f",
+        "collective": true,
+        "comment": "[NL] 2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "4334-f4f3-0da7-1638",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Torpedo",
+        "id": "0743-e2f2-c2ba-5117",
+        "collective": true,
+        "comment": "[NL] 1 L-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "infoLinks": [{"name": "Limited-X", "id": "4d26-f86c-53a2-c800", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Torpedo",
+            "id": "1400-4600-e12a-b758",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-2", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Mines",
+        "id": "52d4-7801-63c0-6d68",
+        "collective": true,
+        "comment": "[NL] 2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Mines",
+            "id": "81b7-8813-0a19-39c1",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {"name": "----- Structures -----", "id": "2f92-eb50-0d77-8e49", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Ablative Armour",
+        "id": "d2af-e9e9-8f5c-2738",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "f5d4-47cd-11d3-af9d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "infoLinks": [{"name": "Reinforced Armour", "id": "12f2-3fba-5632-cd96", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"}],
+        "modifiers": [
+          {"affects": "profiles.Ship", "field": "42ae-03c9-d0ff-61da", "scope": "parent", "type": "decrement", "value": 1},
+          {"affects": "profiles.Ship", "field": "a4d4-4c63-1848-24f8", "scope": "parent", "type": "decrement", "value": 1},
+          {"affects": "profiles.Ship", "field": "fdf5-89b6-e62e-570f", "scope": "parent", "type": "set", "value": "Reinforced Armour"}
+        ],
+        "profiles": [
+          {
+            "name": "Ablative Armour",
+            "id": "3de9-9377-0b27-1773",
+            "hidden": false,
+            "typeId": "2f84-97db-deff-fa6f",
+            "typeName": "Structure",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "This Ship gains the Reinforced Armour special rule and improves its Kinetic and Energy save by 1.",
+                "typeId": "1f58-541b-60dc-ea2a"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drive Refit",
+        "id": "9e57-79cc-21a0-72fb",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "e47c-98d0-a49f-a1a4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "scope": "parent", "type": "increment", "value": 3}],
+        "profiles": [
+          {
+            "name": "Drive Refit",
+            "id": "ae7a-5649-23ee-6484",
+            "hidden": false,
+            "typeId": "2f84-97db-deff-fa6f",
+            "typeName": "Structure",
+            "characteristics": [{"name": "Effect", "$text": "This Ship increases its Thrust by 3\".", "typeId": "1f58-541b-60dc-ea2a"}]
+          }
+        ]
+      },
+      {
+        "name": "Scanner Array",
+        "id": "1517-78fb-2a15-57eb",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "3845-7e30-131b-a689", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [{"affects": "profiles.Ship", "field": "960a-5d0e-18c5-4310", "scope": "parent", "type": "increment", "value": 4}],
+        "profiles": [
+          {
+            "name": "Scanner Array",
+            "id": "97ba-eb72-c917-3188",
+            "hidden": false,
+            "typeId": "2f84-97db-deff-fa6f",
+            "typeName": "Structure",
+            "characteristics": [{"name": "Effect", "$text": "This Ship increases its Scan by 4\".", "typeId": "1f58-541b-60dc-ea2a"}]
+          }
+        ]
+      },
+      {
+        "name": "Sensor Dome",
+        "id": "9fc6-b78f-77eb-cad2",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "e845-3c68-0549-7209", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "infoLinks": [{"name": "Detector", "id": "e57d-363c-63a8-aa23", "hidden": false, "targetId": "ff6a-7b9f-fca1-ef36", "type": "rule"}],
+        "modifiers": [
+          {
+            "affects": "profiles.Ship",
+            "field": "fdf5-89b6-e62e-570f",
+            "scope": "parent",
+            "type": "set",
+            "value": "Detector",
+            "conditions": [{"childId": "f845-ff32-5219-3ff0", "childName": "Frigate", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
+          },
+          {
+            "affects": "profiles.Ship",
+            "field": "fdf5-89b6-e62e-570f",
+            "join": ", ",
+            "scope": "parent",
+            "type": "append",
+            "value": "Detector",
+            "conditions": [{"childId": "f845-ff32-5219-3ff0", "childName": "Frigate", "field": "selections", "scope": "parent", "shared": true, "type": "notInstanceOf", "value": 1}]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Sensor Dome",
+            "id": "5abd-b57e-dad8-3b63",
+            "hidden": false,
+            "typeId": "2f84-97db-deff-fa6f",
+            "typeName": "Structure",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "This Ship gains the Detector special rule. This ship counts as having an additional weapon for its Detector rule.",
+                "typeId": "1f58-541b-60dc-ea2a"
+              }
+            ]
           }
         ]
       },
