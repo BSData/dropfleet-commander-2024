@@ -7414,7 +7414,6 @@
       {
         "name": "Dreadnought Systems",
         "id": "1916-f671-7c89-e78e",
-        "flatten": false,
         "hidden": false,
         "constraints": [
           {"id": "ea03-f914-7abc-5b98", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 3},
@@ -7513,7 +7512,6 @@
                 "collective": true,
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
                 "targetId": "69d5-9e3b-8e0b-f8ab",
                 "type": "selectionEntry",
                 "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 20}]

@@ -3838,7 +3838,6 @@
               {
                 "name": "Cruiser Systems",
                 "id": "396c-7cc3-b8ac-4905",
-                "collective": false,
                 "hidden": false,
                 "import": true,
                 "targetId": "73b4-3658-0e13-f5ca",
@@ -8229,7 +8228,6 @@
       {
         "name": "Dreadnought Systems",
         "id": "1beb-f1d1-0251-ca15",
-        "flatten": false,
         "hidden": false,
         "constraints": [
           {"id": "3b0c-651a-aa3c-9668", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 4},
@@ -8356,7 +8354,7 @@
                 "conditions": [{"childId": "b118-3721-4c27-180b", "field": "selections", "scope": "parent", "shared": true, "type": "instanceOf", "value": 1}]
               },
               {
-                "comment": "Pathfinder",
+                "comment": "Coloniser",
                 "field": "adc8-0f88-cb26-6223",
                 "type": "set",
                 "value": 4,
@@ -8487,7 +8485,6 @@
       {
         "name": "Cruiser Systems",
         "id": "73b4-3658-0e13-f5ca",
-        "flatten": false,
         "hidden": false,
         "constraints": [
           {"id": "8999-6cee-3c18-95e2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 3},
@@ -8511,7 +8508,6 @@
           {
             "name": "Broadside Hardpoint",
             "id": "5a7a-e0a1-3bf6-3bac",
-            "collective": false,
             "hidden": false,
             "sortIndex": 1,
             "constraints": [{"id": "4ad9-d389-6bd4-310f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}],
@@ -8519,7 +8515,6 @@
               {
                 "name": "Weapons",
                 "id": "355b-0893-cb21-c9cc",
-                "collective": false,
                 "hidden": false,
                 "sortIndex": 1,
                 "entryLinks": [
@@ -8561,8 +8556,6 @@
               {
                 "name": "Launch",
                 "id": "12fa-0b75-aacb-bed1",
-                "collective": false,
-                "flatten": false,
                 "hidden": false,
                 "sortIndex": 2,
                 "entryLinks": [
@@ -8606,7 +8599,6 @@
           {
             "name": "Turret Hardpoint",
             "id": "9eb7-5c2f-e064-0eec",
-            "collective": false,
             "hidden": false,
             "sortIndex": 3,
             "entryLinks": [
@@ -8659,7 +8651,6 @@
           {
             "name": "Structures",
             "id": "751f-e67d-26f3-17fe",
-            "collective": false,
             "hidden": false,
             "sortIndex": 2,
             "constraints": [{"id": "0f06-a4d2-eddb-6fed", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}],
@@ -8704,7 +8695,6 @@
       {
         "name": "Frigate Systems",
         "id": "c6cf-5821-f6b2-1ffd",
-        "flatten": false,
         "hidden": false,
         "constraints": [
           {"id": "d025-051f-9f83-fbe4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0},
