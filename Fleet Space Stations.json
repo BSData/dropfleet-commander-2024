@@ -11,7 +11,7 @@
     "revision": 9,
     "type": "catalogue",
     "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
-    "publications": [{"name": "Fleet Space Stations (250113)", "id": "4be7-d555-8518-dd99", "hidden": false, "shortName": "Fleet Space Stations (250113)"}],
+    "publications": [{"name": "Fleet Space Stations (250828)", "id": "4be7-d555-8518-dd99", "hidden": false, "shortName": "Fleet Space Stations (250828)"}],
     "sharedRules": [
       {
         "name": "Station Turret Rack",
@@ -29,13 +29,13 @@
       {
         "name": "Gravity Manipulator",
         "id": "1377-0988-f6d3-4a38",
-        "description": "Friendly Ships that start their movement within this station's Scan range measure their movement from any point at the edge of this space station's Scan range, retaining their facing. Enemy Ships that start their movement within this station's Scan range measure their movement from this station (distances are measured from the flight stem), retaining their facing.\nThis special rule ceases to function while you do not control this station.",
+        "description": "Friendly Ships in Orbit that start their movement within this station's Scan range increase their Group's total movement (after Orders) by 2\". If all Ships in that Group are within this station's Scan range, that Group instead increases its total movement (after Orders) by 4\" and gains Vectored until the end of its activation. Groups can only be affected by this rule once in their activation and only while that Group is in Coherency.\nThis special rule ceases to function while you do not control this station.",
         "hidden": false
       },
       {
         "name": "Voidspace Anchor",
         "id": "9b37-61fe-6eac-8888",
-        "description": "When an enemy Group within 6\" of this Space Station activates, that Group may only move up to half of its Thrust this activation regardless of selected Order",
+        "description": "When an enemy Group within 6\" of this Space Station activates, that Group may only move up to half of its Thrust this activation regardless of selected Order.",
         "hidden": false
       },
       {
@@ -47,11 +47,30 @@
       {
         "name": "Signature Bloom",
         "id": "53c7-8bbb-2618-15b2",
-        "description": "Friendly Ships within 6\" of this Space Station are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship's Group ignore a Spike for each Hidden Ship in that Group.\nThis rule has no effect while this Space Station is controlled by an enemy player.",
+        "description": "Friendly Ships within this Space Station's unmodified Signature are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship's Group ignore a Spike for each Hidden Ship in that Group.\nThis rule has no effect while this Space Station is controlled by an enemy player.",
+        "hidden": false
+      },
+      {
+        "name": "Slow Traversal",
+        "id": "d874-ab78-9a86-e2a2",
+        "description": "This Space Station uses arcs as if it was a Ship and may only be turned due to this rule. When this Space Station is activated, you may turn it up to 22 degrees in any direction (22 degrees is the size of the FN Arc), even if it is controlled or contested by an opponent.",
+        "hidden": false
+      },
+      {
+        "name": "Summoned Ingress",
+        "id": "1029-3e75-c89f-27de",
+        "description": "From the 2nd round onwards, when a Group of L Tonnage not on the table deploys, you may treat this Space Stations front Arc up to 6\" away as that Group's deployment zone. If a Group deploys this way, roll a dice for each Ship in that Group and apply the corresponding Crippling Effect to the Group and the Group cannot attack or launch Assets this round.",
+        "hidden": false
+      },
+      {
+        "name": "Hypersummoning",
+        "id": "b292-878f-949c-4ea4",
+        "description": "When you launch a Wing from a friendly Bioficer Ship, instead of launching them normally, you may place them anywhere within 18\" of this Space Station. Wings placed this way suffer the effects of any scenery they are placed on but ignore intervening scenery. Wings placed this way count as having moved but may form and divide into Wings as if they had moved normally but cannot move or form and divide into Wings during the Asset Phase. Wings placed this way cannot be the target of your Abilities until the end of the round (other players may target them with Abilities as normal).",
         "hidden": false
       }
     ],
     "sharedSelectionEntries": [
+      {"name": "----- Groups -----", "id": "16ef-dd1b-c106-a491", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Small Space Station",
         "id": "914b-3a7a-039e-34df",
@@ -330,6 +349,7 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "9e63-9785-576c-a824", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 50}],
+        "entryLinks": [{"name": "Fighters & Bombers", "id": "da5d-c864-2182-4ca3", "hidden": false, "import": true, "targetId": "a06b-c80d-42c3-286a", "type": "selectionEntry"}],
         "profiles": [
           {
             "name": "Defence Hangar",
@@ -350,29 +370,6 @@
               {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Fighters & Bombers",
-            "id": "da5d-c864-2182-4ca3",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "df7b-152a-4afe-ab2b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "df7b-152a-4afe-ab2b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "profiles": [
-              {
-                "name": "Fighters & Bombers",
-                "id": "f159-3446-2bde-3488",
-                "hidden": false,
-                "typeId": "7ba8-a64f-b5fb-8c3e",
-                "typeName": "Load",
-                "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
-              }
-            ]
-          }
         ]
       },
       {
@@ -383,6 +380,7 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "a1e4-6078-1c4a-f719", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 60}],
+        "entryLinks": [{"name": "Medium Torpedo", "id": "fec4-c698-2be7-a1f8", "hidden": false, "import": true, "targetId": "1688-c1bb-dcd2-d64b", "type": "selectionEntry"}],
         "profiles": [
           {
             "name": "Munitions Platform",
@@ -403,30 +401,6 @@
               {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Medium Torpedo",
-            "id": "fec4-c698-2be7-a1f8",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "3cb5-be3a-5d35-7dad-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "3cb5-be3a-5d35-7dad-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [{"name": "Limited-X", "id": "6f7b-93d2-c6ae-c23b", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
-            "profiles": [
-              {
-                "name": "Medium Torpedo",
-                "id": "8b9d-0f6c-76fb-fab0",
-                "hidden": false,
-                "typeId": "7ba8-a64f-b5fb-8c3e",
-                "typeName": "Load",
-                "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-4", "typeId": "d3be-1a27-21ac-fb65"}]
-              }
-            ]
-          }
         ]
       },
       {
@@ -437,6 +411,7 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "d51e-0a2f-514e-9bbf", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
+        "entryLinks": [{"name": "Oculus Ward", "id": "d6c0-aea1-067d-d53d", "hidden": false, "import": true, "targetId": "5197-2c58-bc16-6637", "type": "selectionEntry"}],
         "profiles": [
           {
             "name": "Ephyra",
@@ -457,40 +432,6 @@
               {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Oculus Ward",
-            "id": "d6c0-aea1-067d-d53d",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "764d-bc7e-4a42-f068", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "427e-e98f-1674-1f4c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Close Action", "id": "b0c0-aa7b-4dd7-e40b", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-              {"name": "Scald-X", "id": "d2b1-a1c1-ac13-3cae", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Oculus Ward",
-                "id": "fa53-4325-c222-90d1",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Close Action, Scald-1", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          }
         ]
       },
       {
@@ -501,6 +442,7 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "1d12-b4d2-dd1c-cce6", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
+        "entryLinks": [{"name": "Volcano Lance", "id": "31e4-b091-f7c6-0bfe", "hidden": false, "import": true, "targetId": "b04a-04df-a1ae-10d6", "type": "selectionEntry"}],
         "profiles": [
           {
             "name": "Nematocyst",
@@ -521,41 +463,6 @@
               {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Volcano Lance",
-            "id": "31e4-b091-f7c6-0bfe",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "7269-69d9-2752-0ff4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "bbfd-5d30-9cb7-df09", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Bloom-X", "id": "07db-b8e5-8fe6-6fe7", "hidden": false, "targetId": "a944-3ee8-9a6c-6440", "type": "rule"},
-              {"name": "Burnthrough-X", "id": "b217-fd37-ced4-6f6e", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
-              {"name": "Flash-X", "id": "b1d3-f75f-9b31-7a5b", "hidden": false, "targetId": "9e6d-bb41-7c8b-a3b6", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Volcano Lance",
-                "id": "a20d-b356-de0b-d249",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Bloom-1, Burnthrough-1, Flash-1", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          }
         ]
       },
       {
@@ -566,6 +473,26 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "018d-22da-3c0a-8639", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
+        "entryLinks": [
+          {
+            "name": "Neutron Missiles",
+            "id": "a003-36f7-8a13-e9f8",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "76c3-5daa-c7e3-c61f",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Station Turret Rack",
+            "id": "b36a-e370-9011-8bbb",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "6bfc-7016-eb55-a501",
+            "type": "selectionEntry"
+          }
+        ],
         "profiles": [
           {
             "name": "Orbital Picket",
@@ -586,74 +513,6 @@
               {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Neutron Missiles",
-            "id": "a003-36f7-8a13-e9f8",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "8e5e-ed82-b6a0-aca3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "da6d-27c7-de66-a96d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Close Action", "id": "4970-ecd1-2e6c-b237", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-              {"name": "Crippling-X", "id": "631e-1628-d0f6-498e", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Neutron Missiles",
-                "id": "ebd3-34d7-4227-c79d",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Close Action, Crippling", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Station Turret Rack",
-            "id": "b36a-e370-9011-8bbb",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "260f-6d5a-50bb-d788", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "3d01-8a06-ab26-40fd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Close Action", "id": "e3ce-326a-d75f-5738", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-              {"name": "Station Turret Rack", "id": "0a54-bf67-ba6e-929a", "hidden": false, "targetId": "948f-7ca1-de52-166b", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Station Turret Rack",
-                "id": "fe04-00de-ccb0-a7e0",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          }
         ]
       },
       {
@@ -664,6 +523,26 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "de90-59de-828b-1296", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
+        "entryLinks": [
+          {
+            "name": "Station Turret Rack",
+            "id": "acaf-1f93-f779-543d",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "6bfc-7016-eb55-a501",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Triple Supernova Laser",
+            "id": "9a0c-0e81-062b-56f7",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "0369-d2f1-e1ee-d55f",
+            "type": "selectionEntry"
+          }
+        ],
         "profiles": [
           {
             "name": "Orbital Outpost",
@@ -684,75 +563,6 @@
               {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Triple Supernova Laser",
-            "id": "9a0c-0e81-062b-56f7",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "a9c5-ef76-17b4-8e39", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "74da-de8d-6ae8-fffe", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Burnthrough-X", "id": "0382-432e-70b1-1640", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
-              {"name": "Flash-X", "id": "1927-a127-9c28-8588", "hidden": false, "targetId": "9e6d-bb41-7c8b-a3b6", "type": "rule"},
-              {"name": "Focused", "id": "5aee-6aba-3d2d-d1e6", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Triple Supernova Laser",
-                "id": "31bc-4f04-c7fd-86a1",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Burnthrough-2, Flash-2, Focused", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Station Turret Rack",
-            "id": "acaf-1f93-f779-543d",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "d62a-637f-63ae-7f4d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "810d-33dc-984c-4ece", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Close Action", "id": "7c64-704d-57bb-45ce", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-              {"name": "Station Turret Rack", "id": "58de-d825-7d15-34ea", "hidden": false, "targetId": "948f-7ca1-de52-166b", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Station Turret Rack",
-                "id": "a9d3-d8da-4b6f-2d1d",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          }
         ]
       },
       {
@@ -763,6 +573,26 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "a7de-9822-121e-eb0a", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 145}],
+        "entryLinks": [
+          {
+            "name": "Quad Supernova Laser",
+            "id": "2719-aef2-be67-9ba9",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "ce00-6eac-9ab6-948a",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Station Turret Ring",
+            "id": "0b48-f840-7106-c324",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "c024-5b5b-a6d4-13f0",
+            "type": "selectionEntry"
+          }
+        ],
         "profiles": [
           {
             "name": "Defence Halo",
@@ -783,76 +613,6 @@
               {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Quad Supernova Laser",
-            "id": "2719-aef2-be67-9ba9",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "0574-69d6-d553-c840", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "0f24-a4a9-e9de-c043", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Burnthrough-X", "id": "b2d2-7735-c3d0-518b", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
-              {"name": "Flash-X", "id": "117f-4229-85a8-6505", "hidden": false, "targetId": "9e6d-bb41-7c8b-a3b6", "type": "rule"},
-              {"name": "Focused", "id": "b3ce-e119-654e-fd26", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
-              {"name": "Volley-X", "id": "8847-e27d-9dba-3808", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Quad Supernova Laser",
-                "id": "40e8-8b5d-772c-e52a",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Burnthrough-2, Flash-2, Focused, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Station Turret Ring",
-            "id": "0b48-f840-7106-c324",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "f8cb-bafe-b5cf-3869", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "38a2-2235-60c5-4b0f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Close Action", "id": "e68f-d40b-2b65-5277", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-              {"name": "Station Turret Ring", "id": "4211-7ef3-fdba-bfa3", "hidden": false, "targetId": "f2a6-4a86-f8e6-c8e6", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Station Turret Ring",
-                "id": "06cc-b467-4309-d507",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          }
         ]
       },
       {
@@ -863,6 +623,26 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "04f4-e36b-5c54-e583", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 145}],
+        "entryLinks": [
+          {
+            "name": "Neutron Missiles",
+            "id": "bb86-2e45-8d80-a0bf",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "76c3-5daa-c7e3-c61f",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Station Turret Ring",
+            "id": "ea80-917d-5680-11c1",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "c024-5b5b-a6d4-13f0",
+            "type": "selectionEntry"
+          }
+        ],
         "profiles": [
           {
             "name": "Orbital Spire",
@@ -883,74 +663,6 @@
               {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Neutron Missiles",
-            "id": "bb86-2e45-8d80-a0bf",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "0861-e8a8-49a9-adf8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "e8e2-7b21-49f7-4fc5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Close Action", "id": "849e-dd3d-593b-7ef1", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-              {"name": "Crippling-X", "id": "3b74-bb19-6d09-d71b", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Neutron Missiles",
-                "id": "b9fd-15d5-c2d6-9097",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Close Action, Crippling", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Station Turret Ring",
-            "id": "ea80-917d-5680-11c1",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "10bb-1f29-bf22-b1ab", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "6059-3d0d-4b2f-b782", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Close Action", "id": "2be7-6405-725a-9741", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-              {"name": "Station Turret Ring", "id": "022f-72c1-7de4-4cfb", "hidden": false, "targetId": "f2a6-4a86-f8e6-c8e6", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Station Turret Ring",
-                "id": "e8ab-2c46-c63e-7b78",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          }
         ]
       },
       {
@@ -961,6 +673,18 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "3ecc-5da8-d189-9a12", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
+        "entryLinks": [
+          {
+            "name": "Charged Aura",
+            "id": "6ede-ac68-d536-e88f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "2c76-b370-112e-846e",
+            "type": "selectionEntry"
+          },
+          {"name": "Dropships", "id": "aa71-d4ff-8718-dac9", "hidden": false, "import": true, "sortIndex": 2, "targetId": "9dfe-c522-c033-7c51", "type": "selectionEntry"}
+        ],
         "infoLinks": [
           {"name": "Mothership", "id": "c26a-78a4-f380-b92a", "hidden": false, "targetId": "928d-4467-6cc7-1771", "type": "rule"},
           {"name": "Shield-X", "id": "b63c-5943-fb48-3017", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
@@ -986,60 +710,6 @@
               {"name": "Special", "$text": "Mothership, Shield-4+, Gate Node", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Charged Aura",
-            "id": "6ede-ac68-d536-e88f",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "50d0-43da-6f78-6305", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "5118-df13-f1c8-15fd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [{"name": "Close Action", "id": "4f1b-5925-9570-ca1e", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
-            "profiles": [
-              {
-                "name": "Charged Aura",
-                "id": "5aa7-6130-6a50-d975",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "6+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Dropships",
-            "id": "aa71-d4ff-8718-dac9",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "7403-e3c5-ce2c-9e90", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "9591-05d5-73e3-255d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "profiles": [
-              {
-                "name": "Dropships",
-                "id": "64b0-aa38-d9da-1a42",
-                "hidden": false,
-                "typeId": "7ba8-a64f-b5fb-8c3e",
-                "typeName": "Load",
-                "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
-              }
-            ]
-          }
         ]
       },
       {
@@ -1050,6 +720,7 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "e866-b943-30ef-c752", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
+        "entryLinks": [{"name": "Grav Hooks", "id": "3f32-5706-73fc-9158", "hidden": false, "import": true, "targetId": "aec2-dc62-3782-ecd5", "type": "selectionEntry"}],
         "infoLinks": [
           {"name": "Shield-X", "id": "2479-ce56-fa41-696a", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
           {"name": "Gravity Manipulator", "id": "785c-dfc0-26e0-395e", "hidden": false, "targetId": "1377-0988-f6d3-4a38", "type": "rule"}
@@ -1118,7 +789,8 @@
         "import": true,
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "7d5e-bfaf-0d2e-8605", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 120}],
+        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 150}],
+        "entryLinks": [{"name": "Disintegrator Bank", "id": "6f9a-3e80-4849-e917", "hidden": false, "import": true, "targetId": "bc53-05e5-31b3-77c8", "type": "selectionEntry"}],
         "infoLinks": [{"name": "Shield-X", "id": "64ff-ef46-d542-79eb", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"}],
         "profiles": [
           {
@@ -1140,40 +812,6 @@
               {"name": "Special", "$text": "Shield-4+", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Disintegrator Bank",
-            "id": "6f9a-3e80-4849-e917",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "75d4-a91a-9247-6727", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "16b4-3697-a23a-7d25", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Volley-X", "id": "45e8-b227-5004-8a53", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"},
-              {"name": "Disintegrator Bank", "id": "97a8-0104-6712-ff42", "hidden": false, "targetId": "00a0-f924-fd56-2694", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Disintegrator Bank",
-                "id": "3cd4-34b7-59c8-29a1",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "*", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "8", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Volley-5", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          }
         ]
       },
       {
@@ -1184,6 +822,26 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "0c04-8d01-c96f-3992", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 85}],
+        "entryLinks": [
+          {
+            "name": "Heavy Vent Cannon Turret",
+            "id": "35f3-ebe7-4058-42ef",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "9060-dfa3-c13c-d00e",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "XN-31-S Mass Driver Turret Pair",
+            "id": "d96d-3224-a82e-873e",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "0206-8358-8ae6-3f0b",
+            "type": "selectionEntry"
+          }
+        ],
         "profiles": [
           {
             "name": "Grand Station",
@@ -1204,81 +862,6 @@
               {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Heavy Vent Cannon Turret",
-            "id": "35f3-ebe7-4058-42ef",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "a46f-09a5-c030-3fc5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "a576-0b48-001c-e9a6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Fusillade-X", "id": "da7f-3eab-8c0b-9f65", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
-              {"name": "Overcharge", "id": "82dd-cdd9-d4db-d87e", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
-              {"name": "Reave-X", "id": "ac6d-ed3a-ce98-a223", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Heavy Vent Cannon Turret",
-                "id": "106d-a9c6-e6f2-a671",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Fusillade-1, Overcharge, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Heavy Vent Cannon Turret",
-                "id": "547e-379e-e417-0009",
-                "description": "When you assign targets to this weapon, you may have this Space Station gain 2 Spikes, if you do, it counts as going on Weapons Free Orders for the purposes of its Special rules.",
-                "hidden": false
-              }
-            ]
-          },
-          {
-            "name": "XN-31-S Mass Driver Turret Pair",
-            "id": "d96d-3224-a82e-873e",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "ea20-40cb-238a-6d95", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "0884-2716-d4e2-c30e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Critical-X", "id": "f177-d269-486e-c1a2", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
-              {"name": "Volley-X", "id": "b1a7-4b6e-e42e-a6b4", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "XN-31-S Mass Driver Turret Pair",
-                "id": "7280-333c-c99c-42d0",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Critical-1, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ]
-          }
         ]
       },
       {
@@ -1289,6 +872,9 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "dd00-1632-f31f-c9c7", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 85}],
+        "entryLinks": [
+          {"name": "Heavy Vent Cannon Turret", "id": "7ab4-3444-773c-ee67", "hidden": false, "import": true, "targetId": "9060-dfa3-c13c-d00e", "type": "selectionEntry"}
+        ],
         "infoLinks": [{"name": "Signature Bloom", "id": "ff6a-ea4d-2248-c022", "hidden": false, "targetId": "53c7-8bbb-2618-15b2", "type": "rule"}],
         "profiles": [
           {
@@ -1310,49 +896,6 @@
               {"name": "Special", "$text": "Signature Bloom", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Heavy Vent Cannon Turret",
-            "id": "7ab4-3444-773c-ee67",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "c55f-5734-82f8-c79b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "86d4-e3bf-7ea2-0a5b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Fusillade-X", "id": "7360-b782-35df-6095", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
-              {"name": "Overcharge", "id": "5935-6b67-ae43-7d3e", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
-              {"name": "Reave-X", "id": "598f-3737-21c0-83fc", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Heavy Vent Cannon Turret",
-                "id": "b3de-7723-718a-e678",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Fusillade-1, Overcharge, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Heavy Vent Cannon Turret",
-                "id": "0706-d927-4892-6afe",
-                "description": "When you assign targets to this weapon, you may have this Space Station gain 2 Spikes, if you do, it counts as going on Weapons Free Orders for the purposes of its Special rules.",
-                "hidden": false
-              }
-            ]
-          }
         ]
       },
       {
@@ -1363,6 +906,10 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "b4fb-7eac-5276-5595", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 220}],
+        "entryLinks": [
+          {"name": "Dimensional Hypershredder", "id": "d4f8-8ce3-2221-eaaf", "hidden": false, "import": true, "targetId": "7279-afef-c3f7-bd21", "type": "selectionEntry"}
+        ],
+        "infoLinks": [{"name": "Slow Traversal", "id": "b2bd-a6b3-c08e-a1ed", "hidden": false, "targetId": "d874-ab78-9a86-e2a2", "type": "rule"}],
         "profiles": [
           {
             "name": "Hypershredder",
@@ -1383,58 +930,6 @@
               {"name": "Special", "$text": "Slow Traversal", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
-        ],
-        "rules": [
-          {
-            "name": "Slow Traversal",
-            "id": "d874-ab78-9a86-e2a2",
-            "description": "This Space Station uses arcs as if it was a Ship and may only be turned due to this rule. When this Space Station is activated, you may turn it up to 22 degrees in any direction (22 degrees is the size of the FN Arc), even if it is controlled or contested by an opponent.",
-            "hidden": false
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "Dimensional Hypershredder",
-            "id": "d4f8-8ce3-2221-eaaf",
-            "hidden": false,
-            "import": true,
-            "type": "upgrade",
-            "constraints": [
-              {"id": "73ea-6e0c-7da6-e190", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "f9a0-db43-8a35-1721", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-            ],
-            "infoLinks": [
-              {"name": "Bombardment", "id": "d762-9456-fc98-ff0e", "hidden": false, "targetId": "858c-a2ff-ed65-3e47", "type": "rule"},
-              {"name": "Critical-X", "id": "3514-cfb0-3569-e7ed", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
-              {"name": "Focused", "id": "41aa-7118-7963-c87f", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
-              {"name": "Reave-X", "id": "4196-2539-1bfc-8e18", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "Dimensional Hypershredder",
-                "id": "9abc-5c67-64a8-05c0",
-                "hidden": false,
-                "typeId": "02b7-2433-f72f-d510",
-                "typeName": "Weapon",
-                "characteristics": [
-                  {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
-                  {"name": "Att", "$text": "12", "typeId": "af4e-6eec-3cb5-5aae"},
-                  {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                  {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                  {"name": "Type", "$text": "*", "typeId": "8f83-3218-7832-0818"},
-                  {"name": "Special", "$text": "Bombardment, Critical-1, Focused, Reave-2", "typeId": "1e8b-4801-6eb9-f278"}
-                ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Dimensional Hypershredder",
-                "id": "b249-1838-c74e-b51e",
-                "description": "When you attack with this weapon, choose Energy or Kinetic. This weapon's Type becomes the chosen Type for this attack.",
-                "hidden": false
-              }
-            ]
-          }
         ]
       },
       {
@@ -1445,6 +940,10 @@
         "type": "model",
         "categoryLinks": [{"name": "Space Stations", "id": "1c58-a7d3-4b3c-71e9", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 200}],
+        "infoLinks": [
+          {"name": "Summoned Ingress", "id": "cb3c-ec15-a29b-6438", "hidden": false, "targetId": "1029-3e75-c89f-27de", "type": "rule"},
+          {"name": "Hypersummoning", "id": "7137-92ab-4818-67f2", "hidden": false, "targetId": "b292-878f-949c-4ea4", "type": "rule"}
+        ],
         "profiles": [
           {
             "name": "Hypersummoner",
@@ -1465,22 +964,544 @@
               {"name": "Special", "$text": "Summoned Ingress, Hypersummoning", "typeId": "473b-cbb5-5ba2-c2de"}
             ]
           }
+        ]
+      },
+      {"name": "----- Weapons -----", "id": "12f7-4ba3-6868-dc0e", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Charged Aura",
+        "id": "2c76-b370-112e-846e",
+        "collective": true,
+        "comment": "F/S/R 4/6+/1/E CA",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "50d0-43da-6f78-6305", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "5118-df13-f1c8-15fd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Close Action", "id": "4f1b-5925-9570-ca1e", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Charged Aura",
+            "id": "5aa7-6130-6a50-d975",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "6+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dimensional Hypershredder",
+        "id": "7279-afef-c3f7-bd21",
+        "collective": true,
+        "comment": "FN 12/3+/1/* Bmb Crit-1 Foc Rv-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "73ea-6e0c-7da6-e190", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "f9a0-db43-8a35-1721", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Bombardment", "id": "d762-9456-fc98-ff0e", "hidden": false, "targetId": "858c-a2ff-ed65-3e47", "type": "rule"},
+          {"name": "Critical-X", "id": "3514-cfb0-3569-e7ed", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+          {"name": "Focused", "id": "41aa-7118-7963-c87f", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
+          {"name": "Reave-X", "id": "4196-2539-1bfc-8e18", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Dimensional Hypershredder",
+            "id": "9abc-5c67-64a8-05c0",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "12", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "*", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Bombardment, Critical-1, Focused, Reave-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
         ],
         "rules": [
           {
-            "name": "Summoned Ingress",
-            "id": "1029-3e75-c89f-27de",
-            "description": "From the 2nd round onwards, when a Group of L Tonnage not on the table deploys, you may treat this Space Stations front Arc up to 6\" away as that Group's deployment zone. If a Group deploys this way, roll a dice for each Ship in that Group and apply the corresponding Crippling Effect to the Group and the Group cannot attack or launch Assets this round.",
-            "hidden": false
-          },
-          {
-            "name": "Hypersummoning",
-            "id": "b292-878f-949c-4ea4",
-            "description": "When you launch a Wing from a friendly Bioficer Ship, instead of launching them normally, you may place them anywhere within 18\" of this Space Station. Wings placed this way suffer the effects of any scenery they are placed on but ignore intervening scenery. Wings placed this way count as having moved but may form and divide into Wings as if they had moved normally but cannot move or form and divide into Wings during the Asset Phase. Wings placed this way cannot be the target of your Abilities until the end of the round (other players may target them with Abilities as normal).",
+            "name": "Dimensional Hypershredder",
+            "id": "b249-1838-c74e-b51e",
+            "description": "When you attack with this weapon, choose Energy or Kinetic. This weapon's Type becomes the chosen Type for this attack.",
             "hidden": false
           }
         ]
-      }
+      },
+      {
+        "name": "Disintegrator Bank",
+        "id": "bc53-05e5-31b3-77c8",
+        "collective": true,
+        "comment": "* 8/3+/1/E Vol-5",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "75d4-a91a-9247-6727", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "16b4-3697-a23a-7d25", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Volley-X", "id": "45e8-b227-5004-8a53", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"},
+          {"name": "Disintegrator Bank", "id": "97a8-0104-6712-ff42", "hidden": false, "targetId": "00a0-f924-fd56-2694", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Disintegrator Bank",
+            "id": "3cd4-34b7-59c8-29a1",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "*", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "8", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Volley-5", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grav Hooks",
+        "id": "aec2-dc62-3782-ecd5",
+        "collective": true,
+        "comment": "F/S/R 2/3+/1/E Arr-2 Foc Vol-3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "ba56-6124-2800-8339", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "556a-61d3-5869-b838", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Arrest-X", "id": "d1d2-5c8c-e837-6685", "hidden": false, "targetId": "7fa4-03e2-d2a7-de9b", "type": "rule"},
+          {"name": "Focused", "id": "9ec9-69e9-2ed7-52a5", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
+          {"name": "Volley-X", "id": "259a-8005-c474-1b66", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Grav Hooks",
+            "id": "a652-2f8d-f05a-b44a",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Arrest-2, Focused, Volley-3", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Vent Cannon Turret",
+        "id": "9060-dfa3-c13c-d00e",
+        "collective": true,
+        "comment": "F/S/R 2/3+/2/E Fus-1 OC Rv-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "a46f-09a5-c030-3fc5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "a576-0b48-001c-e9a6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Fusillade-X", "id": "da7f-3eab-8c0b-9f65", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
+          {"name": "Overcharge", "id": "82dd-cdd9-d4db-d87e", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
+          {"name": "Reave-X", "id": "ac6d-ed3a-ce98-a223", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Heavy Vent Cannon Turret",
+            "id": "106d-a9c6-e6f2-a671",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Fusillade-1, Overcharge, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Heavy Vent Cannon Turret",
+            "id": "547e-379e-e417-0009",
+            "description": "When you assign targets to this weapon, you may have this Space Station gain 2 Spikes, if you do, it counts as going on Weapons Free Orders for the purposes of its Special rules.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Neutron Missiles",
+        "id": "76c3-5daa-c7e3-c61f",
+        "collective": true,
+        "comment": "F/S/R 4/2+/2/E CA Crip",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "8e5e-ed82-b6a0-aca3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "da6d-27c7-de66-a96d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "4970-ecd1-2e6c-b237", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Crippling-X", "id": "631e-1628-d0f6-498e", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Neutron Missiles",
+            "id": "ebd3-34d7-4227-c79d",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action, Crippling", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Ward",
+        "id": "5197-2c58-bc16-6637",
+        "collective": true,
+        "comment": "F/S/R 3/4+/2/E CA Sc-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "764d-bc7e-4a42-f068", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "427e-e98f-1674-1f4c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "b0c0-aa7b-4dd7-e40b", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Scald-X", "id": "d2b1-a1c1-ac13-3cae", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Oculus Ward",
+            "id": "fa53-4325-c222-90d1",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action, Scald-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Quad Supernova Laser",
+        "id": "ce00-6eac-9ab6-948a",
+        "collective": true,
+        "comment": "F/S/R 3/3+/2/E BT-2 Fl-2 Foc Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "0574-69d6-d553-c840", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "0f24-a4a9-e9de-c043", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough-X", "id": "b2d2-7735-c3d0-518b", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
+          {"name": "Flash-X", "id": "117f-4229-85a8-6505", "hidden": false, "targetId": "9e6d-bb41-7c8b-a3b6", "type": "rule"},
+          {"name": "Focused", "id": "b3ce-e119-654e-fd26", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
+          {"name": "Volley-X", "id": "8847-e27d-9dba-3808", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Quad Supernova Laser",
+            "id": "40e8-8b5d-772c-e52a",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Burnthrough-2, Flash-2, Focused, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Station Turret Rack",
+        "id": "6bfc-7016-eb55-a501",
+        "collective": true,
+        "comment": "F/S/R 3/4+/1/K CA",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "260f-6d5a-50bb-d788", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "3d01-8a06-ab26-40fd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "e3ce-326a-d75f-5738", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Station Turret Rack", "id": "0a54-bf67-ba6e-929a", "hidden": false, "targetId": "948f-7ca1-de52-166b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Station Turret Rack",
+            "id": "fe04-00de-ccb0-a7e0",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Station Turret Ring",
+        "id": "c024-5b5b-a6d4-13f0",
+        "collective": true,
+        "comment": "F/S/R 6/4+/1/K CA",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "f8cb-bafe-b5cf-3869", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "38a2-2235-60c5-4b0f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "e68f-d40b-2b65-5277", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Station Turret Ring", "id": "4211-7ef3-fdba-bfa3", "hidden": false, "targetId": "f2a6-4a86-f8e6-c8e6", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Station Turret Ring",
+            "id": "06cc-b467-4309-d507",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Triple Supernova Laser",
+        "id": "0369-d2f1-e1ee-d55f",
+        "collective": true,
+        "comment": "F/S/R 3/3+/3/E BT-2 Fl-2 Foc",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "a9c5-ef76-17b4-8e39", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "74da-de8d-6ae8-fffe", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough-X", "id": "0382-432e-70b1-1640", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
+          {"name": "Flash-X", "id": "1927-a127-9c28-8588", "hidden": false, "targetId": "9e6d-bb41-7c8b-a3b6", "type": "rule"},
+          {"name": "Focused", "id": "5aee-6aba-3d2d-d1e6", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Triple Supernova Laser",
+            "id": "31bc-4f04-c7fd-86a1",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Burnthrough-2, Flash-2, Focused", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Volcano Lance",
+        "id": "b04a-04df-a1ae-10d6",
+        "collective": true,
+        "comment": "F/S/R 3/3+/2/E Bl-1 BT-1 Fl-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "7269-69d9-2752-0ff4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "bbfd-5d30-9cb7-df09", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Bloom-X", "id": "07db-b8e5-8fe6-6fe7", "hidden": false, "targetId": "a944-3ee8-9a6c-6440", "type": "rule"},
+          {"name": "Burnthrough-X", "id": "b217-fd37-ced4-6f6e", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
+          {"name": "Flash-X", "id": "b1d3-f75f-9b31-7a5b", "hidden": false, "targetId": "9e6d-bb41-7c8b-a3b6", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Volcano Lance",
+            "id": "a20d-b356-de0b-d249",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Bloom-1, Burnthrough-1, Flash-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "XN-31-S Mass Driver Turret Pair",
+        "id": "0206-8358-8ae6-3f0b",
+        "collective": true,
+        "comment": "F/S/R 2/2+/2/K Crit-1 Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "ea20-40cb-238a-6d95", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "0884-2716-d4e2-c30e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Critical-X", "id": "f177-d269-486e-c1a2", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+          {"name": "Volley-X", "id": "b1a7-4b6e-e42e-a6b4", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "XN-31-S Mass Driver Turret Pair",
+            "id": "7280-333c-c99c-42d0",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Critical-1, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {"name": "----- Load -----", "id": "c978-52a7-066d-31f5", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Dropships",
+        "id": "9dfe-c522-c033-7c51",
+        "collective": true,
+        "comment": "2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "7403-e3c5-ce2c-9e90", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "9591-05d5-73e3-255d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Dropships",
+            "id": "64b0-aa38-d9da-1a42",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Fighters & Bombers",
+        "id": "a06b-c80d-42c3-286a",
+        "collective": true,
+        "comment": "2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "df7b-152a-4afe-ab2b-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "df7b-152a-4afe-ab2b-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "f159-3446-2bde-3488",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Medium Torpedo",
+        "id": "1688-c1bb-dcd2-d64b",
+        "collective": true,
+        "comment": "2 L-4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "3cb5-be3a-5d35-7dad-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "3cb5-be3a-5d35-7dad-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Limited-X", "id": "6f7b-93d2-c6ae-c23b", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Medium Torpedo",
+            "id": "8b9d-0f6c-76fb-fab0",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-4", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {"name": "----- Equipment -----", "id": "d803-3d17-88ba-5ea8", "hidden": true, "import": false, "type": "upgrade"}
     ],
     "sharedSelectionEntryGroups": [
       {
