@@ -28,7 +28,7 @@
       {
         "name": "Purchased Power",
         "id": "e393-f432-a053-d22e",
-        "description": "This Ship starts the game with 5 wares tokens.\nAt the start of each round, if you control this Ship, you may spend a number of wares tokens on one of the following effects until the end of the round:\nDefence Harmonics - 2 Tokens: Friendly Groups within 6\" improve their Energy and Kinetic saves by 1, to a maximum of a 3+.\nEnergy Dissipators - 1 Tokens: Friendly Groups within 9\" count as having 2 fewer Spikes.\nGuardian Schoal - 1 Token: Friendly Assets within 9\" cannot be the target of enemy weapons with the Anti Wing special rule",
+        "description": "This Ship starts the game with 5 wares tokens.\nAt the start of each round, if you control this Ship, you may spend a number of wares tokens on one of the following effects until the end of the round:\nDefence Harmonics - 2 Tokens: Friendly Groups within 6\" improve their Energy and Kinetic saves by 1, to a maximum of a 3+.\nEnergy Dissipators - 1 Tokens: Friendly Groups within 9\" count as having 2 fewer Spikes.\nGuardian Schoal - 1 Token: Friendly Assets within 9\" cannot be the target of enemy weapons with the Anti Wing special rule.",
         "hidden": false
       },
       {
@@ -51,6 +51,7 @@
       }
     ],
     "sharedSelectionEntries": [
+      {"name": "----- Groups -----", "id": "2859-323a-77dd-94a1", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Hyperyacht Somniferum",
         "id": "7dbc-56e3-8f6e-8e35",
@@ -128,6 +129,7 @@
               {"id": "53d4-a5a8-ea94-37ca-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 80}],
+            "entryLinks": [{"name": "Party Poppers", "id": "5ab6-88a6-a27b-a13f", "hidden": false, "import": true, "targetId": "c366-9f08-5c87-f644", "type": "selectionEntry"}],
             "infoLinks": [{"name": "Unique", "id": "91a2-01b2-e616-d6cd", "hidden": false, "targetId": "3f45-7047-464a-3be4", "type": "rule"}],
             "profiles": [
               {
@@ -147,38 +149,6 @@
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Unique", "typeId": "fdf5-89b6-e62e-570f"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Party Poppers",
-                "id": "5ab6-88a6-a27b-a13f",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "8e5e-8ba8-02d4-bdbe-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "8e5e-8ba8-02d4-bdbe-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [{"name": "Status", "id": "2ea3-31af-19c3-8e8d", "hidden": false, "targetId": "ea58-a80c-c3de-e165", "type": "rule"}],
-                "profiles": [
-                  {
-                    "name": "Party Poppers",
-                    "id": "9314-036b-9eaa-be63",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Status", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
                 ]
               }
             ]
@@ -230,6 +200,7 @@
               {"id": "2bf9-2cce-673c-531b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
+            "entryLinks": [{"name": "Mining Laser", "id": "95f0-d93d-cf01-5230", "hidden": false, "import": true, "targetId": "0f2c-2aac-cb8f-e072", "type": "selectionEntry"}],
             "infoLinks": [{"name": "Industrial Design", "id": "156b-7100-2dd2-7f0e", "hidden": false, "targetId": "e563-4363-c68f-2930", "type": "rule"}],
             "profiles": [
               {
@@ -249,41 +220,6 @@
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-2", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Vectored, Industrial Design", "typeId": "fdf5-89b6-e62e-570f"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Mining Laser",
-                "id": "95f0-d93d-cf01-5230",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "e56a-34d2-5234-3cde-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "e56a-34d2-5234-3cde-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [
-                  {"name": "Burnthrough-X", "id": "e63b-fc44-c90c-23a6", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
-                  {"name": "Close Action", "id": "fc53-5dbc-24aa-43c9", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Mining Laser",
-                    "id": "a8a7-02b6-034f-855e",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Burnthrough-2, Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
                 ]
               }
             ]
@@ -419,6 +355,26 @@
               {"id": "96ec-5788-9adb-74af", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 60}],
+            "entryLinks": [
+              {
+                "name": "Deterrence Missiles",
+                "id": "98dc-263e-dc8a-9154",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "5fff-fd9a-a366-d530",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Drag to Hell",
+                "id": "9724-11b5-979a-f99d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "f238-9c35-eae9-1c84",
+                "type": "selectionEntry"
+              }
+            ],
             "infoLinks": [
               {"name": "Descent", "id": "8cad-b48d-67a8-75ba", "hidden": false, "targetId": "2ae8-7705-ab9a-03c0", "type": "rule"},
               {"name": "Monitor", "id": "14e5-a0bc-97ad-1da0", "hidden": false, "targetId": "cc9f-9be5-cc19-2fc9", "type": "rule"},
@@ -443,73 +399,6 @@
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-4", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Descent, Monitor, Vectored, Tugging Along", "typeId": "fdf5-89b6-e62e-570f"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Deterrence Missiles",
-                "id": "98dc-263e-dc8a-9154",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "b885-3be2-4dd8-fcd3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "b885-3be2-4dd8-fcd3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [{"name": "Close Action", "id": "904d-6f39-dfb4-499b", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
-                "profiles": [
-                  {
-                    "name": "Deterrence Missiles",
-                    "id": "ba41-2e36-52c1-5c74",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Drag to Hell",
-                "id": "9724-11b5-979a-f99d",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "1341-592a-7092-26d2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "1341-592a-7092-26d2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [
-                  {"name": "Close Action", "id": "eb36-09e6-7de9-6ceb", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-                  {"name": "Drag to Hell", "id": "eafa-dd16-25d7-d4f7", "hidden": false, "targetId": "6e2d-81d7-9a0e-722f", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Drag to Hell",
-                    "id": "0337-3b23-402a-722b",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
                 ]
               }
             ]
@@ -561,6 +450,7 @@
               {"id": "b1ea-3270-340b-a422", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 57}],
+            "entryLinks": [{"name": "Deterrence Missiles", "id": "e645-58f6-d2f1-4790", "hidden": false, "import": true, "targetId": "5fff-fd9a-a366-d530", "type": "selectionEntry"}],
             "infoLinks": [
               {"name": "Monitor", "id": "4b25-dc92-bbd2-7ae0", "hidden": false, "targetId": "cc9f-9be5-cc19-2fc9", "type": "rule"},
               {"name": "Reinforced Armour", "id": "f19c-8283-9b3a-9e2e", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"},
@@ -593,38 +483,6 @@
                 "id": "c2bc-fea1-0598-9f68",
                 "description": "This ship starts the game carrying a single deployable Hangar Feature (see 7.4.2 Deploying Features and 11.3 Features).",
                 "hidden": false
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Deterrence Missiles",
-                "id": "e645-58f6-d2f1-4790",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "a558-450a-c569-466d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "4cfc-0910-20d0-6c08", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [{"name": "Close Action", "id": "687a-8f4f-fd76-fa4f", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
-                "profiles": [
-                  {
-                    "name": "Deterrence Missiles",
-                    "id": "49f0-b75a-223c-28fa",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ]
               }
             ]
           }
@@ -707,6 +565,36 @@
               {"id": "cf13-3a59-9bc2-93a9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 123}],
+            "entryLinks": [
+              {
+                "name": "Deterrence Missiles",
+                "id": "87ff-68ed-f363-fa74",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "5fff-fd9a-a366-d530",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Anti-Fighter Lasers",
+                "id": "01d9-2521-77d2-5956",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "fd4e-42e6-b0cd-e80d",
+                "type": "selectionEntry"
+              },
+              {"name": "Drop Pods", "id": "aaef-8f37-8650-5ef6", "hidden": false, "import": true, "sortIndex": 3, "targetId": "257a-aace-511b-2384", "type": "selectionEntry"},
+              {
+                "name": "Boarding Pods",
+                "id": "e4d7-2890-2e97-d809",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "9b2b-d7bf-13ea-3f23",
+                "type": "selectionEntry"
+              }
+            ],
             "infoLinks": [
               {"name": "Marines-X", "id": "4629-286e-e361-297b", "hidden": false, "targetId": "93f3-7932-b233-4d38", "type": "rule"},
               {"name": "Unique", "id": "fa0e-7d17-b3ad-ef23", "hidden": false, "targetId": "3f45-7047-464a-3be4", "type": "rule"},
@@ -730,121 +618,6 @@
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Marines-1, Unique, Penal Legions", "typeId": "fdf5-89b6-e62e-570f"}
-                ]
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Deterrence Missiles",
-                "id": "87ff-68ed-f363-fa74",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "ac37-5300-0532-d5a8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "6ddc-0c59-39c0-f61c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [{"name": "Close Action", "id": "2e5f-9dff-c81f-7cc1", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
-                "profiles": [
-                  {
-                    "name": "Deterrence Missiles",
-                    "id": "2c84-5ebe-fd20-13be",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Anti-Fighter Lasers",
-                "id": "01d9-2521-77d2-5956",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "43a3-d642-7cfc-3bf2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "b321-dbf5-c287-68e2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [
-                  {"name": "Anti Wing", "id": "e1ed-a85f-c280-6c7f", "hidden": false, "targetId": "d7b1-2768-13e8-009f", "type": "rule"},
-                  {"name": "Close Action", "id": "e42e-f239-aad1-131b", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Anti-Fighter Lasers",
-                    "id": "001e-d79f-8f76-db51",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "5", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "0", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Anti Wing, Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Drop Pods",
-                "id": "aaef-8f37-8650-5ef6",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 3,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "b0df-04c2-e2c7-9097", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "7766-14fd-971e-7fca", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [{"name": "Alt-X", "id": "4923-4a40-68b3-5cb0", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
-                "profiles": [
-                  {
-                    "name": "Drop Pods",
-                    "id": "c7e9-b9d6-5702-bed1",
-                    "hidden": false,
-                    "typeId": "7ba8-a64f-b5fb-8c3e",
-                    "typeName": "Load",
-                    "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
-                  }
-                ]
-              },
-              {
-                "name": "Boarding Pods",
-                "id": "e4d7-2890-2e97-d809",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 4,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "5622-81b5-a9aa-4e00", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "022d-7b19-4f86-afac", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [{"name": "Alt-X", "id": "cd47-a8de-f2da-b349", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
-                "profiles": [
-                  {
-                    "name": "Boarding Pods",
-                    "id": "7ee0-f5dc-3133-5ede",
-                    "hidden": false,
-                    "typeId": "7ba8-a64f-b5fb-8c3e",
-                    "typeName": "Load",
-                    "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
-                  }
                 ]
               }
             ]
@@ -1151,6 +924,26 @@
               {"id": "ac7e-5372-48c6-6ea5-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 95}],
+            "entryLinks": [
+              {
+                "name": "Deterrence Missiles",
+                "id": "9719-b6ca-ecd0-1597",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "90c5-a4ec-d966-9548",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Military Outpost",
+                "id": "a528-0bbf-1a34-cefd",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "7575-d1c7-0281-1d28",
+                "type": "selectionEntry"
+              }
+            ],
             "infoLinks": [{"name": "Monitor", "id": "5f45-7f12-e257-e280", "hidden": false, "targetId": "cc9f-9be5-cc19-2fc9", "type": "rule"}],
             "profiles": [
               {
@@ -1179,63 +972,6 @@
                 "id": "4b81-8b74-36f9-4d31",
                 "description": "This Ship starts the game carrying a Military Outpost as a Deployable Feature.",
                 "hidden": false
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Deterrence Missiles",
-                "id": "9719-b6ca-ecd0-1597",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "59eb-0e7b-8e7f-a4ef-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "59eb-0e7b-8e7f-a4ef-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                ],
-                "infoLinks": [{"name": "Close Action", "id": "a242-d431-247f-6a84", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
-                "profiles": [
-                  {
-                    "name": "Deterrence Missiles",
-                    "id": "a771-0267-a1b5-5067",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Military Outpost",
-                "id": "a528-0bbf-1a34-cefd",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "f1df-0637-ef03-ef7a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "f1df-0637-ef03-ef7a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [{"name": "Limited-X", "id": "8427-cbc6-0b15-0917", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
-                "profiles": [
-                  {
-                    "name": "Military Outpost",
-                    "id": "f9bc-87a6-b86f-9cad",
-                    "hidden": false,
-                    "typeId": "7ba8-a64f-b5fb-8c3e",
-                    "typeName": "Load",
-                    "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-1", "typeId": "d3be-1a27-21ac-fb65"}]
-                  }
-                ]
               }
             ]
           }
@@ -1467,6 +1203,18 @@
               {"id": "8b02-8e39-bdbe-0f33", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 125}],
+            "entryLinks": [
+              {
+                "name": "Expel Hazards",
+                "id": "3168-ddc5-d7c4-4e89",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "fbe2-7bb8-0f88-d26d",
+                "type": "selectionEntry"
+              },
+              {"name": "Mines", "id": "2e4d-9c4c-2901-451e", "hidden": false, "import": true, "sortIndex": 2, "targetId": "e12d-10de-8c42-c184", "type": "selectionEntry"}
+            ],
             "infoLinks": [
               {"name": "Rare", "id": "fbf7-4b67-aed5-44e6", "hidden": false, "targetId": "f7ad-85f9-39f4-7e10", "type": "rule"},
               {"name": "Reinforced Armour", "id": "2e04-f531-f6fd-7abf", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"}
@@ -1492,71 +1240,7 @@
                 ]
               }
             ],
-            "rules": [{"name": "Acquired Mines", "id": "3a05-aeef-6abe-1cd4", "description": "This Ship's Mines use the stats of its parent fleet.", "hidden": false}],
-            "selectionEntries": [
-              {
-                "name": "Expel Hazards",
-                "id": "3168-ddc5-d7c4-4e89",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "6ef6-c4c5-928b-3234", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "23e2-7acb-27cf-075b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [{"name": "Anti Wing", "id": "c050-b9e6-ab91-d867", "hidden": false, "targetId": "d7b1-2768-13e8-009f", "type": "rule"}],
-                "profiles": [
-                  {
-                    "name": "Expel Hazards",
-                    "id": "add3-e9d7-2227-fbd9",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Anti Wing", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Expel Hazards",
-                    "id": "5c9d-9479-cbac-04fb",
-                    "description": "This weapon can only be used against targets within Scan range and on the same Orbital Layer.\nWhile this Ship is below its starting Hull Points, for every 2 Hull Points lost from its starting Hull Points, increase the attack of this weapon by 1.",
-                    "hidden": false
-                  }
-                ]
-              },
-              {
-                "name": "Mines",
-                "id": "2e4d-9c4c-2901-451e",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "6d03-5597-b4b8-0291-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "6d03-5597-b4b8-0291-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "profiles": [
-                  {
-                    "name": "Mines",
-                    "id": "67db-f89c-3555-5f9f",
-                    "hidden": false,
-                    "typeId": "7ba8-a64f-b5fb-8c3e",
-                    "typeName": "Load",
-                    "characteristics": [{"name": "Launch", "$text": "3", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
-                  }
-                ]
-              }
-            ]
+            "rules": [{"name": "Acquired Mines", "id": "3a05-aeef-6abe-1cd4", "description": "This Ship's Mines use the stats of its parent fleet.", "hidden": false}]
           }
         ]
       },
@@ -1787,6 +1471,26 @@
               {"id": "3dfe-9f85-1a9d-0353", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 112}],
+            "entryLinks": [
+              {
+                "name": "Thermal Lash",
+                "id": "6e47-e152-71af-ef9f",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "3c30-6cda-e1eb-5260",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Force Wave",
+                "id": "cf88-52cb-45c4-3c06",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "00cb-427a-52c9-0f62",
+                "type": "selectionEntry"
+              }
+            ],
             "infoLinks": [
               {"name": "Impetuous", "id": "55fb-ba14-08fb-3ab5", "hidden": false, "targetId": "6f09-5ccc-4dae-ff72", "type": "rule"},
               {"name": "Rare", "id": "20a3-14eb-3f02-25dd", "hidden": false, "targetId": "f7ad-85f9-39f4-7e10", "type": "rule"}
@@ -1818,84 +1522,6 @@
                 "id": "a6ae-b412-fa55-4905",
                 "description": "This Ship can be used in any fleet, regardless of faction but does not count towards point spent on M Tonnage Ships when building your fleet. This Ship cannot have an Admiral assigned to it for any reason.\nInstead of picking an Order for this Group when it activates, it may in any order; turn in any direction, move up to its Thrust, attack with any number of its weapons gaining a Spike for each additional Weapon System assigned after the first. Each option can only be chosen once per activation.\nAt the end of this Group's activation, if it did not gain any Spikes, remove a Spike from it.",
                 "hidden": false
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Thermal Lash",
-                "id": "6e47-e152-71af-ef9f",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "3587-6d73-210c-86a0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "c4d2-b30d-5a0c-9441", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [
-                  {"name": "Scald-X", "id": "db0b-32bf-dbea-b160", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"},
-                  {"name": "Sustained Fire", "id": "1ee7-7830-fa84-5a6e", "hidden": false, "targetId": "52ba-6610-b0f0-92d3", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Thermal Lash",
-                    "id": "2bef-6631-df1f-1e7b",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Scald-2, Sustained Fire", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Thermal Lash",
-                    "id": "2280-dd36-7845-0bf8",
-                    "description": "This weapon can only be used against targets in base contact.\nWhen you inflict damage with this weapon, you may remove a Spike from this Group, if you do, the defending Group gains a Spike.",
-                    "hidden": false
-                  }
-                ]
-              },
-              {
-                "name": "Force Wave",
-                "id": "cf88-52cb-45c4-3c06",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "270b-34a3-b54a-2799", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "94d5-1406-9d65-e686", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [
-                  {"name": "Arrest-X", "id": "e356-2718-e8ea-9986", "hidden": false, "targetId": "7fa4-03e2-d2a7-de9b", "type": "rule"},
-                  {"name": "Impel-X", "id": "9e9f-4575-6002-cbf3", "hidden": false, "targetId": "9944-ada1-19c8-2d06", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Force Wave",
-                    "id": "0775-1e80-f409-94c1",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Arrest-2, Impel-2", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ]
               }
             ]
           }
@@ -1946,6 +1572,7 @@
               {"id": "99ab-d2e4-1ad0-d537-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 210}],
+            "entryLinks": [{"name": "Colossal Salvage Cutter", "id": "5b1e-dc30-ff0e-94fa", "hidden": false, "import": true, "targetId": "95fc-c089-29bc-2eb0", "type": "selectionEntry"}],
             "infoLinks": [
               {"name": "Porter S/L-X", "id": "23ff-6bce-4780-269b", "hidden": false, "targetId": "11cb-e973-8a2c-f0f6", "type": "rule"},
               {"name": "Reinforced Armour", "id": "2c29-d156-12c5-94ee", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"},
@@ -1985,49 +1612,6 @@
                 "id": "7f82-6c9f-9bae-3e18",
                 "description": "At the end of this Ship's activation, you may remove any number of scrap tokens and choose one of the following:\nScrappy Plating: One friendly Ship within 6\" recovers lost Hull points equal to the amount of scrap tokens removed.\nBodge Repairs: Remove a crippling effect from a friendly Ship within 6\" for each scrap token removed.",
                 "hidden": false
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Colossal Salvage Cutter",
-                "id": "5b1e-dc30-ff0e-94fa",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "81d1-7aee-0c78-2939-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "81d1-7aee-0c78-2939-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [
-                  {"name": "Close Action", "id": "041e-7703-6b47-32c5", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-                  {"name": "Bloom-X", "id": "2406-1afb-ffc5-0ed7", "hidden": false, "targetId": "a944-3ee8-9a6c-6440", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Colossal Salvage Cutter",
-                    "id": "c1f6-5891-64e7-2827",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "5", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Close Action, Bloom-3", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Colossal Salvage Cutter",
-                    "id": "d4db-5d9e-ad01-91d7",
-                    "description": "This weapon can only be used against targets in base contact.",
-                    "hidden": false
-                  }
-                ]
               }
             ]
           }
@@ -2075,6 +1659,7 @@
             "categoryLinks": [{"name": "Light Ship", "id": "5c82-fb65-22b2-1cfc", "hidden": false, "primary": true, "targetId": "f942-8f88-d77b-13c1"}],
             "constraints": [{"id": "0c32-694d-aeca-8fcf", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 50}],
+            "entryLinks": [{"name": "Sawblade Prow", "id": "aef8-a3c1-524c-5a10", "hidden": false, "import": true, "targetId": "83f0-d2ce-a21a-29c5", "type": "selectionEntry"}],
             "infoLinks": [
               {"name": "Payload S/L-X", "id": "1b07-bb3e-77a3-31db", "hidden": false, "targetId": "7a4f-55fd-3916-978f", "type": "rule"},
               {"name": "Vectored", "id": "7779-6233-ddca-2407", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"},
@@ -2113,42 +1698,6 @@
                 "id": "4386-6f27-42a4-479a",
                 "description": "When you attach this Ship to a Porter Ship, you may have the Porter Ship gain all of this Ship's scrap tokens.",
                 "hidden": false
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Sawblade Prow",
-                "id": "aef8-a3c1-524c-5a10",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "6bf0-4195-38f5-8ed2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "6bf0-4195-38f5-8ed2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [
-                  {"name": "Close Action", "id": "d72e-952e-32e0-a095", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-                  {"name": "Bloom-X", "id": "8698-3eae-0977-8013", "hidden": false, "targetId": "a944-3ee8-9a6c-6440", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Sawblade Prow",
-                    "id": "19dd-966e-2739-3867",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Close Action, Bloom-1", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ],
-                "rules": [{"name": "Sawblade Prow", "id": "7e36-9270-619a-3fb1", "description": "This weapon can only be used against targets in base contact.", "hidden": false}]
               }
             ]
           }
@@ -2231,6 +1780,53 @@
               {"id": "5da0-359f-b6f6-ff0d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 410}],
+            "entryLinks": [
+              {
+                "name": "Heavy Dual Vent Cannon Turret",
+                "id": "8bd3-1154-9758-aaea",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "109f-3645-9298-cab9",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "NC-16 Missile Bank",
+                "id": "0477-875f-37bc-4d28",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "9099-06e2-fb81-c2a4",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Genesis Spikes",
+                "id": "033f-28a4-520d-94d3",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "ae3f-f371-068c-7ec6",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Fighters & Bombers",
+                "id": "a8cc-a57d-ce0f-7f8a",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "9522-4b7b-4e0e-dc74",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Bulk Landers",
+                "id": "8dad-b8e4-51c9-0743",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "0d9e-e477-6232-402d",
+                "type": "selectionEntry"
+              }
+            ],
             "profiles": [
               {
                 "name": "PRK-91 Provenance Ark",
@@ -2258,165 +1854,6 @@
                 "id": "7d19-eab6-69af-352b",
                 "description": "At the start of this Ship's activation, remove two Spikes from it.",
                 "hidden": false
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Heavy Dual Vent Cannon Turret",
-                "id": "8bd3-1154-9758-aaea",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "e37c-1d56-b18b-b64e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "7ef2-17df-3134-175e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-                ],
-                "infoLinks": [
-                  {"name": "Fusillade-X", "id": "e793-b955-6016-1664", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
-                  {"name": "Overcharge", "id": "ef1f-a07c-cd9b-a20b", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
-                  {"name": "Reave-X", "id": "756d-fb8c-10b8-565f", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Heavy Dual Vent Cannon Turret",
-                    "id": "762c-1aa8-d9d4-f8e4",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Fusillade-1, Overcharge, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "NC-16 Missile Bank",
-                "id": "0477-875f-37bc-4d28",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "95ee-1b91-7448-22c1-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "95ee-1b91-7448-22c1-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [
-                  {"name": "Close Action", "id": "08a0-4fa4-ecef-bfaf", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-                  {"name": "Volley-X", "id": "4be1-3d66-d05e-4e8a", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "NC-16 Missile Bank",
-                    "id": "7c69-67ad-50b7-ada5",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Close Action, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Genesis Spikes",
-                "id": "033f-28a4-520d-94d3",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 3,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "2b24-e419-3bdb-4a7d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "2b24-e419-3bdb-4a7d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [
-                  {"name": "Bombardment", "id": "d9f8-46d0-8049-b6bf", "hidden": false, "targetId": "858c-a2ff-ed65-3e47", "type": "rule"},
-                  {"name": "Penetrator", "id": "7d31-30b0-e96b-d01b", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Genesis Spikes",
-                    "id": "3927-d911-b9e6-493e",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "5+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Bombardment, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Genesis Spikes",
-                    "id": "a257-dc1c-f8b0-314c",
-                    "description": "When this weapon successfully inflicts any amount of damage against a City, place a Mutant Fauna token on that Dropsite. Mutant Fauna tokens are not Battalions and cannot control or contest a Dropsite. When any player deploys any number of Battalions to that Dropsite, if that Dropsite has any Mutant Fauna tokens, those Battalions are only placed on a roll of a 5+. If any Battalions are not placed this way, remove a Mutant Fauna token from that Dropsite. If a Dropsite starts a round with a Mutant Fauna token, remove that token at the end of the round.",
-                    "hidden": false
-                  }
-                ]
-              },
-              {
-                "name": "Fighters & Bombers",
-                "id": "a8cc-a57d-ce0f-7f8a",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 4,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "6446-beae-8e0a-4535-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "6446-beae-8e0a-4535-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "profiles": [
-                  {
-                    "name": "Fighters & Bombers",
-                    "id": "d754-b5b7-6c4a-4393",
-                    "hidden": false,
-                    "typeId": "7ba8-a64f-b5fb-8c3e",
-                    "typeName": "Load",
-                    "characteristics": [{"name": "Launch", "$text": "4", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
-                  }
-                ]
-              },
-              {
-                "name": "Bulk Landers",
-                "id": "8dad-b8e4-51c9-0743",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 5,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "8208-d466-735a-2926-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "8208-d466-735a-2926-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "profiles": [
-                  {
-                    "name": "Bulk Landers",
-                    "id": "e59e-502a-7ee9-c5df",
-                    "hidden": false,
-                    "typeId": "7ba8-a64f-b5fb-8c3e",
-                    "typeName": "Load",
-                    "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
-                  }
-                ]
               }
             ]
           }
@@ -2467,6 +1904,26 @@
               {"id": "0325-323e-351f-d259", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 55}],
+            "entryLinks": [
+              {
+                "name": "Deterrence Missiles",
+                "id": "2bb4-f8bc-2877-fb4e",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "0678-c06c-f916-a6ec",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Ignite Reserves",
+                "id": "2e5d-fb67-455a-6847",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "c66e-f241-1a64-5d4e",
+                "type": "selectionEntry"
+              }
+            ],
             "infoLinks": [{"name": "Vectored", "id": "4d85-fc60-acb5-8ae1", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"}],
             "profiles": [
               {
@@ -2495,84 +1952,6 @@
                 "id": "76ff-66ad-69a3-3101",
                 "description": "While a Ship with this rule is on the table, you have access to the following Ability:\nFully Fuelled (2AP): At the start of a friendly Group's activation, if that Group is within 3\" and on the same Orbital Layer as a Ship with the Fuel Transporter rule, the friendly Group increases its total movement (after Orders) by 3\" this round. If that Group is on the Max Thrust order, it increases its total movement (after Orders) by 6\" this round instead. If the friendly Group is C Tonnage, that Group must be within 3\" and on the same Orbital Layer as two Ships with the Fuel Transporter rule instead. Ships with the Fuel Transporter rule are unaffected by this Ability.",
                 "hidden": false
-              }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Deterrence Missiles",
-                "id": "2bb4-f8bc-2877-fb4e",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "183c-ed7d-b463-66ff", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "3c07-6926-579b-e4ed", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [
-                  {"name": "Alt-X", "id": "2523-0a5c-3ec9-a636", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
-                  {"name": "Close Action", "id": "861f-0bc5-3fa8-8a4f", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Deterrence Missiles",
-                    "id": "0a31-e3da-5b64-58ae",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Alt-1, Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Ignite Reserves",
-                "id": "2e5d-fb67-455a-6847",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "db1f-dedc-c0b5-0b41", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "edf5-c7fa-c367-deaa", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [
-                  {"name": "Alt-X", "id": "c412-d229-238c-0f77", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
-                  {"name": "Close Action", "id": "04eb-c8dd-e386-7176", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}
-                ],
-                "profiles": [
-                  {
-                    "name": "Ignite Reserves",
-                    "id": "d90f-4576-5ae7-6335",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "0", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Alt-1, Close Action, Fusillade-2", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Ignite Reserves",
-                    "id": "6438-480f-672b-b5f3",
-                    "description": "After completing an attack with this Weapon, this Ship is destroyed (a weapon with 0 Attack value does not roll to hit, does not cause any saves to be made, and does not inflict damage due to hits).\nWhen this Ship is destroyed (for any reason), it explodes with a Fuel Detonation effect and a range of 3\". Ships damaged by this explosion also gain a Fire token.",
-                    "hidden": false
-                  }
-                ]
               }
             ]
           }
@@ -2804,6 +2183,7 @@
               {"id": "099d-23e6-b3c2-46b4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 41}],
+            "entryLinks": [{"name": "Deterrence Missiles", "id": "e115-5915-19eb-aa9d", "hidden": false, "import": true, "targetId": "5fff-fd9a-a366-d530", "type": "selectionEntry"}],
             "infoLinks": [
               {"name": "Descent", "id": "b939-cffa-5701-3586", "hidden": false, "targetId": "2ae8-7705-ab9a-03c0", "type": "rule"},
               {"name": "Rare", "id": "44a5-c443-c225-132a", "hidden": false, "targetId": "f7ad-85f9-39f4-7e10", "type": "rule"}
@@ -2836,43 +2216,728 @@
                 "description": "While a Ship with this rule is on the table, you have access to the following Ability:\nBattalion Support (1AP): Once per activation, when you deploy Battalions from a Group on any Orbital Layer within 6\\\" of a friendly Ship with the Bulk Lighter rule, choose one of the launching Asset types. If the chosen Asset is either Dropships or Drop Pods, place an additional Battalion. If the chosen Asset is Bulk Landers, place an additional two Battalions. Other Launch Assets are unaffected by this Ability.",
                 "hidden": false
               }
-            ],
-            "selectionEntries": [
-              {
-                "name": "Deterrence Missiles",
-                "id": "e115-5915-19eb-aa9d",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "type": "upgrade",
-                "constraints": [
-                  {"id": "97e7-b019-5e5c-e1fe", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "6c5a-3d2a-0a3e-36d2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "infoLinks": [{"name": "Close Action", "id": "c9cf-b498-affa-3696", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
-                "profiles": [
-                  {
-                    "name": "Deterrence Missiles",
-                    "id": "7529-76c2-c827-f6ec",
-                    "hidden": false,
-                    "typeId": "02b7-2433-f72f-d510",
-                    "typeName": "Weapon",
-                    "characteristics": [
-                      {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-                      {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-                      {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-                      {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-                      {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-                      {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
-                    ]
-                  }
-                ]
-              }
             ]
           }
         ]
-      }
+      },
+      {"name": "----- Weapons -----", "id": "aee5-29fa-d33d-6201", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Anti-Fighter Lasers",
+        "id": "fd4e-42e6-b0cd-e80d",
+        "collective": true,
+        "comment": "F/S/R 5/3+/0/E AW CA",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "43a3-d642-7cfc-3bf2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "b321-dbf5-c287-68e2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Anti Wing", "id": "e1ed-a85f-c280-6c7f", "hidden": false, "targetId": "d7b1-2768-13e8-009f", "type": "rule"},
+          {"name": "Close Action", "id": "e42e-f239-aad1-131b", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Anti-Fighter Lasers",
+            "id": "001e-d79f-8f76-db51",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "5", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "0", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Anti Wing, Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Colossal Salvage Cutter",
+        "id": "95fc-c089-29bc-2eb0",
+        "collective": true,
+        "comment": "F 5/2+/3/C CA Bl-3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "81d1-7aee-0c78-2939-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "81d1-7aee-0c78-2939-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "041e-7703-6b47-32c5", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Bloom-X", "id": "2406-1afb-ffc5-0ed7", "hidden": false, "targetId": "a944-3ee8-9a6c-6440", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Colossal Salvage Cutter",
+            "id": "c1f6-5891-64e7-2827",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "5", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action, Bloom-3", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Colossal Salvage Cutter",
+            "id": "d4db-5d9e-ad01-91d7",
+            "description": "This weapon can only be used against targets in base contact.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Deterrence Missiles",
+        "id": "90c5-a4ec-d966-9548",
+        "collective": true,
+        "comment": "[x2] F/S 4/3+/1/K CA",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "6236-fcb5-eb3f-f18b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+          {"id": "4625-8a60-a03c-b8db", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+        ],
+        "infoLinks": [{"name": "Close Action", "id": "f549-0fae-9130-ce40", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Deterrence Missiles",
+            "id": "c76b-aec8-b684-b339",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Deterrence Missiles",
+        "id": "5fff-fd9a-a366-d530",
+        "collective": true,
+        "comment": "F/S 4/3+/1/K CA",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "b885-3be2-4dd8-fcd3-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "b885-3be2-4dd8-fcd3-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Close Action", "id": "904d-6f39-dfb4-499b", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Deterrence Missiles",
+            "id": "ba41-2e36-52c1-5c74",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Deterrence Missiles",
+        "id": "0678-c06c-f916-a6ec",
+        "collective": true,
+        "comment": "F/S 4/3+/1/K Alt-1 CA",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "183c-ed7d-b463-66ff", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "3c07-6926-579b-e4ed", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Alt-X", "id": "2523-0a5c-3ec9-a636", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
+          {"name": "Close Action", "id": "861f-0bc5-3fa8-8a4f", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Deterrence Missiles",
+            "id": "0a31-e3da-5b64-58ae",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Alt-1, Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drag to Hell",
+        "id": "f238-9c35-eae9-1c84",
+        "collective": true,
+        "comment": "F 3/3+/2/C CA",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "1341-592a-7092-26d2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "1341-592a-7092-26d2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "eb36-09e6-7de9-6ceb", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Drag to Hell", "id": "eafa-dd16-25d7-d4f7", "hidden": false, "targetId": "6e2d-81d7-9a0e-722f", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Drag to Hell",
+            "id": "0337-3b23-402a-722b",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Expel Hazards",
+        "id": "fbe2-7bb8-0f88-d26d",
+        "collective": true,
+        "comment": "F 2/3+/1/C AW",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "6ef6-c4c5-928b-3234", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "23e2-7acb-27cf-075b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Anti Wing", "id": "c050-b9e6-ab91-d867", "hidden": false, "targetId": "d7b1-2768-13e8-009f", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Expel Hazards",
+            "id": "add3-e9d7-2227-fbd9",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Anti Wing", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Expel Hazards",
+            "id": "5c9d-9479-cbac-04fb",
+            "description": "This weapon can only be used against targets within Scan range and on the same Orbital Layer.\nWhile this Ship is below its starting Hull Points, for every 2 Hull Points lost from its starting Hull Points, increase the attack of this weapon by 1.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Force Wave",
+        "id": "00cb-427a-52c9-0f62",
+        "collective": true,
+        "comment": "F/S 4/3+/1/K Arr-2 Imp-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "270b-34a3-b54a-2799", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "94d5-1406-9d65-e686", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Arrest-X", "id": "e356-2718-e8ea-9986", "hidden": false, "targetId": "7fa4-03e2-d2a7-de9b", "type": "rule"},
+          {"name": "Impel-X", "id": "9e9f-4575-6002-cbf3", "hidden": false, "targetId": "9944-ada1-19c8-2d06", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Force Wave",
+            "id": "0775-1e80-f409-94c1",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Arrest-2, Impel-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Genesis Spikes",
+        "id": "ae3f-f371-068c-7ec6",
+        "collective": true,
+        "comment": "F/S/R 3/5+/2/K Bmb Pen",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "2b24-e419-3bdb-4a7d-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "2b24-e419-3bdb-4a7d-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Bombardment", "id": "d9f8-46d0-8049-b6bf", "hidden": false, "targetId": "858c-a2ff-ed65-3e47", "type": "rule"},
+          {"name": "Penetrator", "id": "7d31-30b0-e96b-d01b", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Genesis Spikes",
+            "id": "3927-d911-b9e6-493e",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "5+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Bombardment, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Genesis Spikes",
+            "id": "a257-dc1c-f8b0-314c",
+            "description": "When this weapon successfully inflicts any amount of damage against a City, place a Mutant Fauna token on that Dropsite. Mutant Fauna tokens are not Battalions and cannot control or contest a Dropsite. When any player deploys any number of Battalions to that Dropsite, if that Dropsite has any Mutant Fauna tokens, those Battalions are only placed on a roll of a 5+. If any Battalions are not placed this way, remove a Mutant Fauna token from that Dropsite. If a Dropsite starts a round with a Mutant Fauna token, remove that token at the end of the round.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Heavy Dual Vent Cannon Turret",
+        "id": "109f-3645-9298-cab9",
+        "collective": true,
+        "comment": "[x2] F/S 4/3+/2/E Fus-1 OC Rv-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "e37c-1d56-b18b-b64e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+          {"id": "7ef2-17df-3134-175e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+        ],
+        "infoLinks": [
+          {"name": "Fusillade-X", "id": "e793-b955-6016-1664", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
+          {"name": "Overcharge", "id": "ef1f-a07c-cd9b-a20b", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
+          {"name": "Reave-X", "id": "756d-fb8c-10b8-565f", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Heavy Dual Vent Cannon Turret",
+            "id": "762c-1aa8-d9d4-f8e4",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Fusillade-1, Overcharge, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ignite Reserves",
+        "id": "c66e-f241-1a64-5d4e",
+        "collective": true,
+        "comment": "F/S/R 0/2+/2/E Alt-1 CA Fus-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "db1f-dedc-c0b5-0b41", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "edf5-c7fa-c367-deaa", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Alt-X", "id": "c412-d229-238c-0f77", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
+          {"name": "Close Action", "id": "04eb-c8dd-e386-7176", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Ignite Reserves",
+            "id": "d90f-4576-5ae7-6335",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "0", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Alt-1, Close Action, Fusillade-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Ignite Reserves",
+            "id": "6438-480f-672b-b5f3",
+            "description": "After completing an attack with this Weapon, this Ship is destroyed (a weapon with 0 Attack value does not roll to hit, does not cause any saves to be made, and does not inflict damage due to hits).\nWhen this Ship is destroyed (for any reason), it explodes with a Fuel Detonation effect and a range of 3\". Ships damaged by this explosion also gain a Fire token.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Mining Laser",
+        "id": "0f2c-2aac-cb8f-e072",
+        "collective": true,
+        "comment": "F 3/2+/2/E BT-2 CA",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "e56a-34d2-5234-3cde-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "e56a-34d2-5234-3cde-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough-X", "id": "e63b-fc44-c90c-23a6", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
+          {"name": "Close Action", "id": "fc53-5dbc-24aa-43c9", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Mining Laser",
+            "id": "a8a7-02b6-034f-855e",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Burnthrough-2, Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NC-16 Missile Bank",
+        "id": "9099-06e2-fb81-c2a4",
+        "collective": true,
+        "comment": "F/S/R 6/3+/1/K CA Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "95ee-1b91-7448-22c1-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "95ee-1b91-7448-22c1-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "08a0-4fa4-ecef-bfaf", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Volley-X", "id": "4be1-3d66-d05e-4e8a", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "NC-16 Missile Bank",
+            "id": "7c69-67ad-50b7-ada5",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Party Poppers",
+        "id": "c366-9f08-5c87-f644",
+        "collective": true,
+        "comment": "F/S 3/4+/1/E Status",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "8e5e-8ba8-02d4-bdbe-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "8e5e-8ba8-02d4-bdbe-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Status", "id": "2ea3-31af-19c3-8e8d", "hidden": false, "targetId": "ea58-a80c-c3de-e165", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Party Poppers",
+            "id": "9314-036b-9eaa-be63",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Status", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sawblade Prow",
+        "id": "83f0-d2ce-a21a-29c5",
+        "collective": true,
+        "comment": "F 2/2+/2/C CA Bl-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "6bf0-4195-38f5-8ed2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "6bf0-4195-38f5-8ed2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "d72e-952e-32e0-a095", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Bloom-X", "id": "8698-3eae-0977-8013", "hidden": false, "targetId": "a944-3ee8-9a6c-6440", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Sawblade Prow",
+            "id": "19dd-966e-2739-3867",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action, Bloom-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ],
+        "rules": [{"name": "Sawblade Prow", "id": "7e36-9270-619a-3fb1", "description": "This weapon can only be used against targets in base contact.", "hidden": false}]
+      },
+      {
+        "name": "Thermal Lash",
+        "id": "3c30-6cda-e1eb-5260",
+        "collective": true,
+        "comment": "F/S/R 3/3+/2/E Sc-2 SusFire",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "3587-6d73-210c-86a0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "c4d2-b30d-5a0c-9441", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Scald-X", "id": "db0b-32bf-dbea-b160", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"},
+          {"name": "Sustained Fire", "id": "1ee7-7830-fa84-5a6e", "hidden": false, "targetId": "52ba-6610-b0f0-92d3", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Thermal Lash",
+            "id": "2bef-6631-df1f-1e7b",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Scald-2, Sustained Fire", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Thermal Lash",
+            "id": "2280-dd36-7845-0bf8",
+            "description": "This weapon can only be used against targets in base contact.\nWhen you inflict damage with this weapon, you may remove a Spike from this Group, if you do, the defending Group gains a Spike.",
+            "hidden": false
+          }
+        ]
+      },
+      {"name": "----- Load -----", "id": "2fad-c26b-cee0-8a1c", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Boarding Pods",
+        "id": "9b2b-d7bf-13ea-3f23",
+        "collective": true,
+        "comment": "2 Alt-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "5622-81b5-a9aa-4e00", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "022d-7b19-4f86-afac", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Alt-X", "id": "cd47-a8de-f2da-b349", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Boarding Pods",
+            "id": "7ee0-f5dc-3133-5ede",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Bulk Landers",
+        "id": "0d9e-e477-6232-402d",
+        "collective": true,
+        "comment": "2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "8208-d466-735a-2926-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "8208-d466-735a-2926-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Bulk Landers",
+            "id": "e59e-502a-7ee9-c5df",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Drop Pods",
+        "id": "257a-aace-511b-2384",
+        "collective": true,
+        "comment": "2 Alt-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "b0df-04c2-e2c7-9097", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "7766-14fd-971e-7fca", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Alt-X", "id": "4923-4a40-68b3-5cb0", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Drop Pods",
+            "id": "c7e9-b9d6-5702-bed1",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Fighters & Bombers",
+        "id": "9522-4b7b-4e0e-dc74",
+        "collective": true,
+        "comment": "4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "6446-beae-8e0a-4535-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "6446-beae-8e0a-4535-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "d754-b5b7-6c4a-4393",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "4", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Military Outpost",
+        "id": "7575-d1c7-0281-1d28",
+        "collective": true,
+        "comment": "1 L-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "f1df-0637-ef03-ef7a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "f1df-0637-ef03-ef7a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Limited-X", "id": "8427-cbc6-0b15-0917", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Military Outpost",
+            "id": "f9bc-87a6-b86f-9cad",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-1", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Mines",
+        "id": "e12d-10de-8c42-c184",
+        "collective": true,
+        "comment": "3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "6d03-5597-b4b8-0291-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "6d03-5597-b4b8-0291-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Mines",
+            "id": "67db-f89c-3555-5f9f",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "3", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {"name": "----- Equipment -----", "id": "e9e3-d243-0e1d-8189", "hidden": true, "import": false, "type": "upgrade"}
     ]
   }
 }

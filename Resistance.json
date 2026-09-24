@@ -3834,16 +3834,7 @@
               {"id": "98ea-b3c9-b4c1-fe01", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 60}],
-            "entryLinks": [
-              {
-                "name": "Cruiser Systems",
-                "id": "396c-7cc3-b8ac-4905",
-                "hidden": false,
-                "import": true,
-                "targetId": "73b4-3658-0e13-f5ca",
-                "type": "selectionEntryGroup"
-              }
-            ],
+            "entryLinks": [{"name": "Cruiser Systems", "id": "396c-7cc3-b8ac-4905", "hidden": false, "import": true, "targetId": "73b4-3658-0e13-f5ca", "type": "selectionEntryGroup"}],
             "profiles": [
               {
                 "name": "Cruiser",
