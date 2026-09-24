@@ -48,6 +48,67 @@
         "id": "612d-c072-617f-de98",
         "description": "This Ship's Hangar Deployable Feature can only be deployed to Space Stations (of any type).",
         "hidden": false
+      },
+      {
+        "name": "Resupply and Rearm",
+        "id": "f9aa-a29e-07e3-ccb6",
+        "description": "If this ship ends its movement in base contact with a friendly ship of Medium Tonnage or higher or a Space Station, pick one of the following:\nResupply: That Ship or Space Station recovers 3 Hull points and remove any Crippling Effect tokens.\nRearm: Increase the Limited-X value of any of that Ship or Space Station's Weapons and Launch Assets by 1 until the end of the round.",
+        "hidden": false
+      },
+      {
+        "name": "Flawed Design",
+        "id": "eabd-32c2-f9a9-31bc",
+        "description": "This Ship cannot use its Resupply and Rearm rule if it is below half of its starting Hull.",
+        "hidden": false
+      },
+      {"name": "Acquired Mines", "id": "3a05-aeef-6abe-1cd4", "description": "This Ship's Mines use the stats of its parent fleet.", "hidden": false},
+      {
+        "name": "Mind of its Own",
+        "id": "a6ae-b412-fa55-4905",
+        "description": "This Ship can be used in any fleet, regardless of faction but does not count towards point spent on M Tonnage Ships when building your fleet. This Ship cannot have an Admiral assigned to it for any reason.\nInstead of picking an Order for this Group when it activates, it may in any order; turn in any direction, move up to its Thrust, attack with any number of its weapons gaining a Spike for each additional Weapon System assigned after the first. Each option can only be chosen once per activation.\nAt the end of this Group's activation, if it did not gain any Spikes, remove a Spike from it.",
+        "hidden": false
+      },
+      {
+        "name": "Scrap Hauler",
+        "id": "83fd-5598-3e97-7fd7",
+        "description": "If this Group ends its activation within 1\" of a Debris Field, this Group gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Group can have a maximum of 8 scrap tokens at any one time. Any attached Payload ships that have any scrap tokens do not count towards this limit. Whenever another Ship within 6\" of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.",
+        "hidden": false
+      },
+      {
+        "name": "Scratch Bodge Job",
+        "id": "7f82-6c9f-9bae-3e18",
+        "description": "At the end of this Ship's activation, you may remove any number of scrap tokens and choose one of the following:\nScrappy Plating: One friendly Ship within 6\" recovers lost Hull points equal to the amount of scrap tokens removed.\nBodge Repairs: Remove a crippling effect from a friendly Ship within 6\" for each scrap token removed.",
+        "hidden": false
+      },
+      {
+        "name": "Scrap Collection",
+        "id": "6dff-82ef-c102-88b9",
+        "description": "If this Ship ends its activation within 1\" of a Debris Field, this Ship gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Ship with this rule can have a maximum of 3 scrap tokens at any one time. Whenever another Ship within 6\" of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.",
+        "hidden": false
+      },
+      {
+        "name": "Unload",
+        "id": "4386-6f27-42a4-479a",
+        "description": "When you attach this Ship to a Porter Ship, you may have the Porter Ship gain all of this Ship's scrap tokens.",
+        "hidden": false
+      },
+      {
+        "name": "Expansive Radiator Systems",
+        "id": "7d19-eab6-69af-352b",
+        "description": "At the start of this Ship's activation, remove two Spikes from it.",
+        "hidden": false
+      },
+      {
+        "name": "Fuel Transporter",
+        "id": "76ff-66ad-69a3-3101",
+        "description": "While a Ship with this rule is on the table, you have access to the following Ability:\nFully Fuelled (2AP): At the start of a friendly Group's activation, if that Group is within 3\" and on the same Orbital Layer as a Ship with the Fuel Transporter rule, the friendly Group increases its total movement (after Orders) by 3\" this round. If that Group is on the Max Thrust order, it increases its total movement (after Orders) by 6\" this round instead. If the friendly Group is C Tonnage, that Group must be within 3\" and on the same Orbital Layer as two Ships with the Fuel Transporter rule instead. Ships with the Fuel Transporter rule are unaffected by this Ability.",
+        "hidden": false
+      },
+      {
+        "name": "Bulk Lighter",
+        "id": "20cd-06ef-6934-e4ea",
+        "description": "While a Ship with this rule is on the table, you have access to the following Ability:\nBattalion Support (1AP): Once per activation, when you deploy Battalions from a Group on any Orbital Layer within 6\\\" of a friendly Ship with the Bulk Lighter rule, choose one of the launching Asset types. If the chosen Asset is either Dropships or Drop Pods, place an additional Battalion. If the chosen Asset is Bulk Landers, place an additional two Battalions. Other Launch Assets are unaffected by this Ability.",
+        "hidden": false
       }
     ],
     "sharedSelectionEntries": [
@@ -271,7 +332,11 @@
               {"id": "8c7d-40bd-4b71-2488-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 35}],
-            "infoLinks": [{"name": "Vectored", "id": "28d5-4b6f-9459-cfeb", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"}],
+            "infoLinks": [
+              {"name": "Vectored", "id": "28d5-4b6f-9459-cfeb", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"},
+              {"name": "Resupply and Rearm", "id": "78a6-0f2d-4eec-5f27", "hidden": false, "targetId": "f9aa-a29e-07e3-ccb6", "type": "rule"},
+              {"name": "Flawed Design", "id": "d7ee-2c41-adba-dadb", "hidden": false, "targetId": "eabd-32c2-f9a9-31bc", "type": "rule"}
+            ],
             "profiles": [
               {
                 "name": "SLM-9 Resupply Hauler",
@@ -291,20 +356,6 @@
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Vectored, Resupply and Rearm, Flawed Design", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Resupply and Rearm",
-                "id": "f9aa-a29e-07e3-ccb6",
-                "description": "If this ship ends its movement in base contact with a friendly ship of Medium Tonnage or higher or a Space Station, pick one of the following:\nResupply: That Ship or Space Station recovers 3 Hull points and remove any Crippling Effect tokens.\nRearm: Increase the Limited-X value of any of that Ship or Space Station's Weapons and Launch Assets by 1 until the end of the round.",
-                "hidden": false
-              },
-              {
-                "name": "Flawed Design",
-                "id": "eabd-32c2-f9a9-31bc",
-                "description": "This Ship cannot use its Resupply and Rearm rule if it is below half of its starting Hull.",
-                "hidden": false
               }
             ]
           }
@@ -1217,7 +1268,8 @@
             ],
             "infoLinks": [
               {"name": "Rare", "id": "fbf7-4b67-aed5-44e6", "hidden": false, "targetId": "f7ad-85f9-39f4-7e10", "type": "rule"},
-              {"name": "Reinforced Armour", "id": "2e04-f531-f6fd-7abf", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"}
+              {"name": "Reinforced Armour", "id": "2e04-f531-f6fd-7abf", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"},
+              {"name": "Acquired Mines", "id": "8fd4-b3ca-75c0-c39b", "hidden": false, "targetId": "3a05-aeef-6abe-1cd4", "type": "rule"}
             ],
             "profiles": [
               {
@@ -1239,8 +1291,7 @@
                   {"name": "Special", "$text": "Rare, Reinforced Armour, Acquired Mines", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
-            ],
-            "rules": [{"name": "Acquired Mines", "id": "3a05-aeef-6abe-1cd4", "description": "This Ship's Mines use the stats of its parent fleet.", "hidden": false}]
+            ]
           }
         ]
       },
@@ -1493,7 +1544,8 @@
             ],
             "infoLinks": [
               {"name": "Impetuous", "id": "55fb-ba14-08fb-3ab5", "hidden": false, "targetId": "6f09-5ccc-4dae-ff72", "type": "rule"},
-              {"name": "Rare", "id": "20a3-14eb-3f02-25dd", "hidden": false, "targetId": "f7ad-85f9-39f4-7e10", "type": "rule"}
+              {"name": "Rare", "id": "20a3-14eb-3f02-25dd", "hidden": false, "targetId": "f7ad-85f9-39f4-7e10", "type": "rule"},
+              {"name": "Mind of its Own", "id": "5b97-24b6-8a04-fa69", "hidden": false, "targetId": "a6ae-b412-fa55-4905", "type": "rule"}
             ],
             "profiles": [
               {
@@ -1514,14 +1566,6 @@
                   {"name": "G", "$text": "1-2", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Impetuous, Rare, Mind of its Own", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Mind of its Own",
-                "id": "a6ae-b412-fa55-4905",
-                "description": "This Ship can be used in any fleet, regardless of faction but does not count towards point spent on M Tonnage Ships when building your fleet. This Ship cannot have an Admiral assigned to it for any reason.\nInstead of picking an Order for this Group when it activates, it may in any order; turn in any direction, move up to its Thrust, attack with any number of its weapons gaining a Spike for each additional Weapon System assigned after the first. Each option can only be chosen once per activation.\nAt the end of this Group's activation, if it did not gain any Spikes, remove a Spike from it.",
-                "hidden": false
               }
             ]
           }
@@ -1577,7 +1621,9 @@
               {"name": "Porter S/L-X", "id": "23ff-6bce-4780-269b", "hidden": false, "targetId": "11cb-e973-8a2c-f0f6", "type": "rule"},
               {"name": "Reinforced Armour", "id": "2c29-d156-12c5-94ee", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"},
               {"name": "Monitor", "id": "34cc-117a-74d6-f4a0", "hidden": false, "targetId": "cc9f-9be5-cc19-2fc9", "type": "rule"},
-              {"name": "Industrial Design", "id": "e9f5-c479-36b9-ab6f", "hidden": false, "targetId": "e563-4363-c68f-2930", "type": "rule"}
+              {"name": "Scrap Hauler", "id": "e9f5-c479-36b9-ab6f", "hidden": false, "targetId": "83fd-5598-3e97-7fd7", "type": "rule"},
+              {"name": "Scratch Bodge Job", "id": "f7b1-5767-f58e-8c1d", "hidden": false, "targetId": "7f82-6c9f-9bae-3e18", "type": "rule"},
+              {"name": "Industrial Design", "id": "a050-5b15-b17a-8091", "hidden": false, "targetId": "e563-4363-c68f-2930", "type": "rule"}
             ],
             "profiles": [
               {
@@ -1598,20 +1644,6 @@
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Porter F-2, Reinforced Armour, Monitor, Scrap Hauler, Scratch Bodge Job, Industrial Design", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Scrap Hauler",
-                "id": "83fd-5598-3e97-7fd7",
-                "description": "If this Group ends its activation within 1\" of a Debris Field, this Group gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Group can have a maximum of 8 scrap tokens at any one time. Any attached Payload ships that have any scrap tokens do not count towards this limit. Whenever another Ship within 6\" of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.",
-                "hidden": false
-              },
-              {
-                "name": "Scratch Bodge Job",
-                "id": "7f82-6c9f-9bae-3e18",
-                "description": "At the end of this Ship's activation, you may remove any number of scrap tokens and choose one of the following:\nScrappy Plating: One friendly Ship within 6\" recovers lost Hull points equal to the amount of scrap tokens removed.\nBodge Repairs: Remove a crippling effect from a friendly Ship within 6\" for each scrap token removed.",
-                "hidden": false
               }
             ]
           }
@@ -1663,7 +1695,9 @@
             "infoLinks": [
               {"name": "Payload S/L-X", "id": "1b07-bb3e-77a3-31db", "hidden": false, "targetId": "7a4f-55fd-3916-978f", "type": "rule"},
               {"name": "Vectored", "id": "7779-6233-ddca-2407", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"},
-              {"name": "Industrial Design", "id": "94e2-63c7-3265-94fc", "hidden": false, "targetId": "e563-4363-c68f-2930", "type": "rule"}
+              {"name": "Scrap Collection", "id": "94e2-63c7-3265-94fc", "hidden": false, "targetId": "6dff-82ef-c102-88b9", "type": "rule"},
+              {"name": "Unload", "id": "60d6-e51a-8a4c-48b7", "hidden": false, "targetId": "4386-6f27-42a4-479a", "type": "rule"},
+              {"name": "Industrial Design", "id": "7335-ce74-e626-aa88", "hidden": false, "targetId": "e563-4363-c68f-2930", "type": "rule"}
             ],
             "profiles": [
               {
@@ -1684,20 +1718,6 @@
                   {"name": "G", "$text": "-", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Payload F-1, Vectored, Scrap Collection, Unload, Industrial Design", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Scrap Collection",
-                "id": "6dff-82ef-c102-88b9",
-                "description": "If this Ship ends its activation within 1\" of a Debris Field, this Ship gains a scrap token and cannot gain scrap tokens from that Debris Field for the rest of the game. A Ship with this rule can have a maximum of 3 scrap tokens at any one time. Whenever another Ship within 6\" of a friendly Ship with this rule is destroyed, pick one of those friendly Ships, that Ship gains a scrap token.",
-                "hidden": false
-              },
-              {
-                "name": "Unload",
-                "id": "4386-6f27-42a4-479a",
-                "description": "When you attach this Ship to a Porter Ship, you may have the Porter Ship gain all of this Ship's scrap tokens.",
-                "hidden": false
               }
             ]
           }
@@ -1827,6 +1847,7 @@
                 "type": "selectionEntry"
               }
             ],
+            "infoLinks": [{"name": "Expansive Radiator Systems", "id": "d149-be19-e2e6-c79b", "hidden": false, "targetId": "7d19-eab6-69af-352b", "type": "rule"}],
             "profiles": [
               {
                 "name": "PRK-91 Provenance Ark",
@@ -1846,14 +1867,6 @@
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Expansive Radiator Systems", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Expansive Radiator Systems",
-                "id": "7d19-eab6-69af-352b",
-                "description": "At the start of this Ship's activation, remove two Spikes from it.",
-                "hidden": false
               }
             ]
           }
@@ -1924,7 +1937,10 @@
                 "type": "selectionEntry"
               }
             ],
-            "infoLinks": [{"name": "Vectored", "id": "4d85-fc60-acb5-8ae1", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"}],
+            "infoLinks": [
+              {"name": "Vectored", "id": "4d85-fc60-acb5-8ae1", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"},
+              {"name": "Fuel Transporter", "id": "8c90-dee3-1758-960e", "hidden": false, "targetId": "76ff-66ad-69a3-3101", "type": "rule"}
+            ],
             "profiles": [
               {
                 "name": "M.A.B. 67 Fuel Transport",
@@ -1944,14 +1960,6 @@
                   {"name": "G", "$text": "1-2", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Vectored, Fuel Transporter", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Fuel Transporter",
-                "id": "76ff-66ad-69a3-3101",
-                "description": "While a Ship with this rule is on the table, you have access to the following Ability:\nFully Fuelled (2AP): At the start of a friendly Group's activation, if that Group is within 3\" and on the same Orbital Layer as a Ship with the Fuel Transporter rule, the friendly Group increases its total movement (after Orders) by 3\" this round. If that Group is on the Max Thrust order, it increases its total movement (after Orders) by 6\" this round instead. If the friendly Group is C Tonnage, that Group must be within 3\" and on the same Orbital Layer as two Ships with the Fuel Transporter rule instead. Ships with the Fuel Transporter rule are unaffected by this Ability.",
-                "hidden": false
               }
             ]
           }
@@ -2186,7 +2194,8 @@
             "entryLinks": [{"name": "Deterrence Missiles", "id": "e115-5915-19eb-aa9d", "hidden": false, "import": true, "targetId": "5fff-fd9a-a366-d530", "type": "selectionEntry"}],
             "infoLinks": [
               {"name": "Descent", "id": "b939-cffa-5701-3586", "hidden": false, "targetId": "2ae8-7705-ab9a-03c0", "type": "rule"},
-              {"name": "Rare", "id": "44a5-c443-c225-132a", "hidden": false, "targetId": "f7ad-85f9-39f4-7e10", "type": "rule"}
+              {"name": "Rare", "id": "44a5-c443-c225-132a", "hidden": false, "targetId": "f7ad-85f9-39f4-7e10", "type": "rule"},
+              {"name": "Bulk Lighter", "id": "bfc9-17e7-238e-0ddb", "hidden": false, "targetId": "20cd-06ef-6934-e4ea", "type": "rule"}
             ],
             "profiles": [
               {
@@ -2205,16 +2214,8 @@
                   {"name": "KS", "$text": "6+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-2", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Descent, Rare", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Descent, Rare, Bulk Lighter", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Bulk Lighter",
-                "id": "20cd-06ef-6934-e4ea",
-                "description": "While a Ship with this rule is on the table, you have access to the following Ability:\nBattalion Support (1AP): Once per activation, when you deploy Battalions from a Group on any Orbital Layer within 6\\\" of a friendly Ship with the Bulk Lighter rule, choose one of the launching Asset types. If the chosen Asset is either Dropships or Drop Pods, place an additional Battalion. If the chosen Asset is Bulk Landers, place an additional two Battalions. Other Launch Assets are unaffected by this Ability.",
-                "hidden": false
               }
             ]
           }
