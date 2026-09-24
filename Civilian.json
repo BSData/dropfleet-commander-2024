@@ -109,6 +109,18 @@
         "id": "20cd-06ef-6934-e4ea",
         "description": "While a Ship with this rule is on the table, you have access to the following Ability:\nBattalion Support (1AP): Once per activation, when you deploy Battalions from a Group on any Orbital Layer within 6\\\" of a friendly Ship with the Bulk Lighter rule, choose one of the launching Asset types. If the chosen Asset is either Dropships or Drop Pods, place an additional Battalion. If the chosen Asset is Bulk Landers, place an additional two Battalions. Other Launch Assets are unaffected by this Ability.",
         "hidden": false
+      },
+      {
+        "name": "Feature Carrier (Outpost)",
+        "id": "4b81-8b74-36f9-4d31",
+        "description": "This Ship starts the game carrying a Military Outpost as a Deployable Feature.",
+        "hidden": false
+      },
+      {
+        "name": "Feature Carrier (Hangar)",
+        "id": "c2bc-fea1-0598-9f68",
+        "description": "This ship starts the game carrying a single deployable Hangar Feature (see 7.4.2 Deploying Features and 11.3 Features).",
+        "hidden": false
       }
     ],
     "sharedSelectionEntries": [
@@ -505,7 +517,8 @@
             "infoLinks": [
               {"name": "Monitor", "id": "4b25-dc92-bbd2-7ae0", "hidden": false, "targetId": "cc9f-9be5-cc19-2fc9", "type": "rule"},
               {"name": "Reinforced Armour", "id": "f19c-8283-9b3a-9e2e", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"},
-              {"name": "Space Trucker", "id": "ad70-aa5c-9a90-a4f2", "hidden": false, "targetId": "612d-c072-617f-de98", "type": "rule"}
+              {"name": "Feature Carrier (Hangar)", "id": "ad70-aa5c-9a90-a4f2", "hidden": false, "targetId": "c2bc-fea1-0598-9f68", "type": "rule"},
+              {"name": "Space Trucker", "id": "e504-44a1-c75d-e5fc", "hidden": false, "targetId": "612d-c072-617f-de98", "type": "rule"}
             ],
             "profiles": [
               {
@@ -526,14 +539,6 @@
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Monitor, Reinforced Armour, Feature Carrier (Hanger), Space Trucker", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Feature Carrier (Hangar)",
-                "id": "c2bc-fea1-0598-9f68",
-                "description": "This ship starts the game carrying a single deployable Hangar Feature (see 7.4.2 Deploying Features and 11.3 Features).",
-                "hidden": false
               }
             ]
           }
@@ -995,7 +1000,10 @@
                 "type": "selectionEntry"
               }
             ],
-            "infoLinks": [{"name": "Monitor", "id": "5f45-7f12-e257-e280", "hidden": false, "targetId": "cc9f-9be5-cc19-2fc9", "type": "rule"}],
+            "infoLinks": [
+              {"name": "Monitor", "id": "5f45-7f12-e257-e280", "hidden": false, "targetId": "cc9f-9be5-cc19-2fc9", "type": "rule"},
+              {"name": "Feature Carrier (Outpost)", "id": "16e7-bdec-39ba-7859", "hidden": false, "targetId": "4b81-8b74-36f9-4d31", "type": "rule"}
+            ],
             "profiles": [
               {
                 "name": "M-Type Barge",
@@ -1015,14 +1023,6 @@
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Monitor, Feature Carrier (Outpost)", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
-              }
-            ],
-            "rules": [
-              {
-                "name": "Feature Carrier (Outpost)",
-                "id": "4b81-8b74-36f9-4d31",
-                "description": "This Ship starts the game carrying a Military Outpost as a Deployable Feature.",
-                "hidden": false
               }
             ]
           }
