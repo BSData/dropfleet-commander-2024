@@ -20,12 +20,6 @@
         "hidden": false
       },
       {
-        "name": "Drag to Hell",
-        "id": "6e2d-81d7-9a0e-722f",
-        "description": "This weapon can only be used against targets in base contact. After completing an attack with this weapon, remove this Ship from the table. It counts as destroyed at the end of the game.",
-        "hidden": false
-      },
-      {
         "name": "Purchased Power",
         "id": "e393-f432-a053-d22e",
         "description": "This Ship starts the game with 5 wares tokens.\nAt the start of each round, if you control this Ship, you may spend a number of wares tokens on one of the following effects until the end of the round:\nDefence Harmonics - 2 Tokens: Friendly Groups within 6\" improve their Energy and Kinetic saves by 1, to a maximum of a 3+.\nEnergy Dissipators - 1 Tokens: Friendly Groups within 9\" count as having 2 fewer Spikes.\nGuardian Schoal - 1 Token: Friendly Assets within 9\" cannot be the target of enemy weapons with the Anti Wing special rule.",
@@ -699,11 +693,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -716,11 +710,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -733,11 +727,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -1045,11 +1039,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -1062,11 +1056,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -1079,11 +1073,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -1312,11 +1306,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -1329,11 +1323,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -1346,11 +1340,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -1905,11 +1899,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -1922,11 +1916,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -1939,11 +1933,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -2397,10 +2391,7 @@
           {"id": "1341-592a-7092-26d2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "1341-592a-7092-26d2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [
-          {"name": "Close Action", "id": "eb36-09e6-7de9-6ceb", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-          {"name": "Drag to Hell", "id": "eafa-dd16-25d7-d4f7", "hidden": false, "targetId": "6e2d-81d7-9a0e-722f", "type": "rule"}
-        ],
+        "infoLinks": [{"name": "Close Action", "id": "eb36-09e6-7de9-6ceb", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
         "profiles": [
           {
             "name": "Drag to Hell",
@@ -2416,6 +2407,14 @@
               {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
             ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Drag to Hell",
+            "id": "eafa-dd16-25d7-d4f7",
+            "description": "This weapon can only be used against targets in base contact. After completing an attack with this weapon, remove this Ship from the table. It counts as destroyed at the end of the game.",
+            "hidden": false
           }
         ]
       },
@@ -2583,7 +2582,8 @@
         ],
         "infoLinks": [
           {"name": "Alt-X", "id": "c412-d229-238c-0f77", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
-          {"name": "Close Action", "id": "04eb-c8dd-e386-7176", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}
+          {"name": "Close Action", "id": "04eb-c8dd-e386-7176", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Fusillade-X", "id": "d090-88d8-8fe4-d387", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"}
         ],
         "profiles": [
           {

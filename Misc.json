@@ -54,11 +54,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -71,11 +71,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -88,11 +88,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -489,11 +489,11 @@
               {
                 "childId": "3fda-65f2-6cc3-ee33",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -506,11 +506,11 @@
               {
                 "childId": "c6ef-6271-e246-47a8",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -523,11 +523,11 @@
               {
                 "childId": "d410-4aa8-c469-064b",
                 "field": "selections",
-                "includeChildForces": true,
+                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
-                "type": "atLeast",
+                "type": "equalTo",
                 "value": 1
               }
             ]
@@ -729,6 +729,7 @@
         "name": "9K Snub Mass Drivers",
         "id": "0ab2-6da8-7b6d-f9d2",
         "collective": true,
+        "comment": "F 4/2+/1/K Crit-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -759,6 +760,7 @@
         "name": "Harpoon Strike",
         "id": "9a9c-641b-29d5-0fd9",
         "collective": true,
+        "comment": "F/S/R 3/4+/1/K CA",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -789,6 +791,7 @@
         "name": "N-12 Artillery Cannons",
         "id": "6d2e-9f74-2598-d0dc",
         "collective": true,
+        "comment": "F 8/4+/1/K",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -819,6 +822,7 @@
         "name": "Boarding Pods",
         "id": "622c-daa3-02ae-2c42",
         "collective": true,
+        "comment": "4",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -841,6 +845,7 @@
         "name": "Bulk Landers",
         "id": "60a3-f985-32ac-6d81",
         "collective": true,
+        "comment": "4",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -863,6 +868,7 @@
         "name": "Fighters & Bombers",
         "id": "7db9-50b3-8338-4c4d",
         "collective": true,
+        "comment": "1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -885,6 +891,7 @@
         "name": "Fire Ships",
         "id": "0177-bac6-2f3a-a78f",
         "collective": true,
+        "comment": "3",
         "hidden": false,
         "import": true,
         "type": "upgrade",
