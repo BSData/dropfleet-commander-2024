@@ -2913,7 +2913,7 @@
             "conditions": [
               {
                 "childId": "6738-717d-0414-0401",
-                "childName": "Nefertem of the Dawn - Invisible Light Heavy Destroyer",
+                "childName": "Seti the Kinslayer - Spear of Anubis Heavy Cruiser",
                 "field": "selections",
                 "includeChildSelections": false,
                 "scope": "parent",
@@ -2955,11 +2955,12 @@
                 "id": "c094-e2d3-6abf-c6b6",
                 "hidden": false,
                 "import": true,
+                "sortIndex": 1,
                 "targetId": "3e70-9930-d732-4ae9",
                 "type": "selectionEntry"
               },
-              {"name": "Dropships", "id": "3054-2a74-b681-6bde", "hidden": false, "import": true, "targetId": "ae0d-7916-f9ff-1e19", "type": "selectionEntry"},
-              {"name": "Torpedoes", "id": "574d-c9d0-bfb3-7099", "hidden": false, "import": true, "targetId": "e35f-604f-3e00-11a4", "type": "selectionEntry"}
+              {"name": "Dropships", "id": "3054-2a74-b681-6bde", "hidden": false, "import": true, "sortIndex": 2, "targetId": "ae0d-7916-f9ff-1e19", "type": "selectionEntry"},
+              {"name": "Torpedoes", "id": "574d-c9d0-bfb3-7099", "hidden": false, "import": true, "sortIndex": 3, "targetId": "e35f-604f-3e00-11a4", "type": "selectionEntry"}
             ],
             "infoLinks": [
               {"name": "Hero", "id": "ebc2-6c3d-2de5-0be7", "hidden": false, "targetId": "f945-e19c-c8bb-1c6a", "type": "rule"},
@@ -6417,6 +6418,7 @@
           {"id": "ef17-5100-6ba4-50a9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "f36b-de1f-29f2-f377", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
+        "infoLinks": [{"name": "Limited-X", "id": "801d-d44c-223d-5621", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
         "profiles": [
           {
             "name": "Dropships",
