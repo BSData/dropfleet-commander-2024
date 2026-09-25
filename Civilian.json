@@ -1645,80 +1645,6 @@
         ]
       },
       {
-        "name": "VX-22 Flensers",
-        "id": "1caa-22ad-f152-b011",
-        "hidden": false,
-        "import": true,
-        "publicationId": "0486-c1f4-77a3-c714",
-        "type": "unit",
-        "categoryLinks": [
-          {"name": "Group", "id": "3b1a-1d09-bae5-b3e5", "hidden": false, "primary": false, "targetId": "default-category"},
-          {"name": "Light Groups", "id": "d6de-3b44-8dca-2e1c", "hidden": false, "primary": true, "targetId": "f51b-d892-62c0-3f1e"}
-        ],
-        "modifiers": [
-          {
-            "field": "hidden",
-            "type": "set",
-            "value": true,
-            "conditions": [
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
-              {
-                "childId": "473d-151f-22a2-8892",
-                "childName": "Mercenary ships",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "equalTo",
-                "value": 0
-              }
-            ]
-          }
-        ],
-        "selectionEntries": [
-          {
-            "name": "VX-22 Flenser",
-            "id": "160e-d093-52eb-5adb",
-            "hidden": false,
-            "import": true,
-            "publicationId": "0486-c1f4-77a3-c714",
-            "type": "model",
-            "categoryLinks": [{"name": "Light Ship", "id": "5c82-fb65-22b2-1cfc", "hidden": false, "primary": true, "targetId": "f942-8f88-d77b-13c1"}],
-            "constraints": [{"id": "0c32-694d-aeca-8fcf", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 50}],
-            "entryLinks": [{"name": "Sawblade Prow", "id": "aef8-a3c1-524c-5a10", "hidden": false, "import": true, "targetId": "83f0-d2ce-a21a-29c5", "type": "selectionEntry"}],
-            "infoLinks": [
-              {"name": "Payload S/L-X", "id": "1b07-bb3e-77a3-31db", "hidden": false, "targetId": "7a4f-55fd-3916-978f", "type": "rule"},
-              {"name": "Vectored", "id": "7779-6233-ddca-2407", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"},
-              {"name": "Scrap Collection", "id": "94e2-63c7-3265-94fc", "hidden": false, "targetId": "6dff-82ef-c102-88b9", "type": "rule"},
-              {"name": "Unload", "id": "60d6-e51a-8a4c-48b7", "hidden": false, "targetId": "4386-6f27-42a4-479a", "type": "rule"},
-              {"name": "Industrial Design", "id": "7335-ce74-e626-aa88", "hidden": false, "targetId": "e563-4363-c68f-2930", "type": "rule"}
-            ],
-            "profiles": [
-              {
-                "name": "VX-22 Flenser",
-                "id": "2912-0a1d-c408-1230",
-                "hidden": false,
-                "publicationId": "0486-c1f4-77a3-c714",
-                "typeId": "8a2d-efd5-4b60-f4fa",
-                "typeName": "Ship",
-                "characteristics": [
-                  {"name": "Thrust", "$text": "6\"", "typeId": "d821-4294-3117-e8a6"},
-                  {"name": "Scan", "$text": "4\"", "typeId": "960a-5d0e-18c5-4310"},
-                  {"name": "Sig", "$text": "3\"", "typeId": "4feb-14c2-b1f1-9fa5"},
-                  {"name": "Hull", "$text": "4", "typeId": "5253-be1d-917b-17d9"},
-                  {"name": "ES", "$text": "5+", "typeId": "42ae-03c9-d0ff-61da"},
-                  {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
-                  {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
-                  {"name": "G", "$text": "-", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Payload F-1, Vectored, Scrap Collection, Unload, Industrial Design", "typeId": "fdf5-89b6-e62e-570f"}
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "PRK-91 Provenance Ark",
         "id": "6e67-88af-073f-49d5",
         "hidden": false,
@@ -2208,6 +2134,78 @@
                   {"name": "BS", "$text": "N/A", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-2", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Descent, Rare, Bulk Lighter", "typeId": "fdf5-89b6-e62e-570f"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {"name": "----- Payload -----", "id": "112c-d3f0-3787-f25f", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "VX-22 Flensers",
+        "id": "1caa-22ad-f152-b011",
+        "hidden": false,
+        "import": true,
+        "publicationId": "0486-c1f4-77a3-c714",
+        "type": "unit",
+        "categoryLinks": [{"name": "Payload Groups", "id": "0158-2fbc-3b39-faa1", "hidden": false, "primary": true, "targetId": "8c2b-ea4d-8bea-c6a2"}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+              {
+                "childId": "473d-151f-22a2-8892",
+                "childName": "Mercenary ships",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "VX-22 Flenser",
+            "id": "160e-d093-52eb-5adb",
+            "hidden": false,
+            "import": true,
+            "publicationId": "0486-c1f4-77a3-c714",
+            "type": "model",
+            "categoryLinks": [{"name": "Payload", "id": "023c-57d2-6ae8-beca", "hidden": false, "primary": true, "targetId": "3fa9-60d3-d9be-6611"}],
+            "constraints": [{"id": "0c32-694d-aeca-8fcf", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 50}],
+            "entryLinks": [{"name": "Sawblade Prow", "id": "aef8-a3c1-524c-5a10", "hidden": false, "import": true, "targetId": "83f0-d2ce-a21a-29c5", "type": "selectionEntry"}],
+            "infoLinks": [
+              {"name": "Payload S/L-X", "id": "1b07-bb3e-77a3-31db", "hidden": false, "targetId": "7a4f-55fd-3916-978f", "type": "rule"},
+              {"name": "Vectored", "id": "7779-6233-ddca-2407", "hidden": false, "targetId": "7a2f-fbe0-b3cd-98c8", "type": "rule"},
+              {"name": "Scrap Collection", "id": "94e2-63c7-3265-94fc", "hidden": false, "targetId": "6dff-82ef-c102-88b9", "type": "rule"},
+              {"name": "Unload", "id": "60d6-e51a-8a4c-48b7", "hidden": false, "targetId": "4386-6f27-42a4-479a", "type": "rule"},
+              {"name": "Industrial Design", "id": "7335-ce74-e626-aa88", "hidden": false, "targetId": "e563-4363-c68f-2930", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "VX-22 Flenser",
+                "id": "2912-0a1d-c408-1230",
+                "hidden": false,
+                "publicationId": "0486-c1f4-77a3-c714",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "characteristics": [
+                  {"name": "Thrust", "$text": "6\"", "typeId": "d821-4294-3117-e8a6"},
+                  {"name": "Scan", "$text": "4\"", "typeId": "960a-5d0e-18c5-4310"},
+                  {"name": "Sig", "$text": "3\"", "typeId": "4feb-14c2-b1f1-9fa5"},
+                  {"name": "Hull", "$text": "4", "typeId": "5253-be1d-917b-17d9"},
+                  {"name": "ES", "$text": "5+", "typeId": "42ae-03c9-d0ff-61da"},
+                  {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
+                  {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
+                  {"name": "G", "$text": "-", "typeId": "32ce-7bbb-1d0f-8c80"},
+                  {"name": "Special", "$text": "Payload F-1, Vectored, Scrap Collection, Unload, Industrial Design", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]

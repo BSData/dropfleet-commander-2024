@@ -299,7 +299,6 @@
               }
             ],
             "infoLinks": [
-              {"name": "Subservient Mercenaries", "id": "48f1-80b1-a4de-8d68", "hidden": false, "targetId": "2c3a-3695-1a24-815b", "type": "rule"},
               {"name": "Rare", "id": "cef8-3e50-0489-ff7e", "hidden": false, "targetId": "f7ad-85f9-39f4-7e10", "type": "rule"},
               {
                 "name": "Shield-X",
@@ -315,7 +314,8 @@
                     "conditions": [{"childId": "9d0c-9d91-231b-cab6", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
                   }
                 ]
-              }
+              },
+              {"name": "Subservient Mercenaries", "id": "48f1-80b1-a4de-8d68", "hidden": false, "targetId": "2c3a-3695-1a24-815b", "type": "rule"}
             ],
             "profiles": [
               {
@@ -340,9 +340,8 @@
                 "modifiers": [
                   {
                     "field": "fdf5-89b6-e62e-570f",
-                    "join": ", ",
-                    "type": "append",
-                    "value": "Shield-5+",
+                    "type": "set",
+                    "value": "Rare, Shield-5+, Subservient Mercenaries",
                     "conditions": [{"childId": "9d0c-9d91-231b-cab6", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
                   }
                 ]
