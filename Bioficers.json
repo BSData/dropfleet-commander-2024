@@ -62,6 +62,14 @@
       {"name": "Sanctum Battlecruiser", "id": "b6d9-ada1-ac12-9790", "hidden": false, "import": true, "targetId": "1783-2070-1d67-2713", "type": "selectionEntry"},
       {"name": "Scion Battlecruiser", "id": "cc73-2a60-3a70-7f69", "hidden": false, "import": true, "targetId": "8004-510f-6229-136c", "type": "selectionEntry"},
       {"name": "Sluice Supercruiser", "id": "8106-4410-c36f-cd50", "hidden": false, "import": true, "targetId": "9f09-f784-2347-7d64", "type": "selectionEntry"},
+      {
+        "name": "Aeon - The Ring Ship Heavy Cruiser",
+        "id": "2174-099d-b103-836f",
+        "hidden": false,
+        "import": true,
+        "targetId": "b4cf-5d04-520b-9876",
+        "type": "selectionEntry"
+      },
       {"name": "Carronade Heavy Cruiser", "id": "127c-e9d8-61da-9b99", "hidden": false, "import": true, "targetId": "9234-fc92-0ff8-877a", "type": "selectionEntry"},
       {"name": "Catastrophe Heavy Cruiser", "id": "fef4-4ece-1dcb-d0e5", "hidden": false, "import": true, "targetId": "2ed0-7eeb-26fd-22a5", "type": "selectionEntry"},
       {"name": "Cacophony Heavy Cruiser", "id": "6276-db23-db1a-0515", "hidden": false, "import": true, "targetId": "6e1a-2b01-a28b-6f83", "type": "selectionEntry"},
@@ -108,14 +116,7 @@
       {"name": "Lander Cells", "id": "3b8c-679b-7024-c96c", "hidden": false, "import": true, "targetId": "0784-3c85-ebd0-a488", "type": "selectionEntry"},
       {"name": "Invasion Cells", "id": "efe3-417a-eebe-af34", "hidden": false, "import": true, "targetId": "dd68-15ce-e117-d142", "type": "selectionEntry"},
       {"name": "Genitor Towers", "id": "4914-5bb9-b90c-eb3d", "hidden": false, "import": true, "targetId": "b598-59fa-cab1-15ee", "type": "selectionEntry"},
-      {
-        "name": "Pungari Thresher",
-        "id": "8644-cf70-2702-f9f1",
-        "hidden": false,
-        "import": true,
-        "targetId": "1fd6-31e0-548c-cc1e",
-        "type": "selectionEntry"
-      },
+      {"name": "Pungari Thresher", "id": "8644-cf70-2702-f9f1", "hidden": false, "import": true, "targetId": "1fd6-31e0-548c-cc1e", "type": "selectionEntry"},
       {"name": "Hyperyacht Aurorum", "id": "8cea-bf55-5971-fe3f", "hidden": false, "import": true, "targetId": "f6dd-dee6-9cfb-43b4", "type": "selectionEntry"},
       {"name": "Small Space Station", "id": "8554-a4a7-4403-2648", "hidden": false, "import": true, "targetId": "914b-3a7a-039e-34df", "type": "selectionEntry"},
       {"name": "Medium Space Station", "id": "2dd1-b0f8-ae2b-d554", "hidden": false, "import": true, "targetId": "218b-faf8-ffab-2cd5", "type": "selectionEntry"},
@@ -188,7 +189,13 @@
       {
         "name": "Feature Carrier",
         "id": "272a-ad08-2463-55fb",
-        "description": "At the start of the game, before players deploy, choose from the Gravitational Lens or Ghost Orb Tower Deployable Feature. This Ship starts the game carrying the chosen Deployable Feature.",
+        "description": "At the start of the game, before players deploy, choose from the Gravitational Arc or Ghost Orb Tower Deployable Feature. This Ship starts the game carrying the chosen Deployable Feature.",
+        "hidden": false
+      },
+      {
+        "name": "Summoning",
+        "id": "0d91-d311-d2b9-6778",
+        "description": "When you activate a Wing within 2\" of this Ship, instead of moving them normally, you may remove them from the table, then place them anywhere within 18\" of this Ship. Wings placed this way suffer the effects of any scenery they are placed on but ignore intervening scenery. Wings placed this way may form and divide into Wings as if they had moved normally. Wings placed this way cannot be the target of your Abilities until the end of the round (other players may target them with Abilities as normal).",
         "hidden": false
       }
     ],
@@ -2270,6 +2277,111 @@
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Feature Carrier", "typeId": "fdf5-89b6-e62e-570f"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Aeon - The Ring Ship Heavy Cruiser",
+        "id": "b4cf-5d04-520b-9876",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Group", "id": "c991-9fef-23d3-82d6", "primary": false, "targetId": "default-category"},
+          {"name": "Hero", "id": "6f4f-26fe-d539-01b9", "primary": false, "targetId": "3929-5fb7-5f98-37ea"},
+          {"name": "Medium Groups", "id": "8ee8-93c3-3a18-e295", "hidden": false, "primary": true, "targetId": "e555-ff57-c478-18cd"}
+        ],
+        "constraints": [{"id": "1f93-304d-b49b-5f93", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "b4cf-5d04-520b-9876",
+                "childName": "Anode - The Melter Heavy Destroyer",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+              {
+                "childId": "8eb8-9887-6480-9a59",
+                "childName": "Unique ships already in fleet",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Aeon - The Ring Ship Heavy Cruiser",
+            "id": "2acc-6fdf-9722-e5c4",
+            "hidden": false,
+            "import": true,
+            "publicationId": "c835-461f-ea00-a841",
+            "type": "model",
+            "categoryLinks": [{"name": "Medium Ship", "id": "2be8-95c7-6c58-674f", "hidden": false, "primary": true, "targetId": "53c3-afc0-63ef-413a"}],
+            "constraints": [
+              {"id": "c397-8878-ab6e-6334", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "9db3-df84-8bba-fcd2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 175}],
+            "entryLinks": [
+              {
+                "name": "Genitor Bomblets",
+                "id": "ef96-addb-2302-1e33",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "17fe-7692-4586-9679",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Fighters & Bombers",
+                "id": "066f-2c3c-6f78-1f30",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "00d8-9dd8-8af4-2de3",
+                "type": "selectionEntry"
+              }
+            ],
+            "infoLinks": [
+              {"name": "Hero", "id": "c8ea-fa4c-b6b4-a5f8", "hidden": false, "targetId": "f945-e19c-c8bb-1c6a", "type": "rule"},
+              {"name": "Unique", "id": "e7df-4386-37a5-fa77", "hidden": false, "targetId": "3f45-7047-464a-3be4", "type": "rule"},
+              {"name": "Summoning", "id": "1c4a-3430-77dc-e3b4", "hidden": false, "targetId": "0d91-d311-d2b9-6778", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Aeon - The Ring Ship",
+                "id": "e2ce-4c05-e76e-766f",
+                "hidden": false,
+                "publicationId": "c835-461f-ea00-a841",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "characteristics": [
+                  {"name": "Thrust", "$text": "7\"", "typeId": "d821-4294-3117-e8a6"},
+                  {"name": "Scan", "$text": "11\"", "typeId": "960a-5d0e-18c5-4310"},
+                  {"name": "Sig", "$text": "4\"", "typeId": "4feb-14c2-b1f1-9fa5"},
+                  {"name": "Hull", "$text": "9", "typeId": "5253-be1d-917b-17d9"},
+                  {"name": "ES", "$text": "4+", "typeId": "42ae-03c9-d0ff-61da"},
+                  {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
+                  {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
+                  {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
+                  {"name": "Special", "$text": "Hero, Unique, Summoning", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -6329,6 +6441,40 @@
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "-", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Genitor Bomblets",
+        "id": "17fe-7692-4586-9679",
+        "collective": true,
+        "comment": "F 8/3+/1/K CA Corr-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "9721-fc8a-e4a7-9213", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "03f3-b036-7780-d61f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Close Action", "id": "e100-50b3-70d4-e57d", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Corruptor-X", "id": "84ee-c8b1-f2d9-1c1e", "hidden": false, "targetId": "b495-5934-9bf1-d595", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Genitor Bomblets",
+            "id": "6f00-c77b-d550-80b8",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "8", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Close Action, Corruptor-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]

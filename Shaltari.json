@@ -81,6 +81,14 @@
       {"name": "Ruby Battlecruiser", "id": "b3fc-293a-4fd4-2f4b", "hidden": false, "import": true, "targetId": "78d1-3d6e-acab-9dc5", "type": "selectionEntry"},
       {"name": "Natrolite Supercruiser", "id": "f7c1-5329-36cf-a8f4", "hidden": false, "import": true, "targetId": "d11f-ed6b-095a-7454", "type": "selectionEntry"},
       {"name": "Mesolite Supercruiser", "id": "8045-3f13-6b79-31a0", "hidden": false, "import": true, "targetId": "3e44-2131-2e2c-0299", "type": "selectionEntry"},
+      {
+        "name": "Seti the Kinslayer - Spear of Anubis Heavy Cruiser",
+        "id": "fee3-0e87-7e2b-72e2",
+        "hidden": false,
+        "import": true,
+        "targetId": "6738-717d-0414-0401",
+        "type": "selectionEntry"
+      },
       {"name": "Scoria Heavy Cruiser", "id": "e888-207f-6953-fd43", "hidden": false, "import": true, "targetId": "4b00-327a-9689-554b", "type": "selectionEntry"},
       {"name": "Onyx Heavy Cruiser", "id": "69d0-7a21-bb35-9529", "hidden": false, "import": true, "targetId": "45b8-ad5e-1dfb-4c5c", "type": "selectionEntry"},
       {"name": "Obsidian Heavy Cruiser", "id": "7d0a-711e-b6de-453e", "hidden": false, "import": true, "targetId": "b20f-b907-d1c9-8bff", "type": "selectionEntry"},
@@ -124,14 +132,7 @@
       {"name": "Helium Voidflyers", "id": "6f42-e18b-c9f9-fb76", "hidden": false, "import": true, "targetId": "2d5f-ab8e-791f-a3d6", "type": "selectionEntry"},
       {"name": "Glass Cloudflyers", "id": "165d-4f2b-307f-6ffb", "hidden": false, "import": true, "targetId": "440a-da33-8735-cc55", "type": "selectionEntry"},
       {"name": "Voidgates", "id": "4bc7-7a45-711b-7b98", "hidden": false, "import": true, "targetId": "4336-5a12-a5c4-9f76", "type": "selectionEntry"},
-      {
-        "name": "Pungari Thresher",
-        "id": "8f1c-6b94-16cf-83e4",
-        "hidden": false,
-        "import": true,
-        "targetId": "1fd6-31e0-548c-cc1e",
-        "type": "selectionEntry"
-      },
+      {"name": "Pungari Thresher", "id": "8f1c-6b94-16cf-83e4", "hidden": false, "import": true, "targetId": "1fd6-31e0-548c-cc1e", "type": "selectionEntry"},
       {"name": "Hyperyacht Aurorum", "id": "6d38-f3fe-88cb-de1c", "hidden": false, "import": true, "targetId": "f6dd-dee6-9cfb-43b4", "type": "selectionEntry"},
       {"name": "Small Space Station", "id": "ffa3-ff00-4cb8-e44e", "hidden": false, "import": true, "targetId": "914b-3a7a-039e-34df", "type": "selectionEntry"},
       {"name": "Medium Space Station", "id": "42b1-c609-7687-e19c", "hidden": false, "import": true, "targetId": "218b-faf8-ffab-2cd5", "type": "selectionEntry"},
@@ -191,6 +192,12 @@
         "name": "Feature Carrier",
         "id": "03c8-3587-3058-64b4",
         "description": "At the start of the game, before players deploy, choose two Deployable Features from the Shaltari Deployable Features List (duplicates are allowed). This Ship starts the game carrying those Deployable Features.",
+        "hidden": false
+      },
+      {
+        "name": "Seti Alpha Strike",
+        "id": "a72b-7fb0-3b59-4926",
+        "description": "Dropships deploying Battalions from this Ship do not use the Mothership and Gateship-X special rules and can be deployed to any orbital layer. When you deploy any of this Ship's Dropships to a Dropsite, Immediately remove that many enemy Battalions from that Dropsite.",
         "hidden": false
       }
     ],
@@ -2880,6 +2887,104 @@
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Shield-4+, Feature Carrier", "typeId": "fdf5-89b6-e62e-570f"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Seti the Kinslayer - Spear of Anubis Heavy Cruiser",
+        "id": "6738-717d-0414-0401",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Group", "id": "4b46-b5be-1970-e98d", "hidden": false, "primary": false, "targetId": "default-category"},
+          {"name": "Hero", "id": "6bad-840c-4c76-cd37", "hidden": false, "primary": false, "targetId": "3929-5fb7-5f98-37ea"},
+          {"name": "Medium Groups", "id": "8173-b72e-5ab7-2d1c", "hidden": false, "primary": true, "targetId": "e555-ff57-c478-18cd"}
+        ],
+        "constraints": [{"id": "61f6-0b84-f14b-d49e", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "6738-717d-0414-0401",
+                "childName": "Nefertem of the Dawn - Invisible Light Heavy Destroyer",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              },
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+              {
+                "childId": "8eb8-9887-6480-9a59",
+                "childName": "Unique ships already in fleet",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Seti the Kinslayer - Spear of Anubis Heavy Cruiser",
+            "id": "a9fb-b0f1-3990-1332",
+            "hidden": false,
+            "import": true,
+            "publicationId": "c835-461f-ea00-a841",
+            "type": "model",
+            "categoryLinks": [{"name": "Medium Ship", "id": "ce13-7bab-b69f-67b5", "hidden": false, "primary": true, "targetId": "53c3-afc0-63ef-413a"}],
+            "constraints": [
+              {"id": "75b8-a5a7-c176-1bee", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "2136-ae5f-e016-53f9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 170}],
+            "entryLinks": [
+              {
+                "name": "Ancient Thermal Lance Cannon",
+                "id": "c094-e2d3-6abf-c6b6",
+                "hidden": false,
+                "import": true,
+                "targetId": "3e70-9930-d732-4ae9",
+                "type": "selectionEntry"
+              },
+              {"name": "Dropships", "id": "3054-2a74-b681-6bde", "hidden": false, "import": true, "targetId": "ae0d-7916-f9ff-1e19", "type": "selectionEntry"},
+              {"name": "Torpedoes", "id": "574d-c9d0-bfb3-7099", "hidden": false, "import": true, "targetId": "e35f-604f-3e00-11a4", "type": "selectionEntry"}
+            ],
+            "infoLinks": [
+              {"name": "Hero", "id": "ebc2-6c3d-2de5-0be7", "hidden": false, "targetId": "f945-e19c-c8bb-1c6a", "type": "rule"},
+              {"name": "Shield-X", "id": "d87b-7dd9-ab49-d32e", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
+              {"name": "Unique", "id": "b6cd-397f-541a-e78f", "hidden": false, "targetId": "3f45-7047-464a-3be4", "type": "rule"},
+              {"name": "Seti Alpha Strike", "id": "4f0b-3650-adc1-da1e", "hidden": false, "targetId": "a72b-7fb0-3b59-4926", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Seti the Kinslayer - Spear of Anubis",
+                "id": "43cd-c856-9e0a-139d",
+                "hidden": false,
+                "publicationId": "c835-461f-ea00-a841",
+                "typeId": "8a2d-efd5-4b60-f4fa",
+                "typeName": "Ship",
+                "characteristics": [
+                  {"name": "Thrust", "$text": "8\"", "typeId": "d821-4294-3117-e8a6"},
+                  {"name": "Scan", "$text": "12\"", "typeId": "960a-5d0e-18c5-4310"},
+                  {"name": "Sig", "$text": "6\"", "typeId": "4feb-14c2-b1f1-9fa5"},
+                  {"name": "Hull", "$text": "11", "typeId": "5253-be1d-917b-17d9"},
+                  {"name": "ES", "$text": "5+", "typeId": "42ae-03c9-d0ff-61da"},
+                  {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
+                  {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
+                  {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
+                  {"name": "Special", "$text": "Hero, Shield-4+, Unique, Seti Alpha Strike", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -6195,6 +6300,41 @@
           }
         ]
       },
+      {
+        "name": "Ancient Thermal Lance Cannon",
+        "id": "3e70-9930-d732-4ae9",
+        "collective": true,
+        "comment": "FN 3/2+/1/E Bl-1 BT-1 Crit-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "3dc3-b1e0-c82e-8dcd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "212f-cf38-4043-8520", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Bloom-X", "id": "276e-941e-9dd7-09b1", "hidden": false, "targetId": "a944-3ee8-9a6c-6440", "type": "rule"},
+          {"name": "Burnthrough-X", "id": "9eb7-a289-d88d-e8c9", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
+          {"name": "Critical-X", "id": "cf8b-a22d-4193-f0c6", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Ancient Thermal Lance Cannon",
+            "id": "8275-bbe9-874b-2ea1",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Bloom-1, Burnthrough-1, Critical-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
       {"name": "----- Load -----", "id": "3a59-181d-838a-47f8", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Bulk Landers",
@@ -6262,6 +6402,29 @@
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
             "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Dropships",
+        "id": "ae0d-7916-f9ff-1e19",
+        "collective": true,
+        "comment": "2 L-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "ef17-5100-6ba4-50a9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "f36b-de1f-29f2-f377", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Dropships",
+            "id": "3554-b265-8712-5c43",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-2", "typeId": "d3be-1a27-21ac-fb65"}]
           }
         ]
       },
@@ -6377,6 +6540,30 @@
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
             "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Torpedoes",
+        "id": "e35f-604f-3e00-11a4",
+        "collective": true,
+        "comment": "2 L-4",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "b3c5-fc34-3810-3fb8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "6bc2-cfda-1072-0138", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Limited-X", "id": "a543-4c4a-68b3-3344", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Torpedoes",
+            "id": "e5d7-e0aa-5c42-f1b1",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Limited-4", "typeId": "d3be-1a27-21ac-fb65"}]
           }
         ]
       },
