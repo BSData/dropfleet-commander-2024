@@ -126,14 +126,7 @@
       {"name": "Newton Kill-Sats", "id": "3ae6-f775-c050-ed05", "hidden": false, "import": true, "targetId": "4f9e-0707-6eb0-18bc", "type": "selectionEntry"},
       {"name": "Seneca Detonators", "id": "9c51-bfd2-37fa-77e9", "hidden": false, "import": true, "targetId": "16f6-5b61-f30c-2f2b", "type": "selectionEntry"},
       {"name": "Munifex Corvettes", "id": "4fd7-66fd-bf2b-e616", "hidden": false, "import": true, "targetId": "594c-69c3-4325-d5d8", "type": "selectionEntry"},
-      {
-        "name": "Pungari Thresher",
-        "id": "26a4-2da1-3354-24b5",
-        "hidden": false,
-        "import": true,
-        "targetId": "1fd6-31e0-548c-cc1e",
-        "type": "selectionEntry"
-      },
+      {"name": "Pungari Thresher", "id": "26a4-2da1-3354-24b5", "hidden": false, "import": true, "targetId": "1fd6-31e0-548c-cc1e", "type": "selectionEntry"},
       {"name": "Hyperyacht Aurorum", "id": "d954-aae0-d8d9-c1cc", "hidden": false, "import": true, "targetId": "f6dd-dee6-9cfb-43b4", "type": "selectionEntry"},
       {"name": "Palatine", "id": "2ced-801b-e9dd-f459", "hidden": false, "import": true, "targetId": "39f3-e983-5400-5b03", "type": "selectionEntry"},
       {"name": "Small Space Station", "id": "c413-8703-47af-b36d", "hidden": false, "import": true, "targetId": "914b-3a7a-039e-34df", "type": "selectionEntry"},
@@ -231,7 +224,7 @@
       {
         "name": "Telescope Token",
         "id": "5e41-e47d-2eee-9f6d",
-        "description": "When you assign weapons to a Group that has a Telescope token, you may remove the token. If you do, one of the Group's Weapon Systems lowers the result required to score a critical against that Group by 1 for that attack (so a weapon that would crit on a 5+ crits on a 4+ instead).\nTelescope tokens placed by this Ship persist between rounds and are only removed when this Ship would place another Telescope token or when a Ship with a Telescope token goes on the Silent Running order.",
+        "description": "When you assign weapons a Group that has a Telescope token, you may remove the token. If you do, one of the Group's Weapon Systems lowers the result required to score a critical against that Group by 1 for that attack (so a weapon that would crit on a 5+ crits on a 4+ instead).\nUnused Telescope tokens placed by this Ship persist between rounds and are only removed when this Ship would place another Telescope token or when a Ship with a Telescope token goes on the Silent Running order.",
         "hidden": false
       },
       {
@@ -2421,6 +2414,57 @@
         "constraints": [{"id": "963c-abae-28d2-704b", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}],
         "modifiers": [
           {
+            "field": "963c-abae-28d2-704b",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "3fda-65f2-6cc3-ee33",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "963c-abae-28d2-704b",
+            "type": "set",
+            "value": 3,
+            "conditions": [
+              {
+                "childId": "c6ef-6271-e246-47a8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "963c-abae-28d2-704b",
+            "type": "set",
+            "value": 4,
+            "conditions": [
+              {
+                "childId": "d410-4aa8-c469-064b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
             "field": "hidden",
             "type": "set",
             "value": true,
@@ -2542,57 +2586,6 @@
                 "shared": true,
                 "type": "equalTo",
                 "value": 0
-              }
-            ]
-          },
-          {
-            "field": "963c-abae-28d2-704b",
-            "type": "set",
-            "value": 2,
-            "conditions": [
-              {
-                "childId": "3fda-65f2-6cc3-ee33",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "963c-abae-28d2-704b",
-            "type": "set",
-            "value": 3,
-            "conditions": [
-              {
-                "childId": "c6ef-6271-e246-47a8",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "963c-abae-28d2-704b",
-            "type": "set",
-            "value": 4,
-            "conditions": [
-              {
-                "childId": "d410-4aa8-c469-064b",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
               }
             ]
           }
@@ -3026,6 +3019,57 @@
         "constraints": [{"id": "dbdd-2192-ddcb-67cb", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}],
         "modifiers": [
           {
+            "field": "dbdd-2192-ddcb-67cb",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "3fda-65f2-6cc3-ee33",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "dbdd-2192-ddcb-67cb",
+            "type": "set",
+            "value": 3,
+            "conditions": [
+              {
+                "childId": "c6ef-6271-e246-47a8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "dbdd-2192-ddcb-67cb",
+            "type": "set",
+            "value": 4,
+            "conditions": [
+              {
+                "childId": "d410-4aa8-c469-064b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
             "field": "hidden",
             "type": "set",
             "value": true,
@@ -3149,57 +3193,6 @@
                 "value": 0
               }
             ]
-          },
-          {
-            "field": "dbdd-2192-ddcb-67cb",
-            "type": "set",
-            "value": 2,
-            "conditions": [
-              {
-                "childId": "3fda-65f2-6cc3-ee33",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "dbdd-2192-ddcb-67cb",
-            "type": "set",
-            "value": 3,
-            "conditions": [
-              {
-                "childId": "c6ef-6271-e246-47a8",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "dbdd-2192-ddcb-67cb",
-            "type": "set",
-            "value": 4,
-            "conditions": [
-              {
-                "childId": "d410-4aa8-c469-064b",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
           }
         ],
         "selectionEntries": [
@@ -3220,9 +3213,9 @@
             "entryLinks": [{"name": "Fighters & Bombers", "id": "b90d-b97b-2c4d-749e", "hidden": false, "import": true, "targetId": "39f8-a1dd-2c1a-7283", "type": "selectionEntry"}],
             "infoLinks": [
               {"name": "Rare", "id": "a185-81d6-59fc-5e0d", "hidden": false, "targetId": "f7ad-85f9-39f4-7e10", "type": "rule"},
+              {"name": "Vanguard-X\"", "id": "ca34-7e0e-d9af-6cec", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"},
               {"name": "Repair Bay", "id": "6723-6931-7cd3-14c3", "hidden": false, "targetId": "2fc9-d1f9-059b-c3c1", "type": "rule"},
-              {"name": "Box Of Scraps", "id": "41d6-11ba-437b-9780", "hidden": false, "targetId": "6042-7b1a-9cc8-2cc6", "type": "rule"},
-              {"name": "Vanguard-X\"", "id": "ca34-7e0e-d9af-6cec", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"}
+              {"name": "Box Of Scraps", "id": "41d6-11ba-437b-9780", "hidden": false, "targetId": "6042-7b1a-9cc8-2cc6", "type": "rule"}
             ],
             "profiles": [
               {
@@ -3242,7 +3235,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Rare, Repair Bay, Box of Scraps, Vanguard-3\"", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Rare, Vanguard-3\", Repair Bay, Box Of Scraps", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -3296,8 +3289,8 @@
               }
             ],
             "infoLinks": [
-              {"name": "SWACS", "id": "970e-5533-3b36-f5b7", "hidden": false, "targetId": "74c2-9532-b423-0407", "type": "rule"},
-              {"name": "Vanguard-X\"", "id": "babb-93f5-d06a-1888", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"}
+              {"name": "Vanguard-X\"", "id": "babb-93f5-d06a-1888", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"},
+              {"name": "SWACS", "id": "970e-5533-3b36-f5b7", "hidden": false, "targetId": "74c2-9532-b423-0407", "type": "rule"}
             ],
             "profiles": [
               {
@@ -3317,7 +3310,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "SWACS, Vanguard-3\"", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Vanguard-3\", SWACS", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -3426,7 +3419,6 @@
                 "id": "32e2-9148-bd62-6bb8",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
                 "targetId": "34b7-ccf3-5557-02b1",
                 "type": "selectionEntry"
               }
@@ -3483,15 +3475,7 @@
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 122}],
             "entryLinks": [
-              {
-                "name": "NC-16 Missile Turret Pair",
-                "id": "8082-9de7-a28b-3046",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "targetId": "f70e-df51-4d85-29f9",
-                "type": "selectionEntry"
-              }
+              {"name": "NC-16 Missile Turret Pair", "id": "8082-9de7-a28b-3046", "hidden": false, "import": true, "targetId": "f70e-df51-4d85-29f9", "type": "selectionEntry"}
             ],
             "infoLinks": [{"name": "Feature Carrier-1", "id": "6a53-e06a-28fe-fd1e", "hidden": false, "targetId": "59cd-63ef-44ed-72aa", "type": "rule"}],
             "profiles": [
@@ -3822,7 +3806,6 @@
           {
             "name": "Cruiser",
             "id": "f726-98ba-5a73-25cd",
-            "collective": false,
             "hidden": false,
             "import": true,
             "page": 21,
@@ -4040,16 +4023,7 @@
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 35}],
             "entryLinks": [
-              {
-                "name": "Dropships",
-                "id": "f810-ef5f-a156-610d",
-                "collective": true,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "targetId": "03d1-f9cd-4d9d-f991",
-                "type": "selectionEntry"
-              },
+              {"name": "Dropships", "id": "f810-ef5f-a156-610d", "hidden": false, "import": true, "sortIndex": 1, "targetId": "03d1-f9cd-4d9d-f991", "type": "selectionEntry"},
               {
                 "name": "Frigate Systems",
                 "id": "73fc-3307-cc30-4b1e",
@@ -4293,6 +4267,57 @@
         "constraints": [{"id": "be2f-5db1-9309-e8a7", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}],
         "modifiers": [
           {
+            "field": "be2f-5db1-9309-e8a7",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "3fda-65f2-6cc3-ee33",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "be2f-5db1-9309-e8a7",
+            "type": "set",
+            "value": 3,
+            "conditions": [
+              {
+                "childId": "c6ef-6271-e246-47a8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "be2f-5db1-9309-e8a7",
+            "type": "set",
+            "value": 4,
+            "conditions": [
+              {
+                "childId": "d410-4aa8-c469-064b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
             "field": "hidden",
             "type": "set",
             "value": true,
@@ -4414,57 +4439,6 @@
                 "shared": true,
                 "type": "equalTo",
                 "value": 0
-              }
-            ]
-          },
-          {
-            "field": "be2f-5db1-9309-e8a7",
-            "type": "set",
-            "value": 2,
-            "conditions": [
-              {
-                "childId": "3fda-65f2-6cc3-ee33",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "be2f-5db1-9309-e8a7",
-            "type": "set",
-            "value": 3,
-            "conditions": [
-              {
-                "childId": "c6ef-6271-e246-47a8",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "be2f-5db1-9309-e8a7",
-            "type": "set",
-            "value": 4,
-            "conditions": [
-              {
-                "childId": "d410-4aa8-c469-064b",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
               }
             ]
           }
@@ -4634,6 +4608,57 @@
         "constraints": [{"id": "c3c3-d173-961b-45ff", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}],
         "modifiers": [
           {
+            "field": "c3c3-d173-961b-45ff",
+            "type": "set",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "3fda-65f2-6cc3-ee33",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "c3c3-d173-961b-45ff",
+            "type": "set",
+            "value": 3,
+            "conditions": [
+              {
+                "childId": "c6ef-6271-e246-47a8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "c3c3-d173-961b-45ff",
+            "type": "set",
+            "value": 4,
+            "conditions": [
+              {
+                "childId": "d410-4aa8-c469-064b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
             "field": "hidden",
             "type": "set",
             "value": true,
@@ -4755,57 +4780,6 @@
                 "shared": true,
                 "type": "equalTo",
                 "value": 0
-              }
-            ]
-          },
-          {
-            "field": "c3c3-d173-961b-45ff",
-            "type": "set",
-            "value": 2,
-            "conditions": [
-              {
-                "childId": "3fda-65f2-6cc3-ee33",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "c3c3-d173-961b-45ff",
-            "type": "set",
-            "value": 3,
-            "conditions": [
-              {
-                "childId": "c6ef-6271-e246-47a8",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
-              }
-            ]
-          },
-          {
-            "field": "c3c3-d173-961b-45ff",
-            "type": "set",
-            "value": 4,
-            "conditions": [
-              {
-                "childId": "d410-4aa8-c469-064b",
-                "field": "selections",
-                "includeChildForces": true,
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "atLeast",
-                "value": 1
               }
             ]
           }
@@ -5247,7 +5221,6 @@
           {"id": "ab5f-e6ae-6a0c-ae51-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "ab5f-e6ae-6a0c-ae51-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Critical-X", "id": "17d4-8bc9-20e5-1ef2", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
           {"name": "Penetrator", "id": "432c-4e75-457c-f4fc", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"}
@@ -5282,7 +5255,6 @@
           {"id": "c985-c489-601b-1a54-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
           {"id": "c985-c489-601b-1a54-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Critical-X", "id": "0ae5-7bb3-c0e8-1cbe", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
           {"name": "Penetrator", "id": "e28f-9e36-241e-e3c0", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
@@ -5318,7 +5290,6 @@
           {"id": "fbf0-8273-bdb9-cfc2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "fbf0-8273-bdb9-cfc2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Critical-X", "id": "8783-21b0-8692-a4bd", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
           {"name": "Penetrator", "id": "47da-042e-2873-f981", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
@@ -5555,7 +5526,7 @@
         "name": "HF-8 Clearance Laser",
         "id": "159e-0298-8da7-34e8",
         "collective": true,
-        "comment": "F 4/*/2/E Alt-1 BT-1 Cal-L/M Maul // F 6/3+/0/E Alt-1 AW",
+        "comment": "F 4/*/2/E Alt-1 BT-1 Cal-L/M Maul || F 6/3+/0/E Alt-1 AW",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5615,7 +5586,6 @@
           {"id": "b8e3-3f19-d2fe-545e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
           {"id": "002c-4324-7a0b-b56c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Fusillade-X", "id": "74c5-e465-5ac9-9570", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
           {"name": "Overcharge", "id": "5b9b-4816-0254-d525", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
@@ -5652,7 +5622,6 @@
           {"id": "8486-5dec-c4fa-dd1d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
           {"id": "e8cc-c29a-8585-0174", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Overcharge", "id": "6b5a-5bd7-a4d4-efdb", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
           {"name": "Fusillade-X", "id": "5026-f58f-5a77-0def", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
@@ -5724,7 +5693,6 @@
           {"id": "0109-3ff4-349f-9f1f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "0109-3ff4-349f-9f1f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Fusillade-X", "id": "82e4-8aa5-526b-91e5", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
           {"name": "Low Power", "id": "bb53-2ce3-663a-98d9", "hidden": false, "targetId": "2851-2293-e346-839f", "type": "rule"}
@@ -5794,7 +5762,6 @@
           {"id": "631a-6630-ddfb-25dc", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "3ff9-95d0-b024-5f83", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Low Power", "id": "c10a-18fd-e1be-565b", "hidden": false, "targetId": "2851-2293-e346-839f", "type": "rule"},
           {"name": "Fusillade-X", "id": "0b85-d6db-f035-1e80", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"}
@@ -5829,7 +5796,6 @@
           {"id": "36fb-a070-afc2-bf5c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "36fb-a070-afc2-bf5c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [{"name": "Fusillade-X", "id": "50a8-1123-5cf7-896d", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"}],
         "profiles": [
           {
@@ -5929,7 +5895,6 @@
           {"id": "096d-d578-a2c4-85c9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "e82b-e855-205c-bdf6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Critical-X", "id": "6ab4-e068-1fbd-f388", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
           {"name": "Fusillade-X", "id": "56c3-6a15-279d-4c4a", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
@@ -5965,7 +5930,6 @@
           {"id": "ee2f-d051-92e7-9c09", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "69b8-eae0-8a82-a0f9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Critical-X", "id": "0a84-db84-101b-e4ed", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
           {"name": "Fusillade-X", "id": "b6d0-33b4-46a4-7e90", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
@@ -6360,7 +6324,6 @@
           {"id": "0c89-3401-38a1-ca33", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "4d75-4c54-4e28-0096", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Flash-X", "id": "7ee8-8c8a-804f-c944", "hidden": false, "targetId": "9e6d-bb41-7c8b-a3b6", "type": "rule"},
           {"name": "Focused", "id": "ebb7-8495-3497-ad43", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
@@ -6397,7 +6360,6 @@
           {"id": "7c10-bc03-9323-8b1e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "6a6c-cbe0-2713-ac16", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Flash-X", "id": "e69c-f4c9-84af-4b64", "hidden": false, "targetId": "9e6d-bb41-7c8b-a3b6", "type": "rule"},
           {"name": "Focused", "id": "8cd0-0aeb-be52-30cf", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
@@ -6556,7 +6518,6 @@
           {"id": "e672-7c4e-1a96-a821-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "e672-7c4e-1a96-a821-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Alt-X", "id": "829b-aae8-d183-2a60", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
           {"name": "Calibre-X", "id": "db85-e893-5c13-ff80", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"}
@@ -6591,7 +6552,6 @@
           {"id": "53a4-5eb3-9a53-6f09", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "c2fe-b04c-3f22-9faa", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [
           {"name": "Alt-X", "id": "030f-e114-b3e9-3615", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
           {"name": "Bombardment", "id": "97f3-0610-6af1-3228", "hidden": false, "targetId": "858c-a2ff-ed65-3e47", "type": "rule"},
@@ -6627,7 +6587,6 @@
           {"id": "8303-4885-464b-af18", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "3306-f8aa-29de-a164", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [{"name": "Critical-X", "id": "c028-1dcf-ea3d-5081", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"}],
         "profiles": [
           {
@@ -7078,7 +7037,6 @@
           {"id": "0eee-4077-cc38-512f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "0eee-4077-cc38-512f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "profiles": [
           {
             "name": "Bulk Landers",
@@ -7102,7 +7060,6 @@
           {"id": "4d03-6fd2-f63c-79ba", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "886a-d040-0bc8-7ec1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "profiles": [
           {
             "name": "Bulk Landers & Fire Ships",
@@ -7126,7 +7083,6 @@
           {"id": "bbeb-422a-b7e0-24f6-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "bbeb-422a-b7e0-24f6-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "profiles": [
           {
             "name": "Bulk Landers & Fire Ships",
@@ -7150,7 +7106,6 @@
           {"id": "e062-46e5-eeb0-0e12-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "e062-46e5-eeb0-0e12-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "profiles": [
           {
             "name": "Dropships",
@@ -7174,7 +7129,6 @@
           {"id": "8ff2-ba23-f1a2-49df-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "8ff2-ba23-f1a2-49df-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "profiles": [
           {
             "name": "Fighters & Bombers",
@@ -7198,7 +7152,6 @@
           {"id": "5381-e43e-cd67-4954-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "5381-e43e-cd67-4954-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "profiles": [
           {
             "name": "Fighters & Bombers",
@@ -7222,7 +7175,6 @@
           {"id": "a991-70dd-fbd4-c526-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "a991-70dd-fbd4-c526-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "profiles": [
           {
             "name": "Fighters & Bombers",
@@ -7246,7 +7198,6 @@
           {"id": "f4f2-db56-5fd5-970a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "b5fd-a329-6f3d-26b3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [{"name": "Alt-X", "id": "4178-b74c-e781-c4a8", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
         "profiles": [
           {
@@ -7271,7 +7222,6 @@
           {"id": "60e6-577b-8351-eee5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "18ae-053e-244d-b037", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [{"name": "Alt-X", "id": "589d-5087-b7bb-7df2", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
         "profiles": [
           {
@@ -7296,7 +7246,6 @@
           {"id": "99a8-b35c-a941-cf30-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "99a8-b35c-a941-cf30-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "profiles": [
           {
             "name": "Fire Ships",
@@ -7320,7 +7269,6 @@
           {"id": "ea3f-08ff-32ae-6b98-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "ea3f-08ff-32ae-6b98-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [{"name": "Limited-X", "id": "9ecf-d794-8922-bc3a", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
         "profiles": [
           {
@@ -7345,7 +7293,6 @@
           {"id": "ea83-a2c0-60e8-4e11-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "ea83-a2c0-60e8-4e11-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [{"name": "Limited-X", "id": "71e9-9700-1e7e-05a1", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
         "profiles": [
           {
@@ -7370,7 +7317,6 @@
           {"id": "8555-2d28-39eb-2c3e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "bcda-8d3d-b3eb-df95", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [{"name": "Limited-X", "id": "db07-233a-8fbd-5375", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
         "profiles": [
           {
@@ -7395,7 +7341,6 @@
           {"id": "fae6-8909-4256-412a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "fae6-8909-4256-412a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [{"name": "Limited-X", "id": "67fa-fc25-0b61-9265", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
         "profiles": [
           {
@@ -7420,7 +7365,6 @@
           {"id": "8ecf-a0f3-96e8-f9b9", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "ada7-9ce6-848b-0938", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
         "infoLinks": [{"name": "Limited-X", "id": "918e-24d7-b438-f294", "hidden": false, "targetId": "0c02-c41a-e1a2-882e", "type": "rule"}],
         "profiles": [
           {
