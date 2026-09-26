@@ -4,13 +4,12 @@
     "id": "9d0c-9d91-231b-cab6",
     "authorName": "John Kemp",
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
-    "battleScribeVersion": 2.03,
+    "battleScribeVersion": "2.03",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
-    "gameSystemRevision": 22,
+    "gameSystemRevision": 23,
     "library": false,
-    "revision": 32,
+    "revision": 33,
     "type": "catalogue",
-    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
       {"name": "Misc", "id": "1c77-28ea-5fb6-dc6f", "targetId": "1b65-4911-bd01-73aa", "type": "catalogue"},
       {"name": "Fleet Space Stations", "id": "1282-2cce-85a8-ebe4", "targetId": "7e9b-b6ba-2178-6eb5", "type": "catalogue"},
@@ -168,7 +167,7 @@
       {"name": "Worldstrider", "id": "c89c-f05d-d50a-b9fc", "hidden": false, "import": true, "targetId": "2fd9-6c83-a2ab-7cd5", "type": "selectionEntry"},
       {"name": "Launch Assets", "id": "cbd6-11ce-4156-d0c4", "hidden": false, "import": true, "targetId": "cc1b-9d8b-db2d-9d32", "type": "selectionEntry"}
     ],
-    "publications": [{"name": "Shaltari Combined Fleet Stats (260731)", "id": "fbb6-a765-5882-6bcb", "hidden": false, "shortName": "Shaltari Stats (260731)"}],
+    "publications": [{"name": "Shaltari Combined Fleet Stats (260925)", "id": "fbb6-a765-5882-6bcb", "hidden": false, "shortName": "Shaltari Stats (260925)"}],
     "sharedRules": [
       {
         "name": "Shield Booster",
@@ -2790,10 +2789,7 @@
             "import": true,
             "publicationId": "fbb6-a765-5882-6bcb",
             "type": "model",
-            "categoryLinks": [
-              {"name": "Medium Ship", "id": "54ae-8c8b-8a52-b657", "primary": true, "targetId": "53c3-afc0-63ef-413a"},
-              {"name": "Feature Carrier", "id": "745a-f93d-56a1-85fb", "primary": false, "targetId": "fe8e-9939-871d-6e43"}
-            ],
+            "categoryLinks": [{"name": "Medium Ship", "id": "54ae-8c8b-8a52-b657", "primary": true, "targetId": "53c3-afc0-63ef-413a"}],
             "constraints": [
               {"id": "1c8b-d6b9-ff10-fa94", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "eba1-b210-e890-0a6c", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
@@ -2855,10 +2851,7 @@
             "import": true,
             "publicationId": "fbb6-a765-5882-6bcb",
             "type": "model",
-            "categoryLinks": [
-              {"name": "Medium Ship", "id": "6a45-faa3-5a97-7683", "primary": true, "targetId": "53c3-afc0-63ef-413a"},
-              {"name": "Feature Carrier", "id": "5b4e-92ce-c359-3552", "primary": false, "targetId": "fe8e-9939-871d-6e43"}
-            ],
+            "categoryLinks": [{"name": "Medium Ship", "id": "6a45-faa3-5a97-7683", "primary": true, "targetId": "53c3-afc0-63ef-413a"}],
             "constraints": [
               {"id": "31b4-d4ef-1164-cbd8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e563-6467-fb51-7359", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}

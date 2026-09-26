@@ -4,13 +4,12 @@
     "id": "7edf-5b75-e318-f4ed",
     "authorName": "John Kemp",
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
-    "battleScribeVersion": 2.03,
+    "battleScribeVersion": "2.03",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
-    "gameSystemRevision": 22,
+    "gameSystemRevision": 23,
     "library": false,
-    "revision": 36,
+    "revision": 37,
     "type": "catalogue",
-    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
     "catalogueLinks": [
       {"name": "Misc", "id": "f86a-4bed-c096-781e", "targetId": "1b65-4911-bd01-73aa", "type": "catalogue"},
       {"name": "Fleet Space Stations", "id": "be4c-2910-f23a-8de4", "targetId": "7e9b-b6ba-2178-6eb5", "type": "catalogue"},
@@ -4824,7 +4823,7 @@
                   {"name": "KS", "$text": "6+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-2", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Detector, Monitor, Rare, Space Telescope", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Detector, Monitor, Rare, Space Telescope, Telescope Token", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
