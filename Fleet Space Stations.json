@@ -12,18 +12,6 @@
     "type": "catalogue",
     "publications": [{"name": "Fleet Space Stations (250828)", "id": "4be7-d555-8518-dd99", "hidden": false, "shortName": "Fleet Space Stations (250828)"}],
     "sharedRules": [
-      {
-        "name": "Station Turret Rack",
-        "id": "948f-7ca1-de52-166b",
-        "description": "When you attack with this weapon, roll once and apply the roll to all enemy Groups within range.",
-        "hidden": false
-      },
-      {
-        "name": "Station Turret Ring",
-        "id": "f2a6-4a86-f8e6-c8e6",
-        "description": "When you attack with this weapon, roll once and apply the roll to all enemy Groups within range.",
-        "hidden": false
-      },
       {"name": "Gate Node", "id": "9641-6e30-3c8e-a9ab", "description": "This Gatestation's Dropships may only be used while you control it.", "hidden": false},
       {
         "name": "Gravity Manipulator",
@@ -35,12 +23,6 @@
         "name": "Voidspace Anchor",
         "id": "9b37-61fe-6eac-8888",
         "description": "When an enemy Group within 6\" of this Space Station activates, that Group may only move up to half of its Thrust this activation regardless of selected Order.",
-        "hidden": false
-      },
-      {
-        "name": "Disintegrator Bank",
-        "id": "00a0-f924-fd56-2694",
-        "description": "Instead of the normal Arcs, Shaltari Shurikens have their own Arcs. A Shuriken has 5 Arcs, each 72 degrees. The easiest way to define these Arcs is to follow the lines of adjacent vertical vanes, measured from the flight stand as normal. Follow these arcs when attacking instead of the normal rules for Arcs.\nWhen you assign targets to this weapon, you may only use each Arc once.",
         "hidden": false
       },
       {
@@ -1216,6 +1198,7 @@
       {
         "name": "35-KL Quad Mass Driver",
         "id": "190a-2e9f-8a5a-511a",
+        "collective": true,
         "comment": "F/S/R 4/3+/2/C Bl-4 Foc",
         "hidden": false,
         "import": true,
@@ -1249,6 +1232,7 @@
       {
         "name": "9K-S Mass Driver",
         "id": "4f72-6e5c-6f6b-dcc9",
+        "collective": true,
         "comment": "[x2] F/S/R 4/2+/1/K",
         "hidden": false,
         "import": true,
@@ -1362,10 +1346,7 @@
           {"id": "75d4-a91a-9247-6727", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "16b4-3697-a23a-7d25", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [
-          {"name": "Volley-X", "id": "45e8-b227-5004-8a53", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"},
-          {"name": "Disintegrator Bank", "id": "97a8-0104-6712-ff42", "hidden": false, "targetId": "00a0-f924-fd56-2694", "type": "rule"}
-        ],
+        "infoLinks": [{"name": "Volley-X", "id": "45e8-b227-5004-8a53", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}],
         "profiles": [
           {
             "name": "Disintegrator Bank",
@@ -1381,6 +1362,14 @@
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Volley-5", "typeId": "1e8b-4801-6eb9-f278"}
             ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Disintegrator Bank",
+            "id": "00a0-f924-fd56-2694",
+            "description": "Instead of the normal Arcs, Shaltari Shurikens have their own Arcs. A Shuriken has 5 Arcs, each 72 degrees. The easiest way to define these Arcs is to follow the lines of adjacent vertical vanes, measured from the flight stand as normal. Follow these arcs when attacking instead of the normal rules for Arcs.\nWhen you assign targets to this weapon, you may only use each Arc once.",
+            "hidden": false
           }
         ]
       },
@@ -1465,6 +1454,7 @@
       {
         "name": "NC-16 Missiles",
         "id": "60b9-adc3-1c9e-c3d5",
+        "collective": true,
         "comment": "[x2] F/S/R 6/3+/1/K CA",
         "hidden": false,
         "import": true,
@@ -1608,10 +1598,7 @@
           {"id": "260f-6d5a-50bb-d788", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "3d01-8a06-ab26-40fd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [
-          {"name": "Close Action", "id": "e3ce-326a-d75f-5738", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-          {"name": "Station Turret Rack", "id": "0a54-bf67-ba6e-929a", "hidden": false, "targetId": "948f-7ca1-de52-166b", "type": "rule"}
-        ],
+        "infoLinks": [{"name": "Close Action", "id": "e3ce-326a-d75f-5738", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
         "profiles": [
           {
             "name": "Station Turret Rack",
@@ -1628,6 +1615,14 @@
               {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
+        ],
+        "rules": [
+          {
+            "name": "Station Turret Rack",
+            "id": "948f-7ca1-de52-166b",
+            "description": "When you attack with this weapon, roll once and apply the roll to all enemy Groups within range.",
+            "hidden": false
+          }
         ]
       },
       {
@@ -1642,10 +1637,7 @@
           {"id": "f8cb-bafe-b5cf-3869", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "38a2-2235-60c5-4b0f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [
-          {"name": "Close Action", "id": "e68f-d40b-2b65-5277", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-          {"name": "Station Turret Ring", "id": "4211-7ef3-fdba-bfa3", "hidden": false, "targetId": "f2a6-4a86-f8e6-c8e6", "type": "rule"}
-        ],
+        "infoLinks": [{"name": "Close Action", "id": "e68f-d40b-2b65-5277", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
         "profiles": [
           {
             "name": "Station Turret Ring",
@@ -1661,6 +1653,14 @@
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
             ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Station Turret Ring",
+            "id": "f2a6-4a86-f8e6-c8e6",
+            "description": "When you attack with this weapon, roll once and apply the roll to all enemy Groups within range.",
+            "hidden": false
           }
         ]
       },
@@ -1869,9 +1869,33 @@
             "type": "upgrade",
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 80}],
             "entryLinks": [
-              {"name": "35-KL Quad Mass Driver", "id": "cf4f-d58c-f968-7d22", "hidden": false, "import": true, "targetId": "190a-2e9f-8a5a-511a", "type": "selectionEntry"},
-              {"name": "9K-S Mass Driver", "id": "2c1c-17c4-69c0-ec9d", "hidden": false, "import": true, "targetId": "4f72-6e5c-6f6b-dcc9", "type": "selectionEntry"},
-              {"name": "NC-16 Missiles", "id": "6fa1-5e00-0aaf-f231", "hidden": false, "import": true, "targetId": "60b9-adc3-1c9e-c3d5", "type": "selectionEntry"}
+              {
+                "name": "35-KL Quad Mass Driver",
+                "id": "cf4f-d58c-f968-7d22",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "190a-2e9f-8a5a-511a",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "9K-S Mass Driver",
+                "id": "2c1c-17c4-69c0-ec9d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "4f72-6e5c-6f6b-dcc9",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "NC-16 Missiles",
+                "id": "6fa1-5e00-0aaf-f231",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "60b9-adc3-1c9e-c3d5",
+                "type": "selectionEntry"
+              }
             ]
           }
         ]
@@ -2051,7 +2075,7 @@
             "id": "5df2-c9f8-bc14-f277",
             "hidden": false,
             "import": true,
-            "sortIndex": 2,
+            "sortIndex": 1,
             "type": "upgrade",
             "constraints": [{"id": "4e90-b831-e9c7-a401", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
             "profiles": [
@@ -2072,7 +2096,7 @@
             "id": "aba5-849e-903d-8067",
             "hidden": false,
             "import": true,
-            "sortIndex": 1,
+            "sortIndex": 2,
             "type": "upgrade",
             "constraints": [{"id": "dc59-7ad4-3653-f952", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
             "profiles": [
