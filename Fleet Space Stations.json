@@ -8,7 +8,7 @@
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
     "gameSystemRevision": 23,
     "library": true,
-    "revision": 9,
+    "revision": 10,
     "type": "catalogue",
     "publications": [{"name": "Fleet Space Stations (250828)", "id": "4be7-d555-8518-dd99", "hidden": false, "shortName": "Fleet Space Stations (250828)"}],
     "sharedRules": [
@@ -72,89 +72,102 @@
       {"name": "----- Groups -----", "id": "16ef-dd1b-c106-a491", "hidden": true, "import": false, "type": "upgrade"},
       {
         "name": "Small Space Station",
-        "id": "914b-3a7a-039e-34df",
+        "id": "c022-3b3d-0eab-c55a",
         "hidden": false,
         "import": true,
-        "page": 2,
-        "publicationId": "4be7-d555-8518-dd99",
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "ba08-cc06-67e0-7e60", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 30}],
-        "entryLinks": [
-          {
-            "name": "Upgrades",
-            "id": "1fd7-eaca-d5ca-cae5",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "36e8-0b5d-d2bd-9075",
-            "type": "selectionEntryGroup",
-            "constraints": [{"id": "d791-5ca0-da18-b3d7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
-          },
-          {
-            "name": "Features",
-            "id": "b0ce-e443-77f1-adcd",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "d798-ad43-7da6-7ad1",
-            "type": "selectionEntryGroup",
-            "constraints": [
-              {"id": "e80a-b987-ae31-7aa4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-              {"id": "e80a-b987-ae31-7aa4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
-            ]
-          }
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "bcda-efda-2c6a-b0f4", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Small Space Station",
-            "id": "7c20-66da-3b01-ec4d",
+            "id": "914b-3a7a-039e-34df",
             "hidden": false,
+            "import": true,
             "page": 2,
             "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "10", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
-            ]
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Armaments",
-            "id": "22dd-4737-bb7a-94e0",
-            "flatten": false,
-            "hidden": false,
-            "sortIndex": 1,
+            "type": "model",
             "constraints": [
-              {"id": "c924-fb74-1532-797f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "c924-fb74-1532-797f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+              {"id": "fad7-e282-e2a3-ae65", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "2aa7-7bd0-47aa-424a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 30}],
             "entryLinks": [
               {
-                "name": "Weapon Systems",
-                "id": "325f-7290-c0fd-2e46",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "targetId": "ab77-bbd9-74cd-0e9b",
-                "type": "selectionEntryGroup"
-              },
-              {
-                "name": "Structures",
-                "id": "c4b6-76c4-9cd9-da93",
+                "name": "Upgrades",
+                "id": "1fd7-eaca-d5ca-cae5",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
-                "targetId": "6fb3-4607-f12c-3fb0",
-                "type": "selectionEntryGroup"
+                "targetId": "36e8-0b5d-d2bd-9075",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "d791-5ca0-da18-b3d7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Features",
+                "id": "b0ce-e443-77f1-adcd",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "e80a-b987-ae31-7aa4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "e80a-b987-ae31-7aa4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Small Space Station",
+                "id": "7c20-66da-3b01-ec4d",
+                "hidden": false,
+                "page": 2,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "10", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Armaments",
+                "id": "22dd-4737-bb7a-94e0",
+                "flatten": false,
+                "hidden": false,
+                "sortIndex": 1,
+                "constraints": [
+                  {"id": "c924-fb74-1532-797f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "c924-fb74-1532-797f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Weapon Systems",
+                    "id": "325f-7290-c0fd-2e46",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "ab77-bbd9-74cd-0e9b",
+                    "type": "selectionEntryGroup"
+                  },
+                  {
+                    "name": "Structures",
+                    "id": "c4b6-76c4-9cd9-da93",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "6fb3-4607-f12c-3fb0",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
               }
             ]
           }
@@ -162,89 +175,102 @@
       },
       {
         "name": "Medium Space Station",
-        "id": "218b-faf8-ffab-2cd5",
+        "id": "43f5-c468-ff5e-b17c",
         "hidden": false,
         "import": true,
-        "page": 2,
-        "publicationId": "4be7-d555-8518-dd99",
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "0c91-f4df-e8d3-9f64", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 55}],
-        "entryLinks": [
-          {
-            "name": "Upgrades",
-            "id": "4737-6467-6944-f2a3",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "36e8-0b5d-d2bd-9075",
-            "type": "selectionEntryGroup",
-            "constraints": [{"id": "ee83-542f-4683-8b3a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
-          },
-          {
-            "name": "Features",
-            "id": "ba7b-d6dd-ee25-d92c",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "d798-ad43-7da6-7ad1",
-            "type": "selectionEntryGroup",
-            "constraints": [
-              {"id": "7f03-2af4-ec82-60a7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 3},
-              {"id": "7f03-2af4-ec82-60a7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 3}
-            ]
-          }
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "6079-b9e9-d438-89d9", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Medium Space Station",
-            "id": "79d8-60c0-e626-91fa",
+            "id": "218b-faf8-ffab-2cd5",
             "hidden": false,
+            "import": true,
             "page": 2,
             "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "15", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
-            ]
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Armaments",
-            "id": "d2af-3617-c19a-e952",
-            "flatten": false,
-            "hidden": false,
-            "sortIndex": 1,
+            "type": "model",
             "constraints": [
-              {"id": "ba44-0c15-d67c-4e44-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-              {"id": "ba44-0c15-d67c-4e44-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+              {"id": "b586-9611-a596-3f42", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "1052-50ae-d046-f808", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 55}],
             "entryLinks": [
               {
-                "name": "Weapon Systems",
-                "id": "1365-8657-d380-c989",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "targetId": "ab77-bbd9-74cd-0e9b",
-                "type": "selectionEntryGroup"
-              },
-              {
-                "name": "Structures",
-                "id": "554d-8899-6cac-e577",
+                "name": "Upgrades",
+                "id": "4737-6467-6944-f2a3",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
-                "targetId": "6fb3-4607-f12c-3fb0",
-                "type": "selectionEntryGroup"
+                "targetId": "36e8-0b5d-d2bd-9075",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "ee83-542f-4683-8b3a", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Features",
+                "id": "ba7b-d6dd-ee25-d92c",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "7f03-2af4-ec82-60a7-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 3},
+                  {"id": "7f03-2af4-ec82-60a7-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 3}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Medium Space Station",
+                "id": "79d8-60c0-e626-91fa",
+                "hidden": false,
+                "page": 2,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "15", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Armaments",
+                "id": "d2af-3617-c19a-e952",
+                "flatten": false,
+                "hidden": false,
+                "sortIndex": 1,
+                "constraints": [
+                  {"id": "ba44-0c15-d67c-4e44-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "ba44-0c15-d67c-4e44-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Weapon Systems",
+                    "id": "1365-8657-d380-c989",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "ab77-bbd9-74cd-0e9b",
+                    "type": "selectionEntryGroup"
+                  },
+                  {
+                    "name": "Structures",
+                    "id": "554d-8899-6cac-e577",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "6fb3-4607-f12c-3fb0",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
               }
             ]
           }
@@ -252,89 +278,102 @@
       },
       {
         "name": "Large Space Station",
-        "id": "6f26-fe48-4135-7ed3",
+        "id": "ae82-7841-7576-73a6",
         "hidden": false,
         "import": true,
-        "page": 2,
-        "publicationId": "4be7-d555-8518-dd99",
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "39f8-ab5b-2d3f-feee", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 90}],
-        "entryLinks": [
-          {
-            "name": "Upgrades",
-            "id": "60d9-3ca6-820c-9d07",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "36e8-0b5d-d2bd-9075",
-            "type": "selectionEntryGroup",
-            "constraints": [{"id": "9bd7-44db-1b6d-99d5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}]
-          },
-          {
-            "name": "Features",
-            "id": "9e82-1429-15af-e978",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 3,
-            "targetId": "d798-ad43-7da6-7ad1",
-            "type": "selectionEntryGroup",
-            "constraints": [
-              {"id": "df27-ceb9-d82c-9a5c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 4},
-              {"id": "df27-ceb9-d82c-9a5c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 4}
-            ]
-          }
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "8b43-84cb-4c0e-f86d", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Large Space Station",
-            "id": "4ebc-defc-74f5-0531",
+            "id": "6f26-fe48-4135-7ed3",
             "hidden": false,
+            "import": true,
             "page": 2,
             "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "8\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "25", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
-            ]
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Armaments",
-            "id": "ba98-8328-4015-7955",
-            "flatten": false,
-            "hidden": false,
-            "sortIndex": 1,
+            "type": "model",
             "constraints": [
-              {"id": "3b60-6fd3-ae88-ffee-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 3},
-              {"id": "3b60-6fd3-ae88-ffee-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 3}
+              {"id": "4396-826d-86ed-1ac6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "c5bc-4e9d-5d20-a922", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 90}],
             "entryLinks": [
               {
-                "name": "Weapon Systems",
-                "id": "255f-1ba2-1f8b-f1b9",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "targetId": "ab77-bbd9-74cd-0e9b",
-                "type": "selectionEntryGroup"
-              },
-              {
-                "name": "Structures",
-                "id": "08db-ddd1-070c-b94a",
+                "name": "Upgrades",
+                "id": "60d9-3ca6-820c-9d07",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
-                "targetId": "6fb3-4607-f12c-3fb0",
-                "type": "selectionEntryGroup"
+                "targetId": "36e8-0b5d-d2bd-9075",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "9bd7-44db-1b6d-99d5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}]
+              },
+              {
+                "name": "Features",
+                "id": "9e82-1429-15af-e978",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "df27-ceb9-d82c-9a5c-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 4},
+                  {"id": "df27-ceb9-d82c-9a5c-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 4}
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Large Space Station",
+                "id": "4ebc-defc-74f5-0531",
+                "hidden": false,
+                "page": 2,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "8\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "25", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Armaments",
+                "id": "ba98-8328-4015-7955",
+                "flatten": false,
+                "hidden": false,
+                "sortIndex": 1,
+                "constraints": [
+                  {"id": "3b60-6fd3-ae88-ffee-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 3},
+                  {"id": "3b60-6fd3-ae88-ffee-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 3}
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Weapon Systems",
+                    "id": "255f-1ba2-1f8b-f1b9",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 1,
+                    "targetId": "ab77-bbd9-74cd-0e9b",
+                    "type": "selectionEntryGroup"
+                  },
+                  {
+                    "name": "Structures",
+                    "id": "08db-ddd1-070c-b94a",
+                    "hidden": false,
+                    "import": true,
+                    "sortIndex": 2,
+                    "targetId": "6fb3-4607-f12c-3fb0",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
               }
             ]
           }
@@ -342,625 +381,833 @@
       },
       {
         "name": "Defence Hangar",
-        "id": "68e9-14ab-4493-0656",
+        "id": "a8cd-272d-c6a5-497c",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "9e63-9785-576c-a824", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 50}],
-        "entryLinks": [{"name": "Fighters & Bombers", "id": "da5d-c864-2182-4ca3", "hidden": false, "import": true, "targetId": "a06b-c80d-42c3-286a", "type": "selectionEntry"}],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "0060-5875-dd8b-f817", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Defence Hangar",
-            "id": "c6e0-e772-e5c6-7f29",
+            "id": "68e9-14ab-4493-0656",
             "hidden": false,
-            "page": 4,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "8", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "5+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "edce-b5da-1b7f-5dc2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "2b87-22dd-0689-c68d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 50}],
+            "entryLinks": [{"name": "Fighters & Bombers", "id": "da5d-c864-2182-4ca3", "hidden": false, "import": true, "targetId": "a06b-c80d-42c3-286a", "type": "selectionEntry"}],
+            "profiles": [
+              {
+                "name": "Defence Hangar",
+                "id": "c6e0-e772-e5c6-7f29",
+                "hidden": false,
+                "page": 4,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "8", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "5+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Munitions Platform",
-        "id": "6b40-0777-a810-a170",
+        "id": "3d47-3433-f76c-c6fb",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "a1e4-6078-1c4a-f719", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 60}],
-        "entryLinks": [{"name": "Medium Torpedo", "id": "fec4-c698-2be7-a1f8", "hidden": false, "import": true, "targetId": "1688-c1bb-dcd2-d64b", "type": "selectionEntry"}],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "48ae-7056-a873-a3ce", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Munitions Platform",
-            "id": "d3a7-2840-7692-a2af",
+            "id": "6b40-0777-a810-a170",
             "hidden": false,
-            "page": 4,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "8", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "5+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "9624-ae0b-dd19-471b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "cd88-655a-fae9-13b3", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 60}],
+            "entryLinks": [{"name": "Medium Torpedo", "id": "fec4-c698-2be7-a1f8", "hidden": false, "import": true, "targetId": "1688-c1bb-dcd2-d64b", "type": "selectionEntry"}],
+            "profiles": [
+              {
+                "name": "Munitions Platform",
+                "id": "d3a7-2840-7692-a2af",
+                "hidden": false,
+                "page": 4,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "8", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "5+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Ephyra",
-        "id": "2d1a-7c81-0ced-b810",
+        "id": "1cee-9ac0-3792-71eb",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "d51e-0a2f-514e-9bbf", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
-        "entryLinks": [{"name": "Oculus Ward", "id": "d6c0-aea1-067d-d53d", "hidden": false, "import": true, "targetId": "5197-2c58-bc16-6637", "type": "selectionEntry"}],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "3ab8-a804-7a65-bd63", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Ephyra",
-            "id": "5cab-72e3-e9ed-be1c",
+            "id": "2d1a-7c81-0ced-b810",
             "hidden": false,
-            "page": 5,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "8", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "ce27-6e01-9fd5-1722", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "5886-2b0f-2bb3-56b4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
+            "entryLinks": [{"name": "Oculus Ward", "id": "d6c0-aea1-067d-d53d", "hidden": false, "import": true, "targetId": "5197-2c58-bc16-6637", "type": "selectionEntry"}],
+            "profiles": [
+              {
+                "name": "Ephyra",
+                "id": "5cab-72e3-e9ed-be1c",
+                "hidden": false,
+                "page": 5,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "8", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Nematocyst",
-        "id": "fec6-51a8-6e61-26f1",
+        "id": "b118-c57b-1e0e-def1",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "1d12-b4d2-dd1c-cce6", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
-        "entryLinks": [{"name": "Volcano Lance", "id": "31e4-b091-f7c6-0bfe", "hidden": false, "import": true, "targetId": "b04a-04df-a1ae-10d6", "type": "selectionEntry"}],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "d0e1-1582-459a-013a", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Nematocyst",
-            "id": "ce77-8fda-cd03-8633",
+            "id": "fec6-51a8-6e61-26f1",
             "hidden": false,
-            "page": 5,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "8", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "dbdd-7e05-2c2b-0e85", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "219f-8b84-565a-fddd", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
+            "entryLinks": [{"name": "Volcano Lance", "id": "31e4-b091-f7c6-0bfe", "hidden": false, "import": true, "targetId": "b04a-04df-a1ae-10d6", "type": "selectionEntry"}],
+            "profiles": [
+              {
+                "name": "Nematocyst",
+                "id": "ce77-8fda-cd03-8633",
+                "hidden": false,
+                "page": 5,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "8", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Orbital Picket",
-        "id": "ec51-7e59-4419-d22d",
+        "id": "28a0-570a-d5b7-aefd",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "018d-22da-3c0a-8639", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
-        "entryLinks": [
-          {
-            "name": "Neutron Missiles",
-            "id": "a003-36f7-8a13-e9f8",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "targetId": "76c3-5daa-c7e3-c61f",
-            "type": "selectionEntry"
-          },
-          {
-            "name": "Station Turret Rack",
-            "id": "b36a-e370-9011-8bbb",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "6bfc-7016-eb55-a501",
-            "type": "selectionEntry"
-          }
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "7e9a-0ec2-c129-bc40", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Orbital Picket",
-            "id": "9aca-8ce5-2224-4155",
+            "id": "ec51-7e59-4419-d22d",
             "hidden": false,
-            "page": 6,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "9", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "a76e-f6b8-1de8-f6e7", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "f08d-de55-905a-e82b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
+            "entryLinks": [
+              {
+                "name": "Neutron Missiles",
+                "id": "a003-36f7-8a13-e9f8",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "76c3-5daa-c7e3-c61f",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Station Turret Rack",
+                "id": "b36a-e370-9011-8bbb",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "6bfc-7016-eb55-a501",
+                "type": "selectionEntry"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Orbital Picket",
+                "id": "9aca-8ce5-2224-4155",
+                "hidden": false,
+                "page": 6,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "9", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Orbital Outpost",
-        "id": "41e5-a021-0745-4a30",
+        "id": "26b9-992a-b2a5-c01e",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "de90-59de-828b-1296", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
-        "entryLinks": [
-          {
-            "name": "Station Turret Rack",
-            "id": "acaf-1f93-f779-543d",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "6bfc-7016-eb55-a501",
-            "type": "selectionEntry"
-          },
-          {
-            "name": "Triple Supernova Laser",
-            "id": "9a0c-0e81-062b-56f7",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "targetId": "0369-d2f1-e1ee-d55f",
-            "type": "selectionEntry"
-          }
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "cf67-a84b-693f-5ee9", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Orbital Outpost",
-            "id": "cf42-3e34-1c96-5ffa",
+            "id": "41e5-a021-0745-4a30",
             "hidden": false,
-            "page": 6,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "9", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "4894-3497-2ebf-8248", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "70f8-e0a1-9dda-5af8", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
+            "entryLinks": [
+              {
+                "name": "Station Turret Rack",
+                "id": "acaf-1f93-f779-543d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "6bfc-7016-eb55-a501",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Triple Supernova Laser",
+                "id": "9a0c-0e81-062b-56f7",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "0369-d2f1-e1ee-d55f",
+                "type": "selectionEntry"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Orbital Outpost",
+                "id": "cf42-3e34-1c96-5ffa",
+                "hidden": false,
+                "page": 6,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "9", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Defence Halo",
-        "id": "4bd7-5d82-80d3-afe1",
+        "id": "69e2-3a87-c9e2-b175",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "a7de-9822-121e-eb0a", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 145}],
-        "entryLinks": [
-          {
-            "name": "Quad Supernova Laser",
-            "id": "2719-aef2-be67-9ba9",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "targetId": "ce00-6eac-9ab6-948a",
-            "type": "selectionEntry"
-          },
-          {
-            "name": "Station Turret Ring",
-            "id": "0b48-f840-7106-c324",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "c024-5b5b-a6d4-13f0",
-            "type": "selectionEntry"
-          }
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "6a5a-f6f8-0934-e899", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Defence Halo",
-            "id": "61f8-3d3a-a1a7-5431",
+            "id": "4bd7-5d82-80d3-afe1",
             "hidden": false,
-            "page": 7,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "8\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "26", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "a5a1-59de-8392-e57d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "a538-4217-681e-cb26", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 145}],
+            "entryLinks": [
+              {
+                "name": "Quad Supernova Laser",
+                "id": "2719-aef2-be67-9ba9",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "ce00-6eac-9ab6-948a",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Station Turret Ring",
+                "id": "0b48-f840-7106-c324",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "c024-5b5b-a6d4-13f0",
+                "type": "selectionEntry"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Defence Halo",
+                "id": "61f8-3d3a-a1a7-5431",
+                "hidden": false,
+                "page": 7,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "8\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "26", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Orbital Spire",
-        "id": "432d-69c3-2a23-b3d8",
+        "id": "1f22-33a6-8026-e580",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "04f4-e36b-5c54-e583", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 145}],
-        "entryLinks": [
-          {
-            "name": "Neutron Missiles",
-            "id": "bb86-2e45-8d80-a0bf",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "targetId": "76c3-5daa-c7e3-c61f",
-            "type": "selectionEntry"
-          },
-          {
-            "name": "Station Turret Ring",
-            "id": "ea80-917d-5680-11c1",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "c024-5b5b-a6d4-13f0",
-            "type": "selectionEntry"
-          }
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "ef55-c917-6ca2-3c18", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Orbital Spire",
-            "id": "bb35-8ccd-d29c-da14",
+            "id": "432d-69c3-2a23-b3d8",
             "hidden": false,
-            "page": 7,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "8\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "26", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "5fca-eaee-71a6-5c94", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "15d6-6f53-75cf-1358", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 145}],
+            "entryLinks": [
+              {
+                "name": "Neutron Missiles",
+                "id": "bb86-2e45-8d80-a0bf",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "76c3-5daa-c7e3-c61f",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Station Turret Ring",
+                "id": "ea80-917d-5680-11c1",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "c024-5b5b-a6d4-13f0",
+                "type": "selectionEntry"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Orbital Spire",
+                "id": "bb35-8ccd-d29c-da14",
+                "hidden": false,
+                "page": 7,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "8\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "26", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Gatestation",
-        "id": "a3e1-a57d-5032-0fed",
+        "id": "5101-782a-6c3b-4647",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "3ecc-5da8-d189-9a12", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
-        "entryLinks": [
-          {
-            "name": "Charged Aura",
-            "id": "6ede-ac68-d536-e88f",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "targetId": "2c76-b370-112e-846e",
-            "type": "selectionEntry"
-          },
-          {"name": "Dropships", "id": "aa71-d4ff-8718-dac9", "hidden": false, "import": true, "sortIndex": 2, "targetId": "9dfe-c522-c033-7c51", "type": "selectionEntry"}
-        ],
-        "infoLinks": [
-          {"name": "Mothership", "id": "c26a-78a4-f380-b92a", "hidden": false, "targetId": "928d-4467-6cc7-1771", "type": "rule"},
-          {"name": "Shield-X", "id": "b63c-5943-fb48-3017", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
-          {"name": "Gate Node", "id": "5f94-5a79-cb0f-32c7", "hidden": false, "targetId": "9641-6e30-3c8e-a9ab", "type": "rule"}
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "f6ce-c92f-2551-da0e", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Gatestation",
-            "id": "a2f3-af44-cbec-a9e9",
+            "id": "a3e1-a57d-5032-0fed",
             "hidden": false,
-            "page": 8,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "4\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "10", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "Mothership, Shield-4+, Gate Node", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "735e-7a76-f783-480b", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "8068-ad1e-1e8b-dbe4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
+            "entryLinks": [
+              {
+                "name": "Charged Aura",
+                "id": "6ede-ac68-d536-e88f",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "2c76-b370-112e-846e",
+                "type": "selectionEntry"
+              },
+              {"name": "Dropships", "id": "aa71-d4ff-8718-dac9", "hidden": false, "import": true, "sortIndex": 2, "targetId": "9dfe-c522-c033-7c51", "type": "selectionEntry"}
+            ],
+            "infoLinks": [
+              {"name": "Mothership", "id": "c26a-78a4-f380-b92a", "hidden": false, "targetId": "928d-4467-6cc7-1771", "type": "rule"},
+              {"name": "Shield-X", "id": "b63c-5943-fb48-3017", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
+              {"name": "Gate Node", "id": "5f94-5a79-cb0f-32c7", "hidden": false, "targetId": "9641-6e30-3c8e-a9ab", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Gatestation",
+                "id": "a2f3-af44-cbec-a9e9",
+                "hidden": false,
+                "page": 8,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "4\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "10", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "Mothership, Shield-4+, Gate Node", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Grav Hook",
-        "id": "e3fe-8a69-be4d-97e4",
+        "id": "274e-35ce-50c1-5d07",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "e866-b943-30ef-c752", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
-        "entryLinks": [{"name": "Grav Hooks", "id": "3f32-5706-73fc-9158", "hidden": false, "import": true, "targetId": "aec2-dc62-3782-ecd5", "type": "selectionEntry"}],
-        "infoLinks": [
-          {"name": "Shield-X", "id": "2479-ce56-fa41-696a", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
-          {"name": "Gravity Manipulator", "id": "785c-dfc0-26e0-395e", "hidden": false, "targetId": "1377-0988-f6d3-4a38", "type": "rule"}
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "fe6f-9bbd-fc35-a484", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Grav Hook",
-            "id": "fc44-bb8d-a5d8-694b",
+            "id": "e3fe-8a69-be4d-97e4",
             "hidden": false,
-            "page": 8,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "4\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "10", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "Shield-4+, Gravity Manipulator", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "b90e-9f4d-76a8-7700", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "211a-ebf4-15e1-b8c4", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
+            "entryLinks": [{"name": "Grav Hooks", "id": "3f32-5706-73fc-9158", "hidden": false, "import": true, "targetId": "aec2-dc62-3782-ecd5", "type": "selectionEntry"}],
+            "infoLinks": [
+              {"name": "Shield-X", "id": "2479-ce56-fa41-696a", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
+              {"name": "Gravity Manipulator", "id": "785c-dfc0-26e0-395e", "hidden": false, "targetId": "1377-0988-f6d3-4a38", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Grav Hook",
+                "id": "fc44-bb8d-a5d8-694b",
+                "hidden": false,
+                "page": 8,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "4\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "10", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "Shield-4+, Gravity Manipulator", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Anchor",
-        "id": "0854-c0bb-b001-626d",
+        "id": "458f-c7e3-7534-6399",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "0565-a5da-08ad-46e4", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 120}],
-        "infoLinks": [
-          {"name": "Shield-X", "id": "952f-2a92-6453-1cf5", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
-          {"name": "Gateship-X", "id": "b17f-2411-0342-25b5", "hidden": false, "targetId": "4572-00d5-81d2-4fcc", "type": "rule"},
-          {"name": "Voidspace Anchor", "id": "04db-53fe-b954-44fb", "hidden": false, "targetId": "9b37-61fe-6eac-8888", "type": "rule"}
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "0fff-b6dd-1545-9509", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Anchor",
-            "id": "5034-1178-542c-68ab",
+            "id": "0854-c0bb-b001-626d",
             "hidden": false,
-            "page": 9,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "24", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "Shield-4+, Gateship-0, Voidspace Anchor", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "1bbc-265e-3db9-e824", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "e556-4d51-4351-a6c0", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 120}],
+            "infoLinks": [
+              {"name": "Shield-X", "id": "952f-2a92-6453-1cf5", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
+              {"name": "Gateship-X", "id": "b17f-2411-0342-25b5", "hidden": false, "targetId": "4572-00d5-81d2-4fcc", "type": "rule"},
+              {"name": "Voidspace Anchor", "id": "04db-53fe-b954-44fb", "hidden": false, "targetId": "9b37-61fe-6eac-8888", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Anchor",
+                "id": "5034-1178-542c-68ab",
+                "hidden": false,
+                "page": 9,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "24", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "Shield-4+, Gateship-0, Voidspace Anchor", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Shuriken",
-        "id": "8cf6-6559-ba2d-64a2",
+        "id": "6625-02bb-5d69-7c67",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "7d5e-bfaf-0d2e-8605", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 150}],
-        "entryLinks": [{"name": "Disintegrator Bank", "id": "6f9a-3e80-4849-e917", "hidden": false, "import": true, "targetId": "bc53-05e5-31b3-77c8", "type": "selectionEntry"}],
-        "infoLinks": [{"name": "Shield-X", "id": "64ff-ef46-d542-79eb", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"}],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "3094-99d5-bcea-44ee", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Shuriken",
-            "id": "37fa-1c41-e389-4567",
+            "id": "8cf6-6559-ba2d-64a2",
             "hidden": false,
-            "page": 9,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "24", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "Shield-4+", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "f78a-b78f-ab54-642d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "18d2-4a9f-2f84-6cd1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 150}],
+            "entryLinks": [{"name": "Disintegrator Bank", "id": "6f9a-3e80-4849-e917", "hidden": false, "import": true, "targetId": "bc53-05e5-31b3-77c8", "type": "selectionEntry"}],
+            "infoLinks": [{"name": "Shield-X", "id": "64ff-ef46-d542-79eb", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"}],
+            "profiles": [
+              {
+                "name": "Shuriken",
+                "id": "37fa-1c41-e389-4567",
+                "hidden": false,
+                "page": 9,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "24", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "Shield-4+", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Grand Station",
-        "id": "eedb-96cd-d7a3-6b75",
+        "id": "1799-da1b-0cdc-02ae",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "0c04-8d01-c96f-3992", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 85}],
-        "entryLinks": [
-          {
-            "name": "Heavy Vent Cannon Turret",
-            "id": "35f3-ebe7-4058-42ef",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 1,
-            "targetId": "9060-dfa3-c13c-d00e",
-            "type": "selectionEntry"
-          },
-          {
-            "name": "XN-31-S Mass Driver Turret Pair",
-            "id": "d96d-3224-a82e-873e",
-            "hidden": false,
-            "import": true,
-            "sortIndex": 2,
-            "targetId": "0206-8358-8ae6-3f0b",
-            "type": "selectionEntry"
-          }
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "e45d-29df-2d0b-80d0", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Grand Station",
-            "id": "c234-6c22-29e5-486e",
+            "id": "eedb-96cd-d7a3-6b75",
             "hidden": false,
-            "page": 10,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "14", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "5+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "d92b-ef33-5466-d0a2", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "053a-6c0b-b731-e859", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 85}],
+            "entryLinks": [
+              {
+                "name": "Heavy Vent Cannon Turret",
+                "id": "35f3-ebe7-4058-42ef",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "9060-dfa3-c13c-d00e",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "XN-31-S Mass Driver Turret Pair",
+                "id": "d96d-3224-a82e-873e",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "0206-8358-8ae6-3f0b",
+                "type": "selectionEntry"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Grand Station",
+                "id": "c234-6c22-29e5-486e",
+                "hidden": false,
+                "page": 10,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "14", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "5+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "-", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Astrobotanical Outpost",
-        "id": "1343-3008-33a4-59aa",
+        "id": "6ab4-9b8a-a991-bb25",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "dd00-1632-f31f-c9c7", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 85}],
-        "entryLinks": [
-          {"name": "Heavy Vent Cannon Turret", "id": "7ab4-3444-773c-ee67", "hidden": false, "import": true, "targetId": "9060-dfa3-c13c-d00e", "type": "selectionEntry"}
-        ],
-        "infoLinks": [{"name": "Signature Bloom", "id": "ff6a-ea4d-2248-c022", "hidden": false, "targetId": "53c7-8bbb-2618-15b2", "type": "rule"}],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "5c24-0f88-ef71-6043", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Astrobotanical Outpost",
-            "id": "18ce-1014-48b5-c977",
+            "id": "1343-3008-33a4-59aa",
             "hidden": false,
-            "page": 10,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "14", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "5+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "Signature Bloom", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "5fd0-dc76-0084-6736", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "7e5d-9e7e-2fc2-4774", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 85}],
+            "entryLinks": [
+              {"name": "Heavy Vent Cannon Turret", "id": "7ab4-3444-773c-ee67", "hidden": false, "import": true, "targetId": "9060-dfa3-c13c-d00e", "type": "selectionEntry"}
+            ],
+            "infoLinks": [{"name": "Signature Bloom", "id": "ff6a-ea4d-2248-c022", "hidden": false, "targetId": "53c7-8bbb-2618-15b2", "type": "rule"}],
+            "profiles": [
+              {
+                "name": "Astrobotanical Outpost",
+                "id": "18ce-1014-48b5-c977",
+                "hidden": false,
+                "page": 10,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "14", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "5+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "Signature Bloom", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Hypershredder",
-        "id": "89db-ef5c-fea4-df27",
+        "id": "bafb-4a9e-c326-82f3",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "b4fb-7eac-5276-5595", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 220}],
-        "entryLinks": [
-          {"name": "Dimensional Hypershredder", "id": "d4f8-8ce3-2221-eaaf", "hidden": false, "import": true, "targetId": "7279-afef-c3f7-bd21", "type": "selectionEntry"}
-        ],
-        "infoLinks": [{"name": "Slow Traversal", "id": "b2bd-a6b3-c08e-a1ed", "hidden": false, "targetId": "d874-ab78-9a86-e2a2", "type": "rule"}],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "5dbd-cc84-91b6-3431", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Hypershredder",
-            "id": "8ded-d6ea-fccc-0145",
+            "id": "89db-ef5c-fea4-df27",
             "hidden": false,
-            "page": 4,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "22", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "6+", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "Slow Traversal", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "d899-673d-2561-87a5", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "cee5-78d2-a3c1-48f1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 220}],
+            "entryLinks": [
+              {"name": "Dimensional Hypershredder", "id": "d4f8-8ce3-2221-eaaf", "hidden": false, "import": true, "targetId": "7279-afef-c3f7-bd21", "type": "selectionEntry"}
+            ],
+            "infoLinks": [{"name": "Slow Traversal", "id": "b2bd-a6b3-c08e-a1ed", "hidden": false, "targetId": "d874-ab78-9a86-e2a2", "type": "rule"}],
+            "profiles": [
+              {
+                "name": "Hypershredder",
+                "id": "8ded-d6ea-fccc-0145",
+                "hidden": false,
+                "page": 4,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "22", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "6+", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "Slow Traversal", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
       },
       {
         "name": "Hypersummoner",
-        "id": "0886-8273-358c-9c62",
+        "id": "8147-a4ff-4af6-6103",
         "hidden": false,
         "import": true,
-        "type": "model",
-        "categoryLinks": [{"name": "Space Stations", "id": "1c58-a7d3-4b3c-71e9", "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
-        "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 200}],
-        "infoLinks": [
-          {"name": "Summoned Ingress", "id": "cb3c-ec15-a29b-6438", "hidden": false, "targetId": "1029-3e75-c89f-27de", "type": "rule"},
-          {"name": "Hypersummoning", "id": "7137-92ab-4818-67f2", "hidden": false, "targetId": "b292-878f-949c-4ea4", "type": "rule"}
-        ],
-        "profiles": [
+        "type": "unit",
+        "categoryLinks": [{"name": "Space Stations", "id": "a87e-a2d0-252c-5a11", "hidden": false, "primary": true, "targetId": "5ca8-89b2-52c6-d394"}],
+        "selectionEntries": [
           {
             "name": "Hypersummoner",
-            "id": "7e37-a16e-0ebf-e590",
+            "id": "0886-8273-358c-9c62",
             "hidden": false,
-            "page": 4,
-            "publicationId": "4be7-d555-8518-dd99",
-            "typeId": "a685-1a7d-ba2d-3db8",
-            "typeName": "Space Station",
-            "characteristics": [
-              {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
-              {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
-              {"name": "Hull", "$text": "22", "typeId": "c2b4-8dc9-7506-debb"},
-              {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
-              {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
-              {"name": "BS", "$text": "6+", "typeId": "750b-9043-034b-c27a"},
-              {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-              {"name": "Special", "$text": "Summoned Ingress, Hypersummoning", "typeId": "473b-cbb5-5ba2-c2de"}
+            "import": true,
+            "type": "model",
+            "constraints": [
+              {"id": "a931-3787-a242-e630", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "cbfd-962e-e790-3627", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 200}],
+            "infoLinks": [
+              {"name": "Summoned Ingress", "id": "cb3c-ec15-a29b-6438", "hidden": false, "targetId": "1029-3e75-c89f-27de", "type": "rule"},
+              {"name": "Hypersummoning", "id": "7137-92ab-4818-67f2", "hidden": false, "targetId": "b292-878f-949c-4ea4", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Hypersummoner",
+                "id": "7e37-a16e-0ebf-e590",
+                "hidden": false,
+                "page": 4,
+                "publicationId": "4be7-d555-8518-dd99",
+                "typeId": "a685-1a7d-ba2d-3db8",
+                "typeName": "Space Station",
+                "characteristics": [
+                  {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Hull", "$text": "22", "typeId": "c2b4-8dc9-7506-debb"},
+                  {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
+                  {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
+                  {"name": "BS", "$text": "6+", "typeId": "750b-9043-034b-c27a"},
+                  {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
+                  {"name": "Special", "$text": "Summoned Ingress, Hypersummoning", "typeId": "473b-cbb5-5ba2-c2de"}
+                ]
+              }
             ]
           }
         ]
