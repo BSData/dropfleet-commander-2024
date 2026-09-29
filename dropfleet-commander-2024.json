@@ -1024,24 +1024,6 @@
             ]
           },
           {
-            "name": "Show other items",
-            "id": "b29d-e028-c2e0-202d",
-            "hidden": false,
-            "sortIndex": 3,
-            "selectionEntries": [
-              {
-                "name": "Mercenary ships",
-                "id": "473d-151f-22a2-8892",
-                "defaultAmount": 1,
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "type": "upgrade",
-                "constraints": [{"id": "502d-7ac1-20c3-cf81", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
-              }
-            ]
-          },
-          {
             "name": "Show restricted items",
             "id": "cfe0-db61-1111-2e96",
             "hidden": false,
@@ -1066,6 +1048,24 @@
                 "sortIndex": 2,
                 "type": "upgrade",
                 "constraints": [{"id": "1501-f030-fec3-fe87", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              }
+            ]
+          },
+          {
+            "name": "Show other items",
+            "id": "b29d-e028-c2e0-202d",
+            "hidden": false,
+            "sortIndex": 3,
+            "selectionEntries": [
+              {
+                "name": "Mercenary ships",
+                "id": "473d-151f-22a2-8892",
+                "defaultAmount": 1,
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "type": "upgrade",
+                "constraints": [{"id": "502d-7ac1-20c3-cf81", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
               }
             ]
           }
