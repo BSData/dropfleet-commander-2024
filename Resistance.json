@@ -569,11 +569,7 @@
                 "sortIndex": 6,
                 "targetId": "9e57-79cc-21a0-72fb",
                 "type": "selectionEntry",
-                "constraints": [
-                  {"id": "1296-64f9-7bf4-544f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-                  {"id": "1296-64f9-7bf4-544f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
-                ],
-                "modifiers": [{"field": "ab32-c9b6-10f3-cbdb", "type": "set", "value": 0}]
+                "constraints": [{"id": "1296-64f9-7bf4-544f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               }
             ],
             "infoLinks": [{"name": "Command Ship-X", "id": "f512-90a1-b748-b3c3", "hidden": false, "targetId": "af88-13e6-5004-d00a", "type": "rule"}],
@@ -1060,11 +1056,9 @@
                 "sortIndex": 4,
                 "targetId": "1517-78fb-2a15-57eb",
                 "type": "selectionEntry",
-                "constraints": [{"id": "a1ae-76e9-106a-2141-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}],
-                "modifiers": [{"field": "ab32-c9b6-10f3-cbdb", "type": "set", "value": 0}]
+                "constraints": [{"id": "a1ae-76e9-106a-2141-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1}]
               }
             ],
-            "infoLinks": [{"name": "Reinforced Armour", "id": "3e34-2d87-139c-9ab8", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"}],
             "profiles": [
               {
                 "name": "Heavy Cruiser",
@@ -1082,7 +1076,7 @@
                   {"name": "KS", "$text": "5+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Reinforced Armour", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "-", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
