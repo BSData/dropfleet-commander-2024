@@ -6,18 +6,12 @@
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
     "battleScribeVersion": "2.03",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
-    "gameSystemRevision": 23,
+    "gameSystemRevision": 50,
     "library": true,
-    "revision": 16,
+    "revision": 50,
     "type": "catalogue",
     "publications": [{"name": "Misc Combined Fleet Stats (250822)", "id": "3038-2db1-cc27-8561", "hidden": false, "shortName": "Misc Stats (250822)"}],
     "sharedRules": [
-      {
-        "name": "Subservient Mercenaries",
-        "id": "2c3a-3695-1a24-815b",
-        "description": "Pungari Threshers may be used in any fleet but always use Shaltari Fire Ships. When used in a Shaltari fleet, this Ship gains Shield-5+.",
-        "hidden": false
-      },
       {
         "name": "Advanced Artillery",
         "id": "1cb6-7f70-eb3a-721f",
@@ -28,6 +22,12 @@
         "name": "Magellan Lifeboats",
         "id": "51f8-52e5-f318-ae4a",
         "description": "If this ship is destroyed with an Admiral assigned to it, you may transfer that Admiral to another friendly ship of H or C Tonnage with no Admiral within 18\", losing the benefits of this ship's Command Ship rule.",
+        "hidden": false
+      },
+      {
+        "name": "Subservient Mercenaries",
+        "id": "2c3a-3695-1a24-815b",
+        "description": "Pungari Threshers may be used in any fleet but always use Shaltari Fire Ships. When used in a Shaltari fleet, this Ship gains Shield-5+.",
         "hidden": false
       }
     ],
@@ -40,8 +40,8 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Medium Groups", "id": "c1cd-466b-972a-1d88", "primary": true, "targetId": "e555-ff57-c478-18cd"},
-          {"name": "Group", "id": "b12c-63fc-22e2-fe1c", "primary": false, "targetId": "default-category"}
+          {"name": "Group", "id": "b12c-63fc-22e2-fe1c", "primary": false, "targetId": "default-category"},
+          {"name": "Medium Groups", "id": "c1cd-466b-972a-1d88", "primary": true, "targetId": "e555-ff57-c478-18cd"}
         ],
         "constraints": [{"id": "07e5-e764-ead4-170d", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}],
         "modifiers": [
@@ -52,8 +52,8 @@
             "conditions": [
               {
                 "childId": "3fda-65f2-6cc3-ee33",
+                "childName": "Clash: 1001 - 2000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -69,8 +69,8 @@
             "conditions": [
               {
                 "childId": "c6ef-6271-e246-47a8",
+                "childName": "Battle: 2001 - 3000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -86,8 +86,8 @@
             "conditions": [
               {
                 "childId": "d410-4aa8-c469-064b",
+                "childName": "Reconquest: 3001+ points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -250,13 +250,11 @@
             "id": "b7bb-5625-e885-3e15",
             "hidden": false,
             "import": true,
-            "page": 1,
-            "publicationId": "3038-2db1-cc27-8561",
             "type": "model",
             "categoryLinks": [{"name": "Medium Ship", "id": "5e9f-2eef-890b-5f27", "primary": true, "targetId": "53c3-afc0-63ef-413a"}],
             "constraints": [
-              {"id": "cf96-30af-3404-63fd-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "cf96-30af-3404-63fd-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+              {"id": "cf96-30af-3404-63fd-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "cf96-30af-3404-63fd-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 170}],
             "entryLinks": [
@@ -310,7 +308,17 @@
                     "field": "hidden",
                     "type": "set",
                     "value": false,
-                    "conditions": [{"childId": "9d0c-9d91-231b-cab6", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+                    "conditions": [
+                      {
+                        "childId": "9d0c-9d91-231b-cab6",
+                        "childName": "Shaltari",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               },
@@ -321,8 +329,6 @@
                 "name": "Pungari Thresher",
                 "id": "17b4-a22a-b59c-6eaf",
                 "hidden": false,
-                "page": 1,
-                "publicationId": "3038-2db1-cc27-8561",
                 "typeId": "8a2d-efd5-4b60-f4fa",
                 "typeName": "Ship",
                 "characteristics": [
@@ -341,7 +347,17 @@
                     "field": "fdf5-89b6-e62e-570f",
                     "type": "set",
                     "value": "Rare, Shield-5+, Subservient Mercenaries",
-                    "conditions": [{"childId": "9d0c-9d91-231b-cab6", "field": "selections", "scope": "primary-catalogue", "shared": true, "type": "instanceOf", "value": 1}]
+                    "conditions": [
+                      {
+                        "childId": "9d0c-9d91-231b-cab6",
+                        "childName": "Shaltari",
+                        "field": "selections",
+                        "scope": "primary-catalogue",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
                   }
                 ]
               }
@@ -356,10 +372,10 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Light Groups", "id": "c7e0-a298-d119-875d", "primary": true, "targetId": "f51b-d892-62c0-3f1e"},
-          {"name": "Group", "id": "8316-3b8a-073a-f46a", "primary": false, "targetId": "default-category"}
+          {"name": "Group", "id": "8316-3b8a-073a-f46a", "primary": false, "targetId": "default-category"},
+          {"name": "Light Groups", "id": "c7e0-a298-d119-875d", "primary": true, "targetId": "f51b-d892-62c0-3f1e"}
         ],
-        "constraints": [{"id": "d197-ea73-004a-e43a", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}],
+        "constraints": [{"id": "d197-ea73-004a-e43a", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}],
         "modifiers": [
           {
             "field": "hidden",
@@ -382,7 +398,16 @@
                         "type": "equalTo",
                         "value": 0
                       },
-                      {"childId": "f6dd-dee6-9cfb-43b4", "childName": "Hyperyacht Aurorum", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}
+                      {
+                        "childId": "f6dd-dee6-9cfb-43b4",
+                        "childName": "Hyperyacht Aurorum",
+                        "field": "selections",
+                        "includeChildSelections": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
                     ]
                   }
                 ],
@@ -409,13 +434,11 @@
             "id": "4d7f-222f-ef1e-599b",
             "hidden": false,
             "import": true,
-            "page": 2,
-            "publicationId": "3038-2db1-cc27-8561",
             "type": "model",
             "categoryLinks": [{"name": "Light Ship", "id": "e393-0524-e45c-26a5", "primary": true, "targetId": "f942-8f88-d77b-13c1"}],
             "constraints": [
-              {"id": "e77f-a4b6-a162-401a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "e77f-a4b6-a162-401a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+              {"id": "e77f-a4b6-a162-401a-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "e77f-a4b6-a162-401a-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 80}],
             "entryLinks": [
@@ -448,8 +471,6 @@
                 "name": "Hyperyacht Aurorum",
                 "id": "c677-0229-2687-96b8",
                 "hidden": false,
-                "page": 2,
-                "publicationId": "3038-2db1-cc27-8561",
                 "typeId": "8a2d-efd5-4b60-f4fa",
                 "typeName": "Ship",
                 "characteristics": [
@@ -475,8 +496,8 @@
         "import": true,
         "type": "unit",
         "categoryLinks": [
-          {"name": "Heavy Groups", "id": "16a1-3df7-b24b-71be", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
-          {"name": "Group", "id": "acb0-6cd1-4629-d704", "primary": false, "targetId": "default-category"}
+          {"name": "Group", "id": "acb0-6cd1-4629-d704", "primary": false, "targetId": "default-category"},
+          {"name": "Heavy Groups", "id": "16a1-3df7-b24b-71be", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
         ],
         "constraints": [{"id": "eb5c-3240-78ad-866d", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}],
         "modifiers": [
@@ -487,8 +508,8 @@
             "conditions": [
               {
                 "childId": "3fda-65f2-6cc3-ee33",
+                "childName": "Clash: 1001 - 2000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -504,8 +525,8 @@
             "conditions": [
               {
                 "childId": "c6ef-6271-e246-47a8",
+                "childName": "Battle: 2001 - 3000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -521,8 +542,8 @@
             "conditions": [
               {
                 "childId": "d410-4aa8-c469-064b",
+                "childName": "Reconquest: 3001+ points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -688,8 +709,8 @@
             "type": "model",
             "categoryLinks": [{"name": "Heavy Ship", "id": "ccd0-94fb-a8c2-0600", "primary": true, "targetId": "9d6f-26b0-7969-496b"}],
             "constraints": [
-              {"id": "e006-b4e0-9b89-9fbd-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "e006-b4e0-9b89-9fbd-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+              {"id": "e006-b4e0-9b89-9fbd-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "e006-b4e0-9b89-9fbd-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 170}],
             "entryLinks": [{"name": "N-12 Artillery Cannons", "id": "2c6f-0925-9afa-f146", "hidden": false, "import": true, "targetId": "6d2e-9f74-2598-d0dc", "type": "selectionEntry"}],
@@ -733,8 +754,8 @@
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "c4ad-0419-e2a3-0483-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "c4ad-0419-e2a3-0483-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "c4ad-0419-e2a3-0483-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "c4ad-0419-e2a3-0483-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [{"name": "Critical-X", "id": "69e4-2b9e-c9d6-e713", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"}],
         "profiles": [
@@ -764,8 +785,8 @@
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "a00b-cc80-4893-7c7f-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "a00b-cc80-4893-7c7f-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "a00b-cc80-4893-7c7f-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "a00b-cc80-4893-7c7f-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [{"name": "Close Action", "id": "8143-6d51-5720-637d", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
         "profiles": [
@@ -795,8 +816,8 @@
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "a596-10a3-a050-25e4-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "a596-10a3-a050-25e4-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "a596-10a3-a050-25e4-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "a596-10a3-a050-25e4-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "profiles": [
           {
@@ -826,8 +847,8 @@
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "b60a-5642-e0eb-1616-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "b60a-5642-e0eb-1616-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "b60a-5642-e0eb-1616-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "b60a-5642-e0eb-1616-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "profiles": [
           {
@@ -849,8 +870,8 @@
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "f65f-1f07-6724-d776-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "f65f-1f07-6724-d776-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "f65f-1f07-6724-d776-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "f65f-1f07-6724-d776-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "profiles": [
           {
@@ -872,8 +893,8 @@
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "33ee-0c13-bda4-9ffe-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "33ee-0c13-bda4-9ffe-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "33ee-0c13-bda4-9ffe-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "33ee-0c13-bda4-9ffe-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "profiles": [
           {
@@ -895,8 +916,8 @@
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "4fec-c413-dddb-831a-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "4fec-c413-dddb-831a-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "4fec-c413-dddb-831a-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "4fec-c413-dddb-831a-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "profiles": [
           {

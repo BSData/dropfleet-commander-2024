@@ -6,9 +6,9 @@
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
     "battleScribeVersion": "2.03",
     "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
-    "gameSystemRevision": 23,
+    "gameSystemRevision": 50,
     "library": true,
-    "revision": 2,
+    "revision": 50,
     "type": "catalogue",
     "publications": [{"name": "Resistance Combined Fleet Stats (260731)", "id": "0a1c-ea1f-6ade-0404", "hidden": false, "shortName": "Resistance Stats (260731)"}],
     "sharedSelectionEntries": [
@@ -18,11 +18,10 @@
         "id": "e131-eb84-312c-6fd2",
         "hidden": false,
         "import": true,
-        "publicationId": "0a1c-ea1f-6ade-0404",
         "type": "unit",
         "categoryLinks": [
-          {"name": "Group", "id": "7ddc-e507-0965-9f08", "hidden": false, "primary": false, "targetId": "default-category"},
-          {"name": "Medium Groups", "id": "a603-a6c9-b776-d6ad", "hidden": false, "primary": true, "targetId": "e555-ff57-c478-18cd"}
+          {"name": "Group", "id": "7ddc-e507-0965-9f08", "primary": false, "targetId": "default-category"},
+          {"name": "Medium Groups", "id": "a603-a6c9-b776-d6ad", "primary": true, "targetId": "e555-ff57-c478-18cd"}
         ],
         "constraints": [{"id": "0e5b-f240-31f3-ecc1", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": -1}],
         "modifiers": [
@@ -60,7 +59,6 @@
                 "childId": "7895-d441-b903-8bb2",
                 "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -103,7 +101,6 @@
                 "childId": "3fda-65f2-6cc3-ee33",
                 "childName": "Clash: 1001 - 2000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -146,7 +143,6 @@
                 "childId": "c6ef-6271-e246-47a8",
                 "childName": "Battle: 2001 - 3000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -189,7 +185,6 @@
                 "childId": "d410-4aa8-c469-064b",
                 "childName": "Reconquest: 3001+ points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -368,7 +363,6 @@
                         "childId": "7edf-5b75-e318-f4ed",
                         "childName": "Resistance",
                         "field": "selections",
-                        "includeChildSelections": false,
                         "scope": "primary-catalogue",
                         "shared": true,
                         "type": "notInstanceOf",
@@ -388,13 +382,11 @@
             "id": "42b7-e1fb-431b-d0be",
             "hidden": false,
             "import": true,
-            "page": "",
-            "publicationId": "0a1c-ea1f-6ade-0404",
             "type": "model",
-            "categoryLinks": [{"name": "Medium Ship", "id": "d518-5d35-fb57-4164", "hidden": false, "primary": true, "targetId": "53c3-afc0-63ef-413a"}],
+            "categoryLinks": [{"name": "Medium Ship", "id": "d518-5d35-fb57-4164", "primary": true, "targetId": "53c3-afc0-63ef-413a"}],
             "constraints": [
-              {"id": "73eb-648b-f35e-caaf", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "0d18-7759-52f3-605f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+              {"id": "73eb-648b-f35e-caaf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "0d18-7759-52f3-605f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 125}],
             "entryLinks": [
@@ -472,8 +464,6 @@
                 "name": "Centurion",
                 "id": "6fe5-f366-c9a5-17dd",
                 "hidden": false,
-                "page": "",
-                "publicationId": "0a1c-ea1f-6ade-0404",
                 "typeId": "8a2d-efd5-4b60-f4fa",
                 "typeName": "Ship",
                 "characteristics": [
@@ -534,8 +524,8 @@
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "9853-517d-15c7-40f2-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "9853-517d-15c7-40f2-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "9853-517d-15c7-40f2-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "9853-517d-15c7-40f2-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [
           {"name": "Critical-X", "id": "e8c9-cfe6-53b7-6039", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
@@ -568,8 +558,8 @@
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "02db-8944-101b-7cce-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "02db-8944-101b-7cce-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "02db-8944-101b-7cce-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "02db-8944-101b-7cce-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [
           {"name": "Critical-X", "id": "4557-630e-2315-0b57", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
@@ -603,7 +593,7 @@
         "hidden": false,
         "import": true,
         "type": "upgrade",
-        "constraints": [{"id": "a601-7aa9-9b9c-def1", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "constraints": [{"id": "a601-7aa9-9b9c-def1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 25}],
         "modifiers": [{"affects": "profiles.Ship", "field": "d821-4294-3117-e8a6", "scope": "parent", "type": "increment", "value": 3}]
       }

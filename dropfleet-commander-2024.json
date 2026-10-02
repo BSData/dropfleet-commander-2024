@@ -5,8 +5,7 @@
     "authorName": "John Kemp",
     "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
     "battleScribeVersion": "2.03",
-    "page": "",
-    "revision": 23,
+    "revision": 50,
     "type": "gameSystem",
     "categoryEntries": [
       {"name": "Configuration", "id": "8a9e-8399-ae64-5be9", "hidden": false},
@@ -23,6 +22,7 @@
             "repeats": [
               {
                 "childId": "53c3-afc0-63ef-413a",
+                "childName": "Medium Ship",
                 "field": "selections",
                 "includeChildSelections": true,
                 "repeats": 1,
@@ -33,6 +33,7 @@
               },
               {
                 "childId": "9d6f-26b0-7969-496b",
+                "childName": "Heavy Ship",
                 "field": "selections",
                 "includeChildSelections": true,
                 "repeats": 1,
@@ -43,6 +44,7 @@
               },
               {
                 "childId": "6e44-cb75-e25f-8b24",
+                "childName": "Colossal Ship",
                 "field": "selections",
                 "includeChildSelections": true,
                 "repeats": 1,
@@ -59,7 +61,7 @@
         "name": "Faction/Famous Admirals",
         "id": "79f7-4244-6fb7-d41a",
         "hidden": false,
-        "constraints": [{"id": "9603-a35a-eecd-928b", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}]
+        "constraints": [{"id": "9603-a35a-eecd-928b", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}]
       },
       {"name": "Famous Admirals", "id": "daa7-4c13-fe75-9281", "hidden": false},
       {
@@ -72,8 +74,8 @@
             "conditions": [
               {
                 "childId": "d410-4aa8-c469-064b",
+                "childName": "Reconquest: 3001+ points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -87,18 +89,7 @@
                 "field": "944d-d5c8-c46e-76c6",
                 "type": "increment",
                 "value": 4,
-                "repeats": [
-                  {
-                    "childId": "any",
-                    "field": "limit::ab32-c9b6-10f3-cbdb",
-                    "percentValue": false,
-                    "repeats": 1,
-                    "roundUp": true,
-                    "scope": "roster",
-                    "shared": true,
-                    "value": 1000
-                  }
-                ]
+                "repeats": [{"childId": "any", "field": "limit::ab32-c9b6-10f3-cbdb", "repeats": 1, "roundUp": true, "scope": "roster", "shared": true, "value": 1000}]
               }
             ]
           }
@@ -111,8 +102,8 @@
             "conditions": [
               {
                 "childId": "3fda-65f2-6cc3-ee33",
+                "childName": "Clash: 1001 - 2000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -128,8 +119,8 @@
             "conditions": [
               {
                 "childId": "c6ef-6271-e246-47a8",
+                "childName": "Battle: 2001 - 3000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -153,8 +144,8 @@
             "conditions": [
               {
                 "childId": "3fda-65f2-6cc3-ee33",
+                "childName": "Clash: 1001 - 2000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -170,8 +161,8 @@
             "conditions": [
               {
                 "childId": "c6ef-6271-e246-47a8",
+                "childName": "Battle: 2001 - 3000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -187,8 +178,8 @@
             "conditions": [
               {
                 "childId": "d410-4aa8-c469-064b",
+                "childName": "Reconquest: 3001+ points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -203,24 +194,24 @@
         "name": "Heavy Groups",
         "id": "8d99-053d-ffeb-98c5",
         "hidden": false,
-        "constraints": [
-          {
-            "id": "5ff3-d823-7c8b-68ad",
-            "field": "ab32-c9b6-10f3-cbdb",
-            "includeChildSelections": false,
-            "percentValue": false,
-            "scope": "force",
-            "shared": true,
-            "type": "max",
-            "value": 0
-          }
-        ],
+        "constraints": [{"id": "5ff3-d823-7c8b-68ad", "field": "ab32-c9b6-10f3-cbdb", "scope": "force", "shared": true, "type": "max", "value": 0}],
         "modifiers": [
           {
             "field": "5ff3-d823-7c8b-68ad",
             "type": "increment",
             "value": 1,
-            "repeats": [{"childId": "e555-ff57-c478-18cd", "field": "ab32-c9b6-10f3-cbdb", "repeats": 1, "roundUp": false, "scope": "force", "shared": true, "value": 1}]
+            "repeats": [
+              {
+                "childId": "e555-ff57-c478-18cd",
+                "childName": "Medium Groups",
+                "field": "ab32-c9b6-10f3-cbdb",
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 1
+              }
+            ]
           },
           {
             "field": "5ff3-d823-7c8b-68ad",
@@ -246,15 +237,33 @@
         "name": "Light Groups",
         "id": "f51b-d892-62c0-3f1e",
         "hidden": false,
-        "constraints": [{"id": "8f80-578f-070c-7526", "field": "ab32-c9b6-10f3-cbdb", "percentValue": false, "scope": "force", "shared": true, "type": "max", "value": 0}],
+        "constraints": [{"id": "8f80-578f-070c-7526", "field": "ab32-c9b6-10f3-cbdb", "scope": "force", "shared": true, "type": "max", "value": 0}],
         "modifiers": [
           {
             "field": "8f80-578f-070c-7526",
             "type": "increment",
             "value": 1,
             "repeats": [
-              {"childId": "e555-ff57-c478-18cd", "field": "ab32-c9b6-10f3-cbdb", "repeats": 1, "roundUp": false, "scope": "force", "shared": true, "value": 1},
-              {"childId": "8d99-053d-ffeb-98c5", "field": "ab32-c9b6-10f3-cbdb", "repeats": 1, "roundUp": false, "scope": "force", "shared": true, "value": 1}
+              {
+                "childId": "e555-ff57-c478-18cd",
+                "childName": "Medium Groups",
+                "field": "ab32-c9b6-10f3-cbdb",
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 1
+              },
+              {
+                "childId": "8d99-053d-ffeb-98c5",
+                "childName": "Heavy Groups",
+                "field": "ab32-c9b6-10f3-cbdb",
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "force",
+                "shared": true,
+                "value": 1
+              }
             ]
           }
         ]
@@ -269,7 +278,7 @@
         "name": "Space Stations",
         "id": "5ca8-89b2-52c6-d394",
         "hidden": false,
-        "constraints": [{"id": "d88c-dc9b-1bb3-4c11", "field": "selections", "includeChildSelections": false, "scope": "force", "shared": true, "type": "max", "value": 1}]
+        "constraints": [{"id": "d88c-dc9b-1bb3-4c11", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}]
       },
       {"name": "Reference", "id": "dbff-12ce-7e10-7001", "hidden": false},
       {"name": "Deployable Features", "id": "11b4-72d7-c64d-25c1", "comment": "Unit", "hidden": false},
@@ -280,18 +289,7 @@
         "name": "Hero",
         "id": "3929-5fb7-5f98-37ea",
         "hidden": false,
-        "constraints": [
-          {
-            "id": "09c2-95e9-8f84-d427",
-            "field": "selections",
-            "includeChildForces": false,
-            "includeChildSelections": true,
-            "scope": "force",
-            "shared": true,
-            "type": "max",
-            "value": 2
-          }
-        ]
+        "constraints": [{"id": "09c2-95e9-8f84-d427", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}]
       },
       {"name": "Medium Group Spend Exempt", "id": "d720-1c66-5090-ab19", "hidden": false}
     ],
@@ -328,23 +326,56 @@
         "constraints": [
           {"id": "0657-bf3e-e983-c5e7", "field": "ab32-c9b6-10f3-cbdb", "scope": "self", "shared": true, "type": "min", "value": 501},
           {"id": "3538-1a51-bb11-860d", "field": "ab32-c9b6-10f3-cbdb", "scope": "self", "shared": true, "type": "max", "value": 1000},
-          {"id": "8431-eb6d-c04d-8f41-min", "field": "forces", "includeChildSelections": false, "scope": "roster", "shared": true, "type": "min", "value": 1},
-          {"id": "8431-eb6d-c04d-8f41-max", "field": "forces", "includeChildSelections": false, "scope": "roster", "shared": true, "type": "max", "value": 1}
+          {"id": "8431-eb6d-c04d-8f41-min", "field": "forces", "scope": "roster", "shared": true, "type": "min", "value": 1},
+          {"id": "8431-eb6d-c04d-8f41-max", "field": "forces", "scope": "roster", "shared": true, "type": "max", "value": 1}
         ],
         "modifierGroups": [
           {
             "type": "and",
-            "conditions": [{"childId": "3fda-65f2-6cc3-ee33", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "atLeast", "value": 1}],
+            "conditions": [
+              {
+                "childId": "3fda-65f2-6cc3-ee33",
+                "childName": "Clash: 1001 - 2000 points",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
             "modifiers": [{"field": "0657-bf3e-e983-c5e7", "type": "set", "value": 1001}, {"field": "3538-1a51-bb11-860d", "type": "set", "value": 2000}]
           },
           {
             "type": "and",
-            "conditions": [{"childId": "c6ef-6271-e246-47a8", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "atLeast", "value": 1}],
+            "conditions": [
+              {
+                "childId": "c6ef-6271-e246-47a8",
+                "childName": "Battle: 2001 - 3000 points",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
             "modifiers": [{"field": "0657-bf3e-e983-c5e7", "type": "set", "value": 2001}, {"field": "3538-1a51-bb11-860d", "type": "set", "value": 3000}]
           },
           {
             "type": "and",
-            "conditions": [{"childId": "d410-4aa8-c469-064b", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "atLeast", "value": 1}],
+            "conditions": [
+              {
+                "childId": "d410-4aa8-c469-064b",
+                "childName": "Reconquest: 3001+ points",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ],
             "modifiers": [{"field": "0657-bf3e-e983-c5e7", "type": "set", "value": 3001}, {"field": "3538-1a51-bb11-860d", "type": "set", "value": -1}]
           }
         ]
@@ -477,91 +508,44 @@
         "id": "9cd1-441e-8ee8-7f13",
         "description": "All Ships with this rule in a Group combine their X values into a single value, Y.\nFriendly Groups in coherency within 6\" of a Ship with this rule and the same Orbital Layer (including its own Group) gain the benefits of Aegis.\nWhen rolling saves against Close Action and Bomber (of any type) attacks, those Groups gain Y additional save dice they may add to those saves. Before rolling to save, the defending player assigns these dice against specific weapons, divided up as they choose (including any modified hits).\nAn Aegis Group can only grant the benefits of Aegis once each time a friendly group is attacked.\nA friendly Group can only benefit from Aegis from one Group each time it is attacked.",
         "hidden": false,
-        "page": 36,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Aegis-1", "Aegis-2", "Aegis-3", "Aegis-4", "Aegis-6"]
       },
-      {
-        "name": "Cloak-X",
-        "id": "69fa-32f1-0a4f-c052",
-        "description": "This Group may have a maximum of X Spikes.",
-        "hidden": false,
-        "page": 36,
-        "publicationId": "45b0-3e3b-e83d-fd70",
-        "alias": ["Cloak-1", "Cloak-2"]
-      },
+      {"name": "Cloak-X", "id": "69fa-32f1-0a4f-c052", "description": "This Group may have a maximum of X Spikes.", "hidden": false, "alias": ["Cloak-1", "Cloak-2"]},
       {
         "name": "Command Ship-X",
         "id": "af88-13e6-5004-d00a",
         "description": "Increase the Level of any Admiral assigned to this Ship by X.",
         "hidden": false,
-        "page": 36,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Command Ship-1", "Command Ship-2"]
       },
-      {
-        "name": "Descent",
-        "id": "2ae8-7705-ab9a-03c0",
-        "description": "This special rule confers various benefits covered in the core rules.",
-        "hidden": false,
-        "page": 36,
-        "publicationId": "45b0-3e3b-e83d-fd70"
-      },
+      {"name": "Descent", "id": "2ae8-7705-ab9a-03c0", "description": "This special rule confers various benefits covered in the core rules.", "hidden": false},
       {
         "name": "Detector",
         "id": "ff6a-7b9f-fca1-ef36",
         "description": "If this Ship is on an order that allows it to attack, this Ship may forgo one allowed Weapon use during its activation. If it does, at the end of its activation place two Spikes on an enemy Group in line of sight. A Group that uses Detector gains a Spike (regardless of the amount of Ships using this rule).",
-        "hidden": false,
-        "page": 36,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Escort",
         "id": "03da-77d7-bd73-eeb4",
         "description": "After Weapons have been assigned to a friendly Ship of H or C tonnage within 6\" of this Ship on the same Orbital Layer, you may declare the use of Escort for the friendly Ship. Only one Group may Escort at a time and it must be in Coherency.\nAfter your opponent rolls to hit the original target, allocate an amount of hits from that roll to this Group. An Escort Group cannot be allocated more damage by those hits than each remaining Ship in it has in starting Hull. You may use this even if the Escort Group is out of range, arc, and line of sight of the attacking Group. Continue the attack sequence using the Escort Group.\nWeapons with the Focused rule cannot be affected by the Escort rule.",
-        "hidden": false,
-        "page": 36,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Gateship-X",
         "id": "4572-00d5-81d2-4fcc",
         "description": "Shaltari Motherships must launch their Dropships via a Ship/Dropsite with this rule (sometimes referred to as Gateships). Each Gateship can have up to X Dropships deployed from it each round. Note: though the launch is measured from the Gateship, it is the Mothership that is launching.\nWhen this Ship goes on the Weapons Free, Max Thrust, or Damage Control orders, it reduces its Gateship-X value to 0 until the start of its next activation.",
         "hidden": false,
-        "page": 36,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Gateship-0", "Gateship-1", "Gateship-2", "Gateship-3"]
-      },
-      {
-        "name": "Hero",
-        "id": "f945-e19c-c8bb-1c6a",
-        "description": "You can only include two Groups with this special rule in your fleet. You cannot assign an Admiral to this Ship when building your fleet.",
-        "hidden": false,
-        "publicationId": "45b0-3e3b-e83d-fd70"
-      },
-      {
-        "name": "Impetuous",
-        "id": "6f09-5ccc-4dae-ff72",
-        "description": "At the start of each round, friendly Groups with this rule improve the Lock of their Weapon Systems by 1 until you activate a friendly Group without this rule.",
-        "hidden": false
       },
       {
         "name": "Marines-X",
         "id": "93f3-7932-b233-4d38",
         "description": "Remove X enemy Battalions from this Ship at the beginning of the Battalion Combat step.",
         "hidden": false,
-        "page": 36,
-        "publicationId": "45b0-3e3b-e83d-fd70",
-        "alias": ["Marines-1", "Marines-2", "Marines-3", "Marines-2D3"]
+        "alias": ["Marines-1", "Marines-2", "Marines-2D3", "Marines-3"]
       },
-      {
-        "name": "Monitor",
-        "id": "cc9f-9be5-cc19-2fc9",
-        "description": "Ships with this rule may not use Course Change or Max Thrust orders.",
-        "hidden": false,
-        "page": 36,
-        "publicationId": "45b0-3e3b-e83d-fd70"
-      },
+      {"name": "Monitor", "id": "cc9f-9be5-cc19-2fc9", "description": "Ships with this rule may not use Course Change or Max Thrust orders.", "hidden": false},
       {
         "name": "Mothership",
         "id": "928d-4467-6cc7-1771",
@@ -573,74 +557,55 @@
         "id": "7a4f-55fd-3916-978f",
         "description": "When building your fleet, you may choose as many Payload Ships as you like—tonnage limits do not apply to these Ships, and they have no Group size. All Payload S/L Ships must be assigned to a Porter S/L Ship with the same letter. Payload Ships may not activate or be targeted until detached.\nPayload Ships take up X of a Porter Ship's capacity.\nDuring the Porter Ship's activation, if it is on an Order that allows it to Launch, you may detach one or more of its Payload Ships and place them within 3\" of it. In the round they are detached, these Payloads activate together immediately as part of the Porter Ship's activation after it has completed its Order. In subsequent rounds, all your Payload Ships count as being part of a single Group. Crippling Effects, Spikes, and other rules that affect an entire Group only affect the targeted Payload Ship.\nPayload Ships always follow General Quarters Orders, even if its Porter is on different Orders. Payload Ships ignore Coherency rules (and do not gain Formation Benefits), have no Lead Ship, are targeted by attacks individually, and these attacks can only damage the targeted Payload Ship.\nIf a Payload Ship is attached to a Porter Ship when that Ship is destroyed, the Payload Ship is destroyed.",
         "hidden": false,
-        "page": 36,
-        "publicationId": "45b0-3e3b-e83d-fd70",
-        "alias": ["Payload S-1", "Payload L-1", "Payload F-1"]
+        "alias": ["Payload F-1", "Payload L-1", "Payload S-1"]
       },
       {
         "name": "Porter S/L-X",
         "id": "11cb-e973-8a2c-f0f6",
         "description": "This Ship may be assigned Payload Ships with the same letter up to a total capacity of X.\nDuring a Porter's activation, it may attach any detached Payload Ships within 3\" if it has available capacity. Payload Ships reattached to a Porter Ship are removed from the table to be deployed in a later round.\nAny tokens, Spikes, or effects affecting the reattached Payload Ship are removed from that Ship.",
         "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70",
-        "alias": ["Porter S-1", "Porter S-2", "Porter L-1", "Porter F-2"]
+        "alias": ["Porter F-2", "Porter L-1", "Porter S-1", "Porter S-2"]
       },
-      {
-        "name": "Rapid Drop",
-        "id": "8b74-2f05-9de9-8b32",
-        "description": "This Ship may launch its Assets at any point during its movement.",
-        "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70"
-      },
+      {"name": "Rapid Drop", "id": "8b74-2f05-9de9-8b32", "description": "This Ship may launch its Assets at any point during its movement.", "hidden": false},
       {
         "name": "Rare",
         "id": "f7ad-85f9-39f4-7e10",
         "description": "You may only take one Group of this Ship in a Skirmish-sized game, two in a Clash, three in a Battle, and four in a Reconquest.",
-        "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Regenerate-X",
         "id": "df32-1b16-f0f9-7b85",
         "description": "This Ship recovers X lost Hull Points at the end of its activation.",
         "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Regenerate-2", "Regenerate-3", "Regenerate-4"]
-      },
-      {
-        "name": "Reinforced Armour",
-        "id": "231e-a3d0-35e6-9a33",
-        "description": "Weapons rolling to hit this Ship or its Group can only score criticals against it on a result of a 3 higher than its Lock value.",
-        "hidden": false
       },
       {
         "name": "Shield-X",
         "id": "40e4-1c82-9e61-c8c1",
         "description": "This Group has a Shield Save of X+. After Weapons have been assigned to this Group or Assets attack this Group, you may declare the use of Shield Saves for this Group. If you do, this Group replaces its Energy and Kinetic Saves with their Shield Saves for that attack sequence. Shield Saves can be used against Energy, Kinetic, and Core damage and ignore any modifiers to Energy and Kinetic Saves. Backup Saves may then be used after Shield Saves as normal.\nA Group gains a single Spike each time it uses its Shield saves (regardless of the number of saves made per use).\nHits caused by Boarding Actions cannot be saved by Shield Saves.",
         "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Shield-3+", "Shield-4+", "Shield-5+"]
       },
+      {"name": "Stealth", "id": "9306-4cd5-b59e-5898", "description": "This Ship may fire one Weapon while Silent Running.", "hidden": false},
+      {"name": "Unique", "id": "3f45-7047-464a-3be4", "description": "You may only take one Group of this Ship.", "hidden": false},
       {
-        "name": "Stealth",
-        "id": "9306-4cd5-b59e-5898",
-        "description": "This Ship may fire one Weapon while Silent Running.",
-        "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "name": "Vectored",
+        "id": "7a2f-fbe0-b3cd-98c8",
+        "description": "This Ship may make an additional turn at any point during its movement, regardless of the Order its Group has taken.",
+        "hidden": false
       },
       {
-        "name": "Unique",
-        "id": "3f45-7047-464a-3be4",
-        "description": "You may only take one Group of this Ship.",
-        "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "name": "Impetuous",
+        "id": "6f09-5ccc-4dae-ff72",
+        "description": "At the start of each round, friendly Groups with this rule improve the Lock of their Weapon Systems by 1 until you activate a friendly Group without this rule.",
+        "hidden": false
+      },
+      {
+        "name": "Reinforced Armour",
+        "id": "231e-a3d0-35e6-9a33",
+        "description": "Weapons rolling to hit this Ship or its Group can only score criticals against it on a result of a 3 higher than its Lock value.",
+        "hidden": false
       },
       {
         "name": "Vanguard-X\"",
@@ -650,51 +615,30 @@
         "alias": ["Vanguard-3\"", "Vanguard-4\"", "Vanguard-6\"", "Vanguard-7\""]
       },
       {
-        "name": "Vectored",
-        "id": "7a2f-fbe0-b3cd-98c8",
-        "description": "This Ship may make an additional turn at any point during its movement, regardless of the Order its Group has taken.",
-        "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "name": "Hero",
+        "id": "f945-e19c-c8bb-1c6a",
+        "description": "You can only include two Groups with this special rule in your fleet. You cannot assign an Admiral to this Ship when building your fleet.",
+        "hidden": false
       },
       {
         "name": "Air to Air",
         "id": "ceee-e18a-c60c-0ef5",
         "description": "This weapon ignores the penalties for attacking Ships in Atmosphere while the attacking Ship is also in Atmosphere.",
-        "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Alt-X",
         "id": "f354-1b03-966f-f667",
         "description": "Only one Weapon or Load with the same Alt value on the same Ship may be used by that Ship each round.\nAll Alt Weapons with the same value count as the same Weapon when determining how many Weapons a Ship has.",
         "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Alt-1"]
       },
-      {
-        "name": "Alt Launch",
-        "id": "b63a-36ea-4020-10c5",
-        "description": "In a round this Weapon is fired this Ship may not launch Assets.",
-        "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70"
-      },
-      {
-        "name": "Anti Wing",
-        "id": "d7b1-2768-13e8-009f",
-        "description": "This weapon may target enemy Wings as if they were Ships (with a Sig of 0\") but reduces its Lock value by 1 for that attack. If it does, for each hit, remove 1 Fighter or 1 Bomber from that Wing or any other enemy Wing within 3\" of the target.",
-        "hidden": false
-      },
+      {"name": "Alt Launch", "id": "b63a-36ea-4020-10c5", "description": "In a round this Weapon is fired this Ship may not launch Assets.", "hidden": false},
       {
         "name": "Arrest-X",
         "id": "7fa4-03e2-d2a7-de9b",
         "description": "A Ship damaged by this Weapon reduces its Thrust by X\" during its next activation. A Ship can only be affected by this rule once each round.",
         "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Arrest-2", "Arrest-4"]
       },
       {
@@ -702,25 +646,19 @@
         "id": "a944-3ee8-9a6c-6440",
         "description": "Whenever you fire this Weapon (including separate attacks generated by the Volley-X special rule), the attacking Group gains X Spikes.",
         "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Bloom-1", "Bloom-2", "Bloom-3", "Bloom-4"]
       },
       {
         "name": "Bombardment",
         "id": "858c-a2ff-ed65-3e47",
         "description": "This Weapon ignores the penalties for attacking Cities and Ships in Atmosphere.\nImprove the Lock of this Weapon by 2 when attacking Cities.\nWhen attacking a Ship in Orbit with this weapon, it always hits on a 6+ and can never cause a critical.\nThis weapon cannot be used to attack Ships in Orbit while the attacking Ship is in Atmosphere.",
-        "hidden": false,
-        "page": 37,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Burnthrough-X",
         "id": "91ae-f561-0802-3f8e",
         "description": "Each of this Weapon's critical hits reduces the target's Energy/Kinetic Save by X for hits caused by this Weapon for this attack. Saves made for other Weapons are unaffected. Roll attacks separately for each Burnthrough Weapon.",
         "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Burnthrough-1", "Burnthrough-2"]
       },
       {
@@ -728,25 +666,19 @@
         "id": "aa1f-b200-394a-dbcf",
         "description": "Improve the Lock value of this Weapon by 1 when attacking Groups of any of the listed X Tonnage values.",
         "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70",
-        "alias": ["Calibre-L", "Calibre-H", "Calibre-L/M", "Calibre-H/C", "Calibre-M/H/C"]
+        "alias": ["Calibre-H", "Calibre-H/C", "Calibre-L", "Calibre-L/M", "Calibre-M/H/C"]
       },
       {
         "name": "Close Action",
         "id": "3bd7-f459-761a-97ee",
         "description": "This Weapon may only be fired at targets within Scan range and on the same Orbital Layer as the attacking Ship.",
-        "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Corruptor-X",
         "id": "b495-5934-9bf1-d595",
         "description": "When this Weapon successfully inflicts damage, place X Battalions on the target.",
         "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Corruptor-1", "Corruptor-2"]
       },
       {
@@ -754,68 +686,52 @@
         "id": "8b64-93ea-39c6-ab29",
         "description": "If an attack from this Weapon scores at least one Critical hit and then damages a Ship (following normal damage allocation rules), the damaged Ship gains the stated X Crippling Effect regardless of Tonnage. If no effect is listed, roll 2D6 and apply the corresponding Crippling Effect (from the Crippling Effect table).\nCrippling Effects caused by Crippling Weapons are in addition to those caused by 7.3.6 Roll for Crippling Effects.\nExcept for Fire, a Ship can only have one of each type of Crippling Effect token at a time (Spikes are not a Crippling Effect), even when placed from different sources or at different times. Any duplicate effects are ignored and discarded.",
         "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70",
-        "alias": ["Crippling", "Crippling-Fire", "Crippling-2xFire", "Crippling-Navigation Offline", "Crippling-Weapons Offline"]
+        "alias": ["Crippling", "Crippling-2xFire", "Crippling-Fire", "Crippling-Navigation Offline", "Crippling-Weapons Offline"]
       },
       {
         "name": "Critical-X",
         "id": "7cc5-6830-9e54-6d11",
         "description": "Each of this Weapon's criticals increases the damage of that hit by X.",
         "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Critical-1", "Critical-2"]
       },
       {
         "name": "Escape Velocity",
         "id": "0357-837c-bc00-4ce3",
         "description": "This weapon ignores the penalty for attacking Ships in Orbit and treats all Ships in Atmosphere as non-Descent Ships, so only reduces its Lock by 1 when attacking Ships in Atmosphere.\nClose Action weapons with this special rule may be used against targets in Orbit while the attacking Ship is in Atmosphere.",
-        "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Flash-X",
         "id": "9e6d-bb41-7c8b-a3b6",
         "description": "When this Weapon inflicts damage, the damaged Group (or Ship if it ignores the usual coherency rules) gains X Spikes.",
         "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Flash-1", "Flash-2"]
       },
       {
         "name": "Focused",
         "id": "464a-0e99-0229-5190",
         "description": "Instead of the normal potential targets for Weapons, this Weapon's potential targets are either:\n• A single enemy Ship.\n• A Dropsite containing no friendly Battalions.\nDamage caused by this Weapon is allocated to only the target.",
-        "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Fusillade-X",
         "id": "4f05-4fdc-fad2-c566",
         "description": "This Weapon increases its Attack value by X while its Ship is on Weapons Free.",
         "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Fusillade-1", "Fusillade-2", "Fusillade-3", "Fusillade-4", "Fusillade-5"]
       },
       {
         "name": "High Power",
         "id": "4a8c-aae4-c959-2437",
         "description": "Unless the attacking Ship is on the Weapons Free Order, attacking with this Weapon counts as attacking with two Weapons (though it only fires once).\nShips with only a single High Power Weapon can only attack with it while on the Weapons Free Order.",
-        "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Impel-X",
         "id": "9944-ada1-19c8-2d06",
         "description": "If an attacking Group scores at least X critical hits with this Weapon System against a Group, choose one of the following for each affected Group:\n• Turn all Ships in that Group 45 degrees in the same direction. If the Group scored at least twice X, turn all Ships in that Group 90 degrees in the same direction instead.\n• Move all Ships in that Group up to twice X in inches directly forward (measuring from the affected Ships). Ships moved this way cannot be moved into Large Objects or off of the table.\nA Group can only be affected by each effect once per Weapon System per attack sequence.",
         "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Impel-1", "Impel-2"]
       },
       {
@@ -823,8 +739,6 @@
         "id": "0c02-c41a-e1a2-882e",
         "description": "This Weapon can only be fired X times per game.\nYou may launch a total of X of this Asset per game.",
         "hidden": false,
-        "page": 38,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Limited-1", "Limited-2", "Limited-3", "Limited-4", "Limited-6"]
       },
       {
@@ -832,49 +746,63 @@
         "id": "fc9b-53d4-3bb3-3413",
         "description": "Weapons with the same Linked-X value on the same Ship count as 1 Weapon for Orders purposes. When you attack with a Linked-X Weapon, you attack with all other Weapons on that Ship with the same Linked-X value.",
         "hidden": false,
-        "page": 39,
-        "publicationId": "45b0-3e3b-e83d-fd70",
         "alias": ["Linked-1", "Linked-SSN"]
       },
       {
         "name": "Low Power",
         "id": "2851-2293-e346-839f",
         "description": "If a Ship's Orders allow it to fire Close Action Weapons, it may attack with one Low Power Weapon in addition to any other Weapons allowed by its Order.",
-        "hidden": false,
-        "page": 39,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Mauler",
         "id": "c093-8c13-6119-8d37",
         "description": "The Lock value of this Weapon is equal to the save the target would use to defend against it.",
-        "hidden": false,
-        "page": 39,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Overcharge",
         "id": "33e5-a091-cbf5-4765",
         "description": "Before assigning Weapons to targets, you may double the Damage value of this Weapon. If you do, this becomes a High-Power Weapon for this activation and each attack roll of 6 causes that attacking Ship to lose this Weapon's unmodified Damage value in hull points. Only one Weapon per Ship may benefit from this rule per activation.",
-        "hidden": false,
-        "page": 39,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Penetrator",
         "id": "fa34-1759-4681-18db",
         "description": "Each of this Weapon's critical hits cause a Core hit instead of its normal Damage Type.",
-        "hidden": false,
-        "page": 39,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "hidden": false
       },
       {
         "name": "Re-Entry",
         "id": "3438-1fc6-047d-47ad",
         "description": "This weapon ignores the penalties for attacking Ships in Atmosphere while the attacking Ship is in Orbit.\nClose Action weapons with this special rule may be used against targets in Atmosphere while the attacking Ship is in Orbit.",
+        "hidden": false
+      },
+      {
+        "name": "Scald-X",
+        "id": "41b3-55a2-8d71-ee88",
+        "description": "If this weapon attacks a target within Scan range, reduce the target's Energy / Kinetic save against this Weapon's hits by X (other attacks and Weapons are unaffected).",
         "hidden": false,
-        "page": 39,
-        "publicationId": "45b0-3e3b-e83d-fd70"
+        "alias": ["Scald-1", "Scald-2", "Scald-3"]
+      },
+      {
+        "name": "Status",
+        "id": "ea58-a80c-c3de-e165",
+        "description": "When you hit with this Weapon, pick one of the following tokens; Defence Systems Offline, Scanners Offline, or Navigation Offline.\nAt the end of the Inflict Damage step, choose one of the defending Ships to gain the selected token, regardless of the amount of damage caused by the attack or amount of hits saved. This token is automatically removed at the start of the End Phase, before making repairs.",
+        "hidden": false
+      },
+      {
+        "name": "Sustained Fire",
+        "id": "52ba-6610-b0f0-92d3",
+        "description": "If this Weapon attacks a target Group it hit in the previous round, double its Attack value for this attack.",
+        "hidden": false
+      },
+      {
+        "name": "Volley-X",
+        "id": "2313-61f3-8840-3e8b",
+        "description": "This Weapon counts as 1 Weapon for Orders purposes. When you assign this Weapon to a target, you assign it to targets up to X times (either the same or different). Once assigned, treat each allocation as a separate weapon for the subsequent steps in the attack sequence.\nBroadside Weapons using Volley must alternate arcs when determining and assigning targets (so cannot target the same Group on the same side twice in a row).",
+        "hidden": false,
+        "alias": ["Volley-2", "Volley-3", "Volley-5"]
       },
       {
         "name": "Reave-X",
@@ -884,38 +812,10 @@
         "alias": ["Reave-1", "Reave-2"]
       },
       {
-        "name": "Scald-X",
-        "id": "41b3-55a2-8d71-ee88",
-        "description": "If this weapon attacks a target within Scan range, reduce the target's Energy / Kinetic save against this Weapon's hits by X (other attacks and Weapons are unaffected).",
-        "hidden": false,
-        "page": 39,
-        "publicationId": "45b0-3e3b-e83d-fd70",
-        "alias": ["Scald-1", "Scald-2", "Scald-3"]
-      },
-      {
-        "name": "Status",
-        "id": "ea58-a80c-c3de-e165",
-        "description": "When you hit with this Weapon, pick one of the following tokens; Defence Systems Offline, Scanners Offline, or Navigation Offline.\nAt the end of the Inflict Damage step, choose one of the defending Ships to gain the selected token, regardless of the amount of damage caused by the attack or amount of hits saved. This token is automatically removed at the start of the End Phase, before making repairs.",
-        "hidden": false,
-        "page": 39,
-        "publicationId": "45b0-3e3b-e83d-fd70"
-      },
-      {
-        "name": "Sustained Fire",
-        "id": "52ba-6610-b0f0-92d3",
-        "description": "If this Weapon attacks a target Group it hit in the previous round, double its Attack value for this attack.",
-        "hidden": false,
-        "page": 39,
-        "publicationId": "45b0-3e3b-e83d-fd70"
-      },
-      {
-        "name": "Volley-X",
-        "id": "2313-61f3-8840-3e8b",
-        "description": "This Weapon counts as 1 Weapon for Orders purposes. When you assign this Weapon to a target, you assign it to targets up to X times (either the same or different). Once assigned, treat each allocation as a separate weapon for the subsequent steps in the attack sequence.\nBroadside Weapons using Volley must alternate arcs when determining and assigning targets (so cannot target the same Group on the same side twice in a row).",
-        "hidden": false,
-        "page": 39,
-        "publicationId": "45b0-3e3b-e83d-fd70",
-        "alias": ["Volley-2", "Volley-3", "Volley-5"]
+        "name": "Anti Wing",
+        "id": "d7b1-2768-13e8-009f",
+        "description": "This weapon may target enemy Wings as if they were Ships (with a Sig of 0\") but reduces its Lock value by 1 for that attack. If it does, for each hit, remove 1 Fighter or 1 Bomber from that Wing or any other enemy Wing within 3\" of the target.",
+        "hidden": false
       }
     ],
     "sharedSelectionEntries": [
@@ -927,8 +827,8 @@
         "type": "upgrade",
         "categoryLinks": [{"name": "Configuration", "id": "4b1f-78ba-b6cc-2dc2", "primary": true, "targetId": "8a9e-8399-ae64-5be9"}],
         "constraints": [
-          {"id": "494c-03f1-1565-4aa9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "494c-03f1-1565-4aa9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "494c-03f1-1565-4aa9-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "494c-03f1-1565-4aa9-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "entryLinks": [{"name": "Game Size", "id": "f047-8554-71ea-10f4", "hidden": false, "import": true, "targetId": "1e1a-b867-1538-7a64", "type": "selectionEntryGroup"}],
         "modifiers": [
@@ -994,7 +894,7 @@
               {
                 "name": "Admirals",
                 "id": "2bfb-facb-f285-8141",
-                "defaultAmount": 0,
+                "defaultAmount": "0",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
@@ -1004,7 +904,7 @@
               {
                 "name": "Famous admirals",
                 "id": "c0e0-0d6b-4ddb-2a64",
-                "defaultAmount": 0,
+                "defaultAmount": "0",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
@@ -1014,7 +914,7 @@
               {
                 "name": "Colossal ships",
                 "id": "2172-995a-95f6-db3d",
-                "defaultAmount": 0,
+                "defaultAmount": "0",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 3,
@@ -1032,7 +932,7 @@
               {
                 "name": "Unique ships already in fleet",
                 "id": "8eb8-9887-6480-9a59",
-                "defaultAmount": 0,
+                "defaultAmount": "0",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
@@ -1042,7 +942,7 @@
               {
                 "name": "Rare ships with max quantity in fleet",
                 "id": "b7f2-9472-f805-33e4",
-                "defaultAmount": 0,
+                "defaultAmount": "0",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
@@ -1060,7 +960,7 @@
               {
                 "name": "Mercenary ships",
                 "id": "473d-151f-22a2-8892",
-                "defaultAmount": 1,
+                "defaultAmount": "1",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
@@ -1097,8 +997,8 @@
             "conditions": [
               {
                 "childId": "7895-d441-b903-8bb2",
+                "childName": "Skirmish: 501 - 1000 points",
                 "field": "selections",
-                "includeChildForces": false,
                 "includeChildSelections": true,
                 "scope": "force",
                 "shared": true,
@@ -1112,16 +1012,6 @@
             "type": "set",
             "value": true,
             "conditions": [
-              {
-                "childId": "7895-d441-b903-8bb2",
-                "childName": "Skirmish: 501 - 1000 points",
-                "field": "selections",
-                "includeChildSelections": true,
-                "scope": "force",
-                "shared": true,
-                "type": "equalTo",
-                "value": 1
-              },
               {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "2bfb-facb-f285-8141",
@@ -1132,6 +1022,16 @@
                 "shared": true,
                 "type": "equalTo",
                 "value": 0
+              },
+              {
+                "childId": "7895-d441-b903-8bb2",
+                "childName": "Skirmish: 501 - 1000 points",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
               }
             ]
           }
@@ -1157,8 +1057,8 @@
                 "conditions": [
                   {
                     "childId": "7895-d441-b903-8bb2",
+                    "childName": "Skirmish: 501 - 1000 points",
                     "field": "selections",
-                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -1167,8 +1067,8 @@
                   },
                   {
                     "childId": "3fda-65f2-6cc3-ee33",
+                    "childName": "Clash: 1001 - 2000 points",
                     "field": "selections",
-                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -1189,8 +1089,8 @@
                 "conditions": [
                   {
                     "childId": "7895-d441-b903-8bb2",
+                    "childName": "Skirmish: 501 - 1000 points",
                     "field": "selections",
-                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -1199,8 +1099,8 @@
                   },
                   {
                     "childId": "3fda-65f2-6cc3-ee33",
+                    "childName": "Clash: 1001 - 2000 points",
                     "field": "selections",
-                    "includeChildForces": false,
                     "includeChildSelections": true,
                     "scope": "force",
                     "shared": true,
@@ -1233,7 +1133,7 @@
         "import": true,
         "type": "upgrade",
         "categoryLinks": [{"name": "Game", "id": "2b6f-70ee-e676-4dc1", "primary": true, "targetId": "492c-ac66-3724-83bc"}],
-        "constraints": [{"id": "da4d-0c54-3d92-1378", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "constraints": [{"id": "da4d-0c54-3d92-1378", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "entryLinks": [
           {"name": "Secondary Objectives", "id": "d2ef-a3c8-0171-6596", "hidden": false, "import": true, "targetId": "ce84-f336-4628-4d73", "type": "selectionEntryGroup"}
         ],
@@ -1243,6 +1143,7 @@
             "type": "set",
             "value": true,
             "conditions": [
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
               {
                 "childId": "6fb6-4519-d945-0495",
                 "childName": "Secondary Objectives",
@@ -1252,8 +1153,7 @@
                 "shared": true,
                 "type": "atLeast",
                 "value": 1
-              },
-              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1}
+              }
             ]
           }
         ]
@@ -1266,8 +1166,8 @@
         "defaultSelectionEntryId": "3fda-65f2-6cc3-ee33",
         "hidden": false,
         "constraints": [
-          {"id": "86f0-d3d8-5cde-7273-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "86f0-d3d8-5cde-7273-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "86f0-d3d8-5cde-7273-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "86f0-d3d8-5cde-7273-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "selectionEntries": [
           {"name": "Skirmish: 501 - 1000 points", "id": "7895-d441-b903-8bb2", "hidden": false, "import": true, "sortIndex": 1, "type": "upgrade"},
@@ -1282,8 +1182,8 @@
         "defaultSelectionEntryId": "none",
         "hidden": false,
         "constraints": [
-          {"id": "253d-f789-42e4-a3d9-min", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "min", "value": 2},
-          {"id": "253d-f789-42e4-a3d9-max", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 2}
+          {"id": "253d-f789-42e4-a3d9-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+          {"id": "253d-f789-42e4-a3d9-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
         ],
         "selectionEntries": [
           {
@@ -1293,7 +1193,7 @@
             "import": true,
             "sortIndex": 1,
             "type": "upgrade",
-            "constraints": [{"id": "a1b0-fa5e-9056-d5ab", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "a1b0-fa5e-9056-d5ab", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "profiles": [
               {
                 "name": "Key Site",
@@ -1318,7 +1218,7 @@
             "import": true,
             "sortIndex": 2,
             "type": "upgrade",
-            "constraints": [{"id": "0ee8-68f2-6b46-1afe", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "0ee8-68f2-6b46-1afe", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "profiles": [
               {
                 "name": "Priority Target",
@@ -1343,7 +1243,7 @@
             "import": true,
             "sortIndex": 3,
             "type": "upgrade",
-            "constraints": [{"id": "758e-1ceb-d47c-2cad", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "758e-1ceb-d47c-2cad", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "profiles": [
               {
                 "name": "Long Shot",
@@ -1368,7 +1268,7 @@
             "import": true,
             "sortIndex": 4,
             "type": "upgrade",
-            "constraints": [{"id": "7f7d-9bd7-0925-0121", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "7f7d-9bd7-0925-0121", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "profiles": [
               {
                 "name": "Annihilate",
@@ -1393,7 +1293,7 @@
             "import": true,
             "sortIndex": 5,
             "type": "upgrade",
-            "constraints": [{"id": "87ef-4a9f-829e-539d", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "87ef-4a9f-829e-539d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "profiles": [
               {
                 "name": "Take Prizes",
@@ -1418,7 +1318,7 @@
             "import": true,
             "sortIndex": 6,
             "type": "upgrade",
-            "constraints": [{"id": "1de1-a6ea-8a28-d107", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "1de1-a6ea-8a28-d107", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "profiles": [
               {
                 "name": "Gather Intel",
@@ -1443,7 +1343,7 @@
             "import": true,
             "sortIndex": 7,
             "type": "upgrade",
-            "constraints": [{"id": "862b-cfb7-db04-a47f", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "862b-cfb7-db04-a47f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "profiles": [
               {
                 "name": "Decapitate",
@@ -1468,7 +1368,7 @@
             "import": true,
             "sortIndex": 8,
             "type": "upgrade",
-            "constraints": [{"id": "8701-11e6-d697-4bf6", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "8701-11e6-d697-4bf6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "profiles": [
               {
                 "name": "Objectives Beyond",
