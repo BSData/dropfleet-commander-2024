@@ -54,6 +54,24 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "5981-16e9-e835-06d1",
+            "type": "decrement",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "7931-f335-5f97-a5db",
+                "childName": "Cannot Carry Admiral",
+                "field": "selections",
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 1
+              }
+            ]
           }
         ]
       },
@@ -291,7 +309,8 @@
         "hidden": false,
         "constraints": [{"id": "09c2-95e9-8f84-d427", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}]
       },
-      {"name": "Medium Group Spend Exempt", "id": "d720-1c66-5090-ab19", "hidden": false}
+      {"name": "Medium Group Spend Exempt", "id": "d720-1c66-5090-ab19", "hidden": false},
+      {"name": "Cannot Carry Admiral", "id": "7931-f335-5f97-a5db", "hidden": false}
     ],
     "costTypes": [{"name": "pts", "id": "ab32-c9b6-10f3-cbdb", "defaultCostLimit": -1}],
     "entryLinks": [

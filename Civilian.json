@@ -2100,7 +2100,10 @@
             "hidden": false,
             "import": true,
             "type": "model",
-            "categoryLinks": [{"name": "Medium Ship", "id": "15c4-b247-24d3-80fd", "primary": true, "targetId": "53c3-afc0-63ef-413a"}],
+            "categoryLinks": [
+              {"name": "Medium Ship", "id": "15c4-b247-24d3-80fd", "primary": true, "targetId": "53c3-afc0-63ef-413a"},
+              {"name": "Cannot Carry Admiral", "id": "f4d8-51fb-335c-f8ac", "primary": false, "targetId": "7931-f335-5f97-a5db"}
+            ],
             "constraints": [
               {"id": "bbdc-eeab-25e2-4ee2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "3dfe-9f85-1a9d-0353", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
