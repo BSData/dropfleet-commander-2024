@@ -101,15 +101,22 @@
                 "value": 1
               }
             ],
-            "modifiers": [
-              {"field": "944d-d5c8-c46e-76c6", "type": "set", "value": 28},
+            "modifierGroups": [
               {
-                "field": "944d-d5c8-c46e-76c6",
-                "type": "increment",
-                "value": 4,
-                "repeats": [{"childId": "any", "field": "limit::ab32-c9b6-10f3-cbdb", "repeats": 1, "roundUp": true, "scope": "roster", "shared": true, "value": 1000}]
+                "type": "and",
+                "conditions": [{"childId": "any", "field": "limit::ab32-c9b6-10f3-cbdb", "scope": "roster", "shared": true, "type": "atLeast", "value": 4001}],
+                "modifiers": [
+                  {
+                    "field": "944d-d5c8-c46e-76c6",
+                    "type": "increment",
+                    "value": 4,
+                    "repeats": [{"childId": "any", "field": "limit::ab32-c9b6-10f3-cbdb", "repeats": 1, "roundUp": true, "scope": "roster", "shared": true, "value": 1000}]
+                  },
+                  {"field": "944d-d5c8-c46e-76c6", "type": "decrement", "value": 16}
+                ]
               }
-            ]
+            ],
+            "modifiers": [{"field": "944d-d5c8-c46e-76c6", "type": "set", "value": 28}]
           }
         ],
         "modifiers": [
