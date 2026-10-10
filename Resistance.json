@@ -1109,6 +1109,34 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+              {
+                "childId": "f0fd-1f3f-3a54-e586",
+                "childName": "Hero ships with max quantity in fleet",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              },
+              {
+                "childId": "3929-5fb7-5f98-37ea",
+                "childName": "Hero",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 2
+              }
+            ]
           }
         ],
         "selectionEntries": [

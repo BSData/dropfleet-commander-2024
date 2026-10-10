@@ -1179,6 +1179,34 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+              {
+                "childId": "f0fd-1f3f-3a54-e586",
+                "childName": "Hero ships with max quantity in fleet",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              },
+              {
+                "childId": "3929-5fb7-5f98-37ea",
+                "childName": "Hero",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 2
+              }
+            ]
           }
         ],
         "selectionEntries": [
@@ -1262,6 +1290,34 @@
                 "value": 1
               }
             ]
+          },
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+              {
+                "childId": "f0fd-1f3f-3a54-e586",
+                "childName": "Hero ships with max quantity in fleet",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              },
+              {
+                "childId": "3929-5fb7-5f98-37ea",
+                "childName": "Hero",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "atLeast",
+                "value": 2
+              }
+            ]
           }
         ],
         "selectionEntries": [
@@ -1271,7 +1327,10 @@
             "hidden": false,
             "import": true,
             "type": "model",
-            "categoryLinks": [{"name": "Medium Ship", "id": "50a6-2e18-f947-06e5", "primary": true, "targetId": "53c3-afc0-63ef-413a"}],
+            "categoryLinks": [
+              {"name": "Medium Ship", "id": "50a6-2e18-f947-06e5", "primary": true, "targetId": "53c3-afc0-63ef-413a"},
+              {"name": "Capital Hero Ship", "id": "06e5-dbf0-4632-9aa0", "primary": false, "targetId": "abb3-5009-c046-f940"}
+            ],
             "constraints": [
               {"id": "b34f-bd0f-44ef-5e43", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "3cbf-b40f-a2b8-8766", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}

@@ -70,6 +70,17 @@
                 "scope": "roster",
                 "shared": true,
                 "value": 1
+              },
+              {
+                "childId": "abb3-5009-c046-f940",
+                "childName": "Capital Hero Ship",
+                "field": "selections",
+                "includeChildSelections": true,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 1
               }
             ]
           }
@@ -317,7 +328,8 @@
         "constraints": [{"id": "09c2-95e9-8f84-d427", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2}]
       },
       {"name": "Medium Group Spend Exempt", "id": "d720-1c66-5090-ab19", "hidden": false},
-      {"name": "Cannot Carry Admiral", "id": "7931-f335-5f97-a5db", "hidden": false}
+      {"name": "Cannot Carry Admiral", "id": "7931-f335-5f97-a5db", "hidden": false},
+      {"name": "Capital Hero Ship", "id": "abb3-5009-c046-f940", "hidden": false}
     ],
     "costTypes": [{"name": "pts", "id": "ab32-c9b6-10f3-cbdb", "defaultCostLimit": -1}],
     "entryLinks": [
@@ -974,6 +986,16 @@
                 "sortIndex": 2,
                 "type": "upgrade",
                 "constraints": [{"id": "1501-f030-fec3-fe87", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              },
+              {
+                "name": "Hero ships with max quantity in fleet",
+                "id": "f0fd-1f3f-3a54-e586",
+                "defaultAmount": "0",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "type": "upgrade",
+                "constraints": [{"id": "60af-46bc-b36a-940e", "field": "selections", "includeChildSelections": false, "scope": "parent", "shared": true, "type": "max", "value": 1}]
               }
             ]
           },
