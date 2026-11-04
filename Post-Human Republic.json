@@ -14,7 +14,8 @@
       {"name": "Fleet Space Stations", "id": "af1f-8897-1ad8-e506", "targetId": "7e9b-b6ba-2178-6eb5", "type": "catalogue"},
       {"name": "Misc", "id": "96ad-a8d5-d575-5988", "targetId": "1b65-4911-bd01-73aa", "type": "catalogue"},
       {"name": "Civilian", "id": "80cb-fed7-ff65-dce2", "targetId": "903e-8fb9-3fe2-4460", "type": "catalogue"},
-      {"name": "Resistance Shared", "id": "1d17-b292-608b-4c7f", "targetId": "e35f-bb6b-cd59-6b36", "type": "catalogue"}
+      {"name": "Resistance Shared", "id": "1d17-b292-608b-4c7f", "targetId": "e35f-bb6b-cd59-6b36", "type": "catalogue"},
+      {"name": "System Shared", "id": "db30-7455-d727-7d44", "targetId": "2dc1-c46a-11b4-c0f0", "type": "catalogue"}
     ],
     "entryLinks": [
       {"name": "Lvl 1: Vizier", "id": "6150-03c3-3086-46d4", "hidden": false, "import": true, "targetId": "4d5f-828e-aece-77fe", "type": "selectionEntry"},
@@ -142,6 +143,7 @@
       {"name": "SLM-9 Resupply Hauler", "id": "964b-55f3-9968-f6e7", "hidden": false, "import": true, "targetId": "0cf9-dc4e-a21a-3fc1", "type": "selectionEntry"},
       {"name": "T-Type Tugboats", "id": "296e-d2de-44e4-5448", "hidden": false, "import": true, "targetId": "21c8-a67f-93e1-7b07", "type": "selectionEntry"},
       {"name": "EX-7 Packet Runner", "id": "92ba-d078-24c8-6f42", "hidden": false, "import": true, "targetId": "b6bf-c8ab-1240-e10f", "type": "selectionEntry"},
+      {"name": "Kronos Barges", "id": "0377-f56d-dcbd-9eda", "hidden": false, "import": true, "targetId": "0fe9-c9fb-f89d-699e", "type": "selectionEntry"},
       {"name": "DH-Type Penal Transport", "id": "0c81-fa8d-ee5e-16b3", "hidden": false, "import": true, "targetId": "3c15-10cc-4cf2-7166", "type": "selectionEntry"},
       {"name": "Jah'tar Startrader", "id": "4fd4-1d27-383a-0d40", "hidden": false, "import": true, "targetId": "e1ee-f46b-05f3-54b2", "type": "selectionEntry"},
       {"name": "M-Type Barge", "id": "33d2-e1a1-c317-a452", "hidden": false, "import": true, "targetId": "a1c6-c54a-4d36-5280", "type": "selectionEntry"},
@@ -167,14 +169,68 @@
       {"name": "Heavy Calibre Orbital Gun", "id": "1e56-5ebe-a4c4-838e", "hidden": false, "import": true, "targetId": "7758-0507-51fd-7d00", "type": "selectionEntry"},
       {"name": "Shield Platform", "id": "0d4f-9d73-5245-be04", "hidden": false, "import": true, "targetId": "4f98-9baa-dae8-329f", "type": "selectionEntry"},
       {"name": "Scanner Tower", "id": "7abd-c654-f60c-f096", "hidden": false, "import": true, "targetId": "b2e4-e44e-7f3f-4020", "type": "selectionEntry"},
+      {
+        "name": "Military Outpost",
+        "id": "78f9-c130-cf9f-8eb2",
+        "hidden": false,
+        "import": true,
+        "targetId": "4dc7-0564-6791-9ecc",
+        "type": "selectionEntry",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "473d-151f-22a2-8892",
+                "childName": "Mercenary ships",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hangar",
+        "id": "7a6e-ee33-d5ab-9643",
+        "hidden": false,
+        "import": true,
+        "targetId": "9530-2ee3-9f00-b7f5",
+        "type": "selectionEntry",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "473d-151f-22a2-8892",
+                "childName": "Mercenary ships",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
       {"name": "Launch Assets", "id": "7c92-6895-d024-3a5d", "hidden": false, "import": true, "targetId": "d178-9648-a5d6-f294", "type": "selectionEntry"}
     ],
-    "publications": [{"name": "PHR Combined Fleet Stats (260828)", "id": "6462-e99b-594c-193a", "hidden": false, "shortName": "PHR Stats (260828)"}],
+    "publications": [{"name": "PHR Combined Fleet Stats (261104)", "id": "6462-e99b-594c-193a", "hidden": false, "shortName": "PHR Stats (261104)"}],
     "sharedRules": [
       {
         "name": "Advanced ECM Suite",
         "id": "309d-c322-d206-2dac",
-        "description": "When a friendly Group (including this Ship's Group) within 4\" of this Ship is attacked, you may have this Ship use its Advanced ECM Suite. If you do, after all weapons have been assigned, reduce the Lock of weapons belonging to one of the attacking Ships by 1 for the rest of the round. The attacking group must be on the same orbital layer as this ship. A Ship can be affected multiple times each round by this rule but each Ship with this rule can only use it once per round.",
+        "description": "When a friendly Group (including this Ship's Group) within 4\" of this Ship is attacked, you may have this Ship use its Advanced ECM Suite. If you do, after all weapons have been assigned, reduce the Lock of weapons belonging to one of the attacking Ships by 1 for the rest of the round. The attacking group must be on the same orbital layer as this ship. A Ship can only be affected by this rule once each round and each Ship with this rule can only use it once per round.",
         "hidden": false
       },
       {
@@ -186,13 +242,19 @@
       {
         "name": "Feature Carrier",
         "id": "bdfa-0705-3daf-6ac8",
-        "description": "At the start of the game, before players deploy, choose one Deployable Feature from the PHR Deployable Features List. This Ship starts the game carrying that Deployable Feature.",
+        "description": "When building your fleet, this Ship must be assigned a Deployable Feature from the PHR Deployable Features list, paying points for this Feature. This Ship starts the game carrying that Deployable Feature.",
+        "hidden": false
+      },
+      {
+        "name": "Holo Deterrence Field",
+        "id": "6eb1-79c4-abcc-a2a8",
+        "description": "At the end of this Ship's activation, choose two different Arcs from F/SL/SR/R. Until the start of this Ship's next activation, enemy Launch Assets that start their move within 6\" in the chosen Arcs reduce their Thrust by 2\" for that move and cannot be placed in base contact with this Ship.",
         "hidden": false
       },
       {
         "name": "Holo Interference Field",
         "id": "8857-c5fc-0b83-e275",
-        "description": "At the end of this ship's activation, you may place a Holo Interference Field within 3\" of this ship. These Holo Interference Fields are removed during the Cleanup step of the End Phase and are circular with a 4\" diameter (a D6 or custom template are perfect tokens to represent these). Enemy Ships ignore the target's Spikes and Signature when attacking through a Holo Interference Field. Enemy Fighters & Bombers underneath the Holo Interference Field when it is placed, or that move/are placed into the Holo Interference Field are removed on a 4+.",
+        "description": "At the end of this ship's activation, you may place a Holo Interference Field within 4\" of this ship. These Holo Interference Fields are removed during the Cleanup step of the End Phase and are circular with a 4\" diameter (a D6 or custom template are perfect tokens to represent these). Enemy Ships ignore the target's Spikes and Signature when attacking through a Holo Interference Field. Enemy Fighters & Bombers underneath the Holo Interference Field when it is placed, or that move/are placed into the Holo Interference Field are removed on a 4+.",
         "hidden": false
       },
       {
@@ -204,7 +266,7 @@
       {
         "name": "Targeting Link",
         "id": "2ed1-c30a-07f6-063d",
-        "description": "Friendly Ships within their Scan range of this Ship may use it as a spotter when they attack. If they do, before assigning weapons to targets, choose any amount of the attacking Ship's weapons. When assigning targets to those weapons, measure Weapons Range from this Ship, using this Ship's Scan. Attacks made this way must still be in Arc and line of sight of the attacking Ship. This rule has no effect on Close Action Weapons and weapons already benefiting from this rule.",
+        "description": "Friendly Ships within their Scan range of this Ship may use it as a spotter when they attack. If they do, before assigning weapons to targets, choose any amount of the attacking Ship's weapons. When assigning those weapons to Ships/Groups, measure Weapons Range from this Ship, using this Ship's Scan. Attacks made this way must still be in Arc and line of sight of the attacking Ship. This rule has no effect on Close Action and Point Blank Weapons and weapons already benefiting from this rule.",
         "hidden": false
       }
     ],
@@ -328,7 +390,7 @@
               {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "At the start of a friendly Group's activation, remove one Crippling Effect token (of any type) from that Group.",
+                "$text": "At the start of a friendly Group's activation, choose a Ship in that Group. That Ship attempts to repair a repairable Crippling Effect.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -446,7 +508,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you assign targets to a weapon with the Calibre-H special rule, the attacking Ship doubles its Scan value against H Tonnage Ships for that weapon's attack (other attacks and weapons are unaffected).",
+                    "$text": "When you assign targets to a weapon with the Calibre-H,C, or H/C special rule, the attacking Ship doubles its Scan value against H and C Tonnage Ships for that attack.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -586,7 +648,8 @@
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "f1ef-0639-21c6-bf72", "primary": false, "targetId": "default-category"},
-              {"name": "Heavy Groups", "id": "918b-cb79-3c90-21b4", "primary": false, "targetId": "8d99-053d-ffeb-98c5"}
+              {"name": "Heavy Groups", "id": "918b-cb79-3c90-21b4", "primary": false, "targetId": "8d99-053d-ffeb-98c5"},
+              {"name": "Heavy and Colossal Groups", "id": "9636-13c1-4d7b-5a45", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
             ],
             "constraints": [
               {"id": "42a4-e9d3-125b-9255", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -731,7 +794,7 @@
                 "import": true,
                 "targetId": "5ccb-88fa-8be6-97f7",
                 "type": "selectionEntryGroup",
-                "modifiers": [{"field": "c6b3-9955-b0da-8cd3", "type": "set", "value": 2}]
+                "modifiers": [{"field": "c6b3-9955-b0da-8cd3", "type": "set", "value": 3}]
               }
             ],
             "profiles": [
@@ -750,7 +813,7 @@
                 "typeId": "705b-98a3-a21d-7118",
                 "typeName": "Admiral Ability",
                 "characteristics": [
-                  {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
+                  {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {"name": "Effect", "$text": "When a friendly Group is given a Max Thrust order, it may turn as if it was on General Quarters.", "typeId": "49ae-26b2-d6ec-81aa"}
                 ]
               }
@@ -765,7 +828,8 @@
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "c188-8a05-ba53-e4f0", "primary": false, "targetId": "default-category"},
-              {"name": "Heavy Groups", "id": "e7e3-2e76-153a-827e", "primary": false, "targetId": "8d99-053d-ffeb-98c5"}
+              {"name": "Heavy Groups", "id": "e7e3-2e76-153a-827e", "primary": false, "targetId": "8d99-053d-ffeb-98c5"},
+              {"name": "Heavy and Colossal Groups", "id": "3e90-9a90-531c-57b0", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
             ],
             "constraints": [
               {"id": "d539-4427-59fb-40ee", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -774,12 +838,12 @@
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 235}],
             "entryLinks": [
               {
-                "name": "Heavy Calibre Triple Broadside",
-                "id": "2849-4aff-9be4-c0cc",
+                "name": "Heavy Calibre Broad-side",
+                "id": "24d6-74d7-e357-523a",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "7f13-4c1e-35bc-ad5b",
+                "targetId": "ce82-a5c3-01e8-d7f0",
                 "type": "selectionEntry"
               },
               {
@@ -957,10 +1021,10 @@
                 "typeId": "705b-98a3-a21d-7118",
                 "typeName": "Admiral Ability",
                 "characteristics": [
-                  {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
+                  {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When a friendly ship would roll for Crippling Damage, roll a dice. On a 4+ that Ship does not roll on the Crippling Damage table but is still Crippled.",
+                    "$text": "When a friendly Ship would roll for Crippling Damage, that Ship does not roll for Crippling Damage, but is still Crippled.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -984,7 +1048,8 @@
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "0267-cf66-0fc8-f938", "primary": false, "targetId": "default-category"},
-              {"name": "Colossal Groups", "id": "7903-79ff-e712-8943", "primary": false, "targetId": "52fa-6578-d171-57d6"}
+              {"name": "Colossal Groups", "id": "7903-79ff-e712-8943", "primary": false, "targetId": "52fa-6578-d171-57d6"},
+              {"name": "Heavy and Colossal Groups", "id": "612c-c52f-5321-5a2d", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
             ],
             "constraints": [
               {"id": "661f-5043-9ec2-9932", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -1323,7 +1388,7 @@
               {"id": "4e7a-ffa9-984c-1f2f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "2fcf-f54b-c655-7e2c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 28}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 25}],
             "entryLinks": [
               {
                 "name": "Medium Calibre Turret",
@@ -1360,8 +1425,8 @@
                   {"name": "Scan", "$text": "8\"", "typeId": "960a-5d0e-18c5-4310"},
                   {"name": "Sig", "$text": "2\"", "typeId": "4feb-14c2-b1f1-9fa5"},
                   {"name": "Hull", "$text": "2", "typeId": "5253-be1d-917b-17d9"},
-                  {"name": "ES", "$text": "4+", "typeId": "42ae-03c9-d0ff-61da"},
-                  {"name": "KS", "$text": "6+", "typeId": "a4d4-4c63-1848-24f8"},
+                  {"name": "ES", "$text": "5+", "typeId": "42ae-03c9-d0ff-61da"},
+                  {"name": "KS", "$text": "5+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-4", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Descent, Stealth", "typeId": "fdf5-89b6-e62e-570f"}
@@ -1442,26 +1507,7 @@
               {"id": "df42-f72c-bb4a-f7d4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 38}],
-            "entryLinks": [
-              {
-                "name": "Medium Calibre Bank",
-                "id": "e8ca-21d7-b2f2-b2a8",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 1,
-                "targetId": "efdb-ebee-11ac-1441",
-                "type": "selectionEntry"
-              },
-              {
-                "name": "Medium Calibre Bank",
-                "id": "6e00-271c-8a82-62f7",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 2,
-                "targetId": "e209-286b-605f-d062",
-                "type": "selectionEntry"
-              }
-            ],
+            "entryLinks": [{"name": "Medium Calibre Bank", "id": "e8ca-21d7-b2f2-b2a8", "hidden": false, "import": true, "targetId": "efdb-ebee-11ac-1441", "type": "selectionEntry"}],
             "profiles": [
               {
                 "name": "Europa",
@@ -1803,7 +1849,8 @@
                 "sortIndex": 2,
                 "targetId": "01e1-dc0a-31a0-d281",
                 "type": "selectionEntry"
-              }
+              },
+              {"name": "Mines", "id": "5be7-998b-7893-e84c", "hidden": false, "import": true, "sortIndex": 3, "targetId": "2cad-0111-6acd-e29c", "type": "selectionEntry"}
             ],
             "infoLinks": [{"name": "Escort", "id": "698c-3b2b-9748-b483", "hidden": false, "targetId": "03da-77d7-bd73-eeb4", "type": "rule"}],
             "profiles": [
@@ -1877,7 +1924,7 @@
                   {"name": "Scan", "$text": "8\"", "typeId": "960a-5d0e-18c5-4310"},
                   {"name": "Sig", "$text": "3\"", "typeId": "4feb-14c2-b1f1-9fa5"},
                   {"name": "Hull", "$text": "5", "typeId": "5253-be1d-917b-17d9"},
-                  {"name": "ES", "$text": "3+", "typeId": "42ae-03c9-d0ff-61da"},
+                  {"name": "ES", "$text": "4+", "typeId": "42ae-03c9-d0ff-61da"},
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-2", "typeId": "32ce-7bbb-1d0f-8c80"},
@@ -1910,7 +1957,7 @@
               {"id": "013a-cd0f-c247-f61f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "1444-32fd-c52c-1fc6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 55}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 52}],
             "entryLinks": [{"name": "Quad Battery", "id": "38a3-7abc-8ccf-b810", "hidden": false, "import": true, "targetId": "4fd0-6697-f7aa-36ab", "type": "selectionEntry"}],
             "infoLinks": [{"name": "Monitor", "id": "7568-203b-7644-04db", "hidden": false, "targetId": "cc9f-9be5-cc19-2fc9", "type": "rule"}],
             "profiles": [
@@ -1958,7 +2005,7 @@
               {"id": "ed30-e060-922d-c343", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "faf3-c1b3-2270-9910", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 61}],
             "entryLinks": [
               {
                 "name": "Wasp Drones",
@@ -2028,7 +2075,7 @@
               {"id": "363f-fa5a-cad2-aec8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "836f-923f-3ecc-112d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 70}],
             "entryLinks": [
               {
                 "name": "Wasp Drones",
@@ -2331,7 +2378,7 @@
                 "typeName": "Ship",
                 "characteristics": [
                   {"name": "Thrust", "$text": "14\"", "typeId": "d821-4294-3117-e8a6"},
-                  {"name": "Scan", "$text": "6\"", "typeId": "960a-5d0e-18c5-4310"},
+                  {"name": "Scan", "$text": "8\"", "typeId": "960a-5d0e-18c5-4310"},
                   {"name": "Sig", "$text": "3\"", "typeId": "4feb-14c2-b1f1-9fa5"},
                   {"name": "Hull", "$text": "5", "typeId": "5253-be1d-917b-17d9"},
                   {"name": "ES", "$text": "4+", "typeId": "42ae-03c9-d0ff-61da"},
@@ -2414,7 +2461,7 @@
               {"id": "cd88-7329-1385-a72b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "9f82-2a26-1b03-628e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 50}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 53}],
             "entryLinks": [{"name": "Twin Heavy Calibres", "id": "c422-f0ed-1da8-aa9b", "hidden": false, "import": true, "targetId": "5ba3-7a58-441b-9185", "type": "selectionEntry"}],
             "profiles": [
               {
@@ -2461,7 +2508,7 @@
               {"id": "f118-0318-6da0-89fe", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "4432-e619-20fc-dda2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 60}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 57}],
             "entryLinks": [
               {
                 "name": "Twin Heavy Calibres",
@@ -3331,7 +3378,7 @@
               {"id": "7424-f1d3-cb9b-57ce", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "6773-e049-67ec-a09a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 88}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 84}],
             "entryLinks": [
               {
                 "name": "Light Calibre Broadside",
@@ -3397,7 +3444,7 @@
               {"id": "cad7-ee89-cbcd-d3df", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "9171-7271-b9b1-467c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 80}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 88}],
             "entryLinks": [
               {
                 "name": "Bombardment Battery",
@@ -3463,7 +3510,7 @@
               {"id": "f1a2-bbfc-dcf3-d4c5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "0f99-03e2-f515-745e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 114}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 110}],
             "entryLinks": [
               {
                 "name": "Light Calibre Broadside",
@@ -3604,7 +3651,7 @@
               {"id": "902b-ca31-0b4f-92ee", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "1d2d-5db1-70c8-b69f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 105}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 110}],
             "entryLinks": [
               {
                 "name": "Medium Calibre Broadside",
@@ -3670,7 +3717,7 @@
               {"id": "0296-75b0-5599-c931", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "74a3-f8c7-407a-19c1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 125}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 120}],
             "entryLinks": [
               {
                 "name": "Medium Calibre Broadside",
@@ -3746,7 +3793,7 @@
               {"id": "423d-9354-9ee6-9172", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "cc3b-49d3-5b72-3363", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 130}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 122}],
             "entryLinks": [
               {
                 "name": "Medium Calibre Broadside",
@@ -3945,7 +3992,7 @@
               {"id": "d696-2373-7a5f-12ac-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "d696-2373-7a5f-12ac-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 134}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 130}],
             "entryLinks": [
               {
                 "name": "Medium Calibre Broadside",
@@ -4078,7 +4125,7 @@
               {"id": "c7e9-2779-1c8c-1fcc-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "c7e9-2779-1c8c-1fcc-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 170}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 166}],
             "entryLinks": [
               {
                 "name": "Light Calibre Broadside",
@@ -4237,7 +4284,7 @@
               {"id": "10b3-e07f-88f2-a40a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "f8a2-3cb0-b963-8688", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 174}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 168}],
             "entryLinks": [
               {
                 "name": "Hornet Drone Locus",
@@ -4256,6 +4303,19 @@
                 "sortIndex": 2,
                 "targetId": "4fb3-d070-48ac-a228",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "d7d6-d242-4841-10a6",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "b3cd-41b3-6020-70dd",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "61d4-a85d-e6a6-74c6", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "d399-94da-4b03-50c6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [{"name": "Feature Carrier", "id": "2adb-d8f1-3439-15db", "hidden": false, "targetId": "bdfa-0705-3daf-6ac8", "type": "rule"}],
@@ -4304,15 +4364,29 @@
               {"id": "a513-788f-14a6-9a14", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "af5c-182b-582b-35cc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 200}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 176}],
             "entryLinks": [
               {
                 "name": "Light Calibre Double Broadside",
                 "id": "b6e4-da50-619b-873b",
                 "hidden": false,
                 "import": true,
+                "sortIndex": 1,
                 "targetId": "02b8-7f0b-1da4-d14d",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "754b-063c-aae8-23ea",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "b3cd-41b3-6020-70dd",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "0d2e-8dbf-db11-4ffa", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "325a-9a2a-88ad-29cd", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [{"name": "Feature Carrier", "id": "a599-cecb-ad1b-e803", "hidden": false, "targetId": "bdfa-0705-3daf-6ac8", "type": "rule"}],
@@ -4361,11 +4435,34 @@
               {"id": "66f9-f99d-d0dc-3956", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "6bb1-90c9-1766-ff65", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 176}],
-            "entryLinks": [{"name": "Holographic Drones", "id": "0bfb-e24a-35a0-ba2b", "hidden": false, "import": true, "targetId": "fc0f-285f-3cba-2254", "type": "selectionEntry"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 170}],
+            "entryLinks": [
+              {
+                "name": "Holographic Drones",
+                "id": "0bfb-e24a-35a0-ba2b",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "fc0f-285f-3cba-2254",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "4752-c74d-0970-17b3",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "b3cd-41b3-6020-70dd",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "2147-196a-429f-67ad", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "d896-53bc-dbf7-5cd8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
             "infoLinks": [
               {"name": "Command Ship-X", "id": "6f02-d0c5-ca69-586d", "hidden": false, "targetId": "af88-13e6-5004-d00a", "type": "rule"},
-              {"name": "Holo Interference Field", "id": "2bc9-9452-9716-0127", "hidden": false, "targetId": "8857-c5fc-0b83-e275", "type": "rule"},
+              {"name": "Holo Deterrence Field", "id": "dec4-4d7d-769d-1c7e", "hidden": false, "targetId": "6eb1-79c4-abcc-a2a8", "type": "rule"},
               {"name": "Feature Carrier", "id": "7cf2-c665-4342-0155", "hidden": false, "targetId": "bdfa-0705-3daf-6ac8", "type": "rule"}
             ],
             "profiles": [
@@ -4384,7 +4481,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Command Ship-1, Holo Interference Field, Feature Carrier", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Command Ship-1, Holo Deterrence Field, Feature Carrier", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -4413,7 +4510,7 @@
               {"id": "01ce-66d1-3b16-26e1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e0d7-d60c-51f3-75c8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 190}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 178}],
             "entryLinks": [
               {
                 "name": "Heavy Calibre Double Broadside",
@@ -4465,7 +4562,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "4693-eb3e-99c1-8709", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "9d10-7f07-185c-a619", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "9d10-7f07-185c-a619", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "bb53-f72b-d3b8-29ab", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4482,21 +4580,21 @@
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 160}],
             "entryLinks": [
               {
-                "name": "Light Calibre Broadside",
-                "id": "3b52-0c4d-288f-41d0",
+                "name": "Light Calibre Double Broadside",
+                "id": "daf8-e433-9d17-496d",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "59ca-a9be-70de-6eea",
+                "targetId": "4fb3-d070-48ac-a228",
                 "type": "selectionEntry"
               },
               {
-                "name": "Medium Calibre Broadside",
-                "id": "ad5a-d4ef-a3c3-b510",
+                "name": "Medium Calibre Double Broadside",
+                "id": "d013-a21e-dd42-f679",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
-                "targetId": "21ae-c657-c054-890d",
+                "targetId": "3aa3-a4a6-0540-6660",
                 "type": "selectionEntry"
               }
             ],
@@ -4532,7 +4630,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "a6b7-cf82-6c0d-7f41", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "ba16-dd1c-79ac-8bac", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "ba16-dd1c-79ac-8bac", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "4d68-732b-a35e-d4ab", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4549,12 +4648,12 @@
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 195}],
             "entryLinks": [
               {
-                "name": "Light Calibre Broadside",
-                "id": "ee23-6dcc-5373-b741",
+                "name": "Light Calibre Double Broadside",
+                "id": "5ba0-e34e-c61a-a681",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "59ca-a9be-70de-6eea",
+                "targetId": "4fb3-d070-48ac-a228",
                 "type": "selectionEntry"
               },
               {
@@ -4599,7 +4698,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "2201-68ee-e32a-2fa1", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "e56d-dabe-79a9-817f", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "e56d-dabe-79a9-817f", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "b664-2aca-ef3b-60b0", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4647,7 +4747,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "efc2-2cb5-76fd-e575", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "c814-12ea-f7f0-47c4", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "c814-12ea-f7f0-47c4", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "c310-1aa7-839e-5bbe", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4662,7 +4763,18 @@
               {"id": "ce39-2967-98ad-d877-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 160}],
-            "entryLinks": [{"name": "Holographic Drones", "id": "f8a5-a33d-95a5-313c", "hidden": false, "import": true, "targetId": "fc0f-285f-3cba-2254", "type": "selectionEntry"}],
+            "entryLinks": [
+              {
+                "name": "Holographic Drones",
+                "id": "f8a5-a33d-95a5-313c",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "fc0f-285f-3cba-2254",
+                "type": "selectionEntry"
+              },
+              {"name": "Mines", "id": "4ec3-6087-b1b5-5609", "hidden": false, "import": true, "sortIndex": 2, "targetId": "f03a-b4ce-52fa-e26b", "type": "selectionEntry"}
+            ],
             "infoLinks": [
               {"name": "Vanguard-X\"", "id": "ebf2-acd5-5d30-0c48", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"},
               {"name": "Holo Interference Field", "id": "cb2e-2fb2-e780-b97d", "hidden": false, "targetId": "8857-c5fc-0b83-e275", "type": "rule"}
@@ -4698,7 +4810,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "d473-aba3-1a74-d226", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "641b-eb73-f78d-217e", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "641b-eb73-f78d-217e", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "975e-d691-c53d-064f", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4712,7 +4825,7 @@
               {"id": "d226-0421-be36-6391", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "cd80-338a-4974-15f9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 210}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 205}],
             "entryLinks": [
               {
                 "name": "Heavy Calibre Double Broadside",
@@ -4773,7 +4886,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "90f3-df00-cc63-a6de", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "654e-9d62-9584-a574", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "654e-9d62-9584-a574", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "cd77-b100-7f70-fdad", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4848,7 +4962,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "d63e-ced9-5672-2b6f", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "8162-6225-cff9-def9", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "8162-6225-cff9-def9", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "9eac-f71c-9b92-eccd", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4862,7 +4977,7 @@
               {"id": "75c0-6e5c-7a65-bc30", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "f46a-8d5a-c076-a032", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 200}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 195}],
             "entryLinks": [
               {
                 "name": "Light Calibre Double Broadside",
@@ -4881,6 +4996,19 @@
                 "sortIndex": 2,
                 "targetId": "2fe0-cfd4-7c48-0f83",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "53d8-df05-898f-0541",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "eb5a-1637-bb6c-1e3a",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "8acc-c6c4-9932-8eea", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "302b-d8b9-f528-6557", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [{"name": "Feature Carrier", "id": "63ff-7e8a-7b14-24ba", "hidden": false, "targetId": "bdfa-0705-3daf-6ac8", "type": "rule"}],
@@ -4915,7 +5043,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "efb7-9814-690b-fc81", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "81c6-9b7e-dcbb-cfe8", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "81c6-9b7e-dcbb-cfe8", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "5a5b-9c9a-31f4-055f", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4932,12 +5061,12 @@
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 235}],
             "entryLinks": [
               {
-                "name": "Heavy Calibre Triple Broadside",
-                "id": "e4fa-9f9f-c45f-f2a5",
+                "name": "Heavy Calibre Broadside",
+                "id": "a6c3-ac7d-6a4b-0158",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "7f13-4c1e-35bc-ad5b",
+                "targetId": "2879-9cdc-fd3a-d228",
                 "type": "selectionEntry"
               },
               {
@@ -4981,7 +5110,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "96e4-7dbf-2dee-2d81", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "71fe-1fd7-090e-3d6d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "71fe-1fd7-090e-3d6d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "2370-5ac2-dc15-c8c4", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4998,12 +5128,12 @@
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 255}],
             "entryLinks": [
               {
-                "name": "Heavy Calibre Triple Broadside",
-                "id": "e281-512b-900a-766b",
+                "name": "Heavy Calibre Broadside",
+                "id": "0a9f-9c5b-6755-72d6",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "7f13-4c1e-35bc-ad5b",
+                "targetId": "2879-9cdc-fd3a-d228",
                 "type": "selectionEntry"
               },
               {
@@ -5048,7 +5178,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "8e5d-740c-affa-76ba", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "1961-15fb-3b73-802e", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "1961-15fb-3b73-802e", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "68b3-223a-0c0a-6d61", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5062,7 +5193,7 @@
               {"id": "08ef-205d-88e7-67b4-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "08ef-205d-88e7-67b4-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 235}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 230}],
             "entryLinks": [
               {
                 "name": "Meganova Laser",
@@ -5092,7 +5223,7 @@
                 "typeName": "Ship",
                 "characteristics": [
                   {"name": "Thrust", "$text": "6\"", "typeId": "d821-4294-3117-e8a6"},
-                  {"name": "Scan", "$text": "10\"", "typeId": "960a-5d0e-18c5-4310"},
+                  {"name": "Scan", "$text": "16\"", "typeId": "960a-5d0e-18c5-4310"},
                   {"name": "Sig", "$text": "10\"", "typeId": "4feb-14c2-b1f1-9fa5"},
                   {"name": "Hull", "$text": "22", "typeId": "5253-be1d-917b-17d9"},
                   {"name": "ES", "$text": "3+", "typeId": "42ae-03c9-d0ff-61da"},
@@ -5114,7 +5245,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "1657-f670-6fad-2d01", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "639a-83ac-4eb1-c08e", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "639a-83ac-4eb1-c08e", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "0399-b574-5bf4-a1ce", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5128,7 +5260,7 @@
               {"id": "f04e-125a-343b-f05b-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "f04e-125a-343b-f05b-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 210}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 200}],
             "entryLinks": [
               {
                 "name": "Laser Multi-Lance",
@@ -5180,7 +5312,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "2a3a-f1b3-f894-768b", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "4f01-f952-ce45-5bb6", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "4f01-f952-ce45-5bb6", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "f070-f218-3d6d-9e87", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5194,15 +5327,15 @@
               {"id": "f380-5506-e1c0-ba3a-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "f380-5506-e1c0-ba3a-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 220}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 205}],
             "entryLinks": [
               {
-                "name": "Heavy Calibre Broadside",
-                "id": "81ad-15e9-70cc-472c",
+                "name": "Heavy Calibre Broadside Array",
+                "id": "4589-5084-bac9-7d47",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "340b-f569-8189-5108",
+                "targetId": "d119-b415-486f-3888",
                 "type": "selectionEntry"
               },
               {
@@ -5255,7 +5388,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "fb30-1267-6f82-40f4", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "a987-d60c-79d1-6731", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "a987-d60c-79d1-6731", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "59de-e0ea-295f-814c", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5269,7 +5403,7 @@
               {"id": "7f33-b69a-6bde-6297", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "0950-6b35-2afe-14f6", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 230}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 250}],
             "entryLinks": [
               {
                 "name": "Energy Glaives",
@@ -5321,7 +5455,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "108a-c7b7-9a9b-9cf8", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "f220-3336-daed-378a", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "f220-3336-daed-378a", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "58b8-ecbe-8603-6f77", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5388,7 +5523,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "d135-a12a-a260-b9d3", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "c399-0671-c9ef-524c", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "c399-0671-c9ef-524c", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "f8ef-0cf3-904a-e749", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5464,7 +5600,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "68f7-e2a0-a566-6cd2", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "e5aa-3218-56a0-8980", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "e5aa-3218-56a0-8980", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "bf41-021c-6cac-cd02", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5478,7 +5615,7 @@
               {"id": "abb1-60c9-29fe-76a4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "16d2-06d6-d6da-2aad", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 245}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 260}],
             "entryLinks": [
               {
                 "name": "Energy Glaives",
@@ -5541,7 +5678,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "b5c3-0f98-3f32-596c", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "bc55-4cc6-9b7b-0015", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "bc55-4cc6-9b7b-0015", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "9bcd-bdb5-e6a6-6d3e", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5555,7 +5693,7 @@
               {"id": "4e9e-b12f-c96b-7280", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "7154-f04e-ed5f-dd95", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 270}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 295}],
             "entryLinks": [
               {
                 "name": "Meganova Laser",
@@ -5616,7 +5754,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "f55c-04db-b2bb-131f", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "6a30-ab5f-f344-e76d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "6a30-ab5f-f344-e76d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "6be5-66c7-6355-51e1", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5630,15 +5769,15 @@
               {"id": "b7cc-fc4d-326f-887c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "0d55-22b2-af21-d5d7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 300}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 315}],
             "entryLinks": [
               {
-                "name": "Heavy Calibre Triple Broadside",
-                "id": "02fd-2fbe-74af-01db",
+                "name": "Heavy Calibre Broadside",
+                "id": "43fa-b608-06c2-cd96",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "7f13-4c1e-35bc-ad5b",
+                "targetId": "2879-9cdc-fd3a-d228",
                 "type": "selectionEntry"
               },
               {
@@ -5692,7 +5831,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "b99a-2fb4-e470-ecc2", "primary": false, "targetId": "default-category"},
-          {"name": "Colossal Groups", "id": "59f2-8457-f555-d231", "primary": true, "targetId": "52fa-6578-d171-57d6"}
+          {"name": "Colossal Groups", "id": "59f2-8457-f555-d231", "primary": true, "targetId": "52fa-6578-d171-57d6"},
+          {"name": "Heavy and Colossal Groups", "id": "9e6f-d9a6-5ffb-c089", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "modifiers": [
           {
@@ -5748,12 +5888,30 @@
                 "type": "selectionEntry"
               },
               {
-                "name": "Energy Glaive Battery",
-                "id": "5213-7e33-5e04-3138",
+                "name": "Energy Glaives",
+                "id": "d706-d0ff-ae70-922b",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
-                "targetId": "694e-c9a3-913d-e953",
+                "targetId": "1adb-19f1-35e8-3867",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Energy Glaives",
+                "id": "dcb2-ff15-2d6f-b8f4",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "6d93-9277-7128-7205",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Energy Glaives",
+                "id": "312f-f62f-60fe-ce96",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "a24d-77ed-1dc6-d3bf",
                 "type": "selectionEntry"
               }
             ],
@@ -5770,7 +5928,7 @@
                   {"name": "Scan", "$text": "12\"", "typeId": "960a-5d0e-18c5-4310"},
                   {"name": "Sig", "$text": "14\"", "typeId": "4feb-14c2-b1f1-9fa5"},
                   {"name": "Hull", "$text": "25", "typeId": "5253-be1d-917b-17d9"},
-                  {"name": "ES", "$text": "2+", "typeId": "42ae-03c9-d0ff-61da"},
+                  {"name": "ES", "$text": "3+", "typeId": "42ae-03c9-d0ff-61da"},
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
@@ -5789,7 +5947,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "14bc-2b81-67d7-4728", "primary": false, "targetId": "default-category"},
-          {"name": "Colossal Groups", "id": "15c8-c8fa-e6dd-f36e", "primary": true, "targetId": "52fa-6578-d171-57d6"}
+          {"name": "Colossal Groups", "id": "15c8-c8fa-e6dd-f36e", "primary": true, "targetId": "52fa-6578-d171-57d6"},
+          {"name": "Heavy and Colossal Groups", "id": "af10-cce1-dc93-8ba9", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "modifiers": [
           {
@@ -5845,12 +6004,21 @@
                 "type": "selectionEntry"
               },
               {
-                "name": "Energy Glaive Battery",
-                "id": "4955-7d4a-692e-6acd",
+                "name": "Energy Glaives",
+                "id": "4f55-a883-de35-6caa",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
-                "targetId": "131f-bd0f-ed3a-84e0",
+                "targetId": "1adb-19f1-35e8-3867",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Energy Glaives",
+                "id": "2140-3396-50b4-d2d6",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "6d93-9277-7128-7205",
                 "type": "selectionEntry"
               },
               {
@@ -5858,11 +6026,11 @@
                 "id": "22a9-6dc1-a9cf-535c",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 4,
                 "targetId": "4f5c-a55e-37ee-fbbe",
                 "type": "selectionEntry"
               },
-              {"name": "Torpedo", "id": "77f2-e8de-3f94-e01e", "hidden": false, "import": true, "sortIndex": 4, "targetId": "54f4-8855-f1b9-fdf5", "type": "selectionEntry"}
+              {"name": "Torpedo", "id": "77f2-e8de-3f94-e01e", "hidden": false, "import": true, "sortIndex": 5, "targetId": "54f4-8855-f1b9-fdf5", "type": "selectionEntry"}
             ],
             "infoLinks": [{"name": "Reinforced Armour", "id": "8287-b02e-de85-5104", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"}],
             "profiles": [
@@ -5877,7 +6045,7 @@
                   {"name": "Scan", "$text": "12\"", "typeId": "960a-5d0e-18c5-4310"},
                   {"name": "Sig", "$text": "14\"", "typeId": "4feb-14c2-b1f1-9fa5"},
                   {"name": "Hull", "$text": "25", "typeId": "5253-be1d-917b-17d9"},
-                  {"name": "ES", "$text": "2+", "typeId": "42ae-03c9-d0ff-61da"},
+                  {"name": "ES", "$text": "3+", "typeId": "42ae-03c9-d0ff-61da"},
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
@@ -6023,7 +6191,7 @@
         "name": "Dark Matter Cannon",
         "id": "4afd-78fa-a36c-78dd",
         "collective": true,
-        "comment": "FN 4/2+/2/E Crip Crit-1 Pen",
+        "comment": "FN 4/2+/2/E Crip Crit-1 HP Pen",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6034,6 +6202,7 @@
         "infoLinks": [
           {"name": "Crippling-X", "id": "98cf-b400-bc4a-2b2b", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"},
           {"name": "Critical-X", "id": "c101-cf73-b346-27fa", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+          {"name": "High Power", "id": "6499-c8fa-bc07-7943", "hidden": false, "targetId": "4a8c-aae4-c959-2437", "type": "rule"},
           {"name": "Penetrator", "id": "b372-5557-0c63-58e5", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"}
         ],
         "profiles": [
@@ -6049,7 +6218,7 @@
               {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Crippling, Critical-1, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Crippling, Critical-1, High Power, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6058,7 +6227,7 @@
         "name": "Dark Matter Cannon",
         "id": "1eed-bc52-14ca-6925",
         "collective": true,
-        "comment": "FN 4/2+/2/E Crit-1 Crip Pen",
+        "comment": "FN 4/2+/2/E Crit-1 Crip HP Pen",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6069,6 +6238,7 @@
         "infoLinks": [
           {"name": "Critical-X", "id": "3809-f67c-c621-4774", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
           {"name": "Crippling-X", "id": "4dbb-8359-2dcf-2e5c", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"},
+          {"name": "High Power", "id": "a157-8b81-3582-186e", "hidden": false, "targetId": "4a8c-aae4-c959-2437", "type": "rule"},
           {"name": "Penetrator", "id": "53df-9e1e-e17e-f24a", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"}
         ],
         "profiles": [
@@ -6084,7 +6254,7 @@
               {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Critical-1, Crippling, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Critical-1, Crippling, High Power, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6116,40 +6286,6 @@
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Crippling-Weapons Offline", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Energy Glaive Battery",
-        "id": "131f-bd0f-ed3a-84e0",
-        "collective": true,
-        "comment": "[x2] B 6/3+/2/E OC Vol-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "658c-7eb2-8eca-f1b7-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-          {"id": "658c-7eb2-8eca-f1b7-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
-        ],
-        "infoLinks": [
-          {"name": "Overcharge", "id": "d27f-606e-c88f-62a4", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
-          {"name": "Volley-X", "id": "8599-0447-6956-d064", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Energy Glaive Battery",
-            "id": "2a55-2848-d9ab-617a",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Overcharge, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6192,7 +6328,7 @@
         "name": "Energy Glaive Pair",
         "id": "f7a3-3a17-8eaf-e4ac",
         "collective": true,
-        "comment": "FN 2/3+/2/E OC",
+        "comment": "F 2/3+/2/E OC",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6209,7 +6345,7 @@
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "characteristics": [
-              {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
@@ -6223,32 +6359,151 @@
         "name": "Energy Glaives",
         "id": "1adb-19f1-35e8-3867",
         "collective": true,
-        "comment": "[x2] B 3/3+/2/E OC Vol-2",
+        "comment": "B 4/4+/2/E Alt-1 Rv-1 Vol-2 || S 2/3+/4/E Alt-1 Rv-2 Fus-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "1f5c-5603-cc5a-ea7a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-          {"id": "b388-9cad-d8f1-7141", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+          {"id": "1f5c-5603-cc5a-ea7a", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "b388-9cad-d8f1-7141", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [
-          {"name": "Overcharge", "id": "2aa8-d0e9-58d9-bffb", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"},
-          {"name": "Volley-X", "id": "db35-125a-a94c-55c2", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+          {"name": "Alt-X", "id": "f158-c697-9be9-3794", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
+          {"name": "Reave-X", "id": "9e32-6ce1-76c0-0f81", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"},
+          {"name": "Volley-X", "id": "db35-125a-a94c-55c2", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"},
+          {"name": "Fusillade-X", "id": "8570-6825-d788-52dd", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"}
         ],
         "profiles": [
           {
-            "name": "Energy Glaives",
-            "id": "a213-3997-e8f3-b487",
+            "name": "Energy Glaives (Pulse)",
+            "id": "ddff-203c-19dd-cb43",
             "hidden": false,
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Overcharge, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Alt-1, Reave-1, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          },
+          {
+            "name": "Energy Glaives (Beam)",
+            "id": "b022-e31f-3352-6364",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "4", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Alt-1, Reave-2, Fusillade-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Energy Glaives",
+        "id": "6d93-9277-7128-7205",
+        "collective": true,
+        "comment": "B 4/4+/2/E Alt-2 Rv-1 Vol-2 || S 2/3+/4/E Alt-2 Rv-2 Fus-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "7217-0cfd-a7d4-cc4d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "1119-736b-3e17-647c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Alt-X", "id": "7c2a-f0a4-f74c-3551", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
+          {"name": "Reave-X", "id": "db5d-e26e-8736-a2ff", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"},
+          {"name": "Volley-X", "id": "0efe-764f-21a4-ce55", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"},
+          {"name": "Fusillade-X", "id": "b69f-13ae-3553-0485", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Energy Glaives (Pulse)",
+            "id": "1d85-c1e9-a78c-700d",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Alt-2, Reave-1, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          },
+          {
+            "name": "Energy Glaives (Beam)",
+            "id": "2d89-078d-d0c6-9d1d",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "4", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Alt-2, Reave-2, Fusillade-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Energy Glaives",
+        "id": "a24d-77ed-1dc6-d3bf",
+        "collective": true,
+        "comment": "B 4/4+/2/E Alt-3 Rv-1 Vol-2 || S 2/3+/4/E Alt-3 Rv-2 Fus-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "a970-9be1-ad8a-ba70", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "8bb8-3764-61ae-a682", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Alt-X", "id": "1dca-4807-75ec-3817", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
+          {"name": "Reave-X", "id": "e261-3f7c-d276-3ca8", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"},
+          {"name": "Volley-X", "id": "c8df-752a-e44a-8690", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"},
+          {"name": "Fusillade-X", "id": "4b4c-5d81-4b9f-f0df", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Energy Glaives (Pulse)",
+            "id": "5be2-4125-939e-41c8",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Alt-3, Reave-1, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          },
+          {
+            "name": "Energy Glaives (Beam)",
+            "id": "0bf4-dff8-5430-911d",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "S", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "4", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Alt-3, Reave-2, Fusillade-1", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6257,7 +6512,7 @@
         "name": "Glaive Lance",
         "id": "0e3c-ee13-6182-9614",
         "collective": true,
-        "comment": "FN 3/2+/2/E OC",
+        "comment": "F 3/4+/2/E Alt-1 Rv-2 || FN 3/3+/4/E Alt-1 Foc HP Pen",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6265,21 +6520,77 @@
           {"id": "369d-5e8f-10f1-4cb4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "c156-79ad-64cd-fa33", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [{"name": "Overcharge", "id": "87b7-69cf-a822-ed44", "hidden": false, "targetId": "33e5-a091-cbf5-4765", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Alt-X", "id": "5e92-9890-8f4f-0b10", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
+          {"name": "Reave-X", "id": "c18e-b445-fa45-bbd1", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"},
+          {"name": "Focused", "id": "d0a6-8b81-215b-839d", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
+          {"name": "High Power", "id": "3433-6436-dbf8-4277", "hidden": false, "targetId": "4a8c-aae4-c959-2437", "type": "rule"},
+          {"name": "Penetrator", "id": "3842-8837-3335-c942", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"}
+        ],
         "profiles": [
           {
-            "name": "Glaive Lance",
-            "id": "e14b-22c9-8847-d4b9",
+            "name": "Glaive Lance (Pulse)",
+            "id": "ce07-df32-217f-26d0",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Alt-1, Reave-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          },
+          {
+            "name": "Glaive Lance (Beam)",
+            "id": "425b-f604-9e87-397a",
             "hidden": false,
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "4", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Overcharge", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Alt-1, Focused, High Power, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Calibre Broad-side",
+        "id": "ce82-a5c3-01e8-d7f0",
+        "collective": true,
+        "comment": "[x3] B 2/4+/3/K Cal-H Pen Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "408a-507e-8eb5-5776", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 3},
+          {"id": "31e9-3a92-3391-6bd9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+        ],
+        "infoLinks": [
+          {"name": "Calibre-X", "id": "4941-20be-22e4-6ba1", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
+          {"name": "Penetrator", "id": "8c19-9ccf-685e-41d1", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
+          {"name": "Volley-X", "id": "9bce-2146-eec5-95e7", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Heavy Calibre Broad-side",
+            "id": "61c6-fe96-a531-8917",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Calibre-H, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6288,7 +6599,7 @@
         "name": "Heavy Calibre Broadside",
         "id": "340b-f569-8189-5108",
         "collective": true,
-        "comment": "B 1/3+/3/K Cal-H Pen Vol-2",
+        "comment": "B 2/4+/3/K Cal-H Pen Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6310,8 +6621,8 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "1", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Calibre-H, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
@@ -6323,7 +6634,7 @@
         "name": "Heavy Calibre Broadside",
         "id": "b9e0-01df-babb-da9d",
         "collective": true,
-        "comment": "[x2] B 1/3+/3/K Cal-H Pen Vol-2",
+        "comment": "[x2] B 2/4+/3/K Cal-H Pen Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6345,8 +6656,78 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "1", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Calibre-H, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Calibre Broadside",
+        "id": "2879-9cdc-fd3a-d228",
+        "collective": true,
+        "comment": "[x3] B 2/4+/3/K Cal-H Pen Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "4b04-29bc-f709-9e6d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 3},
+          {"id": "61ff-35b4-17cf-875d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+        ],
+        "infoLinks": [
+          {"name": "Calibre-X", "id": "f44e-31cd-7c41-ba13", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
+          {"name": "Penetrator", "id": "c427-7b90-120a-0b52", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
+          {"name": "Volley-X", "id": "924c-7d55-9bbf-c2fc", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Heavy Calibre Broadside",
+            "id": "640a-31fe-69d7-4011",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Calibre-H, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Calibre Broadside Array",
+        "id": "d119-b415-486f-3888",
+        "collective": true,
+        "comment": "B 3/4+/3/K Cal-H Pen Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "1ab2-7601-3f5e-791e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "85fb-b05c-5713-cb5e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Calibre-X", "id": "e13a-9d20-ca4f-a92f", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
+          {"name": "Penetrator", "id": "b84e-7252-b851-8c2b", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
+          {"name": "Volley-X", "id": "3ba4-8243-d59c-8163", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Heavy Calibre Broadside Array",
+            "id": "719e-1a73-fad9-11db",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Calibre-H, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
@@ -6358,7 +6739,7 @@
         "name": "Heavy Calibre Double Broadside",
         "id": "c795-d598-4267-12d2",
         "collective": true,
-        "comment": "B 2/3+/3/K Cal-H Pen Vol-2",
+        "comment": "B 4/4+/3/K Cal-H Pen Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6380,46 +6761,11 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Calibre-H, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Heavy Calibre Triple Broadside",
-        "id": "7f13-4c1e-35bc-ad5b",
-        "collective": true,
-        "comment": "B 3/3+/3/K Cal-H/C Pen Vol-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "8bf5-f12b-51e8-4cd9-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "8bf5-f12b-51e8-4cd9-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "infoLinks": [
-          {"name": "Calibre-X", "id": "81fa-20c8-e20e-5ab8", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
-          {"name": "Penetrator", "id": "7888-b56b-d1d8-17a5", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
-          {"name": "Volley-X", "id": "ed56-9d87-4258-317f", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Heavy Calibre Triple Broadside",
-            "id": "7d06-f34c-412d-3407",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Calibre-H/C, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6777,7 +7123,7 @@
         "name": "Light Calibre Broadside",
         "id": "95cd-9fbd-28c1-4096",
         "collective": true,
-        "comment": "B 6/5+/1/K Cal-L ReEnt Vol-2",
+        "comment": "B 6/5+/1/K Cal-L Rv-1 Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6787,7 +7133,7 @@
         ],
         "infoLinks": [
           {"name": "Calibre-X", "id": "1250-3213-5bce-4cf7", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
-          {"name": "Re-Entry", "id": "0f4a-45f2-a676-dcb1", "hidden": false, "targetId": "3438-1fc6-047d-47ad", "type": "rule"},
+          {"name": "Reave-X", "id": "0f4a-45f2-a676-dcb1", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"},
           {"name": "Volley-X", "id": "472d-f6a6-ff0a-8dd8", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
         ],
         "profiles": [
@@ -6803,7 +7149,7 @@
               {"name": "Lock", "$text": "5+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Calibre-L, Re-Entry, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Calibre-L, Reave-1, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6812,7 +7158,7 @@
         "name": "Light Calibre Broadside",
         "id": "59ca-a9be-70de-6eea",
         "collective": true,
-        "comment": "[x2] B 6/5+/1/K Cal-L ReEnt Vol-2",
+        "comment": "[x2] B 6/5+/1/K Cal-L Rv-1 Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6822,7 +7168,7 @@
         ],
         "infoLinks": [
           {"name": "Calibre-X", "id": "771a-fa66-8166-fbd2", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
-          {"name": "Re-Entry", "id": "7ca9-1b58-1e58-a33a", "hidden": false, "targetId": "3438-1fc6-047d-47ad", "type": "rule"},
+          {"name": "Reave-X", "id": "7ca9-1b58-1e58-a33a", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"},
           {"name": "Volley-X", "id": "5732-b41d-2663-d72c", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
         ],
         "profiles": [
@@ -6838,7 +7184,7 @@
               {"name": "Lock", "$text": "5+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Calibre-L, Re-Entry, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Calibre-L, Reave-1, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6847,7 +7193,7 @@
         "name": "Light Calibre Double Broadside",
         "id": "4fb3-d070-48ac-a228",
         "collective": true,
-        "comment": "B 12/5+/1/K Cal-L ReEnt Vol-2",
+        "comment": "B 12/5+/1/K Cal-L Rv-1 Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6857,7 +7203,7 @@
         ],
         "infoLinks": [
           {"name": "Calibre-X", "id": "2c1a-7720-b7d9-1b37", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
-          {"name": "Re-Entry", "id": "5553-e36c-2991-7950", "hidden": false, "targetId": "3438-1fc6-047d-47ad", "type": "rule"},
+          {"name": "Reave-X", "id": "5553-e36c-2991-7950", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"},
           {"name": "Volley-X", "id": "469c-efbc-d70b-7b51", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
         ],
         "profiles": [
@@ -6873,7 +7219,7 @@
               {"name": "Lock", "$text": "5+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Calibre-L, Re-Entry, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Calibre-L, Reave-1, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6882,7 +7228,7 @@
         "name": "Light Calibre Double Broadside",
         "id": "02b8-7f0b-1da4-d14d",
         "collective": true,
-        "comment": "[x2] B 12/5+/1/K Cal-L ReEnt Vol-2",
+        "comment": "[x2] B 12/5+/1/K Cal-L Rv-1 Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6892,7 +7238,7 @@
         ],
         "infoLinks": [
           {"name": "Calibre-X", "id": "aeb2-1c66-a4ae-95f3", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
-          {"name": "Re-Entry", "id": "fcaf-8a9d-52b7-bc50", "hidden": false, "targetId": "3438-1fc6-047d-47ad", "type": "rule"},
+          {"name": "Reave-X", "id": "fcaf-8a9d-52b7-bc50", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"},
           {"name": "Volley-X", "id": "6e3d-9407-dae2-2afc", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
         ],
         "profiles": [
@@ -6908,7 +7254,7 @@
               {"name": "Lock", "$text": "5+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Calibre-L, Re-Entry, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Calibre-L, Reave-1, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6951,7 +7297,7 @@
         "name": "Medium Calibre Bank",
         "id": "efdb-ebee-11ac-1441",
         "collective": true,
-        "comment": "SL 2/4+/2/K",
+        "comment": "B 2/4+/2/K Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6959,6 +7305,7 @@
           {"id": "dcf2-59f7-89a5-442f-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "dcf2-59f7-89a5-442f-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
+        "infoLinks": [{"name": "Volley-X", "id": "47ff-225d-2138-d14e", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}],
         "profiles": [
           {
             "name": "Medium Calibre Bank",
@@ -6967,42 +7314,12 @@
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "characteristics": [
-              {"name": "Arc", "$text": "SL", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "-", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Medium Calibre Bank",
-        "id": "e209-286b-605f-d062",
-        "collective": true,
-        "comment": "SR 2/4+/2/K",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "84e6-c073-85ae-33cf", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "fd17-0e9e-ad70-daee", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "profiles": [
-          {
-            "name": "Medium Calibre Bank",
-            "id": "87bc-4905-7f44-f782",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "SR", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "-", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7179,7 +7496,7 @@
         "name": "Nano Drones",
         "id": "518f-be15-66ea-713e",
         "collective": true,
-        "comment": "F/S 8/4+/1/K CA",
+        "comment": "F/S 8/4+/1/K CA Sc-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7187,7 +7504,10 @@
           {"id": "009c-1c52-2df6-5124-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "009c-1c52-2df6-5124-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [{"name": "Close Action", "id": "4b12-c026-4fdd-1d23", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Close Action", "id": "4b12-c026-4fdd-1d23", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Scald-X", "id": "6bd0-f0b1-c9ae-bf89", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}
+        ],
         "profiles": [
           {
             "name": "Nano Drones",
@@ -7201,7 +7521,7 @@
               {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Close Action, Scald-1", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7384,7 +7704,7 @@
         "name": "Twin Heavy Calibres",
         "id": "450c-3a85-4876-af5c",
         "collective": true,
-        "comment": "F 1/4+/3/K Cal-H/C Pen",
+        "comment": "F 2/4+/3/K Cal-H/C Pen",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7405,7 +7725,7 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "1", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
@@ -7418,7 +7738,7 @@
         "name": "Twin Heavy Calibres",
         "id": "5ba3-7a58-441b-9185",
         "collective": true,
-        "comment": "[x2] F 1/4+/3/K Cal-H/C Pen",
+        "comment": "[x2] F 2/4+/3/K Cal-H/C Pen",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7439,7 +7759,7 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "1", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
@@ -7487,7 +7807,7 @@
         "name": "Vespa Drones",
         "id": "70be-07c7-e9f8-945c",
         "collective": true,
-        "comment": "F/S/R 3/4+/1/K AtA CA",
+        "comment": "F/S/R 3/4+/1/K AtA Cal-L CA Rv-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7497,7 +7817,9 @@
         ],
         "infoLinks": [
           {"name": "Air to Air", "id": "9b3d-523a-dff2-d48f", "hidden": false, "targetId": "ceee-e18a-c60c-0ef5", "type": "rule"},
-          {"name": "Close Action", "id": "5fd9-2a56-84e7-ef7b", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"}
+          {"name": "Calibre-X", "id": "30d8-833e-3682-b356", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
+          {"name": "Close Action", "id": "5fd9-2a56-84e7-ef7b", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Reave-X", "id": "4981-7418-daf6-f311", "hidden": false, "targetId": "4def-e674-d37c-707a", "type": "rule"}
         ],
         "profiles": [
           {
@@ -7512,7 +7834,7 @@
               {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Air to Air, Close Action", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Air to Air, Calibre-L, Close Action, Reave-1", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7622,7 +7944,7 @@
         "name": "Fighters & Bombers",
         "id": "01e1-dc0a-31a0-d281",
         "collective": true,
-        "comment": "1",
+        "comment": "1 Alt-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7630,6 +7952,7 @@
           {"id": "5e05-a89f-73b3-640b-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "5e05-a89f-73b3-640b-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
+        "infoLinks": [{"name": "Alt-X", "id": "56c1-b6bd-e7f4-bba5", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
         "profiles": [
           {
             "name": "Fighters & Bombers",
@@ -7637,7 +7960,7 @@
             "hidden": false,
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
           }
         ]
       },
@@ -7712,6 +8035,30 @@
       },
       {
         "name": "Mines",
+        "id": "2cad-0111-6acd-e29c",
+        "collective": true,
+        "comment": "1 Alt-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "1e94-46e3-247d-f08c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "5df6-4329-023d-d982", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Alt-X", "id": "47a8-b760-e629-9180", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Mines",
+            "id": "c3d6-d617-578f-5dc2",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Mines",
         "id": "a344-0ceb-572a-d1c1",
         "collective": true,
         "comment": "2",
@@ -7730,6 +8077,29 @@
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
             "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Mines",
+        "id": "f03a-b4ce-52fa-e26b",
+        "collective": true,
+        "comment": "3",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "dec4-c880-ca85-073c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "42c9-08c3-ae91-f328", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Mines",
+            "id": "27e1-07b7-e9a3-5406",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "3", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
           }
         ]
       },
@@ -7883,7 +8253,8 @@
                 "typeName": "Feature",
                 "characteristics": [
                   {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "3+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "4", "typeId": "a0a5-e13e-1516-6b57"},
                   {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
                 ]
               }
@@ -8000,8 +8371,9 @@
                 "typeId": "e69b-d424-94a2-0fe1",
                 "typeName": "Feature",
                 "characteristics": [
-                  {"name": "ES", "$text": "4+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "ES", "$text": "3+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "3+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "4", "typeId": "a0a5-e13e-1516-6b57"},
                   {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
                 ]
               }
@@ -8068,8 +8440,9 @@
                 "typeId": "e69b-d424-94a2-0fe1",
                 "typeName": "Feature",
                 "characteristics": [
-                  {"name": "ES", "$text": "3+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
                   {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "4", "typeId": "a0a5-e13e-1516-6b57"},
                   {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
                 ]
               }
@@ -8254,10 +8627,10 @@
                 "typeId": "705b-98a3-a21d-7118",
                 "typeName": "Admiral Ability",
                 "characteristics": [
-                  {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
+                  {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of a friendly Group's activation, target an enemy Group that a friendly Admiral can draw line of sight to. Until the end of the activation, that Group cannot use its Backup Save, cannot gain the benefits of Aegis, and cannot gain the benefits of Fighters' Close Protection. If this Ability targets a H or C tonnage Group, this Ability costs 2AP.",
+                    "$text": "At the start of a friendly Group's activation, choose an enemy Ship in line of sight of a friendly Admiral. Until the end of the activation, that Ship counts as having a Defences Offline token. If this Ability targets a H or C tonnage Group, this Ability costs 3AP.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -8282,7 +8655,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "Once per round, at the start of an enemy Group's activation, choose one of that Group's Weapon Systems. Until the end of that Group's activation, each of that Weapon System's attack dice results of a 1 causes the attacking Ship to lose the weapon's unmodified Damage value in hull points.",
+                    "$text": "When an opponent assigns weapons to friendly Ships, choose one of the attacking Group's Weapon Systems. Until the end of the attacking Ships' activation, that Weapon System automatically misses on rolls of a 2 or less and your opponent cannot use abilities on those weapons. This can cause that opponent's unresolved abilities on that Weapon System to be negated.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -8308,7 +8681,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you assign targets to a Group's weapons, that Group's Broadside Arc weapons that have the Fusillade-X special rule gain the benefit of their Fusillade rule regardless of the Group's Order for its attacks this activation. If the attacking Group is on the Weapons Free order, it instead doubles the Fusillade value of those weapons for that attack.",
+                    "$text": "When you assign targets to a Group's weapons, that Group's Broadside Arc weapons that have the Fusillade-X special rule gain the benefit of their Fusillade rule regardless of the Group's Order for its attacks this activation. If the attacking Group is on the Weapons Free order, improve the lock of Broadside Arc weapons with Fusillade-X by 1 for this attack sequence.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -8333,7 +8706,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "Once per round, at the end of the Planning Phase, target an enemy Group that a friendly Admiral can draw line of sight to. At the start of that Group's activation, it must make a single Backup save. If it fails (or has no) Backup save, that Group cannot go on the Course Change and Max Thrust orders.",
+                    "$text": "Once per round, at the start of an enemy Group's activation, if that Group is in a friendly Admiral's line of sight, the enemy Group makes a single Backup save. If it fails its (or has no) Backup save, that Group reduces its Thrust value by half this activation.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -8366,16 +8739,17 @@
             ]
           },
           {
-            "name": "Elite Ground Forces",
-            "id": "4fd0-3f75-2c7d-6881",
+            "name": "Hull Tanking",
+            "id": "01e9-4a97-43e4-1594",
             "hidden": false,
             "import": true,
             "type": "upgrade",
-            "constraints": [{"id": "4483-2121-377c-8b2c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "2346-ac99-c3ca-8bc3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "infoLinks": [{"name": "Reinforced Armour", "id": "430a-040c-6ed6-5d85", "hidden": false, "targetId": "231e-a3d0-35e6-9a33", "type": "rule"}],
             "profiles": [
               {
-                "name": "Elite Ground Forces",
-                "id": "1bcc-3b52-a1ac-def1",
+                "name": "Hull Tanking",
+                "id": "f456-6210-c420-28ac",
                 "hidden": false,
                 "typeId": "705b-98a3-a21d-7118",
                 "typeName": "Admiral Ability",
@@ -8383,7 +8757,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of the Battalion Combat step of the Asset Phase, choose a Feature containing friendly Battalions. Until the end of the Battalion Combat step, those Battalions remove 2 enemy Battalions instead of 1 and may also be used to remove enemy Battalions from anywhere on that Dropsite in the 3rd step of the combat sequence.",
+                    "$text": "After an opponent assigns weapons to friendly targets, choose one of those friendly Groups. That Group gains Reinforced Armour until the end of the Activation. If the friendly Group is H or C tonnage, this Ability costs 3AP.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -8420,8 +8794,84 @@
             "sortIndex": 2,
             "targetId": "a344-0ceb-572a-d1c1",
             "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 4}],
             "modifiers": [{"field": "166e-16f6-0766-00b0", "type": "set", "value": 0}]
+          }
+        ]
+      },
+      {
+        "name": "Deployable Features",
+        "id": "b3cd-41b3-6020-70dd",
+        "comment": "Medium carriers: any fleet feature",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Heavy Calibre Orbital Gun",
+            "id": "aaf6-f3e1-74d9-7182",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Medium Group Spend Exempt", "id": "6eaf-18fc-7414-65a6", "primary": false, "targetId": "d720-1c66-5090-ab19"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
+          },
+          {
+            "name": "Shield Platform",
+            "id": "aac4-f052-7dd1-7cee",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Medium Group Spend Exempt", "id": "c71a-5795-6e14-0053", "primary": false, "targetId": "d720-1c66-5090-ab19"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}]
+          },
+          {
+            "name": "Scanner Tower",
+            "id": "a3c2-d067-b266-a17e",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Medium Group Spend Exempt", "id": "e691-330c-51bb-3fab", "primary": false, "targetId": "d720-1c66-5090-ab19"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 15}]
+          }
+        ]
+      },
+      {
+        "name": "Deployable Features",
+        "id": "eb5a-1637-bb6c-1e3a",
+        "comment": "Heavy carriers: any fleet feature",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Heavy Calibre Orbital Gun",
+            "id": "990d-5588-72c9-8658",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Heavy Group Spend Exempt", "id": "5915-4135-6176-6e61", "primary": false, "targetId": "ba1b-a548-3bf5-d083"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
+          },
+          {
+            "name": "Shield Platform",
+            "id": "66cd-1f05-8d24-1c43",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Heavy Group Spend Exempt", "id": "7e2f-4b5c-b430-b097", "primary": false, "targetId": "ba1b-a548-3bf5-d083"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}]
+          },
+          {
+            "name": "Scanner Tower",
+            "id": "2d64-c24b-3e80-1c92",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Heavy Group Spend Exempt", "id": "61fd-7bef-bdb0-089f", "primary": false, "targetId": "ba1b-a548-3bf5-d083"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 15}]
           }
         ]
       }

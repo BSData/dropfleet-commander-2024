@@ -10,9 +10,8 @@
     "library": true,
     "revision": 50,
     "type": "catalogue",
-    "publications": [{"name": "Fleet Space Stations (250828)", "id": "4be7-d555-8518-dd99", "hidden": false, "shortName": "Fleet Space Stations (250828)"}],
+    "publications": [{"name": "Fleet Space Stations (261104)", "id": "4be7-d555-8518-dd99", "hidden": false, "shortName": "Fleet Space Stations (261104)"}],
     "sharedRules": [
-      {"name": "Gate Node", "id": "9641-6e30-3c8e-a9ab", "description": "This Gatestation's Dropships may only be used while you control it.", "hidden": false},
       {
         "name": "Gravity Manipulator",
         "id": "1377-0988-f6d3-4a38",
@@ -22,13 +21,19 @@
       {
         "name": "Hypersummoning",
         "id": "b292-878f-949c-4ea4",
-        "description": "When you launch a Wing from a friendly Bioficer Ship, instead of launching them normally, you may place them anywhere within 18\" of this Space Station. Wings placed this way suffer the effects of any scenery they are placed on but ignore intervening scenery. Wings placed this way count as having moved but may form and divide into Wings as if they had moved normally but cannot move or form and divide into Wings during the Asset Phase. Wings placed this way cannot be the target of your Abilities until the end of the round (other players may target them with Abilities as normal).",
+        "description": "If you control this Space Station, when you launch a Wing from a friendly Bioficer Ship, instead of launching them normally, you may place them anywhere within 18\" of this Space Station. Wings placed this way suffer the effects of any scenery they are placed on but ignore intervening scenery. Wings placed this way count as having moved but may form and divide into Wings as if they had moved normally but cannot move or form and divide into Wings during the Asset Phase. Wings placed this way cannot be the target of your Abilities until the end of the round (other players may target them with Abilities as normal).",
         "hidden": false
       },
       {
         "name": "Signature Bloom",
         "id": "53c7-8bbb-2618-15b2",
-        "description": "Friendly Ships within this Space Station's unmodified Signature are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship's Group ignore a Spike for each Hidden Ship in that Group.\nThis rule has no effect while this Space Station is controlled by an enemy player.",
+        "description": "Friendly Ships within this Space Station's unmodified Signature are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship's Group ignore two Spike if all Ships in the Group are Hidden.\nThis rule has no effect while this Space Station is controlled by an enemy player.",
+        "hidden": false
+      },
+      {
+        "name": "Signature Bloom (AO)",
+        "id": "ff11-a45f-573f-8f96",
+        "description": "Friendly Ships within 6\" of this Space Station are Hidden within its Bloom. Enemy Ships targeting a Hidden Ship's Group ignore a Spike for each Hidden Ship in that Group.\nThis rule has no effect while this Space Station is controlled by an enemy player.",
         "hidden": false
       },
       {
@@ -40,7 +45,7 @@
       {
         "name": "Summoned Ingress",
         "id": "1029-3e75-c89f-27de",
-        "description": "From the 2nd round onwards, when a Group of L Tonnage not on the table deploys, you may treat this Space Stations front Arc up to 6\" away as that Group's deployment zone. If a Group deploys this way, roll a dice for each Ship in that Group and apply the corresponding Crippling Effect to the Group and the Group cannot attack or launch Assets this round.",
+        "description": "From the 2nd round onwards while you control this Space Station, when a Group of L Tonnage not on the table deploys, you may treat this Space Stations front Arc up to 6\" away as that Group's deployment zone. If a Group deploys this way, roll a dice for each Ship in that Group and apply the corresponding Crippling Effect to the Ship and the Group cannot attack or launch Assets this round.",
         "hidden": false
       },
       {
@@ -73,11 +78,37 @@
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 30}],
             "entryLinks": [
               {
+                "name": "Weapons Control",
+                "id": "e20c-2bbf-1aba-07ce",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "da71-9170-9241-e4ea", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "bc14-5d1c-76ec-c435", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Life Support",
+                "id": "9945-6f1a-d2ec-8678",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "76cf-c17f-a002-e7ea", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "fb00-bc0e-1788-d0bb", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
                 "name": "Space Station Armaments",
                 "id": "22dd-4737-bb7a-94e0",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
+                "sortIndex": 3,
                 "targetId": "5a44-d602-e556-ffb7",
                 "type": "selectionEntryGroup"
               },
@@ -86,23 +117,10 @@
                 "id": "1fd7-eaca-d5ca-cae5",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 2,
+                "sortIndex": 4,
                 "targetId": "36e8-0b5d-d2bd-9075",
                 "type": "selectionEntryGroup",
                 "constraints": [{"id": "d791-5ca0-da18-b3d7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
-              },
-              {
-                "name": "Features",
-                "id": "b0ce-e443-77f1-adcd",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 3,
-                "targetId": "d798-ad43-7da6-7ad1",
-                "type": "selectionEntryGroup",
-                "constraints": [
-                  {"id": "e80a-b987-ae31-7aa4-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "e80a-b987-ae31-7aa4-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
-                ]
               }
             ],
             "profiles": [
@@ -145,14 +163,27 @@
               {"id": "b586-9611-a596-3f42", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "1052-50ae-d046-f808", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 55}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 45}],
             "entryLinks": [
+              {
+                "name": "Life Support",
+                "id": "e8e8-a402-037d-1ccc",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "8aa2-3d2e-0b77-bd00", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "a57f-59e7-85e5-4755", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
               {
                 "name": "Space Station Armaments",
                 "id": "d2af-3617-c19a-e952",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
+                "sortIndex": 2,
                 "targetId": "5a44-d602-e556-ffb7",
                 "type": "selectionEntryGroup"
               },
@@ -161,7 +192,7 @@
                 "id": "4737-6467-6944-f2a3",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 2,
+                "sortIndex": 3,
                 "targetId": "36e8-0b5d-d2bd-9075",
                 "type": "selectionEntryGroup",
                 "constraints": [{"id": "ee83-542f-4683-8b3a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
@@ -171,7 +202,7 @@
                 "id": "ba7b-d6dd-ee25-d92c",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 4,
                 "targetId": "d798-ad43-7da6-7ad1",
                 "type": "selectionEntryGroup",
                 "constraints": [
@@ -220,14 +251,27 @@
               {"id": "4396-826d-86ed-1ac6", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "c5bc-4e9d-5d20-a922", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 90}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
             "entryLinks": [
+              {
+                "name": "Life Support",
+                "id": "a1dc-543b-335f-4abb",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "2289-4f84-7cf4-ea3c", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "e83a-f07e-cf83-156e", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
               {
                 "name": "Space Station Armaments",
                 "id": "ba98-8328-4015-7955",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 1,
+                "sortIndex": 2,
                 "targetId": "5a44-d602-e556-ffb7",
                 "type": "selectionEntryGroup"
               },
@@ -236,7 +280,7 @@
                 "id": "60d9-3ca6-820c-9d07",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 2,
+                "sortIndex": 3,
                 "targetId": "36e8-0b5d-d2bd-9075",
                 "type": "selectionEntryGroup",
                 "constraints": [{"id": "9bd7-44db-1b6d-99d5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}]
@@ -246,7 +290,7 @@
                 "id": "9e82-1429-15af-e978",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 4,
                 "targetId": "d798-ad43-7da6-7ad1",
                 "type": "selectionEntryGroup",
                 "constraints": [
@@ -295,8 +339,44 @@
               {"id": "edce-b5da-1b7f-5dc2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "2b87-22dd-0689-c68d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 50}],
-            "entryLinks": [{"name": "Fighters & Bombers", "id": "da5d-c864-2182-4ca3", "hidden": false, "import": true, "targetId": "a06b-c80d-42c3-286a", "type": "selectionEntry"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 58}],
+            "entryLinks": [
+              {
+                "name": "Fighters & Bombers",
+                "id": "da5d-c864-2182-4ca3",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "a06b-c80d-42c3-286a",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "def2-9e45-98cc-bf59",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "1e79-459e-0dad-1347", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "3064-8760-ab6a-f5f5", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Launch Control",
+                "id": "b8e4-e947-1f45-0f7a",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "0571-3e4e-2fcb-b4f4",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "2feb-4777-b8e9-c4b3", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "a351-0c29-758b-9181", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
+              }
+            ],
             "profiles": [
               {
                 "name": "Defence Hangar",
@@ -338,7 +418,43 @@
               {"id": "cd88-655a-fae9-13b3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 60}],
-            "entryLinks": [{"name": "Medium Torpedo", "id": "fec4-c698-2be7-a1f8", "hidden": false, "import": true, "targetId": "1688-c1bb-dcd2-d64b", "type": "selectionEntry"}],
+            "entryLinks": [
+              {
+                "name": "Medium Torpedo",
+                "id": "fec4-c698-2be7-a1f8",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "1688-c1bb-dcd2-d64b",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "70e8-7806-24c6-dd1f",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "fe87-0565-b853-4ed8", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "ee00-2738-41c3-6a82", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Launch Control",
+                "id": "a973-eae8-5d22-fc32",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "0571-3e4e-2fcb-b4f4",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "74db-ee27-a0ea-0429", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "2bc7-770b-21ee-2699", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
+              }
+            ],
             "profiles": [
               {
                 "name": "Munitions Platform",
@@ -380,7 +496,43 @@
               {"id": "5886-2b0f-2bb3-56b4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
-            "entryLinks": [{"name": "Oculus Ward", "id": "d6c0-aea1-067d-d53d", "hidden": false, "import": true, "targetId": "5197-2c58-bc16-6637", "type": "selectionEntry"}],
+            "entryLinks": [
+              {
+                "name": "Oculus Ward",
+                "id": "d6c0-aea1-067d-d53d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "5197-2c58-bc16-6637",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "3c90-f803-062d-11d0",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "a3e0-049a-9dc0-cc68", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "6761-9132-5f24-3d5f", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Weapons Control",
+                "id": "ea5c-00de-87fb-c378",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "b041-f81b-0519-e4e4", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "8f9f-7622-cc0b-4506", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
+              }
+            ],
             "profiles": [
               {
                 "name": "Ephyra",
@@ -389,8 +541,8 @@
                 "typeId": "a685-1a7d-ba2d-3db8",
                 "typeName": "Space Station",
                 "characteristics": [
-                  {"name": "Scan", "$text": "6\"", "typeId": "e1ee-74b3-00a9-8744"},
-                  {"name": "Sig", "$text": "4\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Scan", "$text": "10\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Sig", "$text": "0\"", "typeId": "1fb1-6992-a308-b4c8"},
                   {"name": "Hull", "$text": "8", "typeId": "c2b4-8dc9-7506-debb"},
                   {"name": "ES", "$text": "3+", "typeId": "3afd-b020-ec74-2ea2"},
                   {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
@@ -422,7 +574,43 @@
               {"id": "219f-8b84-565a-fddd", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 65}],
-            "entryLinks": [{"name": "Volcano Lance", "id": "31e4-b091-f7c6-0bfe", "hidden": false, "import": true, "targetId": "b04a-04df-a1ae-10d6", "type": "selectionEntry"}],
+            "entryLinks": [
+              {
+                "name": "Volcano Lance",
+                "id": "31e4-b091-f7c6-0bfe",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "b04a-04df-a1ae-10d6",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "44c6-5c3d-de2e-70bd",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "5170-5700-b080-c14b", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "8acd-0875-6fbb-3e01", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Weapons Control",
+                "id": "4e5c-1cd6-4fcc-e020",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "d4a1-796d-8ea8-2c62", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "40eb-5c59-3d77-97e2", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
+              }
+            ],
             "profiles": [
               {
                 "name": "Nematocyst",
@@ -482,6 +670,32 @@
                 "sortIndex": 2,
                 "targetId": "6bfc-7016-eb55-a501",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "1033-fba6-9209-71c4",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "c8ba-39a2-eea8-0323", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "b347-3893-7655-82bb", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Weapons Control",
+                "id": "10cb-4140-9b44-6ea4",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "b65a-e150-aa0a-a3af", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "a0a4-8da6-072f-ddad", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
               }
             ],
             "profiles": [
@@ -543,6 +757,32 @@
                 "sortIndex": 2,
                 "targetId": "6bfc-7016-eb55-a501",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "0899-fb90-36fc-77ae",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "2ad0-6277-367b-1835", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "27d5-2201-7341-f876", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Weapons Control",
+                "id": "5728-d546-b6e5-d5ad",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "1c52-e3f7-2c7c-5f2e", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "ede6-15aa-b93f-5fd1", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
               }
             ],
             "profiles": [
@@ -604,6 +844,42 @@
                 "sortIndex": 2,
                 "targetId": "c024-5b5b-a6d4-13f0",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "0470-bea4-7516-60a7",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "f9b9-a54f-5165-5707", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "c8fe-0327-a4b2-efbb", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Weapons Control",
+                "id": "b12f-f8bb-7f28-c2aa",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "9f3b-96b9-61d3-0482", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "9b1d-ed7b-631b-579c", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
+              },
+              {
+                "name": "Features",
+                "id": "e4cb-6e22-ec3a-b835",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "7681-9e9d-839a-5062", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               }
             ],
             "profiles": [
@@ -665,6 +941,42 @@
                 "sortIndex": 2,
                 "targetId": "c024-5b5b-a6d4-13f0",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "8998-5c4c-0c4f-a88f",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "3fde-5668-2ca0-161c", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "a49f-0f8e-3638-0c6f", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Weapons Control",
+                "id": "3413-1b90-0832-b2d9",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "5789-a31f-8451-42e0", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "3ba3-3b99-58e7-9d4c", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
+              },
+              {
+                "name": "Features",
+                "id": "7277-7970-4a48-c1ff",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "0ea8-da3d-f27b-709d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               }
             ],
             "profiles": [
@@ -718,12 +1030,64 @@
                 "targetId": "2c76-b370-112e-846e",
                 "type": "selectionEntry"
               },
-              {"name": "Dropships", "id": "aa71-d4ff-8718-dac9", "hidden": false, "import": true, "sortIndex": 2, "targetId": "9dfe-c522-c033-7c51", "type": "selectionEntry"}
+              {"name": "Dropships", "id": "aa71-d4ff-8718-dac9", "hidden": false, "import": true, "sortIndex": 2, "targetId": "9dfe-c522-c033-7c51", "type": "selectionEntry"},
+              {
+                "name": "Life Support",
+                "id": "9d7c-0743-50be-0bf5",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "15b1-fa24-794b-7924", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "6764-2adb-69bf-9e5e", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Launch Control",
+                "id": "c732-8e06-3cd5-6c86",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "0571-3e4e-2fcb-b4f4",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "2ef0-8a5a-a870-b00a", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "fce5-8d40-5a57-3702", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Weapons Control",
+                "id": "0eeb-e906-36b3-deb3",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "4340-5882-cb40-aabf", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "c9d1-7258-8cce-6b49", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Features",
+                "id": "e595-9cc8-e97f-0d8a",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 6,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "24d4-d511-8924-476d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "5676-6766-d922-3bf1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
             ],
             "infoLinks": [
               {"name": "Mothership", "id": "c26a-78a4-f380-b92a", "hidden": false, "targetId": "928d-4467-6cc7-1771", "type": "rule"},
-              {"name": "Shield-X", "id": "b63c-5943-fb48-3017", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
-              {"name": "Gate Node", "id": "5f94-5a79-cb0f-32c7", "hidden": false, "targetId": "9641-6e30-3c8e-a9ab", "type": "rule"}
+              {"name": "Gateship-X", "id": "b8e8-1066-b685-620f", "hidden": false, "targetId": "4572-00d5-81d2-4fcc", "type": "rule"},
+              {"name": "Shield-X", "id": "b63c-5943-fb48-3017", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"}
             ],
             "profiles": [
               {
@@ -733,14 +1097,14 @@
                 "typeId": "a685-1a7d-ba2d-3db8",
                 "typeName": "Space Station",
                 "characteristics": [
-                  {"name": "Scan", "$text": "4\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Scan", "$text": "8\"", "typeId": "e1ee-74b3-00a9-8744"},
                   {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
                   {"name": "Hull", "$text": "10", "typeId": "c2b4-8dc9-7506-debb"},
                   {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
                   {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
                   {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
                   {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-                  {"name": "Special", "$text": "Mothership, Shield-4+, Gate Node", "typeId": "473b-cbb5-5ba2-c2de"}
+                  {"name": "Special", "$text": "Mothership, Gateship-0, Shield-4+", "typeId": "473b-cbb5-5ba2-c2de"}
                 ]
               }
             ]
@@ -766,7 +1130,43 @@
               {"id": "211a-ebf4-15e1-b8c4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 75}],
-            "entryLinks": [{"name": "Grav Hooks", "id": "3f32-5706-73fc-9158", "hidden": false, "import": true, "targetId": "aec2-dc62-3782-ecd5", "type": "selectionEntry"}],
+            "entryLinks": [
+              {
+                "name": "Grav Hooks",
+                "id": "3f32-5706-73fc-9158",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "aec2-dc62-3782-ecd5",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "4cfe-ae27-5bdb-6796",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "c900-ba08-e67b-a643", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "023f-e24d-0895-523d", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Weapons Control",
+                "id": "0774-6c44-e380-1048",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "888e-81dc-0e1f-1e5a", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "cce6-9065-164b-cb1a", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
+              }
+            ],
             "infoLinks": [
               {"name": "Shield-X", "id": "2479-ce56-fa41-696a", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
               {"name": "Gravity Manipulator", "id": "785c-dfc0-26e0-395e", "hidden": false, "targetId": "1377-0988-f6d3-4a38", "type": "rule"}
@@ -779,7 +1179,7 @@
                 "typeId": "a685-1a7d-ba2d-3db8",
                 "typeName": "Space Station",
                 "characteristics": [
-                  {"name": "Scan", "$text": "4\"", "typeId": "e1ee-74b3-00a9-8744"},
+                  {"name": "Scan", "$text": "8\"", "typeId": "e1ee-74b3-00a9-8744"},
                   {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
                   {"name": "Hull", "$text": "10", "typeId": "c2b4-8dc9-7506-debb"},
                   {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
@@ -811,7 +1211,35 @@
               {"id": "1bbc-265e-3db9-e824", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e556-4d51-4351-a6c0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 120}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 100}],
+            "entryLinks": [
+              {
+                "name": "Life Support",
+                "id": "e155-650a-29ac-d164",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "c10a-546a-1574-a5bd", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "1029-508f-ed24-da6e", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Features",
+                "id": "cc54-8299-5656-219d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "2553-a842-1111-0744", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "abbc-3034-f165-1d5e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+                ]
+              }
+            ],
             "infoLinks": [
               {"name": "Shield-X", "id": "952f-2a92-6453-1cf5", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"},
               {"name": "Gateship-X", "id": "b17f-2411-0342-25b5", "hidden": false, "targetId": "4572-00d5-81d2-4fcc", "type": "rule"},
@@ -832,7 +1260,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
                   {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
                   {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-                  {"name": "Special", "$text": "Shield-4+, Gateship-0, Voidspace Anchor", "typeId": "473b-cbb5-5ba2-c2de"}
+                  {"name": "Special", "$text": "Shield-4+, Gateship-3, Voidspace Anchor", "typeId": "473b-cbb5-5ba2-c2de"}
                 ]
               }
             ]
@@ -857,8 +1285,44 @@
               {"id": "f78a-b78f-ab54-642d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "18d2-4a9f-2f84-6cd1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 150}],
-            "entryLinks": [{"name": "Disintegrator Bank", "id": "6f9a-3e80-4849-e917", "hidden": false, "import": true, "targetId": "bc53-05e5-31b3-77c8", "type": "selectionEntry"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 140}],
+            "entryLinks": [
+              {
+                "name": "Station Disintegrator Bank",
+                "id": "7709-8a11-8602-6d29",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "546c-6684-5c3c-8281",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "e64f-d949-6d82-63cb",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "91bc-53f2-ae44-ac4c", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "047b-011b-9188-fc08", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Features",
+                "id": "f9ed-fca1-a04a-4afd",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "4996-9866-16f4-06d9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "c574-55ab-4fb6-cb54", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+                ]
+              }
+            ],
             "infoLinks": [{"name": "Shield-X", "id": "64ff-ef46-d542-79eb", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"}],
             "profiles": [
               {
@@ -900,7 +1364,7 @@
               {"id": "d92b-ef33-5466-d0a2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "053a-6c0b-b731-e859", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 85}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 70}],
             "entryLinks": [
               {
                 "name": "Heavy Vent Cannon Turret",
@@ -919,6 +1383,32 @@
                 "sortIndex": 2,
                 "targetId": "0206-8358-8ae6-3f0b",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "dd71-51c4-e5c1-eec0",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "a8ab-33be-488d-c41c", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "7544-fb32-324d-0218", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Features",
+                "id": "1a5d-7365-b433-284f",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "45c7-af60-0fdb-dd57", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "b446-a660-50f4-c8bc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+                ]
               }
             ],
             "profiles": [
@@ -961,11 +1451,45 @@
               {"id": "5fd0-dc76-0084-6736", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "7e5d-9e7e-2fc2-4774", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 85}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 80}],
             "entryLinks": [
-              {"name": "Heavy Vent Cannon Turret", "id": "7ab4-3444-773c-ee67", "hidden": false, "import": true, "targetId": "9060-dfa3-c13c-d00e", "type": "selectionEntry"}
+              {
+                "name": "Heavy Vent Cannon Turret",
+                "id": "7ab4-3444-773c-ee67",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "9060-dfa3-c13c-d00e",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Life Support",
+                "id": "9447-8578-e12e-90c8",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "b4a2-dd7d-9c2c-822b",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "8fc1-6aad-fba6-8553", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "b1f3-bfcb-b767-9fab", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Features",
+                "id": "2939-02cd-9c60-29c9",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "8607-d25e-5ee1-8e0c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
+                  {"id": "fbbf-9c0f-9a95-b646", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+                ]
+              }
             ],
-            "infoLinks": [{"name": "Signature Bloom", "id": "ff6a-ea4d-2248-c022", "hidden": false, "targetId": "53c7-8bbb-2618-15b2", "type": "rule"}],
+            "infoLinks": [{"name": "Signature Bloom (AO)", "id": "e0a6-f2ca-1416-36a5", "hidden": false, "targetId": "ff11-a45f-573f-8f96", "type": "rule"}],
             "profiles": [
               {
                 "name": "Astrobotanical Outpost",
@@ -981,7 +1505,7 @@
                   {"name": "KS", "$text": "5+", "typeId": "595f-3318-8065-9225"},
                   {"name": "BS", "$text": "-", "typeId": "750b-9043-034b-c27a"},
                   {"name": "G", "$text": "1", "typeId": "8b8c-53e9-20d1-9cbc"},
-                  {"name": "Special", "$text": "Signature Bloom", "typeId": "473b-cbb5-5ba2-c2de"}
+                  {"name": "Special", "$text": "Signature Bloom (AO)", "typeId": "473b-cbb5-5ba2-c2de"}
                 ]
               }
             ]
@@ -1008,7 +1532,64 @@
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 220}],
             "entryLinks": [
-              {"name": "Dimensional Hypershredder", "id": "d4f8-8ce3-2221-eaaf", "hidden": false, "import": true, "targetId": "7279-afef-c3f7-bd21", "type": "selectionEntry"}
+              {
+                "name": "Dimensional Hypershredder",
+                "id": "d4f8-8ce3-2221-eaaf",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "7279-afef-c3f7-bd21",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Weapons Control",
+                "id": "ce2c-f164-80b9-dad3",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "6894-136b-1c40-f57c", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "9831-2a6b-bf3e-ac40", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Supercontrol Node",
+                "id": "2938-24d8-e0ff-0073",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "bb92-3a98-c485-402c",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "d2d2-d90e-10f5-ad52", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "2660-507b-c6d3-9805", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Reactor Core",
+                "id": "aa07-1316-590d-53f7",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "37a5-659f-eaf6-b489",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "6e4d-ee55-3885-4766", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "7694-f0a7-cc4c-0633", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
+              },
+              {
+                "name": "Features",
+                "id": "452e-2a35-9fd3-77e6",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "0357-4f4b-4657-95bc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              }
             ],
             "infoLinks": [{"name": "Slow Traversal", "id": "b2bd-a6b3-c08e-a1ed", "hidden": false, "targetId": "d874-ab78-9a86-e2a2", "type": "rule"}],
             "profiles": [
@@ -1052,6 +1633,31 @@
               {"id": "cbfd-962e-e790-3627", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 200}],
+            "entryLinks": [
+              {
+                "name": "Supercontrol Node",
+                "id": "3734-c141-6778-ff38",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "bb92-3a98-c485-402c",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "0655-ad13-1239-aef1", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
+                  {"id": "b221-9848-0bd4-c98a", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                ]
+              },
+              {
+                "name": "Features",
+                "id": "6b10-fe0e-dc25-850b",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [{"id": "043f-6cf7-0095-4ecf", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
+              }
+            ],
             "infoLinks": [
               {"name": "Summoned Ingress", "id": "cb3c-ec15-a29b-6438", "hidden": false, "targetId": "1029-3e75-c89f-27de", "type": "rule"},
               {"name": "Hypersummoning", "id": "7137-92ab-4818-67f2", "hidden": false, "targetId": "b292-878f-949c-4ea4", "type": "rule"}
@@ -1214,45 +1820,6 @@
             "name": "Dimensional Hypershredder",
             "id": "b249-1838-c74e-b51e",
             "description": "When you attack with this weapon, choose Energy or Kinetic. This weapon's Type becomes the chosen Type for this attack.",
-            "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Disintegrator Bank",
-        "id": "bc53-05e5-31b3-77c8",
-        "collective": true,
-        "comment": "* 8/3+/1/E Vol-5",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "75d4-a91a-9247-6727", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "16b4-3697-a23a-7d25", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "infoLinks": [{"name": "Volley-X", "id": "45e8-b227-5004-8a53", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "Disintegrator Bank",
-            "id": "3cd4-34b7-59c8-29a1",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "*", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "8", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Volley-5", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ],
-        "rules": [
-          {
-            "name": "Disintegrator Bank",
-            "id": "00a0-f924-fd56-2694",
-            "description": "Instead of the normal Arcs, Shaltari Shurikens have their own Arcs. A Shuriken has 5 Arcs, each 72 degrees. The easiest way to define these Arcs is to follow the lines of adjacent vertical vanes, measured from the flight stand as normal. Follow these arcs when attacking instead of the normal rules for Arcs.\nWhen you assign targets to this weapon, you may only use each Arc once.",
             "hidden": false
           }
         ]
@@ -1467,6 +2034,48 @@
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Burnthrough-2, Flash-2, Focused, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
+          }
+        ]
+      },
+      {
+        "name": "Station Disintegrator Bank",
+        "id": "546c-6684-5c3c-8281",
+        "collective": true,
+        "comment": "* 8/3+/1/E Pen Vol-5",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "16dd-5e7d-e8b0-0c60", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "793f-7fab-0d03-9232", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Penetrator", "id": "e1a4-e65b-94f8-3616", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
+          {"name": "Volley-X", "id": "73f6-6f97-a4f0-7d6d", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Station Disintegrator Bank",
+            "id": "3cd6-f90c-d237-0853",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "*", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "8", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Penetrator, Volley-5", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Station Disintegrator Bank",
+            "id": "e473-050b-16d7-793b",
+            "description": "Instead of the normal Arcs, Shaltari Shurikens have their own Arcs. A Shuriken has 5 Arcs, each 72 degrees. The easiest way to define these Arcs is to follow the lines of adjacent vertical vanes, measured from the flight stand as normal. Follow these arcs when attacking instead of the normal rules for Arcs.\nWhen you assign targets to this weapon, you may only use each Arc once.",
+            "hidden": false
           }
         ]
       },
@@ -1741,7 +2350,7 @@
         "name": "Dropships",
         "id": "9dfe-c522-c033-7c51",
         "collective": true,
-        "comment": "2",
+        "comment": "3",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -1756,7 +2365,7 @@
             "hidden": false,
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+            "characteristics": [{"name": "Launch", "$text": "3", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
           }
         ]
       },
@@ -1859,6 +2468,266 @@
           }
         ]
       },
+      {
+        "name": "Defensive Garrison / Forward Operating Base",
+        "id": "4cb0-1798-e142-747f",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [{"id": "f14f-065e-c064-2520", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "f14f-065e-c064-2520",
+            "type": "set",
+            "value": 0,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "089c-2610-d2e8-2a37",
+                    "childName": "Deep Space Tracking",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "f40a-7cce-7357-602a",
+                    "childName": "Scanner Uplink",
+                    "field": "selections",
+                    "includeChildSelections": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Defensive Garrison / Forward Operating Base",
+            "id": "c6f1-f635-8cc7-e012",
+            "hidden": false,
+            "typeId": "2f84-97db-deff-fa6f",
+            "typeName": "Structure",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "Defensive Garrison (Defender): This Structure does not cost points and can only be taken by a player that is the Defender in a scenario, choosing the scenario and agreeing with your opponent ahead of time. This Space Station starts the game with 2/3/4 Battalions on it for Small/Medium/Large Space Stations respectively. A Space Station that takes a Defensive Garrison cannot take any other Structures.\nForward Operating Base (Attacker): This Feature does not cost points and can only be taken by a player that is the Attacker in a scenario, choosing the scenario and agreeing with your opponent ahead of time. This Space Station may launch a single Bomber each round in addition to its normal launch (following Launch timing, restrictions, and your faction's Bombers rules). Instead of attacking normally, you may remove this Bomber to place 2 Battalions on a Ship or Space Station in base contact with it. A Space Station that takes a Forward Operating Base cannot take any other Structures.",
+                "typeId": "1f58-541b-60dc-ea2a"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Launch Control",
+        "id": "0571-3e4e-2fcb-b4f4",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Launch Control",
+            "id": "40d2-8efa-0584-bf26",
+            "hidden": false,
+            "typeId": "3cad-7c2c-bf4c-d3c1",
+            "typeName": "Space Station Feature",
+            "characteristics": [
+              {"name": "ES", "$text": "4+", "typeId": "49ab-a8e0-4a0a-46d2"},
+              {"name": "KS", "$text": "4+", "typeId": "45b5-556b-f8d0-58e9"},
+              {"name": "Hull", "$text": "5", "typeId": "7276-bde5-6c1c-affe"},
+              {
+                "name": "Effect",
+                "$text": "When all Launch Control Features are removed from a Space Station, that Station cannot Launch Assets",
+                "typeId": "7e8c-6ffe-f6b0-cba1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Weapons Control",
+        "id": "d5bf-be0a-77ca-4145",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Weapons Control",
+            "id": "e95a-1bbb-f4f2-5836",
+            "hidden": false,
+            "typeId": "3cad-7c2c-bf4c-d3c1",
+            "typeName": "Space Station Feature",
+            "characteristics": [
+              {"name": "ES", "$text": "4+", "typeId": "49ab-a8e0-4a0a-46d2"},
+              {"name": "KS", "$text": "4+", "typeId": "45b5-556b-f8d0-58e9"},
+              {"name": "Hull", "$text": "5", "typeId": "7276-bde5-6c1c-affe"},
+              {
+                "name": "Effect",
+                "$text": "When all Weapons Control Features are removed from a Space Station, that Station cannot use its Weapon Systems",
+                "typeId": "7e8c-6ffe-f6b0-cba1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Life Support",
+        "id": "b4a2-dd7d-9c2c-822b",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Life Support",
+            "id": "94d1-1e6d-a7f6-6071",
+            "hidden": false,
+            "typeId": "3cad-7c2c-bf4c-d3c1",
+            "typeName": "Space Station Feature",
+            "characteristics": [
+              {"name": "ES", "$text": "5+", "typeId": "49ab-a8e0-4a0a-46d2"},
+              {"name": "KS", "$text": "5+", "typeId": "45b5-556b-f8d0-58e9"},
+              {"name": "Hull", "$text": "6", "typeId": "7276-bde5-6c1c-affe"},
+              {
+                "name": "Effect",
+                "$text": "When this Feature is removed, each player removes a Battaion from this Space Station, then at the end of each subsequent Cleanup step, each player removes a Battalion from this Space Station.",
+                "typeId": "7e8c-6ffe-f6b0-cba1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Reactor Core",
+        "id": "37a5-659f-eaf6-b489",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Reactor Core",
+            "id": "1d1f-f4ec-37bc-bf9f",
+            "hidden": false,
+            "typeId": "3cad-7c2c-bf4c-d3c1",
+            "typeName": "Space Station Feature",
+            "characteristics": [
+              {"name": "ES", "$text": "5+", "typeId": "49ab-a8e0-4a0a-46d2"},
+              {"name": "KS", "$text": "5+", "typeId": "45b5-556b-f8d0-58e9"},
+              {"name": "Hull", "$text": "6", "typeId": "7276-bde5-6c1c-affe"},
+              {
+                "name": "Effect",
+                "$text": "When this Feature or a Space Station with this feature is destroyed, it explodes with a Reactor Overload Explosion Effect with a range of D6+3\".",
+                "typeId": "7e8c-6ffe-f6b0-cba1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Redundant Systems",
+        "id": "8890-fbc3-45aa-fac8",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "modifiers": [{"affects": "profiles.Space Station", "field": "750b-9043-034b-c27a", "scope": "model", "type": "set", "value": "6+"}],
+        "profiles": [
+          {
+            "name": "Redundant Systems",
+            "id": "55b6-ce67-92ca-2fee",
+            "hidden": false,
+            "typeId": "3cad-7c2c-bf4c-d3c1",
+            "typeName": "Space Station Feature",
+            "characteristics": [
+              {"name": "ES", "$text": "4+", "typeId": "49ab-a8e0-4a0a-46d2"},
+              {"name": "KS", "$text": "4+", "typeId": "45b5-556b-f8d0-58e9"},
+              {"name": "Hull", "$text": "7", "typeId": "7276-bde5-6c1c-affe"},
+              {"name": "Effect", "$text": "This Space Station gains a 6+ Backup Save.", "typeId": "7e8c-6ffe-f6b0-cba1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Firing Computer",
+        "id": "abb2-9ed7-2a24-1707",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Firing Computer",
+            "id": "2bf8-c6e5-8038-f44c",
+            "hidden": false,
+            "typeId": "3cad-7c2c-bf4c-d3c1",
+            "typeName": "Space Station Feature",
+            "characteristics": [
+              {"name": "ES", "$text": "5+", "typeId": "49ab-a8e0-4a0a-46d2"},
+              {"name": "KS", "$text": "5+", "typeId": "45b5-556b-f8d0-58e9"},
+              {"name": "Hull", "$text": "5", "typeId": "7276-bde5-6c1c-affe"},
+              {"name": "Effect", "$text": "This Space Station's Close Action weapons gain 6\" additional range.", "typeId": "7e8c-6ffe-f6b0-cba1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Defensive Systems",
+        "id": "cf3f-ac82-d1a1-77e7",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Defensive Systems",
+            "id": "b118-2884-e264-c1af",
+            "hidden": false,
+            "typeId": "3cad-7c2c-bf4c-d3c1",
+            "typeName": "Space Station Feature",
+            "characteristics": [
+              {"name": "ES", "$text": "2+", "typeId": "49ab-a8e0-4a0a-46d2"},
+              {"name": "KS", "$text": "2+", "typeId": "45b5-556b-f8d0-58e9"},
+              {"name": "Hull", "$text": "3", "typeId": "7276-bde5-6c1c-affe"},
+              {"name": "Effect", "$text": "None", "typeId": "7e8c-6ffe-f6b0-cba1"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Supercontrol Node",
+        "id": "bb92-3a98-c485-402c",
+        "collective": true,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "profiles": [
+          {
+            "name": "Supercontrol Node",
+            "id": "ba79-97a9-7ecc-f9c0",
+            "hidden": false,
+            "typeId": "3cad-7c2c-bf4c-d3c1",
+            "typeName": "Space Station Feature",
+            "characteristics": [
+              {"name": "ES", "$text": "4+", "typeId": "49ab-a8e0-4a0a-46d2"},
+              {"name": "KS", "$text": "4+", "typeId": "45b5-556b-f8d0-58e9"},
+              {"name": "Hull", "$text": "6", "typeId": "7276-bde5-6c1c-affe"},
+              {"name": "Effect", "$text": "During the Activation and Asset Phases, you count as controlling this Space Station", "typeId": "7e8c-6ffe-f6b0-cba1"}
+            ]
+          }
+        ]
+      },
       {"name": "----- Equipment -----", "id": "d803-3d17-88ba-5ea8", "hidden": true, "import": false, "type": "upgrade"}
     ],
     "sharedSelectionEntryGroups": [
@@ -1867,7 +2736,7 @@
         "id": "5a44-d602-e556-ffb7",
         "hidden": false,
         "constraints": [
-          {"id": "9b6e-72fc-561b-5740", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "9b6e-72fc-561b-5740", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 0},
           {"id": "fe0a-1a38-847f-874b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "modifierGroups": [
@@ -1885,7 +2754,7 @@
                 "value": 1
               }
             ],
-            "modifiers": [{"field": "9b6e-72fc-561b-5740", "type": "set", "value": 2}, {"field": "fe0a-1a38-847f-874b", "type": "set", "value": 2}]
+            "modifiers": [{"field": "9b6e-72fc-561b-5740", "type": "set", "value": 0}, {"field": "fe0a-1a38-847f-874b", "type": "set", "value": 2}]
           },
           {
             "comment": "Large Space Station",
@@ -1901,7 +2770,7 @@
                 "value": 1
               }
             ],
-            "modifiers": [{"field": "9b6e-72fc-561b-5740", "type": "set", "value": 3}, {"field": "fe0a-1a38-847f-874b", "type": "set", "value": 3}]
+            "modifiers": [{"field": "9b6e-72fc-561b-5740", "type": "set", "value": 0}, {"field": "fe0a-1a38-847f-874b", "type": "set", "value": 3}]
           }
         ],
         "selectionEntryGroups": [
@@ -1973,6 +2842,17 @@
                 "targetId": "f40a-7cce-7357-602a",
                 "type": "selectionEntry",
                 "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 15}]
+              },
+              {
+                "name": "Defensive Garrison / Forward Operating Base",
+                "id": "3e0f-3dd3-9d29-dd98",
+                "collective": true,
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "4cb0-1798-e142-747f",
+                "type": "selectionEntry",
+                "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}]
               }
             ]
           }
@@ -1989,6 +2869,7 @@
             "hidden": false,
             "import": true,
             "type": "upgrade",
+            "constraints": [{"id": "7cb6-954f-eb24-ddac", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 30}],
             "infoLinks": [{"name": "Signature Bloom", "id": "160e-d48a-1e86-ace1", "hidden": false, "targetId": "53c7-8bbb-2618-15b2", "type": "rule"}],
             "modifiers": [{"affects": "profiles.Space Station", "field": "473b-cbb5-5ba2-c2de", "scope": "parent", "type": "set", "value": "Signature Bloom"}]
@@ -1999,6 +2880,7 @@
             "hidden": false,
             "import": true,
             "type": "upgrade",
+            "constraints": [{"id": "ce2c-6e6d-d03f-a90b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 80}],
             "entryLinks": [
               {
@@ -2029,6 +2911,29 @@
                 "type": "selectionEntry"
               }
             ]
+          },
+          {
+            "name": "Space Station Features",
+            "id": "5657-6cdf-1dd6-d815",
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [{"id": "5317-0180-3c04-4a69", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Features",
+                "id": "4ab0-f5fe-c087-4fb4",
+                "hidden": false,
+                "import": true,
+                "targetId": "d798-ad43-7da6-7ad1",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "f8b4-890a-4e32-bbf7", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "7fe5-0d49-fced-9f96", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ]
           }
         ]
       },
@@ -2036,52 +2941,94 @@
         "name": "Features",
         "id": "d798-ad43-7da6-7ad1",
         "hidden": false,
-        "selectionEntries": [
+        "entryLinks": [
           {
             "name": "Launch Control",
-            "id": "5df2-c9f8-bc14-f277",
+            "id": "11ba-aa13-e4e2-139a",
+            "collective": true,
             "hidden": false,
             "import": true,
             "sortIndex": 1,
-            "type": "upgrade",
-            "constraints": [{"id": "4e90-b831-e9c7-a401", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}],
-            "profiles": [
-              {
-                "name": "Launch Control",
-                "id": "01db-066c-4494-8562",
-                "hidden": false,
-                "typeId": "2f84-97db-deff-fa6f",
-                "typeName": "Structure",
-                "characteristics": [
-                  {"name": "Effect", "$text": "When all Launch Control features are removed from a Station, that station cannot launch Assets.", "typeId": "1f58-541b-60dc-ea2a"}
-                ]
-              }
-            ]
+            "targetId": "0571-3e4e-2fcb-b4f4",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
           },
           {
             "name": "Weapons Control",
-            "id": "aba5-849e-903d-8067",
+            "id": "34ec-d8e6-4fb0-b95a",
+            "collective": true,
             "hidden": false,
             "import": true,
             "sortIndex": 2,
-            "type": "upgrade",
-            "constraints": [{"id": "dc59-7ad4-3653-f952", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1}],
-            "profiles": [
-              {
-                "name": "Weapons Control",
-                "id": "437e-a404-f3d1-e4e2",
-                "hidden": false,
-                "typeId": "2f84-97db-deff-fa6f",
-                "typeName": "Structure",
-                "characteristics": [
-                  {
-                    "name": "Effect",
-                    "$text": "When all Weapons Control features are removed from a Station, that station cannot use its Weapon Systems.",
-                    "typeId": "1f58-541b-60dc-ea2a"
-                  }
-                ]
-              }
-            ]
+            "targetId": "d5bf-be0a-77ca-4145",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
+          },
+          {
+            "name": "Life Support",
+            "id": "a3ed-56b6-0ab1-9b24",
+            "collective": true,
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "targetId": "b4a2-dd7d-9c2c-822b",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
+          },
+          {
+            "name": "Reactor Core",
+            "id": "b0d6-8ba4-0a17-bdef",
+            "collective": true,
+            "hidden": false,
+            "import": true,
+            "sortIndex": 4,
+            "targetId": "37a5-659f-eaf6-b489",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 0}]
+          },
+          {
+            "name": "Redundant Systems",
+            "id": "e909-41ad-36d6-91d8",
+            "collective": true,
+            "hidden": false,
+            "import": true,
+            "sortIndex": 5,
+            "targetId": "8890-fbc3-45aa-fac8",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}]
+          },
+          {
+            "name": "Firing Computer",
+            "id": "f7dd-1b99-9abf-fbc7",
+            "collective": true,
+            "hidden": false,
+            "import": true,
+            "sortIndex": 6,
+            "targetId": "abb2-9ed7-2a24-1707",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}]
+          },
+          {
+            "name": "Defensive Systems",
+            "id": "9098-27fe-790a-901e",
+            "collective": true,
+            "hidden": false,
+            "import": true,
+            "sortIndex": 7,
+            "targetId": "cf3f-ac82-d1a1-77e7",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 20}]
+          },
+          {
+            "name": "Supercontrol Node",
+            "id": "e6ef-0824-72db-5bfd",
+            "collective": true,
+            "hidden": false,
+            "import": true,
+            "sortIndex": 8,
+            "targetId": "bb92-3a98-c485-402c",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 25}]
           }
         ]
       }

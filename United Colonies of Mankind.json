@@ -14,7 +14,8 @@
       {"name": "Fleet Space Stations", "id": "cded-8c4c-5653-444c", "targetId": "7e9b-b6ba-2178-6eb5", "type": "catalogue"},
       {"name": "Misc", "id": "b6c4-248a-bdbe-f398", "targetId": "1b65-4911-bd01-73aa", "type": "catalogue"},
       {"name": "Civilian", "id": "565d-d66e-f3ca-265d", "targetId": "903e-8fb9-3fe2-4460", "type": "catalogue"},
-      {"name": "Resistance Shared", "id": "7c67-5e56-c6a0-4078", "targetId": "e35f-bb6b-cd59-6b36", "type": "catalogue"}
+      {"name": "Resistance Shared", "id": "7c67-5e56-c6a0-4078", "targetId": "e35f-bb6b-cd59-6b36", "type": "catalogue"},
+      {"name": "System Shared", "id": "2b81-1d05-05b5-65fe", "targetId": "2dc1-c46a-11b4-c0f0", "type": "catalogue"}
     ],
     "entryLinks": [
       {"name": "Lvl 1: Captain", "id": "481d-7863-ffb3-aa4f", "hidden": false, "import": true, "targetId": "19a9-7d1f-50b2-e998", "type": "selectionEntry"},
@@ -46,7 +47,7 @@
         "type": "selectionEntry"
       },
       {
-        "name": "Frances Mendoza - Flying Dutchman Heavy Cruiser",
+        "name": "Francis Mendoza - Flying Dutchman Heavy Cruiser",
         "id": "4067-9608-f9ed-ac69",
         "hidden": false,
         "import": true,
@@ -186,6 +187,7 @@
       {"name": "SLM-9 Resupply Hauler", "id": "786b-fded-aedd-99e5", "hidden": false, "import": true, "targetId": "0cf9-dc4e-a21a-3fc1", "type": "selectionEntry"},
       {"name": "T-Type Tugboats", "id": "ee03-5982-f3ca-0362", "hidden": false, "import": true, "targetId": "21c8-a67f-93e1-7b07", "type": "selectionEntry"},
       {"name": "EX-7 Packet Runner", "id": "4ea5-7ed4-ad34-a108", "hidden": false, "import": true, "targetId": "b6bf-c8ab-1240-e10f", "type": "selectionEntry"},
+      {"name": "Kronos Barges", "id": "630d-e4d8-d07c-2796", "hidden": false, "import": true, "targetId": "0fe9-c9fb-f89d-699e", "type": "selectionEntry"},
       {"name": "DH-Type Penal Transport", "id": "61d8-17e4-2d87-faa3", "hidden": false, "import": true, "targetId": "3c15-10cc-4cf2-7166", "type": "selectionEntry"},
       {"name": "Jah'tar Startrader", "id": "ff17-a3bf-0f6b-e55f", "hidden": false, "import": true, "targetId": "e1ee-f46b-05f3-54b2", "type": "selectionEntry"},
       {"name": "M-Type Barge", "id": "a6c1-ef68-42b0-93af", "hidden": false, "import": true, "targetId": "a1c6-c54a-4d36-5280", "type": "selectionEntry"},
@@ -209,26 +211,86 @@
       {"name": "Aegis Platform", "id": "357c-2c6c-6802-cb56", "hidden": false, "import": true, "targetId": "8222-a290-f39e-07d3", "type": "selectionEntry"},
       {"name": "Comms Platform", "id": "ef07-f08a-e2f4-630d", "hidden": false, "import": true, "targetId": "e5ac-ee7e-cec2-6eb9", "type": "selectionEntry"},
       {"name": "Torpedo Platform", "id": "26f1-b8cb-e69d-a575", "hidden": false, "import": true, "targetId": "682b-72f9-37cc-f98b", "type": "selectionEntry"},
+      {
+        "name": "Military Outpost",
+        "id": "a599-6bcd-126c-b840",
+        "hidden": false,
+        "import": true,
+        "targetId": "4dc7-0564-6791-9ecc",
+        "type": "selectionEntry",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "473d-151f-22a2-8892",
+                "childName": "Mercenary ships",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hangar",
+        "id": "d1a1-e5dc-09df-d2f5",
+        "hidden": false,
+        "import": true,
+        "targetId": "9530-2ee3-9f00-b7f5",
+        "type": "selectionEntry",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "473d-151f-22a2-8892",
+                "childName": "Mercenary ships",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
       {"name": "Launch Assets", "id": "d611-8ddb-8967-32b1", "hidden": false, "import": true, "targetId": "76f2-9ded-5c83-da35", "type": "selectionEntry"}
     ],
-    "publications": [{"name": "UCM Combined Fleet Stats (260828)", "id": "9813-8e60-542d-9381", "hidden": false, "shortName": "UCM Stats (260828)"}],
+    "publications": [{"name": "UCM Combined Fleet Stats (261104)", "id": "9813-8e60-542d-9381", "hidden": false, "shortName": "UCM Stats (261104)"}],
     "sharedRules": [
       {
         "name": "Feature Carrier",
         "id": "c6ab-b077-83e9-ed53",
-        "description": "At the start of the game, before players deploy, choose one Deployable Feature from the UCM Deployable Features List. This Ship starts the game carrying that Deployable Feature.",
+        "description": "When building your fleet, this Ship must be assigned a Deployable Feature from the UCM Deployable Features list, paying points for this Feature. This Ship starts the game carrying that Deployable Feature.",
         "hidden": false
       },
       {
-        "name": "Stealth Drop",
-        "id": "be28-1d6e-4272-cb10",
-        "description": "When this Group launches its Dropships, 2 Dropships are needed to place 1 Battalion. If this Group contains a single ship, each Dropship only places a Battalion on a roll of a 4+.",
+        "name": "Surgical Strike",
+        "id": "f665-861f-4a42-53b9",
+        "description": "When you deploy Battalions from this Group to a Feature that does not contain any enemy Battalions, you may have each Battalion deployed to that Feature inflict it 1 damage before being placed.",
+        "hidden": false
+      },
+      {
+        "name": "UCM Battlenet",
+        "id": "d008-4653-53cf-e21a",
+        "description": "A UCM or Generic (from 4.2.1) Admiral assigned to this Ship may take 1 additional Ability from the UCM Abilities table.",
         "hidden": false
       },
       {
         "name": "UCMA Battlenet",
         "id": "c245-6148-bd8a-d5af",
-        "description": "An Admiral assigned to this ship gains the following Command Abilities:\nDouble Time Bulk Line (2AP): When you activate another friendly Group in Orbit, until the end of its activation, that Group may launch its Bulk Landers as if the target Dropsite has no enemy Battalions.\nFeet First into Hell (2AP): When you activate another friendly Group in atmosphere, until the end of its activation, that Group can launch its Dropships or Drop Pods with a range of 6\". Drop Pods launched due to this rule ignore the Alt-Launch rule.",
+        "description": "An Admiral assigned to this ship gains the following Command Abilities:\nDouble Time Bulk Line (2AP): When you activate another friendly Group in Orbit, until the end of its activation, that Group may launch its Bulk Landers as if the target Dropsite has no enemy Battalions.\nFeet First into Hell (2AP): When you activate another friendly Group in atmosphere, until the end of its activation, that Group can launch its Dropships or Drop Pods with a range of 6\". Drop Pods launched due to this rule ignore the Alt-X rule.",
         "hidden": false
       },
       {
@@ -263,16 +325,16 @@
             "characteristics": [{"name": "Level", "$text": "1", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "-", "typeId": "2a6e-dc3c-846c-d4c2"}]
           },
           {
-            "name": "Dedicated Survey Teams",
-            "id": "aaeb-5823-27d5-5902",
+            "name": "Interceptors",
+            "id": "b101-11de-ced7-a809",
             "hidden": false,
             "typeId": "705b-98a3-a21d-7118",
             "typeName": "Admiral Ability",
             "characteristics": [
-              {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
+              {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "When you activate a Group of a single Ship, that Ship may Survey a Dropsite and attack with a single weapon this round (but still cannot launch Assets).",
+                "$text": "When a Wing of enemy Bombers are placed or moved into based contact with a friendly Ship, before they attack, choose a Wing of friendly Fighters within their Thrust of the friendly Ship. Move any number of Fighters from that Wing into base contact with the Friendly Ship, then remove the moved Fighters and that many enemy Bombers. Fighters moved this way cannot ignore intervening Scenery for any reason.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -620,7 +682,8 @@
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "270a-b509-fe41-214c", "primary": false, "targetId": "default-category"},
-              {"name": "Heavy Groups", "id": "789f-2d18-866c-faa9", "primary": false, "targetId": "8d99-053d-ffeb-98c5"}
+              {"name": "Heavy Groups", "id": "789f-2d18-866c-faa9", "primary": false, "targetId": "8d99-053d-ffeb-98c5"},
+              {"name": "Heavy and Colossal Groups", "id": "8809-39b4-1f73-9784", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
             ],
             "constraints": [
               {"id": "d3ff-f1c1-a9f0-f3ec", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -776,7 +839,17 @@
               {"id": "94f1-347f-7de5-1c27-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 85}],
-            "entryLinks": [{"name": "Abilities", "id": "d2b6-6a1c-a5e9-2cb7", "hidden": false, "import": true, "targetId": "d584-3bb8-45c6-cf81", "type": "selectionEntryGroup"}],
+            "entryLinks": [
+              {
+                "name": "Abilities",
+                "id": "d2b6-6a1c-a5e9-2cb7",
+                "hidden": false,
+                "import": true,
+                "targetId": "d584-3bb8-45c6-cf81",
+                "type": "selectionEntryGroup",
+                "modifiers": [{"field": "0f20-e899-df3f-0715", "type": "set", "value": 2}]
+              }
+            ],
             "profiles": [
               {
                 "name": "Havelock",
@@ -784,7 +857,7 @@
                 "hidden": false,
                 "typeId": "92cf-ddd3-4d79-e408",
                 "typeName": "Admiral",
-                "characteristics": [{"name": "Level", "$text": "4", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Spearhead", "typeId": "2a6e-dc3c-846c-d4c2"}]
+                "characteristics": [{"name": "Level", "$text": "4", "typeId": "391a-b7ae-831e-4cf0"}, {"name": "Special", "$text": "Tip of the Spear", "typeId": "2a6e-dc3c-846c-d4c2"}]
               },
               {
                 "name": "Ballistic Prediction",
@@ -804,9 +877,9 @@
             ],
             "rules": [
               {
-                "name": "Spearhead",
-                "id": "8612-0822-de10-5e03",
-                "description": "While this Flagship is within 12\" of your opponent's deployment zone, you may re-roll its failed Backup saves.",
+                "name": "Tip of the Spear",
+                "id": "3d3b-2655-f084-e862",
+                "description": "At the start of the game, choose one of your deployment zones or a single board edge. While this Ship is further than 12\" away from the chosen deployment zone or board edge, you may re-roll its failed Backup Saves.",
                 "hidden": false
               }
             ]
@@ -820,13 +893,14 @@
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "132e-aba3-047a-def5", "primary": false, "targetId": "default-category"},
-              {"name": "Heavy Groups", "id": "f364-0ee1-6f8f-acb5", "primary": false, "targetId": "8d99-053d-ffeb-98c5"}
+              {"name": "Heavy Groups", "id": "f364-0ee1-6f8f-acb5", "primary": false, "targetId": "8d99-053d-ffeb-98c5"},
+              {"name": "Heavy and Colossal Groups", "id": "bc92-424b-4b62-5250", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
             ],
             "constraints": [
               {"id": "eb20-4f6f-9a8b-2cd4", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "6dcb-f140-c9ae-bda4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 245}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 235}],
             "entryLinks": [
               {
                 "name": "UF-4200 Mass Driver Turrets",
@@ -856,11 +930,20 @@
                 "type": "selectionEntry"
               },
               {
+                "name": "Heavy Bombers",
+                "id": "b40a-fd51-d975-a8c6",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "6db4-cb9d-ecd7-9762",
+                "type": "selectionEntry"
+              },
+              {
                 "name": "Drive Refit",
                 "id": "9fc9-b555-9abb-3c1e",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 5,
                 "targetId": "282b-d9a0-5864-b290",
                 "type": "selectionEntry"
               }
@@ -1001,7 +1084,7 @@
                 "import": true,
                 "targetId": "d584-3bb8-45c6-cf81",
                 "type": "selectionEntryGroup",
-                "modifiers": [{"field": "0f20-e899-df3f-0715", "type": "set", "value": 2}]
+                "modifiers": [{"field": "0f20-e899-df3f-0715", "type": "set", "value": 3}]
               }
             ],
             "profiles": [
@@ -1020,7 +1103,7 @@
                 "typeId": "705b-98a3-a21d-7118",
                 "typeName": "Admiral Ability",
                 "characteristics": [
-                  {"name": "Cost", "$text": "4AP", "typeId": "e725-1a05-f360-abc6"},
+                  {"name": "Cost", "$text": "3AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
                     "$text": "At the end of this Group's activation, discard a Pass Token and target another friendly Group of L or M Tonnage. If you do, that Group may turn up to 45 degrees, then move up to a quarter of its Thrust, and then each Ship in it may attack with a single weapon.",
@@ -1047,7 +1130,8 @@
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "ed7e-59ea-3e9c-5d5b", "primary": false, "targetId": "default-category"},
-              {"name": "Colossal Groups", "id": "bc32-b0c4-7436-b406", "primary": false, "targetId": "52fa-6578-d171-57d6"}
+              {"name": "Colossal Groups", "id": "bc32-b0c4-7436-b406", "primary": false, "targetId": "52fa-6578-d171-57d6"},
+              {"name": "Heavy and Colossal Groups", "id": "13a9-cf03-8c7f-f13e", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
             ],
             "constraints": [
               {"id": "b187-8e43-7aee-21a1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -1056,30 +1140,21 @@
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 530}],
             "entryLinks": [
               {
-                "name": "UF-9000 Mass Driver Turret",
-                "id": "62d2-5f64-f668-bcdd",
+                "name": "UF-9000 Mass Driver Turrets",
+                "id": "139d-166f-4dad-580b",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "00cb-22ad-7191-43cf",
+                "targetId": "c980-2776-1114-8b12",
                 "type": "selectionEntry"
               },
               {
-                "name": "UF-4200 Mass Driver Turret Core Battery",
-                "id": "664f-c9ff-dc24-d457",
+                "name": "UF-4200 Mass Driver Turret Battery",
+                "id": "90eb-3e2c-a3cd-2d50",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
-                "targetId": "f819-d58c-9c21-4a53",
-                "type": "selectionEntry"
-              },
-              {
-                "name": "UF-4200 Mass Driver Turrets",
-                "id": "71d5-e63f-c90f-0401",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 3,
-                "targetId": "bb41-2fcb-66bd-acd5",
+                "targetId": "1738-e197-f21e-32e9",
                 "type": "selectionEntry"
               },
               {
@@ -1087,7 +1162,7 @@
                 "id": "bbc4-c478-b653-936f",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 3,
                 "targetId": "0a54-c4e1-6baf-ee55",
                 "type": "selectionEntry"
               },
@@ -1096,7 +1171,7 @@
                 "id": "d9f2-8cdf-7469-3f85",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 5,
+                "sortIndex": 4,
                 "targetId": "c0db-56ff-db29-5f8a",
                 "type": "selectionEntry"
               },
@@ -1105,7 +1180,7 @@
                 "id": "afde-f8d8-35a3-b801",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 6,
+                "sortIndex": 5,
                 "targetId": "8b69-b212-604a-7d8e",
                 "type": "selectionEntry"
               }
@@ -1222,7 +1297,7 @@
               {"id": "a065-1a2e-bb71-7ccb", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 71}],
-            "entryLinks": [{"name": "Artillery Cannon", "id": "1b80-21fa-e76a-1b13", "hidden": false, "import": true, "targetId": "22fe-020f-c683-c4c5", "type": "selectionEntry"}],
+            "entryLinks": [{"name": "Artillery Cannons", "id": "8864-64f1-5777-7df0", "hidden": false, "import": true, "targetId": "df61-cf11-105d-6633", "type": "selectionEntry"}],
             "infoLinks": [
               {"name": "Hero", "id": "c436-eff6-9799-884e", "hidden": false, "targetId": "f945-e19c-c8bb-1c6a", "type": "rule"},
               {"name": "Unique", "id": "73cb-b61f-e13e-7b3d", "hidden": false, "targetId": "3f45-7047-464a-3be4", "type": "rule"}
@@ -1251,7 +1326,7 @@
         ]
       },
       {
-        "name": "Frances Mendoza - Flying Dutchman Heavy Cruiser",
+        "name": "Francis Mendoza - Flying Dutchman Heavy Cruiser",
         "id": "5074-7dd4-e180-ad9c",
         "hidden": false,
         "import": true,
@@ -1281,7 +1356,7 @@
               },
               {
                 "childId": "5074-7dd4-e180-ad9c",
-                "childName": "Frances Mendoza - Flying Dutchman Heavy Cruiser",
+                "childName": "Francis Mendoza - Flying Dutchman Heavy Cruiser",
                 "field": "selections",
                 "includeChildSelections": false,
                 "scope": "parent",
@@ -1322,7 +1397,7 @@
         ],
         "selectionEntries": [
           {
-            "name": "Frances Mendoza - Flying Dutchman Heavy Cruiser",
+            "name": "Francis Mendoza - Flying Dutchman Heavy Cruiser",
             "id": "400e-808d-622f-19d9",
             "hidden": false,
             "import": true,
@@ -1363,7 +1438,7 @@
             ],
             "profiles": [
               {
-                "name": "Frances Mendoza - Flying Dutchman",
+                "name": "Francis Mendoza - Flying Dutchman",
                 "id": "d61b-e761-3562-1a32",
                 "hidden": false,
                 "typeId": "8a2d-efd5-4b60-f4fa",
@@ -1585,7 +1660,7 @@
               {"id": "5976-df49-de8c-edf8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "a204-89be-b45e-0987", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 20}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 23}],
             "entryLinks": [{"name": "Stingray Missile Bays", "id": "763b-c3cf-7bda-7a65", "hidden": false, "import": true, "targetId": "9c88-6deb-94b2-ade8", "type": "selectionEntry"}],
             "infoLinks": [
               {"name": "Descent", "id": "da38-5ec7-3385-0609", "hidden": false, "targetId": "2ae8-7705-ab9a-03c0", "type": "rule"},
@@ -1604,7 +1679,7 @@
                   {"name": "Sig", "$text": "2\"", "typeId": "4feb-14c2-b1f1-9fa5"},
                   {"name": "Hull", "$text": "2", "typeId": "5253-be1d-917b-17d9"},
                   {"name": "ES", "$text": "5+", "typeId": "42ae-03c9-d0ff-61da"},
-                  {"name": "KS", "$text": "6+", "typeId": "a4d4-4c63-1848-24f8"},
+                  {"name": "KS", "$text": "5+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "2-4", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Descent, Rare", "typeId": "fdf5-89b6-e62e-570f"}
@@ -1815,7 +1890,7 @@
               {"id": "2b6b-9716-0099-5ffa", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "4513-1f7a-f5fd-d9c7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 25}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 36}],
             "entryLinks": [
               {
                 "name": "Barracuda Missile Bays",
@@ -1833,7 +1908,7 @@
               {"name": "Cloak-X", "id": "af51-ab74-0f51-4d17", "hidden": false, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
               {"name": "Rare", "id": "d8e0-15bd-5556-a3c3", "hidden": false, "targetId": "f7ad-85f9-39f4-7e10", "type": "rule"},
               {"name": "Vanguard-X\"", "id": "dac4-a3c2-4dbb-5641", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"},
-              {"name": "Stealth Drop", "id": "736d-f6ea-27a0-1ea1", "hidden": false, "targetId": "be28-1d6e-4272-cb10", "type": "rule"}
+              {"name": "Surgical Strike", "id": "c103-3301-a942-249e", "hidden": false, "targetId": "f665-861f-4a42-53b9", "type": "rule"}
             ],
             "profiles": [
               {
@@ -1851,7 +1926,7 @@
                   {"name": "KS", "$text": "6+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "2-4", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Descent, Cloak-1, Rare, Vanguard-6\", Stealth Drop", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Descent, Cloak-1, Rare, Vanguard-7\", Surgical Strike", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -1936,7 +2011,7 @@
               {"id": "1ae4-6ba1-0ca2-64e1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "aae8-ff1d-b455-aa64", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 6}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 40}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 37}],
             "entryLinks": [
               {
                 "name": "UF-2200 Mass Driver Turret",
@@ -2308,7 +2383,7 @@
               {"id": "21eb-753a-d1d6-6083", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "ec03-d2f7-bdb7-9b7d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 45}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 42}],
             "entryLinks": [
               {
                 "name": "UF-2200 Mass Driver Turret",
@@ -2335,7 +2410,7 @@
                   {"name": "Sig", "$text": "3\"", "typeId": "4feb-14c2-b1f1-9fa5"},
                   {"name": "Hull", "$text": "4", "typeId": "5253-be1d-917b-17d9"},
                   {"name": "ES", "$text": "4+", "typeId": "42ae-03c9-d0ff-61da"},
-                  {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
+                  {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1-2", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Descent", "typeId": "fdf5-89b6-e62e-570f"}
@@ -2365,7 +2440,7 @@
             "categoryLinks": [{"name": "Light Ship", "id": "249c-f77b-3a41-e1e0", "primary": true, "targetId": "f942-8f88-d77b-13c1"}],
             "constraints": [
               {"id": "a231-9176-8849-5f05", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "3898-981f-37d1-53fc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+              {"id": "3898-981f-37d1-53fc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 45}],
             "entryLinks": [
@@ -2403,7 +2478,7 @@
                   {"name": "ES", "$text": "3+", "typeId": "42ae-03c9-d0ff-61da"},
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
-                  {"name": "G", "$text": "1-2", "typeId": "32ce-7bbb-1d0f-8c80"},
+                  {"name": "G", "$text": "1-4", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "-", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
@@ -2431,7 +2506,7 @@
             "categoryLinks": [{"name": "Light Ship", "id": "aa58-6419-f0f6-158c", "primary": true, "targetId": "f942-8f88-d77b-13c1"}],
             "constraints": [
               {"id": "581d-47a6-3460-2a58", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "3eb1-6247-18ae-92d4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+              {"id": "3eb1-6247-18ae-92d4", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 50}],
             "entryLinks": [
@@ -2469,7 +2544,7 @@
                   {"name": "ES", "$text": "3+", "typeId": "42ae-03c9-d0ff-61da"},
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
-                  {"name": "G", "$text": "1-2", "typeId": "32ce-7bbb-1d0f-8c80"},
+                  {"name": "G", "$text": "1-4", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "-", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
@@ -2499,7 +2574,7 @@
               {"id": "03a9-b9c7-f579-8d53", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "9af8-98b4-e032-9da0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 50}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 57}],
             "entryLinks": [{"name": "UF-B-9000s", "id": "2397-07f0-8e42-fdd9", "hidden": false, "import": true, "targetId": "d8ff-a3b5-c461-1eca", "type": "selectionEntry"}],
             "infoLinks": [{"name": "Monitor", "id": "d6a5-190a-6abb-234b", "hidden": false, "targetId": "cc9f-9be5-cc19-2fc9", "type": "rule"}],
             "profiles": [
@@ -2511,7 +2586,7 @@
                 "typeName": "Ship",
                 "characteristics": [
                   {"name": "Thrust", "$text": "6\"", "typeId": "d821-4294-3117-e8a6"},
-                  {"name": "Scan", "$text": "6\"", "typeId": "960a-5d0e-18c5-4310"},
+                  {"name": "Scan", "$text": "10\"", "typeId": "960a-5d0e-18c5-4310"},
                   {"name": "Sig", "$text": "4\"", "typeId": "4feb-14c2-b1f1-9fa5"},
                   {"name": "Hull", "$text": "4", "typeId": "5253-be1d-917b-17d9"},
                   {"name": "ES", "$text": "3+", "typeId": "42ae-03c9-d0ff-61da"},
@@ -2547,7 +2622,7 @@
               {"id": "ad51-e747-919f-51ab", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "0fbd-421b-ec28-bde5", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 66}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 60}],
             "entryLinks": [{"name": "Mamba Laser", "id": "8d92-ccc7-48af-349f", "hidden": false, "import": true, "targetId": "caa6-209d-9f7b-ccbe", "type": "selectionEntry"}],
             "infoLinks": [
               {"name": "Aegis-X", "id": "ec1c-1ad7-9c47-a885", "hidden": false, "targetId": "9cd1-441e-8ee8-7f13", "type": "rule"},
@@ -3198,7 +3273,8 @@
                 "sortIndex": 2,
                 "targetId": "a47d-c70b-3c84-e045",
                 "type": "selectionEntry"
-              }
+              },
+              {"name": "Mines", "id": "0cd4-58d5-9b35-70b3", "hidden": false, "import": true, "sortIndex": 3, "targetId": "25e4-7caa-601b-0907", "type": "selectionEntry"}
             ],
             "infoLinks": [{"name": "Escort", "id": "ab8d-b7f3-9215-f70e", "hidden": false, "targetId": "03da-77d7-bd73-eeb4", "type": "rule"}],
             "profiles": [
@@ -3596,7 +3672,7 @@
               {"id": "0347-9556-62a3-8bb2", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "11cb-ec01-a216-6e2e", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 80}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 78}],
             "entryLinks": [
               {
                 "name": "Cobra Heavy Laser",
@@ -3728,7 +3804,7 @@
               {"id": "a843-233f-720d-c468", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "8ad3-b1ea-2906-a079", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 84}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 80}],
             "entryLinks": [
               {
                 "name": "Cobra Heavy Laser",
@@ -4415,7 +4491,8 @@
             "infoLinks": [
               {"name": "Command Ship-X", "id": "946c-aa0e-bed2-cbe8", "hidden": false, "targetId": "af88-13e6-5004-d00a", "type": "rule"},
               {"name": "Detector", "id": "82c2-9166-5aa9-3c8e", "hidden": false, "targetId": "ff6a-7b9f-fca1-ef36", "type": "rule"},
-              {"name": "Unique", "id": "c1ca-8c6c-d93e-063e", "hidden": false, "targetId": "3f45-7047-464a-3be4", "type": "rule"}
+              {"name": "Unique", "id": "c1ca-8c6c-d93e-063e", "hidden": false, "targetId": "3f45-7047-464a-3be4", "type": "rule"},
+              {"name": "UCM Battlenet", "id": "2933-e566-a357-ac29", "hidden": false, "targetId": "d008-4653-53cf-e21a", "type": "rule"}
             ],
             "profiles": [
               {
@@ -4433,7 +4510,7 @@
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Command Ship-1, Detector, Unique", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Command Ship-1, Detector, Unique, UCM Battlenet", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -4462,7 +4539,7 @@
               {"id": "230d-62b8-067b-d13e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "210d-e2dd-babb-2994", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 116}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 108}],
             "entryLinks": [
               {
                 "name": "UF-6400 Mass Driver Turrets",
@@ -4604,7 +4681,7 @@
               {"id": "f905-f135-1452-2a07-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "f905-f135-1452-2a07-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 100}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 95}],
             "entryLinks": [
               {
                 "name": "UF-4200 Mass Driver Turrets",
@@ -4802,7 +4879,7 @@
               {"id": "aaa5-cea5-c785-27f4-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "aaa5-cea5-c785-27f4-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 135}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 130}],
             "entryLinks": [
               {
                 "name": "Cobra Heavy Laser",
@@ -4908,7 +4985,7 @@
               {"id": "21f2-bdfe-6739-8a92", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "faab-d851-8f58-81ca", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 145}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 155}],
             "entryLinks": [
               {
                 "name": "UF-6400 Mass Driver Turrets",
@@ -4979,7 +5056,7 @@
               {"id": "6555-cfd7-4bb2-1bff", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e393-105a-7517-8b5a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 160}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 148}],
             "entryLinks": [
               {
                 "name": "UF-6400 Mass Driver Twin Turret",
@@ -5016,6 +5093,19 @@
                 "sortIndex": 4,
                 "targetId": "a476-d888-c853-71ed",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "c7c8-fbfd-3e0e-e220",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "de83-5988-570a-1dd6",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "2076-d8e6-fd35-a1c9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "2570-7beb-a15a-499d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [{"name": "Feature Carrier", "id": "4598-46c1-e39b-927c", "hidden": false, "targetId": "c6ab-b077-83e9-ed53", "type": "rule"}],
@@ -5064,7 +5154,7 @@
               {"id": "9491-2f44-e0c3-0baa", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "8817-6820-0432-ac5b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 166}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 156}],
             "entryLinks": [
               {
                 "name": "Elapid Laser Turret",
@@ -5101,6 +5191,19 @@
                 "sortIndex": 4,
                 "targetId": "a476-d888-c853-71ed",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "2e46-31f2-34d7-e1e3",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "de83-5988-570a-1dd6",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "c4fc-ff39-75f1-c242", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "8a89-5a7f-856f-1c27", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [{"name": "Feature Carrier", "id": "a946-9486-564c-02c2", "hidden": false, "targetId": "c6ab-b077-83e9-ed53", "type": "rule"}],
@@ -5135,7 +5238,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "8b9b-556e-0135-1f0f", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "8ecb-6cae-dfc8-cb11", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "8ecb-6cae-dfc8-cb11", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "f853-651e-df18-86c4", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5211,7 +5315,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "1dc4-f0ec-619a-f932", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "a9cd-ea3c-3188-18c8", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "a9cd-ea3c-3188-18c8", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "e0f6-b0f3-2d34-6a40", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5278,7 +5383,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "a129-03ba-3eb2-5ee5", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "4669-d441-0d85-dd93", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "4669-d441-0d85-dd93", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "f377-81cc-182b-c5c4", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5348,7 +5454,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "a860-dd13-850c-854c", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "560d-2ec8-d88d-382a", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "560d-2ec8-d88d-382a", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "8e48-29a1-04cc-b369", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5410,7 +5517,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "79ca-b4f1-3fa4-2e6e", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "b928-c8db-88b8-54de", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "b928-c8db-88b8-54de", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "c9da-ff8a-0b3e-689b", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5424,7 +5532,7 @@
               {"id": "5b0c-4673-1bd4-156e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "407e-ae65-fb1e-2ea1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 180}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 175}],
             "entryLinks": [
               {
                 "name": "Elapid Laser Turrets",
@@ -5486,7 +5594,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "047c-8a6f-3513-7d64", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "ecca-72f4-a992-a959", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "ecca-72f4-a992-a959", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "c2bf-3e6b-1690-1a69", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5500,7 +5609,7 @@
               {"id": "2478-d72f-9fe4-43d9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "7674-494d-cd2b-c774", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 185}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 175}],
             "entryLinks": [
               {
                 "name": "Viper Super Heavy Laser",
@@ -5537,6 +5646,19 @@
                 "sortIndex": 4,
                 "targetId": "a476-d888-c853-71ed",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "1a57-accc-0840-93b2",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "0514-81b7-67f1-e7f8",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "72b1-9de8-45ad-0c65", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "ade1-bb7e-91e4-9090", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [{"name": "Feature Carrier", "id": "4a07-d585-19df-5c79", "hidden": false, "targetId": "c6ab-b077-83e9-ed53", "type": "rule"}],
@@ -5571,7 +5693,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "4ff8-79d8-362f-513a", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "176a-bbc8-78d9-cbec", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "176a-bbc8-78d9-cbec", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "c507-cbb6-78ff-2e17", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5585,7 +5708,7 @@
               {"id": "b036-4fbd-8a87-1332", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "99b3-8d57-ca15-1945", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 215}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 205}],
             "entryLinks": [
               {
                 "name": "Arowana Missile Turrets",
@@ -5613,6 +5736,19 @@
                 "sortIndex": 3,
                 "targetId": "6056-1c28-69c4-ddfd",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "9dc5-9584-7924-8990",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "0514-81b7-67f1-e7f8",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "7211-7d93-4665-9e33", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "733c-1c70-fc40-2b64", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [
@@ -5650,7 +5786,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "9457-91db-bb33-c11f", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "069e-4a84-45b0-302d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "069e-4a84-45b0-302d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "b0ee-651e-57c8-6aac", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5664,7 +5801,7 @@
               {"id": "520e-7029-7f54-dd64", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "131d-e0bd-6bd8-2c02", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 195}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 185}],
             "entryLinks": [
               {
                 "name": "Taipan Laser Turrets",
@@ -5683,6 +5820,19 @@
                 "sortIndex": 2,
                 "targetId": "a476-d888-c853-71ed",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "04a2-c8a4-0d40-e3a0",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "0514-81b7-67f1-e7f8",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "4ad1-77f8-35af-0a15", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "511f-34c3-7dbf-3022", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [
@@ -5721,7 +5871,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "7d6a-e944-dac2-2faa", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "c9fb-62d4-a250-33ec", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "c9fb-62d4-a250-33ec", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "3922-0646-b1a7-d475", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5735,7 +5886,7 @@
               {"id": "3503-af3c-1387-cb83", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "f261-ae2d-8a98-43c2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 225}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 215}],
             "entryLinks": [
               {
                 "name": "Elapid Laser Turrets",
@@ -5772,6 +5923,19 @@
                 "sortIndex": 4,
                 "targetId": "ba6a-589a-610d-5df4",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "d4ac-6ca1-d486-c99a",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "0514-81b7-67f1-e7f8",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "7e4e-7228-8993-e2ab", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "b95d-d275-5de2-ab50", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [{"name": "Feature Carrier", "id": "2e33-ffd6-291f-d6f4", "hidden": false, "targetId": "c6ab-b077-83e9-ed53", "type": "rule"}],
@@ -5806,7 +5970,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "31ab-e29a-2947-30f6", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "2d7f-c5cf-5c71-3873", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "2d7f-c5cf-5c71-3873", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "0ad8-58d0-bf25-9625", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5820,7 +5985,7 @@
               {"id": "8686-e72e-9f7e-1205", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "117b-3c18-83a6-114f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 220}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 215}],
             "entryLinks": [
               {
                 "name": "Python Super Heavy Laser",
@@ -5890,7 +6055,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "c172-7a31-fe8e-dd3e", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "bb6b-145f-aa4e-534d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "bb6b-145f-aa4e-534d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "d865-33f1-8a5c-72a0", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5904,7 +6070,7 @@
               {"id": "c75b-91e9-fd21-dc95", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "1fc6-82a8-8ab1-5946", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 245}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 235}],
             "entryLinks": [
               {
                 "name": "Laser Refit",
@@ -5934,11 +6100,20 @@
                 "type": "selectionEntry"
               },
               {
+                "name": "Heavy Bombers",
+                "id": "e46e-9034-070e-e01d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "6db4-cb9d-ecd7-9762",
+                "type": "selectionEntry"
+              },
+              {
                 "name": "Drive Refit",
                 "id": "c108-a5b3-343c-d440",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 5,
                 "targetId": "282b-d9a0-5864-b290",
                 "type": "selectionEntry"
               }
@@ -5974,7 +6149,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "b182-1e88-72ed-9233", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "89a3-079e-ed77-aadc", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "89a3-079e-ed77-aadc", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "3c40-4ac5-d121-9c90", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -6058,7 +6234,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "b5e0-5e44-00ae-eea2", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "9ec3-9992-7fc7-ac98", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "9ec3-9992-7fc7-ac98", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "6ba2-d90d-cf1c-dc61", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -6133,7 +6310,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "2d63-6358-59a7-90f4", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "3dce-59c3-46b9-813c", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "3dce-59c3-46b9-813c", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "3b16-bcd4-95dc-8060", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -6228,7 +6406,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "d09b-ba96-385e-a297", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "c8b3-4257-4b1a-d647", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "c8b3-4257-4b1a-d647", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "a576-bb4d-e066-5e2d", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -6277,7 +6456,7 @@
                 "hidden": false,
                 "import": true,
                 "sortIndex": 4,
-                "targetId": "f206-27fd-c5f5-34aa",
+                "targetId": "b67c-66bb-bb24-0ffc",
                 "type": "selectionEntry"
               },
               {
@@ -6330,7 +6509,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "cc99-2bd8-682d-a150", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "41e5-1728-522a-8d51", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "41e5-1728-522a-8d51", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "3429-0d8e-b3a1-899f", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -6379,7 +6559,7 @@
                 "hidden": false,
                 "import": true,
                 "sortIndex": 4,
-                "targetId": "f206-27fd-c5f5-34aa",
+                "targetId": "b67c-66bb-bb24-0ffc",
                 "type": "selectionEntry"
               },
               {
@@ -6432,7 +6612,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "71b7-269b-3ac7-e91b", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "e0de-fa2b-4c54-4820", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "e0de-fa2b-4c54-4820", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "0b07-9fea-cdce-6701", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -6446,7 +6627,7 @@
               {"id": "845a-5f5f-e443-c6b9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e77a-f949-7a6f-5daa", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 320}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 315}],
             "entryLinks": [
               {
                 "name": "UF-12000 Twin Mass Driver",
@@ -6472,7 +6653,7 @@
                 "hidden": false,
                 "import": true,
                 "sortIndex": 3,
-                "targetId": "f206-27fd-c5f5-34aa",
+                "targetId": "b67c-66bb-bb24-0ffc",
                 "type": "selectionEntry"
               },
               {
@@ -6525,7 +6706,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "366b-c5b0-2a6b-84c4", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "e2fc-4248-7fe9-f316", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "e2fc-4248-7fe9-f316", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "df21-d198-8b84-dba2", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -6539,7 +6721,7 @@
               {"id": "d3cd-0c0e-c24d-af91", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "781f-9cf2-81ce-f575", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 310}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 305}],
             "entryLinks": [
               {
                 "name": "UF-12000 Twin Mass Driver",
@@ -6620,7 +6802,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "089a-304a-690e-d453", "primary": false, "targetId": "default-category"},
-          {"name": "Colossal Groups", "id": "a963-363b-f1e6-af5d", "primary": true, "targetId": "52fa-6578-d171-57d6"}
+          {"name": "Colossal Groups", "id": "a963-363b-f1e6-af5d", "primary": true, "targetId": "52fa-6578-d171-57d6"},
+          {"name": "Heavy and Colossal Groups", "id": "a7ec-6d34-0e93-ecc8", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "modifiers": [
           {
@@ -6664,15 +6847,15 @@
               {"id": "9366-abc8-99c9-b6de", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "aec2-d4ea-2a9d-aa4c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 435}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 490}],
             "entryLinks": [
               {
-                "name": "UF-9000 Mass Driver Turret",
-                "id": "af68-5442-b346-c96a",
+                "name": "UF-9000 Mass Driver Turrets",
+                "id": "6053-cd6b-7d4a-263d",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "00cb-22ad-7191-43cf",
+                "targetId": "c980-2776-1114-8b12",
                 "type": "selectionEntry"
               },
               {
@@ -6685,21 +6868,12 @@
                 "type": "selectionEntry"
               },
               {
-                "name": "UF-4200 Mass Driver Turret Core Battery",
-                "id": "7421-4a67-a358-550a",
+                "name": "UF-4200 Mass Driver Turret Battery",
+                "id": "079f-4f1d-5a67-aa28",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 3,
-                "targetId": "f819-d58c-9c21-4a53",
-                "type": "selectionEntry"
-              },
-              {
-                "name": "UF-4200 Mass Driver Turrets",
-                "id": "c921-5abf-05fd-7f92",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 4,
-                "targetId": "bb41-2fcb-66bd-acd5",
+                "targetId": "1738-e197-f21e-32e9",
                 "type": "selectionEntry"
               },
               {
@@ -6707,7 +6881,7 @@
                 "id": "735d-fff9-a576-0505",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 5,
+                "sortIndex": 4,
                 "targetId": "0a54-c4e1-6baf-ee55",
                 "type": "selectionEntry"
               }
@@ -6733,7 +6907,7 @@
                   {"name": "KS", "$text": "3+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Aegis-6, Command Ship-2, Reinforced Armour", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Aegis-6, Command Ship-1, Reinforced Armour", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -6748,7 +6922,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "d621-ed77-3168-01d7", "primary": false, "targetId": "default-category"},
-          {"name": "Colossal Groups", "id": "9aae-22ef-60e0-9420", "primary": true, "targetId": "52fa-6578-d171-57d6"}
+          {"name": "Colossal Groups", "id": "9aae-22ef-60e0-9420", "primary": true, "targetId": "52fa-6578-d171-57d6"},
+          {"name": "Heavy and Colossal Groups", "id": "7e67-542c-ac8d-ef5b", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "modifiers": [
           {
@@ -6795,30 +6970,21 @@
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 530}],
             "entryLinks": [
               {
-                "name": "UF-9000 Mass Driver Turret",
-                "id": "23bb-e91a-dc32-a001",
+                "name": "UF-9000 Mass Driver Turrets",
+                "id": "7e80-df04-efe7-2ef4",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "00cb-22ad-7191-43cf",
+                "targetId": "c980-2776-1114-8b12",
                 "type": "selectionEntry"
               },
               {
-                "name": "UF-4200 Mass Driver Turret Core Battery",
-                "id": "2d86-a9a6-6980-e369",
+                "name": "UF-4200 Mass Driver Turret Battery",
+                "id": "f9ed-b45f-bfde-a554",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
-                "targetId": "f819-d58c-9c21-4a53",
-                "type": "selectionEntry"
-              },
-              {
-                "name": "UF-4200 Mass Driver Turrets",
-                "id": "ec36-caf4-fa7b-c069",
-                "hidden": false,
-                "import": true,
-                "sortIndex": 3,
-                "targetId": "bb41-2fcb-66bd-acd5",
+                "targetId": "1738-e197-f21e-32e9",
                 "type": "selectionEntry"
               },
               {
@@ -6826,7 +6992,7 @@
                 "id": "3566-aaef-30b0-6b3e",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 3,
                 "targetId": "0a54-c4e1-6baf-ee55",
                 "type": "selectionEntry"
               },
@@ -6835,7 +7001,7 @@
                 "id": "b134-aff6-7b69-e1da",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 5,
+                "sortIndex": 4,
                 "targetId": "c0db-56ff-db29-5f8a",
                 "type": "selectionEntry"
               },
@@ -6844,7 +7010,7 @@
                 "id": "e0f5-3c15-8fc9-9326",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 6,
+                "sortIndex": 5,
                 "targetId": "8b69-b212-604a-7d8e",
                 "type": "selectionEntry"
               }
@@ -7013,36 +7179,36 @@
         ]
       },
       {
-        "name": "Artillery Cannon",
-        "id": "22fe-020f-c683-c4c5",
+        "name": "Artillery Cannons",
+        "id": "df61-cf11-105d-6633",
         "collective": true,
-        "comment": "[x3] F 1/4+/2/K Cal-H/C Fus-1 LP",
+        "comment": "F 3/4+/2/K Cal-H/C Crit-1 Fus-3",
         "hidden": false,
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "77db-8498-384d-b3eb", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 3},
-          {"id": "39f0-4555-2bea-d970", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+          {"id": "387d-ce67-6583-9c25", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "d917-dcbb-985d-4c80", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [
-          {"name": "Calibre-X", "id": "0d1a-f56d-360d-b63e", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
-          {"name": "Fusillade-X", "id": "88f1-f159-16ba-ad2f", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
-          {"name": "Low Power", "id": "e8b4-234b-2bf1-1d9e", "hidden": false, "targetId": "2851-2293-e346-839f", "type": "rule"}
+          {"name": "Calibre-X", "id": "4206-f187-4b34-35dd", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
+          {"name": "Critical-X", "id": "f6b3-6ec9-bf3a-1cdd", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+          {"name": "Fusillade-X", "id": "f8fb-a38d-92a9-3833", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"}
         ],
         "profiles": [
           {
-            "name": "Artillery Cannon",
-            "id": "7273-1807-b78e-62e4",
+            "name": "Artillery Cannons",
+            "id": "3980-fafa-694d-b823",
             "hidden": false,
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "1", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Calibre-H/C, Fusillade-1, Low Power", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Calibre-H/C, Critical-1, Fusillade-3", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7082,7 +7248,7 @@
         "name": "Cobra Heavy Laser",
         "id": "c47b-b05f-43da-f474",
         "collective": true,
-        "comment": "FN 4/3+/1/E BT-1 Fl-1 Foc",
+        "comment": "FN 5/3+/1/E BT-1 Fl-1 Foc",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7104,7 +7270,7 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "5", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
@@ -7117,7 +7283,7 @@
         "name": "Cobra Heavy Laser Pair",
         "id": "ed83-7a4d-dc31-bbfb",
         "collective": true,
-        "comment": "FN 6/3+/1/E BT-2 Fl-2 Foc",
+        "comment": "FN 8/3+/1/E BT-2 Fl-2 Foc",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7139,7 +7305,7 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "8", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
@@ -7248,7 +7414,7 @@
         "name": "Haywire Blaster",
         "id": "f729-6f5f-3702-3c3b",
         "collective": true,
-        "comment": "F 1/4+/0/E Status",
+        "comment": "F 1/4+/0/C Status",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7269,7 +7435,7 @@
               {"name": "Att", "$text": "1", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "0", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Status", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
@@ -7279,7 +7445,7 @@
         "name": "Leviathan Missile Bays",
         "id": "0a54-c4e1-6baf-ee55",
         "collective": true,
-        "comment": "F/S/R 8/3+/1/K CA",
+        "comment": "F/S 8/3+/1/K CA",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7296,7 +7462,7 @@
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "characteristics": [
-              {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "8", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
@@ -7410,7 +7576,7 @@
         "name": "Python Super Heavy Laser",
         "id": "d53e-0373-c6d3-d548",
         "collective": true,
-        "comment": "FN 5/3+/2/E Bl-2 BT-2 Fl-1 Foc",
+        "comment": "FN 6/3+/2/E Bl-2 BT-2 Fl-1 Foc",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7433,7 +7599,7 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "5", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
@@ -7542,7 +7708,7 @@
         "name": "Taipan Laser Turrets",
         "id": "f24c-4fcc-cab4-a25e",
         "collective": true,
-        "comment": "F/S 2/2+/1/E Sc-2",
+        "comment": "F/S 2/2+/1/E Crit-1 Sc-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7550,7 +7716,10 @@
           {"id": "d055-c6fe-f7a5-ef73", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "b269-3afa-fc5b-b503", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [{"name": "Scald-X", "id": "091c-36da-3663-ebc1", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Critical-X", "id": "d259-7a88-1038-82c4", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+          {"name": "Scald-X", "id": "091c-36da-3663-ebc1", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}
+        ],
         "profiles": [
           {
             "name": "Taipan Laser Turrets",
@@ -7564,7 +7733,7 @@
               {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Scald-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Critical-1, Scald-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7573,7 +7742,7 @@
         "name": "Taipan Laser Turrets",
         "id": "d059-cd94-1cfb-3065",
         "collective": true,
-        "comment": "[x2] F/S 2/2+/1/E Sc-2",
+        "comment": "[x2] F/S 2/2+/1/E Crit-1 Sc-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7581,7 +7750,10 @@
           {"id": "a311-6468-2d26-4cb3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
           {"id": "cf8b-2a15-0a82-e47a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
         ],
-        "infoLinks": [{"name": "Scald-X", "id": "c21c-4f7d-d264-4c33", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Critical-X", "id": "aaa4-2205-59ae-f190", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+          {"name": "Scald-X", "id": "c21c-4f7d-d264-4c33", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}
+        ],
         "profiles": [
           {
             "name": "Taipan Laser Turrets",
@@ -7595,7 +7767,7 @@
               {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Scald-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Critical-1, Scald-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7604,7 +7776,7 @@
         "name": "UF-12000 Twin Mass Driver",
         "id": "728d-cebe-832c-6151",
         "collective": true,
-        "comment": "FN 2/2+/4/C Crip",
+        "comment": "FN 3/2+/2/C Crip Crit-2 Foc",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7612,7 +7784,11 @@
           {"id": "9eeb-398d-3dc5-853d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "a90a-2ca4-f49f-9475", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [{"name": "Crippling-X", "id": "a1d4-85f2-a437-cc54", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"}],
+        "infoLinks": [
+          {"name": "Crippling-X", "id": "a1d4-85f2-a437-cc54", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"},
+          {"name": "Critical-X", "id": "f4b6-e112-d11c-537b", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+          {"name": "Focused", "id": "90da-0f96-6127-13db", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"}
+        ],
         "profiles": [
           {
             "name": "UF-12000 Twin Mass Driver",
@@ -7622,11 +7798,11 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "4", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Crippling", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Crippling, Critical-2, Focused", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7693,35 +7869,35 @@
         ]
       },
       {
-        "name": "UF-4200 Mass Driver Turret Core Battery",
-        "id": "f819-d58c-9c21-4a53",
+        "name": "UF-4200 Mass Driver Turret Battery",
+        "id": "1738-e197-f21e-32e9",
         "collective": true,
-        "comment": "F/S 6/4+/1/K Fus-3 Vol-2",
+        "comment": "F/S 10/4+/1/K Fus-5 Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "35b2-a37f-061c-fd4e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "be23-12d0-ac7b-f42c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+          {"id": "751c-48a5-0cf9-d187", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "99de-59cf-de77-cf43", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [
-          {"name": "Fusillade-X", "id": "2f66-4243-55b9-8053", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
-          {"name": "Volley-X", "id": "a5e5-c816-526a-a1d7", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+          {"name": "Fusillade-X", "id": "0fd3-9230-e223-16e0", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
+          {"name": "Volley-X", "id": "a03f-0836-8048-92bd", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
         ],
         "profiles": [
           {
-            "name": "UF-4200 Mass Driver Turret Core Battery",
-            "id": "106d-1b45-4b64-fdc9",
+            "name": "UF-4200 Mass Driver Turret Battery",
+            "id": "fe0e-442d-c68a-7273",
             "hidden": false,
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "10", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Fusillade-3, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Fusillade-5, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7789,52 +7965,18 @@
         ]
       },
       {
-        "name": "UF-4200 Mass Driver Turrets",
-        "id": "bb41-2fcb-66bd-acd5",
-        "collective": true,
-        "comment": "F/S 4/4+/1/K Fus-2 Vol-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "5079-08e8-812b-8fa8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "e5a3-d813-a6ce-d7bf", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "infoLinks": [
-          {"name": "Fusillade-X", "id": "b8b1-00c7-2b4b-e7db", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
-          {"name": "Volley-X", "id": "b84a-ed44-d3e6-2113", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "UF-4200 Mass Driver Turrets",
-            "id": "d5cb-f374-cbc5-db63",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Fusillade-2, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "UF-6400 Mass Driver Turret Battery",
         "id": "2d6b-6eb8-5254-1a96",
         "collective": true,
-        "comment": "[x2] F/S 8/3+/1/K Crit-1",
+        "comment": "F/S 8/3+/2/K Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "f9b7-d21c-6318-fc17", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-          {"id": "dc19-3d89-dcfc-8257", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+          {"id": "f9b7-d21c-6318-fc17", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "dc19-3d89-dcfc-8257", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [{"name": "Critical-X", "id": "3016-99c8-8b9e-8f15", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"}],
+        "infoLinks": [{"name": "Volley-X", "id": "3016-99c8-8b9e-8f15", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}],
         "profiles": [
           {
             "name": "UF-6400 Mass Driver Turret Battery",
@@ -7846,9 +7988,9 @@
               {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "8", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Critical-1", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7857,7 +7999,7 @@
         "name": "UF-6400 Mass Driver Turret Triad",
         "id": "58c9-a95a-e442-2f10",
         "collective": true,
-        "comment": "F/S 6/3+/1/K Crit-1",
+        "comment": "F/S 6/3+/2/K",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7865,7 +8007,6 @@
           {"id": "c445-789f-9601-ea2c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "b617-5257-5294-323b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [{"name": "Critical-X", "id": "f56c-fdd6-e700-e2a5", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"}],
         "profiles": [
           {
             "name": "UF-6400 Mass Driver Turret Triad",
@@ -7877,9 +8018,9 @@
               {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Critical-1", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "-", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7888,7 +8029,7 @@
         "name": "UF-6400 Mass Driver Turrets",
         "id": "24ef-131a-f7ce-85bd",
         "collective": true,
-        "comment": "F/S 4/3+/1/K Crit-1",
+        "comment": "F/S 4/3+/2/K",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7896,7 +8037,6 @@
           {"id": "f970-de11-b1e0-b128", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "3a97-0535-58fd-8a8d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [{"name": "Critical-X", "id": "739a-7ab1-c9fb-a3f1", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"}],
         "profiles": [
           {
             "name": "UF-6400 Mass Driver Turrets",
@@ -7908,9 +8048,9 @@
               {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Critical-1", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "-", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7919,7 +8059,7 @@
         "name": "UF-6400 Mass Driver Turrets",
         "id": "8fba-b109-dbcd-7049",
         "collective": true,
-        "comment": "[x2] F/S 4/3+/1/K Crit-1",
+        "comment": "[x2] F/S 4/3+/2/K",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7927,7 +8067,6 @@
           {"id": "1f0e-1bb4-b4c7-b0e9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
           {"id": "d3ab-f12b-f3c6-8b6a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
         ],
-        "infoLinks": [{"name": "Critical-X", "id": "bb83-cc81-dcbf-16fc", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"}],
         "profiles": [
           {
             "name": "UF-6400 Mass Driver Turrets",
@@ -7939,9 +8078,9 @@
               {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Critical-1", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "-", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7950,7 +8089,7 @@
         "name": "UF-6400 Mass Driver Twin Turret",
         "id": "8da2-3250-c705-7334",
         "collective": true,
-        "comment": "F/S 4/3+/1/K Crit-1",
+        "comment": "F/S 4/3+/2/K",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7958,7 +8097,6 @@
           {"id": "c80f-7783-eb69-aa59", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "54e1-903a-3fba-f706", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [{"name": "Critical-X", "id": "ca05-c28c-be3d-8a2a", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"}],
         "profiles": [
           {
             "name": "UF-6400 Mass Driver Twin Turret",
@@ -7970,9 +8108,9 @@
               {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Critical-1", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "-", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -7981,7 +8119,7 @@
         "name": "UF-6400 Mass Driver Twin Turrets",
         "id": "326a-85d1-566a-1767",
         "collective": true,
-        "comment": "F/S 4/3+/1/K Crit-1 Vol-2",
+        "comment": "F/S 4/3+/2/K Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7989,10 +8127,7 @@
           {"id": "ab41-34b9-b9cb-0eb1", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "1d8b-c5ca-cbe3-1749", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
-        "infoLinks": [
-          {"name": "Critical-X", "id": "d169-d80d-7abd-51c0", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
-          {"name": "Volley-X", "id": "2802-02b2-a6dd-d155", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-        ],
+        "infoLinks": [{"name": "Volley-X", "id": "2802-02b2-a6dd-d155", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}],
         "profiles": [
           {
             "name": "UF-6400 Mass Driver Twin Turrets",
@@ -8004,33 +8139,34 @@
               {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Critical-1, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
       },
       {
-        "name": "UF-9000 Mass Driver Turret",
-        "id": "00cb-22ad-7191-43cf",
+        "name": "UF-9000 Mass Driver Turrets",
+        "id": "c980-2776-1114-8b12",
         "collective": true,
-        "comment": "[x2] F/S 2/2+/2/K Crit-1 Pen",
+        "comment": "F/S 2/2+/2/K Crit-1 Pen Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "929e-f530-6cb3-399b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-          {"id": "891e-20db-7382-cc6f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+          {"id": "ca90-b53a-50b6-b914", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "1406-c7c7-d102-4cef", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [
-          {"name": "Critical-X", "id": "cc3d-dc7a-2c79-792e", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
-          {"name": "Penetrator", "id": "c149-b6fa-c489-e4b9", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"}
+          {"name": "Critical-X", "id": "772c-06bb-06e7-32c6", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+          {"name": "Penetrator", "id": "fe3a-3804-2e1c-a320", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
+          {"name": "Volley-X", "id": "1dde-4837-6959-2be3", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
         ],
         "profiles": [
           {
-            "name": "UF-9000 Mass Driver Turret",
-            "id": "8cc9-f479-28a7-d8b3",
+            "name": "UF-9000 Mass Driver Turrets",
+            "id": "2fd7-6bb5-fb69-5df1",
             "hidden": false,
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
@@ -8040,7 +8176,7 @@
               {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Critical-1, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Critical-1, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -8049,7 +8185,7 @@
         "name": "UF-9000 Twin Mass Driver",
         "id": "4cf8-f7f6-ffc0-fe00",
         "collective": true,
-        "comment": "F 2/3+/2/K Fus-1 ReEnt",
+        "comment": "F 2/3+/2/K Fus-1 Pen ReEnt",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -8059,6 +8195,7 @@
         ],
         "infoLinks": [
           {"name": "Fusillade-X", "id": "8064-fed2-8748-880e", "hidden": false, "targetId": "4f05-4fdc-fad2-c566", "type": "rule"},
+          {"name": "Penetrator", "id": "167d-9f7b-80e3-73d4", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
           {"name": "Re-Entry", "id": "c0b4-5d92-71fe-ff6f", "hidden": false, "targetId": "3438-1fc6-047d-47ad", "type": "rule"}
         ],
         "profiles": [
@@ -8074,7 +8211,7 @@
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Fusillade-1, Re-Entry", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Fusillade-1, Penetrator, Re-Entry", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -8083,13 +8220,17 @@
         "name": "UF-9000-S Twin Mass Driver",
         "id": "025f-cd80-4758-9dc6",
         "collective": true,
-        "comment": "FN 2/3+/2/K",
+        "comment": "FN 2/3+/2/K Foc Pen",
         "hidden": false,
         "import": true,
         "type": "upgrade",
         "constraints": [
           {"id": "5963-092a-2804-7e00", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "b88c-cf5d-a1cd-793c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Focused", "id": "7f77-d075-121e-af7c", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
+          {"name": "Penetrator", "id": "35cd-dddc-cb1e-345a", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"}
         ],
         "profiles": [
           {
@@ -8104,7 +8245,7 @@
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "-", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Focused, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -8181,7 +8322,7 @@
         "name": "UF-B-9000s",
         "id": "d8ff-a3b5-c461-1eca",
         "collective": true,
-        "comment": "FN 3/3+/2/K Alt-1 || F 2/4+/2/K Alt-1 Bmb",
+        "comment": "FN 3/3+/2/K Alt-1 Foc Pen || F 2/4+/2/K Alt-1 Bmb Pen",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -8191,6 +8332,8 @@
         ],
         "infoLinks": [
           {"name": "Alt-X", "id": "d73a-3dd6-2765-d190", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"},
+          {"name": "Focused", "id": "896a-430e-2e4b-5a2c", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
+          {"name": "Penetrator", "id": "37e9-e14b-cfd4-96dc", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
           {"name": "Bombardment", "id": "4542-2577-f135-b3da", "hidden": false, "targetId": "858c-a2ff-ed65-3e47", "type": "rule"}
         ],
         "profiles": [
@@ -8206,7 +8349,7 @@
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Alt-1", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Alt-1, Focused, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           },
           {
@@ -8221,7 +8364,7 @@
               {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Alt-1, Bombardment", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Alt-1, Bombardment, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -8230,7 +8373,7 @@
         "name": "Viper Super Heavy Laser",
         "id": "5f7b-3797-3168-219b",
         "collective": true,
-        "comment": "FN 8/3+/1/E Bl-1 BT-1 Fl-1 Foc",
+        "comment": "FN 9/3+/1/E Bl-1 BT-1 Fl-1 Foc",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -8253,7 +8396,7 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "8", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "9", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
@@ -8384,7 +8527,7 @@
         "name": "Fighters & Bombers",
         "id": "a47d-c70b-3c84-e045",
         "collective": true,
-        "comment": "1",
+        "comment": "1 Alt-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -8392,6 +8535,7 @@
           {"id": "5bed-248e-308e-b8de", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "8e97-d302-a4de-208f", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
+        "infoLinks": [{"name": "Alt-X", "id": "0e8b-460b-d34e-4008", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
         "profiles": [
           {
             "name": "Fighters & Bombers",
@@ -8399,7 +8543,7 @@
             "hidden": false,
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
           }
         ]
       },
@@ -8430,7 +8574,7 @@
         "name": "Fighters & Bombers",
         "id": "b67c-66bb-bb24-0ffc",
         "collective": true,
-        "comment": "4",
+        "comment": "5 Alt-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -8438,6 +8582,7 @@
           {"id": "4dfd-8f81-9f8d-78c7", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "a9dc-ed6c-0a5b-67bd", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
+        "infoLinks": [{"name": "Alt-X", "id": "f025-c344-8646-b65b", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
         "profiles": [
           {
             "name": "Fighters & Bombers",
@@ -8445,31 +8590,7 @@
             "hidden": false,
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "4", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
-          }
-        ]
-      },
-      {
-        "name": "Fighters & Bombers",
-        "id": "f206-27fd-c5f5-34aa",
-        "collective": true,
-        "comment": "4 Alt-1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "f3ac-4398-5961-9851", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "80a9-0953-4c5c-7c7d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "infoLinks": [{"name": "Alt-X", "id": "81b3-9c52-2497-594d", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "Fighters & Bombers",
-            "id": "f375-f0d1-18e9-bf83",
-            "hidden": false,
-            "typeId": "7ba8-a64f-b5fb-8c3e",
-            "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "4", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
+            "characteristics": [{"name": "Launch", "$text": "5", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
           }
         ]
       },
@@ -8477,7 +8598,7 @@
         "name": "Fighters & Bombers",
         "id": "c0db-56ff-db29-5f8a",
         "collective": true,
-        "comment": "6 Alt-1",
+        "comment": "8 Alt-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -8493,7 +8614,7 @@
             "hidden": false,
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "6", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
+            "characteristics": [{"name": "Launch", "$text": "8", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
           }
         ]
       },
@@ -8667,6 +8788,30 @@
       },
       {
         "name": "Mines",
+        "id": "25e4-7caa-601b-0907",
+        "collective": true,
+        "comment": "1 Alt-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "6923-694a-6963-cd74", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "700a-402e-7830-d3ad", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Alt-X", "id": "d726-db8c-4ae2-1693", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Mines",
+            "id": "5654-3950-5254-b4e9",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Mines",
         "id": "f667-fa6a-c65b-123b",
         "collective": true,
         "comment": "2",
@@ -8753,8 +8898,9 @@
                 "typeId": "e69b-d424-94a2-0fe1",
                 "typeName": "Feature",
                 "characteristics": [
-                  {"name": "ES", "$text": "6+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "ES", "$text": "3+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "3+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "4", "typeId": "a0a5-e13e-1516-6b57"},
                   {"name": "Special", "$text": "Aegis-4", "typeId": "0042-a956-225d-9293"}
                 ]
               }
@@ -8823,6 +8969,7 @@
                 "characteristics": [
                   {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
                   {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "4", "typeId": "a0a5-e13e-1516-6b57"},
                   {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
                 ]
               }
@@ -8831,7 +8978,7 @@
               {
                 "name": "Comms Platform",
                 "id": "23e3-5f8a-24a9-c276",
-                "description": "Friendly Ships with the Command Ship-X ability within 8\" of one or more Dropsites with a friendly Comms Platform improve the X value of that rule by 1 when generating AP.\nFriendly Ships within 8\" of this Feature's Dropsite ignore the effects of any Scanners Offline token.",
+                "description": "While any Dropsites have a friendly Comms Platform deployed to them, friendly Ships on the table with the Command Ship-X special rule improve the X value of that rule by 1 when generating AP.\nFriendly Ships within 8\" of this Feature's Dropsite ignore the effects of any Scanners Offline token.",
                 "hidden": false
               }
             ]
@@ -8892,6 +9039,7 @@
                 "characteristics": [
                   {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
                   {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "4", "typeId": "a0a5-e13e-1516-6b57"},
                   {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
                 ]
               }
@@ -8900,7 +9048,7 @@
               {
                 "name": "Torpedo Platform",
                 "id": "0481-26af-5ac4-c842",
-                "description": "When an attacking Group or Asset/s attack would cause this feature to be removed, if it has any remaining Torpedoes, the attacking opponent may remove one additional Feature and any Battalions assigned to it from this Dropsite.",
+                "description": "When an attacking Group or Asset's attack would cause this feature to be removed, if it has any remaining Torpedoes, the attacking opponent may remove one additional Feature and any Battalions assigned to it from this Dropsite.",
                 "hidden": false
               }
             ]
@@ -8962,9 +9110,9 @@
                 "typeName": "Launch Asset",
                 "characteristics": [
                   {"name": "Thrust", "$text": "6\"", "typeId": "8c30-992b-18d3-9a9e"},
-                  {"name": "Att", "$text": "4", "typeId": "09f1-844b-5ba1-7b58"},
+                  {"name": "Att", "$text": "2", "typeId": "09f1-844b-5ba1-7b58"},
                   {"name": "Lock", "$text": "2+", "typeId": "243e-e8ac-7e08-3636"},
-                  {"name": "DMG", "$text": "1", "typeId": "1f0f-7a09-a26f-cccf"},
+                  {"name": "DMG", "$text": "2", "typeId": "1f0f-7a09-a26f-cccf"},
                   {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
                   {"name": "Special", "$text": "Penetrator", "typeId": "9b33-7e68-b136-77db"}
                 ]
@@ -9022,9 +9170,9 @@
                 "typeName": "Launch Asset",
                 "characteristics": [
                   {"name": "Thrust", "$text": "4\"", "typeId": "8c30-992b-18d3-9a9e"},
-                  {"name": "Att", "$text": "4", "typeId": "09f1-844b-5ba1-7b58"},
+                  {"name": "Att", "$text": "8", "typeId": "09f1-844b-5ba1-7b58"},
                   {"name": "Lock", "$text": "2+", "typeId": "243e-e8ac-7e08-3636"},
-                  {"name": "DMG", "$text": "4", "typeId": "1f0f-7a09-a26f-cccf"},
+                  {"name": "DMG", "$text": "2", "typeId": "1f0f-7a09-a26f-cccf"},
                   {"name": "Type", "$text": "K", "typeId": "1dc7-5577-b848-5b24"},
                   {"name": "Special", "$text": "Penetrator", "typeId": "9b33-7e68-b136-77db"}
                 ]
@@ -9155,24 +9303,24 @@
         "constraints": [{"id": "0f20-e899-df3f-0715", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
         "selectionEntries": [
           {
-            "name": "Colonial Legions",
-            "id": "231e-63d2-9a92-cb74",
+            "name": "Aerobraking",
+            "id": "385b-1b49-930d-4287",
             "hidden": false,
             "import": true,
             "type": "upgrade",
-            "constraints": [{"id": "d4bb-2aad-df4a-d961", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "ed53-110f-6c54-2671", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "profiles": [
               {
-                "name": "Colonial Legions",
-                "id": "eca9-927e-b04a-f31b",
+                "name": "Aerobraking",
+                "id": "f853-9f7f-13a3-790a",
                 "hidden": false,
                 "typeId": "705b-98a3-a21d-7118",
                 "typeName": "Admiral Ability",
                 "characteristics": [
-                  {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
+                  {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "After the Battalion Combat step of the Asset Phase, target a Dropsite or Feature. If any enemy Battalions completely removed any friendly Battalions from that Dropsite or Feature, place 1 Battalion on that Dropsite or Feature.",
+                    "$text": "At the start of a friendly Group in Orbit's activation, that Group may move up to the maximum distance allowed by its Order this activation. At the end of its activation, it is moved into Atmosphere. Ships of L, M, and H Tonnage do not take damage due to Atmosphere this activation. Ships of C Tonnage only take 1D3 damage due to Atmosphere this activation instead.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9186,7 +9334,6 @@
             "import": true,
             "type": "upgrade",
             "constraints": [{"id": "f1ef-9c39-520a-ab25", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [{"name": "Aegis-X", "id": "1737-e454-4f67-d7bc", "hidden": false, "targetId": "9cd1-441e-8ee8-7f13", "type": "rule"}],
             "profiles": [
               {
                 "name": "Intensify Point-Defence",
@@ -9198,7 +9345,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the end of the Planning Phase, pick one friendly Group. All Ships in that Group improve their Aegis-X value by 2 or gain Aegis-1 if they do not have the Aegis-X special rule.",
+                    "$text": "At the start of the asset phase, pick one friendly Group. Until the end of the round, Ships in that Group cannot be affected by Saturation Fire and may re-roll Energy and Kinetic saves of a 1 when rolling to save against Torpedoes and Mines.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9248,7 +9395,7 @@
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When you assign a Group's weapons to a target, each of the attacking Group's Weapon Systems with \"Mass Driver\" in their name improve their Lock by 1 for that attack sequence.",
+                    "$text": "When you assign a \"Mass Driver\" Weapon System to targets, that Weapon System improves its Lock by 1 for that attack sequence. If that Weapon System already has a Lock value of 2+, it causes criticals on a result of a 3+ for that attack sequence instead.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9274,7 +9421,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of the Asset Phase, target one friendly Wing of Bombers. That Wing gains the Bombardment special rule until the end of the round.",
+                    "$text": "At the start of the Asset Phase, target one friendly Wing of Bombers. That Wing reduces its Thrust by 2\" and gains the Bombardment special rule until the end of the round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -9336,7 +9483,7 @@
             "sortIndex": 2,
             "targetId": "f667-fa6a-c65b-123b",
             "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 4}],
             "modifiers": [{"field": "bb76-124e-2f68-bba1", "type": "set", "value": 0}]
           }
         ]
@@ -9359,7 +9506,7 @@
             "sortIndex": 2,
             "targetId": "ed83-7a4d-dc31-bbfb",
             "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}],
             "modifiers": [{"field": "ec9f-f052-cfa7-fb70", "type": "set", "value": 0}]
           }
         ],
@@ -9384,6 +9531,82 @@
                 "type": "selectionEntry"
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Deployable Features",
+        "id": "de83-5988-570a-1dd6",
+        "comment": "Medium carriers: any fleet feature",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Aegis Platform",
+            "id": "709e-8126-c26f-4371",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Medium Group Spend Exempt", "id": "033d-6cb1-e100-3d75", "primary": false, "targetId": "d720-1c66-5090-ab19"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
+          },
+          {
+            "name": "Comms Platform",
+            "id": "e330-fb83-cf65-0eee",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Medium Group Spend Exempt", "id": "bf73-65ca-f9d8-6950", "primary": false, "targetId": "d720-1c66-5090-ab19"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}]
+          },
+          {
+            "name": "Torpedo Platform",
+            "id": "7b5a-4bbf-c19c-da74",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Medium Group Spend Exempt", "id": "f8be-5e4b-0159-edb6", "primary": false, "targetId": "d720-1c66-5090-ab19"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 20}]
+          }
+        ]
+      },
+      {
+        "name": "Deployable Features",
+        "id": "0514-81b7-67f1-e7f8",
+        "comment": "Heavy carriers: any fleet feature",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Aegis Platform",
+            "id": "9a7c-41e2-cbe7-395a",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Heavy Group Spend Exempt", "id": "cbd3-f28f-0522-88bf", "primary": false, "targetId": "ba1b-a548-3bf5-d083"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
+          },
+          {
+            "name": "Comms Platform",
+            "id": "a03d-0d90-f668-b461",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Heavy Group Spend Exempt", "id": "9f18-18eb-fd71-936b", "primary": false, "targetId": "ba1b-a548-3bf5-d083"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}]
+          },
+          {
+            "name": "Torpedo Platform",
+            "id": "586d-2c11-3150-ece5",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Heavy Group Spend Exempt", "id": "6780-01ad-4833-d82a", "primary": false, "targetId": "ba1b-a548-3bf5-d083"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 20}]
           }
         ]
       }

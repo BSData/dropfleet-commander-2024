@@ -10,12 +10,18 @@
     "library": true,
     "revision": 50,
     "type": "catalogue",
-    "publications": [{"name": "Misc Combined Fleet Stats (250822)", "id": "3038-2db1-cc27-8561", "hidden": false, "shortName": "Misc Stats (250822)"}],
+    "publications": [{"name": "Misc Combined Fleet Stats (261104)", "id": "3038-2db1-cc27-8561", "hidden": false, "shortName": "Misc Stats (261104)"}],
     "sharedRules": [
+      {
+        "name": "Acquired Fighters & Bombers",
+        "id": "a3cd-1142-538e-f5ae",
+        "description": "This ship's Fighters & Bombers use the stats of its parent fleet (if you included this ship in a Scourge fleet, its Fighters & Bombers would follow the Scourge Fighters & Bombers rules).",
+        "hidden": false
+      },
       {
         "name": "Advanced Artillery",
         "id": "1cb6-7f70-eb3a-721f",
-        "description": "While on the Max Thrust or Silent Running Orders, this Ship may attack with its N-12 Artillery Cannon Turrets.\nWhile on the Weapons Free Order, this Ship counts as having an additional weapon for its Detector rule.",
+        "description": "While on the Max Thrust or Silent Running Orders, this Ship may attack with its N-12 Artillery Cannons.\nWhile on the Weapons Free Order, this Ship counts as having an additional weapon for its Detector rule.",
         "hidden": false
       },
       {
@@ -440,7 +446,7 @@
               {"id": "e77f-a4b6-a162-401a-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e77f-a4b6-a162-401a-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 80}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 76}],
             "entryLinks": [
               {
                 "name": "9K Snub Mass Drivers",
@@ -463,8 +469,11 @@
             ],
             "infoLinks": [
               {"name": "Marines-X", "id": "f7cf-2b28-8a1c-19f4", "hidden": false, "targetId": "93f3-7932-b233-4d38", "type": "rule"},
+              {"name": "Mercenary (X)", "id": "1b18-e4c8-70d1-fa68", "hidden": false, "targetId": "6ae4-f6e8-dd08-6e7a", "type": "rule"},
+              {"name": "Hero", "id": "2d4e-2116-448f-5e09", "hidden": false, "targetId": "f945-e19c-c8bb-1c6a", "type": "rule"},
               {"name": "Stealth", "id": "1657-9dc3-4f86-6254", "hidden": false, "targetId": "9306-4cd5-b59e-5898", "type": "rule"},
-              {"name": "Unique", "id": "5e7e-4d57-51b6-a03d", "hidden": false, "targetId": "3f45-7047-464a-3be4", "type": "rule"}
+              {"name": "Unique", "id": "5e7e-4d57-51b6-a03d", "hidden": false, "targetId": "3f45-7047-464a-3be4", "type": "rule"},
+              {"name": "Acquired Fighters & Bombers", "id": "933d-5622-2578-efa5", "hidden": false, "targetId": "a3cd-1142-538e-f5ae", "type": "rule"}
             ],
             "profiles": [
               {
@@ -482,7 +491,7 @@
                   {"name": "KS", "$text": "5+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Marines-2, Stealth, Unique", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Marines-2, Mercenary (All), Hero, Stealth, Unique, Acquired Fighters & Bombers", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -497,7 +506,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "acb0-6cd1-4629-d704", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "16a1-3df7-b24b-71be", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "16a1-3df7-b24b-71be", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "5dfe-1835-495c-bc9d", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "constraints": [{"id": "eb5c-3240-78ad-866d", "field": "selections", "scope": "force", "shared": true, "type": "max", "value": 1}],
         "modifiers": [
@@ -737,7 +747,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "5+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Command Ship-1, Detector, Rare, Advanced Artillery, Magellan Lifeboats", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Command Ship-3, Detector, Rare, Advanced Artillery, Magellan Lifeboats", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]

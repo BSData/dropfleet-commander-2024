@@ -1,0 +1,442 @@
+{
+  "catalogue": {
+    "name": "System Shared",
+    "id": "2dc1-c46a-11b4-c0f0",
+    "authorName": "John Kemp",
+    "authorUrl": "https://github.com/BSData/dropfleet-commander-2024",
+    "battleScribeVersion": "2.03",
+    "gameSystemId": "sys-5fec-a8da-5dec-0ae6",
+    "gameSystemRevision": 50,
+    "library": true,
+    "revision": 50,
+    "type": "catalogue",
+    "publications": [{"name": "Dropfleet Commander Rulebook (v2.4.0)", "id": "04e8-9aab-577a-59dd", "hidden": false, "shortName": "DFC Rulebook (v2.4.0)"}],
+    "sharedSelectionEntries": [
+      {"name": "----- Weapons -----", "id": "0c49-875c-ddd0-5828", "hidden": true, "import": false, "type": "upgrade"},
+      {"name": "----- Load -----", "id": "3ccb-ed92-f300-0230", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Fighters & Bombers",
+        "id": "237b-33b3-7146-5d4c",
+        "collective": true,
+        "comment": "2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "f728-e8b3-2161-dc7f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "a097-f0ce-f65d-c567", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "profiles": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "09a6-ab4e-066a-2887",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {"name": "----- Equipment -----", "id": "bda5-6c65-7e33-5785", "hidden": true, "import": false, "type": "upgrade"},
+      {"name": "----- Deployable Features -----", "id": "b67a-f58c-be83-8823", "hidden": true, "import": false, "type": "upgrade"},
+      {
+        "name": "Military Outpost",
+        "id": "4dc7-0564-6791-9ecc",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "3d61-5038-eb44-779d", "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "6824-14ba-9525-53e3", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "e8a0-4a5a-b272-1352", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+              {
+                "childId": "4dc7-0564-6791-9ecc",
+                "childName": "Military Outpost",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Military Outpost",
+            "id": "e724-3ba8-a30d-60e6",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "d0cd-8647-e438-98aa", "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {"id": "59fe-d266-7869-d819", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "08b4-cc9a-120a-e6d1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "Military Outpost",
+                "id": "334e-ae59-c427-55c2",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "3+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "3+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "6", "typeId": "a0a5-e13e-1516-6b57"},
+                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Missile Halo",
+                "id": "fbb8-4614-6141-c31e",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "40ba-0621-8b04-dadb", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "628f-e9d0-3c73-fedd", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "infoLinks": [
+                  {"name": "Close Action", "id": "a403-89f6-7125-8b3a", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+                  {"name": "Escape Velocity", "id": "f701-e2be-01bb-678d", "hidden": false, "targetId": "0357-837c-bc00-4ce3", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Missile Halo",
+                    "id": "d2e8-e451-3db7-78e5",
+                    "hidden": false,
+                    "typeId": "55a1-fca6-5a62-f9f4",
+                    "typeName": "Weapon",
+                    "characteristics": [
+                      {"name": "Scan", "$text": "6\"", "typeId": "ca0d-8087-d02a-179b"},
+                      {"name": "Att", "$text": "1", "typeId": "3cb6-1718-186b-4bce"},
+                      {"name": "Lock", "$text": "2+", "typeId": "4e0c-3aca-e97e-05c8"},
+                      {"name": "DMG", "$text": "2", "typeId": "1314-c0f9-8c3a-21ff"},
+                      {"name": "Type", "$text": "K", "typeId": "a2f6-d421-0336-1c75"},
+                      {"name": "Special", "$text": "Close Action, Escape Velocity", "typeId": "f633-dba6-938c-31f2"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Orbital Defence Gun",
+        "id": "0d69-2159-b207-2aea",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "ee2b-3fce-d080-fe88", "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "68c4-d9e5-fd65-8930", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "d7de-a97f-54b3-3604", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+              {
+                "childId": "0d69-2159-b207-2aea",
+                "childName": "Orbital Defence Gun",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Orbital Defence Gun",
+            "id": "3b2b-bd39-4d29-50a4",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "7c54-0f06-ea9d-9d7e", "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {"id": "cce8-5210-171d-0d08", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "7b77-d12b-338a-ede7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "Orbital Defence Gun",
+                "id": "a459-fd16-1b2d-1751",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "5", "typeId": "a0a5-e13e-1516-6b57"},
+                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Orbital Gun",
+                "id": "1375-b6bf-263d-690d",
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "a52e-90a1-302b-09d5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "68df-3b73-753f-18a3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ],
+                "infoLinks": [
+                  {"name": "Burnthrough-X", "id": "65e5-7dda-6f3f-0cfb", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
+                  {"name": "Escape Velocity", "id": "cf17-0736-9411-1ba8", "hidden": false, "targetId": "0357-837c-bc00-4ce3", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Orbital Gun",
+                    "id": "9b69-b5e6-ff2c-104e",
+                    "hidden": false,
+                    "typeId": "55a1-fca6-5a62-f9f4",
+                    "typeName": "Weapon",
+                    "characteristics": [
+                      {"name": "Scan", "$text": "6\"", "typeId": "ca0d-8087-d02a-179b"},
+                      {"name": "Att", "$text": "3", "typeId": "3cb6-1718-186b-4bce"},
+                      {"name": "Lock", "$text": "3+", "typeId": "4e0c-3aca-e97e-05c8"},
+                      {"name": "DMG", "$text": "1", "typeId": "1314-c0f9-8c3a-21ff"},
+                      {"name": "Type", "$text": "E", "typeId": "a2f6-d421-0336-1c75"},
+                      {"name": "Special", "$text": "Burnthrough-1, Escape Velocity", "typeId": "f633-dba6-938c-31f2"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Comms Station",
+        "id": "9abb-6314-fdd9-9ecc",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "6c11-a010-f032-6a3f", "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "d4c2-f6c5-6307-8ab8", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "8e12-06ca-1811-4ed1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+              {
+                "childId": "9abb-6314-fdd9-9ecc",
+                "childName": "Comms Station",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Comms Station",
+            "id": "7610-99bd-7319-1128",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "4ef5-3c7d-97cd-4753", "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {"id": "f294-1723-d924-15d3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "e361-4947-3b30-98ee", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "Comms Station",
+                "id": "c464-b58e-1920-2c28",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "4+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "5", "typeId": "a0a5-e13e-1516-6b57"},
+                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Comms Station",
+                "id": "f05f-af13-3ab6-0c7f",
+                "description": "Comms Uplink: If you control this Dropsite, increase the amount of Ability Points you generate by 1. You can only be affected by Comms Uplink once each round.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Power Plant",
+        "id": "3727-98e3-9bb5-6f2d",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "4c5a-c9c0-c985-2418", "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "b772-6534-cb19-6a39", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "bcbc-90d7-f918-5f34", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+              {
+                "childId": "3727-98e3-9bb5-6f2d",
+                "childName": "Power Plant",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Power Plant",
+            "id": "7eac-f25b-c24c-8926",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "d009-8275-bcd9-06da", "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {"id": "1de4-afc1-19cc-4da7", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "bb46-e91c-b047-1c74", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "profiles": [
+              {
+                "name": "Power Plant",
+                "id": "0ec4-ed41-1cd3-2a75",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "5", "typeId": "a0a5-e13e-1516-6b57"},
+                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Power Plant",
+                "id": "9c7a-916b-af0d-747c",
+                "description": "Volatile: When this Feature is destroyed, all Groups within 3\" gain a Spike and this Feature's Dropsite takes an additional 2D3 damage.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hangar",
+        "id": "9530-2ee3-9f00-b7f5",
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Deployable Features", "id": "914e-43b7-7fa8-0615", "primary": false, "targetId": "11b4-72d7-c64d-25c1"},
+          {"name": "Reference", "id": "6268-e7bc-fbf8-c2c5", "primary": true, "targetId": "dbff-12ce-7e10-7001"}
+        ],
+        "constraints": [{"id": "3ff0-d9b4-f0cd-4340", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {"childId": "header", "childName": "header", "field": "selections", "scope": "self", "shared": true, "type": "instanceOf", "value": 1},
+              {
+                "childId": "9530-2ee3-9f00-b7f5",
+                "childName": "Hangar",
+                "field": "selections",
+                "includeChildSelections": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "Hangar",
+            "id": "b466-dd6d-2ddd-cec4",
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Deployable Features", "id": "91b6-a43b-47d4-516a", "primary": true, "targetId": "73f6-cabc-3dad-5334"}],
+            "constraints": [
+              {"id": "0a41-97e5-62d5-9582", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+              {"id": "4156-1fe2-a17f-7121", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+            ],
+            "entryLinks": [{"name": "Fighters & Bombers", "id": "247f-2f1e-0c1f-5876", "hidden": false, "import": true, "targetId": "237b-33b3-7146-5d4c", "type": "selectionEntry"}],
+            "profiles": [
+              {
+                "name": "Hangar",
+                "id": "1178-6053-bb44-2fad",
+                "hidden": false,
+                "typeId": "e69b-d424-94a2-0fe1",
+                "typeName": "Feature",
+                "characteristics": [
+                  {"name": "ES", "$text": "4+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "-", "typeId": "a0a5-e13e-1516-6b57"},
+                  {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Hangar",
+                "id": "8074-5b2b-4f93-d99b",
+                "description": "This Feature's Fighters & Bombers use the Controlling players' Fighters & Bombers.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

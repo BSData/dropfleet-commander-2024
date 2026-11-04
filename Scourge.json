@@ -13,7 +13,8 @@
     "catalogueLinks": [
       {"name": "Fleet Space Stations", "id": "f24a-5501-0d0e-2949", "targetId": "7e9b-b6ba-2178-6eb5", "type": "catalogue"},
       {"name": "Misc", "id": "1d29-8cc1-8448-f7f8", "targetId": "1b65-4911-bd01-73aa", "type": "catalogue"},
-      {"name": "Civilian", "id": "6b98-e892-d82f-dcb4", "targetId": "903e-8fb9-3fe2-4460", "type": "catalogue"}
+      {"name": "Civilian", "id": "6b98-e892-d82f-dcb4", "targetId": "903e-8fb9-3fe2-4460", "type": "catalogue"},
+      {"name": "System Shared", "id": "41cb-be6c-3ad1-0243", "targetId": "2dc1-c46a-11b4-c0f0", "type": "catalogue"}
     ],
     "entryLinks": [
       {"name": "Lvl 1: Fleet Thrall", "id": "713e-8ad5-9098-0f2c", "hidden": false, "import": true, "targetId": "7fe9-330a-0598-35d7", "type": "selectionEntry"},
@@ -156,9 +157,63 @@
       {"name": "Skybane Halo", "id": "c5dd-52d0-0865-1225", "hidden": false, "import": true, "targetId": "b6dc-1ef8-60d4-e76e", "type": "selectionEntry"},
       {"name": "Shrouding Platform", "id": "2f55-ea42-b333-c492", "hidden": false, "import": true, "targetId": "af1f-6338-40c5-c235", "type": "selectionEntry"},
       {"name": "Infestation Bastion", "id": "1e5b-a1c3-1426-d710", "hidden": false, "import": true, "targetId": "1ddc-fb3a-95a4-9990", "type": "selectionEntry"},
+      {
+        "name": "Military Outpost",
+        "id": "2e18-711a-5253-a9c2",
+        "hidden": false,
+        "import": true,
+        "targetId": "4dc7-0564-6791-9ecc",
+        "type": "selectionEntry",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "473d-151f-22a2-8892",
+                "childName": "Mercenary ships",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hangar",
+        "id": "0931-92d4-22e4-fc02",
+        "hidden": false,
+        "import": true,
+        "targetId": "9530-2ee3-9f00-b7f5",
+        "type": "selectionEntry",
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": true,
+            "conditions": [
+              {
+                "childId": "473d-151f-22a2-8892",
+                "childName": "Mercenary ships",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "force",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
       {"name": "Launch Assets", "id": "6aaa-0263-9886-9cfa", "hidden": false, "import": true, "targetId": "e840-c9cd-72dc-1ea8", "type": "selectionEntry"}
     ],
-    "publications": [{"name": "Scourge Combined Fleet Stats (261030)", "id": "260d-362c-d403-80ae", "hidden": false, "shortName": "Scourge Stats (261030)"}],
+    "publications": [{"name": "Scourge Combined Fleet Stats (261104)", "id": "260d-362c-d403-80ae", "hidden": false, "shortName": "Scourge Stats (261104)"}],
     "sharedRules": [
       {
         "name": "Bombers",
@@ -175,13 +230,13 @@
       {
         "name": "Feature Carrier",
         "id": "23a0-992a-1c12-2dd8",
-        "description": "At the start of the game, before players deploy, choose one Deployable Feature from the Scourge Deployable Features List. This Ship starts the game carrying that Deployable Feature.",
+        "description": "When building your fleet, this Ship must be assigned a Deployable Feature from the Scourge Deployable Features list, paying points for this Feature. This Ship starts the game carrying that Deployable Feature.",
         "hidden": false
       },
       {
         "name": "Oculus Booster",
         "id": "1b05-5002-dd72-fef6",
-        "description": "If this Ship is on an order that allows it to attack, this Ship may forgo one allowed Weapon use during its activation. If it does, at the end of this Ship's activation, you may place an Oculus token on an enemy Group in line of sight in this Ship's Front Arc. Unused Oculus tokens placed by this Ship persist between rounds and are only removed when this Ship would place another Oculus token or when a Ship with an Oculus token goes on the Silent Running order.\nWhen you assign \"Oculus\" weapons to a Group that has an Oculus Token and is within Scan range of the attacking Group, you may remove the token. If you do, one of the Group's \"Oculus\" Weapon Systems' Type becomes Core against that Group for that attack.",
+        "description": "If this Ship is on an order that allows it to attack, this Ship may forgo one allowed Weapon use during its activation. If it does, at the end of this Ship's activation, you may place an Oculus token on an enemy Group in line of sight in this Ship's Front Arc. Unused Oculus tokens placed by this Ship persist between rounds and are only removed when this Ship would place another Oculus token or when a Ship with an Oculus token goes on the Silent Running order.\nWhen you assign \"Oculus\" weapons to a Group that has an Oculus token and is within Scan range of the attacking Group, you may remove the Oculus token. If you do, choose one of the attacking Group's \"Oculus\" Weapon Systems. That Weapon System's Type becomes Core on each attacking Ship within Scan range of the defending Group. Weapons on Ships outside of Scan range of the defending Group are unaffected.",
         "hidden": false
       }
     ],
@@ -220,7 +275,7 @@
               {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
               {
                 "name": "Effect",
-                "$text": "When you assign a Group's weapons to a target, pick one of the attacking Group's Weapon Systems with \"Oculus\" in its name. That Weapon System replaces its Scald-X rule with Reave-X (of the same value) for that attack. If the attacking Group has 2 or more Ships, this Ability costs 2AP.",
+                "$text": "When you assign a Group's weapons to a target, pick one of the attacking Group's Weapon Systems with \"Oculus\" in its name. That Weapon System replaces its Scald-X value with Reave-X+1 for that attack. If the attacking Group has 2 or more Ships, this Ability costs 2AP.",
                 "typeId": "49ae-26b2-d6ec-81aa"
               }
             ]
@@ -394,7 +449,7 @@
               {
                 "name": "Doomed",
                 "id": "9480-f97c-1712-5fd2",
-                "description": "Whenever you capture an enemy Ship or an enemy Ship is destroyed due to the Fire Crippling Effect, gain 2AP.",
+                "description": "When you generate AP, for each enemy Ship in the previous round that you captured or that was destroyed due to the Fire Crippling Effect, increase the AP you generate this round by 2.",
                 "hidden": false
               }
             ]
@@ -414,7 +469,7 @@
               {"id": "cdfc-4d0a-cde8-b866", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "5ada-ed19-9730-f659", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 125}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 120}],
             "entryLinks": [
               {
                 "name": "Oculus Beam Crest",
@@ -431,7 +486,7 @@
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
-                "targetId": "93e9-be87-389d-1c0a",
+                "targetId": "16e4-d3b3-ed11-03e8",
                 "type": "selectionEntry"
               },
               {
@@ -592,7 +647,8 @@
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "e84a-2f5d-497c-6909", "primary": false, "targetId": "default-category"},
-              {"name": "Heavy Groups", "id": "81c9-baef-3fec-ed1c", "primary": false, "targetId": "8d99-053d-ffeb-98c5"}
+              {"name": "Heavy Groups", "id": "81c9-baef-3fec-ed1c", "primary": false, "targetId": "8d99-053d-ffeb-98c5"},
+              {"name": "Heavy and Colossal Groups", "id": "eaf2-5dce-b18c-0c91", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
             ],
             "constraints": [
               {"id": "2ea4-bdfe-c9f2-609d", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -606,7 +662,7 @@
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "a34f-7717-da6c-e71b",
+                "targetId": "0bce-3c22-02f5-0fdf",
                 "type": "selectionEntry"
               },
               {
@@ -628,11 +684,20 @@
                 "type": "selectionEntry"
               },
               {
+                "name": "Plasma Gale",
+                "id": "e5fb-5110-2d8c-70d2",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "550e-2874-4f38-4989",
+                "type": "selectionEntry"
+              },
+              {
                 "name": "Fighters & Bombers",
                 "id": "65b9-109b-21ad-cb01",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 5,
                 "targetId": "4967-9e01-1e2d-2641",
                 "type": "selectionEntry"
               }
@@ -724,7 +789,7 @@
               }
             ],
             "rules": [
-              {"name": "Death Mistress", "id": "da80-c120-515a-4d23", "description": "Whenever an enemy group is destroyed, roll a dice. On a 4+ gain 1AP.", "hidden": false}
+              {"name": "Death Mistress", "id": "da80-c120-515a-4d23", "description": "Whenever an enemy Group is destroyed, roll a dice. On a 5+, gain 1AP.", "hidden": false}
             ]
           },
           {
@@ -736,13 +801,14 @@
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "ae8d-d3e6-cc7a-c911", "primary": false, "targetId": "default-category"},
-              {"name": "Heavy Groups", "id": "c2a7-bf00-e0b7-7868", "primary": false, "targetId": "8d99-053d-ffeb-98c5"}
+              {"name": "Heavy Groups", "id": "c2a7-bf00-e0b7-7868", "primary": false, "targetId": "8d99-053d-ffeb-98c5"},
+              {"name": "Heavy and Colossal Groups", "id": "5d46-3f4e-414f-3293", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
             ],
             "constraints": [
               {"id": "0815-482a-19a6-b3aa", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "77e1-3565-d524-bf56", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 210}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 215}],
             "entryLinks": [
               {
                 "name": "Oculus Beam Array",
@@ -930,7 +996,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "When a friendly Fighter or Bomber Wing is completely removed due to an opponent's Fighters, you may immediately launch a single Fighter or Bomber from this Admiral's ship.",
+                    "$text": "When a friendly Fighter or Bomber Wing is completely removed due to an opponent's Fighters, you may immediately launch a Wing of two Fighters or two Bombers from this Admiral's Ship.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -954,7 +1020,8 @@
             "type": "model",
             "categoryLinks": [
               {"name": "Group", "id": "7f5a-0b01-44c8-3a04", "primary": false, "targetId": "default-category"},
-              {"name": "Colossal Groups", "id": "57b2-14e0-9860-9df1", "primary": false, "targetId": "52fa-6578-d171-57d6"}
+              {"name": "Colossal Groups", "id": "57b2-14e0-9860-9df1", "primary": false, "targetId": "52fa-6578-d171-57d6"},
+              {"name": "Heavy and Colossal Groups", "id": "c5db-8151-5ca4-e9c5", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
             ],
             "constraints": [
               {"id": "9b78-2f74-0919-062b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
@@ -1109,7 +1176,7 @@
               {"id": "2995-6420-9364-0d7e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "40b3-3203-259a-8466", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 90}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 83}],
             "entryLinks": [
               {
                 "name": "Oculus Rays",
@@ -1378,7 +1445,7 @@
             "categoryLinks": [{"name": "Light Ship", "id": "d2ac-5273-89f2-f586", "primary": true, "targetId": "f942-8f88-d77b-13c1"}],
             "constraints": [
               {"id": "898d-ff25-e43f-54ee", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "77b0-04e6-949a-4d3c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+              {"id": "77b0-04e6-949a-4d3c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 23}],
             "entryLinks": [
@@ -1420,7 +1487,7 @@
                   {"name": "ES", "$text": "6+", "typeId": "42ae-03c9-d0ff-61da"},
                   {"name": "KS", "$text": "6+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
-                  {"name": "G", "$text": "1-3", "typeId": "32ce-7bbb-1d0f-8c80"},
+                  {"name": "G", "$text": "1-4", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Impetuous, Vanguard-7\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
@@ -1627,7 +1694,7 @@
             "categoryLinks": [{"name": "Light Ship", "id": "3f30-2c72-6505-8863", "primary": true, "targetId": "f942-8f88-d77b-13c1"}],
             "constraints": [
               {"id": "b899-4f7e-5caa-7e0e", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-              {"id": "8477-9a79-a945-c70d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
+              {"id": "8477-9a79-a945-c70d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 23}],
             "entryLinks": [
@@ -1670,7 +1737,7 @@
                   {"name": "ES", "$text": "6+", "typeId": "42ae-03c9-d0ff-61da"},
                   {"name": "KS", "$text": "6+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
-                  {"name": "G", "$text": "1-3", "typeId": "32ce-7bbb-1d0f-8c80"},
+                  {"name": "G", "$text": "1-4", "typeId": "32ce-7bbb-1d0f-8c80"},
                   {"name": "Special", "$text": "Impetuous, Rare, Vanguard-7\"", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
@@ -1700,7 +1767,7 @@
               {"id": "a4c9-50c8-33b0-6848", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "cb9a-e79d-e965-18b7", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 40}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 37}],
             "entryLinks": [{"name": "Oculus Beams", "id": "1470-3149-e356-1ab2", "hidden": false, "import": true, "targetId": "4c66-64c7-22e4-3649", "type": "selectionEntry"}],
             "infoLinks": [{"name": "Descent", "id": "a92c-245c-611c-a010", "hidden": false, "targetId": "2ae8-7705-ab9a-03c0", "type": "rule"}],
             "profiles": [
@@ -2134,7 +2201,7 @@
               {"id": "6137-68a8-2600-fb93", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "da3f-02d8-8f28-97f9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 60}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 68}],
             "entryLinks": [
               {
                 "name": "Oculus Rays",
@@ -2602,13 +2669,22 @@
                 "targetId": "61d3-2201-7930-c105",
                 "type": "selectionEntry"
               },
-              {"name": "Seekers", "id": "d0af-a6f1-b6ba-09f5", "hidden": false, "import": true, "sortIndex": 2, "targetId": "9861-f774-8b0c-7095", "type": "selectionEntry"},
+              {
+                "name": "Oculus Beam Cluster",
+                "id": "982d-4459-8ac7-5311",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "8cd7-7651-fef6-9164",
+                "type": "selectionEntry"
+              },
+              {"name": "Seekers", "id": "d0af-a6f1-b6ba-09f5", "hidden": false, "import": true, "sortIndex": 3, "targetId": "9861-f774-8b0c-7095", "type": "selectionEntry"},
               {
                 "name": "Cloaking Crest",
                 "id": "6f29-f88a-f684-8e92",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 4,
                 "targetId": "826c-a34f-6a51-fea9",
                 "type": "selectionEntry"
               }
@@ -2658,7 +2734,7 @@
               {"id": "f4e5-1b58-1bae-bbfe", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "4278-4ded-45b5-6969", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 4}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 66}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 61}],
             "entryLinks": [
               {
                 "name": "Oculus Rays",
@@ -2687,12 +2763,13 @@
                 "targetId": "2c33-7816-d10d-6bf4",
                 "type": "selectionEntry"
               },
+              {"name": "Mines", "id": "c1d7-d6a1-1c1b-8859", "hidden": false, "import": true, "sortIndex": 4, "targetId": "1463-d405-4c3d-d32b", "type": "selectionEntry"},
               {
                 "name": "Cloaking Crest",
                 "id": "f6e2-fa34-7630-962a",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 5,
                 "targetId": "826c-a34f-6a51-fea9",
                 "type": "selectionEntry"
               }
@@ -2742,7 +2819,7 @@
               {"id": "d72d-f52b-29d1-99a3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "096b-9d54-43bb-7f3d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 72}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 80}],
             "entryLinks": [
               {
                 "name": "Oculus Beams",
@@ -2763,7 +2840,6 @@
                 "type": "selectionEntry"
               }
             ],
-            "infoLinks": [{"name": "Vanguard-X\"", "id": "b214-0bc5-2467-1b97", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"}],
             "profiles": [
               {
                 "name": "Gremlin",
@@ -2780,7 +2856,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "2-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "-", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -2809,7 +2885,7 @@
               {"id": "4437-ce97-4d23-4533", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
               {"id": "90e1-3355-3d83-ad99", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 84}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 88}],
             "entryLinks": [
               {
                 "name": "Oculus Beams",
@@ -2830,7 +2906,6 @@
                 "type": "selectionEntry"
               }
             ],
-            "infoLinks": [{"name": "Vanguard-X\"", "id": "1636-0403-52a7-55db", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"}],
             "profiles": [
               {
                 "name": "Strix",
@@ -2847,7 +2922,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "2-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "-", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -2897,7 +2972,6 @@
                 "type": "selectionEntry"
               }
             ],
-            "infoLinks": [{"name": "Vanguard-X\"", "id": "ab8e-eba3-4277-d6fa", "hidden": false, "targetId": "0afa-aca9-640a-973e", "type": "rule"}],
             "profiles": [
               {
                 "name": "Yokai",
@@ -2914,7 +2988,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "-", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "2-3", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Vanguard-6\"", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "-", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -3093,7 +3167,7 @@
               {"id": "8ab4-cee1-b9db-e792", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e77d-3454-bd5f-e031", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 85}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 88}],
             "entryLinks": [
               {
                 "name": "Oculus Beams",
@@ -3243,7 +3317,7 @@
               {"id": "e845-505c-9527-9825-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e845-505c-9527-9825-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 135}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 130}],
             "entryLinks": [
               {
                 "name": "Oculus Beams",
@@ -3318,7 +3392,7 @@
               {"id": "8d94-21a7-81f7-b93c-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "8d94-21a7-81f7-b93c-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 125}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 120}],
             "entryLinks": [
               {
                 "name": "Oculus Beam Crest",
@@ -3397,7 +3471,7 @@
               {"id": "4d9c-acd2-9606-f820-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "4d9c-acd2-9606-f820-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 135}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 132}],
             "entryLinks": [
               {
                 "name": "Oculus Beam Crest",
@@ -3476,7 +3550,7 @@
               {"id": "eda3-ef0d-3d46-ce3a-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "eda3-ef0d-3d46-ce3a-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 164}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 156}],
             "entryLinks": [
               {
                 "name": "Oculus Beams",
@@ -3506,13 +3580,13 @@
                 "type": "selectionEntry"
               },
               {
-                "name": "Fighters & Bombers",
-                "id": "4320-0fbd-1a93-3fa7",
+                "name": "Minelayer",
+                "id": "fa55-a722-75d2-ebca",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 4,
-                "targetId": "8d5e-80dc-a360-4c8a",
-                "type": "selectionEntry"
+                "targetId": "d7e1-5cd8-9ec4-57a8",
+                "type": "selectionEntryGroup"
               }
             ],
             "profiles": [
@@ -3560,7 +3634,7 @@
               {"id": "996d-d56c-c422-5cb8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "8cdc-0707-e4f3-ca16", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 190}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 180}],
             "entryLinks": [
               {
                 "name": "Oculus Beam Array",
@@ -3572,11 +3646,20 @@
                 "type": "selectionEntry"
               },
               {
+                "name": "Plasma Gale",
+                "id": "638f-cf09-fda1-c6ac",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "550e-2874-4f38-4989",
+                "type": "selectionEntry"
+              },
+              {
                 "name": "Fighters & Bombers",
                 "id": "1bb5-04a5-2a9c-875a",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 2,
+                "sortIndex": 3,
                 "targetId": "4967-9e01-1e2d-2641",
                 "type": "selectionEntry"
               }
@@ -3649,6 +3732,15 @@
                 "sortIndex": 2,
                 "targetId": "877f-b86b-ad85-6a5a",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Plasma Gale",
+                "id": "945f-70ea-0ace-2b77",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "550e-2874-4f38-4989",
+                "type": "selectionEntry"
               }
             ],
             "profiles": [
@@ -3696,8 +3788,40 @@
               {"id": "4ec5-81d6-270c-edd3", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "9ac7-e40a-9852-c55c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 145}],
-            "entryLinks": [{"name": "Oculus Beam Array", "id": "47a5-0b6e-ab90-138b", "hidden": false, "import": true, "targetId": "0bce-3c22-02f5-0fdf", "type": "selectionEntry"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 140}],
+            "entryLinks": [
+              {
+                "name": "Oculus Beam Array",
+                "id": "47a5-0b6e-ab90-138b",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 1,
+                "targetId": "0bce-3c22-02f5-0fdf",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Plasma Gale",
+                "id": "b95c-48d5-0f62-fb88",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 2,
+                "targetId": "550e-2874-4f38-4989",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "418c-006b-b781-f332",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "9748-3fd5-c234-2c12",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "efac-8f4f-7a03-cdc7", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "99c4-ad96-b789-2c82", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
+            ],
             "infoLinks": [
               {"name": "Cloak-X", "id": "c3dc-f398-6102-8582", "hidden": false, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
               {"name": "Stealth", "id": "cb1e-5b3d-005e-34af", "hidden": false, "targetId": "9306-4cd5-b59e-5898", "type": "rule"},
@@ -3734,7 +3858,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "7ad3-d73c-5f60-e3d1", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "f324-99ad-e467-a202", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "f324-99ad-e467-a202", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "3007-a33c-f8f0-6df3", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -3766,6 +3891,15 @@
                 "import": true,
                 "sortIndex": 2,
                 "targetId": "2cd7-52c1-070d-c7cd",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Plasma Gale",
+                "id": "fe78-6d11-76d4-924b",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "550e-2874-4f38-4989",
                 "type": "selectionEntry"
               }
             ],
@@ -3805,7 +3939,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "c22f-04e4-d3ec-dede", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "ee80-3eaa-6895-d5a3", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "ee80-3eaa-6895-d5a3", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "c8b8-1e55-f306-380c", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -3839,7 +3974,16 @@
                 "targetId": "8231-2291-b406-010c",
                 "type": "selectionEntry"
               },
-              {"name": "Torpedo", "id": "d279-38fe-cea9-e733", "hidden": false, "import": true, "sortIndex": 3, "targetId": "1e68-433d-e139-373e", "type": "selectionEntry"}
+              {
+                "name": "Plasma Gale",
+                "id": "2934-41cf-6fa7-db8d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "550e-2874-4f38-4989",
+                "type": "selectionEntry"
+              },
+              {"name": "Torpedo", "id": "d279-38fe-cea9-e733", "hidden": false, "import": true, "sortIndex": 4, "targetId": "1e68-433d-e139-373e", "type": "selectionEntry"}
             ],
             "infoLinks": [
               {"name": "Cloak-X", "id": "eb9d-07ed-ba84-12b1", "hidden": false, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
@@ -3877,7 +4021,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "df6f-8d42-80c4-b969", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "ef11-4cb1-5ad1-b83b", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "ef11-4cb1-5ad1-b83b", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "ff63-01d5-e4cb-5e8f", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -3921,11 +4066,20 @@
                 "type": "selectionEntry"
               },
               {
+                "name": "Plasma Gale",
+                "id": "31de-0a6b-f035-dabb",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "550e-2874-4f38-4989",
+                "type": "selectionEntry"
+              },
+              {
                 "name": "Fighters & Bombers",
                 "id": "a9a9-a2e5-e076-2b53",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 5,
                 "targetId": "4967-9e01-1e2d-2641",
                 "type": "selectionEntry"
               }
@@ -3962,7 +4116,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "3d3b-0735-2e90-573e", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "6be2-40ba-74c6-a933", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "6be2-40ba-74c6-a933", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "08ca-0586-0df3-82f1", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -3976,7 +4131,7 @@
               {"id": "b238-cfcc-49e6-4120-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "b238-cfcc-49e6-4120-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 235}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 225}],
             "entryLinks": [
               {
                 "name": "Oculus Beam Array",
@@ -3997,11 +4152,20 @@
                 "type": "selectionEntry"
               },
               {
+                "name": "Plasma Gale",
+                "id": "f73b-61d9-b50a-8f0d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "550e-2874-4f38-4989",
+                "type": "selectionEntry"
+              },
+              {
                 "name": "Fighters & Bombers",
                 "id": "ec3a-a963-f6ba-0053",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 4,
                 "targetId": "4967-9e01-1e2d-2641",
                 "type": "selectionEntry"
               }
@@ -4041,7 +4205,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "e0d5-d0bf-4fd4-34d4", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "8ee3-e3e8-e93d-5150", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "8ee3-e3e8-e93d-5150", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "a3ad-cae0-242c-84d7", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4073,6 +4238,15 @@
                 "import": true,
                 "sortIndex": 2,
                 "targetId": "19f3-a2ef-59d4-6633",
+                "type": "selectionEntry"
+              },
+              {
+                "name": "Plasma Gale",
+                "id": "c2c5-a102-cbe9-fa82",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "550e-2874-4f38-4989",
                 "type": "selectionEntry"
               }
             ],
@@ -4112,7 +4286,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "94e1-3870-4eeb-ba07", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "5661-5314-ca4c-5b24", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "5661-5314-ca4c-5b24", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "1c28-99d5-a5f3-f122", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4126,7 +4301,7 @@
               {"id": "8a60-8f12-da78-71e8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "13c6-5712-5bcf-4ebe", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 230}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 215}],
             "entryLinks": [
               {
                 "name": "Oculus Beam Array",
@@ -4147,13 +4322,35 @@
                 "type": "selectionEntry"
               },
               {
+                "name": "Plasma Gale",
+                "id": "ce7e-f4bf-e18d-92f8",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "550e-2874-4f38-4989",
+                "type": "selectionEntry"
+              },
+              {
                 "name": "Fighters & Bombers",
                 "id": "7008-a637-d591-2227",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 4,
                 "targetId": "4967-9e01-1e2d-2641",
                 "type": "selectionEntry"
+              },
+              {
+                "name": "Deployable Features",
+                "id": "d25d-65da-9362-7dc4",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "eb63-523a-3943-54d9",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "f5e0-8d1a-6297-399f", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "6322-868c-be03-a3c1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
               }
             ],
             "infoLinks": [
@@ -4192,7 +4389,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "c4e5-2716-5f48-567a", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "1fc7-1fb8-2718-7508", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "1fc7-1fb8-2718-7508", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "625a-6ee0-ed6d-0f02", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4226,13 +4424,22 @@
                 "targetId": "19f3-a2ef-59d4-6633",
                 "type": "selectionEntry"
               },
-              {"name": "Torpedo", "id": "9827-6b12-af54-081d", "hidden": false, "import": true, "sortIndex": 3, "targetId": "1e68-433d-e139-373e", "type": "selectionEntry"},
+              {
+                "name": "Plasma Gale",
+                "id": "30c4-dcf5-0de3-e4ad",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "550e-2874-4f38-4989",
+                "type": "selectionEntry"
+              },
+              {"name": "Torpedo", "id": "9827-6b12-af54-081d", "hidden": false, "import": true, "sortIndex": 4, "targetId": "1e68-433d-e139-373e", "type": "selectionEntry"},
               {
                 "name": "Fighters & Bombers",
                 "id": "a830-1677-5bfa-9eef",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 5,
                 "targetId": "4967-9e01-1e2d-2641",
                 "type": "selectionEntry"
               }
@@ -4272,7 +4479,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "7974-a597-c4a3-ed68", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "e5fe-bd0b-1c4d-06c7", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "e5fe-bd0b-1c4d-06c7", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "4c88-5386-f29c-4ca9", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4315,13 +4523,22 @@
                 "targetId": "877f-b86b-ad85-6a5a",
                 "type": "selectionEntry"
               },
-              {"name": "Torpedo", "id": "a453-06a8-9e8a-cbb5", "hidden": false, "import": true, "sortIndex": 4, "targetId": "1e68-433d-e139-373e", "type": "selectionEntry"},
+              {
+                "name": "Plasma Gale",
+                "id": "71d3-988c-8865-262f",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "550e-2874-4f38-4989",
+                "type": "selectionEntry"
+              },
+              {"name": "Torpedo", "id": "a453-06a8-9e8a-cbb5", "hidden": false, "import": true, "sortIndex": 5, "targetId": "1e68-433d-e139-373e", "type": "selectionEntry"},
               {
                 "name": "Fighters & Bombers",
                 "id": "6d52-76fe-2c4f-3543",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 5,
+                "sortIndex": 6,
                 "targetId": "4967-9e01-1e2d-2641",
                 "type": "selectionEntry"
               }
@@ -4357,7 +4574,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "8260-b19c-d6d5-7721", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "7cc9-d8c9-c2ca-3097", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "7cc9-d8c9-c2ca-3097", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "79ad-8f47-b700-fa39", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4371,7 +4589,7 @@
               {"id": "2a53-421f-42c2-9008", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "7102-f0dc-1a3c-c158", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 195}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 190}],
             "entryLinks": [
               {
                 "name": "Oculus Beam Array",
@@ -4391,7 +4609,29 @@
                 "targetId": "8231-2291-b406-010c",
                 "type": "selectionEntry"
               },
-              {"name": "Torpedo", "id": "751b-834c-101c-ff85", "hidden": false, "import": true, "sortIndex": 3, "targetId": "1e68-433d-e139-373e", "type": "selectionEntry"}
+              {
+                "name": "Plasma Gale",
+                "id": "9801-cf62-6bb0-c6ec",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "550e-2874-4f38-4989",
+                "type": "selectionEntry"
+              },
+              {"name": "Torpedo", "id": "751b-834c-101c-ff85", "hidden": false, "import": true, "sortIndex": 4, "targetId": "1e68-433d-e139-373e", "type": "selectionEntry"},
+              {
+                "name": "Deployable Features",
+                "id": "9792-3edd-60a2-209d",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 5,
+                "targetId": "eb63-523a-3943-54d9",
+                "type": "selectionEntryGroup",
+                "constraints": [
+                  {"id": "95f5-889b-a04e-d1ed", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+                  {"id": "0772-b434-c77f-bf6a", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+                ]
+              }
             ],
             "infoLinks": [
               {"name": "Cloak-X", "id": "cb44-5073-2c7d-8e76", "hidden": false, "targetId": "69fa-32f1-0a4f-c052", "type": "rule"},
@@ -4429,7 +4669,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "3fbf-f532-61ce-62e3", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "86f2-98a6-f533-23ea", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "86f2-98a6-f533-23ea", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "9ef6-94c6-c798-f3df", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4513,7 +4754,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "9949-5a12-a859-31f2", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "985c-06be-52f4-baee", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "985c-06be-52f4-baee", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "106b-7043-dc26-b3cc", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4527,7 +4769,7 @@
               {"id": "67a3-8eb1-e89c-9326-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "67a3-8eb1-e89c-9326-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 245}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 235}],
             "entryLinks": [
               {
                 "name": "Oculus Beam Array",
@@ -4598,7 +4840,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "b049-44f4-8e69-b7ab", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "8b05-5658-9f3b-77d5", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "8b05-5658-9f3b-77d5", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "7353-1933-1f66-f3f3", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4612,7 +4855,7 @@
               {"id": "85e6-7b64-c3eb-1e37-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "85e6-7b64-c3eb-1e37-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 255}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 250}],
             "entryLinks": [
               {
                 "name": "Mega Plasma Lance Battery",
@@ -4691,7 +4934,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "c97a-3fe7-3f07-889d", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "8251-bc49-5d7b-308c", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "8251-bc49-5d7b-308c", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "1450-0090-d6cb-6df8", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4705,7 +4949,7 @@
               {"id": "b052-12b2-777e-f8f3-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "b052-12b2-777e-f8f3-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 265}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 255}],
             "entryLinks": [
               {
                 "name": "Mega Plasma Lance Battery",
@@ -4775,7 +5019,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "944e-2eec-d166-60c4", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "5cc4-7047-09bf-0c8f", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "5cc4-7047-09bf-0c8f", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "2cf7-69b3-84cb-a106", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4841,7 +5086,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "1da2-fb37-e2d5-4088", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "585e-e9b0-b2d5-dc99", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "585e-e9b0-b2d5-dc99", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "a173-59ad-6e7e-bb00", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4930,7 +5176,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "85f2-1065-88c2-e00a", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "e5d2-269a-2ce9-d09d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "e5d2-269a-2ce9-d09d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "4d76-7253-f798-2c39", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -4956,12 +5203,12 @@
                 "type": "selectionEntry"
               },
               {
-                "name": "Furnace Fangs",
-                "id": "45eb-fd0b-b8be-9dad",
+                "name": "Furnace Fang Quad",
+                "id": "6dc0-b1f8-faec-22d1",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 2,
-                "targetId": "dfff-6c67-396f-af99",
+                "targetId": "4f39-4ee8-5493-0728",
                 "type": "selectionEntry"
               },
               {
@@ -5014,7 +5261,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "fba9-04c0-b009-cb6d", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "6950-4171-f43c-1a37", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "6950-4171-f43c-1a37", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "d67e-01db-2f99-6f84", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5028,7 +5276,7 @@
               {"id": "e340-1b7e-f4ce-17ec", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "4180-f04e-5afe-85fd", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 305}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 295}],
             "entryLinks": [
               {
                 "name": "Mega Plasma Lance Battery",
@@ -5108,7 +5356,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "9bd4-d84e-53b4-500e", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "a7f3-b828-9b51-1d2d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "a7f3-b828-9b51-1d2d", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "9c56-9013-b375-ce19", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5122,7 +5371,7 @@
               {"id": "2e81-55c4-e4af-83a0", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "e805-3e1b-6b70-c1b3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 285}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 275}],
             "entryLinks": [
               {
                 "name": "Mega Plasma Lance Battery",
@@ -5202,7 +5451,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "f3b3-f1c4-8683-03f2", "primary": false, "targetId": "default-category"},
-          {"name": "Heavy Groups", "id": "bec8-a292-f5ec-bd81", "primary": true, "targetId": "8d99-053d-ffeb-98c5"}
+          {"name": "Heavy Groups", "id": "bec8-a292-f5ec-bd81", "primary": true, "targetId": "8d99-053d-ffeb-98c5"},
+          {"name": "Heavy and Colossal Groups", "id": "2614-e185-898a-1936", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "selectionEntries": [
           {
@@ -5216,7 +5466,7 @@
               {"id": "7557-c57e-1b3a-7dc8", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
               {"id": "1463-543c-2473-1c88", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
             ],
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 265}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 255}],
             "entryLinks": [
               {
                 "name": "Heavy Plasma Beam Pair",
@@ -5287,7 +5537,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "ef6c-2c2c-d323-5f3c", "primary": false, "targetId": "default-category"},
-          {"name": "Colossal Groups", "id": "0db6-45c9-7cc1-2c18", "primary": true, "targetId": "52fa-6578-d171-57d6"}
+          {"name": "Colossal Groups", "id": "0db6-45c9-7cc1-2c18", "primary": true, "targetId": "52fa-6578-d171-57d6"},
+          {"name": "Heavy and Colossal Groups", "id": "28f2-47a6-982c-5a1c", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "modifiers": [
           {
@@ -5405,7 +5656,8 @@
         "type": "unit",
         "categoryLinks": [
           {"name": "Group", "id": "11e9-f38d-babd-975f", "primary": false, "targetId": "default-category"},
-          {"name": "Colossal Groups", "id": "928e-35c5-7584-42d6", "primary": true, "targetId": "52fa-6578-d171-57d6"}
+          {"name": "Colossal Groups", "id": "928e-35c5-7584-42d6", "primary": true, "targetId": "52fa-6578-d171-57d6"},
+          {"name": "Heavy and Colossal Groups", "id": "7090-3f2f-f9e9-3c31", "primary": false, "targetId": "63dd-715b-bc44-56e6"}
         ],
         "modifiers": [
           {
@@ -5554,7 +5806,7 @@
         "name": "Engine Needle",
         "id": "bc37-6699-e96d-02e4",
         "collective": true,
-        "comment": "FN 2/3+/1/E Crip-NavOffline",
+        "comment": "FN 3/3+/1/E Crip-NavOffline",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5572,7 +5824,7 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
@@ -5585,7 +5837,7 @@
         "name": "Furnace Blaster",
         "id": "2ecb-d313-83b9-eb80",
         "collective": true,
-        "comment": "FN 4/3+/1/E BT-1 Crip-Fire Foc",
+        "comment": "FN 5/3+/1/E BT-1 Crip-Fire Foc",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5607,43 +5859,8 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "5", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Burnthrough-1, Crippling-Fire, Focused", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Furnace Cannons",
-        "id": "93e9-be87-389d-1c0a",
-        "collective": true,
-        "comment": "FN 4/2+/1/E BT-1 Crip-Fire Foc",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "1b7d-bcb2-bae7-1355", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "cb7c-076f-29e1-443d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "infoLinks": [
-          {"name": "Burnthrough-X", "id": "3b9b-e6b0-1532-f815", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
-          {"name": "Crippling-X", "id": "0b90-e0e6-9777-edf3", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"},
-          {"name": "Focused", "id": "8055-6e15-3ad5-3f18", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Furnace Cannons",
-            "id": "8f67-f503-2a49-1481",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Burnthrough-1, Crippling-Fire, Focused", "typeId": "1e8b-4801-6eb9-f278"}
@@ -5687,6 +5904,42 @@
         ]
       },
       {
+        "name": "Furnace Fang Quad",
+        "id": "4f39-4ee8-5493-0728",
+        "collective": true,
+        "comment": "FN 6/2+/1/E BT-1 Crip-Fire Foc Vol-2",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "983d-0495-d398-a6ac", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "b130-62e6-ee3b-444b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [
+          {"name": "Burnthrough-X", "id": "1806-8308-b3c0-b6d7", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
+          {"name": "Crippling-X", "id": "2974-6dab-1eba-f84d", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"},
+          {"name": "Focused", "id": "20ee-7228-d1a1-c368", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"},
+          {"name": "Volley-X", "id": "c8a2-377d-c14d-5b7a", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Furnace Fang Quad",
+            "id": "2276-e4cb-e6fb-e6b8",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Burnthrough-1, Crippling-Fire, Focused, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
         "name": "Furnace Fangs",
         "id": "cc1e-4277-6de6-e142",
         "collective": true,
@@ -5707,41 +5960,6 @@
           {
             "name": "Furnace Fangs",
             "id": "1eef-4350-0671-0f3d",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Burnthrough-1, Crippling-Fire, Focused", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Furnace Fangs",
-        "id": "dfff-6c67-396f-af99",
-        "collective": true,
-        "comment": "[x2] FN 6/2+/1/E BT-1 Crip-Fire Foc",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "a63e-1e3a-a197-c5b5", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-          {"id": "75a1-0f1a-acb4-15d8", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
-        ],
-        "infoLinks": [
-          {"name": "Burnthrough-X", "id": "f059-85b2-196e-2222", "hidden": false, "targetId": "91ae-f561-0802-3f8e", "type": "rule"},
-          {"name": "Crippling-X", "id": "16da-7ef3-4be7-b81e", "hidden": false, "targetId": "8b64-93ea-39c6-ab29", "type": "rule"},
-          {"name": "Focused", "id": "0d01-0ee0-d342-bf38", "hidden": false, "targetId": "464a-0e99-0229-5190", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Furnace Fangs",
-            "id": "9e70-bc7f-a550-95ba",
             "hidden": false,
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
@@ -5795,7 +6013,7 @@
         "name": "Furnace Triad",
         "id": "6e21-95f2-ae92-1f5b",
         "collective": true,
-        "comment": "FN 3/2+/4/C Bl-1 Crip-Fire Foc",
+        "comment": "FN 4/2+/3/C Bl-1 Crip-Fire Foc",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5817,9 +6035,9 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "FN", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "2+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "4", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "C", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Bloom-1, Crippling-Fire, Focused", "typeId": "1e8b-4801-6eb9-f278"}
             ]
@@ -5830,7 +6048,7 @@
         "name": "Heavy Plasma Beam",
         "id": "eba1-f92a-6456-13e1",
         "collective": true,
-        "comment": "F 3/3+/1/E CA Pen",
+        "comment": "F 3/3+/1/E CA Crit-1 Pen",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5840,6 +6058,7 @@
         ],
         "infoLinks": [
           {"name": "Close Action", "id": "e9eb-5dff-c4e5-d718", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
+          {"name": "Critical-X", "id": "599e-27a6-24d8-1cc0", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
           {"name": "Penetrator", "id": "b1df-ed6d-9ae2-bd1e", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"}
         ],
         "profiles": [
@@ -5855,7 +6074,7 @@
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Close Action, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Close Action, Critical-1, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -5864,7 +6083,7 @@
         "name": "Heavy Plasma Beam Pair",
         "id": "082f-4161-0ad4-397c",
         "collective": true,
-        "comment": "F 3/3+/2/E CA Pen",
+        "comment": "F 3/3+/1/E CA Crit-1 Pen Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5874,7 +6093,9 @@
         ],
         "infoLinks": [
           {"name": "Close Action", "id": "9145-142e-25ea-3003", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-          {"name": "Penetrator", "id": "ed62-63c7-061c-d47c", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"}
+          {"name": "Critical-X", "id": "8b11-4375-c516-6965", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+          {"name": "Penetrator", "id": "ed62-63c7-061c-d47c", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
+          {"name": "Volley-X", "id": "b582-05fe-a2d5-3952", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
         ],
         "profiles": [
           {
@@ -5887,9 +6108,9 @@
               {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Close Action, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Close Action, Critical-1, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -5898,7 +6119,7 @@
         "name": "Heavy Plasma Beam Triad",
         "id": "6b0e-d2c0-9a71-a05e",
         "collective": true,
-        "comment": "F 3/3+/3/E CA Pen",
+        "comment": "F 3/3+/1/E CA Crit-1 Pen Vol-3",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -5908,7 +6129,9 @@
         ],
         "infoLinks": [
           {"name": "Close Action", "id": "7e95-0af3-7167-2376", "hidden": false, "targetId": "3bd7-f459-761a-97ee", "type": "rule"},
-          {"name": "Penetrator", "id": "3108-67d8-cffc-77c5", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"}
+          {"name": "Critical-X", "id": "bd34-5ad8-d9e9-df13", "hidden": false, "targetId": "7cc5-6830-9e54-6d11", "type": "rule"},
+          {"name": "Penetrator", "id": "3108-67d8-cffc-77c5", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
+          {"name": "Volley-X", "id": "8a34-644b-8c9a-5513", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
         ],
         "profiles": [
           {
@@ -5921,9 +6144,9 @@
               {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Close Action, Penetrator", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Close Action, Critical-1, Penetrator, Volley-3", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -5995,37 +6218,6 @@
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Calibre-H/C, Reave-2, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Oculus Beam Array",
-        "id": "a34f-7717-da6c-e71b",
-        "collective": true,
-        "comment": "F 2/3+/2/E Sc-1",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "5596-fea4-4d70-d535-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
-          {"id": "5596-fea4-4d70-d535-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
-        ],
-        "infoLinks": [{"name": "Scald-X", "id": "810b-c8cd-7458-2244", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}],
-        "profiles": [
-          {
-            "name": "Oculus Beam Array",
-            "id": "b4bb-8ef6-75c6-07c8",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Scald-1", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6149,6 +6341,37 @@
             "characteristics": [
               {"name": "Arc", "$text": "F/S", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
+              {"name": "Special", "$text": "Scald-1", "typeId": "1e8b-4801-6eb9-f278"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Oculus Beam Cluster",
+        "id": "8cd7-7651-fef6-9164",
+        "collective": true,
+        "comment": "F 2/3+/2/E Sc-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "47f0-627f-c26a-d079", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "11f2-d627-39e6-247b", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Scald-X", "id": "57ed-28c8-fc30-a3f6", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Oculus Beam Cluster",
+            "id": "db6d-4da1-c1d2-b043",
+            "hidden": false,
+            "typeId": "02b7-2433-f72f-d510",
+            "typeName": "Weapon",
+            "characteristics": [
+              {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
+              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
@@ -6353,13 +6576,13 @@
         "name": "Oculus Beams",
         "id": "61d3-2201-7930-c105",
         "collective": true,
-        "comment": "[x2] F/S 1/3+/2/E Sc-1",
+        "comment": "F/S 1/3+/2/E Sc-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
         "constraints": [
-          {"id": "fb9a-d795-d6b2-d27e-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-          {"id": "fb9a-d795-d6b2-d27e-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 2}
+          {"id": "fb9a-d795-d6b2-d27e-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "fb9a-d795-d6b2-d27e-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
         "infoLinks": [{"name": "Scald-X", "id": "5d01-ebdf-0aa6-b80a", "hidden": false, "targetId": "41b3-55a2-8d71-ee88", "type": "rule"}],
         "profiles": [
@@ -6511,7 +6734,7 @@
         "name": "Plasma Brand",
         "id": "f643-7ab0-c891-6f44",
         "collective": true,
-        "comment": "F 2/3+/2/K CA Crip-Fire Sc-2",
+        "comment": "F 2/3+/3/K CA Crip-Fire Sc-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6535,7 +6758,7 @@
               {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "2", "typeId": "31b1-2e8b-0b99-b1c7"},
+              {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Close Action, Crippling-Fire, Scald-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
@@ -6648,7 +6871,7 @@
         "name": "Plasma Squall",
         "id": "5ac2-5b69-7ddd-2da1",
         "collective": true,
-        "comment": "F/S/R 3/4+/1/K AtA CA Sc-2",
+        "comment": "F/S/R 3/3+/1/K AtA CA Sc-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6671,7 +6894,7 @@
             "characteristics": [
               {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Air to Air, Close Action, Scald-2", "typeId": "1e8b-4801-6eb9-f278"}
@@ -6752,7 +6975,7 @@
         "name": "Plasma Torch",
         "id": "37d4-d093-7fa1-447d",
         "collective": true,
-        "comment": "F 3/4+/1/E CA Sc-2 SusFire",
+        "comment": "F 3/3+/1/E CA Sc-2 SusFire",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6775,7 +6998,7 @@
             "characteristics": [
               {"name": "Arc", "$text": "F", "typeId": "7fb7-39ec-1352-3b97"},
               {"name": "Att", "$text": "3", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
+              {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
               {"name": "Special", "$text": "Close Action, Scald-2, Sustained Fire", "typeId": "1e8b-4801-6eb9-f278"}
@@ -6852,7 +7075,7 @@
         "name": "Seekers",
         "id": "9861-f774-8b0c-7095",
         "collective": true,
-        "comment": "F/S/R 4/3+/1/E CA ReEnt Sc-2",
+        "comment": "F/S/R 6/3+/1/E CA ReEnt Sc-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6874,7 +7097,7 @@
             "typeName": "Weapon",
             "characteristics": [
               {"name": "Arc", "$text": "F/S/R", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "4", "typeId": "af4e-6eec-3cb5-5aae"},
+              {"name": "Att", "$text": "6", "typeId": "af4e-6eec-3cb5-5aae"},
               {"name": "Lock", "$text": "3+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "1", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "E", "typeId": "8f83-3218-7832-0818"},
@@ -7011,7 +7234,7 @@
         "name": "Fighters & Bombers",
         "id": "2c33-7816-d10d-6bf4",
         "collective": true,
-        "comment": "1",
+        "comment": "1 Alt-1",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -7019,6 +7242,7 @@
           {"id": "803b-cc00-bbcd-94a2-min", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
           {"id": "803b-cc00-bbcd-94a2-max", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
         ],
+        "infoLinks": [{"name": "Alt-X", "id": "cc27-8d75-6b3f-5d30", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
         "profiles": [
           {
             "name": "Fighters & Bombers",
@@ -7026,7 +7250,7 @@
             "hidden": false,
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
-            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+            "characteristics": [{"name": "Launch", "$text": "1", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
           }
         ]
       },
@@ -7165,6 +7389,30 @@
             "typeId": "7ba8-a64f-b5fb-8c3e",
             "typeName": "Load",
             "characteristics": [{"name": "Launch", "$text": "8", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "-", "typeId": "d3be-1a27-21ac-fb65"}]
+          }
+        ]
+      },
+      {
+        "name": "Mines",
+        "id": "1463-d405-4c3d-d32b",
+        "collective": true,
+        "comment": "2 Alt-1",
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "66cd-be92-e225-b084", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "a125-d09d-ad48-085c", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "infoLinks": [{"name": "Alt-X", "id": "1720-1159-a4eb-d1f6", "hidden": false, "targetId": "f354-1b03-966f-f667", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Mines",
+            "id": "18e9-b811-dc52-8008",
+            "hidden": false,
+            "typeId": "7ba8-a64f-b5fb-8c3e",
+            "typeName": "Load",
+            "characteristics": [{"name": "Launch", "$text": "2", "typeId": "bcc4-f844-acff-aa94"}, {"name": "Special", "$text": "Alt-1", "typeId": "d3be-1a27-21ac-fb65"}]
           }
         ]
       },
@@ -7333,7 +7581,8 @@
                 "typeName": "Feature",
                 "characteristics": [
                   {"name": "ES", "$text": "4+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "4", "typeId": "a0a5-e13e-1516-6b57"},
                   {"name": "Special", "$text": "Aegis-2", "typeId": "0042-a956-225d-9293"}
                 ]
               }
@@ -7435,8 +7684,9 @@
                 "typeId": "e69b-d424-94a2-0fe1",
                 "typeName": "Feature",
                 "characteristics": [
-                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "ES", "$text": "4+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "4", "typeId": "a0a5-e13e-1516-6b57"},
                   {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
                 ]
               }
@@ -7445,7 +7695,7 @@
               {
                 "name": "Shrouding Platform",
                 "id": "1d24-eee1-4be8-f6e6",
-                "description": "This Dropsite has a Signature of 0\" and cannot gain Spikes.\nFriendly Groups within 6\" of this Dropsite count as having one fewer Spike when an opponent is determining potential targets and assigning Weapons to targets.",
+                "description": "This Dropsite has a Signature of 0\" and cannot gain Spikes. While you have friendly Battalions assigned to this Feature, enemy Ships attacking this Dropsite reduce their Lock by 1\nFriendly Groups within 6\" of this Dropsite count as having one fewer Spike when an opponent is determining potential targets and assigning Weapons to targets.\nWhile you control this Dropsite, you have access to the Silent Killer Ability but can only use it on friendly Groups within 6\" of this Dropsite.",
                 "hidden": false
               }
             ]
@@ -7503,8 +7753,9 @@
                 "typeId": "e69b-d424-94a2-0fe1",
                 "typeName": "Feature",
                 "characteristics": [
-                  {"name": "ES", "$text": "5+", "typeId": "b3be-7f64-867b-94f7"},
-                  {"name": "KS", "$text": "5+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "ES", "$text": "4+", "typeId": "b3be-7f64-867b-94f7"},
+                  {"name": "KS", "$text": "4+", "typeId": "4e0b-e781-cee2-504d"},
+                  {"name": "Hull", "$text": "4", "typeId": "a0a5-e13e-1516-6b57"},
                   {"name": "Special", "$text": "-", "typeId": "0042-a956-225d-9293"}
                 ]
               }
@@ -7700,7 +7951,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the end of a friendly Groups' activation, pick a Crippled Ship in that Group and target an enemy Ship within 3\" of it on the same Orbital Layer. Roll a dice for each of the friendly Ship's remaining Hull Points. The target Ship is inflicted 1 Damage for each result of a 3+. The friendly Ship is destroyed and does not roll for explosion.",
+                    "$text": "At the end of a friendly Group's activation, pick a Crippled Ship in that Group. That Ship explodes with a Reactor Overload effect. If the exploding Ship is H tonnage, it explodes with a Reactor Overload effect twice. If that Ship is C tonnage, it explodes twice with a Foldspace Catastrophe instead. Remove the exploding Ship after resolving its explosions.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7733,37 +7984,42 @@
             ]
           },
           {
-            "name": "Abandon all Hope",
-            "id": "5da9-eeef-b115-0d5c",
+            "name": "Point Blank Death",
+            "id": "bed8-40b5-41cc-36aa",
             "hidden": false,
             "import": true,
             "type": "upgrade",
-            "constraints": [{"id": "7267-6b3c-3ac4-73d3", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "f70a-f949-a92d-7bba", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "profiles": [
               {
-                "name": "Abandon all Hope",
-                "id": "d719-73ef-71df-e683",
+                "name": "Point Blank Death",
+                "id": "4213-114c-1378-d07c",
                 "hidden": false,
                 "typeId": "705b-98a3-a21d-7118",
                 "typeName": "Admiral Ability",
                 "characteristics": [
                   {"name": "Cost", "$text": "2AP", "typeId": "e725-1a05-f360-abc6"},
-                  {"name": "Effect", "$text": "At the end of the Planning Phase, target an opponent. That opponent discards D3 Ability Points.", "typeId": "49ae-26b2-d6ec-81aa"}
+                  {
+                    "name": "Effect",
+                    "$text": "After rolling to hit an enemy Group in base contact with an attacking friendly Group, re-roll the hit roll for all weapons assigned to that enemy Group.",
+                    "typeId": "49ae-26b2-d6ec-81aa"
+                  }
                 ]
               }
             ]
           },
           {
-            "name": "Assimilated Bioforms",
-            "id": "00cf-49c2-632f-da02",
+            "name": "Out of Sight, Out of Mind",
+            "id": "4986-7039-930f-7155",
             "hidden": false,
             "import": true,
             "type": "upgrade",
-            "constraints": [{"id": "d2b9-0cf1-e751-3404", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "constraints": [{"id": "0539-fa9b-11aa-5b2d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
+            "infoLinks": [{"name": "Stealth", "id": "6601-51f5-3462-b396", "hidden": false, "targetId": "9306-4cd5-b59e-5898", "type": "rule"}],
             "profiles": [
               {
-                "name": "Assimilated Bioforms",
-                "id": "3287-047b-4bc1-c976",
+                "name": "Out of Sight, Out of Mind",
+                "id": "df5e-1478-2478-24e8",
                 "hidden": false,
                 "typeId": "705b-98a3-a21d-7118",
                 "typeName": "Admiral Ability",
@@ -7771,7 +8027,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of the Battalion Combat step of the Asset Phase, pick a City with friendly Battalions on it. Deploy D3 Assimilated Battalions to that City. At the end of the Battalion Combat step, remove any remaining Assimilated Battalions from the Dropsite.",
+                    "$text": "At the start of an enemy Group's activation, choose a friendly Group with 0 Spikes or the Stealth special rule. That Group cannot be targeted this Activation if the Weapon targeting it could target another friendly Group on the same Orbital Layer of the same or larger tonnage, and that other Group is closer to the attacking Group.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7805,17 +8061,16 @@
             ]
           },
           {
-            "name": "Expert Defence Crews",
-            "id": "b1a8-5429-6c31-4619",
+            "name": "Silent Killer",
+            "id": "473f-e45d-e56f-9c74",
             "hidden": false,
             "import": true,
             "type": "upgrade",
-            "constraints": [{"id": "de5a-c8e7-abc4-e1e1", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
-            "infoLinks": [{"name": "Marines-X", "id": "6a1c-14e0-07c5-0e5e", "hidden": false, "targetId": "93f3-7932-b233-4d38", "type": "rule"}],
+            "constraints": [{"id": "21ff-1cf2-6fe3-020d", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}],
             "profiles": [
               {
-                "name": "Expert Defence Crews",
-                "id": "71ad-1215-eb18-d903",
+                "name": "Silent Killer",
+                "id": "37ee-61eb-2526-9717",
                 "hidden": false,
                 "typeId": "705b-98a3-a21d-7118",
                 "typeName": "Admiral Ability",
@@ -7823,7 +8078,7 @@
                   {"name": "Cost", "$text": "1AP", "typeId": "e725-1a05-f360-abc6"},
                   {
                     "name": "Effect",
-                    "$text": "At the start of the Asset Phase, pick a friendly Group. That Group gains Marines-2D3 until the end of the round.",
+                    "$text": "When a friendly Group is given the Silent Running Order, that Group cannot gain Spikes due to your opponent's weapons, special rules, and Abilities until the end of the round.",
                     "typeId": "49ae-26b2-d6ec-81aa"
                   }
                 ]
@@ -7835,6 +8090,7 @@
       {
         "name": "Minelayer",
         "id": "ed7d-ca84-0084-57e2",
+        "comment": "Fighters & Bombers 3 to Mines 3",
         "defaultSelectionEntryId": "cb14-a1d4-ec68-476b",
         "hidden": false,
         "constraints": [
@@ -7860,7 +8116,41 @@
             "sortIndex": 2,
             "targetId": "91fe-5bf6-232b-d439",
             "type": "selectionEntry",
-            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 4}],
+            "modifiers": [{"field": "0d97-c375-b602-6fec", "type": "set", "value": 0}]
+          }
+        ]
+      },
+      {
+        "name": "Minelayer",
+        "id": "d7e1-5cd8-9ec4-57a8",
+        "comment": "Fighters & Bombers 2 to Mines 3",
+        "defaultSelectionEntryId": "9101-c668-9f6a-11d7",
+        "hidden": false,
+        "constraints": [
+          {"id": "332c-e709-0831-d86b", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 1},
+          {"id": "898e-3dfe-6193-43a2", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}
+        ],
+        "entryLinks": [
+          {
+            "name": "Fighters & Bombers",
+            "id": "9101-c668-9f6a-11d7",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "targetId": "8d5e-80dc-a360-4c8a",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "a471-17b5-b8f2-17c5", "type": "set", "value": 0}]
+          },
+          {
+            "name": "Mines",
+            "id": "b4ea-c219-e390-1682",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "targetId": "91fe-5bf6-232b-d439",
+            "type": "selectionEntry",
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 4}],
             "modifiers": [{"field": "0d97-c375-b602-6fec", "type": "set", "value": 0}]
           }
         ]
@@ -7921,6 +8211,82 @@
             "targetId": "4fdb-59b7-06e1-c171",
             "type": "selectionEntry",
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 10}]
+          }
+        ]
+      },
+      {
+        "name": "Deployable Features",
+        "id": "9748-3fd5-c234-2c12",
+        "comment": "Medium carriers: any fleet feature",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Skybane Halo",
+            "id": "1c9e-248b-7bd3-6162",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Medium Group Spend Exempt", "id": "2863-3de3-a8e1-665a", "primary": false, "targetId": "d720-1c66-5090-ab19"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
+          },
+          {
+            "name": "Shrouding Platform",
+            "id": "4849-28c4-ba10-5612",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Medium Group Spend Exempt", "id": "0387-4435-1fc4-96bd", "primary": false, "targetId": "d720-1c66-5090-ab19"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
+          },
+          {
+            "name": "Infestation Bastion",
+            "id": "6b99-3fd9-ffb0-5cab",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Medium Group Spend Exempt", "id": "3740-9ab0-d5a3-6827", "primary": false, "targetId": "d720-1c66-5090-ab19"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
+          }
+        ]
+      },
+      {
+        "name": "Deployable Features",
+        "id": "eb63-523a-3943-54d9",
+        "comment": "Heavy carriers: any fleet feature",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "name": "Skybane Halo",
+            "id": "d4f8-8652-fc70-3d3f",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 1,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Heavy Group Spend Exempt", "id": "f33a-32e7-2227-e8b7", "primary": false, "targetId": "ba1b-a548-3bf5-d083"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
+          },
+          {
+            "name": "Shrouding Platform",
+            "id": "254b-5eb6-5c4b-819c",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 2,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Heavy Group Spend Exempt", "id": "08c9-2ca2-3dc1-6a3e", "primary": false, "targetId": "ba1b-a548-3bf5-d083"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
+          },
+          {
+            "name": "Infestation Bastion",
+            "id": "c4de-ec1e-c8c2-ab64",
+            "hidden": false,
+            "import": true,
+            "sortIndex": 3,
+            "type": "upgrade",
+            "categoryLinks": [{"name": "Heavy Group Spend Exempt", "id": "c561-eb46-5118-4301", "primary": false, "targetId": "ba1b-a548-3bf5-d083"}],
+            "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 5}]
           }
         ]
       }
