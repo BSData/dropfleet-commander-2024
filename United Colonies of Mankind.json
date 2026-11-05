@@ -879,7 +879,7 @@
               {
                 "name": "Tip of the Spear",
                 "id": "3d3b-2655-f084-e862",
-                "description": "At the start of the game, choose one of your deployment zones or a single board edge. While this Ship is further than 12\" away from the chosen deployment zone or board edge, you may re-roll its failed Backup Saves.",
+                "description": "At the start of the game, choose one of your deployment zones. While this Ship is further than 12\" away from the chosen deployment zone, you may re-roll its failed Backup Saves.",
                 "hidden": false
               }
             ]
@@ -2575,7 +2575,7 @@
               {"id": "9af8-98b4-e032-9da0", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
             ],
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 57}],
-            "entryLinks": [{"name": "UF-B-9000s", "id": "2397-07f0-8e42-fdd9", "hidden": false, "import": true, "targetId": "d8ff-a3b5-c461-1eca", "type": "selectionEntry"}],
+            "entryLinks": [{"name": "UF-B-9000s Mass Driver", "id": "2397-07f0-8e42-fdd9", "hidden": false, "import": true, "targetId": "d8ff-a3b5-c461-1eca", "type": "selectionEntry"}],
             "infoLinks": [{"name": "Monitor", "id": "d6a5-190a-6abb-234b", "hidden": false, "targetId": "cc9f-9be5-cc19-2fc9", "type": "rule"}],
             "profiles": [
               {
@@ -8319,7 +8319,7 @@
         ]
       },
       {
-        "name": "UF-B-9000s",
+        "name": "UF-B-9000s Mass Driver",
         "id": "d8ff-a3b5-c461-1eca",
         "collective": true,
         "comment": "FN 3/3+/2/K Alt-1 Foc Pen || F 2/4+/2/K Alt-1 Bmb Pen",
@@ -8338,8 +8338,8 @@
         ],
         "profiles": [
           {
-            "name": "UF-B-9000s (Anti-Ship)",
-            "id": "6513-0ea0-084e-206c",
+            "name": "UF-B-9000s Mass Driver (Anti-Ship)",
+            "id": "9619-25bf-d577-2c7f",
             "hidden": false,
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",
@@ -8353,8 +8353,8 @@
             ]
           },
           {
-            "name": "UF-B-9000s (Bombardment)",
-            "id": "e9bf-6e3a-db57-c215",
+            "name": "UF-B-9000s Mass Driver (Bombardment)",
+            "id": "499d-2300-abdb-4b88",
             "hidden": false,
             "typeId": "02b7-2433-f72f-d510",
             "typeName": "Weapon",

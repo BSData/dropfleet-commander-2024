@@ -1098,7 +1098,7 @@
                 "typeName": "Space Station",
                 "characteristics": [
                   {"name": "Scan", "$text": "8\"", "typeId": "e1ee-74b3-00a9-8744"},
-                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Sig", "$text": "2\"", "typeId": "1fb1-6992-a308-b4c8"},
                   {"name": "Hull", "$text": "10", "typeId": "c2b4-8dc9-7506-debb"},
                   {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
                   {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
@@ -1180,7 +1180,7 @@
                 "typeName": "Space Station",
                 "characteristics": [
                   {"name": "Scan", "$text": "8\"", "typeId": "e1ee-74b3-00a9-8744"},
-                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Sig", "$text": "2\"", "typeId": "1fb1-6992-a308-b4c8"},
                   {"name": "Hull", "$text": "10", "typeId": "c2b4-8dc9-7506-debb"},
                   {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
                   {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
@@ -1254,7 +1254,7 @@
                 "typeName": "Space Station",
                 "characteristics": [
                   {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
-                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Sig", "$text": "2\"", "typeId": "1fb1-6992-a308-b4c8"},
                   {"name": "Hull", "$text": "24", "typeId": "c2b4-8dc9-7506-debb"},
                   {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
                   {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
@@ -1310,17 +1310,27 @@
                 ]
               },
               {
+                "name": "Weapons Control",
+                "id": "b1c8-8f44-9916-1993",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "5e35-7cd4-9271-9d3b", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "40c8-0aad-99b8-3d33", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
+              },
+              {
                 "name": "Features",
                 "id": "f9ed-fca1-a04a-4afd",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 4,
                 "targetId": "d798-ad43-7da6-7ad1",
                 "type": "selectionEntryGroup",
-                "constraints": [
-                  {"id": "4996-9866-16f4-06d9", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "c574-55ab-4fb6-cb54", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
-                ]
+                "constraints": [{"id": "c574-55ab-4fb6-cb54", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               }
             ],
             "infoLinks": [{"name": "Shield-X", "id": "64ff-ef46-d542-79eb", "hidden": false, "targetId": "40e4-1c82-9e61-c8c1", "type": "rule"}],
@@ -1333,7 +1343,7 @@
                 "typeName": "Space Station",
                 "characteristics": [
                   {"name": "Scan", "$text": "12\"", "typeId": "e1ee-74b3-00a9-8744"},
-                  {"name": "Sig", "$text": "6\"", "typeId": "1fb1-6992-a308-b4c8"},
+                  {"name": "Sig", "$text": "2\"", "typeId": "1fb1-6992-a308-b4c8"},
                   {"name": "Hull", "$text": "24", "typeId": "c2b4-8dc9-7506-debb"},
                   {"name": "ES", "$text": "4+", "typeId": "3afd-b020-ec74-2ea2"},
                   {"name": "KS", "$text": "4+", "typeId": "595f-3318-8065-9225"},
@@ -1398,17 +1408,27 @@
                 ]
               },
               {
+                "name": "Weapons Control",
+                "id": "0312-404b-82ab-1e28",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 4,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "c043-ff57-4775-babf", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "5074-5cf9-83af-feee", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
+              },
+              {
                 "name": "Features",
                 "id": "1a5d-7365-b433-284f",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 4,
+                "sortIndex": 5,
                 "targetId": "d798-ad43-7da6-7ad1",
                 "type": "selectionEntryGroup",
-                "constraints": [
-                  {"id": "45c7-af60-0fdb-dd57", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "b446-a660-50f4-c8bc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
-                ]
+                "constraints": [{"id": "b446-a660-50f4-c8bc", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               }
             ],
             "profiles": [
@@ -1476,17 +1496,27 @@
                 ]
               },
               {
+                "name": "Weapons Control",
+                "id": "c5d9-87c1-8ae7-bd30",
+                "hidden": false,
+                "import": true,
+                "sortIndex": 3,
+                "targetId": "d5bf-be0a-77ca-4145",
+                "type": "selectionEntry",
+                "constraints": [
+                  {"id": "5dc8-23f2-1ba7-3068", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "84b4-33cc-f0d9-a0fd", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
+                ]
+              },
+              {
                 "name": "Features",
                 "id": "2939-02cd-9c60-29c9",
                 "hidden": false,
                 "import": true,
-                "sortIndex": 3,
+                "sortIndex": 4,
                 "targetId": "d798-ad43-7da6-7ad1",
                 "type": "selectionEntryGroup",
-                "constraints": [
-                  {"id": "8607-d25e-5ee1-8e0c", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 2},
-                  {"id": "fbbf-9c0f-9a95-b646", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
-                ]
+                "constraints": [{"id": "fbbf-9c0f-9a95-b646", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 1}]
               }
             ],
             "infoLinks": [{"name": "Signature Bloom (AO)", "id": "e0a6-f2ca-1416-36a5", "hidden": false, "targetId": "ff11-a45f-573f-8f96", "type": "rule"}],
@@ -1550,8 +1580,8 @@
                 "targetId": "d5bf-be0a-77ca-4145",
                 "type": "selectionEntry",
                 "constraints": [
-                  {"id": "6894-136b-1c40-f57c", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 1},
-                  {"id": "9831-2a6b-bf3e-ac40", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 1}
+                  {"id": "6894-136b-1c40-f57c", "field": "selections", "scope": "parent", "shared": false, "type": "min", "value": 2},
+                  {"id": "9831-2a6b-bf3e-ac40", "field": "selections", "scope": "parent", "shared": false, "type": "max", "value": 2}
                 ]
               },
               {
@@ -2542,12 +2572,12 @@
             "typeId": "3cad-7c2c-bf4c-d3c1",
             "typeName": "Space Station Feature",
             "characteristics": [
-              {"name": "ES", "$text": "4+", "typeId": "49ab-a8e0-4a0a-46d2"},
-              {"name": "KS", "$text": "4+", "typeId": "45b5-556b-f8d0-58e9"},
+              {"name": "ES", "$text": "*", "typeId": "49ab-a8e0-4a0a-46d2"},
+              {"name": "KS", "$text": "*", "typeId": "45b5-556b-f8d0-58e9"},
               {"name": "Hull", "$text": "5", "typeId": "7276-bde5-6c1c-affe"},
               {
                 "name": "Effect",
-                "$text": "When all Launch Control Features are removed from a Space Station, that Station cannot Launch Assets",
+                "$text": "This feature uses its Space Station's best available saves. When all Launch Control Features are removed from a Space Station, that Station cannot Launch Assets",
                 "typeId": "7e8c-6ffe-f6b0-cba1"
               }
             ]
@@ -2569,12 +2599,12 @@
             "typeId": "3cad-7c2c-bf4c-d3c1",
             "typeName": "Space Station Feature",
             "characteristics": [
-              {"name": "ES", "$text": "4+", "typeId": "49ab-a8e0-4a0a-46d2"},
-              {"name": "KS", "$text": "4+", "typeId": "45b5-556b-f8d0-58e9"},
+              {"name": "ES", "$text": "*", "typeId": "49ab-a8e0-4a0a-46d2"},
+              {"name": "KS", "$text": "*", "typeId": "45b5-556b-f8d0-58e9"},
               {"name": "Hull", "$text": "5", "typeId": "7276-bde5-6c1c-affe"},
               {
                 "name": "Effect",
-                "$text": "When all Weapons Control Features are removed from a Space Station, that Station cannot use its Weapon Systems",
+                "$text": "This feature uses its Space Station's best available saves. When all Weapons Control Features are removed from a Space Station, that Station cannot use its Weapon Systems",
                 "typeId": "7e8c-6ffe-f6b0-cba1"
               }
             ]
@@ -2601,7 +2631,7 @@
               {"name": "Hull", "$text": "6", "typeId": "7276-bde5-6c1c-affe"},
               {
                 "name": "Effect",
-                "$text": "When this Feature is removed, each player removes a Battaion from this Space Station, then at the end of each subsequent Cleanup step, each player removes a Battalion from this Space Station.",
+                "$text": "When this Feature is removed, each player removes a Battalion from this Space Station. If this Space Station started with at least one Life Support Feature and has none remaining, at the end of each Cleanup step, each player removes a Battalion from this Space Station.",
                 "typeId": "7e8c-6ffe-f6b0-cba1"
               }
             ]

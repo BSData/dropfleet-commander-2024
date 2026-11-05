@@ -246,12 +246,6 @@
         "hidden": false
       },
       {
-        "name": "Holo Deterrence Field",
-        "id": "6eb1-79c4-abcc-a2a8",
-        "description": "At the end of this Ship's activation, choose two different Arcs from F/SL/SR/R. Until the start of this Ship's next activation, enemy Launch Assets that start their move within 6\" in the chosen Arcs reduce their Thrust by 2\" for that move and cannot be placed in base contact with this Ship.",
-        "hidden": false
-      },
-      {
         "name": "Holo Interference Field",
         "id": "8857-c5fc-0b83-e275",
         "description": "At the end of this ship's activation, you may place a Holo Interference Field within 4\" of this ship. These Holo Interference Fields are removed during the Cleanup step of the End Phase and are circular with a 4\" diameter (a D6 or custom template are perfect tokens to represent these). Enemy Ships ignore the target's Spikes and Signature when attacking through a Holo Interference Field. Enemy Fighters & Bombers underneath the Holo Interference Field when it is placed, or that move/are placed into the Holo Interference Field are removed on a 4+.",
@@ -838,12 +832,12 @@
             "costs": [{"name": "pts", "typeId": "ab32-c9b6-10f3-cbdb", "value": 235}],
             "entryLinks": [
               {
-                "name": "Heavy Calibre Broad-side",
+                "name": "Heavy Calibre Broadside",
                 "id": "24d6-74d7-e357-523a",
                 "hidden": false,
                 "import": true,
                 "sortIndex": 1,
-                "targetId": "ce82-a5c3-01e8-d7f0",
+                "targetId": "2879-9cdc-fd3a-d228",
                 "type": "selectionEntry"
               },
               {
@@ -4462,7 +4456,7 @@
             ],
             "infoLinks": [
               {"name": "Command Ship-X", "id": "6f02-d0c5-ca69-586d", "hidden": false, "targetId": "af88-13e6-5004-d00a", "type": "rule"},
-              {"name": "Holo Deterrence Field", "id": "dec4-4d7d-769d-1c7e", "hidden": false, "targetId": "6eb1-79c4-abcc-a2a8", "type": "rule"},
+              {"name": "Holo Interference Field", "id": "5c85-4c9b-47fe-2156", "hidden": false, "targetId": "8857-c5fc-0b83-e275", "type": "rule"},
               {"name": "Feature Carrier", "id": "7cf2-c665-4342-0155", "hidden": false, "targetId": "bdfa-0705-3daf-6ac8", "type": "rule"}
             ],
             "profiles": [
@@ -4481,7 +4475,7 @@
                   {"name": "KS", "$text": "4+", "typeId": "a4d4-4c63-1848-24f8"},
                   {"name": "BS", "$text": "6+", "typeId": "05b6-9825-68e8-4983"},
                   {"name": "G", "$text": "1", "typeId": "32ce-7bbb-1d0f-8c80"},
-                  {"name": "Special", "$text": "Command Ship-1, Holo Deterrence Field, Feature Carrier", "typeId": "fdf5-89b6-e62e-570f"}
+                  {"name": "Special", "$text": "Command Ship-1, Holo Interference Field, Feature Carrier", "typeId": "fdf5-89b6-e62e-570f"}
                 ]
               }
             ]
@@ -6561,41 +6555,6 @@
         ]
       },
       {
-        "name": "Heavy Calibre Broad-side",
-        "id": "ce82-a5c3-01e8-d7f0",
-        "collective": true,
-        "comment": "[x3] B 2/4+/3/K Cal-H Pen Vol-2",
-        "hidden": false,
-        "import": true,
-        "type": "upgrade",
-        "constraints": [
-          {"id": "408a-507e-8eb5-5776", "field": "selections", "scope": "parent", "shared": true, "type": "min", "value": 3},
-          {"id": "31e9-3a92-3391-6bd9", "field": "selections", "scope": "parent", "shared": true, "type": "max", "value": 3}
-        ],
-        "infoLinks": [
-          {"name": "Calibre-X", "id": "4941-20be-22e4-6ba1", "hidden": false, "targetId": "aa1f-b200-394a-dbcf", "type": "rule"},
-          {"name": "Penetrator", "id": "8c19-9ccf-685e-41d1", "hidden": false, "targetId": "fa34-1759-4681-18db", "type": "rule"},
-          {"name": "Volley-X", "id": "9bce-2146-eec5-95e7", "hidden": false, "targetId": "2313-61f3-8840-3e8b", "type": "rule"}
-        ],
-        "profiles": [
-          {
-            "name": "Heavy Calibre Broad-side",
-            "id": "61c6-fe96-a531-8917",
-            "hidden": false,
-            "typeId": "02b7-2433-f72f-d510",
-            "typeName": "Weapon",
-            "characteristics": [
-              {"name": "Arc", "$text": "B", "typeId": "7fb7-39ec-1352-3b97"},
-              {"name": "Att", "$text": "2", "typeId": "af4e-6eec-3cb5-5aae"},
-              {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
-              {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
-              {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Calibre-H, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
-            ]
-          }
-        ]
-      },
-      {
         "name": "Heavy Calibre Broadside",
         "id": "340b-f569-8189-5108",
         "collective": true,
@@ -6669,7 +6628,7 @@
         "name": "Heavy Calibre Broadside",
         "id": "2879-9cdc-fd3a-d228",
         "collective": true,
-        "comment": "[x3] B 2/4+/3/K Cal-H Pen Vol-2",
+        "comment": "[x3] B 2/4+/3/K Cal-H/C Pen Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6695,7 +6654,7 @@
               {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Calibre-H, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Calibre-H/C, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
@@ -6704,7 +6663,7 @@
         "name": "Heavy Calibre Broadside Array",
         "id": "d119-b415-486f-3888",
         "collective": true,
-        "comment": "B 3/4+/3/K Cal-H Pen Vol-2",
+        "comment": "B 3/4+/3/K Cal-H/C Pen Vol-2",
         "hidden": false,
         "import": true,
         "type": "upgrade",
@@ -6730,7 +6689,7 @@
               {"name": "Lock", "$text": "4+", "typeId": "ddfe-5610-8f1a-650d"},
               {"name": "DMG", "$text": "3", "typeId": "31b1-2e8b-0b99-b1c7"},
               {"name": "Type", "$text": "K", "typeId": "8f83-3218-7832-0818"},
-              {"name": "Special", "$text": "Calibre-H, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
+              {"name": "Special", "$text": "Calibre-H/C, Penetrator, Volley-2", "typeId": "1e8b-4801-6eb9-f278"}
             ]
           }
         ]
